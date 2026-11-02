@@ -3,11 +3,12 @@
   "name": "Yuval Noah Harari",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "hebraico"
   ],
   "primaryLanguage": "hebraico",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

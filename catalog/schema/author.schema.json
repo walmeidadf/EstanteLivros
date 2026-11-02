@@ -4,25 +4,30 @@
   "title": "Autoria",
   "type": "object",
   "additionalProperties": false,
-  "required": ["slug", "name", "aliases", "country", "languages", "primaryLanguage", "bio", "photo", "references"],
+  "required": [
+    "slug", "name", "aliases", "country", "countrySource", "languages",
+    "primaryLanguage", "wikidata", "photo", "references"
+  ],
   "properties": {
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 80 },
     "name": { "type": "string", "minLength": 1 },
     "aliases": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
     "country": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+    "countrySource": { "enum": ["wikidata-citizenship", "wikidata-birthplace", "override", null] },
     "languages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
     "primaryLanguage": { "type": "string", "minLength": 1 },
-    "bio": {
+    "wikidata": {
       "oneOf": [
         { "type": "null" },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["text", "source", "url"],
+          "required": ["id", "status", "evidence", "rulesVersion"],
           "properties": {
-            "text": { "type": "string", "minLength": 1 },
-            "source": { "type": "string", "minLength": 1 },
-            "url": { "type": ["string", "null"], "pattern": "^https?://" }
+            "id": { "type": ["string", "null"], "pattern": "^Q[0-9]+$" },
+            "status": { "enum": ["confirmed", "probable", "manual", "ambiguous", "not_found", "none"] },
+            "evidence": { "type": ["string", "null"], "minLength": 1 },
+            "rulesVersion": { "type": "integer", "minimum": 1 }
           }
         }
       ]
@@ -33,12 +38,13 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["file", "license", "author", "sourceUrl"],
+          "required": ["file", "license", "author", "sourceUrl", "source"],
           "properties": {
-            "file": { "type": "string", "minLength": 1 },
-            "license": { "type": "string", "minLength": 1 },
+            "file": { "type": "string", "pattern": "^authors/[a-z0-9]+(-[a-z0-9]+)*\\.(jpg|png|webp|gif)$" },
+            "license": { "type": ["string", "null"], "minLength": 1 },
             "author": { "type": ["string", "null"], "minLength": 1 },
-            "sourceUrl": { "type": "string", "pattern": "^https?://" }
+            "sourceUrl": { "type": "string", "pattern": "^https?://" },
+            "source": { "enum": ["commons", "wikipedia", "serpapi", "tavily", "manual"] }
           }
         }
       ]

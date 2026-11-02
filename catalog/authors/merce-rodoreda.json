@@ -3,11 +3,12 @@
   "name": "Mercè Rodoreda",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "catalão"
   ],
   "primaryLanguage": "catalão",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

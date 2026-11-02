@@ -3,11 +3,12 @@
   "name": "Honoré de Balzac",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

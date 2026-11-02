@@ -18,7 +18,7 @@ from typing import Optional, Sequence
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib.build import build  # noqa: E402
-from lib.checks import check_catalog, load_schemas  # noqa: E402
+from lib.checks import check_catalog, load_catalog, load_schemas, scan_media  # noqa: E402
 from lib.jsonio import read_json, write_catalog  # noqa: E402
 from lib.legacy_reader import LegacyDataError, LegacyInputError, read_legacy  # noqa: E402
 from lib.schema import SchemaError  # noqa: E402
@@ -43,14 +43,17 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
     overrides = read_json(overrides_path) if overrides_path.exists() else {}
     summaries_path = catalog_dir / "summaries.json"
     existing_summaries = read_json(summaries_path) if summaries_path.exists() else None
+    # Catálogo atual: preserva o que o enriquecimento (F2) já preencheu.
+    existing = load_catalog(catalog_dir) if (catalog_dir / "authors").is_dir() else None
 
     try:
-        result = build(legacy, registry, overrides, existing_summaries)
+        result = build(legacy, registry, overrides, existing_summaries, existing)
         schemas = load_schemas(catalog_dir / "schema")
     except (LegacyDataError, SchemaError) as exc:
         print(f"dados inválidos: {exc}", file=sys.stderr)
         return 1
 
+    result.catalog.media = scan_media(catalog_dir / "media")
     issues = check_catalog(result.catalog, schemas)
     cat = result.catalog
     readings = cat.readings["readings"]

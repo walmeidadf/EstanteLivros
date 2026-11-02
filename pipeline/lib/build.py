@@ -56,6 +56,13 @@ def _known(value: Optional[str]) -> Optional[str]:
     return None if value is None or value.lower() in UNKNOWN_VALUES else value
 
 
+def _existing_countries(existing: Optional[Catalog]) -> List[Dict[str, Any]]:
+    vocab = existing.vocabularies if existing is not None else None
+    if isinstance(vocab, dict) and isinstance(vocab.get("countries"), list):
+        return vocab["countries"]
+    return []
+
+
 def build_references(work_row: Mapping[str, str], sources: Iterable[Mapping[str, str]]) -> List[Dict[str, Any]]:
     refs: List[Dict[str, Any]] = []
     seen = set()
@@ -80,10 +87,17 @@ def build_references(work_row: Mapping[str, str], sources: Iterable[Mapping[str,
     return refs
 
 
+ENRICHED_AUTHOR_FIELDS = ("country", "countrySource", "wikidata", "photo")
+
+
 def build(legacy: LegacyData, registry: SlugRegistry,
           overrides: Optional[Mapping[str, Mapping[str, str]]] = None,
-          existing_summaries: Any = None) -> BuildResult:
+          existing_summaries: Any = None,
+          existing: Optional[Catalog] = None) -> BuildResult:
+    """Monta o catálogo. `existing` é o catálogo atual: os campos enriquecidos
+    das autorias (F2) e `vocabularies.countries` são preservados."""
     overrides = overrides or {}
+    existing_authors = existing.authors if existing is not None else {}
     work_rows = sorted(legacy.works, key=lambda r: r["work_id"])
     work_ids = {r["work_id"] for r in work_rows}
 
@@ -179,16 +193,20 @@ def build(legacy: LegacyData, registry: SlugRegistry,
     for key, group in groups.items():
         slug = author_slug[key]
         langs = [lang for lang in languages_for(lang_occurrences.get(slug, [])) if lang]
+        previous = existing_authors.get(slug)
+        previous = previous if isinstance(previous, dict) else {}
         authors_out[slug] = {
             "slug": slug,
             "name": group.name,
             "aliases": group.aliases,
-            "country": None,
+            "country": previous.get("country"),
+            "countrySource": previous.get("countrySource"),
             "languages": langs,
             "primaryLanguage": langs[0] if langs else None,
-            "bio": None,
-            "photo": None,
-            "references": [],
+            "wikidata": previous.get("wikidata"),
+            "photo": previous.get("photo"),
+            # O legado não traz referências de autoria: tudo o que existe veio da F2.
+            "references": list(previous.get("references") or []),
         }
 
     readings = []
@@ -210,6 +228,7 @@ def build(legacy: LegacyData, registry: SlugRegistry,
         "workTypes": vocab(w["type"] for w in works.values()),
         "genres": vocab(g for w in works.values() for g in w["genres"]),
         "themes": vocab(t for w in works.values() for t in w["themes"]),
+        "countries": _existing_countries(existing),
     }
     summaries = existing_summaries if existing_summaries is not None else {"summaries": []}
 

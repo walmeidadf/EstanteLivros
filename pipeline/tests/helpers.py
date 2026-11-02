@@ -133,8 +133,16 @@ def _work(slug: str, authors: List[str]) -> Dict[str, Any]:
 
 def _author(slug: str) -> Dict[str, Any]:
     return {"slug": slug, "name": slug.replace("-", " ").title(), "aliases": [], "country": "BR",
-            "languages": ["português"], "primaryLanguage": "português", "bio": None, "photo": None,
-            "references": []}
+            "countrySource": "wikidata-citizenship", "languages": ["português"],
+            "primaryLanguage": "português", "wikidata": None, "photo": None, "references": []}
+
+
+def summary(scope: str, text: str = "Texto.", approved: bool = False, **extra: Any) -> Dict[str, Any]:
+    item = {"scope": scope, "text": text, "approved": approved, "updatedAt": "2026-11-01",
+            "source": None, "sourceUrl": None, "sourceLanguage": None, "model": None,
+            "promptVersion": None, "editedBy": None}
+    item.update(extra)
+    return item
 
 
 def valid_catalog():
@@ -151,7 +159,8 @@ def valid_catalog():
         ]},
         summaries={"summaries": []},
         vocabularies={"languages": ["português"], "workTypes": ["romance"], "genres": ["humor"],
-                      "themes": ["memória"]},
+                      "themes": ["memória"],
+                      "countries": [{"code": "BR", "name": "Brasil", "languages": ["português"]}]},
     )
 
 
@@ -163,3 +172,66 @@ def tree_bytes(directory: Path) -> Dict[str, bytes]:
     """Conteúdo de todos os arquivos sob `directory`, para comparar byte a byte."""
     return {str(p.relative_to(directory)): p.read_bytes()
             for p in sorted(directory.rglob("*")) if p.is_file()}
+
+
+# -- HTTP simulado ------------------------------------------------------------
+
+class FakeTransport:
+    """Transporte HTTP falso: casa (método, trecho da URL) com respostas prontas.
+
+    `routes` é uma lista de (método, trecho, resposta). A resposta pode ser um
+    dict/list (JSON 200), uma tupla (status, corpo, headers) ou uma função
+    (url, body) -> qualquer um dos anteriores. Rotas mais específicas devem vir
+    primeiro. Toda chamada fica registrada em `calls`.
+    """
+
+    def __init__(self, routes=None):
+        self.routes = list(routes or [])
+        self.calls = []
+
+    def add(self, method, fragment, response):
+        self.routes.append((method, fragment, response))
+        return self
+
+    def __call__(self, method, url, headers, body, timeout):
+        import json as _json
+
+        self.calls.append({"method": method, "url": url, "headers": dict(headers),
+                           "body": _json.loads(body) if body else None})
+        for r_method, fragment, response in self.routes:
+            if r_method == method and fragment in url:
+                if callable(response):
+                    response = response(url, _json.loads(body) if body else None)
+                if isinstance(response, tuple):
+                    status, payload, resp_headers = (list(response) + [{}])[:3]
+                else:
+                    status, payload, resp_headers = 200, response, {}
+                if isinstance(payload, (bytes, bytearray)):
+                    data = bytes(payload)
+                else:
+                    data = _json.dumps(payload).encode("utf-8")
+                return status, dict(resp_headers), data
+        return 404, {}, b'{"error": "rota nao simulada"}'
+
+    def count(self, fragment):
+        return sum(1 for c in self.calls if fragment in c["url"])
+
+
+def tiny_png(width=600, height=800) -> bytes:
+    import struct as _struct
+    import zlib as _zlib
+
+    def chunk(kind, data):
+        return _struct.pack(">I", len(data)) + kind + data + _struct.pack(">I", _zlib.crc32(kind + data))
+
+    ihdr = _struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    return b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) + chunk(b"IDAT", _zlib.compress(b"\x00\x00\x00\x00")) \
+        + chunk(b"IEND", b"")
+
+
+def tiny_jpeg(width=500, height=700) -> bytes:
+    import struct as _struct
+
+    app0 = b"\xff\xe0" + _struct.pack(">H", 16) + b"JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00"
+    sof = b"\xff\xc0" + _struct.pack(">HBHHB", 11, 8, height, width, 1) + b"\x01\x11\x00"
+    return b"\xff\xd8" + app0 + sof + b"\xff\xda\x00\x08\x01\x01\x00\x00\x3f\x00" + b"\x00" * 10 + b"\xff\xd9"

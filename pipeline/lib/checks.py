@@ -10,7 +10,7 @@ import json
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 
 from .schema import load_schema, validate
 
@@ -47,6 +47,16 @@ class Catalog:
     summaries: Any = None
     vocabularies: Any = None
     load_issues: List[Issue] = field(default_factory=list)
+    # Arquivos disponíveis em catalog/media/ (caminhos relativos, ex.: "authors/x.jpg").
+    # None = não conferir (catálogos montados em memória sem mídia).
+    media: Optional[Set[str]] = None
+
+
+def scan_media(media_dir: Path) -> Set[str]:
+    if not media_dir.is_dir():
+        return set()
+    return {p.relative_to(media_dir).as_posix() for p in media_dir.rglob("*")
+            if p.is_file() and not p.name.startswith(".")}
 
 
 def _load_file(path: Path, rel: str, issues: List[Issue]) -> Any:
@@ -74,6 +84,7 @@ def load_catalog(catalog_dir: Path) -> Catalog:
     cat.readings = _load_file(catalog_dir / "readings.json", "catalog/readings.json", cat.load_issues)
     cat.summaries = _load_file(catalog_dir / "summaries.json", "catalog/summaries.json", cat.load_issues)
     cat.vocabularies = _load_file(catalog_dir / "vocabularies.json", "catalog/vocabularies.json", cat.load_issues)
+    cat.media = scan_media(catalog_dir / "media")
     return cat
 
 
@@ -160,7 +171,8 @@ def check_references(cat: Catalog) -> List[Issue]:
     return issues
 
 
-def check_sequence(cat: Catalog, undated_head: int = UNDATED_HEAD) -> List[Issue]:
+def check_sequence(cat: Catalog, undated_head: Optional[int] = None) -> List[Issue]:
+    undated_head = UNDATED_HEAD if undated_head is None else undated_head
     issues = []
     rel = "catalog/readings.json"
     readings = _readings(cat)
@@ -213,6 +225,7 @@ def check_vocab(cat: Catalog) -> List[Issue]:
     types = set(_as_list(vocab.get("workTypes")))
     genres = set(_as_list(vocab.get("genres")))
     themes = set(_as_list(vocab.get("themes")))
+    countries = {c.get("code") for c in _as_list(vocab.get("countries")) if isinstance(c, dict)}
 
     def need(value: Any, allowed: set, rel: str, path: str, what: str) -> None:
         if isinstance(value, str) and value not in allowed:
@@ -231,6 +244,24 @@ def check_vocab(cat: Catalog) -> List[Issue]:
         need(a.get("primaryLanguage"), langs, rel, "primaryLanguage", "idioma")
         for i, lang in enumerate(_as_list(a.get("languages"))):
             need(lang, langs, rel, f"languages[{i}]", "idioma")
+        country = a.get("country")
+        if isinstance(country, str) and country not in countries:
+            issues.append(Issue(rel, "country", "vocab.country", f"país {country!r} fora de vocabularies.countries"))
+    for i, c in enumerate(_as_list(vocab.get("countries"))):
+        for j, lang in enumerate(_as_list(c.get("languages") if isinstance(c, dict) else None)):
+            need(lang, langs, "catalog/vocabularies.json", f"countries[{i}].languages[{j}]", "idioma")
+    return issues
+
+
+def check_photos(cat: Catalog) -> List[Issue]:
+    if cat.media is None:
+        return []
+    issues = []
+    for stem, a in sorted(cat.authors.items()):
+        photo = a.get("photo") if isinstance(a, dict) else None
+        if isinstance(photo, dict) and isinstance(photo.get("file"), str) and photo["file"] not in cat.media:
+            issues.append(Issue(f"catalog/authors/{stem}.json", "photo.file", "photo.file",
+                                f"arquivo catalog/media/{photo['file']} não existe"))
     return issues
 
 
@@ -239,7 +270,15 @@ def check_summaries(cat: Catalog) -> List[Issue]:
     rel = "catalog/summaries.json"
     years = {r.get("year") for r in _readings(cat) if isinstance(r.get("year"), int)}
     countries = {a.get("country") for a in cat.authors.values() if isinstance(a, dict) and a.get("country")}
+    seen_scopes: Dict[str, int] = {}
     for i, s in enumerate(_summaries(cat)):
+        scope_key = s.get("scope")
+        if isinstance(scope_key, str):
+            if scope_key in seen_scopes:
+                issues.append(Issue(rel, f"summaries[{i}].scope", "summary.scope-unique",
+                                    f"escopo {scope_key!r} repetido (também em summaries[{seen_scopes[scope_key]}])"))
+            else:
+                seen_scopes[scope_key] = i
         if s.get("approved") is not True:
             continue
         path = f"summaries[{i}]"
@@ -261,12 +300,13 @@ def check_summaries(cat: Catalog) -> List[Issue]:
 
 
 def check_catalog(cat: Catalog, schemas: Dict[str, Dict[str, Any]],
-                  undated_head: int = UNDATED_HEAD) -> List[Issue]:
+                  undated_head: Optional[int] = None) -> List[Issue]:
     issues = list(cat.load_issues)
     issues += check_schema_rule(cat, schemas)
     issues += check_file_slug(cat)
     issues += check_references(cat)
     issues += check_sequence(cat, undated_head)
     issues += check_vocab(cat)
+    issues += check_photos(cat)
     issues += check_summaries(cat)
     return issues

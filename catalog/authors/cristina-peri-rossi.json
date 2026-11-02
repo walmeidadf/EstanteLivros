@@ -3,11 +3,12 @@
   "name": "Cristina Peri Rossi",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

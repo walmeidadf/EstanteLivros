@@ -1,0 +1,1027 @@
+{
+ "entities": {
+  "Q55500": {
+   "type": "item",
+   "id": "Q55500",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han River"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Rio Han"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "river in South Korea"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Rio da Coreia do Sul"
+    }
+   },
+   "aliases": {
+    "en": [
+     {
+      "language": "en",
+      "value": "Han River (Korea)"
+     },
+     {
+      "language": "en",
+      "value": "Hangang"
+     },
+     {
+      "language": "en",
+      "value": "Han Gang"
+     },
+     {
+      "language": "en",
+      "value": "Hangang River"
+     },
+     {
+      "language": "en",
+      "value": "Han Gang River"
+     },
+     {
+      "language": "en",
+      "value": "Han'gang"
+     },
+     {
+      "language": "en",
+      "value": "Han-gang"
+     },
+     {
+      "language": "en",
+      "value": "Hang-kiang"
+     },
+     {
+      "language": "en",
+      "value": "Hang River"
+     },
+     {
+      "language": "en",
+      "value": "River Hang"
+     },
+     {
+      "language": "en",
+      "value": "Han R."
+     },
+     {
+      "language": "en",
+      "value": "River Han"
+     },
+     {
+      "language": "en",
+      "value": "R. Han"
+     },
+     {
+      "language": "en",
+      "value": "Hang R."
+     },
+     {
+      "language": "en",
+      "value": "R. Hang"
+     },
+     {
+      "language": "en",
+      "value": "Han Jiang"
+     },
+     {
+      "language": "en",
+      "value": "Hanjiang"
+     },
+     {
+      "language": "en",
+      "value": "Han-kang"
+     },
+     {
+      "language": "en",
+      "value": "Han-kang River"
+     },
+     {
+      "language": "en",
+      "value": "Seul River"
+     },
+     {
+      "language": "en",
+      "value": "Seul R."
+     },
+     {
+      "language": "en",
+      "value": "River Seul"
+     },
+     {
+      "language": "en",
+      "value": "R. Seul"
+     },
+     {
+      "language": "en",
+      "value": "Seoul River"
+     },
+     {
+      "language": "en",
+      "value": "Seoul R."
+     },
+     {
+      "language": "en",
+      "value": "River Seoul"
+     },
+     {
+      "language": "en",
+      "value": "R. Seoul"
+     }
+    ]
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "abe1fef15ca7c678e5cb6a039e5bda82c75b62df",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 4022,
+         "id": "Q4022"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "hash": "ab4105e4f6c3449ba4a6ca949a3aaafaa67f5be8",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 884,
+         "id": "Q884"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "hash": "f9d1f68374f351ebf2d6d29d83bf1a810d090ab1",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 423,
+         "id": "Q423"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P18": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P18",
+       "hash": "5f8e4b11b86bd83d6e510eefba5ada23d29a1710",
+       "datavalue": {
+        "value": "Seoul-Han.River.at.night-01.jpg",
+        "type": "string"
+       },
+       "datatype": "commonsMedia"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "title": "Han River (Korea)"
+    },
+    "eswiki": {
+     "title": "Río Han"
+    },
+    "frwiki": {
+     "title": "Han (fleuve en Corée)"
+    },
+    "itwiki": {
+     "title": "Fiume Han (Corea del Sud)"
+    },
+    "ptwiki": {
+     "title": "Rio Han (Coreia)"
+    }
+   }
+  },
+  "Q5646626": {
+   "type": "item",
+   "id": "Q5646626",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "South Korean writer"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "escritora sul-coreana"
+    }
+   },
+   "aliases": {
+    "en": [
+     {
+      "language": "en",
+      "value": "Han Gang"
+     }
+    ]
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P18": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P18",
+       "hash": "38bbe0be6eed00cac05878e7f6b8fe79a347fa91",
+       "datavalue": {
+        "value": "Han Kang, 2024 Nobel Prize Laureate in Literature (cropped).jpg",
+        "type": "string"
+       },
+       "datatype": "commonsMedia"
+      },
+      "rank": "normal",
+      "qualifiers": {
+       "P2096": [
+        {
+         "snaktype": "value",
+         "property": "P2096",
+         "hash": "f4c496b7c3a9de44746813f6247e9f04de2fee69",
+         "datavalue": {
+          "value": {
+           "text": "Han Kang 2024.",
+           "language": "sv"
+          },
+          "type": "monolingualtext"
+         },
+         "datatype": "monolingualtext"
+        }
+       ],
+       "P585": [
+        {
+         "snaktype": "value",
+         "property": "P585",
+         "hash": "daee777a902fd7cd73351aa33ba07e0a22d4fb9b",
+         "datavalue": {
+          "value": {
+           "time": "+2024-00-00T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 9,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      }
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "4c8732ed5fd2efcd7e616db0ae504388e4456649",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 884,
+         "id": "Q884"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P106": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "70541c2eb72d85fa5f74008b4ee33b004a1ff7eb",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 36180,
+         "id": "Q36180"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "7992d2aec094f84d664106049d9a4955d096082f",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 6625963,
+         "id": "Q6625963"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "043a21f83f9612ba2539208dce5b33652663b5f8",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 15949613,
+         "id": "Q15949613"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "6650bb22bab6f6e5844595fd20ddcec6163cc6a5",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 49757,
+         "id": "Q49757"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P19": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P19",
+       "hash": "88fc1b166b85c3f3d38b1286b08e43803b155da8",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 41283,
+         "id": "Q41283"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "title": "Han Kang"
+    },
+    "eswiki": {
+     "title": "Han Kang"
+    },
+    "frwiki": {
+     "title": "Han Kang"
+    },
+    "itwiki": {
+     "title": "Han Kang"
+    },
+    "ptwiki": {
+     "title": "Han Kang"
+    }
+   }
+  },
+  "Q17030180": {
+   "type": "item",
+   "id": "Q17030180",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Han dynasty physician"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P106": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "6f3176aa7019356d10e93c9a8a22ad52df896d5b",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 39631,
+         "id": "Q39631"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "79036ff01544172a89fcb301511608edcc5509ef",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 1147037,
+         "id": "Q1147037"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P18": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P18",
+       "hash": "3fb07bd6822b71a1f396453f73c29c6ca7d5e979",
+       "datavalue": {
+        "value": "陆曜六逸图卷局部 韩康.jpg",
+        "type": "string"
+       },
+       "datatype": "commonsMedia"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q45387233": {
+   "type": "item",
+   "id": "Q45387233",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Yuan dynasty person CBDB = 17790"
+    }
+   },
+   "aliases": {
+    "en": [
+     {
+      "language": "en",
+      "value": "Yixing"
+     }
+    ]
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P106": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "193297d46c91de78dc5d193ffd48b52d27f933f9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 20826540,
+         "id": "Q20826540"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "9c3ebb624546eee92f09637010345acd0bb0e724",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 7313,
+         "id": "Q7313"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q45528593": {
+   "type": "item",
+   "id": "Q45528593",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Tang dynasty person CBDB = 178506"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "42e68e4a0ae5412d7afc0176a16338c84e9f9fc0",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 9683,
+         "id": "Q9683"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q45530121": {
+   "type": "item",
+   "id": "Q45530121",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Tang dynasty person CBDB = 178530"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "42e68e4a0ae5412d7afc0176a16338c84e9f9fc0",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 9683,
+         "id": "Q9683"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q45550780": {
+   "type": "item",
+   "id": "Q45550780",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Ming dynasty person CBDB = 269478"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "6dfee013310c9ed017c0832cbf5a482c3d4d3ca3",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 9903,
+         "id": "Q9903"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q65886489": {
+   "type": "item",
+   "id": "Q65886489",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "person, CBDB ID = 432776"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q114187848": {
+   "type": "item",
+   "id": "Q114187848",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Han Kang"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "Chinese economist"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "58336cfb8953436203b6809c7bff2f2cfd5dd412",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 148,
+         "id": "Q148"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P106": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "cf2ad312c4eb720591d96e12b1ea4dc44cea4869",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 188094,
+         "id": "Q188094"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q116411946": {
+   "type": "item",
+   "id": "Q116411946",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Kang Han"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "South Korean bobsleigh athlete"
+    }
+   },
+   "aliases": {
+    "en": [
+     {
+      "language": "en",
+      "value": "Han Kang"
+     }
+    ]
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 5,
+         "id": "Q5"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P106": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P106",
+       "hash": "7f3eabc2e8dbbe26fff8ad71613f3d6e9996bcd6",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 13383011,
+         "id": "Q13383011"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P27": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P27",
+       "hash": "4c8732ed5fd2efcd7e616db0ae504388e4456649",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 884,
+         "id": "Q884"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ],
+    "P19": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P19",
+       "hash": "b167c49487446522eb77840f9f2921c2a15831b6",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 16520,
+         "id": "Q16520"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  }
+ }
+}

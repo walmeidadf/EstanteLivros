@@ -3,11 +3,12 @@
   "name": "Stefanie Stahl",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "alemão"
   ],
   "primaryLanguage": "alemão",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

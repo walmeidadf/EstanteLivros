@@ -3,11 +3,12 @@
   "name": "Michiko Aoyama",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "japonês"
   ],
   "primaryLanguage": "japonês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

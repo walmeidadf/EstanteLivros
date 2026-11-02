@@ -3,11 +3,12 @@
   "name": "Cho Nam-Joo",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "coreano"
   ],
   "primaryLanguage": "coreano",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

@@ -587,7 +587,7 @@ python3 pipeline/review_summaries.py --list [--pending] [--scope-prefix autoria:
 python3 pipeline/review_summaries.py --approve autoria:han-kang [autoria:…]
 python3 pipeline/review_summaries.py --approve-file aprovados.txt
 python3 pipeline/review_summaries.py --reject autoria:fulana
-python3 pipeline/review_summaries.py --edit autoria:han-kang --text "…" [--approve]
+python3 pipeline/review_summaries.py --edit autoria:han-kang --text "…" [--and-approve]
 ```
 
 Toda alteração passa pelo validador antes de gravar. `--reject` remove o
@@ -648,9 +648,28 @@ Fluxo:
 Códigos de saída: `0` ok; `1` alguma autoria falhou ou o catálogo resultante
 é inválido; `2` chave obrigatória ausente ou catálogo de partida inválido.
 
-**`--dry-run`:** usa `Http(offline=True)`. Cada miss conta como chamada
-necessária, e o laço segue como se a resposta fosse vazia. Mostra a contagem
-por provedor e o custo estimado da OpenAI. Não grava nada.
+**`--dry-run`:** bloqueia só o que custa ou é pesado: OpenAI, SerpApi, Tavily
+e downloads de imagem (`offline_providers`). Wikidata, Wikipédia e Commons
+respondem normalmente e vão para o cache. Sem isso, a etapa parava na primeira
+chamada grátis fora do cache e subestimava o que é pago (achado nos testes).
+Cada miss bloqueado conta como chamada necessária, e a etapa daquela autoria
+para ali. Mostra a contagem por provedor e o custo estimado da OpenAI. Não
+grava nada no catálogo nem nos relatórios.
+
+### Ajustes feitos na implementação
+
+- `wikidata` da autoria ganhou `rulesVersion`, para reabrir casos
+  `ambiguous`/`not_found` quando as regras mudarem.
+- `languages.json` mapeia cada idioma para QID **e** código ISO, porque os
+  rótulos das obras são buscados também no idioma original.
+- A imagem principal da Wikipédia (grátis) entra já na onda 1, junto com o
+  Commons. A onda 3 acrescenta só SerpApi e Tavily.
+- Estado local das etapas (candidatas, fontes tentadas, notas) em
+  `pipeline/cache/enrich_state.json`. É descartável, porque se reconstrói pelo cache.
+- `review_summaries.py --edit … --text … --and-approve` (em vez de
+  `--approve`, que conflita com o comando de aprovação).
+- Títulos normalizados com NFC depois de tirar os acentos (o NFKD separava as
+  sílabas do coreano em jamos).
 
 ## Mudanças na F1
 

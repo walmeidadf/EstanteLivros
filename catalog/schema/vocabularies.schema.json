@@ -4,12 +4,25 @@
   "title": "Vocabulários",
   "type": "object",
   "additionalProperties": false,
-  "required": ["languages", "workTypes", "genres", "themes"],
+  "required": ["languages", "workTypes", "genres", "themes", "countries"],
   "properties": {
     "languages": { "$ref": "#/$defs/list" },
     "workTypes": { "$ref": "#/$defs/list" },
     "genres": { "$ref": "#/$defs/list" },
-    "themes": { "$ref": "#/$defs/list" }
+    "themes": { "$ref": "#/$defs/list" },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "name", "languages"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "name": { "type": "string", "minLength": 1 },
+          "languages": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    }
   },
   "$defs": {
     "list": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }

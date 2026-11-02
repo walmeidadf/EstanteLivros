@@ -1,0 +1,1728 @@
+{
+  "countries": {
+    "AC": {
+      "qid": "Q31890709",
+      "name": "AC",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "AD": {
+      "qid": "Q228",
+      "name": "Andorra",
+      "languages": [
+        "catalão"
+      ]
+    },
+    "AE": {
+      "qid": "Q878",
+      "name": "Emirados Árabes Unidos",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "AF": {
+      "qid": "Q889",
+      "name": "Afeganistão",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "AG": {
+      "qid": "Q781",
+      "name": "Antígua e Barbuda",
+      "languages": [
+        "espanhol",
+        "inglês"
+      ]
+    },
+    "AI": {
+      "qid": "Q25228",
+      "name": "Anguila",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "AL": {
+      "qid": "Q222",
+      "name": "Albânia",
+      "languages": []
+    },
+    "AM": {
+      "qid": "Q399",
+      "name": "Arménia",
+      "languages": []
+    },
+    "AO": {
+      "qid": "Q916",
+      "name": "Angola",
+      "languages": [
+        "português"
+      ]
+    },
+    "AQ": {
+      "qid": "Q51",
+      "name": "Antártida",
+      "languages": [],
+      "altQids": [
+        "Q10372207"
+      ]
+    },
+    "AR": {
+      "qid": "Q414",
+      "name": "Argentina",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "AS": {
+      "qid": "Q16641",
+      "name": "Samoa Americana",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "AT": {
+      "qid": "Q40",
+      "name": "Áustria",
+      "languages": [
+        "alemão"
+      ]
+    },
+    "AU": {
+      "qid": "Q408",
+      "name": "Austrália",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "AW": {
+      "qid": "Q21203",
+      "name": "Aruba",
+      "languages": [
+        "holandês"
+      ]
+    },
+    "AX": {
+      "qid": "Q5689",
+      "name": "Åland",
+      "languages": []
+    },
+    "AZ": {
+      "qid": "Q227",
+      "name": "Azerbaijão",
+      "languages": []
+    },
+    "BA": {
+      "qid": "Q225",
+      "name": "Bósnia e Herzegovina",
+      "languages": []
+    },
+    "BB": {
+      "qid": "Q244",
+      "name": "Barbados",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "BD": {
+      "qid": "Q902",
+      "name": "Bangladesh",
+      "languages": []
+    },
+    "BE": {
+      "qid": "Q31",
+      "name": "Bélgica",
+      "languages": [
+        "alemão",
+        "francês",
+        "holandês"
+      ]
+    },
+    "BF": {
+      "qid": "Q965",
+      "name": "Burquina Fasso",
+      "languages": []
+    },
+    "BG": {
+      "qid": "Q219",
+      "name": "Bulgária",
+      "languages": []
+    },
+    "BH": {
+      "qid": "Q398",
+      "name": "Bahrein",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "BI": {
+      "qid": "Q967",
+      "name": "Burundi",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "BJ": {
+      "qid": "Q962",
+      "name": "Benim",
+      "languages": [
+        "francês"
+      ]
+    },
+    "BL": {
+      "qid": "Q25362",
+      "name": "São Bartolomeu",
+      "languages": [
+        "francês"
+      ]
+    },
+    "BM": {
+      "qid": "Q23635",
+      "name": "Bermudas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "BN": {
+      "qid": "Q921",
+      "name": "Brunei",
+      "languages": []
+    },
+    "BO": {
+      "qid": "Q750",
+      "name": "Bolívia",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "BQ": {
+      "qid": "Q27561",
+      "name": "Países Baixos Caribenhos",
+      "languages": [
+        "holandês",
+        "inglês"
+      ]
+    },
+    "BR": {
+      "qid": "Q155",
+      "name": "Brasil",
+      "languages": [
+        "português"
+      ]
+    },
+    "BS": {
+      "qid": "Q778",
+      "name": "Bahamas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "BT": {
+      "qid": "Q917",
+      "name": "Butão",
+      "languages": []
+    },
+    "BV": {
+      "qid": "Q23408",
+      "name": "Ilha Bouvet",
+      "languages": []
+    },
+    "BW": {
+      "qid": "Q963",
+      "name": "Botsuana",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "BY": {
+      "qid": "Q184",
+      "name": "Bielorrússia",
+      "languages": [
+        "russo"
+      ]
+    },
+    "BZ": {
+      "qid": "Q242",
+      "name": "Belize",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "CA": {
+      "qid": "Q16",
+      "name": "Canadá",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "CC": {
+      "qid": "Q36004",
+      "name": "Ilhas Cocos",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "CD": {
+      "qid": "Q974",
+      "name": "República Democrática do Congo",
+      "languages": [
+        "francês"
+      ]
+    },
+    "CF": {
+      "qid": "Q929",
+      "name": "República Centro-Africana",
+      "languages": [
+        "francês"
+      ]
+    },
+    "CG": {
+      "qid": "Q971",
+      "name": "República do Congo",
+      "languages": [
+        "francês"
+      ]
+    },
+    "CH": {
+      "qid": "Q39",
+      "name": "Suíça",
+      "languages": [
+        "alemão",
+        "francês",
+        "italiano"
+      ]
+    },
+    "CI": {
+      "qid": "Q1008",
+      "name": "Costa do Marfim",
+      "languages": [
+        "francês"
+      ]
+    },
+    "CK": {
+      "qid": "Q26988",
+      "name": "Ilhas Cook",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "CL": {
+      "qid": "Q298",
+      "name": "Chile",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "CM": {
+      "qid": "Q1009",
+      "name": "Camarões",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "CN": {
+      "qid": "Q148",
+      "name": "China",
+      "languages": []
+    },
+    "CO": {
+      "qid": "Q739",
+      "name": "Colômbia",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "CP": {
+      "qid": "Q161258",
+      "name": "Ilha de Clipperton",
+      "languages": []
+    },
+    "CQ": {
+      "qid": "Q3405693",
+      "name": "Sark",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "CR": {
+      "qid": "Q800",
+      "name": "Costa Rica",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "CU": {
+      "qid": "Q241",
+      "name": "Cuba",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "CV": {
+      "qid": "Q1011",
+      "name": "Cabo Verde",
+      "languages": [
+        "português"
+      ]
+    },
+    "CW": {
+      "qid": "Q25279",
+      "name": "Curaçau",
+      "languages": [
+        "holandês",
+        "inglês"
+      ]
+    },
+    "CX": {
+      "qid": "Q31063",
+      "name": "Ilha Christmas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "CY": {
+      "qid": "Q229",
+      "name": "Chipre",
+      "languages": [],
+      "altQids": [
+        "Q644636"
+      ]
+    },
+    "CZ": {
+      "qid": "Q213",
+      "name": "República Tcheca",
+      "languages": [
+        "tcheco"
+      ]
+    },
+    "DE": {
+      "qid": "Q183",
+      "name": "Alemanha",
+      "languages": [
+        "alemão"
+      ]
+    },
+    "DG": {
+      "qid": "Q184851",
+      "name": "Diego Garcia",
+      "languages": []
+    },
+    "DJ": {
+      "qid": "Q977",
+      "name": "Djibouti",
+      "languages": [
+        "francês",
+        "árabe"
+      ]
+    },
+    "DK": {
+      "qid": "Q35",
+      "name": "Dinamarca",
+      "languages": []
+    },
+    "DM": {
+      "qid": "Q784",
+      "name": "Dominica",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "DO": {
+      "qid": "Q786",
+      "name": "República Dominicana",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "DZ": {
+      "qid": "Q262",
+      "name": "Argélia",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "EC": {
+      "qid": "Q736",
+      "name": "Equador",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "EE": {
+      "qid": "Q191",
+      "name": "Estónia",
+      "languages": []
+    },
+    "EG": {
+      "qid": "Q79",
+      "name": "Egito",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "EH": {
+      "qid": "Q6250",
+      "name": "Sara Ocidental",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "ER": {
+      "qid": "Q986",
+      "name": "Eritreia",
+      "languages": [
+        "inglês",
+        "árabe"
+      ]
+    },
+    "ES": {
+      "qid": "Q29",
+      "name": "Espanha",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "ET": {
+      "qid": "Q115",
+      "name": "Etiópia",
+      "languages": []
+    },
+    "FI": {
+      "qid": "Q33",
+      "name": "Finlândia",
+      "languages": []
+    },
+    "FJ": {
+      "qid": "Q712",
+      "name": "Fiji",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "FK": {
+      "qid": "Q9648",
+      "name": "Ilhas Malvinas",
+      "languages": []
+    },
+    "FM": {
+      "qid": "Q702",
+      "name": "Micronésia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "FO": {
+      "qid": "Q4628",
+      "name": "Ilhas Feroe",
+      "languages": []
+    },
+    "FR": {
+      "qid": "Q142",
+      "name": "França",
+      "languages": [
+        "francês"
+      ]
+    },
+    "GA": {
+      "qid": "Q1000",
+      "name": "Gabão",
+      "languages": [
+        "francês"
+      ]
+    },
+    "GB": {
+      "qid": "Q145",
+      "name": "Reino Unido",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GD": {
+      "qid": "Q769",
+      "name": "Granada",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GE": {
+      "qid": "Q230",
+      "name": "Geórgia",
+      "languages": []
+    },
+    "GF": {
+      "qid": "Q3769",
+      "name": "Guiana Francesa",
+      "languages": [
+        "francês"
+      ]
+    },
+    "GG": {
+      "qid": "Q25230",
+      "name": "Guernsey",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "GH": {
+      "qid": "Q117",
+      "name": "Gana",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GI": {
+      "qid": "Q1410",
+      "name": "Gibraltar",
+      "languages": []
+    },
+    "GL": {
+      "qid": "Q223",
+      "name": "Gronelândia",
+      "languages": []
+    },
+    "GM": {
+      "qid": "Q1005",
+      "name": "Gâmbia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GN": {
+      "qid": "Q1006",
+      "name": "Guiné",
+      "languages": [
+        "francês"
+      ]
+    },
+    "GP": {
+      "qid": "Q17012",
+      "name": "Guadalupe",
+      "languages": []
+    },
+    "GQ": {
+      "qid": "Q983",
+      "name": "Guiné Equatorial",
+      "languages": [
+        "espanhol",
+        "francês",
+        "português"
+      ]
+    },
+    "GR": {
+      "qid": "Q41",
+      "name": "Grécia",
+      "languages": []
+    },
+    "GS": {
+      "qid": "Q35086",
+      "name": "Ilhas Geórgia do Sul e Sandwich do Sul",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GT": {
+      "qid": "Q774",
+      "name": "Guatemala",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "GU": {
+      "qid": "Q16635",
+      "name": "Guam",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "GW": {
+      "qid": "Q1007",
+      "name": "Guiné-Bissau",
+      "languages": [
+        "português"
+      ]
+    },
+    "GY": {
+      "qid": "Q734",
+      "name": "Guiana",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "HK": {
+      "qid": "Q8646",
+      "name": "Hong Kong",
+      "languages": []
+    },
+    "HM": {
+      "qid": "Q131198",
+      "name": "Ilha Heard e Ilhas McDonald",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "HN": {
+      "qid": "Q783",
+      "name": "Honduras",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "HR": {
+      "qid": "Q224",
+      "name": "Croácia",
+      "languages": []
+    },
+    "HT": {
+      "qid": "Q790",
+      "name": "Haiti",
+      "languages": [
+        "francês"
+      ]
+    },
+    "HU": {
+      "qid": "Q28",
+      "name": "Hungria",
+      "languages": []
+    },
+    "ID": {
+      "qid": "Q252",
+      "name": "Indonésia",
+      "languages": []
+    },
+    "IE": {
+      "qid": "Q27",
+      "name": "Irlanda",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "IL": {
+      "qid": "Q801",
+      "name": "Israel",
+      "languages": [
+        "hebraico"
+      ]
+    },
+    "IM": {
+      "qid": "Q9676",
+      "name": "Ilha de Man",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "IN": {
+      "qid": "Q668",
+      "name": "Índia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "IO": {
+      "qid": "Q43448",
+      "name": "Território Britânico do Oceano Índico",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "IQ": {
+      "qid": "Q796",
+      "name": "Iraque",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "IR": {
+      "qid": "Q794",
+      "name": "Irão",
+      "languages": []
+    },
+    "IS": {
+      "qid": "Q189",
+      "name": "Islândia",
+      "languages": []
+    },
+    "IT": {
+      "qid": "Q38",
+      "name": "Itália",
+      "languages": [
+        "italiano"
+      ]
+    },
+    "JE": {
+      "qid": "Q785",
+      "name": "JE",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "JM": {
+      "qid": "Q766",
+      "name": "Jamaica",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "JO": {
+      "qid": "Q810",
+      "name": "Jordânia",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "JP": {
+      "qid": "Q17",
+      "name": "Japão",
+      "languages": [
+        "japonês"
+      ]
+    },
+    "KE": {
+      "qid": "Q114",
+      "name": "Quénia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "KG": {
+      "qid": "Q813",
+      "name": "Quirguistão",
+      "languages": []
+    },
+    "KH": {
+      "qid": "Q424",
+      "name": "Camboja",
+      "languages": []
+    },
+    "KI": {
+      "qid": "Q710",
+      "name": "Quiribáti",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "KM": {
+      "qid": "Q970",
+      "name": "Comores",
+      "languages": [
+        "francês",
+        "árabe"
+      ]
+    },
+    "KN": {
+      "qid": "Q763",
+      "name": "São Cristóvão e Neves",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "KP": {
+      "qid": "Q423",
+      "name": "Coreia do Norte",
+      "languages": [
+        "coreano"
+      ]
+    },
+    "KR": {
+      "qid": "Q884",
+      "name": "Coreia do Sul",
+      "languages": [
+        "coreano"
+      ]
+    },
+    "KW": {
+      "qid": "Q817",
+      "name": "Kuwait",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "KY": {
+      "qid": "Q5785",
+      "name": "Ilhas Cayman",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "KZ": {
+      "qid": "Q232",
+      "name": "Cazaquistão",
+      "languages": [
+        "russo"
+      ]
+    },
+    "LA": {
+      "qid": "Q819",
+      "name": "Laos",
+      "languages": []
+    },
+    "LB": {
+      "qid": "Q822",
+      "name": "Líbano",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "LC": {
+      "qid": "Q760",
+      "name": "Santa Lúcia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "LI": {
+      "qid": "Q347",
+      "name": "Liechtenstein",
+      "languages": [
+        "alemão"
+      ]
+    },
+    "LK": {
+      "qid": "Q854",
+      "name": "Sri Lanka",
+      "languages": []
+    },
+    "LR": {
+      "qid": "Q1014",
+      "name": "Libéria",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "LS": {
+      "qid": "Q1013",
+      "name": "Lesoto",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "LT": {
+      "qid": "Q37",
+      "name": "Lituânia",
+      "languages": []
+    },
+    "LU": {
+      "qid": "Q32",
+      "name": "Luxemburgo",
+      "languages": [
+        "alemão",
+        "francês"
+      ]
+    },
+    "LV": {
+      "qid": "Q211",
+      "name": "Letónia",
+      "languages": []
+    },
+    "LY": {
+      "qid": "Q1016",
+      "name": "Líbia",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "MA": {
+      "qid": "Q1028",
+      "name": "Marrocos",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "MC": {
+      "qid": "Q235",
+      "name": "Mónaco",
+      "languages": [
+        "francês"
+      ]
+    },
+    "MD": {
+      "qid": "Q217",
+      "name": "Moldávia",
+      "languages": []
+    },
+    "ME": {
+      "qid": "Q236",
+      "name": "Montenegro",
+      "languages": []
+    },
+    "MF": {
+      "qid": "Q126125",
+      "name": "São Martinho",
+      "languages": [
+        "francês"
+      ]
+    },
+    "MG": {
+      "qid": "Q1019",
+      "name": "Madagáscar",
+      "languages": [
+        "francês"
+      ]
+    },
+    "MH": {
+      "qid": "Q709",
+      "name": "Ilhas Marshall",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "MK": {
+      "qid": "Q221",
+      "name": "Macedónia do Norte",
+      "languages": []
+    },
+    "ML": {
+      "qid": "Q912",
+      "name": "Mali",
+      "languages": []
+    },
+    "MM": {
+      "qid": "Q836",
+      "name": "Myanmar",
+      "languages": []
+    },
+    "MN": {
+      "qid": "Q711",
+      "name": "Mongólia",
+      "languages": []
+    },
+    "MO": {
+      "qid": "Q14773",
+      "name": "Macau",
+      "languages": [
+        "português"
+      ]
+    },
+    "MP": {
+      "qid": "Q16644",
+      "name": "Marianas Setentrionais",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "MQ": {
+      "qid": "Q17054",
+      "name": "Martinica",
+      "languages": []
+    },
+    "MR": {
+      "qid": "Q1025",
+      "name": "Mauritânia",
+      "languages": [
+        "francês",
+        "árabe"
+      ]
+    },
+    "MS": {
+      "qid": "Q13353",
+      "name": "Monserrate",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "MT": {
+      "qid": "Q233",
+      "name": "Malta",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "MU": {
+      "qid": "Q1027",
+      "name": "Maurícia",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "MV": {
+      "qid": "Q826",
+      "name": "Maldivas",
+      "languages": []
+    },
+    "MW": {
+      "qid": "Q1020",
+      "name": "Malawi",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "MX": {
+      "qid": "Q96",
+      "name": "México",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "MY": {
+      "qid": "Q833",
+      "name": "Malásia",
+      "languages": []
+    },
+    "MZ": {
+      "qid": "Q1029",
+      "name": "Moçambique",
+      "languages": [
+        "português"
+      ]
+    },
+    "NA": {
+      "qid": "Q1030",
+      "name": "Namíbia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "NC": {
+      "qid": "Q33788",
+      "name": "Nova Caledónia",
+      "languages": [
+        "francês"
+      ]
+    },
+    "NE": {
+      "qid": "Q1032",
+      "name": "Níger",
+      "languages": []
+    },
+    "NF": {
+      "qid": "Q31057",
+      "name": "Ilha Norfolk",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "NG": {
+      "qid": "Q1033",
+      "name": "Nigéria",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "NI": {
+      "qid": "Q811",
+      "name": "Nicarágua",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "NL": {
+      "qid": "Q29999",
+      "name": "Países Baixos",
+      "languages": [
+        "holandês"
+      ],
+      "altQids": [
+        "Q55"
+      ]
+    },
+    "NO": {
+      "qid": "Q20",
+      "name": "Noruega",
+      "languages": [
+        "norueguês"
+      ]
+    },
+    "NP": {
+      "qid": "Q837",
+      "name": "Nepal",
+      "languages": []
+    },
+    "NR": {
+      "qid": "Q697",
+      "name": "Naoero",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "NU": {
+      "qid": "Q34020",
+      "name": "Niue",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "NZ": {
+      "qid": "Q664",
+      "name": "Nova Zelândia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "OM": {
+      "qid": "Q842",
+      "name": "Omã",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "PA": {
+      "qid": "Q804",
+      "name": "Panamá",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "PE": {
+      "qid": "Q419",
+      "name": "Peru",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "PF": {
+      "qid": "Q30971",
+      "name": "Polinésia Francesa",
+      "languages": [
+        "francês"
+      ]
+    },
+    "PG": {
+      "qid": "Q691",
+      "name": "Papua-Nova Guiné",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "PH": {
+      "qid": "Q928",
+      "name": "Filipinas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "PK": {
+      "qid": "Q843",
+      "name": "Paquistão",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "PL": {
+      "qid": "Q36",
+      "name": "Polónia",
+      "languages": []
+    },
+    "PM": {
+      "qid": "Q34617",
+      "name": "Saint-Pierre e Miquelon",
+      "languages": [
+        "francês"
+      ]
+    },
+    "PN": {
+      "qid": "Q35672",
+      "name": "Ilhas Pitcairn",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "PR": {
+      "qid": "Q1183",
+      "name": "Porto Rico",
+      "languages": [
+        "espanhol",
+        "inglês"
+      ]
+    },
+    "PS": {
+      "qid": "Q219060",
+      "name": "Estado da Palestina",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "PT": {
+      "qid": "Q45",
+      "name": "Portugal",
+      "languages": [
+        "português"
+      ]
+    },
+    "PW": {
+      "qid": "Q695",
+      "name": "Palau",
+      "languages": [
+        "inglês",
+        "japonês"
+      ]
+    },
+    "PY": {
+      "qid": "Q733",
+      "name": "Paraguai",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "QA": {
+      "qid": "Q846",
+      "name": "Catar",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "RE": {
+      "qid": "Q17070",
+      "name": "Reunião",
+      "languages": [
+        "francês"
+      ]
+    },
+    "RO": {
+      "qid": "Q218",
+      "name": "Roménia",
+      "languages": []
+    },
+    "RS": {
+      "qid": "Q403",
+      "name": "Sérvia",
+      "languages": []
+    },
+    "RU": {
+      "qid": "Q159",
+      "name": "Rússia",
+      "languages": [
+        "russo"
+      ]
+    },
+    "RW": {
+      "qid": "Q1037",
+      "name": "Ruanda",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "SA": {
+      "qid": "Q851",
+      "name": "Arábia Saudita",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "SB": {
+      "qid": "Q685",
+      "name": "Ilhas Salomão",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "SC": {
+      "qid": "Q1042",
+      "name": "Seychelles",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "SD": {
+      "qid": "Q1049",
+      "name": "Sudão",
+      "languages": [
+        "inglês",
+        "árabe"
+      ]
+    },
+    "SE": {
+      "qid": "Q34",
+      "name": "Suécia",
+      "languages": []
+    },
+    "SG": {
+      "qid": "Q334",
+      "name": "Singapura",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "SH": {
+      "qid": "Q192184",
+      "name": "Santa Helena, Ascensão e Tristão da Cunha",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "SI": {
+      "qid": "Q215",
+      "name": "Eslovénia",
+      "languages": []
+    },
+    "SJ": {
+      "qid": "Q842829",
+      "name": "Svalbard e Jan Mayen",
+      "languages": [
+        "norueguês"
+      ]
+    },
+    "SK": {
+      "qid": "Q214",
+      "name": "Eslováquia",
+      "languages": []
+    },
+    "SL": {
+      "qid": "Q1044",
+      "name": "Serra Leoa",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "SM": {
+      "qid": "Q238",
+      "name": "San Marino",
+      "languages": [
+        "italiano"
+      ]
+    },
+    "SN": {
+      "qid": "Q1041",
+      "name": "Senegal",
+      "languages": [
+        "francês"
+      ]
+    },
+    "SO": {
+      "qid": "Q1045",
+      "name": "Somália",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "SR": {
+      "qid": "Q730",
+      "name": "Suriname",
+      "languages": [
+        "holandês"
+      ]
+    },
+    "SS": {
+      "qid": "Q958",
+      "name": "Sudão do Sul",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "ST": {
+      "qid": "Q1039",
+      "name": "São Tomé e Príncipe",
+      "languages": [
+        "português"
+      ]
+    },
+    "SV": {
+      "qid": "Q792",
+      "name": "El Salvador",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "SX": {
+      "qid": "Q26273",
+      "name": "São Martinho",
+      "languages": [
+        "holandês",
+        "inglês"
+      ]
+    },
+    "SY": {
+      "qid": "Q858",
+      "name": "Síria",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "SZ": {
+      "qid": "Q1050",
+      "name": "Essuatíni",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TA": {
+      "qid": "Q34625512",
+      "name": "TA",
+      "languages": []
+    },
+    "TC": {
+      "qid": "Q18221",
+      "name": "Ilhas Turcas e Caicos",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TD": {
+      "qid": "Q657",
+      "name": "Chade",
+      "languages": [
+        "francês",
+        "árabe"
+      ]
+    },
+    "TF": {
+      "qid": "Q129003",
+      "name": "Terras Austrais e Antárticas Francesas",
+      "languages": [
+        "francês"
+      ]
+    },
+    "TG": {
+      "qid": "Q945",
+      "name": "Togo",
+      "languages": [
+        "francês"
+      ]
+    },
+    "TH": {
+      "qid": "Q869",
+      "name": "Tailândia",
+      "languages": []
+    },
+    "TJ": {
+      "qid": "Q863",
+      "name": "Tajiquistão",
+      "languages": []
+    },
+    "TK": {
+      "qid": "Q36823",
+      "name": "Tokelau",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TL": {
+      "qid": "Q574",
+      "name": "Timor-Leste",
+      "languages": [
+        "português"
+      ]
+    },
+    "TM": {
+      "qid": "Q874",
+      "name": "Turquemenistão",
+      "languages": []
+    },
+    "TN": {
+      "qid": "Q948",
+      "name": "Tunísia",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "TO": {
+      "qid": "Q678",
+      "name": "Tonga",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TR": {
+      "qid": "Q43",
+      "name": "Turquia",
+      "languages": []
+    },
+    "TT": {
+      "qid": "Q754",
+      "name": "Trindade e Tobago",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TV": {
+      "qid": "Q672",
+      "name": "Tuvalu",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "TW": {
+      "qid": "Q865",
+      "name": "Taiwan",
+      "languages": []
+    },
+    "TZ": {
+      "qid": "Q924",
+      "name": "Tanzânia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "UA": {
+      "qid": "Q212",
+      "name": "Ucrânia",
+      "languages": []
+    },
+    "UG": {
+      "qid": "Q1036",
+      "name": "Uganda",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "UM": {
+      "qid": "Q16645",
+      "name": "Ilhas Menores Distantes dos Estados Unidos",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "US": {
+      "qid": "Q30",
+      "name": "Estados Unidos",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "UY": {
+      "qid": "Q77",
+      "name": "Uruguai",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "UZ": {
+      "qid": "Q265",
+      "name": "Usbequistão",
+      "languages": []
+    },
+    "VA": {
+      "qid": "Q237",
+      "name": "Vaticano",
+      "languages": [
+        "italiano"
+      ]
+    },
+    "VC": {
+      "qid": "Q757",
+      "name": "São Vicente e Granadinas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "VE": {
+      "qid": "Q717",
+      "name": "Venezuela",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    "VG": {
+      "qid": "Q25305",
+      "name": "Ilhas Virgens Britânicas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "VI": {
+      "qid": "Q11703",
+      "name": "Ilhas Virgens Americanas",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "VN": {
+      "qid": "Q881",
+      "name": "Vietname",
+      "languages": []
+    },
+    "VU": {
+      "qid": "Q686",
+      "name": "Vanuatu",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    "WF": {
+      "qid": "Q35555",
+      "name": "Wallis e Futuna",
+      "languages": [
+        "francês"
+      ]
+    },
+    "WS": {
+      "qid": "Q683",
+      "name": "Samoa",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "XK": {
+      "qid": "Q1246",
+      "name": "Kosovo",
+      "languages": []
+    },
+    "YE": {
+      "qid": "Q805",
+      "name": "Iémen",
+      "languages": [
+        "árabe"
+      ]
+    },
+    "YT": {
+      "qid": "Q17063",
+      "name": "Mayotte",
+      "languages": [
+        "francês"
+      ]
+    },
+    "ZA": {
+      "qid": "Q258",
+      "name": "África do Sul",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "ZM": {
+      "qid": "Q953",
+      "name": "Zâmbia",
+      "languages": [
+        "inglês"
+      ]
+    },
+    "ZW": {
+      "qid": "Q954",
+      "name": "Zimbábue",
+      "languages": [
+        "inglês"
+      ]
+    }
+  },
+  "defunct": {
+    "Q15180": {
+      "name": "União Soviética",
+      "to": "RU"
+    },
+    "Q16957": {
+      "name": "Alemanha Oriental",
+      "to": "DE"
+    },
+    "Q174193": {
+      "name": "Reino Unido da Grã-Bretanha e Irlanda",
+      "to": "GB"
+    },
+    "Q28513": {
+      "name": "Áustria-Hungria",
+      "to": "AT"
+    },
+    "Q33946": {
+      "name": "Tchecoslováquia",
+      "to": "CZ"
+    },
+    "Q34266": {
+      "name": "Império Russo",
+      "to": "RU"
+    },
+    "Q36704": {
+      "name": "Iugoslávia",
+      "to": "RS"
+    },
+    "Q43287": {
+      "name": "Império Alemão",
+      "to": "DE"
+    }
+  }
+}

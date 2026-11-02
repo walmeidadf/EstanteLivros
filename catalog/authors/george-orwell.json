@@ -3,11 +3,12 @@
   "name": "George Orwell",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

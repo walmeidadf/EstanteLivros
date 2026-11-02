@@ -59,9 +59,34 @@ python3 -m unittest discover -s pipeline/tests # testes
 O validador sai com código 1 se houver qualquer erro. Rode-o depois de toda
 alteração no `catalog/`.
 
+### Enriquecimento de autorias (Wikidata, país, foto, bio)
+Chaves em `.env` (modelo: `.env.example`). Rode **sempre** `--dry-run` antes:
+ele mostra o que gastaria (OpenAI, SerpApi, Tavily) sem gastar.
+
+```bash
+python3 pipeline/enrich_authors.py --build-countries        # 1x: pipeline/config/countries.json
+python3 pipeline/enrich_authors.py --wave 1 [--dry-run]     # carga: grátis (Wikidata, Wikipédia, Commons)
+python3 pipeline/enrich_authors.py --wave 2 [--dry-run]     # carga: bios via OpenAI
+python3 pipeline/enrich_authors.py --wave 3 [--dry-run]     # carga: fotos/fontes com cota (SerpApi, Tavily)
+python3 pipeline/enrich_authors.py --only slug-da-autora    # manutenção (livro novo)
+python3 pipeline/review_summaries.py --list --pending       # bios para revisar
+python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reject, --edit … --text …)
+```
+
+- Por padrão processa só pendências, na ordem de visibilidade (mais leituras primeiro).
+- Planos gratuitos: SerpApi 250/mês, Tavily 1.000/mês. Limites e reserva em
+  `pipeline/config/budgets.json`. Sem saldo, a etapa fica "adiada por cota".
+- Decisões humanas em `pipeline/config/`: `author_wikidata.json` (QID),
+  `author_photos.json` (foto), `author_overrides.json` (país),
+  `summary_rejections.json`. Parâmetros e prompt: `enrich.json`, `prompts/`.
+- Revisão: `docs/plans/revisao-autorias.md` e `docs/plans/revisao-fotos.html` (local).
+  Log de cada execução: `docs/plans/enriquecimento-execucoes.md`.
+
 ## Estado atual
 - F0 e F1 concluídas: `catalog/` tem 302 obras, 215 autorias e 309 leituras,
   validados. Cobertura em `docs/plans/cobertura.md`.
-- Próximo: F2 (enriquecimento: autorias, capas, temas) e S1 do app, em paralelo.
+- F2.1 (autorias): scripts prontos; execução real em andamento
+  (`docs/specs/enriquecimento-autorias/tasks.md`, tarefas 17–22).
+- Depois: F2 restante (capas, temas, resumos de ano/país); F3 (app) em outra sessão.
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Remoto: `git@github.com:walmeidadf/EstanteLivros.git`.

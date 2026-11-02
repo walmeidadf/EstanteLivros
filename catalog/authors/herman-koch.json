@@ -3,11 +3,12 @@
   "name": "Herman Koch",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "holandês"
   ],
   "primaryLanguage": "holandês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

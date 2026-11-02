@@ -3,11 +3,12 @@
   "name": "Italo Svevo",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "italiano"
   ],
   "primaryLanguage": "italiano",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

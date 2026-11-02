@@ -1,0 +1,5 @@
+{
+  "serpapi": { "monthly": 250, "reserve": 40, "perRun": 120 },
+  "tavily": { "monthly": 1000, "reserve": 150, "perRun": 300 },
+  "openai": { "maxUsdPerRun": 2.0 }
+}

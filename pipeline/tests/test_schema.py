@@ -116,14 +116,19 @@ class CatalogSchemasTest(unittest.TestCase):
         })
         self.assertEqual(validate(work, self.schemas["work"]), [])
 
-    def test_bio_e_foto_como_objeto(self):
+    def test_wikidata_e_foto_como_objeto(self):
         author = helpers.valid_catalog().authors["autora-a"]
-        author["bio"] = {"text": "Escritora.", "source": "Wikipedia", "url": "https://pt.wikipedia.org/x"}
-        author["photo"] = {"file": "x.jpg", "license": "CC BY-SA 4.0", "author": None,
-                           "sourceUrl": "https://commons.wikimedia.org/x"}
+        author["wikidata"] = {"id": "Q5646626", "status": "confirmed", "evidence": "P50", "rulesVersion": 1}
+        author["photo"] = {"file": "authors/autora-a.jpg", "license": "CC BY-SA 4.0", "author": None,
+                           "sourceUrl": "https://commons.wikimedia.org/x", "source": "commons"}
         self.assertEqual(validate(author, self.schemas["author"]), [])
-        author["bio"] = {"text": ""}
+        author["wikidata"] = {"id": None, "status": "not_found", "evidence": None, "rulesVersion": 1}
+        self.assertEqual(validate(author, self.schemas["author"]), [])
+        author["photo"]["file"] = "../fora.jpg"
         self.assertNotEqual(validate(author, self.schemas["author"]), [])
+        author["photo"]["file"] = "authors/autora-a.jpg"
+        author["bio"] = None  # campo removido do schema
+        self.assertIn(("bio", "campo não permitido"), validate(author, self.schemas["author"]))
 
     def test_string_vazia_e_isbn_invalidos(self):
         work = helpers.valid_catalog().works["obra-a"]
@@ -134,8 +139,7 @@ class CatalogSchemasTest(unittest.TestCase):
         self.assertIn("edition.isbn13", paths)
 
     def test_escopo_de_resumo(self):
-        ok = {"summaries": [{"scope": "pais:PT", "text": "", "approved": False,
-                             "updatedAt": "2026-11-01", "source": None}]}
+        ok = {"summaries": [helpers.summary("pais:PT", text="")]}
         self.assertEqual(validate(ok, self.schemas["summaries"]), [])
         ok["summaries"][0]["scope"] = "pais:portugal"
         self.assertNotEqual(validate(ok, self.schemas["summaries"]), [])

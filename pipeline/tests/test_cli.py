@@ -56,6 +56,28 @@ class MigrateTest(unittest.TestCase):
         self.assertIn("reutilizados: 8", out)
         self.assertEqual(helpers.tree_bytes(self.catalog.parent), first)
 
+    def test_preserva_enriquecimento_e_continua_idempotente(self):
+        self.migrate()
+        path = self.catalog / "authors" / "han-kang.json"
+        author = json.loads(path.read_text(encoding="utf-8"))
+        author.update(country="KR", countrySource="wikidata-citizenship",
+                      photo={"file": "authors/han-kang.jpg", "license": None, "author": None,
+                             "sourceUrl": "https://x.org/h.jpg", "source": "manual"})
+        path.write_text(json.dumps(author, ensure_ascii=False), encoding="utf-8")
+        vocab_path = self.catalog / "vocabularies.json"
+        vocab = json.loads(vocab_path.read_text(encoding="utf-8"))
+        vocab["countries"] = [{"code": "KR", "name": "Coreia do Sul", "languages": ["coreano"]}]
+        vocab_path.write_text(json.dumps(vocab, ensure_ascii=False), encoding="utf-8")
+        (self.catalog / "media" / "authors").mkdir(parents=True)
+        (self.catalog / "media" / "authors" / "han-kang.jpg").write_bytes(b"\xff\xd8\xff")
+        code, _, err = self.migrate()
+        self.assertEqual(code, 0, err)
+        again = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual((again["country"], again["photo"]["file"]), ("KR", "authors/han-kang.jpg"))
+        first = helpers.tree_bytes(self.catalog.parent)
+        self.migrate()
+        self.assertEqual(helpers.tree_bytes(self.catalog.parent), first)
+
     def test_legado_nao_e_alterado(self):
         before = helpers.tree_bytes(self.legacy)
         self.migrate()

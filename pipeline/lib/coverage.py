@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Callable, Dict, Iterable, List, Tuple
+from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
 from .checks import Catalog
 from .names import AuthorGroup, find_suspects, unify_key
@@ -37,12 +37,33 @@ def work_rows(works: List[Dict[str, Any]]) -> List[Row]:
     ]
 
 
-def author_rows(authors: List[Dict[str, Any]]) -> List[Row]:
+def author_rows(authors: List[Dict[str, Any]], bios: Optional[Dict[str, Dict[str, Any]]] = None) -> List[Row]:
+    bios = bios or {}
+    total = len(authors)
+    photo = lambda a: a.get("photo") or {}  # noqa: E731
+    wd = lambda a: (a.get("wikidata") or {}).get("status")  # noqa: E731
     return [
-        ("País", _count(authors, lambda a: a.get("country") is not None), len(authors)),
-        ("Bio", _count(authors, lambda a: a.get("bio") is not None), len(authors)),
-        ("Foto", _count(authors, lambda a: a.get("photo") is not None), len(authors)),
+        ("Identificada no Wikidata (confirmada, provável ou manual)",
+         _count(authors, lambda a: wd(a) in ("confirmed", "probable", "manual")), total),
+        ("País", _count(authors, lambda a: a.get("country") is not None), total),
+        ("Foto", _count(authors, lambda a: a.get("photo") is not None), total),
+        ("Foto do Commons", _count(authors, lambda a: photo(a).get("source") == "commons"), total),
+        ("Bio proposta (inclui aprovadas)", _count(authors, lambda a: a["slug"] in bios), total),
+        ("Bio aprovada", _count(authors, lambda a: bios.get(a["slug"], {}).get("approved") is True), total),
     ]
+
+
+def _status_table(authors: List[Dict[str, Any]]) -> List[str]:
+    labels = [("confirmed", "confirmada por obra"), ("probable", "provável"), ("manual", "manual"),
+              ("ambiguous", "ambígua"), ("not_found", "não encontrada"), ("none", "sem Wikidata (manual)"),
+              (None, "não processada")]
+    counts: Dict[Optional[str], int] = {}
+    for a in authors:
+        status = (a.get("wikidata") or {}).get("status")
+        counts[status] = counts.get(status, 0) + 1
+    lines = ["| Identificação | Autorias |", "|---|---:|"]
+    lines += [f"| {label} | {counts.get(key, 0)} |" for key, label in labels if counts.get(key)]
+    return lines
 
 
 def _table(rows: List[Row]) -> List[str]:
@@ -55,6 +76,11 @@ def render_coverage(cat: Catalog) -> str:
     works = [w for _, w in sorted(cat.works.items()) if isinstance(w, dict)]
     authors = [a for _, a in sorted(cat.authors.items()) if isinstance(a, dict)]
     readings = cat.readings.get("readings", []) if isinstance(cat.readings, dict) else []
+    summary_items = cat.summaries.get("summaries", []) if isinstance(cat.summaries, dict) else []
+    bios = {s["scope"].split(":", 1)[1]: s for s in summary_items
+            if isinstance(s, dict) and str(s.get("scope", "")).startswith("autoria:")}
+    used_media = {(a.get("photo") or {}).get("file") for a in authors}
+    orphans = sorted(m for m in (cat.media or set()) if m.startswith("authors/") and m not in used_media)
 
     lines = [
         "# Cobertura do catálogo",
@@ -69,8 +95,27 @@ def render_coverage(cat: Catalog) -> str:
         "",
         "## Autorias",
         "",
-        *_table(author_rows(authors)),
+        *_table(author_rows(authors, bios)),
         "",
+        *_status_table(authors),
+        "",
+    ]
+    by_status = lambda s: [a for a in authors if (a.get("wikidata") or {}).get("status") == s]  # noqa: E731
+    pending_lists = [
+        ("Identificação ambígua (fixar em `pipeline/config/author_wikidata.json`)", by_status("ambiguous")),
+        ("Não encontradas no Wikidata", by_status("not_found")),
+        ("Identificadas, sem país", [a for a in authors if (a.get("wikidata") or {}).get("id") and not a.get("country")]),
+    ]
+    for title, items in pending_lists:
+        if items:
+            lines += [f"### {title}", ""]
+            lines += [f"- {a['name']} (`{a['slug']}`)" for a in items]
+            lines.append("")
+    if orphans:
+        lines += ["### Fotos órfãs em `catalog/media/`", ""]
+        lines += [f"- `{o}`" for o in orphans]
+        lines.append("")
+    lines += [
         "## Autorias unificadas",
         "",
     ]

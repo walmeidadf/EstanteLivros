@@ -3,11 +3,12 @@
   "name": "Nikolai Gógol",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "russo"
   ],
   "primaryLanguage": "russo",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

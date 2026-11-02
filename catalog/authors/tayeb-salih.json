@@ -3,11 +3,12 @@
   "name": "Tayeb Salih",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "árabe"
   ],
   "primaryLanguage": "árabe",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

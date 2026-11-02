@@ -11,13 +11,21 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["scope", "text", "approved", "updatedAt", "source"],
+        "required": [
+          "scope", "text", "approved", "updatedAt", "source", "sourceUrl",
+          "sourceLanguage", "model", "promptVersion", "editedBy"
+        ],
         "properties": {
           "scope": { "type": "string", "pattern": "^(autoria:[a-z0-9]+(-[a-z0-9]+)*|ano:[0-9]{4}|pais:[A-Z]{2})$" },
           "text": { "type": "string" },
           "approved": { "type": "boolean" },
           "updatedAt": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
-          "source": { "type": ["string", "null"], "minLength": 1 }
+          "source": { "type": ["string", "null"], "minLength": 1 },
+          "sourceUrl": { "type": ["string", "null"], "pattern": "^https?://" },
+          "sourceLanguage": { "type": ["string", "null"], "pattern": "^[a-z]{2,3}$" },
+          "model": { "type": ["string", "null"], "minLength": 1 },
+          "promptVersion": { "type": ["string", "null"], "minLength": 1 },
+          "editedBy": { "enum": ["human", null] }
         }
       }
     }

@@ -79,18 +79,37 @@ class ChecksTest(unittest.TestCase):
         self.assertEqual(self.codes(cat), ["vocab", "vocab"])
 
     def test_resumo_aprovado(self):
-        base = {"text": "Texto.", "approved": True, "updatedAt": "2026-11-01", "source": None}
+        s = helpers.summary
         cat = helpers.valid_catalog()
         cat.summaries["summaries"] = [
-            dict(base, scope="autoria:autora-a"), dict(base, scope="ano:2014"), dict(base, scope="pais:BR"),
-            dict(base, scope="ano:1999", approved=False, text=""),
+            s("autoria:autora-a", approved=True), s("ano:2014", approved=True), s("pais:BR", approved=True),
+            s("ano:1999", text=""),
         ]
         self.assertEqual(self.codes(cat), [])
         cat.summaries["summaries"] = [
-            dict(base, scope="autoria:ninguem"), dict(base, scope="ano:1999"),
-            dict(base, scope="pais:JP"), dict(base, scope="ano:2014", text="  "),
+            s("autoria:ninguem", approved=True), s("ano:1999", approved=True),
+            s("pais:JP", approved=True), s("ano:2015", text="  ", approved=True),
         ]
         self.assertEqual(self.codes(cat), ["summary.approved"] * 4)
+
+    def test_escopo_unico(self):
+        cat = helpers.valid_catalog()
+        cat.summaries["summaries"] = [helpers.summary("ano:2014"), helpers.summary("ano:2014")]
+        self.assertEqual(self.codes(cat), ["summary.scope-unique"])
+
+    def test_pais_fora_do_vocabulario(self):
+        cat = helpers.valid_catalog()
+        cat.authors["autor-b"]["country"] = "JP"
+        self.assertEqual(self.codes(cat), ["vocab.country"])
+
+    def test_foto_inexistente(self):
+        cat = helpers.valid_catalog()
+        cat.authors["autora-a"]["photo"] = {"file": "authors/autora-a.jpg", "license": None, "author": None,
+                                            "sourceUrl": "https://x.org/a.jpg", "source": "manual"}
+        cat.media = set()
+        self.assertEqual(self.codes(cat), ["photo.file"])
+        cat.media = {"authors/autora-a.jpg"}
+        self.assertEqual(self.codes(cat), [])
 
     def test_varios_erros_todos_reportados(self):
         cat = helpers.valid_catalog()

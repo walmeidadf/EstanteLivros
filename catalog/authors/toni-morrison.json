@@ -3,11 +3,12 @@
   "name": "Toni Morrison",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

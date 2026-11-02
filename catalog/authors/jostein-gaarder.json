@@ -3,11 +3,12 @@
   "name": "Jostein Gaarder",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "norueguês"
   ],
   "primaryLanguage": "norueguês",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

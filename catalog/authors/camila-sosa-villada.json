@@ -3,11 +3,12 @@
   "name": "Camila Sosa Villada",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

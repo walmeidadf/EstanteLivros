@@ -42,7 +42,8 @@ class BuildTest(unittest.TestCase):
 
     def test_autoria_nula_na_f1(self):
         a = self.cat.authors["han-kang"]
-        self.assertEqual((a["country"], a["bio"], a["photo"]), (None, None, None))
+        self.assertEqual((a["country"], a["countrySource"], a["wikidata"], a["photo"]), (None, None, None, None))
+        self.assertNotIn("bio", a)
         self.assertEqual((a["languages"], a["primaryLanguage"]), (["coreano"], "coreano"))
 
     def test_romanizacao_e_capa(self):
@@ -96,6 +97,7 @@ class BuildTest(unittest.TestCase):
         themes = self.cat.vocabularies["themes"]
         self.assertEqual(themes, sorted(themes, key=vocab_sort_key))
         self.assertEqual(self.cat.summaries, {"summaries": []})
+        self.assertEqual(self.cat.vocabularies["countries"], [])
 
     def test_ano_da_leitura(self):
         readings = [dict(r) for r in helpers.READINGS]
@@ -112,10 +114,29 @@ class BuildTest(unittest.TestCase):
     def test_resumos_existentes_preservados(self):
         with tempfile.TemporaryDirectory() as tmp:
             legacy = read_legacy(helpers.write_legacy(Path(tmp)))
-        existing = {"summaries": [{"scope": "ano:2024", "text": "x", "approved": False,
-                                   "updatedAt": "2026-11-01", "source": None}]}
+        existing = {"summaries": [helpers.summary("ano:2024")]}
         result = build(legacy, SlugRegistry(), OVERRIDES, existing)
         self.assertEqual(result.files["summaries.json"], existing)
+
+
+class PreserveEnrichmentTest(unittest.TestCase):
+    def test_preserva_campos_enriquecidos(self):
+        first = run_build().catalog
+        enriched = helpers.clone(first)
+        han = enriched.authors["han-kang"]
+        han.update(country="KR", countrySource="wikidata-citizenship",
+                   wikidata={"id": "Q5646626", "status": "confirmed", "evidence": "P50", "rulesVersion": 1},
+                   photo={"file": "authors/han-kang.jpg", "license": "CC BY-SA 4.0", "author": "X",
+                          "sourceUrl": "https://commons.wikimedia.org/x", "source": "commons"},
+                   references=[{"provider": "wikidata", "id": "Q5646626",
+                                "url": "https://www.wikidata.org/wiki/Q5646626"}])
+        enriched.vocabularies["countries"] = [{"code": "KR", "name": "Coreia do Sul", "languages": ["coreano"]}]
+        with tempfile.TemporaryDirectory() as tmp:
+            legacy = read_legacy(helpers.write_legacy(Path(tmp)))
+        again = build(legacy, SlugRegistry(), OVERRIDES, None, enriched).catalog
+        self.assertEqual(again.authors["han-kang"], han)
+        self.assertEqual(again.vocabularies["countries"], enriched.vocabularies["countries"])
+        self.assertIsNone(again.authors["neil-gaiman"]["country"])
 
 
 if __name__ == "__main__":

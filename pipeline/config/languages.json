@@ -1,0 +1,17 @@
+{
+  "alemão": { "qid": "Q188", "iso": "de" },
+  "árabe": { "qid": "Q13955", "iso": "ar" },
+  "catalão": { "qid": "Q7026", "iso": "ca" },
+  "coreano": { "qid": "Q9176", "iso": "ko" },
+  "espanhol": { "qid": "Q1321", "iso": "es" },
+  "francês": { "qid": "Q150", "iso": "fr" },
+  "hebraico": { "qid": "Q9288", "iso": "he" },
+  "holandês": { "qid": "Q7411", "iso": "nl" },
+  "inglês": { "qid": "Q1860", "iso": "en" },
+  "italiano": { "qid": "Q652", "iso": "it" },
+  "japonês": { "qid": "Q5287", "iso": "ja" },
+  "norueguês": { "qid": "Q9043", "iso": "nb" },
+  "português": { "qid": "Q5146", "iso": "pt" },
+  "russo": { "qid": "Q7737", "iso": "ru" },
+  "tcheco": { "qid": "Q9056", "iso": "cs" }
+}

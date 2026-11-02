@@ -57,7 +57,8 @@ def group_names(counts: Mapping[str, int],
     for key in sorted(buckets):
         variants = buckets[key]
         override = overrides.get(key)
-        if override:
+        # Overrides só de país (F2) não mexem no nome.
+        if override and override.get("name"):
             canonical = override["name"]
             group = AuthorGroup(key, canonical, overridden=True,
                                 forced_slug=override.get("slug"))

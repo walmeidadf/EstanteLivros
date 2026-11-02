@@ -1,0 +1,264 @@
+{
+ "results": {
+  "bindings": [
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q131429088"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-0-553-44818-4"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "ol": {
+     "type": "literal",
+     "value": "OL17334243W"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q131429088"
+    },
+    "ol": {
+     "type": "literal",
+     "value": "OL25910450M"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q131429088"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "0-553-44818-8"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "label": {
+     "xml:lang": "ko",
+     "type": "literal",
+     "value": "채식주의자"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q131429088"
+    },
+    "label": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "The Vegetarian"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "0-553-44818-8"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "1-101-90611-1"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-80-207-1755-9"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-3-351-03653-9"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-0-553-44818-4"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-84-17388-79-9"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-4-904855-02-7"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "isbn": {
+     "type": "literal",
+     "value": "978-1-101-90611-8"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q131429088"
+    },
+    "label": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "The Vegetarian"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "label": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "The Vegetarian"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "label": {
+     "xml:lang": "ko",
+     "type": "literal",
+     "value": "채식주의자"
+    }
+   },
+   {
+    "author": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5646626"
+    },
+    "work": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q24082770"
+    },
+    "label": {
+     "xml:lang": "pt",
+     "type": "literal",
+     "value": "A Vegetariana"
+    }
+   }
+  ]
+ }
+}

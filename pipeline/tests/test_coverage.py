@@ -19,7 +19,18 @@ class CoverageTest(unittest.TestCase):
         self.assertEqual(rows["Romanização (títulos originais não latinos)"], (0, 1))
         authors = {name: (f, t) for name, f, t in author_rows(list(self.cat.authors.values()))}
         self.assertEqual(authors["País"], (2, 2))
-        self.assertEqual(authors["Bio"], (0, 2))
+        self.assertEqual(authors["Bio aprovada"], (0, 2))
+        self.assertEqual(authors["Foto"], (0, 2))
+
+    def test_bios_status_e_orfas(self):
+        self.cat.summaries["summaries"] = [helpers.summary("autoria:autora-a", approved=True)]
+        self.cat.authors["autor-b"]["wikidata"] = {"id": None, "status": "ambiguous", "evidence": "x", "rulesVersion": 1}
+        self.cat.media = {"authors/sobrou.jpg"}
+        text = render_coverage(self.cat)
+        self.assertIn("| Bio aprovada | 1 | 2 | 50,0% |", text)
+        self.assertIn("| ambígua | 1 |", text)
+        self.assertIn("- Autor B (`autor-b`)", text)
+        self.assertIn("`authors/sobrou.jpg`", text)
 
     def test_conteudo_e_determinismo(self):
         text = render_coverage(self.cat)

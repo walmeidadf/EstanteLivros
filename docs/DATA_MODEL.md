@@ -73,24 +73,46 @@ catalog/
 
 ```json
 {
-  "slug": "luis-fernando-verissimo",
-  "name": "Luís Fernando Veríssimo",
-  "aliases": ["Luis Fernando Verissimo"],
-  "country": null,
-  "languages": ["português"],
-  "primaryLanguage": "português",
-  "bio": null,
-  "photo": null,
-  "references": []
+  "slug": "han-kang",
+  "name": "Han Kang",
+  "aliases": [],
+  "country": "KR",
+  "countrySource": "wikidata-citizenship",
+  "languages": ["coreano"],
+  "primaryLanguage": "coreano",
+  "wikidata": {
+    "id": "Q5646626",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Vegetariana\" (título)",
+    "rulesVersion": 1
+  },
+  "photo": {
+    "file": "authors/han-kang.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "John Sears",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:…",
+    "source": "commons"
+  },
+  "references": [
+    { "provider": "wikidata", "id": "Q5646626", "url": "https://www.wikidata.org/wiki/Q5646626" }
+  ]
 }
 ```
 
 - `aliases`: outras grafias encontradas nos dados (unificadas por acento e caixa).
 - `languages`: idiomas originais das obras dela na estante, do mais frequente ao
   menos frequente. `primaryLanguage` (o primeiro) define a cor do avatar.
-- `country`: código ISO de 2 letras. `null` até a F2.
-- `bio` (F2): `{ "text", "source", "url" }`. `photo` (F2):
-  `{ "file", "license", "author", "sourceUrl" }`, só com licença livre.
+- `country`: país **principal**, código ISO de 2 letras (está em
+  `vocabularies.countries`). `countrySource`: `wikidata-citizenship`,
+  `wikidata-birthplace` ou `override` (`pipeline/config/author_overrides.json`).
+- `wikidata.status`: `confirmed` (autora de uma obra da estante no Wikidata),
+  `probable` (único escritor com o nome), `manual`, `ambiguous`, `not_found` ou
+  `none` (marcada à mão como sem Wikidata). Sem `id` nos três últimos.
+- `photo.file`: relativo a `catalog/media/`. `source`: `commons` (automática) ou
+  `wikipedia`/`serpapi`/`tavily`/`manual` (escolhida na revisão,
+  `pipeline/config/author_photos.json`). `license`/`author` podem ser `null`.
+- **Não há `bio` na autoria**: a bio é um resumo `autoria:{slug}` em
+  `summaries.json`.
 
 ## Leitura
 
@@ -119,17 +141,34 @@ catalog/
 
 ```json
 { "summaries": [
-  { "scope": "ano:2024", "text": "…", "approved": false, "updatedAt": "2026-11-01", "source": "…" }
+  {
+    "scope": "autoria:han-kang",
+    "text": "Han Kang é uma escritora sul-coreana…",
+    "approved": false,
+    "updatedAt": "2026-11-02",
+    "source": "Wikipédia (en)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han_Kang",
+    "sourceLanguage": "en",
+    "model": "gpt-5.4-mini",
+    "promptVersion": "author-bio-v1",
+    "editedBy": null
+  }
 ] }
 ```
 
-- `scope`: `autoria:{slug}`, `ano:{aaaa}` ou `pais:{ISO}`. Não há resumo de obra.
+- `scope`: `autoria:{slug}` (bio), `ano:{aaaa}` ou `pais:{ISO}`. Não há resumo de
+  obra. No máximo um resumo por escopo.
+- `editedBy: "human"` quando o texto foi editado na revisão.
+- Aprovar, rejeitar e editar: `pipeline/review_summaries.py`. Rejeições ficam em
+  `pipeline/config/summary_rejections.json` (não são geradas de novo).
 - Só aparece no app com `approved: true`, que exige texto e escopo existente.
 - A migração preserva o `summaries.json` existente.
 
 ## Vocabulários
 
-`vocabularies.json` lista os valores permitidos de idioma, tipo, gênero e tema.
+`vocabularies.json` lista os valores permitidos de idioma, tipo, gênero e tema,
+e os países usados (`countries`: `{ code, name, languages }`, nomes em pt-BR, de
+`pipeline/config/countries.json`).
 Na F1 eles são **derivados dos dados**, ordenados sem acento. Na F2, os temas
 viram uma lista fechada e editada à mão.
 
@@ -146,6 +185,9 @@ viram uma lista fechada e editada à mão.
 | `year.undated-head` | leituras 1–53 (`UNDATED_HEAD`) não têm ano; o registro 54 inicia 2014 |
 | `reread.order` | `reread: true` ⇔ não é a primeira leitura da obra |
 | `vocab` | idiomas, tipos, gêneros e temas estão nos vocabulários |
+| `vocab.country` | `country` de toda autoria está em `vocabularies.countries` |
+| `photo.file` | a foto referenciada existe em `catalog/media/` |
+| `summary.scope-unique` | no máximo um resumo por escopo |
 | `summary.approved` | resumo aprovado tem texto e escopo existente |
 
 Uma obra lida mais de uma vez é **uma** obra com várias leituras.

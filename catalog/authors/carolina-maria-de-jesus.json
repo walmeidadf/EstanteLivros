@@ -3,11 +3,12 @@
   "name": "Carolina Maria de Jesus",
   "aliases": [],
   "country": null,
+  "countrySource": null,
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "bio": null,
+  "wikidata": null,
   "photo": null,
   "references": []
 }

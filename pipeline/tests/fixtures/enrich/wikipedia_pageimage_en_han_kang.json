@@ -1,0 +1,18 @@
+{
+ "batchcomplete": true,
+ "query": {
+  "pages": [
+   {
+    "pageid": 28222070,
+    "ns": 0,
+    "title": "Han Kang",
+    "thumbnail": {
+     "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Han_Kang%2C_2024_Nobel_Prize_Laureate_in_Literature_%28cropped%29.jpg/1280px-Han_Kang%2C_2024_Nobel_Prize_Laureate_in_Literature_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+     "width": 1200,
+     "height": 1613
+    },
+    "pageimage": "Han_Kang,_2024_Nobel_Prize_Laureate_in_Literature_(cropped).jpg"
+   }
+  ]
+ }
+}

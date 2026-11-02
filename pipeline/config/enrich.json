@@ -1,0 +1,43 @@
+{
+  "rulesVersion": 1,
+  "bioSourceLanguages": ["pt", "en", "es", "fr", "it"],
+  "minIntroChars": 300,
+  "minFallbackIntroChars": 120,
+  "bio": {
+    "minChars": 80,
+    "maxChars": 450,
+    "promptVersion": "author-bio-v1",
+    "maxSourceChars": 4000,
+    "maxSources": 3,
+    "estimatedOutputTokens": 150
+  },
+  "photo": {
+    "minSide": 400,
+    "rejectBelow": 200,
+    "commonsWidth": 1200,
+    "maxCandidates": 3,
+    "order": ["commons", "wikipedia", "serpapi", "tavily"]
+  },
+  "queries": {
+    "serpapiPhoto": "{name} escritor {work}",
+    "tavilyBio": "{name} escritor(a) {work} biografia"
+  },
+  "excludedDomains": [
+    "linkedin.com",
+    "facebook.com",
+    "instagram.com",
+    "tiktok.com",
+    "x.com",
+    "twitter.com",
+    "youtube.com",
+    "pinterest.com"
+  ],
+  "minIntervalSeconds": {
+    "wikidata": 0.2,
+    "wikipedia": 0.2,
+    "commons": 0.2,
+    "serpapi": 1.0,
+    "tavily": 1.0,
+    "openai": 0.5
+  }
+}
