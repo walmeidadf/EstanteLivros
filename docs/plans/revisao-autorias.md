@@ -38,16 +38,18 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Alex Michaelides (`alex-michaelides`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Alex_Michaelides)):
 
   > Alex Michaelides (nascido em 1977) é um autor e roteirista britânico-cipriota. Escreve thrillers psicológicos; seu romance de estreia, “A Paciente Silenciosa”, foi um best-seller do New York Times e do Sunday Times.
 
 ## Alexandre Vidal Porto (`alexandre-vidal-porto`)
 
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - Foto: foto do Commons descartada: imagem pequena demais (274×182).
-- Sem bio: sem fonte encontrada.
+- **Bio para aprovar** (fonte: [Alexandre Vidal Porto – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Alexandre_Vidal_Porto)):
+
+  > Alexandre Vidal Porto (São Paulo) é escritor e diplomata brasileiro. Em sua obra, publica ficção, como “Sergio Y. vai à América”.
 
 ## Alice Munro (`alice-munro`)
 
@@ -57,7 +59,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Aline Bei (`aline-bei`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Aline_Bei)):
 
   > Aline Bei (1987) é uma escritora brasileira, nascida em São Paulo. Sua obra inclui romances como O peso do pássaro morto (2017) e Pequena coreografia do adeus (2021), com destaque para a estreia premiada com o Prêmio São Paulo de Literatura.
@@ -141,14 +143,16 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Beatriz Leal (`beatriz-leal`)
 
 - **Identificação not_found**: nenhum escritor com o mesmo nome nem obra casada. Candidatos: Q106353850 (film critic).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Beatriz Leal](https://ceh.elach.uminho.pt/womanart?cat=197)):
+
+  > Paulistana radicada em Brasília, Beatriz Leal é jornalista. Seu livro “Mulheres que mordem” foi finalista do Prêmio Jabuti e sugere narrativas centradas em mulheres em busca de justiça.
 
 ## Beatriz Leal Craveiro (`beatriz-leal-craveiro`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- Sem bio: fontes insuficientes.
 
 ## bell hooks (`bell-hooks`)
 
@@ -171,7 +175,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Betina Anton (`betina-anton`)
 
 - Identificação provável: [Q138388853](https://www.wikidata.org/wiki/Q138388853) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Betina_Anton)):
 
   > Betina Anton (nascida em 1979) é uma jornalista e escritora brasileira. É autora de “Baviera Tropical”, livro de não ficção que recebeu o 66º Prêmio Jabuti na categoria biografia e reportagem.
@@ -245,8 +249,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Carolina Schettini (`carolina-schettini`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Arquivo de Carolina Schettini - Caravana Grupo Editorial](https://caravanagrupoeditorial.com/autor/carolina-schettini)):
+
+  > Carolina Schettini é uma autora brasileira. Escreve romances, contos, crônicas, ensaios e infantojuvenil. Em Águas de telhado, aborda uma história divertida.
 
 ## Charlotte Brontë (`charlotte-bronte`)
 
@@ -264,7 +270,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Cho Nam-Joo (`cho-nam-joo`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (es)](https://es.wikipedia.org/wiki/Cho_Nam-joo)):
 
   > Cho Nam-joo (Seul, Coreia do Sul, 1978) é uma escritora coreana. É autora de “Kim Jiyoung, nascida em 1982”, romance que retrata a desigualdade de gênero na Coreia do Sul, da infância à discriminação e ao assédio no trabalho.
@@ -319,8 +325,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Daniela Auad (`daniela-auad`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [SciELO Brazil - Educar meninas e meninos: relações de gênero na escola Educar meninas e meninos: relações de gênero na escola](https://www.scielo.br/j/er/a/DHzP46GbT63GBvh3NYKBLpx)):
+
+  > Daniela Auad é uma militante feminista brasileira. Em “Educar meninas e meninos: relações de gênero na escola”, discute a escola mista e a coeducação a partir da análise de práticas escolares, mostrando como o cotidiano pode reforçar desigualdades de gênero ou promover a igualdade pelo respeito às diferenças.
 
 ## Danielle Steel (`danielle-steel`)
 
@@ -330,14 +338,14 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Delia Owens (`delia-owens`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Delia_Owens)):
 
   > Delia Owens (1949–) é uma autora, zoologista e conservacionista dos Estados Unidos. Ficou conhecida por romances como “Where the Crawdads Sing” e por memórias sobre a África; sua obra também se liga à vida na natureza e à conservação.
 
 ## Donna Tartt (`donna-tartt`)
 
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - Foto: foto do Commons descartada: imagem pequena demais (167×251).
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Donna_Tartt)):
 
@@ -387,7 +395,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Eliana Alves Cruz (`eliana-alves-cruz`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Eliana_Alves_Cruz)):
 
   > Eliana Alves Cruz (Rio de Janeiro, 1966) é uma jornalista e escritora brasileira. Sua obra se dedica בעיקרmente à ficção e aos contos, com ênfase em perspectivas afro-brasileiras.
@@ -403,7 +411,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 - País: sem cidadania nem local de nascimento mapeável.
 - **Sem país**: definir `country` em `pipeline/config/author_overrides.json`.
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Elise_Loehnen)):
 
   > Elise Loehnen é uma escritora americana e apresentadora do podcast Pulling the Thread. Em “On Our Best Behaviour” (2023), ela explora como os sete pecados capitais moldaram o comportamento das mulheres e a forma como elas se policiam entre si.
@@ -430,14 +438,16 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Eugênio Vinci de Moraes (`eugenio-vinci-de-moraes`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - Sem bio: sem fonte encontrada.
 
 ## Fabiane Guimarães (`fabiane-guimaraes`)
 
 - Identificação provável: [Q134385388](https://www.wikidata.org/wiki/Q134385388) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Fabiane Guimarães: 'Percebo alguns temas recorrentes no meu ...](https://diplomatique.org.br/fabiane-guimaraes-percebo-alguns-temas-recorrentes-no-meu-trabalho-de-uma-forma-geral-como-a-morte-a-solidao-e-o-tempo)):
+
+  > Fabiane Guimarães nasceu no interior de Goiás. É autora dos romances “Apague a luz se for chorar” e “Como se fosse um monstro”, e em sua obra aparecem temas recorrentes como a morte, a solidão e o tempo, com prosa precisa e límpida.
 
 ## Fernando Sabino (`fernando-sabino`)
 
@@ -463,7 +473,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Freida McFadden (`freida-mcfadden`)
 
 - Identificação provável: [Q121304449](https://www.wikidata.org/wiki/Q121304449) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Freida_McFadden)):
 
   > Freida McFadden (Nova Iorque, 1980) é uma escritora norte-americana e médica. Seus livros, como “The Housemaid”, têm forte apelo de suspense e figuram entre os mais vendidos.
@@ -476,7 +486,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Gabriela Prioli (`gabriela-prioli`)
 
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Gabriela_Prioli)):
 
   > Gabriela Prioli Della Vedova (São Paulo, 1986) é uma advogada criminalista, professora universitária, comentarista política, apresentadora de TV e escritora brasileira. Sua obra inclui temas de política e debate público, em linguagem voltada ao grande público.
@@ -497,8 +507,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Giovana Madalosso (`giovana-madalosso`)
 
 - Identificação provável: [Q51882414](https://www.wikidata.org/wiki/Q51882414) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Giovana Madalosso](https://www.almedina.net/autor/giovana-madalosso-1634644876)):
+
+  > Giovana Madalosso nasceu em Curitiba, em 1975. É autora de romances como “Suíte Tóquio”, “Batida Só” e “Tudo Pode Ser Roubado”, e escreve sobre literatura brasileira contemporânea. Também é colunista da Folha de S.Paulo.
 
 ## Graciliano Ramos (`graciliano-ramos`)
 
@@ -520,7 +532,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Harper Lee (`harper-lee`)
 
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - Foto: foto do Commons descartada: imagem pequena demais (169×244).
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Harper_Lee)):
 
@@ -605,8 +617,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Javier A. Contreras (`javier-a-contreras`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Javier Arancibia Contreras – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Javier_Arancibia_Contreras)):
+
+  > Javier Arancibia Contreras (Salvador, 1976) é um escritor brasileiro. Sua obra inclui romances como Crocodilo e traz personagens e narrativas ligadas a fatos e ao universo policial.
 
 ## Javier Marías (`javier-marias`)
 
@@ -652,7 +666,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## John Taylor Gatto (`john-taylor-gatto`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/John_Taylor_Gatto)):
 
   > John Taylor Gatto (Estados Unidos, 1935–2018) foi um autor, professor e figura pública americano. Escreveu livros sobre as escolas americanas, e é conhecido por obras como “Emburrecimento Programado” e “The Underground History of American Education”, que promovem o autodidatismo, o unschooling e o homeschooling.
@@ -685,8 +699,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## José Aguiar (`jose-aguiar`)
 
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Dom Casmurro – Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Dom_Casmurro)):
+
+  > José Aguiar é um quadrinista brasileiro. É um dos autores de adaptações em quadrinhos de obras literárias, como Dom Casmurro, e também trabalha com o formato de HQ.
 
 ## José J. Veiga (`jose-j-veiga`)
 
@@ -723,8 +739,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Juliana Leite (`juliana-leite`)
 
 - Identificação provável: [Q59104188](https://www.wikidata.org/wiki/Q59104188) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Humanos Exemplares de Juliana Leite - Livro - WOOK](https://www.wook.pt/livro/humanos-exemplares-juliana-leite/31611633)):
+
+  > Juliana Leite nasceu em 1983, no Rio de Janeiro. Escreve romances e, em sua obra, aborda velhice, morte, memória e os dias perigosos e incompreensíveis da vida.
 
 ## Jun'ichirō Tanizaki (`jun-ichiro-tanizaki`)
 
@@ -767,15 +785,15 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Kim Hye-jin (`kim-hye-jin`)
 
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- Sem bio: fontes insuficientes.
 
 ## Lara Prescott (`lara-prescott`)
 
 - País: sem cidadania nem local de nascimento mapeável.
 - **Sem país**: definir `country` em `pipeline/config/author_overrides.json`.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- Sem bio: fontes insuficientes.
 
 ## Lázaro Ramos (`lazaro-ramos`)
 
@@ -866,7 +884,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Maria Valéria Rezende (`maria-valeria-rezende`)
 
 - Identificação provável: [Q18277459](https://www.wikidata.org/wiki/Q18277459) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (es)](https://es.wikipedia.org/wiki/Maria_Val%C3%A9ria_Rezende)):
 
   > Maria Valéria Rezende (Santos, 1942) é uma escritora e monja brasileira. Sua obra inclui romances e recebeu o Prêmio Jabuti, o Prêmio Casa de las Américas e o Prêmio São Paulo de Literatura.
@@ -907,7 +925,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Martha Batalha (`martha-batalha`)
 
 - Identificação provável: [Q23893509](https://www.wikidata.org/wiki/Q23893509) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Martha_Batalha)):
 
   > Martha Batalha é uma escritora, jornalista e editora brasileira. É conhecida pelo romance de estreia A Vida Invisível de Eurídice Gusmão, que foi adaptado para o filme Invisible Life, de 2019, dirigido por Karim Aïnouz.
@@ -915,7 +933,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Martha Medeiros (`martha-medeiros`)
 
 - Identificação provável: [Q3850004](https://www.wikidata.org/wiki/Q3850004) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - Foto: foto do Commons descartada: imagem pequena demais (290×193).
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Martha_Medeiros)):
 
@@ -923,8 +941,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Mary Lynn Bracht (`mary-lynn-bracht`)
 
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Entrevista: Mary Lynn Bracht, autora de “Herdeiras do mar” - Blog da TAG](https://www.taglivros.com/blog/entrevista-mary-lynn-bracht-autora-de-herdeiras-do-mar)):
+
+  > Mary Lynn Bracht é uma escritora dos Estados Unidos. Seus livros se voltam à história das mulheres coreanas, com atenção às marcas da ocupação japonesa da Coreia e à memória das mulheres em tempos de guerra.
 
 ## Mary Shelley (`mary-shelley`)
 
@@ -943,8 +963,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Maurício Gomyde (`mauricio-gomyde`)
 
 - Identificação provável: [Q23892725](https://www.wikidata.org/wiki/Q23892725) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Maurício Gomyde - Portal da Literatura](https://www.portaldaliteratura.com/autores.php?autor=2857)):
+
+  > Maurício Gomyde nasceu em São Paulo e vive em Brasília desde os três anos de idade. Escreve romances como Surpreendente!, e também é compositor e baterista.
 
 ## Maurício Lyrio (`mauricio-lyrio`)
 
@@ -975,11 +997,13 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Michel Laub (`michel-laub`)
 
 - Identificação provável: [Q10329489](https://www.wikidata.org/wiki/Q10329489) — único escritor com o mesmo nome (sem obra casada).
-- Sem bio: sem fonte encontrada.
+- **Bio para aprovar** (fonte: [Biografia - Michel Laub - WordPress.com](https://michellaub.wordpress.com/biografia-contato-entrevistas)):
+
+  > Michel Laub nasceu em Porto Alegre, em 1973. Escritor e jornalista, seus romances abordam memória e biografia, com narradores que exploram a própria vida e a de outras gerações.
 
 ## Michiko Aoyama (`michiko-aoyama`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (fr)](https://fr.wikipedia.org/wiki/Michiko_Aoyama)):
 
   > Michiko Aoyama, nascida em 1970 na província de Saitama, no Japão, é jornalista e escritora. Sua obra inclui romances, como “A biblioteca dos sonhos secretos”.
@@ -1045,7 +1069,9 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Natália Borges Polesso (`natalia-borges-polesso`)
 
 - Identificação provável: [Q20048752](https://www.wikidata.org/wiki/Q20048752) — único escritor com o mesmo nome (sem obra casada).
-- Sem bio: sem fonte encontrada.
+- **Bio para aprovar** (fonte: [Natalia Borges Polesso](https://www.companhiadasletras.com.br/autor/natalia-borges-polesso)):
+
+  > Natália Borges Polesso é escritora e tradutora brasileira. Em sua obra, transita por narrativas que podem ser lidas como distopia cotidiana, abordando o colapso social, ambiental e afetivo.
 
 ## Neige Sinno (`neige-sinno`)
 
@@ -1125,8 +1151,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Penny Hancock (`penny-hancock`)
 
 - **Identificação not_found**: nenhum escritor com o mesmo nome nem obra casada. Candidatos: Q93433860 (sem descrição); Q93150078 (researcher (ORCID 0000-0001-5531-1082)).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [EU NÃO SEI QUEM VOCÊ É - HANCOCK, PENNY](https://www.martinsfontespaulista.com.br/eu-nao-sei-quem-voce-e-966062/p)):
+
+  > Penny Hancock é uma escritora, jornalista e professora inglesa. Escreve romances e contos, com atenção a temas como família e abuso sexual de menores.
 
 ## Pilar Quintana (`pilar-quintana`)
 
@@ -1161,8 +1189,8 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Renato Fino (`renato-fino`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- Sem bio: fontes insuficientes.
 
 ## Rita Carelli (`rita-carelli`)
 
@@ -1182,7 +1210,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 - País: Estado extinto Império Russo → RU.
 - País: país Q207272 não mapeado em countries.json.
 - País: país escolhido entre vários: FR, RU → FR.
-- **Sem foto**: 1 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (pt)](https://pt.wikipedia.org/wiki/Romain_Gary)):
 
   > Romain Gary (1914–1980) foi um romancista francês nascido em Vilnius, Lituânia. Escreveu romances e usou os pseudônimos Émile Ajar, Fosco Sinibaldi, Shatan Bogat, René Deville e Lucien Brûlard; foi o único escritor a receber duas vezes o Prêmio Goncourt.
@@ -1215,7 +1243,9 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Sheila Heti (`sheila-heti`)
 
-- Sem bio: sem fonte encontrada.
+- **Bio para aprovar** (fonte: [Em 'Maternidade', Sheila Heti analisa causas da pressão para ser mãe - 27/05/2019 - Ilustrada - Folha](https://www1.folha.uol.com.br/ilustrada/2019/05/em-maternidade-sheila-heti-analisa-causas-da-pressao-para-ser-mae.shtml)):
+
+  > Sheila Heti é uma escritora canadense nascida em 1976. Sua obra mistura ficção e ensaio filosófico, com foco em questões como maternidade, desejo e a decisão de ter filhos, em narrativas íntimas e autorreflexivas.
 
 ## Sidarta Ribeiro (`sidarta-ribeiro`)
 
@@ -1239,8 +1269,10 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Stefanie Stahl (`stefanie-stahl`)
 
 - Identificação provável: [Q1236576](https://www.wikidata.org/wiki/Q1236576) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- **Bio para aprovar** (fonte: [Stefanie Stahl - Livros, Biografia E Ofertas - Booklover](https://booklover.com.br/autor/stefanie-stahl)):
+
+  > Stefanie Stahl é uma psicóloga alemã nascida em 1963, em Hamburgo. Sua obra se concentra na psicologia e no desenvolvimento pessoal.
 
 ## Stephen Chbosky (`stephen-chbosky`)
 
@@ -1283,7 +1315,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## Taylor Jenkins Reid (`taylor-jenkins-reid`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Taylor_Jenkins_Reid)):
 
   > Taylor Jenkins Reid (nascida em 1983) é uma autora norte-americana. Escreve romances como Os Sete Maridos de Evelyn Hugo, Daisy Jones & The Six e Malibu Rising, e vários deles já chegaram ao primeiro lugar da lista do New York Times.
@@ -1303,7 +1335,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Valéria Piassa Polizzi (`valeria-piassa-polizzi`)
 
 - Identificação provável: [Q9092563](https://www.wikidata.org/wiki/Q9092563) — único escritor com o mesmo nome (sem obra casada).
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (es)](https://es.wikipedia.org/wiki/Val%C3%A9ria_Piassa_Polizzi)):
 
   > Valéria Piassa Polizzi (São Paulo, 1971) é uma escritora brasileira. Em sua obra, destaca-se a autobiografia e relatos ligados à experiência com o HIV, como “Depois daquela viagem” e “Por que a mim?”.
@@ -1317,8 +1349,8 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 ## Valeska Zanello (`valeska-zanello`)
 
 - **Identificação not_found**: nenhum humano na busca do Wikidata.
-- **Sem foto** e sem candidatas.
-- Sem bio: sem fonte encontrada.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
+- Sem bio: fontes insuficientes.
 
 ## valter hugo mãe (`valter-hugo-mae`)
 
@@ -1360,7 +1392,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 - Identificação provável: [Q28167033](https://www.wikidata.org/wiki/Q28167033) — único escritor com o mesmo nome (sem obra casada).
 - País: sem cidadania nem local de nascimento mapeável.
 - **Sem país**: definir `country` em `pipeline/config/author_overrides.json`.
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/Will_Schwalbe)):
 
   > Will Schwalbe (1962–) é um escritor americano de Nova York. Em seus livros, aborda a comunicação por e-mail, a leitura e a relação com a mãe, como em “The End of Your Life Book Club”; também escreveu ensaios sobre 26 livros que marcaram sua vida em “Books for Living”.
@@ -1373,7 +1405,7 @@ vão em `pipeline/config/` (QIDs, fotos, países) ou pelo `review_summaries.py` 
 
 ## William Zinsser (`william-zinsser`)
 
-- **Sem foto** e sem candidatas.
+- **Sem foto**: 3 candidata(s) em `docs/plans/revisao-fotos.html`.
 - **Bio para aprovar** (fonte: [Wikipédia (en)](https://en.wikipedia.org/wiki/William_Zinsser)):
 
   > William Zinsser (1922–2015) foi um escritor, editor e professor الأمريكي? الأمريكي?
@@ -1424,6 +1456,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:albert-camus \
   autoria:alejandro-zambra \
   autoria:alex-michaelides \
+  autoria:alexandre-vidal-porto \
   autoria:alice-munro \
   autoria:aline-bei \
   autoria:amos-oz \
@@ -1438,6 +1471,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:ayelet-gundar-goshen \
   autoria:ayobami-adebayo \
   autoria:banana-yoshimoto \
+  autoria:beatriz-leal \
   autoria:bell-hooks \
   autoria:benjamin-moser \
   autoria:bernardine-evaristo \
@@ -1452,6 +1486,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:carmen-maria-machado \
   autoria:carol-bensimon \
   autoria:carolina-maria-de-jesus \
+  autoria:carolina-schettini \
   autoria:charlotte-bronte \
   autoria:chimamanda-ngozi-adichie \
   autoria:cho-nam-joo \
@@ -1462,6 +1497,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:cristina-rivera-garza \
   autoria:cristovao-tezza \
   autoria:daniel-galera \
+  autoria:daniela-auad \
   autoria:danielle-steel \
   autoria:delia-owens \
   autoria:donna-tartt \
@@ -1477,6 +1513,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:emily-bronte \
   autoria:erico-verissimo \
   autoria:ernest-hemingway \
+  autoria:fabiane-guimaraes \
   autoria:fernando-sabino \
   autoria:fiodor-dostoievski \
   autoria:franz-kafka \
@@ -1485,6 +1522,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:gabriela-prioli \
   autoria:gael-faye \
   autoria:george-orwell \
+  autoria:giovana-madalosso \
   autoria:graciliano-ramos \
   autoria:gustave-flaubert \
   autoria:han-kang \
@@ -1501,6 +1539,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:itamar-vieira-junior \
   autoria:jamil-chade \
   autoria:jarid-arraes \
+  autoria:javier-a-contreras \
   autoria:javier-marias \
   autoria:jean-rhys \
   autoria:jeferson-tenorio \
@@ -1513,11 +1552,13 @@ python3 pipeline/review_summaries.py --approve \
   autoria:jon-fosse \
   autoria:jonathan-littell \
   autoria:jorge-amado \
+  autoria:jose-aguiar \
   autoria:jose-j-veiga \
   autoria:jose-saramago \
   autoria:jostein-gaarder \
   autoria:juan-rulfo \
   autoria:judith-butler \
+  autoria:juliana-leite \
   autoria:jun-ichiro-tanizaki \
   autoria:jung-chang \
   autoria:karen-m-mcmanus \
@@ -1545,12 +1586,15 @@ python3 pipeline/review_summaries.py --approve \
   autoria:markus-zusak \
   autoria:martha-batalha \
   autoria:martha-medeiros \
+  autoria:mary-lynn-bracht \
   autoria:mary-shelley \
   autoria:matt-haig \
+  autoria:mauricio-gomyde \
   autoria:mauricio-lyrio \
   autoria:maya-angelou \
   autoria:merce-rodoreda \
   autoria:mia-couto \
+  autoria:michel-laub \
   autoria:michiko-aoyama \
   autoria:miguel-sousa-tavares \
   autoria:mikhail-bulgakov \
@@ -1560,6 +1604,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:miranda-july \
   autoria:moacyr-scliar \
   autoria:mohamed-mbougar-sarr \
+  autoria:natalia-borges-polesso \
   autoria:neige-sinno \
   autoria:nikolai-gogol \
   autoria:nina-george \
@@ -1572,6 +1617,7 @@ python3 pipeline/review_summaries.py --approve \
   autoria:patti-smith \
   autoria:paulina-chiziane \
   autoria:paulo-coelho \
+  autoria:penny-hancock \
   autoria:pilar-quintana \
   autoria:rachel-de-queiroz \
   autoria:raduan-nassar \
@@ -1584,9 +1630,11 @@ python3 pipeline/review_summaries.py --approve \
   autoria:rupi-kaur \
   autoria:sandro-veronesi \
   autoria:scholastique-mukasonga \
+  autoria:sheila-heti \
   autoria:sidarta-ribeiro \
   autoria:simone-de-beauvoir \
   autoria:socorro-acioli \
+  autoria:stefanie-stahl \
   autoria:stephen-chbosky \
   autoria:svetlana-aleksievitch \
   autoria:sylvia-plath \

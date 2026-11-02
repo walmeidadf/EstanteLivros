@@ -23,7 +23,7 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 | País | 202 | 215 | 94,0% |
 | Foto | 174 | 215 | 80,9% |
 | Foto do Commons | 173 | 215 | 80,5% |
-| Bio proposta (inclui aprovadas) | 193 | 215 | 89,8% |
+| Bio proposta (inclui aprovadas) | 209 | 215 | 97,2% |
 | Bio aprovada | 0 | 215 | 0,0% |
 
 | Identificação | Autorias |

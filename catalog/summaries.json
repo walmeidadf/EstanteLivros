@@ -73,6 +73,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:alexandre-vidal-porto",
+      "text": "Alexandre Vidal Porto (São Paulo) é escritor e diplomata brasileiro. Em sua obra, publica ficção, como “Sergio Y. vai à América”.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Alexandre Vidal Porto – Wikipédia, a enciclopédia livre",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Alexandre_Vidal_Porto",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:alice-munro",
       "text": "Alice Munro (1931–2024) foi uma escritora canadense de contos. Sua obra foi descrita como revolucionária na arquitetura do conto moderno, com narrativas que avançam e recuam no tempo e ciclos integrados de contos de ficção.",
       "approved": false,
@@ -236,6 +248,18 @@
       "source": "Wikipédia (it)",
       "sourceUrl": "https://it.wikipedia.org/wiki/Banana_Yoshimoto",
       "sourceLanguage": "it",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:beatriz-leal",
+      "text": "Paulistana radicada em Brasília, Beatriz Leal é jornalista. Seu livro “Mulheres que mordem” foi finalista do Prêmio Jabuti e sugere narrativas centradas em mulheres em busca de justiça.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Beatriz Leal",
+      "sourceUrl": "https://ceh.elach.uminho.pt/womanart?cat=197",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -409,6 +433,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:carolina-schettini",
+      "text": "Carolina Schettini é uma autora brasileira. Escreve romances, contos, crônicas, ensaios e infantojuvenil. Em Águas de telhado, aborda uma história divertida.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Arquivo de Carolina Schettini - Caravana Grupo Editorial",
+      "sourceUrl": "https://caravanagrupoeditorial.com/autor/carolina-schettini",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:charlotte-bronte",
       "text": "Charlotte Brontë (1816–1855) foi uma escritora e poetisa inglesa nascida em Thornton, Reino Unido. Escreveu romances em inglês, e seu livro mais conhecido é Jane Eyre, publicado sob o pseudônimo Currer Bell.",
       "approved": false,
@@ -524,6 +560,18 @@
       "source": "Wikipédia (pt)",
       "sourceUrl": "https://pt.wikipedia.org/wiki/Daniel_Galera",
       "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:daniela-auad",
+      "text": "Daniela Auad é uma militante feminista brasileira. Em “Educar meninas e meninos: relações de gênero na escola”, discute a escola mista e a coeducação a partir da análise de práticas escolares, mostrando como o cotidiano pode reforçar desigualdades de gênero ou promover a igualdade pelo respeito às diferenças.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "SciELO Brazil - Educar meninas e meninos: relações de gênero na escola Educar meninas e meninos: relações de gênero na escola",
+      "sourceUrl": "https://www.scielo.br/j/er/a/DHzP46GbT63GBvh3NYKBLpx",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -709,6 +757,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:fabiane-guimaraes",
+      "text": "Fabiane Guimarães nasceu no interior de Goiás. É autora dos romances “Apague a luz se for chorar” e “Como se fosse um monstro”, e em sua obra aparecem temas recorrentes como a morte, a solidão e o tempo, com prosa precisa e límpida.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Fabiane Guimarães: 'Percebo alguns temas recorrentes no meu ...",
+      "sourceUrl": "https://diplomatique.org.br/fabiane-guimaraes-percebo-alguns-temas-recorrentes-no-meu-trabalho-de-uma-forma-geral-como-a-morte-a-solidao-e-o-tempo",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:fernando-sabino",
       "text": "Fernando Sabino (Belo Horizonte, 1923–2004) foi um escritor, cronista, jornalista e editor brasileiro. Sua obra inclui romances e crônicas, e O Encontro Marcado é lembrado por retratar a vida de um jovem mineiro entre as décadas de 40 e 50.",
       "approved": false,
@@ -800,6 +860,18 @@
       "source": "Wikipédia (pt)",
       "sourceUrl": "https://pt.wikipedia.org/wiki/George_Orwell",
       "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:giovana-madalosso",
+      "text": "Giovana Madalosso nasceu em Curitiba, em 1975. É autora de romances como “Suíte Tóquio”, “Batida Só” e “Tudo Pode Ser Roubado”, e escreve sobre literatura brasileira contemporânea. Também é colunista da Folha de S.Paulo.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Giovana Madalosso",
+      "sourceUrl": "https://www.almedina.net/autor/giovana-madalosso-1634644876",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -997,6 +1069,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:javier-a-contreras",
+      "text": "Javier Arancibia Contreras (Salvador, 1976) é um escritor brasileiro. Sua obra inclui romances como Crocodilo e traz personagens e narrativas ligadas a fatos e ao universo policial.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Javier Arancibia Contreras – Wikipédia, a enciclopédia livre",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Javier_Arancibia_Contreras",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:javier-marias",
       "text": "Javier Marías Franco (1951–2022) foi um escritor, tradutor e colunista espanhol. Escreveu romances, contos e ensaios; entre seus livros estão A Heart So White, Tomorrow in the Battle Think on Me e a trilogia Your Face Tomorrow.",
       "approved": false,
@@ -1141,6 +1225,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:jose-aguiar",
+      "text": "José Aguiar é um quadrinista brasileiro. É um dos autores de adaptações em quadrinhos de obras literárias, como Dom Casmurro, e também trabalha com o formato de HQ.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Dom Casmurro – Wikipédia, a enciclopédia livre",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Dom_Casmurro",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:jose-j-veiga",
       "text": "José J. Veiga (1915–1999) foi um escritor brasileiro. Sua obra é frequentemente classificada como realismo mágico, embora ele tenha rejeitado o rótulo, e seus livros tratam de crítica social e política, com traços líricos.",
       "approved": false,
@@ -1196,6 +1292,18 @@
       "source": "Wikipédia (pt)",
       "sourceUrl": "https://pt.wikipedia.org/wiki/Judith_Butler",
       "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:juliana-leite",
+      "text": "Juliana Leite nasceu em 1983, no Rio de Janeiro. Escreve romances e, em sua obra, aborda velhice, morte, memória e os dias perigosos e incompreensíveis da vida.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Humanos Exemplares de Juliana Leite - Livro - WOOK",
+      "sourceUrl": "https://www.wook.pt/livro/humanos-exemplares-juliana-leite/31611633",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -1525,6 +1633,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:mary-lynn-bracht",
+      "text": "Mary Lynn Bracht é uma escritora dos Estados Unidos. Seus livros se voltam à história das mulheres coreanas, com atenção às marcas da ocupação japonesa da Coreia e à memória das mulheres em tempos de guerra.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Entrevista: Mary Lynn Bracht, autora de “Herdeiras do mar” - Blog da TAG",
+      "sourceUrl": "https://www.taglivros.com/blog/entrevista-mary-lynn-bracht-autora-de-herdeiras-do-mar",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:mary-shelley",
       "text": "Mary Shelley (1797–1851) foi uma escritora britânica de Londres. É mais conhecida pelo romance gótico Frankenstein; ou, O Prometeu Moderno e por romances como The Last Man. Sua obra frequentemente discute temas sociais e políticos, com destaque para romances góticos, históricos e apocalípticos.",
       "approved": false,
@@ -1544,6 +1664,18 @@
       "source": "Wikipédia (es)",
       "sourceUrl": "https://es.wikipedia.org/wiki/Matt_Haig",
       "sourceLanguage": "es",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:mauricio-gomyde",
+      "text": "Maurício Gomyde nasceu em São Paulo e vive em Brasília desde os três anos de idade. Escreve romances como Surpreendente!, e também é compositor e baterista.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Maurício Gomyde - Portal da Literatura",
+      "sourceUrl": "https://www.portaldaliteratura.com/autores.php?autor=2857",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -1592,6 +1724,18 @@
       "source": "Wikipédia (pt)",
       "sourceUrl": "https://pt.wikipedia.org/wiki/Mia_Couto",
       "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:michel-laub",
+      "text": "Michel Laub nasceu em Porto Alegre, em 1973. Escritor e jornalista, seus romances abordam memória e biografia, com narradores que exploram a própria vida e a de outras gerações.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Biografia - Michel Laub - WordPress.com",
+      "sourceUrl": "https://michellaub.wordpress.com/biografia-contato-entrevistas",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -1700,6 +1844,18 @@
       "source": "Wikipédia (en)",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mohamed_Mbougar_Sarr",
       "sourceLanguage": "en",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:natalia-borges-polesso",
+      "text": "Natália Borges Polesso é escritora e tradutora brasileira. Em sua obra, transita por narrativas que podem ser lidas como distopia cotidiana, abordando o colapso social, ambiental e afetivo.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Natalia Borges Polesso",
+      "sourceUrl": "https://www.companhiadasletras.com.br/autor/natalia-borges-polesso",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null
@@ -1849,6 +2005,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:penny-hancock",
+      "text": "Penny Hancock é uma escritora, jornalista e professora inglesa. Escreve romances e contos, com atenção a temas como família e abuso sexual de menores.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "EU NÃO SEI QUEM VOCÊ É - HANCOCK, PENNY",
+      "sourceUrl": "https://www.martinsfontespaulista.com.br/eu-nao-sei-quem-voce-e-966062/p",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:pilar-quintana",
       "text": "Pilar Quintana é uma escritora colombiana, nascida em 1972, em Cali. Sua obra inclui romances e um livro de contos, com destaque para as novelas “La Perra” e “Coleccionistas de polvos raros”; seus livros exploram diferentes formas narrativas.",
       "approved": false,
@@ -1993,6 +2161,18 @@
       "editedBy": null
     },
     {
+      "scope": "autoria:sheila-heti",
+      "text": "Sheila Heti é uma escritora canadense nascida em 1976. Sua obra mistura ficção e ensaio filosófico, com foco em questões como maternidade, desejo e a decisão de ter filhos, em narrativas íntimas e autorreflexivas.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Em 'Maternidade', Sheila Heti analisa causas da pressão para ser mãe - 27/05/2019 - Ilustrada - Folha",
+      "sourceUrl": "https://www1.folha.uol.com.br/ilustrada/2019/05/em-maternidade-sheila-heti-analisa-causas-da-pressao-para-ser-mae.shtml",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
       "scope": "autoria:sidarta-ribeiro",
       "text": "Sidarta Ribeiro (Brasília, 1971) é um neurocientista e escritor brasileiro. Escreve sobre cérebro, sonho e consciência, e também mantém uma coluna bimestral no umaúma.",
       "approved": false,
@@ -2024,6 +2204,18 @@
       "source": "Wikipédia (pt)",
       "sourceUrl": "https://pt.wikipedia.org/wiki/Socorro_Acioli",
       "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v3",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:stefanie-stahl",
+      "text": "Stefanie Stahl é uma psicóloga alemã nascida em 1963, em Hamburgo. Sua obra se concentra na psicologia e no desenvolvimento pessoal.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Stefanie Stahl - Livros, Biografia E Ofertas - Booklover",
+      "sourceUrl": "https://booklover.com.br/autor/stefanie-stahl",
+      "sourceLanguage": null,
       "model": "gpt-5.4-mini",
       "promptVersion": "author-bio-v3",
       "editedBy": null

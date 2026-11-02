@@ -121,10 +121,28 @@ de outro país. Vale conferir o país de toda autoria nova no relatório.
   "músico"), frase sem sentido (Saramago "se destaca por adaptações para o
   cinema"), estilo "(1935–)" para quem está vivo.
 
-### Estimativa para a carga completa (215 autorias)
+## Onda 3: fontes com cota (2026-11-02)
 
-- OpenAI: ~US$ 0,001 por bio → ~US$ 0,25.
-- SerpApi: ~1 busca por autoria sem foto no Commons → ~40.
-- Tavily: ~1 crédito por autoria sem verbete útil → ~20–40.
+- 43 autorias. Foram 40 buscas na SerpApi (uma por autoria sem foto do Commons)
+  e 22 créditos do Tavily (fontes de bio). A OpenAI custou US$ 0,02.
+- Fotos: as 40 autorias ganharam 3 candidatas cada, para escolha humana.
+- Bios: 16 propostas a partir de páginas da web, 5 com "fontes insuficientes"
+  (Renato Fino, Beatriz Leal Craveiro, Kim Hye-jin, Lara Prescott, Valeska
+  Zanello) e 1 sem fonte (Eugênio Vinci de Moraes).
+- As bios do Tavily trazem a pessoa certa (o filtro pelo sobrenome e o livro na
+  consulta funcionaram), mas a qualidade varia mais que nas da Wikipédia:
+  fontes de loja ou de um único livro dão textos genéricos (Carolina Schettini,
+  Stefanie Stahl, José Aguiar).
+- Cotas depois da carga: SerpApi 47/250 no mês, Tavily 24/1.000. Sobra muito
+  para a manutenção e para a spec de capas.
 
-Tudo cabe num mês dos planos gratuitos.
+### Carga completa: estimado × real
+
+| Provedor | Estimado | Real (amostra + 3 ondas) |
+|---|---|---|
+| OpenAI | ~US$ 0,25 | ~US$ 0,24 (inclui as rodadas de calibração do prompt) |
+| SerpApi | ~40 | 47 (8 na amostra, antes do ajuste da consulta) |
+| Tavily | ~20–40 | 24 |
+
+Por autoria nova (manutenção), a média ficou em ~US$ 0,001 de OpenAI, 0,2
+busca da SerpApi e 0,1 crédito do Tavily.
