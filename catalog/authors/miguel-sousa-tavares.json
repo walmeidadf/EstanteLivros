@@ -2,13 +2,30 @@
   "slug": "miguel-sousa-tavares",
   "name": "Miguel Sousa Tavares",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "PT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1567582",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/miguel-sousa-tavares.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Bottelho",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miguel_Sousa_Tavares.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1567582",
+      "url": "https://www.wikidata.org/wiki/Q1567582"
+    }
+  ]
 }

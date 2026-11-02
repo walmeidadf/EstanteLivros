@@ -2,13 +2,30 @@
   "slug": "albert-camus",
   "name": "Albert Camus",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q34670",
+    "status": "confirmed",
+    "evidence": "P50 em \"A peste\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/albert-camus.jpg",
+    "license": "Public domain",
+    "author": "Photograph by United Press International",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q34670",
+      "url": "https://www.wikidata.org/wiki/Q34670"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "ransom-riggs",
   "name": "Ransom Riggs",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q7293486",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Lar da Srta. Peregrine para Crianças Peculiares\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/ransom-riggs.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Rosiestep",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ransom_Riggs_at_National_Book_Festival_2025.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q7293486",
+      "url": "https://www.wikidata.org/wiki/Q7293486"
+    }
+  ]
 }

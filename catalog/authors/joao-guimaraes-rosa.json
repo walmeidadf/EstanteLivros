@@ -2,13 +2,30 @@
   "slug": "joao-guimaraes-rosa",
   "name": "João Guimarães Rosa",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q13012",
+    "status": "confirmed",
+    "evidence": "P50 em \"Grande Sertão: Veredas\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/joao-guimaraes-rosa.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guimar%C3%A3es_Rosa,_anos_1960.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q13012",
+      "url": "https://www.wikidata.org/wiki/Q13012"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "gustave-flaubert",
   "name": "Gustave Flaubert",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q43444",
+    "status": "confirmed",
+    "evidence": "P50 em \"Madame Bovary\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/gustave-flaubert.jpg",
+    "license": "Public domain",
+    "author": "Nadar",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustave_Flaubert.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q43444",
+      "url": "https://www.wikidata.org/wiki/Q43444"
+    }
+  ]
 }

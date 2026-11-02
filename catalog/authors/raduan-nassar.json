@@ -2,13 +2,30 @@
   "slug": "raduan-nassar",
   "name": "Raduan Nassar",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q332216",
+    "status": "confirmed",
+    "evidence": "P50 em \"Um Copo de Cólera\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/raduan-nassar.jpg",
+    "license": "CC BY 3.0 br",
+    "author": "Antonio Cruz/Agência Brasil",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RaduanNassar.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q332216",
+      "url": "https://www.wikidata.org/wiki/Q332216"
+    }
+  ]
 }

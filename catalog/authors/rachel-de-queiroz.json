@@ -2,13 +2,30 @@
   "slug": "rachel-de-queiroz",
   "name": "Rachel de Queiroz",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q283964",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Quinze\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/rachel-de-queiroz.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rachel_de_Queiroz,_1971.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q283964",
+      "url": "https://www.wikidata.org/wiki/Q283964"
+    }
+  ]
 }

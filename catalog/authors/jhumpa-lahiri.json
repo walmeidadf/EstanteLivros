@@ -2,13 +2,30 @@
   "slug": "jhumpa-lahiri",
   "name": "Jhumpa Lahiri",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "override",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q465208",
+    "status": "confirmed",
+    "evidence": "P50 em \"Aguapés\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jhumpa-lahiri.png",
+    "license": "CC BY 3.0",
+    "author": "librairie mollat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jhumpa_Lahiri_(2015).png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q465208",
+      "url": "https://www.wikidata.org/wiki/Q465208"
+    }
+  ]
 }

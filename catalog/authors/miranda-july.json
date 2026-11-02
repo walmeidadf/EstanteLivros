@@ -2,13 +2,30 @@
   "slug": "miranda-july",
   "name": "Miranda July",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q256671",
+    "status": "confirmed",
+    "evidence": "P50 em \"De Quatro\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/miranda-july.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Phibeatrice",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miranda_July,_author,_at_the_2024_National_Book_Awards_finalist_reading_3_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q256671",
+      "url": "https://www.wikidata.org/wiki/Q256671"
+    }
+  ]
 }

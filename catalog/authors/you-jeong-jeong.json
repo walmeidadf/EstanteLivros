@@ -2,13 +2,30 @@
   "slug": "you-jeong-jeong",
   "name": "You-jeong Jeong",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "KR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "coreano"
   ],
   "primaryLanguage": "coreano",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q17964174",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Bom Filho\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/you-jeong-jeong.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "LTI Korea",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeong_You_Jeong.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q17964174",
+      "url": "https://www.wikidata.org/wiki/Q17964174"
+    }
+  ]
 }

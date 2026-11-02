@@ -2,13 +2,30 @@
   "slug": "paulo-coelho",
   "name": "Paulo Coelho",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q12881",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Alquimista\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/paulo-coelho.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Lula Oficial",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paulo_Coelho,_June_2024.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q12881",
+      "url": "https://www.wikidata.org/wiki/Q12881"
+    }
+  ]
 }

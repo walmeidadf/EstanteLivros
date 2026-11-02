@@ -2,13 +2,30 @@
   "slug": "virginia-woolf",
   "name": "Virginia Woolf",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q40909",
+    "status": "confirmed",
+    "evidence": "P50 em \"Mrs. Dalloway\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/virginia-woolf.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q40909",
+      "url": "https://www.wikidata.org/wiki/Q40909"
+    }
+  ]
 }

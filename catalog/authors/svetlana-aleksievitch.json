@@ -2,13 +2,30 @@
   "slug": "svetlana-aleksievitch",
   "name": "Svetlana Aleksiévitch",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BY",
+  "countrySource": "override",
   "languages": [
     "russo"
   ],
   "primaryLanguage": "russo",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q274334",
+    "status": "confirmed",
+    "evidence": "P50 em \"Vozes de Tchernóbil\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/svetlana-aleksievitch.jpg",
+    "license": "FAL",
+    "author": "A.Savin",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svetlana_Alexievich_asv2024-01.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q274334",
+      "url": "https://www.wikidata.org/wiki/Q274334"
+    }
+  ]
 }

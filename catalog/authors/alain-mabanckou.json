@@ -2,13 +2,30 @@
   "slug": "alain-mabanckou",
   "name": "Alain Mabanckou",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "CG",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q268522",
+    "status": "confirmed",
+    "evidence": "P50 em \"Memórias de Porco-espinho\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/alain-mabanckou.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Harald Krichel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alain_Mabanckou-1050121.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q268522",
+      "url": "https://www.wikidata.org/wiki/Q268522"
+    }
+  ]
 }

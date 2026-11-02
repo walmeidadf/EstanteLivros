@@ -2,13 +2,30 @@
   "slug": "charlotte-bronte",
   "name": "Charlotte Brontë",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q127332",
+    "status": "confirmed",
+    "evidence": "P50 em \"Jane Eyre\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/charlotte-bronte.png",
+    "license": "Public domain",
+    "author": "George Richmond",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CBRichmond.png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q127332",
+      "url": "https://www.wikidata.org/wiki/Q127332"
+    }
+  ]
 }

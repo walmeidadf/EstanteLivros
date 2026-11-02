@@ -2,13 +2,30 @@
   "slug": "ian-mcewan",
   "name": "Ian McEwan",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q190379",
+    "status": "confirmed",
+    "evidence": "P50 em \"Reparação\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/ian-mcewan.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "TimDuncan",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IanMcEwan_EIBF2025_i481.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q190379",
+      "url": "https://www.wikidata.org/wiki/Q190379"
+    }
+  ]
 }

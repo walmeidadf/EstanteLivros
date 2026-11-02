@@ -2,13 +2,30 @@
   "slug": "joe-sacco",
   "name": "Joe Sacco",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "MT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q335397",
+    "status": "confirmed",
+    "evidence": "P50 em \"Palestina\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/joe-sacco.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "TexianPolitico",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joe_Sacco.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q335397",
+      "url": "https://www.wikidata.org/wiki/Q335397"
+    }
+  ]
 }

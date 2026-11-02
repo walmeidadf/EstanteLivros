@@ -2,13 +2,30 @@
   "slug": "octavia-e-butler",
   "name": "Octavia E. Butler",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q239739",
+    "status": "confirmed",
+    "evidence": "P50 em \"Kindred: Laços de Sangue\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/octavia-e-butler.jpg",
+    "license": "CC BY 2.5",
+    "author": "Nikolas Coukouma",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Butler_signing_portrait.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q239739",
+      "url": "https://www.wikidata.org/wiki/Q239739"
+    }
+  ]
 }

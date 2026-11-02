@@ -2,13 +2,30 @@
   "slug": "valerie-perrin",
   "name": "Valérie Perrin",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q71314286",
+    "status": "confirmed",
+    "evidence": "P50 em \"Água fresca para as flores\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/valerie-perrin.jpg",
+    "license": "CC0",
+    "author": "Albin Michel (libre de droits)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Val%C3%A9rie_Perrin.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q71314286",
+      "url": "https://www.wikidata.org/wiki/Q71314286"
+    }
+  ]
 }

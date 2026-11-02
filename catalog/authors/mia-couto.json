@@ -2,13 +2,30 @@
   "slug": "mia-couto",
   "name": "Mia Couto",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "MZ",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q382101",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Confissão da Leoa\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/mia-couto.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Mia_Couto.jpg: Luis Miguel Martins from Portugal derivative work: MachoCarioca",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mia_Couto_cropped.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q382101",
+      "url": "https://www.wikidata.org/wiki/Q382101"
+    }
+  ]
 }

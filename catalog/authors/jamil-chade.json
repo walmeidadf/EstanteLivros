@@ -2,13 +2,30 @@
   "slug": "jamil-chade",
   "name": "Jamil Chade",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q94994355",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jamil-chade.jpg",
+    "license": "CC BY 2.0",
+    "author": "Senado Federal",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CPIFUT_-_CPI_do_Futebol_-_2015_(20496140249).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q94994355",
+      "url": "https://www.wikidata.org/wiki/Q94994355"
+    }
+  ]
 }

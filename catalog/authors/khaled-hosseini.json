@@ -2,13 +2,30 @@
   "slug": "khaled-hosseini",
   "name": "Khaled Hosseini",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q193116",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Cidade do Sol\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/khaled-hosseini.jpg",
+    "license": "CC BY 2.0",
+    "author": "Counse",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khaled_Hosseini,_2013_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q193116",
+      "url": "https://www.wikidata.org/wiki/Q193116"
+    }
+  ]
 }

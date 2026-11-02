@@ -2,13 +2,30 @@
   "slug": "zelia-gattai",
   "name": "Zélia Gattai",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q247526",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/zelia-gattai.png",
+    "license": "Public domain",
+    "author": "unknown snap",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_minha_hist%C3%B3ria_com_Z%C3%A9lia_Gattai.png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q247526",
+      "url": "https://www.wikidata.org/wiki/Q247526"
+    }
+  ]
 }

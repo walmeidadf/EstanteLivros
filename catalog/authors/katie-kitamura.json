@@ -2,13 +2,30 @@
   "slug": "katie-kitamura",
   "name": "Katie Kitamura",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q16218588",
+    "status": "confirmed",
+    "evidence": "P50 em \"Uma Separação\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/katie-kitamura.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Rosiestep",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Katie_Kitamura,_National_Book_Festival_2025.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q16218588",
+      "url": "https://www.wikidata.org/wiki/Q16218588"
+    }
+  ]
 }

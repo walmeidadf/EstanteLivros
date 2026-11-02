@@ -2,13 +2,30 @@
   "slug": "lygia-fagundes-telles",
   "name": "Lygia Fagundes Telles",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q465421",
+    "status": "confirmed",
+    "evidence": "P50 em \"Passaporte para a China: Crônicas de Viagem\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/lygia-fagundes-telles.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lygia_Fagundes_Telles,_sem_data.tif",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q465421",
+      "url": "https://www.wikidata.org/wiki/Q465421"
+    }
+  ]
 }

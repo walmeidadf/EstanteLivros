@@ -2,13 +2,30 @@
   "slug": "sandro-veronesi",
   "name": "Sandro Veronesi",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "italiano"
   ],
   "primaryLanguage": "italiano",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1246106",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Colibri\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/sandro-veronesi.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Original: Associazione Amici di Piero Chiara / Derivative work: Danyele",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sandro_Veronesi,_2012_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1246106",
+      "url": "https://www.wikidata.org/wiki/Q1246106"
+    }
+  ]
 }

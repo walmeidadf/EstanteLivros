@@ -2,13 +2,30 @@
   "slug": "zeca-camargo",
   "name": "Zeca Camargo",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q10394952",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/zeca-camargo.jpg",
+    "license": "CC BY 2.0",
+    "author": "Sérgio (Savaman) Savarese",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zecacamargo.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q10394952",
+      "url": "https://www.wikidata.org/wiki/Q10394952"
+    }
+  ]
 }

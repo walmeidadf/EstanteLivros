@@ -2,13 +2,30 @@
   "slug": "carmen-laforet",
   "name": "Carmen Laforet",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "ES",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q269123",
+    "status": "confirmed",
+    "evidence": "P50 em \"Nada\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/carmen-laforet.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Marina Romera",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_Carmen_Laforet.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q269123",
+      "url": "https://www.wikidata.org/wiki/Q269123"
+    }
+  ]
 }

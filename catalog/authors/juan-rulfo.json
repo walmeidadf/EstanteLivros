@@ -2,13 +2,30 @@
   "slug": "juan-rulfo",
   "name": "Juan Rulfo",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "MX",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q200661",
+    "status": "confirmed",
+    "evidence": "P50 em \"Pedro Páramo\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/juan-rulfo.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rulfo_por_Lyon.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q200661",
+      "url": "https://www.wikidata.org/wiki/Q200661"
+    }
+  ]
 }

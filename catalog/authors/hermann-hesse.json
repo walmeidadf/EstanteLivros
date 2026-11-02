@@ -2,13 +2,30 @@
   "slug": "hermann-hesse",
   "name": "Hermann Hesse",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "DE",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "alemão"
   ],
   "primaryLanguage": "alemão",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q25973",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Lobo da Estepe\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/hermann-hesse.jpg",
+    "license": "CC BY-SA 3.0 nl",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hermann_Hesse_2.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q25973",
+      "url": "https://www.wikidata.org/wiki/Q25973"
+    }
+  ]
 }

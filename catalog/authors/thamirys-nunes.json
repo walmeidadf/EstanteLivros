@@ -2,13 +2,30 @@
   "slug": "thamirys-nunes",
   "name": "Thamirys Nunes",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q131577302",
+    "status": "manual",
+    "evidence": "escolha manual",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/thamirys-nunes.jpg",
+    "license": "CC BY 2.0",
+    "author": "Vice-Presidência da República",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thamirys_Nunes.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q131577302",
+      "url": "https://www.wikidata.org/wiki/Q131577302"
+    }
+  ]
 }

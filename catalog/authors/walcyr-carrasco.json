@@ -2,13 +2,30 @@
   "slug": "walcyr-carrasco",
   "name": "Walcyr Carrasco",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q6941081",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/walcyr-carrasco.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Sebástian Freire",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pr%C3%AAmio_Rio_Sem_Preconceito_2013_-_03.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q6941081",
+      "url": "https://www.wikidata.org/wiki/Q6941081"
+    }
+  ]
 }

@@ -33,7 +33,10 @@ def country_pending(ctx: Context, author: Dict[str, Any]) -> bool:
     wd = author.get("wikidata") or {}
     if not wd.get("id"):
         return False
-    return ctx.refresh or author.get("country") is None
+    if ctx.refresh:
+        return True
+    # Sem país: só tenta de novo se o QID mudou desde a última tentativa.
+    return author.get("country") is None and ctx.author_state(author["slug"]).get("countryQid") != wd["id"]
 
 
 def photo_pending(ctx: Context, author: Dict[str, Any]) -> bool:
@@ -52,7 +55,8 @@ def photo_pending(ctx: Context, author: Dict[str, Any]) -> bool:
     tried = set(state.get("photoTried", []))
     candidates = ctx.author_state(author["slug"]).get("photoCandidates", [])
     max_candidates = int(ctx.config.get("photo", {}).get("maxCandidates", 3))
-    untried = [s for s in ctx.waves.photo_sources if s not in tried]
+    # O Commons é controlado por photoCommonsQid (acima), não pela lista de tentadas.
+    untried = [s for s in ctx.waves.photo_sources if s != "commons" and s not in tried]
     return bool(untried) and len(candidates) < max_candidates
 
 
@@ -70,6 +74,11 @@ def bio_pending(ctx: Context, author: Dict[str, Any]) -> bool:
     if scope in ctx.rejections and not ctx.regenerate:
         return False
     state = ctx.author_state(author["slug"])
+    qid = (author.get("wikidata") or {}).get("id")
+    # Sem o campo (coletas antigas), a tentativa foi feita com o QID atual.
+    if qid and "wikipedia" in ctx.waves.bio_sources and state.get("bioWikipediaQid", qid) != qid \
+            and "wikipedia" in state.get("bioTried", []):
+        return True  # identificada depois da 1ª tentativa: o verbete agora pode existir
     prompt = ctx.config.get("bio", {}).get("promptVersion")
     if state.get("bioInsufficient") == prompt and not ctx.regenerate:
         return False

@@ -2,13 +2,30 @@
   "slug": "graciliano-ramos",
   "name": "Graciliano Ramos",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1392121",
+    "status": "confirmed",
+    "evidence": "P50 em \"Vidas Secas\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/graciliano-ramos.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graciliano_Ramos,_1940.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1392121",
+      "url": "https://www.wikidata.org/wiki/Q1392121"
+    }
+  ]
 }

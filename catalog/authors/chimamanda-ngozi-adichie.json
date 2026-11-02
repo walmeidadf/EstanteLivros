@@ -2,13 +2,30 @@
   "slug": "chimamanda-ngozi-adichie",
   "name": "Chimamanda Ngozi Adichie",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "NG",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q230141",
+    "status": "confirmed",
+    "evidence": "P50 em \"Americanah\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/chimamanda-ngozi-adichie.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "fronteirasweb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-06-16_Chimamanda_Ngozi_Adichie_no_Fronteiras_do_Pensamento_2025_em_S%C3%A3o_Paulo,_013_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q230141",
+      "url": "https://www.wikidata.org/wiki/Q230141"
+    }
+  ]
 }

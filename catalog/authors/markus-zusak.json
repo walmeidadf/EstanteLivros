@@ -2,13 +2,30 @@
   "slug": "markus-zusak",
   "name": "Markus Zusak",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "AU",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q61522",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Menina que Roubava Livros\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/markus-zusak.jpg",
+    "license": "CC0",
+    "author": "Library of Congress Life",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Markus_Zusak_2019_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q61522",
+      "url": "https://www.wikidata.org/wiki/Q61522"
+    }
+  ]
 }

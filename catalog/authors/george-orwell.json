@@ -2,13 +2,30 @@
   "slug": "george-orwell",
   "name": "George Orwell",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q3335",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Revolução dos Bichos\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/george-orwell.jpg",
+    "license": "CC BY 2.0",
+    "author": "Cassowary Colorizations",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Orwell,_c._1940_(41928180381).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q3335",
+      "url": "https://www.wikidata.org/wiki/Q3335"
+    }
+  ]
 }

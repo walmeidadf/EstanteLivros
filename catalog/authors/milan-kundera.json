@@ -2,14 +2,31 @@
   "slug": "milan-kundera",
   "name": "Milan Kundera",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "CZ",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "tcheco",
     "francês"
   ],
   "primaryLanguage": "tcheco",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q93166",
+    "status": "confirmed",
+    "evidence": "P50 em \"A insustentável leveza do ser\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/milan-kundera.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Elisa Cabot",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milan_Kundera_redux.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q93166",
+      "url": "https://www.wikidata.org/wiki/Q93166"
+    }
+  ]
 }

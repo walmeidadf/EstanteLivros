@@ -2,13 +2,30 @@
   "slug": "gabriel-garcia-marquez",
   "name": "Gabriel García Márquez",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "CO",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q5878",
+    "status": "confirmed",
+    "evidence": "P50 em \"Memória de minhas putas tristes\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/gabriel-garcia-marquez.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Jose Lara",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gabriel_Garcia_Marquez.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q5878",
+      "url": "https://www.wikidata.org/wiki/Q5878"
+    }
+  ]
 }

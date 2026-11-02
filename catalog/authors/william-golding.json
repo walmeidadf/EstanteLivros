@@ -2,13 +2,30 @@
   "slug": "william-golding",
   "name": "William Golding",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q44183",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Senhor das Moscas\" (ISBN 9788579622878)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/william-golding.jpg",
+    "license": "CC BY-SA 3.0 nl",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Golding_1983.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q44183",
+      "url": "https://www.wikidata.org/wiki/Q44183"
+    }
+  ]
 }

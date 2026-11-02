@@ -2,13 +2,30 @@
   "slug": "jeferson-tenorio",
   "name": "Jeferson Tenório",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q112730259",
+    "status": "confirmed",
+    "evidence": "P50 em \"O avesso da pele\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jeferson-tenorio.jpg",
+    "license": "Attribution",
+    "author": "Ederson Nunes/CMPA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sess%C3%A3o_Solene_de_outorga_do_T%C3%ADtulo_de_Cidad%C3%A3o_de_Porto_Alegre_a_Jeferson_de_Souza_Ten%C3%B3rio_12_(3x4).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q112730259",
+      "url": "https://www.wikidata.org/wiki/Q112730259"
+    }
+  ]
 }

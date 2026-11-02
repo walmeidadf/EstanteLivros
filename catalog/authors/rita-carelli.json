@@ -2,13 +2,30 @@
   "slug": "rita-carelli",
   "name": "Rita Carelli",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q95654362",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/rita-carelli.jpg",
+    "license": "Licence Ouverte",
+    "author": "Université Jean Moulin Lyon 3 (Bibliothèques Universitaires)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_Rita_Carelli_(remise_du_Prix_Cam%C3%A9l%C3%A9on_2025,_Lyon_3).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q95654362",
+      "url": "https://www.wikidata.org/wiki/Q95654362"
+    }
+  ]
 }

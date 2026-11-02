@@ -2,13 +2,30 @@
   "slug": "scholastique-mukasonga",
   "name": "Scholastique Mukasonga",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "RW",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q3475485",
+    "status": "confirmed",
+    "evidence": "P50 em \"Nossa Senhora do Nilo\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/scholastique-mukasonga.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Scholastique_Mukasonga_-_salon_du_livre_Genève_2012.jpg: Ludovic Péron derivative work: LPLT",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scholastique_Mukasonga_redux.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q3475485",
+      "url": "https://www.wikidata.org/wiki/Q3475485"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "hilda-hilst",
   "name": "Hilda Hilst",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q3135589",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Obscena Senhora D\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/hilda-hilst.jpg",
+    "license": "Public domain",
+    "author": "Chico Albuquerque",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hilda_Hilst_by_Chico_Albuquerque.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q3135589",
+      "url": "https://www.wikidata.org/wiki/Q3135589"
+    }
+  ]
 }

@@ -2,13 +2,24 @@
   "slug": "gabriela-prioli",
   "name": "Gabriela Prioli",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
+  "wikidata": {
+    "id": "Q88986089",
+    "status": "confirmed",
+    "evidence": "P50 em \"Política é para todos\" (ISBN 9786557822937)",
+    "rulesVersion": 2
+  },
   "photo": null,
-  "references": []
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q88986089",
+      "url": "https://www.wikidata.org/wiki/Q88986089"
+    }
+  ]
 }

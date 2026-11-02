@@ -2,13 +2,24 @@
   "slug": "michiko-aoyama",
   "name": "Michiko Aoyama",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "JP",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "japonês"
   ],
   "primaryLanguage": "japonês",
-  "wikidata": null,
+  "wikidata": {
+    "id": "Q30933986",
+    "status": "confirmed",
+    "evidence": "P50 em \"A biblioteca dos sonhos secretos\" (título)",
+    "rulesVersion": 2
+  },
   "photo": null,
-  "references": []
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q30933986",
+      "url": "https://www.wikidata.org/wiki/Q30933986"
+    }
+  ]
 }

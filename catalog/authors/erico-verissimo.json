@@ -4,13 +4,30 @@
   "aliases": [
     "Erico Veríssimo"
   ],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q288501",
+    "status": "confirmed",
+    "evidence": "P50 em \"Olhai os Lírios do Campo\" (ISBN 9788535906097)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/erico-verissimo.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%89rico_Ver%C3%ADssimo,_sem_data.tif",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q288501",
+      "url": "https://www.wikidata.org/wiki/Q288501"
+    }
+  ]
 }

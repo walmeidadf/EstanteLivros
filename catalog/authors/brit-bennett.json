@@ -2,13 +2,30 @@
   "slug": "brit-bennett",
   "name": "Brit Bennett",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q27449519",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Metade Perdida\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/brit-bennett.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Emma Trim",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BritBennett.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q27449519",
+      "url": "https://www.wikidata.org/wiki/Q27449519"
+    }
+  ]
 }

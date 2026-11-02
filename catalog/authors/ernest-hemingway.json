@@ -2,13 +2,30 @@
   "slug": "ernest-hemingway",
   "name": "Ernest Hemingway",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q23434",
+    "status": "confirmed",
+    "evidence": "P50 em \"O sol também se levanta\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/ernest-hemingway.jpg",
+    "license": "Public domain",
+    "author": "Lloyd Arnold",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ErnestHemingway.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q23434",
+      "url": "https://www.wikidata.org/wiki/Q23434"
+    }
+  ]
 }

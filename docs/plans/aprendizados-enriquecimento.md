@@ -74,6 +74,36 @@ Custo das três rodadas: ~US$ 0,03.
   humano coerente (o relatório mostra a descrição) se resolvem com um QID
   manual, que destrava foto e bio grátis antes de gastar cota.
 
+## Onda 1 nas 205 restantes (2026-11-02, grátis)
+
+| Etapa | Resultado |
+|---|---|
+| Identificação | 151 confirmadas por obra · 39 prováveis (todas conferidas: nenhum homônimo) · 12 não encontradas · 3 ambíguas |
+| País | 188 · 2 sem dado no Wikidata (Will Schwalbe, Lara Prescott) |
+| Foto | 161 do Commons · 4 do Commons pequenas demais (viram candidatas) · 38 sem foto |
+| Fonte da bio | 178 da Wikipédia · 27 sem verbete (Tavily na onda 3) |
+
+Decisões manuais: 6 QIDs (John Williams, Ana Miranda, José Aguiar, Elise
+Loehnen, Lisa Mosconi, Thamirys Nunes) e 4 países onde a regra errou:
+
+| Autoria | Regra | Correto | Por que a regra errou |
+|---|---|---|---|
+| Oscar Wilde | GB | IE | a Irlanda era parte do Reino Unido na época |
+| Italo Svevo | AT | IT | Trieste era da Áustria-Hungria |
+| Svetlana Aleksiévitch | RU | BY | o desempate foi pelo idioma (ela escreve em russo) |
+| Jhumpa Lahiri | GB | US | o desempate foi pelo país de nascimento (Londres) |
+
+Bugs achados e corrigidos:
+- uma foto do Commons pequena demais era tratada como falha (agora vira nota e segue para as candidatas);
+- autorias identificadas depois da 1ª tentativa não buscavam o verbete da
+  Wikipédia (o registro de tentativa agora guarda o QID, como foto e país);
+- foto, país e bio ficavam pendentes para sempre quando não havia o que
+  achar: a seleção selecionava 202 autorias sem nada a fazer.
+
+Lição para a manutenção: a regra de país erra em quem tem cidadania de um
+Estado anterior (Irlanda/Reino Unido, Trieste/Áustria) ou que escreve num idioma
+de outro país. Vale conferir o país de toda autoria nova no relatório.
+
 ### Estimativa para a carga completa (215 autorias)
 
 - OpenAI: ~US$ 0,001 por bio → ~US$ 0,25.

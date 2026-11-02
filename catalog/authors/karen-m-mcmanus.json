@@ -2,13 +2,30 @@
   "slug": "karen-m-mcmanus",
   "name": "Karen M. McManus",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q84598833",
+    "status": "confirmed",
+    "evidence": "P50 em \"Um de Nós Está Mentindo\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/karen-m-mcmanus.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Frypie",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karen_m._mcmanus_8125870.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q84598833",
+      "url": "https://www.wikidata.org/wiki/Q84598833"
+    }
+  ]
 }

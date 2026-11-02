@@ -2,13 +2,30 @@
   "slug": "ayelet-gundar-goshen",
   "name": "Ayelet Gundar-Goshen",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IL",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "hebraico"
   ],
   "primaryLanguage": "hebraico",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q18120294",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/ayelet-gundar-goshen.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Udoweier",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayelet_GundarGoshenK%C3%B6ln2021.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q18120294",
+      "url": "https://www.wikidata.org/wiki/Q18120294"
+    }
+  ]
 }

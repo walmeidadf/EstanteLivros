@@ -2,13 +2,30 @@
   "slug": "carolina-maria-de-jesus",
   "name": "Carolina Maria de Jesus",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q440240",
+    "status": "confirmed",
+    "evidence": "P50 em \"Diário de Bitita\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/carolina-maria-de-jesus.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carolina_Maria_de_Jesus,_1960_cr.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q440240",
+      "url": "https://www.wikidata.org/wiki/Q440240"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "sylvia-plath",
   "name": "Sylvia Plath",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q133054",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Redoma de Vidro\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/sylvia-plath.jpg",
+    "license": "Public domain",
+    "author": "Giovanni Giovannetti/Grazia Neri",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sylvia_Plath.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q133054",
+      "url": "https://www.wikidata.org/wiki/Q133054"
+    }
+  ]
 }

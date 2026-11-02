@@ -2,13 +2,30 @@
   "slug": "daniel-galera",
   "name": "Daniel Galera",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q5217234",
+    "status": "confirmed",
+    "evidence": "P50 em \"Barba Ensopada de Sangue\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/daniel-galera.jpg",
+    "license": "CC BY-SA 3.0 de",
+    "author": "Daniel Galera",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Galera.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q5217234",
+      "url": "https://www.wikidata.org/wiki/Q5217234"
+    }
+  ]
 }

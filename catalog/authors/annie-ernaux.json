@@ -2,13 +2,30 @@
   "slug": "annie-ernaux",
   "name": "Annie Ernaux",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1153825",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Acontecimento\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/annie-ernaux.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Frankie Fouganthin",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Annie_Ernaux_in_2022_(5_av_11).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1153825",
+      "url": "https://www.wikidata.org/wiki/Q1153825"
+    }
+  ]
 }

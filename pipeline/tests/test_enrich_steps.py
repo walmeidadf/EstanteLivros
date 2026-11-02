@@ -224,9 +224,10 @@ class PhotoTest(unittest.TestCase):
         self.assertEqual([p.as_posix() for p in self.ctx.photos_to_delete], ["authors/han-kang.png"])
 
     def test_imagem_invalida_ou_pequena(self):
-        self.web.images["https://img.test/han-kang-1200.png"] = b"<html>"
-        with self.assertRaises(photo.PhotoError):
-            photo.run(self.ctx, self.ctx.catalog.authors["han-kang"])
+        self.web.images["https://img.test/han-kang-1200.png"] = helpers.tiny_png(150, 220)
+        outcome, notes = photo.run(self.ctx, self.ctx.catalog.authors["han-kang"])
+        self.assertIn("descartada", notes[0])  # Commons pequeno: vira nota e segue para candidatas
+        self.assertIsNone(self.ctx.catalog.authors["han-kang"]["photo"])
         self.web.images["https://img.test/mini.png"] = helpers.tiny_png(150, 150)
         self.ctx.author_photos = {"han-kang": {"url": "https://img.test/mini.png"}}
         with self.assertRaises(photo.PhotoError):
@@ -300,6 +301,13 @@ class BioTest(unittest.TestCase):
         self.ctx.rejections = ["autoria:han-kang"]
         self.assertFalse(PENDING["bio"](self.ctx, self.author))
 
+    def test_wikipedia_de_novo_depois_de_identificada(self):
+        state = self.ctx.author_state("han-kang")
+        state.update(bioTried=["wikipedia"], bioWikipediaQid=None)  # tentada antes de ter QID
+        self.assertTrue(PENDING["bio"](self.ctx, self.author))
+        bio.collect_sources(self.ctx, self.author)
+        self.assertEqual(state["bioWikipediaQid"], "Q5646626")
+
     def test_onda_1_so_coleta(self):
         ctx = eh.make_ctx(self.web, wave=1)
         run_identify(ctx, "han-kang")
@@ -326,6 +334,18 @@ class SelectionTest(unittest.TestCase):
         self.assertEqual(select(ctx, only=["fulana-de-tal"]), ["fulana-de-tal"])
         with self.assertRaises(KeyError):
             select(ctx, only=["ninguem"])
+
+    def test_nada_fica_pendente_para_sempre(self):
+        ctx = eh.make_ctx(eh.FakeWeb(), wave=1)
+        a = ctx.catalog.authors["fulana-de-tal"]
+        a["wikidata"] = {"id": "Q1", "status": "confirmed", "evidence": "x", "rulesVersion": ctx.rules_version}
+        st = ctx.author_state("fulana-de-tal")
+        st.update(countryQid="Q1", photoCommonsQid="Q1", photoTried=["wikipedia"], bioTried=["wikipedia"])
+        self.assertEqual([step for step in ctx.waves.steps if PENDING[step](ctx, a)], [])
+        a["wikidata"]["id"] = "Q2"  # QID mudou: tenta país, Commons e verbete de novo
+        self.assertEqual([step for step in ctx.waves.steps if PENDING[step](ctx, a)], ["country", "photo"])
+        st["bioWikipediaQid"] = "Q1"
+        self.assertTrue(PENDING["bio"](ctx, a))
 
     def test_rules_version_reabre_ambiguas(self):
         ctx = eh.make_ctx(eh.FakeWeb())

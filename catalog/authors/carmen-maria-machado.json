@@ -2,13 +2,30 @@
   "slug": "carmen-maria-machado",
   "name": "Carmen Maria Machado",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q29559684",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Corpo Dela e Outras Farras\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/carmen-maria-machado.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Rosiestep",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carmen_Maria_Machado,_2026_AWP.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q29559684",
+      "url": "https://www.wikidata.org/wiki/Q29559684"
+    }
+  ]
 }

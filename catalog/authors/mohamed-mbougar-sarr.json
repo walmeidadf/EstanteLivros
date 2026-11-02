@@ -2,13 +2,30 @@
   "slug": "mohamed-mbougar-sarr",
   "name": "Mohamed Mbougar Sarr",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "SN",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q22212196",
+    "status": "confirmed",
+    "evidence": "P50 em \"A mais recôndita memória dos homens\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/mohamed-mbougar-sarr.png",
+    "license": "CC BY 3.0",
+    "author": "librairie mollat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohamed_Mbougar_Sarr_(2021).png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q22212196",
+      "url": "https://www.wikidata.org/wiki/Q22212196"
+    }
+  ]
 }

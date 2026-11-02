@@ -2,13 +2,30 @@
   "slug": "patti-smith",
   "name": "Patti Smith",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q557",
+    "status": "confirmed",
+    "evidence": "P50 em \"Só Garotos\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/patti-smith.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Harald Krichel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Patti_Smith_at_the_81st_Venice_International_Film_Festival_in_2024.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q557",
+      "url": "https://www.wikidata.org/wiki/Q557"
+    }
+  ]
 }

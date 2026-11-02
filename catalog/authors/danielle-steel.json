@@ -2,13 +2,30 @@
   "slug": "danielle-steel",
   "name": "Danielle Steel",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q72653",
+    "status": "confirmed",
+    "evidence": "P50 em \"Blue\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/danielle-steel.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danielle_Steel,_1987.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q72653",
+      "url": "https://www.wikidata.org/wiki/Q72653"
+    }
+  ]
 }

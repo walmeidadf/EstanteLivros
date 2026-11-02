@@ -2,13 +2,30 @@
   "slug": "yasunari-kawabata",
   "name": "Yasunari Kawabata",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "JP",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "japonês"
   ],
   "primaryLanguage": "japonês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q43736",
+    "status": "confirmed",
+    "evidence": "P50 em \"A casa das belas adormecidas\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/yasunari-kawabata.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yasunari_Kawabata_1938.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q43736",
+      "url": "https://www.wikidata.org/wiki/Q43736"
+    }
+  ]
 }

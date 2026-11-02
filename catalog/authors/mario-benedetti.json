@@ -2,13 +2,30 @@
   "slug": "mario-benedetti",
   "name": "Mario Benedetti",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "UY",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q16285",
+    "status": "confirmed",
+    "evidence": "P50 em \"A trégua\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/mario-benedetti.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Elisa Cabot",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mario_Benedetti,_1981.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q16285",
+      "url": "https://www.wikidata.org/wiki/Q16285"
+    }
+  ]
 }

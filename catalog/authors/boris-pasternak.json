@@ -2,13 +2,30 @@
   "slug": "boris-pasternak",
   "name": "Boris Pasternak",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "RU",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "russo"
   ],
   "primaryLanguage": "russo",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q41223",
+    "status": "confirmed",
+    "evidence": "P50 em \"Doutor Jivago\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/boris-pasternak.jpg",
+    "license": "Public domain",
+    "author": "Владимир Савостьянов / ТАСС",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Pasternak_1958_photo.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q41223",
+      "url": "https://www.wikidata.org/wiki/Q41223"
+    }
+  ]
 }

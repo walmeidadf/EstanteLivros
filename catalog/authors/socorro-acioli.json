@@ -2,13 +2,30 @@
   "slug": "socorro-acioli",
   "name": "Socorro Acioli",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q4383286",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Cabeça do Santo\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/socorro-acioli.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Cromulo13",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Socorrofoyer.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q4383286",
+      "url": "https://www.wikidata.org/wiki/Q4383286"
+    }
+  ]
 }

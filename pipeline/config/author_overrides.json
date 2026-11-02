@@ -1,4 +1,16 @@
 {
+  "italo-svevo": {
+    "country": "IT"
+  },
+  "jhumpa-lahiri": {
+    "country": "US"
+  },
+  "oscar-wilde": {
+    "country": "IE"
+  },
+  "svetlana-aleksievitch": {
+    "country": "BY"
+  },
   "valter hugo mae": {
     "name": "valter hugo mãe",
     "slug": "valter-hugo-mae"

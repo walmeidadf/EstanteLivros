@@ -2,13 +2,30 @@
   "slug": "rosa-montero",
   "name": "Rosa Montero",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "ES",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1187562",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Louca da Casa\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/rosa-montero.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Pedro J Pacheco",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malaga_Film_Festival_2025_-_Rosa_Montero.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1187562",
+      "url": "https://www.wikidata.org/wiki/Q1187562"
+    }
+  ]
 }

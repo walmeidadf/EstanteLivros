@@ -2,13 +2,30 @@
   "slug": "cristina-rivera-garza",
   "name": "Cristina Rivera Garza",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "MX",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q1140408",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Invencível Verão de Liliana\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/cristina-rivera-garza.jpg",
+    "license": "CC BY 4.0",
+    "author": "Simone Liliane",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cristina_Rivera_Garza.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1140408",
+      "url": "https://www.wikidata.org/wiki/Q1140408"
+    }
+  ]
 }

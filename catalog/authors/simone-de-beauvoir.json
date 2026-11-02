@@ -2,13 +2,30 @@
   "slug": "simone-de-beauvoir",
   "name": "Simone de Beauvoir",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q7197",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Mulher Desiludida\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/simone-de-beauvoir.png",
+    "license": "CC BY-SA 3.0",
+    "author": "Moshe Milner",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Simone_de_Beauvoir2.png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q7197",
+      "url": "https://www.wikidata.org/wiki/Q7197"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "tara-westover",
   "name": "Tara Westover",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q50345244",
+    "status": "confirmed",
+    "evidence": "P50 em \"A menina da montanha\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/tara-westover.jpg",
+    "license": "Public domain",
+    "author": "The White House",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tara_Westover_receives_the_National_Humanities_Medal_on_March_21,_2023,_in_the_East_Room_of_the_White_House_-_P20230321ES-0780_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q50345244",
+      "url": "https://www.wikidata.org/wiki/Q50345244"
+    }
+  ]
 }

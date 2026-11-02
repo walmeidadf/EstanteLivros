@@ -2,13 +2,30 @@
   "slug": "yuval-noah-harari",
   "name": "Yuval Noah Harari",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IL",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "hebraico"
   ],
   "primaryLanguage": "hebraico",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q2484404",
+    "status": "confirmed",
+    "evidence": "P50 em \"Sapiens: Uma Breve História da Humanidade\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/yuval-noah-harari.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Martin Kraft",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr364751_Yuval_Noah_Harari_(Frankfurter_Buchmesse_2024).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q2484404",
+      "url": "https://www.wikidata.org/wiki/Q2484404"
+    }
+  ]
 }

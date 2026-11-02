@@ -2,13 +2,30 @@
   "slug": "jarid-arraes",
   "name": "Jarid Arraes",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q51882144",
+    "status": "confirmed",
+    "evidence": "P50 em \"Redemoinho em dia quente\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jarid-arraes.png",
+    "license": "CC BY 3.0",
+    "author": "Reportage: Fernanda Duarte, Camerawork: Ana Elisa Santana",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jarid_Arraes_em_2016.png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q51882144",
+      "url": "https://www.wikidata.org/wiki/Q51882144"
+    }
+  ]
 }

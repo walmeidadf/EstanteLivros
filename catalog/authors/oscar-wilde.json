@@ -2,13 +2,30 @@
   "slug": "oscar-wilde",
   "name": "Oscar Wilde",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IE",
+  "countrySource": "override",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q30875",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Retrato de Dorian Gray\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/oscar-wilde.jpg",
+    "license": "Public domain",
+    "author": "Napoleon Sarony / Adam Cuerden",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oscar_Wilde_by_Napoleon_Sarony._Three-quarter-length_photograph,_seated.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q30875",
+      "url": "https://www.wikidata.org/wiki/Q30875"
+    }
+  ]
 }

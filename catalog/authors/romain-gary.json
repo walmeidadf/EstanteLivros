@@ -2,13 +2,24 @@
   "slug": "romain-gary",
   "name": "Romain Gary",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
+  "wikidata": {
+    "id": "Q157322",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Vida pela Frente\" (título)",
+    "rulesVersion": 2
+  },
   "photo": null,
-  "references": []
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q157322",
+      "url": "https://www.wikidata.org/wiki/Q157322"
+    }
+  ]
 }

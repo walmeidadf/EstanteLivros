@@ -94,6 +94,7 @@ def collect_sources(ctx: Context, author: Dict[str, Any]) -> List[Dict[str, Any]
     if "wikipedia" in ctx.waves.bio_sources:
         wiki = wikipedia_source(ctx, author)
         tried.add("wikipedia")
+        state["bioWikipediaQid"] = (author.get("wikidata") or {}).get("id")
         if wiki:
             sources = [wiki]
     if not sources and "tavily" in ctx.waves.bio_sources and ctx.waves.llm:

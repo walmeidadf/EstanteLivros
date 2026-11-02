@@ -8,7 +8,12 @@
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
+  "wikidata": {
+    "id": null,
+    "status": "not_found",
+    "evidence": "nenhum humano na busca do Wikidata",
+    "rulesVersion": 2
+  },
   "photo": null,
   "references": []
 }

@@ -2,13 +2,30 @@
   "slug": "marcelo-rubens-paiva",
   "name": "Marcelo Rubens Paiva",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q2700188",
+    "status": "confirmed",
+    "evidence": "P50 em \"Feliz Ano Velho\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/marcelo-rubens-paiva.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Harald Krichel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcelo_Rubens_Paiva-68457.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q2700188",
+      "url": "https://www.wikidata.org/wiki/Q2700188"
+    }
+  ]
 }

@@ -2,13 +2,30 @@
   "slug": "maria-duenas",
   "name": "María Dueñas",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "ES",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q6003643",
+    "status": "confirmed",
+    "evidence": "P50 em \"O tempo entre costuras\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/maria-duenas.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Averater",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maria_Due%C3%B1as_02.JPG",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q6003643",
+      "url": "https://www.wikidata.org/wiki/Q6003643"
+    }
+  ]
 }

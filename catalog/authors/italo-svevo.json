@@ -2,13 +2,30 @@
   "slug": "italo-svevo",
   "name": "Italo Svevo",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IT",
+  "countrySource": "override",
   "languages": [
     "italiano"
   ],
   "primaryLanguage": "italiano",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q216478",
+    "status": "confirmed",
+    "evidence": "P50 em \"A consciência de Zeno\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/italo-svevo.jpg",
+    "license": "Public domain",
+    "author": "Unknown photographer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ItaloSvevo.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q216478",
+      "url": "https://www.wikidata.org/wiki/Q216478"
+    }
+  ]
 }

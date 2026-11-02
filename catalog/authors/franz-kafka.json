@@ -2,13 +2,30 @@
   "slug": "franz-kafka",
   "name": "Franz Kafka",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "CZ",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "alemão"
   ],
   "primaryLanguage": "alemão",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q905",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Metamorfose\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/franz-kafka.jpg",
+    "license": "Public domain",
+    "author": "Unknown photographer",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Kafka,_1923.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q905",
+      "url": "https://www.wikidata.org/wiki/Q905"
+    }
+  ]
 }

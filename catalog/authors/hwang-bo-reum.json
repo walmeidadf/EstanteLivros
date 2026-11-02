@@ -2,13 +2,30 @@
   "slug": "hwang-bo-reum",
   "name": "Hwang Bo-reum",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "KR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "coreano"
   ],
   "primaryLanguage": "coreano",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q112132300",
+    "status": "confirmed",
+    "evidence": "P50 em \"Bem-vindos à Livraria Hyunam-dong\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/hwang-bo-reum.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Y. Caner Özyayıkçı",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hwang_Bo-Reum_at_42nd_Istanbul_Book_Fair_20251214.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q112132300",
+      "url": "https://www.wikidata.org/wiki/Q112132300"
+    }
+  ]
 }

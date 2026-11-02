@@ -2,13 +2,30 @@
   "slug": "natalia-borges-polesso",
   "name": "Natália Borges Polesso",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q20048752",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/natalia-borges-polesso.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Rodrigo Fernández",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polesso,_Natalia_Borges_-FILSA_20171105_fRF.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q20048752",
+      "url": "https://www.wikidata.org/wiki/Q20048752"
+    }
+  ]
 }

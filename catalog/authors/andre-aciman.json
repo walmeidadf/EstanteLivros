@@ -2,13 +2,30 @@
   "slug": "andre-aciman",
   "name": "André Aciman",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q506102",
+    "status": "confirmed",
+    "evidence": "P50 em \"Me chame pelo seu nome\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/andre-aciman.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Maximilian Bühn",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Aciman_Call_Me_By_Your_Name_Press_Conference_Berlinale_2017_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q506102",
+      "url": "https://www.wikidata.org/wiki/Q506102"
+    }
+  ]
 }

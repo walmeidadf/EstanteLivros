@@ -2,13 +2,30 @@
   "slug": "itamar-vieira-junior",
   "name": "Itamar Vieira Junior",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q59309236",
+    "status": "confirmed",
+    "evidence": "P50 em \"Torto Arado\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/itamar-vieira-junior.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Fronteiras do Pensamento",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-30_Di%C3%A1logos_com_Mia_Couto_e_Itamar_Vieira_Junior_(54558157936).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q59309236",
+      "url": "https://www.wikidata.org/wiki/Q59309236"
+    }
+  ]
 }

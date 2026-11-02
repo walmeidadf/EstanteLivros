@@ -2,13 +2,30 @@
   "slug": "alejandro-zambra",
   "name": "Alejandro Zambra",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "CL",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q554224",
+    "status": "confirmed",
+    "evidence": "P50 em \"Bonsai\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/alejandro-zambra.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "fourandsixty",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alejandro_Zambra_-_2015_National_Book_Festival_(4).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q554224",
+      "url": "https://www.wikidata.org/wiki/Q554224"
+    }
+  ]
 }

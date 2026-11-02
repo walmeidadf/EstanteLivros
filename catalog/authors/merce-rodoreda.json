@@ -2,13 +2,30 @@
   "slug": "merce-rodoreda",
   "name": "Mercè Rodoreda",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "ES",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "catalão"
   ],
   "primaryLanguage": "catalão",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q234663",
+    "status": "confirmed",
+    "evidence": "P50 em \"A praça do diamante\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/merce-rodoreda.jpg",
+    "license": "CC BY-SA 2.5",
+    "author": "Vilallonga",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rodoreda.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q234663",
+      "url": "https://www.wikidata.org/wiki/Q234663"
+    }
+  ]
 }

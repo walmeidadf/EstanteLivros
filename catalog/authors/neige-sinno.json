@@ -2,13 +2,30 @@
   "slug": "neige-sinno",
   "name": "Neige Sinno",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q121816726",
+    "status": "confirmed",
+    "evidence": "P50 em \"Triste Tigre\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/neige-sinno.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Elena Ternovaja",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neige_Sinno,_2024-1.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q121816726",
+      "url": "https://www.wikidata.org/wiki/Q121816726"
+    }
+  ]
 }

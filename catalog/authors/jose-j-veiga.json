@@ -2,13 +2,30 @@
   "slug": "jose-j-veiga",
   "name": "José J. Veiga",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q9013943",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jose-j-veiga.jpg",
+    "license": "Public domain",
+    "author": "Órgão do Instituto Nacional do Livro - Ministério da Educação e Cultura",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_J._Veiga_foto.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q9013943",
+      "url": "https://www.wikidata.org/wiki/Q9013943"
+    }
+  ]
 }

@@ -127,6 +127,7 @@ def run_step(ctx: Context, step: str, author: Dict[str, Any], result: AuthorResu
     elif step == "country":
         code, source, notes = country_step.choose_country(ctx, author)
         state["countryNotes"] = notes
+        state["countryQid"] = (author.get("wikidata") or {}).get("id")
         result.done[step] = country_step.apply(ctx, author, code, source)
     elif step == "photo":
         outcome, notes = photo_step.run(ctx, author)

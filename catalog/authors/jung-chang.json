@@ -2,13 +2,30 @@
   "slug": "jung-chang",
   "name": "Jung Chang",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "GB",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q235291",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jung-chang.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Christian Ursilva",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jung_Chang_by_Christian_Ursilva.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q235291",
+      "url": "https://www.wikidata.org/wiki/Q235291"
+    }
+  ]
 }

@@ -138,7 +138,7 @@ Tarefas na mesma chave podem ser feitas em paralelo.
   - **(revisão)** Conferir identificações, países, fotos e bios. Calibrar `enrich.json` e o prompt (nova versão se mudar). Registro no log.
   - _Requisitos: 11.4, 13.1, 13.2_
 
-- [ ] 19. Onda 1 (grátis) em todas
+- [x] 19. Onda 1 (grátis) em todas
   - `--wave 1`. **(revisão)** Resolver `ambiguous`/`not_found` em `author_wikidata.json`, os países entre vários e os não mapeados em `author_overrides.json`. Rodar `--wave 1` de novo só nas resolvidas.
   - _Requisitos: 1.4, 1.5, 2.3, 11.2_
 

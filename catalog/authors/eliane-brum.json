@@ -2,13 +2,30 @@
   "slug": "eliane-brum",
   "name": "Eliane Brum",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q10271840",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/eliane-brum.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Jmarchn",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eliane_Brum_(2014,_cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q10271840",
+      "url": "https://www.wikidata.org/wiki/Q10271840"
+    }
+  ]
 }

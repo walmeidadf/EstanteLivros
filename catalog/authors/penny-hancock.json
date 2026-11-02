@@ -8,7 +8,12 @@
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
+  "wikidata": {
+    "id": null,
+    "status": "not_found",
+    "evidence": "nenhum escritor com o mesmo nome nem obra casada",
+    "rulesVersion": 2
+  },
   "photo": null,
   "references": []
 }

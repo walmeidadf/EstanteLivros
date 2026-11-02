@@ -2,13 +2,30 @@
   "slug": "stephen-chbosky",
   "name": "Stephen Chbosky",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q2070360",
+    "status": "confirmed",
+    "evidence": "P50 em \"As Vantagens de Ser Invisível\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/stephen-chbosky.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Lawrence Truett, aka Ltruett at en.wikipedia derivative work: RanZag",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stephen_Chbosky,_Jericho_Panel_at_Comic_Con_SD_2006_cropped.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q2070360",
+      "url": "https://www.wikidata.org/wiki/Q2070360"
+    }
+  ]
 }

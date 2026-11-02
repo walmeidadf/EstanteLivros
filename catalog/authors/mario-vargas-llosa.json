@@ -2,13 +2,30 @@
   "slug": "mario-vargas-llosa",
   "name": "Mario Vargas Llosa",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "PE",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q39803",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Festa do Bode\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/mario-vargas-llosa.png",
+    "license": "Public domain",
+    "author": "Bernard Gotfryd",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mario_Vargas_Llosa_LCCN2020733847_(cropped).png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q39803",
+      "url": "https://www.wikidata.org/wiki/Q39803"
+    }
+  ]
 }

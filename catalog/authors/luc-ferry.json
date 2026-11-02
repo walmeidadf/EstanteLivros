@@ -2,13 +2,30 @@
   "slug": "luc-ferry",
   "name": "Luc Ferry",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q740110",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/luc-ferry.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Thesupermat",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Salon_du_livre_de_Paris_2017_-_Luc_Ferry_-_005.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q740110",
+      "url": "https://www.wikidata.org/wiki/Q740110"
+    }
+  ]
 }

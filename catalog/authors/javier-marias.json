@@ -2,13 +2,30 @@
   "slug": "javier-marias",
   "name": "Javier Marías",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "ES",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "espanhol"
   ],
   "primaryLanguage": "espanhol",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q299161",
+    "status": "confirmed",
+    "evidence": "P50 em \"Os Enamoramentos\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/javier-marias.jpg",
+    "license": "CC BY-SA 3.0",
+    "author": "Mr. Tickle",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Javier_Mar%C3%ADas_(Feria_del_Libro_de_Madrid,_31_de_mayo_de_2008).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q299161",
+      "url": "https://www.wikidata.org/wiki/Q299161"
+    }
+  ]
 }

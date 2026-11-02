@@ -2,13 +2,30 @@
   "slug": "alba-de-cespedes",
   "name": "Alba de Céspedes",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "italiano"
   ],
   "primaryLanguage": "italiano",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q453614",
+    "status": "confirmed",
+    "evidence": "P50 em \"O caderno proibido\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/alba-de-cespedes.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alba_de_Cespedes.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q453614",
+      "url": "https://www.wikidata.org/wiki/Q453614"
+    }
+  ]
 }

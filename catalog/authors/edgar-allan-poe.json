@@ -2,13 +2,30 @@
   "slug": "edgar-allan-poe",
   "name": "Edgar Allan Poe",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q16867",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/edgar-allan-poe.jpg",
+    "license": "Public domain",
+    "author": "Unknown author; Restored by Yann Forget and Adam Cuerden",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q16867",
+      "url": "https://www.wikidata.org/wiki/Q16867"
+    }
+  ]
 }

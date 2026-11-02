@@ -2,13 +2,30 @@
   "slug": "mauricio-lyrio",
   "name": "Maurício Lyrio",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q16940768",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/mauricio-lyrio.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Caixadeliteratura",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauricio_Lyrio,_NY,_2013.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q16940768",
+      "url": "https://www.wikidata.org/wiki/Q16940768"
+    }
+  ]
 }

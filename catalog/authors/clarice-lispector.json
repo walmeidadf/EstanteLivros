@@ -2,13 +2,30 @@
   "slug": "clarice-lispector",
   "name": "Clarice Lispector",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q235955",
+    "status": "confirmed",
+    "evidence": "P50 em \"A Paixão Segundo G.H.\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/clarice-lispector.png",
+    "license": "CC BY-SA 4.0",
+    "author": "Ishiai",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(1920-1977)_Clarice_Lispector_6zxkp_please_credit(palette.fm)_(cropped).png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q235955",
+      "url": "https://www.wikidata.org/wiki/Q235955"
+    }
+  ]
 }

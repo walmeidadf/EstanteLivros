@@ -2,13 +2,30 @@
   "slug": "vera-iaconelli",
   "name": "Vera Iaconelli",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q99575655",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/vera-iaconelli.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "Fronteiras do Pensamento",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-10-31_Vera_Iaconelli_e_Sidarta_Ribeiro_no_Fronteiras_do_Pensamento_2023_em_Salvador_(53323388598)_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q99575655",
+      "url": "https://www.wikidata.org/wiki/Q99575655"
+    }
+  ]
 }

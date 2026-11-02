@@ -2,13 +2,30 @@
   "slug": "buchi-emecheta",
   "name": "Buchi Emecheta",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "NG",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q461675",
+    "status": "confirmed",
+    "evidence": "P50 em \"As alegrias da maternidade\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/buchi-emecheta.png",
+    "license": "CC BY-SA 3.0",
+    "author": "Victuallers",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:July21_Buchi_Emecheta.png",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q461675",
+      "url": "https://www.wikidata.org/wiki/Q461675"
+    }
+  ]
 }

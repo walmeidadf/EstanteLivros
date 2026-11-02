@@ -2,13 +2,30 @@
   "slug": "ana-miranda",
   "name": "Ana Miranda",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q4295529",
+    "status": "manual",
+    "evidence": "escolha manual",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/ana-miranda.jpg",
+    "license": "CC BY 3.0 br",
+    "author": "Moacir Ximenes",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ana_Miranda_(escritora_brasileira).JPG",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q4295529",
+      "url": "https://www.wikidata.org/wiki/Q4295529"
+    }
+  ]
 }

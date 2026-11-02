@@ -2,13 +2,30 @@
   "slug": "judith-butler",
   "name": "Judith Butler",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "US",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "inglês"
   ],
   "primaryLanguage": "inglês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q219368",
+    "status": "confirmed",
+    "evidence": "P50 em \"Quem tem medo do gênero?\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/judith-butler.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Miquel Taverna",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judith_Butler_al_CCCB_2018_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q219368",
+      "url": "https://www.wikidata.org/wiki/Q219368"
+    }
+  ]
 }

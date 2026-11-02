@@ -2,13 +2,30 @@
   "slug": "carla-madeira",
   "name": "Carla Madeira",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q109597755",
+    "status": "confirmed",
+    "evidence": "P50 em \"Tudo é rio\" (título)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/carla-madeira.jpg",
+    "license": "CC BY-SA 2.0",
+    "author": "fronteirasweb",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-07-22_Carla_Madeira_no_%22O_Autor_e_sua_Obra%22_em_S%C3%A3o_Paulo,_012_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q109597755",
+      "url": "https://www.wikidata.org/wiki/Q109597755"
+    }
+  ]
 }

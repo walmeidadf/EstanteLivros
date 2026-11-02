@@ -2,13 +2,30 @@
   "slug": "marjane-satrapi",
   "name": "Marjane Satrapi",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "FR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "francês"
   ],
   "primaryLanguage": "francês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q126633",
+    "status": "confirmed",
+    "evidence": "P50 em \"Persépolis\" (Open Library)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/marjane-satrapi.jpg",
+    "license": "CC BY 3.0",
+    "author": "Georges Bird",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marjane_Satrapi_Cannes_2008(Cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q126633",
+      "url": "https://www.wikidata.org/wiki/Q126633"
+    }
+  ]
 }

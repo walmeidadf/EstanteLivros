@@ -136,12 +136,19 @@ def run(ctx: Context, author: Dict[str, Any]) -> Tuple[str, List[str]]:
         if files:
             info = commons.image_info(ctx.http, files[0], int(ctx.config.get("photo", {}).get("commonsWidth", 1200)))
             if info and info.get("url"):
-                rel, warn = download(ctx, author, info["url"])
-                _set_photo(ctx, author, {"file": rel, "license": info.get("license"), "author": info.get("author"),
-                                         "sourceUrl": info.get("pageUrl") or clean_url(info["url"]),
-                                         "source": "commons"})
-                return "commons", warn
-            notes.append(f"P18 sem metadados no Commons: {files[0]}")
+                try:
+                    rel, warn = download(ctx, author, info["url"])
+                except PhotoError as exc:
+                    # Foto do Commons inutilizável (ex.: pequena demais): segue para as candidatas.
+                    notes.append(f"foto do Commons descartada: {exc}")
+                else:
+                    _set_photo(ctx, author, {"file": rel, "license": info.get("license"),
+                                             "author": info.get("author"),
+                                             "sourceUrl": info.get("pageUrl") or clean_url(info["url"]),
+                                             "source": "commons"})
+                    return "commons", warn
+            else:
+                notes.append(f"P18 sem metadados no Commons: {files[0]}")
     candidates = gather_candidates(ctx, author, entity)
     return (f"{len(candidates)} candidata(s) para revisão" if candidates else "sem candidatas"), notes
 

@@ -709,6 +709,41 @@
   ],
   "countries": [
     {
+      "code": "DE",
+      "name": "Alemanha",
+      "languages": [
+        "alemão"
+      ]
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "languages": [
+        "português"
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
+      "code": "AU",
+      "name": "Austrália",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "BY",
+      "name": "Bielorrússia",
+      "languages": [
+        "russo"
+      ]
+    },
+    {
       "code": "BR",
       "name": "Brasil",
       "languages": [
@@ -716,10 +751,79 @@
       ]
     },
     {
+      "code": "CA",
+      "name": "Canadá",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
+      "code": "CY",
+      "name": "Chipre",
+      "languages": []
+    },
+    {
+      "code": "CO",
+      "name": "Colômbia",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
       "code": "KR",
       "name": "Coreia do Sul",
       "languages": [
         "coreano"
+      ]
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "ES",
+      "name": "Espanha",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
+      "code": "US",
+      "name": "Estados Unidos",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "França",
+      "languages": [
+        "francês"
+      ]
+    },
+    {
+      "code": "IE",
+      "name": "Irlanda",
+      "languages": [
+        "inglês"
       ]
     },
     {
@@ -737,6 +841,62 @@
       ]
     },
     {
+      "code": "JP",
+      "name": "Japão",
+      "languages": [
+        "japonês"
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "MZ",
+      "name": "Moçambique",
+      "languages": [
+        "português"
+      ]
+    },
+    {
+      "code": "MX",
+      "name": "México",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
+      "code": "NG",
+      "name": "Nigéria",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "NO",
+      "name": "Noruega",
+      "languages": [
+        "norueguês"
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Países Baixos",
+      "languages": [
+        "holandês"
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "languages": [
+        "espanhol"
+      ]
+    },
+    {
       "code": "PT",
       "name": "Portugal",
       "languages": [
@@ -744,10 +904,61 @@
       ]
     },
     {
+      "code": "GB",
+      "name": "Reino Unido",
+      "languages": [
+        "inglês"
+      ]
+    },
+    {
+      "code": "CG",
+      "name": "República do Congo",
+      "languages": [
+        "francês"
+      ]
+    },
+    {
+      "code": "CZ",
+      "name": "República Tcheca",
+      "languages": [
+        "tcheco"
+      ]
+    },
+    {
+      "code": "RW",
+      "name": "Ruanda",
+      "languages": [
+        "francês",
+        "inglês"
+      ]
+    },
+    {
       "code": "RU",
       "name": "Rússia",
       "languages": [
         "russo"
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "languages": [
+        "francês"
+      ]
+    },
+    {
+      "code": "SD",
+      "name": "Sudão",
+      "languages": [
+        "inglês",
+        "árabe"
+      ]
+    },
+    {
+      "code": "UY",
+      "name": "Uruguai",
+      "languages": [
+        "espanhol"
       ]
     }
   ]

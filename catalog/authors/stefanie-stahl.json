@@ -2,13 +2,24 @@
   "slug": "stefanie-stahl",
   "name": "Stefanie Stahl",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "DE",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "alemão"
   ],
   "primaryLanguage": "alemão",
-  "wikidata": null,
+  "wikidata": {
+    "id": "Q1236576",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
   "photo": null,
-  "references": []
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q1236576",
+      "url": "https://www.wikidata.org/wiki/Q1236576"
+    }
+  ]
 }

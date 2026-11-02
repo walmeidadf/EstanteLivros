@@ -2,13 +2,30 @@
   "slug": "jon-fosse",
   "name": "Jon Fosse",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "NO",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "norueguês"
   ],
   "primaryLanguage": "norueguês",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q443868",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/jon-fosse.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Tom A. Kolstad/Det norske samlaget.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Writer_Jon_Fosse_(cropped).jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q443868",
+      "url": "https://www.wikidata.org/wiki/Q443868"
+    }
+  ]
 }
