@@ -27,7 +27,7 @@ da autoria, necessário para o Atlas por país e a página País.
 ## F0 — Fundação
 - [x] Estrutura de pastas, legado em `legacy/`
 - [x] `AGENTS.md` + hook de início de sessão; detalhes em `docs/`
-- [ ] Primeiro commit e push para `walmeidadf/EstanteLivros`
+- [x] Primeiro commit e push para `walmeidadf/EstanteLivros`
 
 ## F1 — Catálogo canônico
 - [ ] Schema de obra, autoria, leitura, tema e resumo, com slugs estáveis

@@ -47,6 +47,6 @@ legacy/             legado local, FORA do git (CSVs validados, caches, scripts a
 | [`design/DESIGN_BRIEF.md`](design/DESIGN_BRIEF.md) | Briefing de design e números do catálogo |
 
 ## Estado atual
-- F0 (fundação) concluída localmente. Próximo: F1, schema do catálogo e migração
+- F0 (fundação) concluída e publicada em `main`. Próximo: F1, schema do catálogo e migração
   de `legacy/exports/*.csv` para `catalog/`.
 - Remoto: `git@github.com:walmeidadf/EstanteLivros.git`.
