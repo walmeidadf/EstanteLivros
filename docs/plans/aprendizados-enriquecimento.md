@@ -104,6 +104,23 @@ Lição para a manutenção: a regra de país erra em quem tem cidadania de um
 Estado anterior (Irlanda/Reino Unido, Trieste/Áustria) ou que escreve num idioma
 de outro país. Vale conferir o país de toda autoria nova no relatório.
 
+## Onda 2: bios via OpenAI (2026-11-02)
+
+- 183 bios propostas, 0 falhas, 1 nova tentativa · US$ 0,19 (165 mil tokens de
+  entrada, 15 mil de saída) · ~US$ 0,001 por bio, como estimado.
+- Fontes: Wikipédia pt 121 · en 50 · es 16 · fr 4 · it 2 (contando a amostra).
+  Algumas brasileiras saíram da es, porque a introdução em pt era curta (Ana
+  Miranda, Andréa del Fuego).
+- Verificações automáticas: nenhum dia e mês; 3 "superlativos", todos falsos
+  positivos ou leves ("A Amiga Genial" é título); 1 bio com 4 frases.
+- **Achado:** o modelo marca títulos com Markdown (`*Auto da Compadecida*`) e
+  mistura três estilos de aspas. O app não renderiza Markdown. Ajuste: a função
+  `clean_text` converte ênfase e aspas retas em “…” antes de gravar. Aplicada às
+  38 bios afetadas.
+- Desvios que ficam para a revisão da Lila: lista de ocupações (Kazuo Ishiguro
+  "músico"), frase sem sentido (Saramago "se destaca por adaptações para o
+  cinema"), estilo "(1935–)" para quem está vivo.
+
 ### Estimativa para a carga completa (215 autorias)
 
 - OpenAI: ~US$ 0,001 por bio → ~US$ 0,25.

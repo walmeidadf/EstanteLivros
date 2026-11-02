@@ -142,7 +142,7 @@ Tarefas na mesma chave podem ser feitas em paralelo.
   - `--wave 1`. **(revisão)** Resolver `ambiguous`/`not_found` em `author_wikidata.json`, os países entre vários e os não mapeados em `author_overrides.json`. Rodar `--wave 1` de novo só nas resolvidas.
   - _Requisitos: 1.4, 1.5, 2.3, 11.2_
 
-- [ ] 20. Onda 2 (bios via Wikipédia)
+- [x] 20. Onda 2 (bios via Wikipédia)
   - `--dry-run --wave 2` (custo) e `--wave 2`. **(revisão)** Ler uma amostra de 20 bios. Se o prompt mudar, criar a nova versão e usar `--regenerate-prompt`.
   - _Requisitos: 5.1–5.4, 13.3_
 

@@ -5,6 +5,7 @@ A bio vai para `catalog/summaries.json` (`autoria:{slug}`) com `approved: false`
 
 from __future__ import annotations
 
+import re
 from typing import Any, Dict, List, Optional, Tuple
 
 from .. import summaries
@@ -29,6 +30,21 @@ BIO_SCHEMA = {
 
 class BioError(Exception):
     pass
+
+
+_EMPHASIS = re.compile(r"(\*\*|\*|__|_)(?=\S)(.+?)(?<=\S)\1")
+_STRAIGHT_QUOTES = re.compile(r'"([^"\n]+)"')
+
+
+def clean_text(text: str) -> str:
+    """Texto puro para o app: sem ênfase Markdown e com aspas tipográficas uniformes.
+
+    Títulos marcados com *…* ou "…" viram “…” (o app não renderiza Markdown).
+    """
+    text = _EMPHASIS.sub(lambda m: f"“{m.group(2)}”", text.strip())
+    text = _STRAIGHT_QUOTES.sub(lambda m: f"“{m.group(1)}”", text)
+    text = text.replace("““", "“").replace("””", "”")
+    return re.sub(r"\s+", " ", text)
 
 
 def surname(name: str) -> str:
@@ -178,7 +194,7 @@ def run(ctx: Context, author: Dict[str, Any]) -> Tuple[str, List[str]]:
         reason = validate_bio(ctx, author, obj, len(sources))
         if reason is None:
             source = sources[int(obj["source_index"]) - 1]
-            summaries.upsert(ctx.catalog, scope, obj["text"].strip(), ctx.today,
+            summaries.upsert(ctx.catalog, scope, clean_text(obj["text"]), ctx.today,
                              source=source["label"], sourceUrl=source["url"], sourceLanguage=source.get("language"),
                              model=model, promptVersion=prompt_version)
             state.pop("bioInsufficient", None)

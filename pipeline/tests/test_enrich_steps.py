@@ -308,6 +308,14 @@ class BioTest(unittest.TestCase):
         bio.collect_sources(self.ctx, self.author)
         self.assertEqual(state["bioWikipediaQid"], "Q5646626")
 
+    def test_limpa_markdown_e_aspas(self):
+        self.assertEqual(bio.clean_text('Autor de *Auto da Compadecida* e "Lavoura arcaica".'),
+                         "Autor de “Auto da Compadecida” e “Lavoura arcaica”.")
+        self.assertEqual(bio.clean_text("Escreveu **Dom Casmurro** e “A Cartomante”."),
+                         "Escreveu “Dom Casmurro” e “A Cartomante”.")
+        self.assertEqual(bio.clean_text("valter hugo mãe   (1971)\n escreve"), "valter hugo mãe (1971) escreve")
+        self.assertEqual(bio.clean_text("conhecida por 5 * 3 itens"), "conhecida por 5 * 3 itens")
+
     def test_onda_1_so_coleta(self):
         ctx = eh.make_ctx(self.web, wave=1)
         run_identify(ctx, "han-kang")

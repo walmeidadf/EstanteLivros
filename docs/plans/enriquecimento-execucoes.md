@@ -117,3 +117,22 @@ Cotas: serpapi 7 usadas no mês, saldo 120 · tavily 2 usadas no mês, saldo 300
 Chamadas: wikidata 0 (cache 6) · wikipedia 12 (cache 0)
 OpenAI: 0 tokens de entrada, 0 de saída, US$ 0.0000 · Falhas: 0
 Cotas: serpapi 7 usadas no mês, saldo 120 · tavily 2 usadas no mês, saldo 300
+
+## 2026-11-02 · onda 2 · 183 autorias
+
+| Etapa | Resultado |
+|---|---|
+| bio | bio proposta 183 |
+
+Chamadas: openai 184 (cache 0) · wikidata 0 (cache 182) · wikipedia 0 (cache 287)
+OpenAI: 164881 tokens de entrada, 15101 de saída, US$ 0.1916 · Falhas: 0
+Cotas: serpapi 7 usadas no mês, saldo 120 · tavily 2 usadas no mês, saldo 300
+
+## 2026-11-02 · manutenção · 1 autorias
+
+| Etapa | Resultado |
+|---|---|
+
+Chamadas: tavily-usage 1 (cache 0)
+OpenAI: 0 tokens de entrada, 0 de saída, US$ 0.0000 · Falhas: 0
+Cotas: serpapi 7 usadas no mês, saldo 120 · tavily 4 usadas no mês, saldo 300
