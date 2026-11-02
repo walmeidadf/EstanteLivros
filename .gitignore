@@ -18,6 +18,10 @@ node_modules/
 dist/
 .astro/
 
+# Pipeline: respostas de APIs e folhas de revisão locais
+pipeline/cache/
+docs/plans/revisao-fotos.html
+
 # Infra
 cdk.out/
 .wrangler/
