@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Retrospectiva — story</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 540px; height: 960px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding: 64px 40px 48px; overflow: hidden">
+
+  <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">
+    <span>A estante da Lila</span><span>2014 — 2026</span>
+  </div>
+
+  <div style="display: flex; align-items: flex-end; gap: 16px; margin-top: 36px">
+    <span style="font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 168px; line-height: 0.8; letter-spacing: -0.04em; color: {{accent}}">309</span>
+    <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 34px; line-height: 1.02; padding-bottom: 4px; color: #F4EBD8">leituras<br>em doze anos</span>
+  </div>
+
+  <div aria-hidden="true" style="display: flex; align-items: flex-end; gap: 5px; height: 150px; margin-top: 48px">
+    <sc-for list="{{years}}" as="y" hint-placeholder-count="13">
+      <span style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px">
+        <span style="{{y.bar}}"></span>
+        <span style="font-size: 10px; font-weight: 700; color: #A9B5AE">{{y.lbl}}</span>
+      </span>
+    </sc-for>
+  </div>
+  <span style="margin-top: 10px; font-size: 13px; color: #A9B5AE">2024 foi o ano mais cheio: 30 livros. E outros 53 vieram antes de tudo, sem data.</span>
+
+  <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 52px">
+    <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">Em que língua foram escritos</span>
+    <div aria-hidden="true" style="display: flex; height: 26px; gap: 2px">
+      <sc-for list="{{langs}}" as="l" hint-placeholder-count="10"><span style="{{l.st}}"></span></sc-for>
+    </div>
+    <div style="display: flex; gap: 20px; font-size: 16px">
+      <span><b style="color: #C89B3C">português</b> 115</span>
+      <span><b style="color: #7FA6DE">inglês</b> 81</span>
+      <span><b style="color: #E07F65">espanhol</b> 30</span>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 52px; border-top: 1px solid #2D3E37; padding-top: 24px">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">Mais lida</span>
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 32px; line-height: 1.02; color: #F4EBD8">Elena Ferrante</span>
+      <span style="font-size: 15px; color: #BFC8C2">8 livros</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">Temas que voltam</span>
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 26px; line-height: 1.12; color: #F4EBD8">memória,<br>família,<br>identidade</span>
+    </div>
+  </div>
+
+  <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; color: #A9B5AE">
+    <span>[@perfil da Lila]</span><span>[endereço da estante]</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8C678","options":["#E8C678","#E3A9B0","#F4EBD8"]},"$preview":{"width":540,"height":960}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#E8C678';
+    const c = [[2014, 20], [2015, 21], [2016, 7], [2017, 18], [2018, 13], [2019, 7], [2020, 22], [2021, 21], [2022, 22], [2023, 22], [2024, 30], [2025, 27], [2026, 26]];
+    const years = c.map(([y, n]) => ({ lbl: "'" + String(y).slice(2), bar: {
+      width: '100%', height: Math.round(n * 4) + 'px', background: y === 2024 ? accent : '#4B5E55', borderRadius: '2px 2px 0 0' } }));
+    const L = [[115, '#C89B3C'], [81, '#2F5D9E'], [30, '#A8432C'], [28, '#6B4F9A'], [12, '#3F7A5C'], [9, '#7E2433'], [6, '#E8DFCB'], [5, '#5A5A5A'], [5, '#2A7F86'], [5, '#E3A9B0'], [6, '#33443D']];
+    return { accent, years, langs: L.map(([n, bg]) => ({ st: { flex: n + ' 1 0', background: bg } })) };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Início — estante com carrosséis</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+input::placeholder{color:#8E9B94}
+.row{scrollbar-width:none;scroll-snap-type:x mandatory;scroll-padding-left:16px}
+.row::-webkit-scrollbar{display:none}
+.row > *{scroll-snap-align:start}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 2200px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding-bottom: 56px">
+
+  <header style="padding: 36px 16px 8px; display: flex; flex-direction: column; gap: 18px">
+    <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 46px; line-height: 0.95; letter-spacing: -0.02em; color: #F4EBD8">A estante da Lila</h1>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="busca-inicio" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Buscar título ou autoria</label>
+      <div style="display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 16px; border: 1px solid #3A4C45; border-radius: 26px; background: #15211D">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9D2CC" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+        <input id="busca-inicio" type="search" placeholder="Buscar título ou autoria" style="flex: 1; border: 0; background: transparent; font: inherit; font-size: 16px; color: #EDE6D6; outline: none; height: 44px">
+      </div>
+    </div>
+    <nav aria-label="Seções" style="display: flex; gap: 8px">
+      <a href="#" aria-current="page" style="min-height: 44px; padding: 0 16px; border-radius: 22px; background: #E8C678; color: #1A1408; font-weight: 800; font-size: 14px; display: flex; align-items: center; text-decoration: none">Estante</a>
+      <a href="AtlasV2.dc.html" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-weight: 600; font-size: 14px; display: flex; align-items: center; text-decoration: none">Atlas</a>
+      <a href="LinhaTempo.dc.html" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-weight: 600; font-size: 14px; display: flex; align-items: center; text-decoration: none">Linha do tempo</a>
+    </nav>
+  </header>
+
+  <section aria-labelledby="r-ano" style="display: flex; flex-direction: column; gap: 12px; margin-top: 26px">
+    <a id="r-ano" href="VerAno.dc.html" style="display: flex; justify-content: space-between; align-items: baseline; padding: 0 16px; text-decoration: none; color: #F4EBD8">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 30px; letter-spacing: -0.01em">Em 2026</span>
+      <span style="font-size: 14px; font-weight: 600; color: #E8C678">26 livros ›</span>
+    </a>
+    <div class="row" style="display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px; background: linear-gradient(to bottom, transparent 204px, #5B3E26 204px, #3A2716 212px, transparent 212px); background-attachment: local">
+      <sc-for list="{{featured}}" as="b" hint-placeholder-count="6">
+        <a href="ObraV2.dc.html" style="flex: 0 0 136px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #EDE6D6">
+          <span style="{{b.cover}}">
+            <span style="{{b.ct}}">{{b.title}}</span>
+            <span style="font-size: 8.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">{{b.author}}</span>
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 14px; font-weight: 700; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{{b.title}}</span>
+            <span style="font-size: 13px; color: #A9B5AE; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{b.author}}</span>
+          </span>
+        </a>
+      </sc-for>
+      <a href="VerAno.dc.html" style="flex: 0 0 136px; height: 204px; box-sizing: border-box; border: 1px dashed #4A5C54; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-decoration: none; color: #F4EBD8">
+        <span style="font-family: 'Bodoni Moda', Didot, serif; font-size: 34px">+12</span>
+        <span style="font-size: 13px; font-weight: 600">ver os 26</span>
+      </a>
+    </div>
+  </section>
+
+  <section aria-labelledby="r-aut" style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px">
+    <div id="r-aut" style="display: flex; justify-content: space-between; align-items: baseline; padding: 0 16px">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 24px; color: #F4EBD8">Quem sempre volta</span>
+      <a href="AtlasV2.dc.html" style="font-size: 14px; font-weight: 600; text-decoration: none">Autoria ›</a>
+    </div>
+    <div class="row" style="display: flex; gap: 14px; overflow-x: auto; padding: 0 16px 4px">
+      <sc-for list="{{authors}}" as="a" hint-placeholder-count="5">
+        <a href="Autor.dc.html" style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; color: #EDE6D6; text-align: center">
+          <span style="{{a.av}}">{{a.ini}}</span>
+          <span style="font-size: 13px; font-weight: 700; line-height: 1.2">{{a.name}}</span>
+          <span style="font-size: 12px; color: #A9B5AE; margin-top: -4px">{{a.n}}</span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <sc-for list="{{rows}}" as="r" hint-placeholder-count="4">
+    <section style="display: flex; flex-direction: column; gap: 12px; margin-top: 36px">
+      <a href="VerAno.dc.html" style="display: flex; justify-content: space-between; align-items: baseline; padding: 0 16px; text-decoration: none; color: #F4EBD8">
+        <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 24px">{{r.name}}</span>
+        <span style="font-size: 14px; font-weight: 600; color: #E8C678">{{r.count}} ›</span>
+      </a>
+      <div class="row" style="display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px; background: linear-gradient(to bottom, transparent 156px, #5B3E26 156px, #3A2716 162px, transparent 162px); background-attachment: local">
+        <sc-for list="{{r.books}}" as="b" hint-placeholder-count="5">
+          <a href="ObraV2.dc.html" style="flex: 0 0 104px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #EDE6D6">
+            <span style="{{b.cover}}">
+              <span style="{{b.ct}}">{{b.title}}</span>
+              <span style="font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">{{b.author}}</span>
+              <sc-if value="{{b.reread}}" hint-placeholder-val="{{ false }}">
+                <span style="position: absolute; top: 6px; right: 6px; height: 20px; padding: 0 6px; border-radius: 10px; background: #0E1714; color: #E8C678; font-size: 10px; font-weight: 800; display: flex; align-items: center">2×</span>
+              </sc-if>
+            </span>
+            <span style="font-size: 13px; font-weight: 700; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{{b.title}}</span>
+          </a>
+        </sc-for>
+        <a href="VerAno.dc.html" style="flex: 0 0 104px; height: 156px; box-sizing: border-box; border: 1px dashed #4A5C54; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: #F4EBD8">
+          <span style="font-size: 13px; font-weight: 600">ver todos</span>
+          <span style="font-family: 'Bodoni Moda', Didot, serif; font-size: 26px">{{r.total}}</span>
+        </a>
+      </div>
+    </section>
+  </sc-for>
+
+  <a href="LinhaTempo.dc.html" style="margin: 44px 16px 0; padding: 18px; border: 1px solid #33443D; border-radius: 4px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: #EDE6D6">
+    <span style="display: flex; justify-content: space-between; align-items: baseline">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 22px; color: #F4EBD8">Linha do tempo</span>
+      <span style="font-size: 13px; color: #A9B5AE">2014 — 2026 · e antes</span>
+    </span>
+    <span aria-hidden="true" style="display: flex; align-items: flex-end; gap: 4px; height: 48px">
+      <sc-for list="{{years}}" as="y" hint-placeholder-count="14"><span style="{{y}}"></span></sc-for>
+    </span>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2200}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const L = {
+      pt: ['#C89B3C', '#1A1408'], en: ['#2F5D9E', '#F4EFE6'], es: ['#A8432C', '#F7EDE6'], fr: ['#6B4F9A', '#F3EEF8'],
+      it: ['#3F7A5C', '#F2F0E8'], ru: ['#7E2433', '#F6E9EB'], ja: ['#E8DFCB', '#2A2418'], he: ['#2A7F86', '#EEF7F7'], ko: ['#E3A9B0', '#2A1418']
+    };
+    const T = {
+      torto: ['Torto Arado', 'Itamar Vieira Junior', 'pt'], amiga: ['A Amiga Genial', 'Elena Ferrante', 'it'], rep: ['Reparação', 'Ian McEwan', 'en'],
+      cem: ['Cem Anos de Solidão', 'Gabriel García Márquez', 'es'], anos: ['Os Anos', 'Annie Ernaux', 'fr'], ceg: ['Ensaio sobre a Cegueira', 'José Saramago', 'pt'],
+      amor: ['De Amor e Trevas', 'Amos Oz', 'he'], pach: ['Pachinko', 'Min Jin Lee', 'en'], avesso: ['O Avesso da Pele', 'Jeferson Tenório', 'pt'],
+      louca: ['A Louca da Casa', 'Rosa Montero', 'es'], atos: ['Atos Humanos', 'Han Kang', 'ko'], dom: ['Dom Casmurro', 'Machado de Assis', 'pt'],
+      kafka: ['Kafka à Beira-Mar', 'Haruki Murakami', 'ja'], hist: ['História do Novo Sobrenome', 'Elena Ferrante', 'it'], peso: ['O Peso do Pássaro Morto', 'Aline Bei', 'pt'],
+      crime: ['Crime e Castigo', 'Fiódor Dostoiévski', 'ru'], fogo: ['Salvar o Fogo', 'Itamar Vieira Junior', 'pt'], filha: ['A Filha Perdida', 'Elena Ferrante', 'it'],
+      bras: ['Memórias Póstumas de Brás Cubas', 'Machado de Assis', 'pt'], veg: ['A Vegetariana', 'Han Kang', 'ko'], dall: ['Mrs. Dalloway', 'Virginia Woolf', 'en'],
+      ridi: ['A Ridícula Ideia de Nunca Mais Te Ver', 'Rosa Montero', 'es'], judas: ['Judas', 'Amos Oz', 'he']
+    };
+    const mk = (k, w, reread) => {
+      const b = T[k], l = L[b[2]], h = Math.round(w * 1.5);
+      return {
+        title: b[0], author: b[1], reread: !!reread,
+        cover: { position: 'relative', width: w + 'px', height: h + 'px', boxSizing: 'border-box', padding: w > 120 ? '12px 11px' : '9px 8px',
+          background: l[0], color: l[1], display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+          boxShadow: '0 1px 0 rgba(255,255,255,0.08) inset, 0 16px 22px -14px rgba(0,0,0,0.8)' },
+        ct: { fontFamily: "'Bodoni Moda', Didot, serif", fontStyle: 'italic', fontWeight: 500, fontSize: (w > 120 ? 20 : 15) + 'px', lineHeight: 1.02, letterSpacing: '-0.01em', overflow: 'hidden' }
+      };
+    };
+    const av = (bg, fg) => ({ width: '72px', height: '72px', borderRadius: '36px', background: bg, color: fg, display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontFamily: "'Bodoni Moda', Didot, serif", fontStyle: 'italic', fontWeight: 600, fontSize: '26px', letterSpacing: '0.02em', boxShadow: '0 0 0 1px rgba(255,255,255,0.12) inset' });
+    const authors = [
+      ['EF', 'Elena Ferrante', '8 livros', 'it'], ['GM', 'García Márquez', '7 livros', 'es'], ['JS', 'José Saramago', '6 livros', 'pt'],
+      ['AO', 'Amos Oz', '4 livros', 'he'], ['IM', 'Ian McEwan', '4 livros', 'en'], ['MA', 'Machado de Assis', '4 livros', 'pt'],
+      ['IV', 'Itamar Vieira Junior', '4 livros', 'pt'], ['RM', 'Rosa Montero', '4 livros', 'es']
+    ].map(([ini, name, n, k]) => ({ ini, name, n, av: av(L[k][0], L[k][1]) }));
+    const yc = [53, 20, 21, 7, 18, 13, 7, 22, 21, 22, 22, 30, 27, 26];
+    return {
+      featured: ['torto', 'amiga', 'rep', 'cem', 'anos', 'ceg', 'amor', 'pach', 'avesso', 'louca', 'atos', 'dom', 'kafka', 'crime'].map((k) => mk(k, 136)),
+      authors,
+      rows: [
+        { name: 'Sobre memória', count: '62', total: '62', books: ['anos', 'amor', 'bras', 'peso', 'cem', 'dall', 'louca', 'torto'].map((k) => mk(k, 104)) },
+        { name: 'Família', count: '57', total: '57', books: ['amiga', 'veg', 'pach', 'avesso', 'fogo', 'judas', 'rep', 'hist'].map((k) => mk(k, 104)) },
+        { name: 'Lidos duas vezes', count: '7', total: '7', books: [mk('veg', 104, true), mk('cem', 104, true), mk('dom', 104, true), mk('amiga', 104, true), mk('ceg', 104, true)] },
+        { name: 'Maternidade', count: '25', total: '25', books: ['filha', 'peso', 'veg', 'ridi', 'amiga', 'fogo'].map((k) => mk(k, 104)) }
+      ],
+      years: yc.map((n, i) => ({ flex: '1', height: Math.round((n / 53) * 48) + 'px', background: i === 0 ? 'transparent' : (i === 13 ? '#E8C678' : '#4B5E55'),
+        border: i === 0 ? '1px dashed #6A7D74' : '0', boxSizing: 'border-box', borderRadius: '2px 2px 0 0' }))
+    };
+  }
+}
+</script>
+</body>
+</html>

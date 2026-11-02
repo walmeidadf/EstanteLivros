@@ -1,0 +1,28 @@
+# Sistema
+.DS_Store
+
+# Legado (mantido só localmente como referência e fonte da migração)
+legacy/
+
+# Design: o zip duplica o conteúdo de design/
+design/*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pycache/
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+
+# Infra
+cdk.out/
+.wrangler/
+
+# Segredos
+.env
+.env.*
+!.env.example

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ver todos — 2024</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 3300px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding: 16px 16px 56px">
+
+  <div style="display: flex; justify-content: space-between; align-items: center">
+    <a href="LinhaTempo.dc.html" style="min-height: 44px; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; text-decoration: none; color: #EDE6D6">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Linha do tempo
+    </a>
+    <nav aria-label="Outros anos" style="display: flex; gap: 4px">
+      <a href="#" style="min-height: 44px; padding: 0 12px; display: flex; align-items: center; font-size: 14px; font-weight: 600; text-decoration: none; color: #BFC8C2">‹ 2023</a>
+      <a href="#" style="min-height: 44px; padding: 0 12px; display: flex; align-items: center; font-size: 14px; font-weight: 600; text-decoration: none; color: #BFC8C2">2025 ›</a>
+    </nav>
+  </div>
+
+  <header style="display: flex; flex-direction: column; gap: 6px; padding: 20px 0 24px">
+    <span style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">O ano mais cheio da estante</span>
+    <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 132px; line-height: 0.84; letter-spacing: -0.045em; color: {{accent}}">2024</h1>
+  </header>
+
+  <dl style="margin: 0 0 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #2D3E37">
+    <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 0; border-bottom: 1px solid #2D3E37; border-right: 1px solid #2D3E37">
+      <dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 48px; line-height: 1; color: #F4EBD8">30</dd>
+      <dt style="font-size: 13px; color: #BFC8C2">leituras</dt>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 0 16px 16px; border-bottom: 1px solid #2D3E37">
+      <dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 48px; line-height: 1; color: #F4EBD8">9</dd>
+      <dt style="font-size: 13px; color: #BFC8C2">idiomas originais</dt>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 0; border-bottom: 1px solid #2D3E37; border-right: 1px solid #2D3E37">
+      <dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 48px; line-height: 1; color: #F4EBD8">26</dd>
+      <dt style="font-size: 13px; color: #BFC8C2">autoras e autores</dt>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 0 16px 16px; border-bottom: 1px solid #2D3E37">
+      <dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 48px; line-height: 1; color: #F4EBD8">2</dd>
+      <dt style="font-size: 13px; color: #BFC8C2">releituras</dt>
+    </div>
+  </dl>
+
+  <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px">
+    <div aria-hidden="true" style="display: flex; height: 14px; gap: 2px">
+      <sc-for list="{{mix}}" as="m" hint-placeholder-count="9"><span style="{{m}}"></span></sc-for>
+    </div>
+    <span style="font-size: 13px; color: #A9B5AE">a cor de cada faixa é um idioma, como nas lombadas</span>
+  </div>
+
+  <sc-if value="{{showSummary}}" hint-placeholder-val="{{ true }}">
+    <section aria-label="Resumo do ano" style="display: flex; flex-direction: column; gap: 12px; padding: 20px 0 24px; margin-bottom: 28px; border-top: 1px solid #2D3E37; border-bottom: 1px solid #2D3E37">
+      <span style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">O ano em poucas linhas</span>
+      <p style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 21px; line-height: 1.4; color: #F4EBD8">[Resumo de 2 a 3 frases, gerado a partir dos temas, idiomas e autorias de 2024 — e revisado pela Lila antes de aparecer aqui.]</p>
+    </section>
+  </sc-if>
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px">
+    <h2 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 26px; color: #F4EBD8">Os 30 livros</h2>
+    <span style="font-size: 13px; color: #A9B5AE">na ordem do caderno</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 12px">
+    <sc-for list="{{books}}" as="b" hint-placeholder-count="30">
+      <a href="ObraV2.dc.html" style="display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #EDE6D6">
+        <span style="{{b.cover}}">
+          <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 14px; line-height: 1.04; overflow: hidden">{{b.title}}</span>
+          <span style="font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">{{b.author}}</span>
+          <sc-if value="{{b.reread}}" hint-placeholder-val="{{ false }}">
+            <span style="position: absolute; top: 6px; right: 6px; height: 20px; padding: 0 6px; border-radius: 10px; background: #0E1714; color: #E8C678; font-size: 10px; font-weight: 800; display: flex; align-items: center">2×</span>
+          </sc-if>
+        </span>
+        <span style="font-size: 13px; font-weight: 700; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{{b.title}}</span>
+        <span style="font-size: 12px; color: #A9B5AE; margin-top: -4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{b.author}}</span>
+      </a>
+    </sc-for>
+  </div>
+
+  <a href="Retro.dc.html" style="margin-top: 36px; min-height: 52px; border-radius: 26px; background: #E8C678; color: #1A1408; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 14v6h14v-6"></path></svg>Compartilhar 2024
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"showSummary":{"editor":"boolean","default":true},"accent":{"editor":"color","default":"#E8C678","options":["#E8C678","#E3A9B0","#F4EBD8"]},"$preview":{"width":390,"height":3300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const L = {
+      pt: ['#C89B3C', '#1A1408'], en: ['#2F5D9E', '#F4EFE6'], es: ['#A8432C', '#F7EDE6'], fr: ['#6B4F9A', '#F3EEF8'],
+      it: ['#3F7A5C', '#F2F0E8'], ru: ['#7E2433', '#F6E9EB'], ja: ['#E8DFCB', '#2A2418'], he: ['#2A7F86', '#EEF7F7'], ko: ['#E3A9B0', '#2A1418']
+    };
+    const B = [
+      ['Torto Arado', 'Itamar Vieira Junior', 'pt'], ['A Amiga Genial', 'Elena Ferrante', 'it'], ['Reparação', 'Ian McEwan', 'en'],
+      ['Cem Anos de Solidão', 'Gabriel García Márquez', 'es', 1], ['Os Anos', 'Annie Ernaux', 'fr'], ['Ensaio sobre a Cegueira', 'José Saramago', 'pt'],
+      ['De Amor e Trevas', 'Amos Oz', 'he'], ['Pachinko', 'Min Jin Lee', 'en'], ['O Avesso da Pele', 'Jeferson Tenório', 'pt'],
+      ['A Louca da Casa', 'Rosa Montero', 'es'], ['Atos Humanos', 'Han Kang', 'ko'], ['Dom Casmurro', 'Machado de Assis', 'pt', 1],
+      ['Kafka à Beira-Mar', 'Haruki Murakami', 'ja'], ['História do Novo Sobrenome', 'Elena Ferrante', 'it'], ['O Peso do Pássaro Morto', 'Aline Bei', 'pt'],
+      ['Crime e Castigo', 'Fiódor Dostoiévski', 'ru'], ['Salvar o Fogo', 'Itamar Vieira Junior', 'pt'], ['A Filha Perdida', 'Elena Ferrante', 'it'],
+      ['Memórias Póstumas de Brás Cubas', 'Machado de Assis', 'pt'], ['Mrs. Dalloway', 'Virginia Woolf', 'en'], ['Judas', 'Amos Oz', 'he'],
+      ['A Ridícula Ideia de Nunca Mais Te Ver', 'Rosa Montero', 'es'], ['Emburrecimento Programado', 'John Taylor Gatto', 'en'], ['Sábado', 'Ian McEwan', 'en'],
+      ['O Evangelho segundo Jesus Cristo', 'José Saramago', 'pt'], ['O Amor nos Tempos do Cólera', 'Gabriel García Márquez', 'es'], ['Dias de Abandono', 'Elena Ferrante', 'it'],
+      ['Memorial do Convento', 'José Saramago', 'pt'], ['Caim', 'José Saramago', 'pt'], ['Quincas Borba', 'Machado de Assis', 'pt']
+    ];
+    const cnt = {};
+    B.forEach((b) => { cnt[b[2]] = (cnt[b[2]] || 0) + 1; });
+    const ordered = Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a]);
+    return {
+      showSummary: this.props.showSummary ?? true,
+      accent: this.props.accent ?? '#E8C678',
+      mix: ordered.map((k) => ({ flex: cnt[k] + ' 1 0', background: L[k][0], borderRadius: '1px' })),
+      books: B.map(([title, author, k, rr]) => ({ title, author, reread: !!rr,
+        cover: { position: 'relative', aspectRatio: '2 / 3', boxSizing: 'border-box', padding: '9px 8px', background: L[k][0], color: L[k][1],
+          display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 16px 22px -14px rgba(0,0,0,0.8)' } }))
+    };
+  }
+}
+</script>
+</body>
+</html>

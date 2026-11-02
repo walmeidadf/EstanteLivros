@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Atlas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1700px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; gap: 40px; padding: 16px 16px 56px">
+
+  <div style="display: flex; flex-direction: column; gap: 18px">
+    <a href="Inicio.dc.html" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; text-decoration: none; color: #EDE6D6">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Estante
+    </a>
+    <header style="display: flex; flex-direction: column; gap: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">Atlas · 302 obras</span>
+      <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 48px; line-height: 0.95; letter-spacing: -0.02em; color: #F4EBD8">De onde vêm<br>os livros</h1>
+    </header>
+    <div role="group" aria-label="Agrupar por" style="display: flex; gap: 8px">
+      <button style="min-height: 44px; padding: 0 18px; border: 0; border-radius: 22px; background: #E8C678; color: #1A1408; font: inherit; font-weight: 800; font-size: 14px; cursor: pointer">Idioma original</button>
+      <a href="VerPais.dc.html" style="min-height: 44px; padding: 0 18px; box-sizing: border-box; border: 1px solid #33443D; border-radius: 22px; color: #EDE6D6; font-weight: 600; font-size: 14px; display: flex; align-items: center; text-decoration: none">País</a>
+    </div>
+  </div>
+
+  <section aria-label="Obras por idioma original" style="display: flex; flex-direction: column; gap: 4px">
+    <p style="margin: 0 0 8px; font-size: 13px; color: #A9B5AE">cada lombada é uma obra · toque num idioma para ver todos</p>
+    <sc-for list="{{langs}}" as="l" hint-placeholder-count="11">
+      <a href="VerIdioma.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 12px 0; border-top: 1px solid #1F2D28; text-decoration: none; color: #EDE6D6">
+        <span style="display: flex; justify-content: space-between; align-items: baseline">
+          <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 22px; color: #F4EBD8">{{l.name}}</span>
+          <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; color: #E8C678">{{l.n}} ›</span>
+        </span>
+        <span style="display: flex; flex-wrap: wrap; gap: 6px 2px">
+          <sc-for list="{{l.dots}}" as="d" hint-placeholder-count="20"><span style="{{d}}"></span></sc-for>
+        </span>
+      </a>
+    </sc-for>
+  </section>
+
+  <section aria-label="Autoria recorrente" style="display: flex; flex-direction: column">
+    <h2 style="margin: 0 0 12px; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 28px; color: #F4EBD8">Quem ela mais lê</h2>
+    <sc-for list="{{authors}}" as="a" hint-placeholder-count="8">
+      <a href="Autor.dc.html" style="display: flex; align-items: center; gap: 12px; min-height: 56px; border-top: 1px solid #1F2D28; text-decoration: none; color: #EDE6D6">
+        <span style="{{a.av}}">{{a.ini}}</span>
+        <span style="flex: 1; font-size: 15px; font-weight: 600">{{a.name}}</span>
+        <span style="font-size: 14px; font-weight: 700; color: #E8C678">{{a.n}} ›</span>
+      </a>
+    </sc-for>
+  </section>
+
+  <section aria-label="Temas recorrentes" style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 28px; color: #F4EBD8">Temas que voltam</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 14px">
+      <sc-for list="{{themes}}" as="t" hint-placeholder-count="15">
+        <a href="#" style="{{t.st}}">{{t.name}}<sup style="font-family: Manrope, sans-serif; font-style: normal; font-size: 11px; font-weight: 600; margin-left: 2px; color: #A9B5AE">{{t.n}}</sup></a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section aria-label="Quando foram escritos" style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 28px; color: #F4EBD8">Quando foram escritos</h2>
+    <sc-for list="{{eras}}" as="e" hint-placeholder-count="5">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 70px; font-size: 13px; font-weight: 600">{{e.name}}</span>
+        <span style="flex: 1; display: flex; height: 18px"><span style="{{e.bar}}"></span></span>
+        <span style="width: 32px; text-align: right; font-size: 13px; color: #A9B5AE; font-variant-numeric: tabular-nums">{{e.n}}</span>
+      </div>
+    </sc-for>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const langs = [['português', 115, '#C89B3C'], ['inglês', 81, '#2F5D9E'], ['espanhol', 30, '#A8432C'], ['francês', 28, '#6B4F9A'], ['italiano', 12, '#3F7A5C'],
+      ['russo', 9, '#7E2433'], ['japonês', 6, '#E8DFCB'], ['alemão', 5, '#5A5A5A'], ['hebraico', 5, '#2A7F86'], ['coreano', 5, '#E3A9B0'], ['outros', 6, '#4B5E55']];
+    const av = (bg, fg) => ({ width: '40px', height: '40px', borderRadius: '20px', background: bg, color: fg, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto',
+      fontFamily: "'Bodoni Moda', Didot, serif", fontStyle: 'italic', fontWeight: 600, fontSize: '15px' });
+    const authors = [['EF', 'Elena Ferrante', 8, '#3F7A5C', '#F2F0E8'], ['GM', 'Gabriel García Márquez', 7, '#A8432C', '#F7EDE6'], ['JS', 'José Saramago', 6, '#C89B3C', '#1A1408'],
+      ['AO', 'Amos Oz', 4, '#2A7F86', '#EEF7F7'], ['IM', 'Ian McEwan', 4, '#2F5D9E', '#F4EFE6'], ['MA', 'Machado de Assis', 4, '#C89B3C', '#1A1408'],
+      ['IV', 'Itamar Vieira Junior', 4, '#C89B3C', '#1A1408'], ['RM', 'Rosa Montero', 4, '#A8432C', '#F7EDE6']];
+    const themes = [['memória', 62], ['família', 57], ['identidade', 37], ['amor', 34], ['maternidade', 25], ['infância', 19], ['amizade', 18], ['classe social', 17], ['morte', 16], ['violência', 16], ['luto', 16], ['racismo', 14], ['imigração', 13], ['solidão', 11], ['casamento', 11]];
+    const eras = [['séc. XIX', '~20', 20], ['séc. XX', '~89', 89], ['2000s', '48', 48], ['2010s', '94', 94], ['2020s', '51', 51]];
+    return {
+      langs: langs.map(([name, n, c]) => ({ name, n, dots: Array.from({ length: n }, (_, i) => ({ width: '4px', height: (18 + ((i * 7 + n) % 4) * 3) + 'px', background: c, borderRadius: '1px 1px 0 0', alignSelf: 'flex-end' })) })),
+      authors: authors.map(([ini, name, n, bg, fg]) => ({ ini, name, n, av: av(bg, fg) })),
+      themes: themes.map(([name, n]) => ({ name, n, st: {
+        fontFamily: "'Bodoni Moda', Didot, serif", fontStyle: n > 30 ? 'italic' : 'normal', fontWeight: n > 30 ? 600 : 400,
+        fontSize: Math.round(16 + (n / 62) * 28) + 'px', lineHeight: 1.2, color: n > 30 ? '#E8C678' : '#EDE6D6',
+        textDecoration: 'none', minHeight: '44px', display: 'inline-flex', alignItems: 'center' } })),
+      eras: eras.map(([name, n, v]) => ({ name, n, bar: { width: Math.round((v / 94) * 100) + '%', background: '#4B5E55', borderRadius: '1px' } }))
+    };
+  }
+}
+</script>
+</body>
+</html>

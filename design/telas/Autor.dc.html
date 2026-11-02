@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Autoria — Elena Ferrante</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1500px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding: 16px 16px 56px">
+
+  <a href="Inicio.dc.html" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; text-decoration: none; color: #EDE6D6">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Estante
+  </a>
+
+  <header style="display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 24px 0 28px; text-align: center">
+    <span role="img" aria-label="Retrato padrão: iniciais E F" style="width: 132px; height: 132px; border-radius: 66px; background: #3F7A5C; color: #F2F0E8; display: flex; align-items: center; justify-content: center; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 52px; letter-spacing: 0.02em; box-shadow: 0 0 0 6px #0E1714, 0 0 0 7px #3F7A5C">EF</span>
+    <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 44px; line-height: 0.95; letter-spacing: -0.02em; color: #F4EBD8">Elena Ferrante</h1>
+    <span style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #A9B5AE">Itália · escreve em italiano</span>
+  </header>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #2D3E37; border-bottom: 1px solid #2D3E37; margin-bottom: 28px">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 16px 0; border-right: 1px solid #2D3E37">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 40px; line-height: 1; color: #E8C678">8</span>
+      <span style="font-size: 13px; color: #BFC8C2">livros lidos</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 16px 0">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 40px; line-height: 1; color: #F4EBD8">1º</span>
+      <span style="font-size: 13px; color: #BFC8C2">mais lida da estante</span>
+    </div>
+  </div>
+
+  <section aria-label="Sobre" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px">
+    <p style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-size: 19px; line-height: 1.45; color: #EDE6D6">Pseudônimo de uma escritora italiana cuja identidade nunca foi confirmada por ela. Publica desde 1992; a maior parte dos romances se passa em Nápoles, e a Tetralogia Napolitana a tornou conhecida no mundo todo.</p>
+    <span style="font-size: 12px; color: #8E9B94">Fonte: [fonte da bio]</span>
+  </section>
+
+  <section aria-label="Livros lidos" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px">
+    <h2 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 26px; color: #F4EBD8">Na estante da Lila</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 12px">
+      <sc-for list="{{books}}" as="b" hint-placeholder-count="8">
+        <a href="ObraV2.dc.html" style="display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #EDE6D6">
+          <span style="aspect-ratio: 2 / 3; box-sizing: border-box; padding: 9px 8px; background: #3F7A5C; color: #F2F0E8; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 16px 22px -14px rgba(0,0,0,0.8)">
+            <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 14px; line-height: 1.04">{{b.title}}</span>
+            <span style="font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">Elena Ferrante</span>
+          </span>
+          <span style="font-size: 13px; font-weight: 700; line-height: 1.25">{{b.title}}</span>
+          <span style="font-size: 12px; color: #A9B5AE; margin-top: -4px">{{b.year}}</span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section aria-label="Temas nos livros dela" style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 26px; color: #F4EBD8">O que atravessa os livros dela</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <a href="#" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-size: 14px; display: flex; align-items: center; text-decoration: none">amizade</a>
+      <a href="#" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-size: 14px; display: flex; align-items: center; text-decoration: none">maternidade</a>
+      <a href="#" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-size: 14px; display: flex; align-items: center; text-decoration: none">classe social</a>
+      <a href="#" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-size: 14px; display: flex; align-items: center; text-decoration: none">identidade</a>
+      <a href="#" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #33443D; color: #EDE6D6; font-size: 14px; display: flex; align-items: center; text-decoration: none">Nápoles</a>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      books: [
+        ['A Amiga Genial', '2016'], ['História do Novo Sobrenome', '2016'], ['História de Quem Foge e de Quem Fica', '2017'],
+        ['História da Menina Perdida', '2017'], ['Dias de Abandono', '2020'], ['A Filha Perdida', '2022'],
+        ['A Vida Mentirosa dos Adultos', '2024'], ['Um Amor Incômodo', '2026']
+      ].map(([title, year]) => ({ title, year: 'lido em ' + year }))
+    };
+  }
+}
+</script>
+</body>
+</html>

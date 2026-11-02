@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ver todos — italiano</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1700px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding-bottom: 56px">
+
+  <header style="background: #3F7A5C; color: #F2F0E8; padding: 16px 16px 28px; display: flex; flex-direction: column; gap: 28px">
+    <a href="AtlasV2.dc.html" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; text-decoration: none; color: #F2F0E8">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Atlas
+    </a>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85">Idioma original</span>
+      <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 78px; line-height: 0.9; letter-spacing: -0.03em">italiano</h1>
+    </div>
+    <dl style="margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; border-top: 1px solid rgba(242,240,232,0.4); padding-top: 14px">
+      <div style="display: flex; flex-direction: column"><dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 40px; line-height: 1">12</dd><dt style="font-size: 13px">obras</dt></div>
+      <div style="display: flex; flex-direction: column"><dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 40px; line-height: 1">4%</dd><dt style="font-size: 13px">da estante</dt></div>
+      <div style="display: flex; flex-direction: column"><dd style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 40px; line-height: 1">5</dd><dt style="font-size: 13px">autorias</dt></div>
+    </dl>
+  </header>
+
+  <section aria-label="Autorias neste idioma" style="display: flex; gap: 14px; overflow-x: auto; padding: 24px 16px 8px; scrollbar-width: none">
+    <sc-for list="{{authors}}" as="a" hint-placeholder-count="5">
+      <a href="Autor.dc.html" style="flex: 0 0 72px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-decoration: none; color: #EDE6D6; text-align: center">
+        <span style="width: 60px; height: 60px; border-radius: 30px; background: #3F7A5C; color: #F2F0E8; display: flex; align-items: center; justify-content: center; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 600; font-size: 22px">{{a.ini}}</span>
+        <span style="font-size: 12px; font-weight: 700; line-height: 1.2">{{a.name}}</span>
+        <span style="font-size: 12px; color: #A9B5AE; margin-top: -4px">{{a.n}}</span>
+      </a>
+    </sc-for>
+  </section>
+
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 16px 16px">
+    <span style="font-size: 13px; color: #A9B5AE">12 obras</span>
+    <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #BFC8C2">Ordem
+      <select style="min-height: 40px; padding: 0 10px; background: #15211D; color: #EDE6D6; border: 1px solid #3A4C45; border-radius: 20px; font: inherit; font-size: 13px">
+        <option>da lista</option><option>título</option><option>autoria</option><option>ano de publicação</option>
+      </select>
+    </label>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 12px; padding: 0 16px">
+    <sc-for list="{{books}}" as="b" hint-placeholder-count="12">
+      <a href="ObraV2.dc.html" style="display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #EDE6D6">
+        <span style="aspect-ratio: 2 / 3; box-sizing: border-box; padding: 9px 8px; background: #3F7A5C; color: #F2F0E8; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 16px 22px -14px rgba(0,0,0,0.8)">
+          <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 14px; line-height: 1.04; overflow: hidden">{{b.title}}</span>
+          <span style="font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase">{{b.author}}</span>
+        </span>
+        <span style="font-size: 13px; font-weight: 700; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{{b.title}}</span>
+        <span lang="it" style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 12px; line-height: 1.25; color: #A9B5AE; margin-top: -4px">{{b.orig}}</span>
+      </a>
+    </sc-for>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const books = [
+      ['A Amiga Genial', "L'amica geniale", 'Elena Ferrante'], ['História do Novo Sobrenome', 'Storia del nuovo cognome', 'Elena Ferrante'],
+      ['História de Quem Foge e de Quem Fica', 'Storia di chi fugge e di chi resta', 'Elena Ferrante'], ['História da Menina Perdida', 'Storia della bambina perduta', 'Elena Ferrante'],
+      ['A Filha Perdida', 'La figlia oscura', 'Elena Ferrante'], ['Dias de Abandono', "I giorni dell'abbandono", 'Elena Ferrante'],
+      ['Um Amor Incômodo', "L'amore molesto", 'Elena Ferrante'], ['A Vida Mentirosa dos Adultos', 'La vita bugiarda degli adulti', 'Elena Ferrante'],
+      ['Se um Viajante numa Noite de Inverno', "Se una notte d'inverno un viaggiatore", 'Italo Calvino'], ['Léxico Familiar', 'Lessico famigliare', 'Natalia Ginzburg'],
+      ['É Isto um Homem?', 'Se questo è un uomo', 'Primo Levi'], ['A História', 'La Storia', 'Elsa Morante']
+    ].map(([title, orig, author]) => ({ title, orig, author }));
+    const authors = [['EF', 'Elena Ferrante', '8'], ['IC', 'Italo Calvino', '1'], ['NG', 'Natalia Ginzburg', '1'], ['PL', 'Primo Levi', '1'], ['EM', 'Elsa Morante', '1']]
+      .map(([ini, name, n]) => ({ ini, name, n }));
+    return { books, authors };
+  }
+}
+</script>
+</body>
+</html>

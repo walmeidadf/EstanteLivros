@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Linha do tempo</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#0E1714}
+a{color:#E8C678}a:hover{color:#F6DFA6}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1840px; box-sizing: border-box; background: #0E1714; color: #EDE6D6; font-family: Manrope, system-ui, sans-serif; display: flex; flex-direction: column; padding: 16px 16px 56px">
+
+  <a href="Inicio.dc.html" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; text-decoration: none; color: #EDE6D6">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Estante
+  </a>
+
+  <header style="display: flex; flex-direction: column; gap: 10px; padding: 20px 0 28px">
+    <h1 style="margin: 0; font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 500; font-size: 50px; line-height: 0.95; letter-spacing: -0.02em; color: #F4EBD8">Linha do tempo</h1>
+    <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #BFC8C2">Uma prateleira por ano. Cada lombada é um livro, na cor do idioma em que foi escrito.</p>
+  </header>
+
+  <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+    <sc-for list="{{years}}" as="y" hint-placeholder-count="13">
+      <li>
+        <a href="VerAno.dc.html" aria-label="{{y.aria}}" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 0 18px; text-decoration: none; color: #EDE6D6; border-top: 1px solid #1F2D28">
+          <span style="display: flex; align-items: baseline; gap: 10px">
+            <span style="font-family: 'Bodoni Moda', Didot, serif; font-weight: 700; font-size: 30px; line-height: 1; letter-spacing: -0.01em; color: #F4EBD8">{{y.year}}</span>
+            <span style="flex: 1; font-size: 13px; color: #A9B5AE">{{y.note}}</span>
+            <span style="font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; color: #E8C678">{{y.n}} ›</span>
+          </span>
+          <span style="display: flex; flex-direction: column">
+            <span style="display: flex; align-items: flex-end; gap: 2px; height: 48px; padding: 0 4px">
+              <sc-for list="{{y.bars}}" as="b" hint-placeholder-count="20"><span style="{{b}}"></span></sc-for>
+            </span>
+            <span aria-hidden="true" style="height: 6px; background: linear-gradient(#5B3E26, #3A2716); box-shadow: 0 8px 12px rgba(0,0,0,0.45)"></span>
+          </span>
+        </a>
+      </li>
+    </sc-for>
+  </ol>
+
+  <a href="VerAno.dc.html" style="display: flex; flex-direction: column; gap: 10px; padding: 16px; margin-top: 18px; border: 1px dashed #4A5C54; border-radius: 4px; text-decoration: none; color: #EDE6D6">
+    <span style="display: flex; justify-content: space-between; align-items: baseline">
+      <span style="font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-size: 24px; color: #F4EBD8">Os primeiros da lista</span>
+      <span style="font-size: 14px; font-weight: 700; color: #E8C678">53 ›</span>
+    </span>
+    <span style="font-size: 13px; line-height: 1.45; color: #BFC8C2">Antes de 2014 ou sem ano marcado — na ordem em que entraram no caderno.</span>
+    <span style="display: flex; flex-direction: column">
+      <span style="display: flex; align-items: flex-end; gap: 2px; height: 48px">
+        <sc-for list="{{undated}}" as="b" hint-placeholder-count="53"><span style="{{b}}"></span></sc-for>
+      </span>
+      <span aria-hidden="true" style="height: 6px; background: linear-gradient(#4A3420, #33241A)"></span>
+    </span>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1840}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const L = [['#C89B3C', 115], ['#2F5D9E', 81], ['#A8432C', 30], ['#6B4F9A', 28], ['#3F7A5C', 12], ['#7E2433', 9], ['#E8DFCB', 6], ['#5A5A5A', 5], ['#2A7F86', 5], ['#E3A9B0', 5]];
+    const keys = []; L.forEach(([c, n]) => { for (let j = 0; j < n; j++) keys.push(c); });
+    const bars = (n, s, dim) => Array.from({ length: n }, (_, i) => ({
+      width: '4px', height: (32 + ((i * 7 + s) % 5) * 4) + 'px', background: keys[(i * 37 + s * 53) % keys.length],
+      opacity: dim ? 0.75 : 1, borderRadius: '1px 1px 0 0', flex: '0 0 auto' }));
+    const notes = { 2026: 'em andamento', 2024: 'o ano mais cheio', 2025: '1 releitura' };
+    const c = [[2026, 26], [2025, 27], [2024, 30], [2023, 22], [2022, 22], [2021, 21], [2020, 22], [2019, 7], [2018, 13], [2017, 18], [2016, 7], [2015, 21], [2014, 20]];
+    return {
+      years: c.map(([y, n]) => ({ year: y, n, note: notes[y] || '', aria: y + ', ' + n + ' livros', bars: bars(n, y) })),
+      undated: bars(53, 7, true)
+    };
+  }
+}
+</script>
+</body>
+</html>

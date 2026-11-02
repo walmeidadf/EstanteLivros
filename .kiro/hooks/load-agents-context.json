@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Carregar AGENTS.md",
+      "trigger": "SessionStart",
+      "description": "Injeta o AGENTS.md no início de cada sessão como referência do projeto.",
+      "action": {
+        "type": "command",
+        "command": "cat AGENTS.md",
+        "timeout": 10
+      }
+    }
+  ]
+}
