@@ -140,6 +140,12 @@ class EnrichCliTest(unittest.TestCase):
         self.assertEqual({k: v for k, v in self.tree().items() if not k.startswith("docs/")},
                          {k: v for k, v in before.items() if not k.startswith("docs/")})
 
+    def test_preco_padrao_com_aviso(self):
+        env = {k: v for k, v in eh.ENV.items() if not k.startswith("OPENAI_PRICE")}
+        code, out, err = self.run_cli("--dry-run", env=env)
+        self.assertIn("OPENAI_PRICE_INPUT_PER_M não definido", err)
+        self.assertNotIn("US$ 0.0000", out)
+
     def test_chave_ausente_e_catalogo_invalido(self):
         env = dict(eh.ENV)
         del env["OPENAI_API_KEY"]

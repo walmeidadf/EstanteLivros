@@ -10,6 +10,7 @@ from .context import Context
 DEFUNCT = {
     "Q15180": {"name": "União Soviética", "to": "RU"},
     "Q34266": {"name": "Império Russo", "to": "RU"},
+    "Q2184": {"name": "RSFS da Rússia", "to": "RU"},
     "Q33946": {"name": "Tchecoslováquia", "to": "CZ"},
     "Q36704": {"name": "Iugoslávia", "to": "RS"},
     "Q16957": {"name": "Alemanha Oriental", "to": "DE"},

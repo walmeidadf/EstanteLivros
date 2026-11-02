@@ -49,6 +49,8 @@ DRY_RUN_BLOCKED = {"openai", "serpapi", "tavily", "images"}
 PIPELINE = Path(__file__).resolve().parent
 ROOT = PIPELINE.parent
 STEPS = ["identify", "country", "photo", "bio"]
+# Valores de referência do .env.example (gpt-5.4-mini), usados se o .env não definir.
+DEFAULT_PRICES = {"OPENAI_PRICE_INPUT_PER_M": "0.75", "OPENAI_PRICE_OUTPUT_PER_M": "4.50"}
 
 
 class Paths:
@@ -229,7 +231,7 @@ def print_plan(ctx: Context, slugs: List[str]) -> None:
         need = ctx.needed[p]
         avail = ctx.budget.available(p)
         if p == "openai":
-            print(f"{p:<10} {need:>11} {'—':>7}  ~US$ {ctx.estimated_usd:.2f} (teto US$ {ctx.budget.openai_max_usd:.2f})")
+            print(f"{p:<10} {need:>11} {'—':>7}  ~US$ {ctx.estimated_usd:.4f} (teto US$ {ctx.budget.openai_max_usd:.2f})")
         elif avail is None:
             print(f"{p:<10} {need:>11} {'—':>7}  sem cota")
         else:
@@ -278,6 +280,10 @@ def main(argv: Optional[Sequence[str]] = None, paths: Optional[Paths] = None, tr
         except MissingKey as exc:
             print(str(exc), file=sys.stderr)
             return 2
+        if "bio" in ctx.waves.steps and ctx.waves.llm:
+            for key, value in DEFAULT_PRICES.items():
+                if env.setdefault(key, value):
+                    print(f"aviso: {key} não definido no .env; usando {value} (veja .env.example)", file=sys.stderr)
         if "country" in ctx.waves.steps and not ctx.countries.get("countries"):
             print("pipeline/config/countries.json ausente: rode --build-countries antes", file=sys.stderr)
             return 2

@@ -1,3 +1,124 @@
 {
-  "summaries": []
+  "summaries": [
+    {
+      "scope": "autoria:amos-oz",
+      "text": "Amos Oz (1939–2018) foi um escritor israelense. Escreveu romances, coletâneas de contos, livros infantis e ensaios, e sua obra foi publicada em 45 idiomas.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (en)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Amos_Oz",
+      "sourceLanguage": "en",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:elena-ferrante",
+      "text": "Elena Ferrante é o pseudônimo de uma escritora italiana que publica em italiano desde 1991. É conhecida pelos romances e por livros de não ficção, com destaque para a série Romances de Nápoles, que se tornou um sucesso internacional.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Elena_Ferrante",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:han-kang",
+      "text": "Han Kang (1970) é uma escritora sul-coreana. Sua obra ganhou projeção internacional com romances em prosa poética intensa, que confrontam traumas históricos e expõem a fragilidade da vida humana; foi a primeira asiática e coreana a receber o Nobel de Literatura, em 2024.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (en)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Han_Kang",
+      "sourceLanguage": "en",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:liev-tolstoi",
+      "text": "Liev Tolstói (1828–1910) foi um escritor russo, nascido em Iasnaia Poliana, no Governorado de Tula. Sua obra inclui romances, novelas, contos, peças e ensaios filosóficos, com destaque para a ficção realista e para títulos como Guerra e Paz e Anna Kariênina.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Liev_Tolst%C3%B3i",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:luis-fernando-verissimo",
+      "text": "Luís Fernando Veríssimo (Porto Alegre, 1936–2025) foi um escritor brasileiro, também cartunista, tradutor, roteirista, dramaturgo e romancista. Sua obra reúne humor e diferentes gêneros, e ele foi também publicitário, revisor de jornal e músico, com atuação em saxofone em alguns conjuntos.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Luis_Fernando_Verissimo",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:machado-de-assis",
+      "text": "Machado de Assis (Rio de Janeiro, 1839–1908) foi um escritor brasileiro. Sua obra abrange poesia, romance, crônica, dramaturgia, conto, folhetim, jornalismo e crítica literária, e é marcada por crítica social, ironia e traços do Romantismo e do Realismo.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Machado_de_Assis",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:mikhail-bulgakov",
+      "text": "Mikhail Afanásievitch Bulgákov (1891–1940) foi um escritor e dramaturgo russo, nascido em Kiev. Sua obra é conhecida pelo romance e pela novela satírica, com destaque para o tom crítico ao regime soviético.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Mikhail_Bulg%C3%A1kov",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:sidarta-ribeiro",
+      "text": "Sidarta Ribeiro (1971) é brasileiro. Em sua obra, mescla história, cultura, depoimentos pessoais e rigor científico para tratar da maconha e combater a desinformação sobre o tema.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "As flores do bem, de Sidarta Ribeiro",
+      "sourceUrl": "https://www.fosforoeditora.com.br/produto/as-flores-do-bem-a-ciencia-e-a-historia-da-libertacao-da-maconha-70176",
+      "sourceLanguage": null,
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:valter-hugo-mae",
+      "text": "valter hugo mãe é o nome artístico de Valter Hugo Lemos, escritor, poeta e narrador português, nascido em Angola em 1971. Sua obra inclui poesia e narrativa, e ele recebeu o Prémio José Saramago (2007) e o Grande Prémio Portugal Telecom de literatura (2012).",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (es)",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Valter_Hugo_M%C3%A3e",
+      "sourceLanguage": "es",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    },
+    {
+      "scope": "autoria:wellington-srbek",
+      "text": "Wellington Srbek (Belo Horizonte, Minas Gerais, 1974) é um quadrinista e roteirista brasileiro. Sua obra se destaca por histórias em quadrinhos.",
+      "approved": false,
+      "updatedAt": "2026-11-02",
+      "source": "Wikipédia (pt)",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Wellington_Srbek",
+      "sourceLanguage": "pt",
+      "model": "gpt-5.4-mini",
+      "promptVersion": "author-bio-v2",
+      "editedBy": null
+    }
+  ]
 }

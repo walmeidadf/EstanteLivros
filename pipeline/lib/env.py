@@ -60,6 +60,13 @@ class Env:
         value = self._values.get(key, "")
         return value if value.strip() else default
 
+    def setdefault(self, key: str, value: str) -> bool:
+        """Define um valor só se a chave estiver vazia. Devolve True se definiu."""
+        if self.has(key):
+            return False
+        self._values[key] = value
+        return True
+
     def has(self, key: str) -> bool:
         return self.get(key) is not None
 

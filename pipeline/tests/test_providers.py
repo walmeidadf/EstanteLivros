@@ -91,6 +91,12 @@ class WikipediaCommonsTest(ProviderCase):
         self.assertEqual((info["width"], info["license"], info["author"]), (1200, "CC BY-SA 4.0", "John Sears"))
         self.assertTrue(info["pageUrl"].startswith("https://commons.wikimedia.org/wiki/File:"))
 
+    def test_credito_duplicado_e_desconhecido(self):
+        hidden = '<span lang="en">Unknown author</span><span style="display: none;">Unknown author</span>'
+        self.assertEqual(commons.strip_html(hidden), "Unknown author")
+        self.assertIsNone(commons._author(commons.strip_html(hidden)))
+        self.assertEqual(commons.strip_html('<a>Ana</a><br><div style="display:none">Ana <b>x</b></div> Silva'), "Ana Silva")
+
     def test_strip_html(self):
         self.assertEqual(commons.strip_html('<a href="//x">John&nbsp;Sears</a>\n (<i>own</i>)'), "John Sears (own)")
         self.assertIsNone(commons.strip_html(""))

@@ -2,13 +2,30 @@
   "slug": "machado-de-assis",
   "name": "Machado de Assis",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "BR",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q311145",
+    "status": "confirmed",
+    "evidence": "P50 em \"Dom Casmurro\" (Open Library)",
+    "rulesVersion": 1
+  },
+  "photo": {
+    "file": "authors/machado-de-assis.jpg",
+    "license": "Public domain",
+    "author": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machado_de_Assis_aos_57_anos.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q311145",
+      "url": "https://www.wikidata.org/wiki/Q311145"
+    }
+  ]
 }

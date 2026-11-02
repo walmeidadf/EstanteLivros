@@ -56,8 +56,12 @@ def render_review(cat: Catalog, state: Dict[str, Dict[str, Any]]) -> str:
     ]
     to_approve = []
     sections = 0
+    skipped = 0
     for slug, author in sorted(cat.authors.items()):
         bio = bios.get(slug)
+        if author.get("wikidata") is None and slug not in state and bio is None:
+            skipped += 1  # ainda não processada: não é pendência de revisão
+            continue
         items = pending_items(cat, state, author, bio)
         if bio and not bio.get("approved"):
             to_approve.append(f"autoria:{slug}")
@@ -69,6 +73,8 @@ def render_review(cat: Catalog, state: Dict[str, Dict[str, Any]]) -> str:
         lines.append("")
     if sections == 0:
         lines += ["Nenhuma pendência.", ""]
+    if skipped:
+        lines += [f"_{skipped} autorias ainda não processadas (não listadas)._", ""]
     if to_approve:
         lines += [
             "## Aprovar bios",

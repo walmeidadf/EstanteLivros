@@ -13,13 +13,32 @@ API = "https://commons.wikimedia.org/w/api.php"
 PROVIDER = "commons"
 
 
+UNKNOWN_AUTHORS = {"unknown author", "unknown", "autor desconhecido", "anonymous", "anônimo", "anonimo"}
+_VOID = {"br", "img", "hr", "meta", "link", "input", "wbr"}
+
+
 class _TextOnly(HTMLParser):
+    """Texto visível: ignora elementos com display:none (o Commons duplica nomes assim)."""
+
     def __init__(self) -> None:
         super().__init__()
         self.parts = []
+        self.hidden_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in _VOID:
+            return
+        style = (dict(attrs).get("style") or "").replace(" ", "").lower()
+        if self.hidden_depth or "display:none" in style:
+            self.hidden_depth += 1
+
+    def handle_endtag(self, tag):
+        if tag not in _VOID and self.hidden_depth:
+            self.hidden_depth -= 1
 
     def handle_data(self, data: str) -> None:
-        self.parts.append(data)
+        if not self.hidden_depth:
+            self.parts.append(data)
 
 
 def strip_html(value: Optional[str]) -> Optional[str]:
@@ -30,6 +49,10 @@ def strip_html(value: Optional[str]) -> Optional[str]:
     text = html.unescape("".join(parser.parts))
     text = re.sub(r"\s+", " ", text).strip()
     return text or None
+
+
+def _author(text: Optional[str]) -> Optional[str]:
+    return None if not text or text.lower().strip(" .") in UNKNOWN_AUTHORS else text
 
 
 def image_info(http: Http, filename: str, width: int) -> Optional[Dict[str, Any]]:
@@ -52,6 +75,6 @@ def image_info(http: Http, filename: str, width: int) -> Optional[Dict[str, Any]
         "width": info.get("thumbwidth") or info.get("width"),
         "height": info.get("thumbheight") or info.get("height"),
         "license": strip_html((meta.get("LicenseShortName") or {}).get("value")),
-        "author": strip_html((meta.get("Artist") or {}).get("value")),
+        "author": _author(strip_html((meta.get("Artist") or {}).get("value"))),
         "pageUrl": info.get("descriptionurl"),
     }

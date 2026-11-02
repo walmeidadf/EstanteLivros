@@ -707,5 +707,48 @@
     "violência policial",
     "Xingu"
   ],
-  "countries": []
+  "countries": [
+    {
+      "code": "BR",
+      "name": "Brasil",
+      "languages": [
+        "português"
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "Coreia do Sul",
+      "languages": [
+        "coreano"
+      ]
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "languages": [
+        "hebraico"
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Itália",
+      "languages": [
+        "italiano"
+      ]
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "languages": [
+        "português"
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Rússia",
+      "languages": [
+        "russo"
+      ]
+    }
+  ]
 }

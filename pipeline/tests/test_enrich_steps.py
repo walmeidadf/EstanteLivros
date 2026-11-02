@@ -69,6 +69,16 @@ class IdentifyTest(unittest.TestCase):
         ctx = eh.make_ctx(self.web)
         self.assertEqual(run_identify(ctx, "han-kang")["status"], "ambiguous")
 
+    def test_nome_so_no_rotulo_mul(self):
+        self.web.search["valter hugo mãe"] = ["Q2509574"]
+        ent = eh.entity("Q2509574", "x", occupations=("Q36180",))
+        ent["labels"] = {"mul": {"value": "valter hugo mãe"}}
+        self.web.entities["Q2509574"] = ent
+        self.ctx.catalog.authors["fulana-de-tal"]["name"] = "valter hugo mãe"
+        r = run_identify(self.ctx, "fulana-de-tal")
+        self.assertEqual((r["status"], r["id"]), ("probable", "Q2509574"))
+        self.assertIn("mul", self.web.fake.calls[-2]["url"].split("languages=")[1])
+
     def test_nao_encontrada(self):
         self.assertEqual(run_identify(self.ctx, "fulana-de-tal")["status"], "not_found")
 
@@ -186,6 +196,14 @@ class PhotoTest(unittest.TestCase):
         self.assertIsNone(self.ctx.catalog.authors["han-kang"]["photo"])
         self.assertFalse(PENDING["photo"](self.ctx, self.ctx.catalog.authors["han-kang"]))
 
+    def test_commons_depois_de_identificada(self):
+        author = self.ctx.catalog.authors["han-kang"]
+        self.ctx.author_state("han-kang").update(photoCandidates=[{"url": f"https://img.test/{i}.png"} for i in range(3)],
+                                                 photoTried=["serpapi", "tavily", "wikipedia"])
+        self.assertTrue(PENDING["photo"](self.ctx, author))
+        photo.run(self.ctx, author)
+        self.assertEqual(author["photo"]["source"], "commons")
+
     def test_onda_1_nao_usa_cota(self):
         del self.web.entities["Q5646626"]["claims"]["P18"]
         ctx = eh.make_ctx(self.web, wave=1)
@@ -233,7 +251,7 @@ class BioTest(unittest.TestCase):
         item = summaries.get(self.ctx.catalog, "autoria:han-kang")
         self.assertEqual(outcome, "bio proposta (Wikipédia (en))")  # pt curta demais (111 < 300)
         self.assertEqual((item["sourceLanguage"], item["approved"], item["promptVersion"], item["model"]),
-                         ("en", False, "author-bio-v1", "gpt-teste"))
+                         ("en", False, self.ctx.config["bio"]["promptVersion"], "gpt-teste"))
         body = self.web.fake.calls[-1]["body"]
         self.assertIn("Han Kang", body["instructions"])
         self.assertIn("[1] Wikipédia (en)", body["input"])
@@ -272,7 +290,7 @@ class BioTest(unittest.TestCase):
         self.web.openai = [BIO_OK, BIO_OK]
         bio.run(self.ctx, self.author)
         self.assertFalse(PENDING["bio"](self.ctx, self.author))
-        self.ctx.regenerate_prompt = "author-bio-v1"
+        self.ctx.regenerate_prompt = self.ctx.config["bio"]["promptVersion"]
         self.assertTrue(PENDING["bio"](self.ctx, self.author))
         summaries.approve(self.ctx.catalog, "autoria:han-kang")
         self.ctx.regenerate = True
@@ -312,9 +330,9 @@ class SelectionTest(unittest.TestCase):
     def test_rules_version_reabre_ambiguas(self):
         ctx = eh.make_ctx(eh.FakeWeb())
         a = ctx.catalog.authors["fulana-de-tal"]
-        a["wikidata"] = {"id": None, "status": "ambiguous", "evidence": "x", "rulesVersion": 1}
+        a["wikidata"] = {"id": None, "status": "ambiguous", "evidence": "x", "rulesVersion": ctx.rules_version}
         self.assertFalse(PENDING["identify"](ctx, a))
-        ctx.config["rulesVersion"] = 2
+        ctx.config["rulesVersion"] = ctx.rules_version + 1
         self.assertTrue(PENDING["identify"](ctx, a))
 
     def test_ondas(self):

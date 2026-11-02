@@ -4,13 +4,30 @@
   "aliases": [
     "Valter Hugo Mãe"
   ],
-  "country": null,
-  "countrySource": null,
+  "country": "PT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "português"
   ],
   "primaryLanguage": "português",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q2509574",
+    "status": "probable",
+    "evidence": "único escritor com o mesmo nome (sem obra casada)",
+    "rulesVersion": 2
+  },
+  "photo": {
+    "file": "authors/valter-hugo-mae.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Estevoaei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valter_Hugo_M%C3%A3e.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q2509574",
+      "url": "https://www.wikidata.org/wiki/Q2509574"
+    }
+  ]
 }

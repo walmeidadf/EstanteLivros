@@ -130,6 +130,8 @@ def run(ctx: Context, author: Dict[str, Any]) -> Tuple[str, List[str]]:
     qid = (author.get("wikidata") or {}).get("id")
     entity = ctx.entity(qid) if qid else None
     if entity and "commons" in ctx.waves.photo_sources:
+        state = ctx.author_state(slug)
+        state["photoCommonsQid"] = qid  # Commons já tentado para este QID
         files = wikidata.claim_strings(entity, "P18")
         if files:
             info = commons.image_info(ctx.http, files[0], int(ctx.config.get("photo", {}).get("commonsWidth", 1200)))

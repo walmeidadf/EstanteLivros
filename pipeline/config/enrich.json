@@ -1,12 +1,18 @@
 {
-  "rulesVersion": 1,
-  "bioSourceLanguages": ["pt", "en", "es", "fr", "it"],
+  "rulesVersion": 2,
+  "bioSourceLanguages": [
+    "pt",
+    "en",
+    "es",
+    "fr",
+    "it"
+  ],
   "minIntroChars": 300,
   "minFallbackIntroChars": 120,
   "bio": {
     "minChars": 80,
     "maxChars": 450,
-    "promptVersion": "author-bio-v1",
+    "promptVersion": "author-bio-v2",
     "maxSourceChars": 4000,
     "maxSources": 3,
     "estimatedOutputTokens": 150
@@ -16,10 +22,15 @@
     "rejectBelow": 200,
     "commonsWidth": 1200,
     "maxCandidates": 3,
-    "order": ["commons", "wikipedia", "serpapi", "tavily"]
+    "order": [
+      "commons",
+      "wikipedia",
+      "serpapi",
+      "tavily"
+    ]
   },
   "queries": {
-    "serpapiPhoto": "{name} escritor {work}",
+    "serpapiPhoto": "{name} escritor",
     "tavilyBio": "{name} escritor(a) {work} biografia"
   },
   "excludedDomains": [
@@ -30,7 +41,17 @@
     "x.com",
     "twitter.com",
     "youtube.com",
-    "pinterest.com"
+    "pinterest.com",
+    "amazon.com",
+    "amazon.com.br",
+    "media-amazon.com",
+    "mercadolivre.com.br",
+    "americanas.com.br",
+    "submarino.com.br",
+    "magazineluiza.com.br",
+    "estantevirtual.com.br",
+    "ebay.com",
+    "shopee.com.br"
   ],
   "minIntervalSeconds": {
     "wikidata": 0.2,

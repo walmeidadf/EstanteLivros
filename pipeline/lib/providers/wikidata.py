@@ -23,8 +23,12 @@ def search(http: Http, name: str, language: str, limit: int = 10) -> List[str]:
 
 
 def entities(http: Http, ids: Iterable[str], props: str = "claims|labels|aliases|sitelinks|descriptions",
-             languages: str = "pt|en") -> Dict[str, Dict[str, Any]]:
-    """Carrega entidades em lotes de 50 (IDs ordenados, para o cache ser estável)."""
+             languages: str = "pt|en|mul") -> Dict[str, Dict[str, Any]]:
+    """Carrega entidades em lotes de 50 (IDs ordenados, para o cache ser estável).
+
+    `mul` é o rótulo multilíngue padrão: muitas pessoas só têm o nome nele
+    (ex.: valter hugo mãe, achado na amostra real).
+    """
     unique = sorted(set(ids), key=lambda q: (len(q), q))
     out: Dict[str, Dict[str, Any]] = {}
     for start in range(0, len(unique), BATCH):

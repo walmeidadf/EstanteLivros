@@ -2,13 +2,24 @@
   "slug": "elena-ferrante",
   "name": "Elena Ferrante",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IT",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "italiano"
   ],
   "primaryLanguage": "italiano",
-  "wikidata": null,
+  "wikidata": {
+    "id": "Q368127",
+    "status": "confirmed",
+    "evidence": "P50 em \"A vida mentirosa dos adultos\" (ISBN 9788551006375)",
+    "rulesVersion": 1
+  },
   "photo": null,
-  "references": []
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q368127",
+      "url": "https://www.wikidata.org/wiki/Q368127"
+    }
+  ]
 }

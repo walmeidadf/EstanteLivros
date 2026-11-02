@@ -2,13 +2,30 @@
   "slug": "amos-oz",
   "name": "Amos Oz",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "IL",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "hebraico"
   ],
   "primaryLanguage": "hebraico",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q151872",
+    "status": "confirmed",
+    "evidence": "P50 em \"Judas\" (título)",
+    "rulesVersion": 1
+  },
+  "photo": {
+    "file": "authors/amos-oz.jpg",
+    "license": "CC BY 3.0",
+    "author": "Michiel Hendryckx",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amos_oz675.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q151872",
+      "url": "https://www.wikidata.org/wiki/Q151872"
+    }
+  ]
 }

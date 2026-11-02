@@ -2,13 +2,30 @@
   "slug": "mikhail-bulgakov",
   "name": "Mikhail Bulgákov",
   "aliases": [],
-  "country": null,
-  "countrySource": null,
+  "country": "RU",
+  "countrySource": "wikidata-citizenship",
   "languages": [
     "russo"
   ],
   "primaryLanguage": "russo",
-  "wikidata": null,
-  "photo": null,
-  "references": []
+  "wikidata": {
+    "id": "Q835",
+    "status": "confirmed",
+    "evidence": "P50 em \"O Mestre e Margarida\" (título)",
+    "rulesVersion": 1
+  },
+  "photo": {
+    "file": "authors/mikhail-bulgakov.jpg",
+    "license": "Public domain",
+    "author": "Moisej Nappelbaum",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA%D0%BE%D0%B2.jpg",
+    "source": "commons"
+  },
+  "references": [
+    {
+      "provider": "wikidata",
+      "id": "Q835",
+      "url": "https://www.wikidata.org/wiki/Q835"
+    }
+  ]
 }

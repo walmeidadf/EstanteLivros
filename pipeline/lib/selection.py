@@ -45,7 +45,11 @@ def photo_pending(ctx: Context, author: Dict[str, Any]) -> bool:
         return photo is None or photo.get("sourceUrl") not in (choice.get("url"), choice.get("pageUrl"))
     if photo is not None:
         return ctx.refresh
-    tried = set(ctx.author_state(author["slug"]).get("photoTried", []))
+    qid = (author.get("wikidata") or {}).get("id")
+    state = ctx.author_state(author["slug"])
+    if qid and "commons" in ctx.waves.photo_sources and state.get("photoCommonsQid") != qid:
+        return True  # identificada depois das candidatas: tentar o Commons
+    tried = set(state.get("photoTried", []))
     candidates = ctx.author_state(author["slug"]).get("photoCandidates", [])
     max_candidates = int(ctx.config.get("photo", {}).get("maxCandidates", 3))
     untried = [s for s in ctx.waves.photo_sources if s not in tried]
