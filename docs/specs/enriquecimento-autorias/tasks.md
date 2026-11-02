@@ -129,11 +129,11 @@ Tarefas na mesma chave podem ser feitas em paralelo.
 
 ## Execução real
 
-- [ ] 17. Países
+- [x] 17. Países
   - Rodar `--build-countries`. **(revisão)** Conferir nomes em pt-BR dos países que aparecerem, idiomas e a tabela `defunct`. Commitar `countries.json`.
   - _Requisitos: 2.5, 2.8_
 
-- [ ] 18. Amostra de 10 autorias
+- [x] 18. Amostra de 10 autorias
   - `--dry-run` e depois a execução com todas as ondas para Han Kang, Machado de Assis, Elena Ferrante, Liev Tolstói, valter hugo mãe, Luís Fernando Veríssimo, Sidarta Ribeiro, uma coautoria, um autor russo/soviético e um hebraico.
   - **(revisão)** Conferir identificações, países, fotos e bios. Calibrar `enrich.json` e o prompt (nova versão se mudar). Registro no log.
   - _Requisitos: 11.4, 13.1, 13.2_

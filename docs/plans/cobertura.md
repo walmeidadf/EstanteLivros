@@ -19,10 +19,10 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 
 | Campo | Preenchidos | Total | % |
 |---|---:|---:|---:|
-| Identificada no Wikidata (confirmada, provável ou manual) | 9 | 215 | 4,2% |
-| País | 9 | 215 | 4,2% |
-| Foto | 7 | 215 | 3,3% |
-| Foto do Commons | 7 | 215 | 3,3% |
+| Identificada no Wikidata (confirmada, provável ou manual) | 10 | 215 | 4,7% |
+| País | 10 | 215 | 4,7% |
+| Foto | 9 | 215 | 4,2% |
+| Foto do Commons | 8 | 215 | 3,7% |
 | Bio proposta (inclui aprovadas) | 10 | 215 | 4,7% |
 | Bio aprovada | 0 | 215 | 0,0% |
 
@@ -30,12 +30,8 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 |---|---:|
 | confirmada por obra | 7 |
 | provável | 2 |
-| não encontrada | 1 |
+| manual | 1 |
 | não processada | 205 |
-
-### Não encontradas no Wikidata
-
-- Sidarta Ribeiro (`sidarta-ribeiro`)
 
 ## Autorias unificadas
 

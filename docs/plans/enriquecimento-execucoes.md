@@ -57,3 +57,16 @@ Cotas: serpapi 5 usadas no mês, saldo 120 · tavily 2 usadas no mês, saldo 300
 Chamadas: openai 10 (cache 0) · serpapi 1 (cache 1) · serpapi-account 1 (cache 0) · tavily-usage 1 (cache 0) · wikidata 0 (cache 9) · wikipedia 0 (cache 14)
 OpenAI: 8821 tokens de entrada, 812 de saída, US$ 0.0103 · Falhas: 0
 Cotas: serpapi 7 usadas no mês, saldo 119 · tavily 2 usadas no mês, saldo 300
+
+## 2026-11-02 · manutenção · 10 autorias
+
+| Etapa | Resultado |
+|---|---|
+| identify | manual 1 |
+| country | país 1 |
+| photo | commons 1 · escolhida 1 |
+| bio | bio proposta 10 |
+
+Chamadas: commons 0 (cache 1) · images 2 (cache 0) · openai 10 (cache 0) · serpapi-account 1 (cache 0) · tavily-usage 1 (cache 0) · wikidata 0 (cache 10) · wikipedia 0 (cache 14)
+OpenAI: 9416 tokens de entrada, 861 de saída, US$ 0.0109 · Falhas: 0
+Cotas: serpapi 8 usadas no mês, saldo 120 · tavily 2 usadas no mês, saldo 300

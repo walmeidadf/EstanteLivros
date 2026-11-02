@@ -1,3 +1,10 @@
 {
-  "elena-ferrante": { "none": true }
+  "elena-ferrante": {
+    "none": true
+  },
+  "wellington-srbek": {
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzgJbp8maP1jcOVWMVeeHVV4QtvuhsQMVRAgSlrHU9STtqEHGs2sPqkxt7bqgV6baNuZhIJ31leIyeiGvPJlAmDZN8q6-Q_fF0dhp1JgqNh7kTbsrhtnm_k0txJwyTpUnxR9377n_gtHl1/s2048/WS.jpg",
+    "source": "serpapi",
+    "pageUrl": "http://wellingtonsrbek.blogspot.com/"
+  }
 }

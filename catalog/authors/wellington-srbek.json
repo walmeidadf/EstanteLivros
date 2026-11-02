@@ -14,7 +14,13 @@
     "evidence": "único escritor com o mesmo nome (sem obra casada)",
     "rulesVersion": 1
   },
-  "photo": null,
+  "photo": {
+    "file": "authors/wellington-srbek.jpg",
+    "license": null,
+    "author": null,
+    "sourceUrl": "http://wellingtonsrbek.blogspot.com/",
+    "source": "serpapi"
+  },
   "references": [
     {
       "provider": "wikidata",

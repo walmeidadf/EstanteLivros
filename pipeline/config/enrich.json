@@ -12,7 +12,7 @@
   "bio": {
     "minChars": 80,
     "maxChars": 450,
-    "promptVersion": "author-bio-v2",
+    "promptVersion": "author-bio-v3",
     "maxSourceChars": 4000,
     "maxSources": 3,
     "estimatedOutputTokens": 150

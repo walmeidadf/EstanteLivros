@@ -48,15 +48,31 @@ Perdeu: a v2 foi rígida demais em alguns casos.
 - Wellington Srbek ficou tautológico ("se destaca por histórias em quadrinhos").
 - Veríssimo continuou listando ocupações.
 
-Pendente: decidir com a Lila entre v2 e um ajuste v3 (manter a profissão
-principal quando não for escritor; permitir 1–2 obras centrais destacadas
-pela fonte).
+### Prompt da bio: v2 → v3 (adotada)
+
+A v3 acrescenta três coisas: manter a profissão principal de quem não é só
+escritor, proibir frases circulares e permitir até duas obras que a fonte
+destaca. Corrigiu os casos da v2.
+- Bulgakov voltou a citar O Mestre e Margarida e Coração de Cão.
+- Sidarta virou "neurocientista e escritor… escreve sobre cérebro, sonho e consciência".
+- Veríssimo e Wellington ficaram concretos.
+- Tolstói e Machado ganharam os títulos centrais.
+
+O modelo ainda escorrega nas regras. Amos Oz saiu com 4 ocupações e 3
+títulos; Wellington, com um cargo; Sidarta, com um detalhe irrelevante (coluna
+bimestral). As regras do prompt reduzem esses desvios, mas não os eliminam. A
+garantia final é a aprovação ou edição pela Lila (`review_summaries.py`).
+Custo das três rodadas: ~US$ 0,03.
 
 ### Decisões manuais desta rodada
 
 - `elena-ferrante`: sem foto (pseudônimo; identidade não pública).
-- Sugerido: fixar `sidarta-ribeiro` → `Q7508008` (neurocientista; os livros não
-  estão no Wikidata). Isso destrava o verbete da Wikipédia pt para a bio e a foto.
+- `sidarta-ribeiro` → `Q7508008` (neurocientista; os livros não estão no
+  Wikidata). Com o QID, a bio passou a vir da Wikipédia pt e a foto, do Commons.
+- `wellington-srbek`: foto escolhida na revisão (blog do autor, via SerpApi).
+- Lição para a carga completa: autorias `not_found` com um único candidato
+  humano coerente (o relatório mostra a descrição) se resolvem com um QID
+  manual, que destrava foto e bio grátis antes de gastar cota.
 
 ### Estimativa para a carga completa (215 autorias)
 
