@@ -1,0 +1,64 @@
+{
+  "slug": "memorial-de-maria-moura-rachel-de-queiroz",
+  "title": "Memorial de Maria Moura",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "rachel-de-queiroz"
+  ],
+  "language": "português",
+  "firstPublished": 1992,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "literatura regionalista"
+  ],
+  "themes": [
+    "força feminina",
+    "violência",
+    "poder",
+    "sertão nordestino"
+  ],
+  "edition": {
+    "title": "Memorial de Maria Moura",
+    "language": "português",
+    "publisher": "Editora Siciliano",
+    "year": 1992,
+    "isbn13": "9788526705005",
+    "isbn10": "8526705008",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/13226124-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Raquel de Queiróz' para a grafia consagrada 'Rachel de Queiroz'; romance de 1992, consenso entre Literal e Open Library.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv1jy6ga1414741i8b3e39rd49",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1003561W",
+      "url": "https://openlibrary.org/works/OL1003561W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzpnlmp56059530tbvu0zfbjnw",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ab5b3f99e38c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

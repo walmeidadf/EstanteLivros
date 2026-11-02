@@ -1,0 +1,55 @@
+{
+  "slug": "tomara-que-voce-seja-deportado-uma-viagem-pela-distopia-americana-jamil-chade",
+  "title": "Tomara que você seja deportado: uma viagem pela distopia americana",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jamil-chade"
+  ],
+  "language": "português",
+  "firstPublished": 2025,
+  "type": "não-ficção",
+  "genres": [
+    "jornalismo",
+    "atualidades"
+  ],
+  "themes": [
+    "imigração",
+    "Estados Unidos",
+    "direitos humanos",
+    "política"
+  ],
+  "edition": {
+    "title": "Tomara que você seja deportado: uma viagem pela distopia americana",
+    "language": "português",
+    "publisher": "Editora Nós",
+    "year": 2025,
+    "isbn13": "9786585832892",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "O título provisório extraído da lista ('Espero que você seja deportado') não corresponde ao título real publicado; busca web confirmou que o livro de Jamil Chade, lançado em 2025 pela Editora Nós com prefácio de Walter Salles, chama-se 'Tomara que você seja deportado: uma viagem pela distopia americana'. Nenhum candidato local correspondia à obra.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://editoranos.com.br/produto/tomara-que-voce-seja-deportado-uma-viagem-pela-distopia-americana-copy/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2025-09/jamil-chade-relata-desumanizacao-de-imigrantes-sob-trump-em-distopia",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-b8a0a935e504",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Título da lista original diverge do título oficialmente publicado ('Tomara' em vez de 'Espero'); corrigido com base em fontes editoriais e jornalísticas.",
+    "validatedAt": "2026-08-13"
+  }
+}

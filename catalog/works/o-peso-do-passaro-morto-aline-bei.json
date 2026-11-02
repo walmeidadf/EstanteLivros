@@ -1,0 +1,64 @@
+{
+  "slug": "o-peso-do-passaro-morto-aline-bei",
+  "title": "O Peso do Pássaro Morto",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "aline-bei"
+  ],
+  "language": "português",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "infância",
+    "memória",
+    "corpo",
+    "identidade"
+  ],
+  "edition": {
+    "title": "O Peso do Pássaro Morto",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2017,
+    "isbn13": "9788569020233",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10833052-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso Literal/Open Library; romance de estreia de Aline Bei, vencedor do Prêmio Rio de Literatura, publicado pela Companhia das Letras (2017).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrxp9tm789711179805yb8vtv",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL24315486W",
+      "url": "https://openlibrary.org/works/OL24315486W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqnr7kg868521eb2o9yatjuu",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-cfad0084eeda",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

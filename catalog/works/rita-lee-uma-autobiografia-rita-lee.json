@@ -1,0 +1,58 @@
+{
+  "slug": "rita-lee-uma-autobiografia-rita-lee",
+  "title": "Rita Lee: Uma Autobiografia",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "rita-lee"
+  ],
+  "language": "português",
+  "firstPublished": 2016,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "música"
+  ],
+  "themes": [
+    "música brasileira",
+    "contracultura",
+    "carreira artística",
+    "família"
+  ],
+  "edition": {
+    "title": "Rita Lee: Uma Autobiografia",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2016,
+    "isbn13": "9788525063588",
+    "isbn10": "8525063584",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Zbh2DQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente a título e autora; obra é a autobiografia de Rita Lee publicada pela Globo Livros em 2016.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cledas6w19110480htwfpoz6zxa",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cledas6w29110510htwzmvvtpji",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8d738e5fe42f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

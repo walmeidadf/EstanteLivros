@@ -1,0 +1,59 @@
+{
+  "slug": "a-obscena-senhora-d-hilda-hilst",
+  "title": "A Obscena Senhora D",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "hilda-hilst"
+  ],
+  "language": "português",
+  "firstPublished": 1982,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura erótica",
+    "experimentalismo"
+  ],
+  "themes": [
+    "corpo",
+    "loucura",
+    "sexualidade",
+    "morte"
+  ],
+  "edition": {
+    "title": "A Obscena Senhora D",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2020,
+    "isbn13": "9788535933291",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/ckvph4208225912m7dnfczn3l8.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre provedores; romance de Hilda Hilst (1982). Usada a edição Companhia das Letras de 2020 (mais recente e disponível) como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvph4208225912m7dnfczn3l8",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fr09nc1126661f9iz8yyu19qb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-dcc5fa876e0e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

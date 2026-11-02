@@ -1,0 +1,66 @@
+{
+  "slug": "salvar-o-fogo-itamar-vieira-junior",
+  "title": "Salvar o fogo",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "itamar-vieira-junior"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "Bahia",
+    "amor",
+    "interior da Bahia",
+    "quilombolas",
+    "resistência",
+    "sistema prisional",
+    "violência"
+  ],
+  "edition": {
+    "title": "Salvar o fogo",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2023,
+    "isbn13": "9786556924175",
+    "isbn10": "6556924172",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/14834499-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Corrigido nome do autor (Vieria->Vieira). Literal e OpenLibrary concordam plenamente (score combinado 0.99/1.0) em título, autor e ano, coincidindo com o ano de leitura (2023).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cln91gvmj11177990hgdkci6vywq",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL39580661W",
+      "url": "https://openlibrary.org/works/OL39580661W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cln91gvmj11178000hgdrkt2nny8",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-261261b8b48e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Fundida com work-3c9175b462fc ('Salvar o fogo').",
+    "validatedAt": "2026-08-13"
+  }
+}

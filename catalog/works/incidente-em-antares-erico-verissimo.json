@@ -1,0 +1,65 @@
+{
+  "slug": "incidente-em-antares-erico-verissimo",
+  "title": "Incidente em Antares",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "erico-verissimo"
+  ],
+  "language": "português",
+  "firstPublished": 1971,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "sátira",
+    "ficção literária"
+  ],
+  "themes": [
+    "morte",
+    "política",
+    "sátira social",
+    "Rio Grande do Sul"
+  ],
+  "edition": {
+    "title": "Incidente em Antares",
+    "language": "português",
+    "publisher": "Editora Globo",
+    "year": 1988,
+    "isbn13": "9788525005908",
+    "isbn10": "8525005908",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/9938112-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Diversos candidatos Literal/OpenLibrary concordam plenamente; escolhida a edição da Globo de 1988 (com capa disponível) como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxl40l31824378gkzqto6cj",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1199751W",
+      "url": "https://openlibrary.org/works/OL1199751W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp4026i13624280tbvion4xvea",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-976ab8325909",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

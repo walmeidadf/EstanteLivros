@@ -1,0 +1,64 @@
+{
+  "slug": "a-extincao-das-abelhas-natalia-borges-polesso",
+  "title": "A extinção das abelhas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "natalia-borges-polesso"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária brasileira",
+    "literatura LGBTQ+"
+  ],
+  "themes": [
+    "relações familiares",
+    "memória",
+    "sexualidade",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "A extinção das abelhas",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2021,
+    "isbn13": "9786559210640",
+    "isbn10": "6559210642",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clhca1xd91139640her2kwt2kmm.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso claro (score 1.0) entre Literal e Open Library; romance de Natália Borges Polesso, Companhia das Letras (2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clhca1xd91139640her2kwt2kmm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32081091W",
+      "url": "https://openlibrary.org/works/OL32081091W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clhca1xd91139650herskzlekul",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-acf3af0b5977",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "terrapreta-rita-carelli",
+  "title": "Terrapreta",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "rita-carelli"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "povos indígenas",
+    "Xingu",
+    "luto",
+    "identidade"
+  ],
+  "edition": {
+    "title": "Terrapreta",
+    "language": "português",
+    "publisher": "Editora 34",
+    "year": 2021,
+    "isbn13": "9786555250718",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clqazdsoc14393630hi56i766wls.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título corrigido de 'Terra preta' (grafia com espaço na lista original) para 'Terrapreta' (palavra única, título real de publicação); romance de estreia de Rita Carelli, Editora 34 (2021), candidato Literal com score 0.966.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqazdsoc14393630hi56i766wls",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://aterraeredonda.com.br/terrapreta/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clqazdsod14393660hi520lhs3kl",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-da1072f29373",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

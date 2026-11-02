@@ -1,0 +1,64 @@
+{
+  "slug": "pachinko-min-jin-lee",
+  "title": "Pachinko",
+  "originalTitle": "Pachinko",
+  "originalTitleRomanized": null,
+  "authors": [
+    "min-jin-lee"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "saga familiar"
+  ],
+  "themes": [
+    "diáspora coreana no Japão",
+    "identidade",
+    "discriminação",
+    "família e gerações"
+  ],
+  "edition": {
+    "title": "Pachinko",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2020,
+    "isbn13": "9788551006344",
+    "isbn10": "8551006347",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clr321olt1830100hi5l9kd1op9.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Mim Jin Lee' para 'Min Jin Lee'; consenso entre Literal e Open Library para o romance 'Pachinko', edição brasileira pela Intrínseca (2020).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clr321olt1830100hi5l9kd1op9",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17762217W",
+      "url": "https://openlibrary.org/works/OL17762217W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clr321olt1830130hi5m1r35vzf",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9fd89fa45d6f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

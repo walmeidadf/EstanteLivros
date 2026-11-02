@@ -1,0 +1,65 @@
+{
+  "slug": "torto-arado-itamar-vieira-junior",
+  "title": "Torto Arado",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "itamar-vieira-junior"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo"
+  ],
+  "themes": [
+    "terra",
+    "família",
+    "resistência",
+    "trabalho rural",
+    "quilombo"
+  ],
+  "edition": {
+    "title": "Torto Arado",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2019,
+    "isbn13": "9786580309313",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksxkt25z2908762h8g2nn4oiol.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; edição brasileira original (Todavia, 2019) claramente identificada.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkt25z2908762h8g2nn4oiol",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24141556W",
+      "url": "https://openlibrary.org/works/OL24141556W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqniiz3623361eb2w4q26sxj",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-32684541eea4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "os-segredos-que-guardamos-lara-prescott",
+  "title": "Os segredos que guardamos",
+  "originalTitle": "The Secrets We Kept",
+  "originalTitleRomanized": null,
+  "authors": [
+    "lara-prescott"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "espionagem"
+  ],
+  "themes": [
+    "Guerra Fria",
+    "censura literária",
+    "espionagem",
+    "Doutor Jivago"
+  ],
+  "edition": {
+    "title": "Os Segredos que Guardamos",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2020,
+    "isbn13": "9788551005675",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título correto é 'Os segredos que guardamos' (plural), não 'O segredo'; nenhum candidato local correspondia. Identificado por conhecimento literário e confirmado por busca web: romance de Lara Prescott sobre 'Doutor Jivago' e a CIA, edição Intrínseca (2020).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://intrinseca.com.br/livro/os-segredos-que-guardamos/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-30c2c927a687",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

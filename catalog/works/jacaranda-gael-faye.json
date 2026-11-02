@@ -1,0 +1,73 @@
+{
+  "slug": "jacaranda-gael-faye",
+  "title": "Jacarandá",
+  "originalTitle": "Jacaranda",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gael-faye"
+  ],
+  "language": "francês",
+  "firstPublished": 2024,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "genocídio de Ruanda",
+    "memória",
+    "identidade",
+    "exílio",
+    "família"
+  ],
+  "edition": {
+    "title": "Jacarandá",
+    "language": "português",
+    "publisher": "Editora 34",
+    "year": 2025,
+    "isbn13": "9786555252477",
+    "isbn10": "6555252472",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Romance de Gaël Faye, vencedor do Prêmio Renaudot 2024; leitura registrada em 2026 é compatível com o lançamento da tradução brasileira 'Jacarandá' pela Editora 34 em 2025 (não estava nos candidatos locais, que traziam apenas edições em francês e uma futura em inglês).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cml20q7u214365950dqn1xmn1wue",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL42781690W",
+      "url": "https://openlibrary.org/works/OL42781690W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estantevirtual.com.br/livro/jacaranda-JLT-2532-000-BK",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Jacarand%C3%A1-Romance-Ga%C3%ABl-Faye/dp/6555252472",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publico.pt/2025/06/05/culturaipsilon/noticia/choix-goncourt-portugal-premeia-romance-jacaranda-gael-faye-2135752",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-88818c438589",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos locais eram apenas em francês (Open Library, original) e inglês (Literal, tradução futura de 2026); edição brasileira encontrada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

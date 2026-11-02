@@ -1,0 +1,69 @@
+{
+  "slug": "voragem-jun-ichiro-tanizaki",
+  "title": "Voragem",
+  "originalTitle": "卍",
+  "originalTitleRomanized": "Manji",
+  "authors": [
+    "jun-ichiro-tanizaki"
+  ],
+  "language": "japonês",
+  "firstPublished": 1928,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "desejo",
+    "obsessão",
+    "sexualidade",
+    "traição"
+  ],
+  "edition": {
+    "title": "Voragem",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2001,
+    "isbn13": "9788535901368",
+    "isbn10": "8535901361",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs4yzys13913320igaey9cobqm.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Junishiro Tonizaki' para 'Jun'ichirō Tanizaki'; título original 'Manji' (1928-30), publicado no Brasil como 'Voragem' pela Companhia das Letras (2001), confirmado por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4yzys13913320igaey9cobqm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/detalhe.php?codigo=11072",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.jbox.com.br/2021/06/28/voragem-o-primeiro-livro-japones-com-relacionamento-entre-mulheres-artigo-especial/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzrudr1g7173770tbve7fmmfkr",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fcf350e90b12",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Registro da Open Library usa um ID de edição (sufixo 'M') em vez de work id; mantidos apenas os dados do candidato Literal, de alta confiança.",
+    "validatedAt": "2026-08-13"
+  }
+}

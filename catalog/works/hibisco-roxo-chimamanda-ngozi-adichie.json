@@ -1,0 +1,58 @@
+{
+  "slug": "hibisco-roxo-chimamanda-ngozi-adichie",
+  "title": "Hibisco Roxo",
+  "originalTitle": "Purple Hibiscus",
+  "originalTitleRomanized": null,
+  "authors": [
+    "chimamanda-ngozi-adichie"
+  ],
+  "language": "inglês",
+  "firstPublished": 2003,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "religião",
+    "opressão doméstica",
+    "Nigéria",
+    "amadurecimento"
+  ],
+  "edition": {
+    "title": "Hibisco Roxo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2016,
+    "isbn13": "9788543807225",
+    "isbn10": "8543807220",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckvcs650i577955my8bjg661sr1.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Chimamanda Ngozi' (incompleto) para Chimamanda Ngozi Adichie; candidato Literal com score 0.99 corresponde à edição brasileira Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvcs650i577955my8bjg661sr1",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznhw4sk13669890sb5u2atfws3",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-889a3c5e27c1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

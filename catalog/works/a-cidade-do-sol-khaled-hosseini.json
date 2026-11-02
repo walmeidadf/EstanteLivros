@@ -1,0 +1,70 @@
+{
+  "slug": "a-cidade-do-sol-khaled-hosseini",
+  "title": "A Cidade do Sol",
+  "originalTitle": "A Thousand Splendid Suns",
+  "originalTitleRomanized": null,
+  "authors": [
+    "khaled-hosseini"
+  ],
+  "language": "inglês",
+  "firstPublished": 2007,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "drama"
+  ],
+  "themes": [
+    "Afeganistão",
+    "guerra",
+    "amizade feminina",
+    "sobrevivência"
+  ],
+  "edition": {
+    "title": "A Cidade do Sol",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2017,
+    "isbn13": "9788525060303",
+    "isbn10": "8525060305",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clmi9dinu3688690hhymhirbaq8.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "'A Cidade do Sol' é o título usado no Brasil (Globo Livros) para 'A Thousand Splendid Suns', de Khaled Hosseini; confirmado via candidatos Literal (score 1.0, sinopse de Mariam e Laila no Afeganistão) e busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clmi9dinu3688690hhymhirbaq8",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL5782000W",
+      "url": "https://openlibrary.org/works/OL5782000W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/a-cidade-do-sol/artigo/a63f3117-3cb9-4670-a939-808fd2c27dd9",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clmi9dinu3688720hhy8czu8tn8",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-6f5e0dc50459",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library indexou a obra sob o título original em inglês (baixa pontuação de título), mas o work_id corresponde à mesma obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

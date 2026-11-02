@@ -1,0 +1,64 @@
+{
+  "slug": "barba-ensopada-de-sangue-daniel-galera",
+  "title": "Barba Ensopada de Sangue",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "daniel-galera"
+  ],
+  "language": "português",
+  "firstPublished": 2012,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "suspense psicológico"
+  ],
+  "themes": [
+    "memória",
+    "identidade",
+    "litoral catarinense",
+    "masculinidade"
+  ],
+  "edition": {
+    "title": "Barba Ensopada de Sangue",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2012,
+    "isbn13": "9788535921878",
+    "isbn10": "8535921877",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckpr62m6b162821gjy2m0ahu7q.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; primeira edição, Companhia das Letras 2012.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckpr62m6b162821gjy2m0ahu7q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL16800371W",
+      "url": "https://openlibrary.org/works/OL16800371W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqdgo9g7261161eb2yqv2gkoc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7c9399dfa681",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

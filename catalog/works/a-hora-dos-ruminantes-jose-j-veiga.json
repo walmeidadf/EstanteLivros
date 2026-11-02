@@ -1,0 +1,61 @@
+{
+  "slug": "a-hora-dos-ruminantes-jose-j-veiga",
+  "title": "A Hora dos Ruminantes",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-j-veiga"
+  ],
+  "language": "português",
+  "firstPublished": 1966,
+  "type": "romance",
+  "genres": [
+    "realismo fantástico",
+    "ficção literária"
+  ],
+  "themes": [
+    "poder",
+    "opressão",
+    "comunidade rural",
+    "alegoria política"
+  ],
+  "edition": {
+    "title": "A Hora dos Ruminantes",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2015,
+    "isbn13": "9788535925371",
+    "isbn10": "8535925376",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Consenso entre Literal e Open Library; romance alegórico de José J. Veiga, publicado originalmente em 1966 pela Civilização Brasileira; escolhida reedição da Companhia das Letras (2015) como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt0df1d722522213tr3vd16edu",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32772565W",
+      "url": "https://openlibrary.org/works/OL32772565W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzsi41ve507810tbvejcvyy11",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fc20a89ff067",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

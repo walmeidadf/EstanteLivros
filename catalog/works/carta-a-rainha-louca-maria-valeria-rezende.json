@@ -1,0 +1,58 @@
+{
+  "slug": "carta-a-rainha-louca-maria-valeria-rezende",
+  "title": "Carta à rainha louca",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "maria-valeria-rezende"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "narrativa epistolar"
+  ],
+  "themes": [
+    "velhice",
+    "memória",
+    "resistência",
+    "amizade"
+  ],
+  "edition": {
+    "title": "Carta à Rainha Louca",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2019,
+    "isbn13": "9788556520821",
+    "isbn10": "8556520820",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/11143086-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título e autora batem exatamente com candidato Literal (score 1.0) e Open Library, que juntos confirmam ISBN, ano (2019) e editora (Alfaguara).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw8ahq6g446581dqpx5swm9qx",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24515289W",
+      "url": "https://openlibrary.org/works/OL24515289W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-1ade4c218bad",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal não informava editora; Open Library preencheu essa lacuna com 'Alfaguara'.",
+    "validatedAt": "2026-08-13"
+  }
+}

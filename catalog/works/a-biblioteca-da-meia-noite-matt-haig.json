@@ -1,0 +1,64 @@
+{
+  "slug": "a-biblioteca-da-meia-noite-matt-haig",
+  "title": "A Biblioteca da Meia-Noite",
+  "originalTitle": "The Midnight Library",
+  "originalTitleRomanized": null,
+  "authors": [
+    "matt-haig"
+  ],
+  "language": "inglês",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "ficção especulativa",
+    "ficção literária"
+  ],
+  "themes": [
+    "arrependimento",
+    "escolhas de vida",
+    "saúde mental",
+    "multiverso"
+  ],
+  "edition": {
+    "title": "A Biblioteca da Meia-Noite",
+    "language": "português",
+    "publisher": "Bertrand Brasil",
+    "year": 2021,
+    "isbn13": "9786558380634",
+    "isbn10": "6558380633",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=ud06EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); best-seller de Matt Haig, edição brasileira Bertrand Brasil (2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuxx2kr615410581j7axgz1ee7l",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL34773352W",
+      "url": "https://openlibrary.org/works/OL34773352W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzn8j23p9310500sb5r4kfc8nr",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-4b418f85fa49",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

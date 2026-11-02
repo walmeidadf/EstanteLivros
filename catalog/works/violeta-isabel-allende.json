@@ -1,0 +1,62 @@
+{
+  "slug": "violeta-isabel-allende",
+  "title": "Violeta",
+  "originalTitle": "Violeta",
+  "originalTitleRomanized": null,
+  "authors": [
+    "isabel-allende"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "saga familiar"
+  ],
+  "themes": [
+    "história do Chile",
+    "século XX",
+    "memória",
+    "família",
+    "resiliência"
+  ],
+  "edition": {
+    "title": "Violeta",
+    "language": "português",
+    "publisher": "Bertrand Brasil",
+    "year": 2022,
+    "isbn13": "9786558380771",
+    "isbn10": "6558380773",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos locais eram apenas edições em inglês/espanhol; edição brasileira (Bertrand Brasil, 2022) identificada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24492424W",
+      "url": "https://openlibrary.org/works/OL24492424W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.mercadolivre.com.br/violeta-1ed2022-de-isabel-allende-editora-bertrand-brasil-capa-mole-edico-1-em-portugus-2022/p/MLB25690325",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Violeta-Isabel-Allende/dp/6558380773",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-887afc9c2a56",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local em português; complementado com busca web para a edição brasileira.",
+    "validatedAt": "2026-08-13"
+  }
+}

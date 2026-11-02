@@ -1,0 +1,56 @@
+{
+  "slug": "nunca-minta-freida-mcfadden",
+  "title": "Nunca Minta",
+  "originalTitle": "Never Lie",
+  "originalTitleRomanized": null,
+  "authors": [
+    "freida-mcfadden"
+  ],
+  "language": "inglês",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "suspense",
+    "thriller psicológico"
+  ],
+  "themes": [
+    "segredos familiares",
+    "manipulação"
+  ],
+  "edition": {
+    "title": "Nunca Minta",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2025,
+    "isbn13": "9788501923400",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=e2U0EQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente a título, autora (grafia corrigida para 'McFadden') e idioma pt-BR, publicado pela Record, consistente com leitura recente (2026).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cmkvmfpas2850560dp2i2b9whpv",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cmkvmfpas2850830dp2j09uyhsb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-00a803fc7cfa",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

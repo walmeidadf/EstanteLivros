@@ -1,0 +1,71 @@
+{
+  "slug": "dom-casmurro-machado-de-assis",
+  "title": "Dom Casmurro",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "machado-de-assis"
+  ],
+  "language": "português",
+  "firstPublished": 1899,
+  "type": "romance",
+  "genres": [
+    "realismo",
+    "ficção literária",
+    "clássico brasileiro"
+  ],
+  "themes": [
+    "ciúme",
+    "memória",
+    "traição",
+    "ambiguidade narrativa"
+  ],
+  "edition": {
+    "title": "Dom Casmurro",
+    "language": "português",
+    "publisher": "L&PM Editores",
+    "year": 1997,
+    "isbn13": "9788525410825",
+    "isbn10": "8525410829",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=mcboKqQ2AegC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Obra canônica; escolhida a edição de bolso da L&PM (amplamente disponível no Brasil) como representativa entre os vários candidatos Literal/OpenLibrary concordantes.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clsexfx2k3955810iwpmxxn299e",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1003040W",
+      "url": "https://openlibrary.org/works/OL1003040W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "mcboKqQ2AegC",
+      "url": "https://books.google.com/books?id=mcboKqQ2AegC",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clsexfx2n3955860iwp4bil7nas",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-92c3e41d5c78",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "O ano de publicação variou entre candidatos (1899, 1900, 1940 etc., refletindo diferentes edições); usado o ano de primeira publicação real da obra (1899).",
+    "validatedAt": "2026-08-13"
+  }
+}

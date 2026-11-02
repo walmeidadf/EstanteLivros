@@ -1,0 +1,58 @@
+{
+  "slug": "educar-meninas-e-meninos-relacoes-de-genero-na-escola-daniela-auad",
+  "title": "Educar Meninas e Meninos: Relações de Gênero na Escola",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "daniela-auad"
+  ],
+  "language": "português",
+  "firstPublished": 2006,
+  "type": "não-ficção",
+  "genres": [
+    "educação",
+    "estudos de gênero"
+  ],
+  "themes": [
+    "educação",
+    "gênero",
+    "escola",
+    "coeducação"
+  ],
+  "edition": {
+    "title": "Educar Meninas e Meninos: Relações de Gênero na Escola",
+    "language": "português",
+    "publisher": "Editora Contexto",
+    "year": 2006,
+    "isbn13": "9788572443104",
+    "isbn10": "857244310X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/5341226-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título corrigido para a ordem correta 'Educar meninas e meninos: relações de gênero na escola' (invertida no registro provisório); confirmado por Open Library e por referências acadêmicas (Editora Contexto, 2006).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL11806332W",
+      "url": "https://openlibrary.org/works/OL11806332W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.scielo.br/j/er/a/DHzP46GbT63GBvh3NYKBLpx/?lang=pt",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-ecb553ea58b3",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal eram irrelevantes (livros em espanhol sobre educação, sem relação com a obra); usada apenas Open Library, complementada por busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

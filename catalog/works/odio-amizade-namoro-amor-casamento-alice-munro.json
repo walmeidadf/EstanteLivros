@@ -1,0 +1,53 @@
+{
+  "slug": "odio-amizade-namoro-amor-casamento-alice-munro",
+  "title": "Ódio, amizade, namoro, amor, casamento",
+  "originalTitle": "Hateship, Friendship, Courtship, Loveship, Marriage",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alice-munro"
+  ],
+  "language": "inglês",
+  "firstPublished": 2001,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "relacionamentos",
+    "cotidiano",
+    "condição feminina"
+  ],
+  "edition": {
+    "title": "Ódio, amizade, namoro, amor, casamento",
+    "language": "português",
+    "publisher": "Editora Globo",
+    "year": 2004,
+    "isbn13": "9788525038548",
+    "isbn10": "8525038547",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título mal extraído ('Amor, namoro, casamento e amizade') é uma reordenação da coletânea de contos de Alice Munro publicada no Brasil como 'Ódio, amizade, namoro, amor, casamento' (trad. Cássio de Arantes Leite, Editora Globo, 2004). Nenhum candidato local correspondia; identificação via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com/Amizade-Namoro-Casamento-Portugues-Brasil/dp/8525038547",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/odio-amizade-namoro-amor-casamento/artigo/31acea27-c29a-4cc7-b3eb-e80e0e95f227",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-6260a1b93998",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/OL retornados eram completamente não relacionados (livros de outros autores contendo apenas a palavra 'Amor'); identificação feita via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

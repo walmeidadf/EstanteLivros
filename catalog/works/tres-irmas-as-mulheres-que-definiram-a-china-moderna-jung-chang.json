@@ -1,0 +1,49 @@
+{
+  "slug": "tres-irmas-as-mulheres-que-definiram-a-china-moderna-jung-chang",
+  "title": "Três irmãs: as mulheres que definiram a China moderna",
+  "originalTitle": "Big Sister, Little Sister, Red Sister: Three Women at the Heart of Twentieth-Century China",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jung-chang"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "biografia",
+  "genres": [
+    "biografia",
+    "história"
+  ],
+  "themes": [
+    "China",
+    "século XX",
+    "irmãs Soong",
+    "poder"
+  ],
+  "edition": {
+    "title": "Três irmãs: as mulheres que definiram a China moderna",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2021,
+    "isbn13": "9788535933314",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Todos os candidatos locais eram falsos positivos (peça 'As três irmãs' de Anton Tchekhov, coincidência de título). Identificada via busca web a obra correta de Jung Chang sobre as irmãs Soong, publicada no Brasil pela Companhia das Letras (2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535933314/tres-irmas",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-5d572eefe5c3",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal retornados eram todos da peça de Tchekhov 'As três irmãs', autoria incompatível com Jung Chang; nenhum candidato OpenLibrary retornado. Identificação feita inteiramente via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

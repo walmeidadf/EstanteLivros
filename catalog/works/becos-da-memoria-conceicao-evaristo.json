@@ -1,0 +1,64 @@
+{
+  "slug": "becos-da-memoria-conceicao-evaristo",
+  "title": "Becos da memória",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "conceicao-evaristo"
+  ],
+  "language": "português",
+  "firstPublished": 2006,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura afro-brasileira"
+  ],
+  "themes": [
+    "favela",
+    "memória",
+    "resistência",
+    "mulheres negras"
+  ],
+  "edition": {
+    "title": "Becos da memória",
+    "language": "português",
+    "publisher": "Mazza Edições",
+    "year": 2006,
+    "isbn13": "9788571603752",
+    "isbn10": "8571603758",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=-kMTAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; edição brasileira original (Mazza Edições, 2006) identificada com ISBN.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckwyrv1pa7287701ghdpsj2hlim",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24065737W",
+      "url": "https://openlibrary.org/works/OL24065737W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzr5vqpw13061850tbv02ia8jbn",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-33e5917c59c7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

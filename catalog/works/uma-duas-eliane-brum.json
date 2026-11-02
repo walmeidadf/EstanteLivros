@@ -1,0 +1,72 @@
+{
+  "slug": "uma-duas-eliane-brum",
+  "title": "Uma Duas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "eliane-brum"
+  ],
+  "language": "português",
+  "firstPublished": 2011,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção brasileira"
+  ],
+  "themes": [
+    "relação mãe e filha",
+    "memória",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "Uma Duas",
+    "language": "português",
+    "publisher": "Leya",
+    "year": 2011,
+    "isbn13": "9788580441239",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Romance de estreia de Eliane Brum sobre a relação entre mãe e filha; Literal e OpenLibrary concordam plenamente em título, autoria, ano e ISBN.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv8xbrip38992788bbs2mwb8s",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL16639721W",
+      "url": "https://openlibrary.org/works/OL16639721W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.arquipelago.com.br/uma-duas-eliane-brum",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "http://elianebrum.com/livros/uma-duas/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckztnbhdw1579920tbvqnh9z5q4",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-05c0ec5c7733",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

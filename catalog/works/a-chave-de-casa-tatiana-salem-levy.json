@@ -1,0 +1,49 @@
+{
+  "slug": "a-chave-de-casa-tatiana-salem-levy",
+  "title": "A chave de casa",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "tatiana-salem-levy"
+  ],
+  "language": "português",
+  "firstPublished": 2007,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "narrativa autoficcional"
+  ],
+  "themes": [
+    "memória",
+    "diáspora",
+    "identidade judaica",
+    "família"
+  ],
+  "edition": {
+    "title": "A chave de casa",
+    "language": "português",
+    "publisher": "Editora Record",
+    "year": 2007,
+    "isbn13": "9788501079275",
+    "isbn10": "8501079278",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato (nenhum dos 5 candidatos Literal correspondia). Identificado via busca web: romance de estreia de Tatiana Salem Levy (nome corrigido de 'Tatiana Salém Levi'), vencedor do Prêmio São Paulo de Literatura 2008, publicado pela Record em 2007. Título provisório 'A chave da casa' corrigido para 'A chave de casa'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publishnews.com.br/materias/2025/10/10/record-lanca-edicao-revista-do-premiado-a-chave-de-casa-de-tatiana-salem-levy",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-2259b51dcc64",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

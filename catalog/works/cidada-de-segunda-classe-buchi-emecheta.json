@@ -1,0 +1,55 @@
+{
+  "slug": "cidada-de-segunda-classe-buchi-emecheta",
+  "title": "Cidadã de Segunda Classe",
+  "originalTitle": "Second-Class Citizen",
+  "originalTitleRomanized": null,
+  "authors": [
+    "buchi-emecheta"
+  ],
+  "language": "inglês",
+  "firstPublished": 1974,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura africana"
+  ],
+  "themes": [
+    "imigração",
+    "racismo",
+    "feminismo",
+    "maternidade"
+  ],
+  "edition": {
+    "title": "Cidadã de Segunda Classe",
+    "language": "português",
+    "publisher": "Dublinense",
+    "year": 2018,
+    "isbn13": "9788583181118",
+    "isbn10": "858318111X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato local (review_status=unresolved), mas a obra é facilmente identificável: romance autobiográfico de Buchi Emecheta (1974), publicado no Brasil pela Dublinense em 2018 (trad. Heloisa Jahn), confirmado via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Cidad%C3%A3_de_segunda_classe_(romance)",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.dublinense.com.br/livros/cidada-de-segunda-classe/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-4c7eb34f00a8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/Open Library disponíveis não continham a obra (todos eram livros de título parecido, mas de outros autores); resolvido via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "a-caverna-jose-saramago",
+  "title": "A Caverna",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 2000,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "alegoria"
+  ],
+  "themes": [
+    "capitalismo",
+    "consumismo",
+    "olaria",
+    "mito da caverna de Platão"
+  ],
+  "edition": {
+    "title": "A Caverna",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2000,
+    "isbn13": "9788535900736",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título e autor coincidem no Literal, mas sem ISBN útil; candidatos Open Library eram edições portuguesas (Caminho, Porto Editora). Preferida a edição brasileira original (Companhia das Letras, 2000), confirmada por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt02j0ld232730bt7o39n0749u",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535900736/a-caverna",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwr8df142669551eb2mn29bn97",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-eab08b7f28ee",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library só tinha edições portuguesas; ISBN da edição brasileira obtido por busca web complementar.",
+    "validatedAt": "2026-08-13"
+  }
+}

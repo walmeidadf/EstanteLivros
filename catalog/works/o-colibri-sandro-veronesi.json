@@ -1,0 +1,55 @@
+{
+  "slug": "o-colibri-sandro-veronesi",
+  "title": "O Colibri",
+  "originalTitle": "Il Colibrì",
+  "originalTitleRomanized": null,
+  "authors": [
+    "sandro-veronesi"
+  ],
+  "language": "italiano",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama familiar"
+  ],
+  "themes": [
+    "luto",
+    "família",
+    "tempo",
+    "resiliência"
+  ],
+  "edition": {
+    "title": "O Colibri",
+    "language": "português",
+    "publisher": "Autêntica Contemporânea",
+    "year": 2024,
+    "isbn13": "9786559283583",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia à obra (todos irrelevantes); identificado via busca web como 'Il Colibrì' de Sandro Veronesi (Prêmio Strega 2020), edição brasileira pela Autêntica Contemporânea (2024, trad. Karina Jannini).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.grupoautentica.com.br/produto/o-colibri-1566",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.portaldoslivreiros.com.br/livro.asp?codigo=7260173&titulo=O+Colibri",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-6cea122a0336",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos do Literal eram de obras completamente diferentes (baixa pontuação de título/autor); dados obtidos via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

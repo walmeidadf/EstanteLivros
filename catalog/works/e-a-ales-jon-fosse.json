@@ -1,0 +1,55 @@
+{
+  "slug": "e-a-ales-jon-fosse",
+  "title": "É a Ales",
+  "originalTitle": "Det er Ales",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jon-fosse"
+  ],
+  "language": "norueguês",
+  "firstPublished": 2004,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "realismo minimalista"
+  ],
+  "themes": [
+    "luto",
+    "memória",
+    "família",
+    "tempo"
+  ],
+  "edition": {
+    "title": "É a Ales",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2023,
+    "isbn13": "9788535935424",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título 'É a Ales' e autor 'Joan Fosse' (grafia incorreta) identificados via busca web como a novela de Jon Fosse (Nobel de Literatura 2023) 'Det er Ales', publicada no Brasil pela Companhia das Letras em 2023; nenhum candidato local correspondia (todos eram sobre pessoas chamadas 'Alessandra/Alessandro').",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535935424/e-a-ales",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.wook.pt/livro/e-a-ales-jon-fosse/29961400",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-981560f8515c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

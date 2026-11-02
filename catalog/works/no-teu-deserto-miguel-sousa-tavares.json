@@ -1,0 +1,55 @@
+{
+  "slug": "no-teu-deserto-miguel-sousa-tavares",
+  "title": "No Teu Deserto",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "miguel-sousa-tavares"
+  ],
+  "language": "português",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "memória"
+  ],
+  "edition": {
+    "title": "No Teu Deserto",
+    "language": "português",
+    "publisher": null,
+    "year": 2009,
+    "isbn13": null,
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=fhiGQvYMB60C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "O título 'No teu deserto' corresponde exatamente ao romance de Miguel Sousa Tavares (2009); o autor provisório 'J Tavares' provavelmente é um erro de transcrição do sobrenome, já que não há outro autor conhecido com esse nome e esse título.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuwiuqf22572632b7a7mkcnk30",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoqpk5d7122640tbviad8axlx",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0c147e552c80",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Divergência entre a inicial do nome do autor no registro original ('J Tavares') e o nome completo do candidato Literal ('Miguel Sousa Tavares'); mantive o candidato por ser o único com correspondência exata de título.",
+    "validatedAt": "2026-08-13"
+  }
+}

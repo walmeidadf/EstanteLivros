@@ -1,0 +1,59 @@
+{
+  "slug": "longo-e-claro-rio-liz-moore",
+  "title": "Longo e claro rio",
+  "originalTitle": "Long Bright River",
+  "originalTitleRomanized": null,
+  "authors": [
+    "liz-moore"
+  ],
+  "language": "inglês",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "thriller",
+    "ficção literária",
+    "mistério"
+  ],
+  "themes": [
+    "dependência química",
+    "família",
+    "crise dos opioides",
+    "polícia"
+  ],
+  "edition": {
+    "title": "Longo e claro rio",
+    "language": "português",
+    "publisher": "Trama",
+    "year": 2021,
+    "isbn13": "9786589132301",
+    "isbn10": "6589132305",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Kn48EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente a título, autora e ano de leitura (2021); edição brasileira Trama.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvhq4xo31211686c7d25pnpd8r",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo1fbey5958960sb598mc7fok",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-84535afff15c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

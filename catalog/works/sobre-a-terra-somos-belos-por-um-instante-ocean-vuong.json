@@ -1,0 +1,58 @@
+{
+  "slug": "sobre-a-terra-somos-belos-por-um-instante-ocean-vuong",
+  "title": "Sobre a terra somos belos por um instante",
+  "originalTitle": "On Earth We're Briefly Gorgeous",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ocean-vuong"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "autoficção"
+  ],
+  "themes": [
+    "imigração",
+    "identidade queer",
+    "família",
+    "Vietnã"
+  ],
+  "edition": {
+    "title": "Sobre a terra somos belos por um instante",
+    "language": "português",
+    "publisher": "Rocco",
+    "year": 2021,
+    "isbn13": "9786555950045",
+    "isbn10": "6555950048",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=OOAhEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Ocean Vuing' para 'Ocean Vuong'. Candidato Literal com score alto corresponde exatamente à edição brasileira (Rocco, 2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvcs6iou579324my8bn1gzt0hd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzpfg1k52082170tbvlt0r6joi",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-643cf25e9af1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

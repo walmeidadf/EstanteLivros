@@ -1,0 +1,55 @@
+{
+  "slug": "the-underground-railroad-os-caminhos-para-a-liberdade-colson-whitehead",
+  "title": "The Underground Railroad: Os Caminhos para a Liberdade",
+  "originalTitle": "The Underground Railroad",
+  "originalTitleRomanized": null,
+  "authors": [
+    "colson-whitehead"
+  ],
+  "language": "inglês",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "realismo mágico"
+  ],
+  "themes": [
+    "escravidão",
+    "fuga",
+    "EUA",
+    "liberdade"
+  ],
+  "edition": {
+    "title": "The Underground Railroad: Os Caminhos para a Liberdade",
+    "language": "português",
+    "publisher": "HarperCollins Brasil",
+    "year": 2017,
+    "isbn13": "9788595080294",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos locais eram apenas edições em alemão/francês/inglês (não brasileiras); edição brasileira (HarperCollins Brasil, 2017, trad. Caroline Chang) confirmada via busca web. Autor corrigido de 'Carlson' para 'Colson' Whitehead.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17619932W",
+      "url": "https://openlibrary.org/works/OL17619932W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://harpercollins.com.br/products/the-underground-railroad-colson-whitehead",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-7b1dcc857c82",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local em português; título/editora confirmados via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

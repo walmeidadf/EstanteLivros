@@ -1,0 +1,71 @@
+{
+  "slug": "o-parque-das-irmas-magnificas-camila-sosa-villada",
+  "title": "O parque das irmãs magníficas",
+  "originalTitle": "Las malas",
+  "originalTitleRomanized": null,
+  "authors": [
+    "camila-sosa-villada"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária",
+    "literatura LGBTQIA+"
+  ],
+  "themes": [
+    "transgeneridade",
+    "marginalidade",
+    "maternidade",
+    "comunidade"
+  ],
+  "edition": {
+    "title": "O parque das irmãs magníficas",
+    "language": "português",
+    "publisher": "Planeta",
+    "year": 2021,
+    "isbn13": "9786555354089",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Az0xEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Confirmado via candidato Literal e busca web: a obra é 'Las malas' (2019) de Camila Sosa Villada, publicada no Brasil como 'O parque das irmãs magníficas' (Planeta, 2021); posteriormente reeditada pela Companhia das Letras sob o título 'As malditas'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw5d8g5v47417013g6rmfutbdm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "Az0xEAAAQBAJ",
+      "url": "https://books.google.com/books?id=Az0xEAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://asteriscolit.com.br/2025/06/09/o-parque-das-irmas-magnificas-ganha-nova-editora-no-brasil-e-muda-de-titulo/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzosq2718084580tbvoz5wbjyk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b358ee7ee3b5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "as-tres-marias-rachel-de-queiroz",
+  "title": "As Três Marias",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "rachel-de-queiroz"
+  ],
+  "language": "português",
+  "firstPublished": 1939,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "regionalismo"
+  ],
+  "themes": [
+    "infância",
+    "amizade feminina",
+    "religião",
+    "Ceará"
+  ],
+  "edition": {
+    "title": "As Três Marias",
+    "language": "português",
+    "publisher": "José Olympio",
+    "year": 2017,
+    "isbn13": "9788503013376",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15201008-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library. Escolhida a edição José Olympio de 2017, coerente com o ano de leitura registrado (2017).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL45043290W",
+      "url": "https://openlibrary.org/works/OL45043290W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-e87066be2e4c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

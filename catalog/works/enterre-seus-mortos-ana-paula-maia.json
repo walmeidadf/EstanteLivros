@@ -1,0 +1,65 @@
+{
+  "slug": "enterre-seus-mortos-ana-paula-maia",
+  "title": "Enterre Seus Mortos",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "ana-paula-maia"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "novela",
+  "genres": [
+    "policial",
+    "faroeste",
+    "ficção literária"
+  ],
+  "themes": [
+    "morte",
+    "trabalho",
+    "moralidade",
+    "violência"
+  ],
+  "edition": {
+    "title": "Enterre Seus Mortos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2018,
+    "isbn13": "9788554510862",
+    "isbn10": "8554510860",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930672/enterre-seus-mortos.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Título provisório 'Enterrem seus mortos' (plural imperativo) corrigido para o título oficial 'Enterre Seus Mortos' (singular), primeiro volume da 'Trilogia do Fim' de Ana Paula Maia, Companhia das Letras 2018.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuipf6tl44989613udf780gbii",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535930672/enterre-seus-mortos",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzuc8jsa12422640tbvlklj308l",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9d4726d8d73a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "ISBN do candidato Literal (9788554510862) difere do ISBN localizado na página oficial da Companhia das Letras (9788535930672), provavelmente reimpressões/tiragens distintas do mesmo título; mantido o ISBN do candidato Literal (score 0.98) e a capa obtida via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

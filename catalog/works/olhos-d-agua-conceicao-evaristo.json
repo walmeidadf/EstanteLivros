@@ -1,0 +1,64 @@
+{
+  "slug": "olhos-d-agua-conceicao-evaristo",
+  "title": "Olhos d'água",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "conceicao-evaristo"
+  ],
+  "language": "português",
+  "firstPublished": 2014,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "literatura afro-brasileira"
+  ],
+  "themes": [
+    "mulheres negras",
+    "racismo",
+    "memória",
+    "vida cotidiana"
+  ],
+  "edition": {
+    "title": "Olhos d'água",
+    "language": "português",
+    "publisher": "Pallas Editora",
+    "year": 2014,
+    "isbn13": "9788534705257",
+    "isbn10": "8534705259",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/cksvyl13f2314403g8g2x0s02on.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e OpenLibrary (score 1.0). Coletânea de contos de Conceição Evaristo, Pallas Editora, primeira edição 2014; optei pela edição de 2014 (ISBN coincide com OpenLibrary) como representativa, havendo também reimpressão de 2016 com novo ISBN.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyl13f2314403g8g2x0s02on",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24315440W",
+      "url": "https://openlibrary.org/works/OL24315440W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwr42n8415514171eb2g6g1ekgy",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-29457c0349b2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Dois candidatos do Literal com scores iguais (2014 e 2016, ambas Pallas Editora); escolhi a edição de 2014 por coincidir com o OpenLibrary.",
+    "validatedAt": "2026-08-13"
+  }
+}

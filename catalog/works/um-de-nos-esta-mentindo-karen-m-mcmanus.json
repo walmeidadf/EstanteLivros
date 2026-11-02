@@ -1,0 +1,59 @@
+{
+  "slug": "um-de-nos-esta-mentindo-karen-m-mcmanus",
+  "title": "Um de Nós Está Mentindo",
+  "originalTitle": "One of Us Is Lying",
+  "originalTitleRomanized": null,
+  "authors": [
+    "karen-m-mcmanus"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "infantojuvenil",
+  "genres": [
+    "suspense",
+    "mistério",
+    "young adult"
+  ],
+  "themes": [
+    "segredo",
+    "morte",
+    "adolescência",
+    "amizade"
+  ],
+  "edition": {
+    "title": "Um de Nós Está Mentindo",
+    "language": "português",
+    "publisher": "Editora Record",
+    "year": 2018,
+    "isbn13": "9788501114181",
+    "isbn10": "8501114189",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckuagt65w13868513w13pkovz8f.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com maior score corresponde exatamente ao livro e à editora conhecida (Record); candidato OpenLibrary descartado por título/idioma incompatíveis (edição polonesa).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuagt65w13868513w13pkovz8f",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzn8k2129324490sb53u1zgj73",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-935b970802c0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "OpenLibrary trouxe apenas uma edição em polonês com score de título baixo (0.44); não utilizada.",
+    "validatedAt": "2026-08-13"
+  }
+}

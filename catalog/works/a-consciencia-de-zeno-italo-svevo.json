@@ -1,0 +1,64 @@
+{
+  "slug": "a-consciencia-de-zeno-italo-svevo",
+  "title": "A consciência de Zeno",
+  "originalTitle": "La coscienza di Zeno",
+  "originalTitleRomanized": null,
+  "authors": [
+    "italo-svevo"
+  ],
+  "language": "italiano",
+  "firstPublished": 1923,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance psicológico"
+  ],
+  "themes": [
+    "autoanálise",
+    "vício",
+    "psicanálise",
+    "família"
+  ],
+  "edition": {
+    "title": "A consciência de Zeno",
+    "language": "português",
+    "publisher": "L&PM Pocket",
+    "year": 2020,
+    "isbn13": "9786556660806",
+    "isbn10": "6556660809",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=QIztDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo (1.0) corresponde exatamente; clássico do modernismo italiano de 1923; edição brasileira L&PM Pocket (2020) escolhida como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl13lbzfn928420jwwa548cmeu",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "QIztDwAAQBAJ",
+      "url": "https://books.google.com/books?id=QIztDwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fy950t81366htiz9v68e36d",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-21eaf275fa2c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

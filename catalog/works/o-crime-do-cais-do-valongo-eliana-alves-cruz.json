@@ -1,0 +1,60 @@
+{
+  "slug": "o-crime-do-cais-do-valongo-eliana-alves-cruz",
+  "title": "O crime do cais do Valongo",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "eliana-alves-cruz"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção histórica"
+  ],
+  "themes": [
+    "escravidão",
+    "racismo",
+    "memória",
+    "Rio de Janeiro"
+  ],
+  "edition": {
+    "title": "O Crime do Cais do Valongo",
+    "language": "português",
+    "publisher": "Malê",
+    "year": 2018,
+    "isbn13": "9788592736279",
+    "isbn10": "8592736277",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Corrigido nome da autora (Eliane->Eliana Alves Cruz), confirmado tanto pelo Literal quanto pelo OpenLibrary (score combinado 0.98), mesmo ISBN nos dois provedores.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl7bz55y89782480jrouzvrkym0",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32374814W",
+      "url": "https://openlibrary.org/works/OL32374814W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ibmgsd18769824hl6157jph5",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-27ec5ae787c9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal registra data de publicação 2022 (provável reimpressão) enquanto OpenLibrary indica 2018 (editora Malê) como primeira publicação; adotei 2018 como ano de primeira publicação.",
+    "validatedAt": "2026-08-13"
+  }
+}

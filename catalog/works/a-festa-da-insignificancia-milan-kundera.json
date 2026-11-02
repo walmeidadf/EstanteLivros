@@ -1,0 +1,57 @@
+{
+  "slug": "a-festa-da-insignificancia-milan-kundera",
+  "title": "A Festa da Insignificância",
+  "originalTitle": "La Fête de l'insignifiance",
+  "originalTitleRomanized": null,
+  "authors": [
+    "milan-kundera"
+  ],
+  "language": "francês",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção filosófica"
+  ],
+  "themes": [
+    "insignificância",
+    "humor",
+    "existencialismo"
+  ],
+  "edition": {
+    "title": "A Festa da Insignificância",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535924664",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckrqwy6c7663217980qb1a3p7.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente a título, autor e editora (Companhia das Letras, tradução de Teresa Bulhões Carvalho da Fonseca). Kundera, checo naturalizado francês, escreveu esta obra tardia originalmente em francês.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrqwy6c7663217980qb1a3p7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fmj10q2549e0izcmdkidsi",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0313a6f8a4f2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

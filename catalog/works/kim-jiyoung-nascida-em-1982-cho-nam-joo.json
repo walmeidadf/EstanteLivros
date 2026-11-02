@@ -1,0 +1,64 @@
+{
+  "slug": "kim-jiyoung-nascida-em-1982-cho-nam-joo",
+  "title": "Kim Jiyoung, nascida em 1982",
+  "originalTitle": "82년생 김지영",
+  "originalTitleRomanized": null,
+  "authors": [
+    "cho-nam-joo"
+  ],
+  "language": "coreano",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção feminista"
+  ],
+  "themes": [
+    "sexismo",
+    "maternidade",
+    "mercado de trabalho",
+    "Coreia do Sul"
+  ],
+  "edition": {
+    "title": "Kim Jiyoung, Nascida em 1982",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2022,
+    "isbn13": "9786555604924",
+    "isbn10": "6555604921",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clqaze9t414444450hi5c7z6ags6.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido (Cho Nanjoo->Cho Nam-Joo) e título com grafia correta 'Jiyoung' (não 'Jiyong'). Candidato Literal com score alto (0.95) confirma edição brasileira pela Intrínseca (2022).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqaze9t414444450hi5c7z6ags6",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://intrinseca.com.br/livro/kim-jiyoung-nascida-em-1982/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqbk4ky5055461eb2bmefie4n",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-2e9ac9f6a292",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

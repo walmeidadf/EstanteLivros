@@ -1,0 +1,63 @@
+{
+  "slug": "suite-toquio-giovana-madalosso",
+  "title": "Suíte Tóquio",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "giovana-madalosso"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "classe social",
+    "trabalho doméstico",
+    "São Paulo"
+  ],
+  "edition": {
+    "title": "Suíte Tóquio",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2020,
+    "isbn13": "9786556920665",
+    "isbn10": "6556920665",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Q1z4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; primeira edição Todavia (2020).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxlhge842942378gxurvire7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24320760W",
+      "url": "https://openlibrary.org/works/OL24320760W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzntg83i2223010sb5w3zbjbxb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7bb97fb11ad5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library indica ano de publicação 2019, mas o registro de capa/ISBN e a maioria das fontes apontam 2020 como ano de lançamento; mantive 2020.",
+    "validatedAt": "2026-08-13"
+  }
+}

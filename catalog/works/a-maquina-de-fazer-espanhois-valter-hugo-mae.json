@@ -1,0 +1,63 @@
+{
+  "slug": "a-maquina-de-fazer-espanhois-valter-hugo-mae",
+  "title": "A Máquina de Fazer Espanhóis",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "valter-hugo-mae"
+  ],
+  "language": "português",
+  "firstPublished": 2010,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "velhice",
+    "memória",
+    "ditadura salazarista",
+    "amizade"
+  ],
+  "edition": {
+    "title": "A Máquina de Fazer Espanhóis",
+    "language": "português",
+    "publisher": "Cosac Naify",
+    "year": 2011,
+    "isbn13": "9788575038130",
+    "isbn10": "8575038133",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12921134-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Nome do autor corrigido para 'Valter Hugo Mãe' (grafia oficial); consenso entre Literal e Open Library para a obra. Romance do escritor português (2010); edição brasileira (Cosac Naify) escolhida a partir de registro do Open Library que agrega múltiplas edições sob ISBNs relacionados; ano da edição brasileira aproximado.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt7j12j2307165xy7alv50uaas",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL15591924W",
+      "url": "https://openlibrary.org/works/OL15591924W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckw16kt1l17778413fpbucv8nt5",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-51c9d6c10628",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library mescla, sob o mesmo registro, ISBNs de edições portuguesa, brasileira e alemã; selecionado o ISBN da edição brasileira (Cosac Naify) entre eles.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "vida-querida-alice-munro",
+  "title": "Vida Querida",
+  "originalTitle": "Dear Life",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alice-munro"
+  ],
+  "language": "inglês",
+  "firstPublished": 2012,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "memória",
+    "infância",
+    "província canadense",
+    "família"
+  ],
+  "edition": {
+    "title": "Vida Querida",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535923674",
+    "isbn10": "8535923675",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12369844-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); coletânea de contos de Alice Munro (2012), tradução de Caetano Galindo (Companhia das Letras, 2013).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4q54g13013830igazj1k0yrj",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26415111W",
+      "url": "https://openlibrary.org/works/OL26415111W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9h46f1j6472450on9l0cll94t",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-4f61a2c8b86e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

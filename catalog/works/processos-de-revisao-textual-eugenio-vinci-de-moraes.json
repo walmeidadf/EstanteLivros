@@ -1,0 +1,55 @@
+{
+  "slug": "processos-de-revisao-textual-eugenio-vinci-de-moraes",
+  "title": "Processos de revisão textual",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "eugenio-vinci-de-moraes"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "não-ficção",
+  "genres": [
+    "linguística",
+    "manual técnico",
+    "edição de texto"
+  ],
+  "themes": [
+    "revisão textual",
+    "editoração",
+    "língua portuguesa"
+  ],
+  "edition": {
+    "title": "Processos de revisão textual",
+    "language": "português",
+    "publisher": "InterSaberes",
+    "year": 2020,
+    "isbn13": "9786555170009",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título provisório 'Revisão textual' corrigido para o título completo 'Processos de revisão textual'; nenhum candidato local correspondia (obra técnica pouco indexada), mas busca web confirmou autor, editora (InterSaberes) e ano (2020) com segurança razoável. Não foi possível localizar URL de capa confiável.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://livrariaintersaberes.com.br/produto/processos-de-revisao-textual/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.disal.com.br/produto/9106944-Processos-De-Revisao-Textual-Intersa",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-3e883c9f5d4c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Regra automática não encontrou candidatos por ser obra técnica pouco indexada nos provedores; resolvido via busca web direta.",
+    "validatedAt": "2026-08-13"
+  }
+}

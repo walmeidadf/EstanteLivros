@@ -1,0 +1,63 @@
+{
+  "slug": "a-mao-e-a-luva-machado-de-assis",
+  "title": "A Mão e a Luva",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "machado-de-assis"
+  ],
+  "language": "português",
+  "firstPublished": 1874,
+  "type": "romance",
+  "genres": [
+    "romance de costumes",
+    "romantismo"
+  ],
+  "themes": [
+    "amor",
+    "classe social",
+    "orgulho"
+  ],
+  "edition": {
+    "title": "A Mão e a Luva",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2025,
+    "isbn13": "9786556926452",
+    "isbn10": "6556926450",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=vV40EQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Clássico consagrado de Machado de Assis (1874); consenso entre Literal e Open Library. Edição representativa recente (Todavia, 2025) escolhida por trazer capa e ISBN válidos.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cmlc57b9l13478130dpoz75autt4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1003133W",
+      "url": "https://openlibrary.org/works/OL1003133W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cmlc57b9l13478240dpopmxftuiz",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-44550016756e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

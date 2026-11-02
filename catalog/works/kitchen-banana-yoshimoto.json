@@ -1,0 +1,59 @@
+{
+  "slug": "kitchen-banana-yoshimoto",
+  "title": "Kitchen",
+  "originalTitle": "キッチン",
+  "originalTitleRomanized": "Kitchin",
+  "authors": [
+    "banana-yoshimoto"
+  ],
+  "language": "japonês",
+  "firstPublished": 1988,
+  "type": "novela",
+  "genres": [
+    "ficção literária japonesa",
+    "drama"
+  ],
+  "themes": [
+    "luto",
+    "família não-tradicional",
+    "comida",
+    "solidão",
+    "amadurecimento"
+  ],
+  "edition": {
+    "title": "Kitchen",
+    "language": "português",
+    "publisher": "Estação Liberdade",
+    "year": 2025,
+    "isbn13": "9788574483238",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://images.tcdn.com.br/img/img_prod/1305078/90_kitchen_1555_1_feaf7e368673b8188f4774336dc7d127.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Novela de estreia de Banana Yoshimoto; usada a edição brasileira mais recente, pela Estação Liberdade (2025), já que os candidatos locais eram apenas edições em alemão, espanhol, holandês e inglês.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.jbox.com.br/2025/05/12/kitchen-primeira-grande-obra-de-banana-yoshimoto-ganha-nova-publicacao-no-brasil/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estacaoliberdade.com.br/kitchen",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-a3f21445238e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/Open Library trazem apenas edições em outros idiomas; nenhuma edição brasileira estava nos candidatos, complementado via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

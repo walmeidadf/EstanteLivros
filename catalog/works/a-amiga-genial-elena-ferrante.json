@@ -1,0 +1,64 @@
+{
+  "slug": "a-amiga-genial-elena-ferrante",
+  "title": "A amiga genial",
+  "originalTitle": "L'amica geniale",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 2011,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "bildungsroman"
+  ],
+  "themes": [
+    "amizade",
+    "Nápoles",
+    "classe social",
+    "infância e adolescência"
+  ],
+  "edition": {
+    "title": "A Amiga Genial",
+    "language": "português",
+    "publisher": "Biblioteca Azul",
+    "year": 2015,
+    "isbn13": "9788525060600",
+    "isbn10": "8525060607",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksxkqg1x2815752h8g3t1s02aj.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consensus candidate; primeiro volume da tetralogia napolitana de Ferrante; edição brasileira pela Biblioteca Azul (selo do Grupo Record/Globo Livros), 2015, escolhida como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkqg1x2815752h8g3t1s02aj",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL42531161W",
+      "url": "https://openlibrary.org/works/OL42531161W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzmzf1ol5343180sb5ew96zdnt",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-16b150361faa",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library aponta apenas edições portuguesas (Relógio D'Água, 2014); optou-se pela edição brasileira Biblioteca Azul por ser mais representativa do catálogo.",
+    "validatedAt": "2026-08-13"
+  }
+}

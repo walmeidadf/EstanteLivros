@@ -1,0 +1,55 @@
+{
+  "slug": "um-solitario-a-espreita-milton-hatoum",
+  "title": "Um Solitário à Espreita",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "milton-hatoum"
+  ],
+  "language": "português",
+  "firstPublished": 2013,
+  "type": "crônica",
+  "genres": [
+    "crônicas",
+    "memórias"
+  ],
+  "themes": [
+    "literatura",
+    "memória",
+    "viagens",
+    "cotidiano"
+  ],
+  "edition": {
+    "title": "Um Solitário à Espreita",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535922929",
+    "isbn10": "853592292X",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos Literal eram todos incompatíveis (score baixo, obras de outros autores); Open Library trouxe correspondência exata (score 1.0). Confirmado via busca: primeiro livro de crônicas de Milton Hatoum (2013, Companhia das Letras), reunindo textos publicados entre 1994 e 2012.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL23257583W",
+      "url": "https://openlibrary.org/works/OL23257583W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535922929/um-solitario-a-espreita",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-4e1397d8a784",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal não apresentou candidato válido para a obra; Open Library confirmou com segurança.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "a-parabola-do-semeador-octavia-butler",
+  "title": "A Parábola do Semeador",
+  "originalTitle": "Parable of the Sower",
+  "originalTitleRomanized": null,
+  "authors": [
+    "octavia-butler"
+  ],
+  "language": "inglês",
+  "firstPublished": 1993,
+  "type": "romance",
+  "genres": [
+    "ficção científica",
+    "distopia"
+  ],
+  "themes": [
+    "colapso social",
+    "sobrevivência",
+    "religião",
+    "mudanças climáticas"
+  ],
+  "edition": {
+    "title": "A Parábola do Semeador",
+    "language": "português",
+    "publisher": "Morro Branco",
+    "year": 2018,
+    "isbn13": "9788592795399",
+    "isbn10": "8592795397",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título provisório 'A palavra do semeador' e autora 'Octavia Buttler' (grafia incorreta) identificados como 'A Parábola do Semeador', de Octavia Butler, tradução brasileira pela Editora Morro Branco (2018); nenhum candidato local correspondia.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.lojamorrobranco.com.br/a-parabola-do-semeador",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-9881fce97746",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

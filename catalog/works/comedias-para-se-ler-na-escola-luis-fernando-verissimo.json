@@ -1,0 +1,63 @@
+{
+  "slug": "comedias-para-se-ler-na-escola-luis-fernando-verissimo",
+  "title": "Comédias para se Ler na Escola",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "luis-fernando-verissimo"
+  ],
+  "language": "português",
+  "firstPublished": 2001,
+  "type": "conto",
+  "genres": [
+    "humor",
+    "crônica"
+  ],
+  "themes": [
+    "humor",
+    "cotidiano",
+    "escola"
+  ],
+  "edition": {
+    "title": "Comédias para se Ler na Escola",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 2001,
+    "isbn13": "9788539001071",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=QjwqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome do autor corrigido (\"Luiz fernando\" -> Luis Fernando Verissimo). Consenso entre Literal e Open Library, mesma obra e editora (Objetiva, 2001).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl2nvk45l14246520h1loijwadhk",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL13755290W",
+      "url": "https://openlibrary.org/works/OL13755290W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9h6lv6p14037560on91o4428x3",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e7ce93e1da27",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

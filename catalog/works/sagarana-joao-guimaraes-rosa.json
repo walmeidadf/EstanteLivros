@@ -1,0 +1,60 @@
+{
+  "slug": "sagarana-joao-guimaraes-rosa",
+  "title": "Sagarana",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "joao-guimaraes-rosa"
+  ],
+  "language": "português",
+  "firstPublished": 1946,
+  "type": "coletânea de contos",
+  "genres": [
+    "regionalismo",
+    "realismo mágico"
+  ],
+  "themes": [
+    "sertão",
+    "natureza",
+    "destino"
+  ],
+  "edition": {
+    "title": "Sagarana",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": 1958,
+    "isbn13": "9788520919217",
+    "isbn10": "8520919219",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico de Guimarães Rosa (1946), coletânea de contos regionalistas; candidatos Literal e Open Library confirmam autor e título com score máximo. Edição representativa Nova Fronteira (1958) escolhida por trazer ISBN válido; nenhuma fonte consultada trazia capa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt0dca3922396013tr7zy7ffe3",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL19770763W",
+      "url": "https://openlibrary.org/works/OL19770763W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzu7fhwb10251260tbv809g6v95",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-44c72ed46978",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

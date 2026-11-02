@@ -1,0 +1,59 @@
+{
+  "slug": "a-vegetariana-han-kang",
+  "title": "A Vegetariana",
+  "originalTitle": "채식주의자",
+  "originalTitleRomanized": "Chaesikjuuija",
+  "authors": [
+    "han-kang"
+  ],
+  "language": "coreano",
+  "firstPublished": 2007,
+  "type": "romance",
+  "genres": [
+    "drama psicológico",
+    "ficção literária"
+  ],
+  "themes": [
+    "corpo",
+    "família",
+    "liberdade",
+    "loucura",
+    "violência"
+  ],
+  "edition": {
+    "title": "A Vegetariana",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2018,
+    "isbn13": "9788588808294",
+    "isbn10": "8588808293",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cksj5wvsy1084367q298bwk52jgt.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Hang kang' para 'Han Kang'. Candidato Literal com melhor score corresponde à edição brasileira da Todavia (2018), vencedora do International Booker Prize.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksj5wvsy1084367q298bwk52jgt",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzn8yk1i9545230sb5034xl5xj",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9866809d7276",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Fundida com work-b850c0897291 ('A vegetariana').",
+    "validatedAt": "2026-08-13"
+  }
+}

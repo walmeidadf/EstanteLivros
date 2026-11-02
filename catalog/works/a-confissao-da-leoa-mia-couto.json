@@ -1,0 +1,70 @@
+{
+  "slug": "a-confissao-da-leoa-mia-couto",
+  "title": "A Confissão da Leoa",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "mia-couto"
+  ],
+  "language": "português",
+  "firstPublished": 2012,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico"
+  ],
+  "themes": [
+    "Moçambique",
+    "violência",
+    "gênero",
+    "mito e realidade"
+  ],
+  "edition": {
+    "title": "A Confissão da Leoa",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2012,
+    "isbn13": "9788535926828",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535926828/a-confissao-da-leoa.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Candidato Literal confirma a obra (score 1.0), mas trazia edição portuguesa (Caminho, ISBN 9789722125673); substituída pela edição brasileira Companhia das Letras (2012, ISBN 9788535926828), localizada via busca.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvf0wy11358031sk8bryvoa21b",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL20005374W",
+      "url": "https://openlibrary.org/works/OL20005374W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535926828/a-confissao-da-leoa",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp0z69z12125900tbvrvco0esq",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-d3edf861aadf",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal e Open Library indicavam apenas o ISBN da edição portuguesa; usado o ISBN brasileiro 9788535926828 (Companhia das Letras) como representativo.",
+    "validatedAt": "2026-08-13"
+  }
+}

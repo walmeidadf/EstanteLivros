@@ -1,0 +1,64 @@
+{
+  "slug": "cem-anos-de-solidao-gabriel-garcia-marquez",
+  "title": "Cem Anos de Solidão",
+  "originalTitle": "Cien años de soledad",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1967,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "solidão",
+    "história latino-americana",
+    "destino"
+  ],
+  "edition": {
+    "title": "Cem Anos de Solidão",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2010,
+    "isbn13": "9788501078896",
+    "isbn10": "8501078891",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/cktsl49bf7288841esvggw0mqz5.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido ('Garcia Marques' para 'García Márquez'); obra-prima do realismo mágico (1967). Escolhida edição brasileira da Record traduzida por Eric Nepomuceno, confirmada via busca (ISBN usado em diversas reimpressões).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsl49bf7288841esvggw0mqz5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/cem-anos-de-solidao/artigo/528aac11-3801-4c60-ae80-7e948a30eddd",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fnhbwi543798f9izl56t4zx2",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-504e35725737",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Vários candidatos Literal com mesmo score (1.0) representam diferentes edições/traduções brasileiras e portuguesas; optou-se pela tradução de Eric Nepomuceno (Record), a mais difundida no Brasil.",
+    "validatedAt": "2026-08-13"
+  }
+}

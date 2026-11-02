@@ -1,0 +1,60 @@
+{
+  "slug": "correr-drauzio-varella",
+  "title": "Correr",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "drauzio-varella"
+  ],
+  "language": "português",
+  "firstPublished": 2015,
+  "type": "não-ficção",
+  "genres": [
+    "memórias",
+    "esporte"
+  ],
+  "themes": [
+    "corrida",
+    "saúde",
+    "superação"
+  ],
+  "edition": {
+    "title": "Correr",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2015,
+    "isbn13": "9788535925197",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor corrigido para 'Drauzio Varella' (grafia oficial; provisório trazia 'Varela'); consenso entre Literal e Open Library (score ~0.99) para o livro de memórias sobre corrida (Companhia das Letras, 2015).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cley7cxif13879430hje0gtbpyye",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL30815271W",
+      "url": "https://openlibrary.org/works/OL30815271W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cley7cxif13879440hje3wusej1k",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-49d91b17c3d9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

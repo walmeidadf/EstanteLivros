@@ -1,0 +1,64 @@
+{
+  "slug": "o-bom-filho-you-jeong-jeong",
+  "title": "O Bom Filho",
+  "originalTitle": "종의 기원",
+  "originalTitleRomanized": "Jong-ui Giwon",
+  "authors": [
+    "you-jeong-jeong"
+  ],
+  "language": "coreano",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "suspense",
+    "thriller psicológico"
+  ],
+  "themes": [
+    "família",
+    "violência",
+    "memória",
+    "identidade"
+  ],
+  "edition": {
+    "title": "O Bom Filho",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2019,
+    "isbn13": "9788588808522",
+    "isbn10": "8588808528",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=pRCeDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Jeong You' para 'You-jeong Jeong' (ordem ocidentalizada usada pela editora brasileira); título original coreano '종의 기원' ('A origem das espécies'), thriller psicológico publicado pela Todavia.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktvj7gea1257929yz7a1fcs3ie3",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/o-bom-filho",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo728aq8535560sb5gpyqsyf5",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fd0c437a3621",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Um dos candidatos Literal atribui a tradução (Jae Hyung Woo) como coautoria; mantida apenas You-jeong Jeong como autora da obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

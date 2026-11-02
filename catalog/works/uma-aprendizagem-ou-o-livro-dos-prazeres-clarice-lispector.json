@@ -1,0 +1,64 @@
+{
+  "slug": "uma-aprendizagem-ou-o-livro-dos-prazeres-clarice-lispector",
+  "title": "Uma Aprendizagem ou O Livro dos Prazeres",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "clarice-lispector"
+  ],
+  "language": "português",
+  "firstPublished": 1969,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "introspectivo"
+  ],
+  "themes": [
+    "amor",
+    "autoconhecimento",
+    "erotismo",
+    "linguagem"
+  ],
+  "edition": {
+    "title": "Uma Aprendizagem ou O Livro dos Prazeres",
+    "language": "português",
+    "publisher": "Rocco",
+    "year": 1998,
+    "isbn13": "9788532509529",
+    "isbn10": "8532509525",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/8005536-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam na edição Rocco com o mesmo ISBN; título corrigido para incluir o artigo ('...ou O Livro dos Prazeres').",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl70q3g8s9395120jgist7f9x07",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17727892W",
+      "url": "https://openlibrary.org/works/OL17727892W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl70q3g8s9395130jgibllkzp5i",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-969e939db0db",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

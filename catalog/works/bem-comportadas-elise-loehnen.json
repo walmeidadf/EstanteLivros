@@ -1,0 +1,61 @@
+{
+  "slug": "bem-comportadas-elise-loehnen",
+  "title": "Bem-comportadas",
+  "originalTitle": "On Our Best Behavior",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elise-loehnen"
+  ],
+  "language": "inglês",
+  "firstPublished": 2023,
+  "type": "não-ficção",
+  "genres": [
+    "ensaio",
+    "feminismo"
+  ],
+  "themes": [
+    "condição feminina",
+    "pecados capitais",
+    "autoconhecimento",
+    "cultura patriarcal"
+  ],
+  "edition": {
+    "title": "Bem-comportadas: Os sete pecados capitais e o preço que as mulheres pagam para provar seu valor",
+    "language": "português",
+    "publisher": "Sextante",
+    "year": 2024,
+    "isbn13": "9786555648058",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome da autora corrigido de \"Elise Lehnen\" para Elise Loehnen; nenhum candidato local correspondia (Bowles, Colasanti, Beauvoir, Gardner são obras não relacionadas). Identificação e edição confirmadas por busca web (Editora Sextante).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "google_books",
+      "id": "Zr3vEAAAQBAJ",
+      "url": "https://books.google.com/books?id=Zr3vEAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://sextante.com.br/livros/bem-comportadas/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.skoob.com.br/bem-comportadas-122417941ed122420659.html",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-e1c577985f87",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal eram obras distintas com título parcialmente coincidente; nenhum aceito.",
+    "validatedAt": "2026-08-13"
+  }
+}

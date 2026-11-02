@@ -1,0 +1,53 @@
+{
+  "slug": "aguas-de-telhado-carolina-schettini",
+  "title": "Águas de Telhado",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carolina-schettini"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "romance",
+  "genres": [
+    "romance contemporâneo"
+  ],
+  "themes": [
+    "reencontro",
+    "arquitetura",
+    "amor"
+  ],
+  "edition": {
+    "title": "Águas de Telhado",
+    "language": "português",
+    "publisher": "Caravana Grupo Editorial",
+    "year": 2023,
+    "isbn13": "9786552230102",
+    "isbn10": null,
+    "format": "ebook",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato (nenhum provedor tinha a obra em cache); busca web identificou o romance de Carolina Schettini (autora de Brasília), publicado pela Caravana Grupo Editorial (2023), sobre a arquiteta Cora e o engenheiro Hugo.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/%C3%81guas-Telhado-Carolina-Schettini-ebook/dp/B0CGY3PQDD",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://caravanagrupoeditorial.com.br/produto/aguas-de-telhado/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-bc634e4aa2aa",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

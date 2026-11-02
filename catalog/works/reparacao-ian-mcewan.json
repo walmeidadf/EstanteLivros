@@ -1,0 +1,59 @@
+{
+  "slug": "reparacao-ian-mcewan",
+  "title": "Reparação",
+  "originalTitle": "Atonement",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ian-mcewan"
+  ],
+  "language": "inglês",
+  "firstPublished": 2001,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama histórico"
+  ],
+  "themes": [
+    "culpa",
+    "segunda guerra mundial",
+    "memória",
+    "família",
+    "amor"
+  ],
+  "edition": {
+    "title": "Reparação (edição econômica)",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2022,
+    "isbn13": "9788535919974",
+    "isbn10": "853591997X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cky81w08314195410ik6xuz9yvx5.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autor corrigido de 'Ian Macwean' (grafia incorreta do original_entry) para Ian McEwan; obra é a tradução brasileira de 'Atonement'; escolhido candidato Literal com autor e tradutor explícitos (Paulo Henriques Britto), edição econômica Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky81w08314195410ik6xuz9yvx5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckztiskw916513290tbvijoy3ocs",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8b56c451fd58",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Havia candidato alternativo do mesmo título sem autores listados (provável mesma obra, edição padrão Companhia das Letras 2008); optou-se pelo candidato com autoria explícita.",
+    "validatedAt": "2026-08-13"
+  }
+}

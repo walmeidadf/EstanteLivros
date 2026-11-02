@@ -1,0 +1,57 @@
+{
+  "slug": "politica-e-para-todos-gabriela-prioli",
+  "title": "Política é para todos",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriela-prioli"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "não-ficção",
+  "genres": [
+    "divulgação política",
+    "ensaio"
+  ],
+  "themes": [
+    "política",
+    "cidadania",
+    "democracia"
+  ],
+  "edition": {
+    "title": "Política é para todos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2021,
+    "isbn13": "9786557822937",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/3/cl0xzubw68410950htn0kvl5cbm.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'gabriela Priori' para Gabriela Prioli; candidato Literal com score alto (0.98) confirma título, autora e editora (Companhia das Letras, 2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl0xzubw68410950htn0kvl5cbm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i8dseo4326410ohl05ouyivf",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-331e134181ad",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

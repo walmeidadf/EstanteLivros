@@ -1,0 +1,55 @@
+{
+  "slug": "batida-so-giovana-madalosso",
+  "title": "Batida Só",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "giovana-madalosso"
+  ],
+  "language": "português",
+  "firstPublished": 2025,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "saúde",
+    "fé",
+    "família",
+    "morte",
+    "retorno às origens"
+  ],
+  "edition": {
+    "title": "Batida Só",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2025,
+    "isbn13": null,
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos locais eram totalmente incompatíveis; busca web confirmou o romance de Giovana Madalosso publicado pela Todavia em 2025, condizente com o ano de leitura (2026) já anotado na entrada original.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/batida-so",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.revistabula.com/158843-batida-so-o-ritmo-intimo-da-vulnerabilidade-e-da-fe/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-997b799ce26c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

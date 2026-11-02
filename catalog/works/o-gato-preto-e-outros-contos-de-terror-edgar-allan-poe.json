@@ -1,0 +1,58 @@
+{
+  "slug": "o-gato-preto-e-outros-contos-de-terror-edgar-allan-poe",
+  "title": "O gato preto e outros contos de terror",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "edgar-allan-poe"
+  ],
+  "language": "inglês",
+  "firstPublished": 1843,
+  "type": "coletânea de contos",
+  "genres": [
+    "terror gótico",
+    "conto policial"
+  ],
+  "themes": [
+    "loucura",
+    "culpa",
+    "morte",
+    "obsessão"
+  ],
+  "edition": {
+    "title": "O gato preto e outros contos de terror",
+    "language": "português",
+    "publisher": "Raposa Vermelha",
+    "year": 2019,
+    "isbn13": "9788566594416",
+    "isbn10": "856659441X",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=ba-2DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Coletânea de contos de terror de Poe organizada por editoras brasileiras sob título quase idêntico em várias edições; escolhida a edição da Raposa Vermelha (2019, score 0.977) como representativa entre candidatos concorrentes muito similares.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clusfs70g139760huvs7i1ff83",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clusfs70n139900huv7jbvq0fr",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ab7967ccbb56",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Vários candidatos com títulos muito parecidos ('O Gato Preto', 'O Gato Preto E Outros Contos', 'O Gato Preto e outras histórias') de editoras diferentes; sem ISBN na lista original não é possível determinar a edição exata lida.",
+    "validatedAt": "2026-08-13"
+  }
+}

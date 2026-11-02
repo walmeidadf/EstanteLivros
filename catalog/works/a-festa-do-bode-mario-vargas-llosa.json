@@ -1,0 +1,53 @@
+{
+  "slug": "a-festa-do-bode-mario-vargas-llosa",
+  "title": "A Festa do Bode",
+  "originalTitle": "La Fiesta del Chivo",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mario-vargas-llosa"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2000,
+  "type": "romance",
+  "genres": [
+    "romance histórico",
+    "ficção política"
+  ],
+  "themes": [
+    "ditadura",
+    "poder",
+    "violência",
+    "memória",
+    "República Dominicana"
+  ],
+  "edition": {
+    "title": "A Festa do Bode",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2011,
+    "isbn13": "9788579620638",
+    "isbn10": "8579620635",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788579620638/a-festa-do-bode.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Candidatos locais só traziam a edição portuguesa 'A Festa do Chibo'; busca web confirmou a edição brasileira com o título usado pela Lila, publicada pela Alfaguara em 2011.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788579620638/a-festa-do-bode",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-91729e0f9eac",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal 'A festa do Chibo' é a tradução portuguesa da mesma obra (autoria idêntica, título diferente); descartado em favor da edição brasileira 'A Festa do Bode' localizada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

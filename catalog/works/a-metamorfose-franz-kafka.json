@@ -1,0 +1,53 @@
+{
+  "slug": "a-metamorfose-franz-kafka",
+  "title": "A Metamorfose",
+  "originalTitle": "Die Verwandlung",
+  "originalTitleRomanized": null,
+  "authors": [
+    "franz-kafka"
+  ],
+  "language": "alemão",
+  "firstPublished": 1915,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "absurdo",
+    "expressionismo"
+  ],
+  "themes": [
+    "alienação",
+    "família",
+    "identidade",
+    "transformação"
+  ],
+  "edition": {
+    "title": "A Metamorfose",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2000,
+    "isbn13": "9788571646858",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/9646280-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre provedores; novela clássica de Kafka (1915). Escolhida a edição Companhia das Letras (2000), via Open Library, como representativa por ampla disponibilidade no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL16983847W",
+      "url": "https://openlibrary.org/works/OL16983847W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-d6ff73beaf3a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Múltiplas edições brasileiras concorrem nos candidatos (L&PM, Companhia das Letras, e edição portuguesa Antígona); mantida a edição Companhia das Letras.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "o-genero-eterno-renato-fino",
+  "title": "O gênero eterno",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "renato-fino"
+  ],
+  "language": "português",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "gênero",
+    "identidade",
+    "relações humanas"
+  ],
+  "edition": {
+    "title": "O Gênero Eterno",
+    "language": "português",
+    "publisher": "Siglaviva",
+    "year": 2016,
+    "isbn13": null,
+    "isbn10": "8566342216",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia (todos com autores/títulos distintos). Localizado por busca web: 'O Gênero Eterno', terceiro romance de Renato Fino, publicado pela Siglaviva em 2016; obra pouco documentada, sem candidato bibliográfico estruturado (Literal/OpenLibrary/Google Books), por isso confiança média.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.correiobraziliense.com.br/app/noticia/diversao-e-arte/2016/10/10/interna_diversao_arte,552434/complexidade-da-questao-do-genero-e-tema-de-livro-de-renato-fino.shtml",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.skoob.com.br/pt/book/734901?title=book%2Fo-genero-eterno",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/g%C3%AAnero-eterno-Renato-Fino/dp/8566342216",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-316d4a78ebdd",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

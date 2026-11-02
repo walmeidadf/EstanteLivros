@@ -1,0 +1,67 @@
+{
+  "slug": "kindred-lacos-de-sangue-octavia-e-butler",
+  "title": "Kindred: Laços de Sangue",
+  "originalTitle": "Kindred",
+  "originalTitleRomanized": null,
+  "authors": [
+    "octavia-e-butler"
+  ],
+  "language": "inglês",
+  "firstPublished": 1979,
+  "type": "romance",
+  "genres": [
+    "ficção científica",
+    "ficção histórica"
+  ],
+  "themes": [
+    "escravidão",
+    "viagem no tempo",
+    "racismo",
+    "identidade"
+  ],
+  "edition": {
+    "title": "Kindred: Laços de Sangue",
+    "language": "português",
+    "publisher": "Morro Branco",
+    "year": 2019,
+    "isbn13": "9788592795870",
+    "isbn10": "8592795877",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Consenso entre Literal e Open Library; autora corrigida (Octavia E. Butler); dados de 2ª edição brasileira (Morro Branco, 2019) confirmados via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl8kg4doo619360isf6vb46jdk",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL35616W",
+      "url": "https://openlibrary.org/works/OL35616W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publishnews.com.br/materias/2017/10/26/morro-branco-lanca-obra-classica-de-octavia-butler",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fzih6p1477056htiz656gnx5m",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-77417c9921ec",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "a-insustentavel-leveza-do-ser-milan-kundera",
+  "title": "A insustentável leveza do ser",
+  "originalTitle": "Nesnesitelná lehkost bytí",
+  "originalTitleRomanized": null,
+  "authors": [
+    "milan-kundera"
+  ],
+  "language": "tcheco",
+  "firstPublished": 1984,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção filosófica"
+  ],
+  "themes": [
+    "amor",
+    "liberdade",
+    "destino",
+    "existencialismo"
+  ],
+  "edition": {
+    "title": "A Insustentável Leveza do Ser",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2017,
+    "isbn13": "9788535928839",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12369915-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library sobre título/autor; optou-se pela edição brasileira da Companhia das Letras (2017), mais amplamente disponível, em vez da edição portuguesa listada como candidato principal no Literal.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvdze4ed315606q08bce1i1q8v",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26415181W",
+      "url": "https://openlibrary.org/works/OL26415181W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznhobmc13560330sb5t6kbbzyb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b8a2cf3c7726",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "O candidato Literal principal trazia ISBN de edição portuguesa (editora não brasileira); Open Library trazia a edição da Companhia das Letras (Brasil, 2017), escolhida por ser mais representativa para este catálogo.",
+    "validatedAt": "2026-08-13"
+  }
+}

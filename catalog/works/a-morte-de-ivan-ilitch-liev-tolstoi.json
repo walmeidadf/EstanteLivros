@@ -1,0 +1,69 @@
+{
+  "slug": "a-morte-de-ivan-ilitch-liev-tolstoi",
+  "title": "A Morte de Ivan Ilitch",
+  "originalTitle": "Смерть Ивана Ильича",
+  "originalTitleRomanized": null,
+  "authors": [
+    "liev-tolstoi"
+  ],
+  "language": "russo",
+  "firstPublished": 1886,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "literatura russa"
+  ],
+  "themes": [
+    "morte",
+    "existencialismo",
+    "sentido da vida"
+  ],
+  "edition": {
+    "title": "A Morte de Ivan Ilitch",
+    "language": "português",
+    "publisher": "LeBooks Editora",
+    "year": 2020,
+    "isbn13": "9786586079630",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=8e3rDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Novela clássica de Tolstói (1886, título russo confirmado por busca web); escolhi como representativa a edição Literal de maior score em português. Existe também edição consagrada pela L&PM Pocket, citada como referência adicional.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cku6an59c1590491gtx54q4pwdn",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/A_Morte_de_Ivan_Ilitch",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.lpm.com.br/site/default.asp?Template=..%2Flivros%2Flayout_produto.asp&CategoriaID=816351&ID=144062",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznowvi4218280sb5zie9a03d",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0111fa43b223",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal divergem na grafia do nome do autor (Tolstoi/Tolstói/Tosltói) e em diferentes editoras/traduções (LeBooks, On Line Editora, tradução portuguesa de Adolfo Casais Monteiro); mantive a obra como um único romance, escolhendo o candidato de maior score como edição representativa.",
+    "validatedAt": "2026-08-13"
+  }
+}

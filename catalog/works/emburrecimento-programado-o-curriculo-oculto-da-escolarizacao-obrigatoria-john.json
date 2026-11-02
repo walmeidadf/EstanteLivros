@@ -1,0 +1,61 @@
+{
+  "slug": "emburrecimento-programado-o-curriculo-oculto-da-escolarizacao-obrigatoria-john",
+  "title": "Emburrecimento Programado: O Currículo Oculto da Escolarização Obrigatória",
+  "originalTitle": "Dumbing Us Down: The Hidden Curriculum of Compulsory Schooling",
+  "originalTitleRomanized": null,
+  "authors": [
+    "john-taylor-gatto"
+  ],
+  "language": "inglês",
+  "firstPublished": 1992,
+  "type": "ensaio",
+  "genres": [
+    "educação",
+    "crítica social"
+  ],
+  "themes": [
+    "educação",
+    "escolarização obrigatória",
+    "homeschooling",
+    "crítica ao sistema escolar"
+  ],
+  "edition": {
+    "title": "Emburrecimento Programado: O Currículo Oculto da Escolarização Obrigatória",
+    "language": "português",
+    "publisher": "Kírion",
+    "year": 2019,
+    "isbn13": "9788594090300",
+    "isbn10": "8594090307",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local disponível (lote marcado 'insufficient_metadata'); obra identificada via busca web como tradução brasileira de 'Dumbing Us Down' (Kírion, 2019, trad. Leonardo Araújo).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.kirion.com.br",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Emburrecimento-Programado-Curr%C3%ADculo-Escolariza%C3%A7%C3%A3o-Obrigat%C3%B3ria/dp/8594090307",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://ojs.uricer.edu.br/index.php/perspectiva/article/view/262",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-87f8f346ac6b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

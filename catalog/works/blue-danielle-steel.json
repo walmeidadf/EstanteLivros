@@ -1,0 +1,64 @@
+{
+  "slug": "blue-danielle-steel",
+  "title": "Blue",
+  "originalTitle": "Blue",
+  "originalTitleRomanized": null,
+  "authors": [
+    "danielle-steel"
+  ],
+  "language": "inglês",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "romance contemporâneo",
+    "ficção popular"
+  ],
+  "themes": [
+    "luto",
+    "reconstrução pessoal",
+    "jornalismo",
+    "família"
+  ],
+  "edition": {
+    "title": "Blue",
+    "language": "inglês",
+    "publisher": "Random House",
+    "year": 2016,
+    "isbn13": "9781446487747",
+    "isbn10": "1446487741",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=YYnVCgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Romance de Danielle Steel; busca web não localizou edição em português (nem pela Record, editora usual da autora no Brasil, nem por outras editoras). Usada a edição original em inglês (Random House, 2016) como representativa, já que nenhuma tradução brasileira foi encontrada.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksya4q4i788791ewxolpwqulc",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17356837W",
+      "url": "https://openlibrary.org/works/OL17356837W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzogh5o62801520tbvg158yqw4",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ac57b84f0fc4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "minha-querida-sputnik-haruki-murakami",
+  "title": "Minha Querida Sputnik",
+  "originalTitle": "スプートニクの恋人",
+  "originalTitleRomanized": "Supūtoniku no Koibito",
+  "authors": [
+    "haruki-murakami"
+  ],
+  "language": "japonês",
+  "firstPublished": 1999,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico"
+  ],
+  "themes": [
+    "amor não correspondido",
+    "identidade",
+    "desejo"
+  ],
+  "edition": {
+    "title": "Minha Querida Sputnik",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2008,
+    "isbn13": "9788579620737",
+    "isbn10": "8579620732",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/cktk4yg7q208302nr7ae46xoudt.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autor provisório 'Harumi Murakami' corrigido para Haruki Murakami; obra é 'Sputnik Sweetheart' (1999), traduzida como 'Minha Querida Sputnik' pela Alfaguara (2008), confirmada por candidato Literal.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktk4yg7q208302nr7ae46xoudt",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26418252W",
+      "url": "https://openlibrary.org/works/OL26418252W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoksmc44760760tbvenb44xpu",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c78495ba56ae",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

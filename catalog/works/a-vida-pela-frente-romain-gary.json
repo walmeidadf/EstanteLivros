@@ -1,0 +1,57 @@
+{
+  "slug": "a-vida-pela-frente-romain-gary",
+  "title": "A Vida pela Frente",
+  "originalTitle": "La vie devant soi",
+  "originalTitleRomanized": null,
+  "authors": [
+    "romain-gary"
+  ],
+  "language": "francês",
+  "firstPublished": 1975,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "orfandade",
+    "imigração",
+    "velhice",
+    "Paris"
+  ],
+  "edition": {
+    "title": "A Vida pela Frente",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2019,
+    "isbn13": "9786580309429",
+    "isbn10": "6580309423",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=NwSqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Romance de Romain Gary publicado sob o pseudônimo Émile Ajar (vencedor do Prêmio Goncourt de 1975); candidato Literal (título exato, autor 0.94) corresponde à edição brasileira Todavia (2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuxsnqii6199933f6peupdyd5f",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzojga714135210tbvovwyu8jm",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-541ad95a3a50",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

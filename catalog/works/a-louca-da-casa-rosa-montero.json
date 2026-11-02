@@ -1,0 +1,58 @@
+{
+  "slug": "a-louca-da-casa-rosa-montero",
+  "title": "A Louca da Casa",
+  "originalTitle": "La loca de la casa",
+  "originalTitleRomanized": null,
+  "authors": [
+    "rosa-montero"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2003,
+  "type": "ensaio",
+  "genres": [
+    "ensaio literário",
+    "autoficção"
+  ],
+  "themes": [
+    "imaginação",
+    "escrita",
+    "memória",
+    "loucura"
+  ],
+  "edition": {
+    "title": "A Louca da Casa",
+    "language": "português",
+    "publisher": "Ediouro",
+    "year": 2004,
+    "isbn13": "9788500014772",
+    "isbn10": "8500014776",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cktk3yfci190028nr7ahq282jdp.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Rosa Monteiro' para 'Rosa Montero'; ensaio autobiográfico sobre criação literária, edição brasileira pela Ediouro (2004).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktk3yfci190028nr7ahq282jdp",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoh4xrl3102910tbvniclwo3o",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ff68109f64e4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

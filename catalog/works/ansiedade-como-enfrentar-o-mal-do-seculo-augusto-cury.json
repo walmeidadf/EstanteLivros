@@ -1,0 +1,57 @@
+{
+  "slug": "ansiedade-como-enfrentar-o-mal-do-seculo-augusto-cury",
+  "title": "Ansiedade: Como Enfrentar o Mal do Século",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "augusto-cury"
+  ],
+  "language": "português",
+  "firstPublished": 2013,
+  "type": "autoajuda",
+  "genres": [
+    "autoajuda",
+    "psicologia"
+  ],
+  "themes": [
+    "ansiedade",
+    "saúde mental",
+    "estresse"
+  ],
+  "edition": {
+    "title": "Ansiedade: Como Enfrentar o Mal do Século",
+    "language": "português",
+    "publisher": "Saraiva",
+    "year": 2013,
+    "isbn13": "9788502218482",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/4/ckv6kw3vl35904715txj0kokrnm.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso Literal com score máximo; obra de autoajuda brasileira de Augusto Cury sobre ansiedade, publicada pela Saraiva (2013).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv6kw3vl35904715txj0kokrnm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fst1g180872htizfmkkf8qi",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-bf81e0d524fd",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

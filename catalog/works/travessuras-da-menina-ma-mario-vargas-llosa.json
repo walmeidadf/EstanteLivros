@@ -1,0 +1,52 @@
+{
+  "slug": "travessuras-da-menina-ma-mario-vargas-llosa",
+  "title": "Travessuras da Menina Má",
+  "originalTitle": "Travesuras de la niña mala",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mario-vargas-llosa"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2006,
+  "type": "romance",
+  "genres": [
+    "romance",
+    "ficção literária"
+  ],
+  "themes": [
+    "amor obsessivo",
+    "identidade",
+    "memória",
+    "viagem"
+  ],
+  "edition": {
+    "title": "Travessuras da Menina Má",
+    "language": "português",
+    "publisher": "Objetiva/Alfaguara",
+    "year": 2006,
+    "isbn13": "9788573028089",
+    "isbn10": "8573028084",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788573028089/travessuras-da-menina-ma.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Título provisório 'As travessuras da menina má' corrigido para o título oficial 'Travessuras da Menina Má'; nenhum candidato local correspondia, edição brasileira confirmada via busca web (Objetiva/Alfaguara, 2006).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788573028089/travessuras-da-menina-ma",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-9870881f07db",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

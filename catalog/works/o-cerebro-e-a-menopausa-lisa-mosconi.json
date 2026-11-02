@@ -1,0 +1,49 @@
+{
+  "slug": "o-cerebro-e-a-menopausa-lisa-mosconi",
+  "title": "O cérebro e a menopausa",
+  "originalTitle": "The Menopause Brain",
+  "originalTitleRomanized": null,
+  "authors": [
+    "lisa-mosconi"
+  ],
+  "language": "inglês",
+  "firstPublished": 2024,
+  "type": "ciência",
+  "genres": [
+    "neurociência",
+    "saúde da mulher"
+  ],
+  "themes": [
+    "menopausa",
+    "cérebro",
+    "saúde feminina",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "O Cérebro e a Menopausa: A Nova Ciência Revolucionária Que Está Mudando Como Entendemos a Menopausa",
+    "language": "português",
+    "publisher": "HarperCollins Brasil",
+    "year": 2024,
+    "isbn13": null,
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato adequado (os 5 candidatos Literal eram obras não relacionadas). Identificado via busca web: livro de divulgação científica de Lisa Mosconi, 'The Menopause Brain', publicado no Brasil pela HarperCollins em 2024.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://harpercollins.com.br/products/o-cerebro-e-a-menopausa-lisa-mosconi",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-1c299d30ba81",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

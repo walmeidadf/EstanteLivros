@@ -1,0 +1,67 @@
+{
+  "slug": "as-pequenas-memorias-jose-saramago",
+  "title": "As pequenas memórias",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 2006,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias"
+  ],
+  "themes": [
+    "infância",
+    "memória"
+  ],
+  "edition": {
+    "title": "As pequenas memórias",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2006,
+    "isbn13": "9788535909296",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=5EYgAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Título corrigido para 'As pequenas memórias' (título oficial da obra de Saramago, faltava o artigo). Edição brasileira Companhia das Letras (2006) confirmada via busca e coerente com o ano de leitura citado (2014).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckul9hlrj425802a7a7l96fqhb",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL19012670W",
+      "url": "https://openlibrary.org/works/OL19012670W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535909296/as-pequenas-memorias",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo2l2q46512390sb5ptn770wp",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-58dfbef57701",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal continham variações em espanhol/inglês do título; OpenLibrary trazia majoritariamente a edição portuguesa (Caminho) e espanhola (Alfaguara); usada a edição brasileira Companhia das Letras.",
+    "validatedAt": "2026-08-13"
+  }
+}

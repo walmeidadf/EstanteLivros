@@ -1,0 +1,59 @@
+{
+  "slug": "crime-e-castigo-fiodor-dostoievski",
+  "title": "Crime e Castigo",
+  "originalTitle": "Преступление и наказание",
+  "originalTitleRomanized": null,
+  "authors": [
+    "fiodor-dostoievski"
+  ],
+  "language": "russo",
+  "firstPublished": 1866,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance psicológico"
+  ],
+  "themes": [
+    "culpa",
+    "redenção",
+    "moralidade",
+    "pobreza",
+    "crime"
+  ],
+  "edition": {
+    "title": "Crime e Castigo",
+    "language": "português",
+    "publisher": "Editora 34",
+    "year": 2023,
+    "isbn13": "9788573266467",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clmqb95uc5025430hgvh3yy95sq.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autor corrigido de 'Doistoieviski' para 'Fiódor Dostoiévski'; escolhida a tradução de Paulo Bezerra pela Editora 34, referência para o romance russo clássico de 1866.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clmqb95uc5025430hgvh3yy95sq",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clmqb95uc5025460hgvuuyo07yi",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fa93697de8b7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Vários candidatos Literal têm título e pontuação idênticos (mesma obra em diferentes línguas/editoras); optou-se pela edição em português do Brasil de tradução mais reconhecida.",
+    "validatedAt": "2026-08-13"
+  }
+}

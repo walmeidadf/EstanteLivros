@@ -1,0 +1,50 @@
+{
+  "slug": "de-quatro-miranda-july",
+  "title": "De Quatro",
+  "originalTitle": "All Fours",
+  "originalTitleRomanized": null,
+  "authors": [
+    "miranda-july"
+  ],
+  "language": "inglês",
+  "firstPublished": 2024,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "autoficção"
+  ],
+  "themes": [
+    "menopausa",
+    "desejo",
+    "casamento",
+    "meia-idade",
+    "viagem"
+  ],
+  "edition": {
+    "title": "De Quatro",
+    "language": "português",
+    "publisher": "Amarcord",
+    "year": 2024,
+    "isbn13": "9786585854184",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos locais eram de obras completamente diferentes; identificado via busca web como 'All Fours' de Miranda July, edição brasileira pela Amarcord (2024, trad. Bruna Beber), consistente com o ano de leitura (2025).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/de-quatro/artigo/eb4965f3-0199-4696-bcd6-55439b64aa18",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-72d77ca8b4e9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato do Literal correspondia ao título/autora; dados obtidos via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

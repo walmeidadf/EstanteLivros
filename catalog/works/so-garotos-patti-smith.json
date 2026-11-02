@@ -1,0 +1,58 @@
+{
+  "slug": "so-garotos-patti-smith",
+  "title": "Só Garotos",
+  "originalTitle": "Just Kids",
+  "originalTitleRomanized": null,
+  "authors": [
+    "patti-smith"
+  ],
+  "language": "inglês",
+  "firstPublished": 2010,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "música"
+  ],
+  "themes": [
+    "amizade",
+    "arte",
+    "Nova York",
+    "juventude"
+  ],
+  "edition": {
+    "title": "Só Garotos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2010,
+    "isbn13": "9788535917765",
+    "isbn10": "8535917764",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksvynl342403353g8gzzjin4ag.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato do Literal corresponde exatamente ao título e à autora (grafia corrigida de 'Patty' para 'Patti Smith'); memórias 'Just Kids', edição brasileira Companhia das Letras 2010.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvynl342403353g8gzzjin4ag",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9frbnwx82884htizsloly9dd",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-6d770d6f7cb5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library só retornou a edição em inglês (Just Kids) com baixa pontuação de título; optei pelo candidato Literal em português.",
+    "validatedAt": "2026-08-13"
+  }
+}

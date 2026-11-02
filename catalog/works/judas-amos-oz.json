@@ -1,0 +1,58 @@
+{
+  "slug": "judas-amos-oz",
+  "title": "Judas",
+  "originalTitle": "הבשורה על פי יהודה",
+  "originalTitleRomanized": null,
+  "authors": [
+    "amos-oz"
+  ],
+  "language": "hebraico",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "traição",
+    "Jerusalém",
+    "sionismo",
+    "conflito israelo-palestino",
+    "amor"
+  ],
+  "edition": {
+    "title": "Judas",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535925074",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535925074/judas.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Nome do autor corrigido (\"Amoz oz\" -> Amos Oz). Nenhum candidato local trazia a edição brasileira (só edições em inglês, holandês e eslovaco); confirmada por busca web a edição Companhia das Letras (2014, trad. Paulo Geiger). Há duas leituras (2015 e sem data) associadas à mesma obra.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL20210849W",
+      "url": "https://openlibrary.org/works/OL20210849W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535925074/judas",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-e5e1725db726",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal e Open Library eram todos edições estrangeiras; ISBN/capa da edição brasileira vieram de busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "eu-nao-sei-quem-voce-e-penny-hancock",
+  "title": "Eu não sei quem você é",
+  "originalTitle": "I Thought I Knew You",
+  "originalTitleRomanized": null,
+  "authors": [
+    "penny-hancock"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "thriller psicológico",
+    "drama"
+  ],
+  "themes": [
+    "amizade",
+    "acusação",
+    "família",
+    "segredos"
+  ],
+  "edition": {
+    "title": "Eu não sei quem você é",
+    "language": "português",
+    "publisher": "Dublinense",
+    "year": 2021,
+    "isbn13": "9786555530247",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckw5d8njz47603013g6k2pwopvv.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autor provisório 'Peggy Wankok' é forma corrompida de Penny Hancock; a obra é 'I Thought I Knew You' (2019), traduzida como 'Eu não sei quem você é' pela Dublinense (2021), conforme candidato Literal e busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw5d8njz47603013g6k2pwopvv",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estantevirtual.com.br/livro/eu-nao-sei-quem-voce-e-06X-3593-000-BK",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckw5d8njz47603113g60lg4j89w",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c3f2e3354322",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

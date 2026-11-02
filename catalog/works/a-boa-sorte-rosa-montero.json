@@ -1,0 +1,56 @@
+{
+  "slug": "a-boa-sorte-rosa-montero",
+  "title": "A boa sorte",
+  "originalTitle": "La buena suerte",
+  "originalTitleRomanized": null,
+  "authors": [
+    "rosa-montero"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "acaso",
+    "redenção",
+    "segundas chances"
+  ],
+  "edition": {
+    "title": "A boa sorte",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2022,
+    "isbn13": "9786556922799",
+    "isbn10": "655692279X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=YUhpEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente à obra; descartado homônimo 'A boa sorte' de Fernando Trías de Bes/Álex Rovira (livro de autoajuda, autoria incompatível com original_entry).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl7lpbbct15358220ijeflbuz7lk",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ibpwxt32094724hlnxj56n99",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8531269888ef",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Existe outro livro homônimo 'A boa sorte' (autoajuda, Sextante), descartado por autoria divergente.",
+    "validatedAt": "2026-08-13"
+  }
+}

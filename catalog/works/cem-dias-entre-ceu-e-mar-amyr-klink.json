@@ -1,0 +1,65 @@
+{
+  "slug": "cem-dias-entre-ceu-e-mar-amyr-klink",
+  "title": "Cem Dias entre Céu e Mar",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "amyr-klink"
+  ],
+  "language": "português",
+  "firstPublished": 1985,
+  "type": "não-ficção",
+  "genres": [
+    "relato de viagem",
+    "aventura",
+    "memórias"
+  ],
+  "themes": [
+    "travessia do Atlântico",
+    "solidão",
+    "superação",
+    "mar"
+  ],
+  "edition": {
+    "title": "Cem Dias entre Céu e Mar",
+    "language": "português",
+    "publisher": "José Olympio Editora",
+    "year": 1985,
+    "isbn13": "9788503000369",
+    "isbn10": "8503000369",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/4106886-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Autor corrigido de 'Amir Klink' (grafia) para Amyr Klink; consenso entre Literal e Open Library (score 0.97); edição original José Olympio (1985) confirmada por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw510dor7826113g6y6s8s9u0",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL3381170W",
+      "url": "https://openlibrary.org/works/OL3381170W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzou0ies8664370tbvegweeo9h",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8d20b833bdbd",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

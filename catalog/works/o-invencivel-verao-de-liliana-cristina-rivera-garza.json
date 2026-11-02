@@ -1,0 +1,65 @@
+{
+  "slug": "o-invencivel-verao-de-liliana-cristina-rivera-garza",
+  "title": "O Invencível Verão de Liliana",
+  "originalTitle": "El invencible verano de Liliana",
+  "originalTitleRomanized": null,
+  "authors": [
+    "cristina-rivera-garza"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2021,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "não-ficção",
+    "true crime"
+  ],
+  "themes": [
+    "feminicídio",
+    "luto",
+    "memória",
+    "justiça",
+    "México"
+  ],
+  "edition": {
+    "title": "O Invencível Verão de Liliana",
+    "language": "português",
+    "publisher": "Autêntica Contemporânea",
+    "year": 2022,
+    "isbn13": "9786559281732",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=O3SHEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente à obra (isbn 9786559281732, Autêntica Contemporânea, 2022); busca web confirmou tratar-se do relato memorialístico vencedor do Pulitzer 2024 sobre o feminicídio da irmã da autora.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqgt27iq12788660hu572zuhjhn",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.grupoautentica.com.br/produto/o-invencivel-verao-de-liliana-816",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clqgt27it12788820hu5spoop9he",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e9f5bdef004c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://estante-da-lila/schema/readings.schema.json",
+  "title": "Leituras",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["readings"],
+  "properties": {
+    "readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sequence", "year", "work", "reread", "originalEntry", "notes"],
+        "properties": {
+          "sequence": { "type": "integer", "minimum": 1 },
+          "year": { "type": ["integer", "null"], "minimum": 1000, "maximum": 2100 },
+          "work": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 80 },
+          "reread": { "type": "boolean" },
+          "originalEntry": { "type": "string", "minLength": 1 },
+          "notes": { "type": ["string", "null"], "minLength": 1 }
+        }
+      }
+    }
+  }
+}

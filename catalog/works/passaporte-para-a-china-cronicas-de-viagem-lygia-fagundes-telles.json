@@ -1,0 +1,76 @@
+{
+  "slug": "passaporte-para-a-china-cronicas-de-viagem-lygia-fagundes-telles",
+  "title": "Passaporte para a China: Crônicas de Viagem",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "lygia-fagundes-telles"
+  ],
+  "language": "português",
+  "firstPublished": 2011,
+  "type": "crônica",
+  "genres": [
+    "crônica de viagem",
+    "literatura de testemunho"
+  ],
+  "themes": [
+    "China",
+    "guerra fria",
+    "revolução cultural",
+    "viagem"
+  ],
+  "edition": {
+    "title": "Passaporte para a China: Crônicas de Viagem",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2011,
+    "isbn13": "9788535919653",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckszje0jm25935013v957lklcg5.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido ('ligya fagundes Teles' -> 'Lygia Fagundes Telles'). Livro reúne crônicas de viagem escritas em 1960 durante visita da autora à China, publicadas em livro pela primeira vez apenas em 2011 pela Companhia das Letras; Literal e OpenLibrary concordam nos dados.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckszje0jm25935013v957lklcg5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL39540109W",
+      "url": "https://openlibrary.org/works/OL39540109W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Passaporte_para_a_China:_Cr%C3%B4nicas_de_Viagem",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535919653/passaporte-para-a-china",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fiyydh8905920xizmnbhxg5n",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-1023cecc67c6",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

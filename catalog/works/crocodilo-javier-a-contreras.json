@@ -1,0 +1,57 @@
+{
+  "slug": "crocodilo-javier-a-contreras",
+  "title": "Crocodilo",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "javier-a-contreras"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "suicídio",
+    "luto",
+    "paternidade",
+    "família"
+  ],
+  "edition": {
+    "title": "Crocodilo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2019,
+    "isbn13": "9788535932812",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535932812/crocodilo.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Título corrigido para 'Crocodilo' (sem artigo) e autor corrigido para Javier A. Contreras, escritor brasileiro; nenhum candidato local correspondia (títulos de uma letra 'O'); busca web identificou o romance vencedor do prêmio APCA 2019, publicado pela Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Crocodilo_(romance)",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/detalhe.php?codigo=14672",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-4000be446224",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal eram todos irrelevantes; resolvido via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "o-corpo-dela-e-outras-farras-carmen-maria-machado",
+  "title": "O Corpo Dela e Outras Farras",
+  "originalTitle": "Her Body and Other Parties",
+  "originalTitleRomanized": null,
+  "authors": [
+    "carmen-maria-machado"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção especulativa",
+    "horror literário"
+  ],
+  "themes": [
+    "corpo",
+    "sexualidade",
+    "violência de gênero",
+    "memória"
+  ],
+  "edition": {
+    "title": "O Corpo Dela e Outras Farras",
+    "language": "português",
+    "publisher": "Editora Planeta do Brasil",
+    "year": 2018,
+    "isbn13": "9788542213867",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=2-5iDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 0.986 corresponde; coletânea de contos de horror especulativo de Carmen Maria Machado (2017); nome da autora corrigido ('Carmem Maria Machado' -> 'Carmen Maria Machado').",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx4ssrj115283371fgpj0ublr78",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzqj419m3050950tbvhh4xvloa",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c91d68011ab4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Há também edição portuguesa com título alternativo 'O corpo dela e outras partes' (Alfaguara); mantida a edição brasileira 'O corpo dela e outras farras' como representativa, por corresponder à entrada original.",
+    "validatedAt": "2026-08-13"
+  }
+}

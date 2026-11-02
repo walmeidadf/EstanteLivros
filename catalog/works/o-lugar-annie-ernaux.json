@@ -1,0 +1,64 @@
+{
+  "slug": "o-lugar-annie-ernaux",
+  "title": "O lugar",
+  "originalTitle": "La Place",
+  "originalTitleRomanized": null,
+  "authors": [
+    "annie-ernaux"
+  ],
+  "language": "francês",
+  "firstPublished": 1983,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "autoficção",
+    "literatura de memória"
+  ],
+  "themes": [
+    "família",
+    "classe social",
+    "memória",
+    "relação pai-filha"
+  ],
+  "edition": {
+    "title": "O lugar",
+    "language": "português",
+    "publisher": "Fósforo",
+    "year": 2021,
+    "isbn13": "9786589733034",
+    "isbn10": "6589733031",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=DTw6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Candidato Literal 'O lugar' (Fósforo, 2021) corresponde exatamente à autora e ao título; obra é 'La Place' (1983), memórias de Annie Ernaux sobre o pai.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl3h3igf813111970hirz3lu7rrf",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "DTw6EAAAQBAJ",
+      "url": "https://books.google.com/books?id=DTw6EAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clhca1j1d1100110hernqfi75a0",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b27de92f1170",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

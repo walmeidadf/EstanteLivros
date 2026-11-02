@@ -1,0 +1,65 @@
+{
+  "slug": "o-alquimista-paulo-coelho",
+  "title": "O Alquimista",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "paulo-coelho"
+  ],
+  "language": "português",
+  "firstPublished": 1988,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico",
+    "fábula"
+  ],
+  "themes": [
+    "destino",
+    "jornada espiritual",
+    "autoconhecimento",
+    "sonhos"
+  ],
+  "edition": {
+    "title": "O Alquimista",
+    "language": "português",
+    "publisher": "Paralela",
+    "year": 2017,
+    "isbn13": "9788584390670",
+    "isbn10": "8584390677",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cl0k1fqe25683150hkhk0fkvyz7.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Obra amplamente conhecida (Paulo Coelho, 1988); escolhida edição brasileira recente Paralela (2017), confirmada via busca web, entre os vários candidatos Literal/Open Library equivalentes.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl0k1fqe25683150hkhk0fkvyz7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL796465W",
+      "url": "https://openlibrary.org/works/OL796465W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fxx2o91485605htizrq3ya2re",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-857efbb91fa8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Múltiplos candidatos Literal e Open Library com mesmo título/autor mas anos de edição distintos (1987–2017); escolhida a edição corrente Paralela por ser a mais representativa hoje.",
+    "validatedAt": "2026-08-13"
+  }
+}

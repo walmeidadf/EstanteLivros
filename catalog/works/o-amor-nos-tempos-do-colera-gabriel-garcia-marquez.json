@@ -1,0 +1,63 @@
+{
+  "slug": "o-amor-nos-tempos-do-colera-gabriel-garcia-marquez",
+  "title": "O amor nos tempos do cólera",
+  "originalTitle": "El amor en los tiempos del cólera",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1985,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "envelhecimento",
+    "tempo"
+  ],
+  "edition": {
+    "title": "O amor nos tempos do cólera",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2020,
+    "isbn13": "9786555871227",
+    "isbn10": "6555871229",
+    "format": "capa dura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/production/covers/useruploads/cmawumou4005g0h16e7oh5064.jpeg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido para 'Gabriel García Márquez'. Edição brasileira Record (2020) é candidata Literal de alta pontuação e corresponde a edição real em português.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cmawumq4t13953530h0bksvs5l92",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL274518W",
+      "url": "https://openlibrary.org/works/OL274518W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cmawumq4t13953540h0bkb3mswou",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-56fa58ed8d11",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "OpenLibrary retorna a obra com idioma mal indexado ('jpn'); preferida a entrada Literal em português, coerente com título original em espanhol.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "meu-ano-de-descanso-e-relaxamento-ottessa-moshfegh",
+  "title": "Meu Ano de Descanso e Relaxamento",
+  "originalTitle": "My Year of Rest and Relaxation",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ottessa-moshfegh"
+  ],
+  "language": "inglês",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "sátira"
+  ],
+  "themes": [
+    "depressão",
+    "alienação",
+    "Nova York",
+    "sono"
+  ],
+  "edition": {
+    "title": "Meu Ano de Descanso e Relaxamento",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2022,
+    "isbn13": "9786580309061",
+    "isbn10": "6580309067",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/cl3h3kqia13342210hirua48j2hx.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autora provisória 'Othessa Moshfegh' é grafia incorreta de Ottessa Moshfegh; candidato Literal 'Meu Ano de Descanso e Relaxamento' (Todavia, 2022) corresponde exatamente ao título, apesar de o campo de autor do cache estar corrompido ('invalid author').",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl3h3kqia13342210hirua48j2hx",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckqur29kn0xro01eux24wcbso",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c142427593a0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Campo de autor do candidato Literal estava corrompido ('invalid author'); corrigido para Ottessa Moshfegh com base no título, editora e conhecimento da obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

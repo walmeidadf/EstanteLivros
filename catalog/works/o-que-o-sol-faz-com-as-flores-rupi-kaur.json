@@ -1,0 +1,57 @@
+{
+  "slug": "o-que-o-sol-faz-com-as-flores-rupi-kaur",
+  "title": "O que o sol faz com as flores",
+  "originalTitle": "The Sun and Her Flowers",
+  "originalTitleRomanized": null,
+  "authors": [
+    "rupi-kaur"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "poesia",
+  "genres": [
+    "poesia contemporânea"
+  ],
+  "themes": [
+    "amor",
+    "cura",
+    "feminilidade",
+    "migração"
+  ],
+  "edition": {
+    "title": "O que o sol faz com as flores",
+    "language": "português",
+    "publisher": "Planeta do Brasil",
+    "year": 2018,
+    "isbn13": "9788542212679",
+    "isbn10": "8542212673",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckv1enkw615997114w428bixwjn.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Hupi kaur' para 'Rupi Kaur'. Candidato Literal com score alto e edição brasileira Planeta corresponde exatamente à obra.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv1enkw615997114w428bixwjn",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzps33oo7971800tbvkpua2gax",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-5c797c312198",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

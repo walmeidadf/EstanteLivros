@@ -1,0 +1,50 @@
+{
+  "slug": "quem-tem-medo-do-genero-judith-butler",
+  "title": "Quem tem medo do gênero?",
+  "originalTitle": "Who's Afraid of Gender?",
+  "originalTitleRomanized": null,
+  "authors": [
+    "judith-butler"
+  ],
+  "language": "inglês",
+  "firstPublished": 2024,
+  "type": "ensaio",
+  "genres": [
+    "ensaio",
+    "filosofia",
+    "teoria de gênero"
+  ],
+  "themes": [
+    "gênero",
+    "política",
+    "discurso conservador",
+    "feminismo"
+  ],
+  "edition": {
+    "title": "Quem tem medo do gênero?",
+    "language": "português",
+    "publisher": "Boitempo",
+    "year": 2024,
+    "isbn13": "9786557173343",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato adequado (os 5 candidatos Literal eram obras não relacionadas). Identificado via busca web: ensaio recente de Judith Butler (nome corrigido de 'Judith Buttler'), primeiro livro não acadêmico da autora, publicado no Brasil pela Boitempo em 2024.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.boitempoeditorial.com.br/produto/quem-tem-medo-do-genero-152971",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-246d3d86e9ec",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

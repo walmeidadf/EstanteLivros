@@ -1,0 +1,64 @@
+{
+  "slug": "o-grande-mentecapto-fernando-sabino",
+  "title": "O Grande Mentecapto",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "fernando-sabino"
+  ],
+  "language": "português",
+  "firstPublished": 1979,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "humor"
+  ],
+  "themes": [
+    "viagem",
+    "loucura",
+    "sociedade",
+    "identidade"
+  ],
+  "edition": {
+    "title": "O Grande Mentecapto",
+    "language": "português",
+    "publisher": "Editora Record",
+    "year": 2020,
+    "isbn13": "9786555870626",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=VP7tDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; obra clássica de Fernando Sabino, publicada originalmente em 1979 pela Record.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxkcnd6w10246390iv2gttp8eiv",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17814511W",
+      "url": "https://openlibrary.org/works/OL17814511W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqslsfz5499541eb2ljr4wo9k",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ecaaaefa2088",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library lista duas edições do mesmo work com anos de publicação diferentes (1979 e 1996); mantido 1979 como ano da primeira publicação.",
+    "validatedAt": "2026-08-13"
+  }
+}

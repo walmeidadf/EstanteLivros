@@ -1,0 +1,52 @@
+{
+  "slug": "vidas-secas-graciliano-ramos",
+  "title": "Vidas Secas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "graciliano-ramos"
+  ],
+  "language": "português",
+  "firstPublished": 1938,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura regionalista"
+  ],
+  "themes": [
+    "seca",
+    "migração",
+    "pobreza",
+    "sertão"
+  ],
+  "edition": {
+    "title": "Vidas Secas",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2019,
+    "isbn13": "9788501114785",
+    "isbn10": "8501114782",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/14158825-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Clássico da literatura brasileira (romance de 30); escolhida edição padrão da Record (ISBN 9788501114785), a mais amplamente disponível no mercado, confirmada via Open Library e busca web. Candidatos Literal traziam edições antigas sem ISBN ou reedições especiais menos representativas.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL31247718W",
+      "url": "https://openlibrary.org/works/OL31247718W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-be009c7c6690",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

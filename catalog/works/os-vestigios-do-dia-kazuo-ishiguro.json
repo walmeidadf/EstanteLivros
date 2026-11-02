@@ -1,0 +1,58 @@
+{
+  "slug": "os-vestigios-do-dia-kazuo-ishiguro",
+  "title": "Os vestígios do dia",
+  "originalTitle": "The Remains of the Day",
+  "originalTitleRomanized": null,
+  "authors": [
+    "kazuo-ishiguro"
+  ],
+  "language": "inglês",
+  "firstPublished": 1989,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "memória",
+    "dever",
+    "repressão emocional",
+    "arrependimento",
+    "classe social"
+  ],
+  "edition": {
+    "title": "Os vestígios do dia",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2019,
+    "isbn13": "9788554514860",
+    "isbn10": "8554514866",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=UbamDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso claro (score 1.0); romance vencedor do Booker Prize, edição brasileira pela Companhia das Letras (2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksasi39657346cm982nwo1p7r",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzqs2qaz6915700tbvc6j5lvg0",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-aac28f3bf227",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

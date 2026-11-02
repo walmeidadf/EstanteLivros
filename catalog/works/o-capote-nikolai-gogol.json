@@ -1,0 +1,59 @@
+{
+  "slug": "o-capote-nikolai-gogol",
+  "title": "O Capote",
+  "originalTitle": "Шинель",
+  "originalTitleRomanized": null,
+  "authors": [
+    "nikolai-gogol"
+  ],
+  "language": "russo",
+  "firstPublished": 1842,
+  "type": "conto",
+  "genres": [
+    "conto",
+    "realismo russo",
+    "sátira social"
+  ],
+  "themes": [
+    "burocracia",
+    "pobreza",
+    "identidade",
+    "alienação"
+  ],
+  "edition": {
+    "title": "O Capote",
+    "language": "português",
+    "publisher": "L&PM Editores",
+    "year": 2000,
+    "isbn13": "9788525410320",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs4vw0013652010igapjv9dku0.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 0.973 corresponde; conto clássico de Gógol (1842), edição L&PM Pocket (2000, trad. Roberto Gomes).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4vw0013652010igapjv9dku0",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzua5l2411466190tbvldcpa4nw",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-daf4bd7fc54b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

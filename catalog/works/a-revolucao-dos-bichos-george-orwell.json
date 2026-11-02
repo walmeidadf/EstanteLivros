@@ -1,0 +1,65 @@
+{
+  "slug": "a-revolucao-dos-bichos-george-orwell",
+  "title": "A Revolução dos Bichos",
+  "originalTitle": "Animal Farm",
+  "originalTitleRomanized": null,
+  "authors": [
+    "george-orwell"
+  ],
+  "language": "inglês",
+  "firstPublished": 1945,
+  "type": "novela",
+  "genres": [
+    "sátira",
+    "fábula política",
+    "distopia"
+  ],
+  "themes": [
+    "totalitarismo",
+    "revolução",
+    "poder",
+    "propaganda"
+  ],
+  "edition": {
+    "title": "A Revolução dos Bichos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2007,
+    "isbn13": "9788535909555",
+    "isbn10": "8535909559",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckrwct5c311462421798ka1easbu.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título e autor claramente reconhecidos; candidato Literal com score máximo (Companhia das Letras) escolhido como edição representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrwct5c311462421798ka1easbu",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL45039103W",
+      "url": "https://openlibrary.org/works/OL45039103W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fmlaqf97366e0izid41wdxm",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9c7d02b7cf9b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

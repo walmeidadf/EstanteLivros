@@ -1,0 +1,57 @@
+{
+  "slug": "clarice-benjamin-moser",
+  "title": "Clarice",
+  "originalTitle": "Why This World: A Biography of Clarice Lispector",
+  "originalTitleRomanized": null,
+  "authors": [
+    "benjamin-moser"
+  ],
+  "language": "inglês",
+  "firstPublished": 2009,
+  "type": "biografia",
+  "genres": [
+    "biografia literária"
+  ],
+  "themes": [
+    "Clarice Lispector",
+    "literatura brasileira",
+    "judaísmo",
+    "exílio"
+  ],
+  "edition": {
+    "title": "Clarice",
+    "language": "português",
+    "publisher": "Cosac Naify",
+    "year": 2009,
+    "isbn13": "9788575038444",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cky81vz3x14191320ik6aopgxl7v.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título provisório 'Clarice - uma biografia' corresponde à biografia de Clarice Lispector escrita por Benjamin Moser (título original em inglês 'Why This World'), publicada no Brasil como 'Clarice' pela Cosac Naify em 2009; candidato Literal com maior score confirma título/ISBN.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky81vz3x14191320ik6aopgxl7v",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzu0787e7163340tbvxi30l9mu",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0326ad580f23",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nome do autor provisório grafado 'Benjamim Moser' foi corrigido para 'Benjamin Moser'.",
+    "validatedAt": "2026-08-13"
+  }
+}

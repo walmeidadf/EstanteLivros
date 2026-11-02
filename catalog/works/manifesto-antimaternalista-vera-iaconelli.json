@@ -1,0 +1,59 @@
+{
+  "slug": "manifesto-antimaternalista-vera-iaconelli",
+  "title": "Manifesto antimaternalista",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "vera-iaconelli"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "ensaio",
+  "genres": [
+    "psicanálise",
+    "ensaio",
+    "feminismo"
+  ],
+  "themes": [
+    "maternidade",
+    "gênero",
+    "reprodução",
+    "cuidado"
+  ],
+  "edition": {
+    "title": "Manifesto antimaternalista: psicanálise e políticas da reprodução",
+    "language": "português",
+    "publisher": "Zahar",
+    "year": 2023,
+    "isbn13": "9786559791309",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559791309/manifesto-antimaternalista.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato Literal correspondia à obra (todos eram livros 'Manifesto' de outros autores); busca web confirmou edição da Zahar (2023) diretamente no site da editora.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9786559791309/manifesto-antimaternalista",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://periodicos.uninove.br/cadernosdepos/article/view/27547",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-367e285297b0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/Open Library não continham a obra correta; resolvido via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

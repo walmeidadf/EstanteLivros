@@ -1,0 +1,67 @@
+{
+  "slug": "cronica-de-uma-morte-anunciada-gabriel-garcia-marquez",
+  "title": "Crônica de uma Morte Anunciada",
+  "originalTitle": "Crónica de una muerte anunciada",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1981,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "realismo mágico"
+  ],
+  "themes": [
+    "honra",
+    "destino",
+    "violência",
+    "comunidade"
+  ],
+  "edition": {
+    "title": "Crônica de uma Morte Anunciada",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2014,
+    "isbn13": "9788501019431",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor corrigido ('Gabriel garcia Marquez' -> 'Gabriel García Márquez'). Candidato Literal (editora Leya, edição portuguesa) corresponde ao título/autor, mas optei por complementar com a edição brasileira da Editora Record (ISBN 9788501019431), confirmada por busca web, por ser a edição de referência no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktxk4ncz1083446yz7a2xvzs2e1",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/cronica-de-uma-morte-anunciada",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Cr%C3%B4nica_de_Uma_Morte_Anunciada",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznoi7k832190sb5sxssoptk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-041054ce515d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Os dois primeiros candidatos Literal (ambos com score 1.0) são edições portuguesas da Leya; nenhum candidato local trazia a edição brasileira da Record, complementada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

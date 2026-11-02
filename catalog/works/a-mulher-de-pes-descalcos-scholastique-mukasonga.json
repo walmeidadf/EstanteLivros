@@ -1,0 +1,55 @@
+{
+  "slug": "a-mulher-de-pes-descalcos-scholastique-mukasonga",
+  "title": "A Mulher de Pés Descalços",
+  "originalTitle": "La femme aux pieds nus",
+  "originalTitleRomanized": null,
+  "authors": [
+    "scholastique-mukasonga"
+  ],
+  "language": "francês",
+  "firstPublished": 2008,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "literatura africana"
+  ],
+  "themes": [
+    "Ruanda",
+    "genocídio",
+    "maternidade",
+    "memória"
+  ],
+  "edition": {
+    "title": "A Mulher de Pés Descalços",
+    "language": "português",
+    "publisher": "Editora Nós",
+    "year": 2017,
+    "isbn13": "9788569020189",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título provisório corrigido de 'dos' para 'de' Pés Descalços (grafia oficial da edição brasileira). Nenhum candidato Literal/Open Library correspondia à obra; identificada via busca web: memórias de Scholastique Mukasonga sobre sua mãe, publicada no Brasil pela Editora Nós (2017, trad. Marília Garcia).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://editoranos.com.br/produto/a-mulher-de-pes-descalcos/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://biblat.unam.mx/es/revista/afro-asia/articulo/mukasonga-scholastique-a-mulher-de-pes-descalcos-traducao-de-marilia-garcia-sao-paulo-nos-2017-160-p",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-48194812d2a2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal locais não correspondiam à obra (títulos parecidos, mas de outros autores); resolvido inteiramente via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

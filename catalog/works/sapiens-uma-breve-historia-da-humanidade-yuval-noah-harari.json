@@ -1,0 +1,62 @@
+{
+  "slug": "sapiens-uma-breve-historia-da-humanidade-yuval-noah-harari",
+  "title": "Sapiens: Uma Breve História da Humanidade",
+  "originalTitle": "קיצור תולדות האנושות",
+  "originalTitleRomanized": null,
+  "authors": [
+    "yuval-noah-harari"
+  ],
+  "language": "hebraico",
+  "firstPublished": 2011,
+  "type": "não-ficção",
+  "genres": [
+    "história",
+    "antropologia",
+    "divulgação científica"
+  ],
+  "themes": [
+    "evolução humana",
+    "civilização",
+    "cognição",
+    "revoluções agrícola e científica"
+  ],
+  "edition": {
+    "title": "Sapiens: Uma Breve História da Humanidade",
+    "language": "português",
+    "publisher": "L&PM",
+    "year": 2015,
+    "isbn13": "9788525432186",
+    "isbn10": "8525432180",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor corrigido de 'Yuval Noah Haran' para 'Yuval Noah Harari'; edição brasileira de referência é a L&PM (2015, trad. Janaína Marcoantonio), confirmada por busca web pois nenhum candidato local indicava essa editora.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17075811W",
+      "url": "https://openlibrary.org/works/OL17075811W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.lpm.com.br/livros/go.asp?id=472660",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Sapiens:_Uma_Breve_Hist%C3%B3ria_da_Humanidade",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-ff189421f7d8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local (Literal/Open Library) apresentava a editora brasileira correta (L&PM) nem ISBN válido para a edição mais conhecida da obra; dado complementado via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

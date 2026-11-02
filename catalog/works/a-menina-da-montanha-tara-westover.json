@@ -1,0 +1,71 @@
+{
+  "slug": "a-menina-da-montanha-tara-westover",
+  "title": "A menina da montanha",
+  "originalTitle": "Educated: A Memoir",
+  "originalTitleRomanized": null,
+  "authors": [
+    "tara-westover"
+  ],
+  "language": "inglês",
+  "firstPublished": 2018,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "educação"
+  ],
+  "themes": [
+    "educação",
+    "família fundamentalista",
+    "abuso",
+    "autodescoberta",
+    "vida acadêmica"
+  ],
+  "edition": {
+    "title": "A menina da montanha",
+    "language": "português",
+    "publisher": "Rocco",
+    "year": 2018,
+    "isbn13": "9788532531223",
+    "isbn10": "8532531229",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckvqxsikk1622341i7dtfjvpn44.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Memórias de Tara Westover, publicadas no Brasil sob o título 'A menina da montanha' (tradução de 'Educated'); confirmada a editora Rocco (2018) via busca web, coincidindo com o ISBN do candidato Literal (score 1.0).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvqxsikk1622341i7dtfjvpn44",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL18139176W",
+      "url": "https://openlibrary.org/works/OL18139176W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.disal.com.br/produto/5591910-A-Menina-Da-Montanha-Rocco-97885325",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckqupr2dy0egp01eu0wdhv9re",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-aec086b4c531",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal indicava idioma 'es' incorretamente para uma edição de fato em português; busca web confirmou tratar-se da edição brasileira da Rocco (2018) com o mesmo ISBN.",
+    "validatedAt": "2026-08-13"
+  }
+}

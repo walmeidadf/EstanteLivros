@@ -1,0 +1,64 @@
+{
+  "slug": "o-tempo-entre-costuras-maria-duenas",
+  "title": "O tempo entre costuras",
+  "originalTitle": "El tiempo entre costuras",
+  "originalTitleRomanized": null,
+  "authors": [
+    "maria-duenas"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "romance"
+  ],
+  "themes": [
+    "Guerra Civil Espanhola",
+    "espionagem",
+    "moda",
+    "Marrocos"
+  ],
+  "edition": {
+    "title": "O Tempo entre Costuras",
+    "language": "português",
+    "publisher": "Planeta",
+    "year": 2012,
+    "isbn13": "9788576655435",
+    "isbn10": "8576655438",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksuwq4zg220139988gzvbef7pi.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título e autora únicos; escolhida a edição brasileira da Editora Planeta (2012), confirmada por busca web, entre duas opções de score idêntico no Literal (a outra, portuguesa, da Porto Editora).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksuwq4zg220139988gzvbef7pi",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Tempo-Entre-Costuras-Maria-Due%C3%B1as/dp/8576655438",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznrora91436790sb531upti9e",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-3d92ed696995",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Dois candidatos Literal com score idêntico (1.0): edição brasileira (Planeta) e portuguesa (Porto Editora); optou-se pela edição brasileira.",
+    "validatedAt": "2026-08-13"
+  }
+}

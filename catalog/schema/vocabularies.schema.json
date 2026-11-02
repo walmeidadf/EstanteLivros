@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://estante-da-lila/schema/vocabularies.schema.json",
+  "title": "Vocabulários",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["languages", "workTypes", "genres", "themes"],
+  "properties": {
+    "languages": { "$ref": "#/$defs/list" },
+    "workTypes": { "$ref": "#/$defs/list" },
+    "genres": { "$ref": "#/$defs/list" },
+    "themes": { "$ref": "#/$defs/list" }
+  },
+  "$defs": {
+    "list": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+  }
+}

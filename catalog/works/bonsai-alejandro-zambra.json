@@ -1,0 +1,53 @@
+{
+  "slug": "bonsai-alejandro-zambra",
+  "title": "Bonsai",
+  "originalTitle": "Bonsái",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alejandro-zambra"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2006,
+  "type": "novela",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "literatura",
+    "memória"
+  ],
+  "edition": {
+    "title": "Bonsai",
+    "language": "português",
+    "publisher": "Cosac Naify",
+    "year": 2012,
+    "isbn13": "9788540501881",
+    "isbn10": "8540501880",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autor corrigido de 'Alejandro Jambra' para 'Alejandro Zambra'. Nenhum candidato local trazia edição em português; edição brasileira Cosac Naify (2012, trad. Josely Vianna Baptista) confirmada via busca.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL11877391W",
+      "url": "https://openlibrary.org/works/OL11877391W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estantevirtual.com.br/livro/bonsai-FV6-8428-000-BK",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-5bb53c85d393",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/OL só traziam edições em inglês e francês; edição brasileira obtida via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

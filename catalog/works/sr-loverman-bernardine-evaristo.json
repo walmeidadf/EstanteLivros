@@ -1,0 +1,49 @@
+{
+  "slug": "sr-loverman-bernardine-evaristo",
+  "title": "Sr. Loverman",
+  "originalTitle": "Mr Loverman",
+  "originalTitleRomanized": null,
+  "authors": [
+    "bernardine-evaristo"
+  ],
+  "language": "inglês",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura LGBTQIA+"
+  ],
+  "themes": [
+    "identidade sexual",
+    "diáspora caribenha",
+    "casamento",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "Sr. Loverman",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2024,
+    "isbn13": "9788535935448",
+    "isbn10": "8535935444",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato adequado (os 5 candidatos Literal eram obras não relacionadas). Identificado via busca web: romance de Bernardine Evaristo (vencedora do Booker Prize 2019), traduzido no Brasil pela Companhia das Letras em 2024, título correspondendo exatamente ao provisório 'Sr, Loverman'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.mercadolivre.com.br/sr-loverman-de-bernardine-evaristo-editora-companhia-das-letras-capa-mole-edico-1-em-portugus-2024/p/MLB29942851",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-2526b16fd37c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

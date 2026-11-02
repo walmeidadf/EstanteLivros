@@ -1,0 +1,59 @@
+{
+  "slug": "a-balada-de-adam-henry-ian-mcewan",
+  "title": "A balada de Adam Henry",
+  "originalTitle": "The Children Act",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ian-mcewan"
+  ],
+  "language": "inglês",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama jurídico"
+  ],
+  "themes": [
+    "religião",
+    "ética médica",
+    "direito de família",
+    "crise existencial",
+    "casamento"
+  ],
+  "edition": {
+    "title": "A balada de Adam Henry",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788543802121",
+    "isbn10": "8543802121",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=9ZZ0BQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Ian Macwean' para 'Ian McEwan'; título brasileiro de 'The Children Act', publicado pela Companhia das Letras (2014), candidato com score 0.96.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv8xa69t34562788bxep4km8c",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckztho4sd16049510tbviu4e19fx",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-a3a8aed34ec4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "os-transparentes-ondjaki",
+  "title": "Os transparentes",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "ondjaki"
+  ],
+  "language": "português",
+  "firstPublished": 2012,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária africana"
+  ],
+  "themes": [
+    "Luanda",
+    "Angola",
+    "comunidade",
+    "memória"
+  ],
+  "edition": {
+    "title": "Os transparentes",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535922820",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/8290886-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título corrigido de 'Os transparents' (erro de digitação) para 'Os transparentes'. Candidatos Literal/OL traziam edição portuguesa (Leya/Caminho); substituída pela edição brasileira Companhia das Letras (2013), vencedora do Prémio José Saramago, confirmada via busca.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cks8vcgsc7719201k98dvu8wpay",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL18021928W",
+      "url": "https://openlibrary.org/works/OL18021928W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535922820/os-transparentes",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqsozri5571221eb2nlyeiqaz",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-56128b523440",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos locais só traziam edição portuguesa (Leya/Caminho/Texto); edição brasileira (Companhia das Letras) obtida via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

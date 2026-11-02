@@ -1,0 +1,64 @@
+{
+  "slug": "o-avesso-da-pele-jeferson-tenorio",
+  "title": "O avesso da pele",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jeferson-tenorio"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura afro-brasileira"
+  ],
+  "themes": [
+    "racismo",
+    "paternidade",
+    "violência policial",
+    "memória"
+  ],
+  "edition": {
+    "title": "O Avesso da Pele",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2020,
+    "isbn13": "9788535933390",
+    "isbn10": "8535933395",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12769862-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library com score máximo; romance vencedor do Prêmio Jabuti e Prêmio Oceanos 2021, sobre racismo e paternidade.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt02ly62244677bt7o9lwbwrvm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL27963555W",
+      "url": "https://openlibrary.org/works/OL27963555W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwrazl7f4711741eb28qnl19xk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-bb3b4f8a71d1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

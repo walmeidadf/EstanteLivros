@@ -1,0 +1,48 @@
+{
+  "slug": "memoria-da-pedra-mauricio-lyrio",
+  "title": "Memória da Pedra",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "mauricio-lyrio"
+  ],
+  "language": "português",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "suspense histórico"
+  ],
+  "themes": [
+    "diplomacia",
+    "história",
+    "identidade"
+  ],
+  "edition": {
+    "title": "Memória da Pedra",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535922493",
+    "isbn10": "8535922490",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor corrigido para grafia padrão 'Maurício Lyrio'; Open Library apresenta candidato exato (score 1.0) para 'Memória da Pedra', Companhia das Letras 2013; nenhum candidato Literal correspondia à obra correta.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL23305563W",
+      "url": "https://openlibrary.org/works/OL23305563W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-8ea840a6f152",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal fornecidos eram todos incompatíveis (títulos parecidos, obras diferentes); apenas Open Library continha a obra correta.",
+    "validatedAt": "2026-08-13"
+  }
+}

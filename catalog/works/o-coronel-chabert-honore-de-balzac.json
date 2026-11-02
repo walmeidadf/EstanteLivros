@@ -1,0 +1,58 @@
+{
+  "slug": "o-coronel-chabert-honore-de-balzac",
+  "title": "O Coronel Chabert",
+  "originalTitle": "Le Colonel Chabert",
+  "originalTitleRomanized": null,
+  "authors": [
+    "honore-de-balzac"
+  ],
+  "language": "francês",
+  "firstPublished": 1832,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "realismo"
+  ],
+  "themes": [
+    "identidade",
+    "justiça",
+    "guerras napoleônicas",
+    "sociedade"
+  ],
+  "edition": {
+    "title": "O Coronel Chabert",
+    "language": "português",
+    "publisher": "LeBooks Editora",
+    "year": 2020,
+    "isbn13": "9786586079944",
+    "isbn10": null,
+    "format": "ebook",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=95v5DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome corrigido de 'Chaubert' para 'Chabert'; novela de Balzac integrante de 'A Comédia Humana', aqui em edição avulsa em português correspondente ao candidato Literal de maior pontuação.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl12700cj508540ihiwsqypkz5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fy86si41136htiznig4xr0g",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ef522e35e8b0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Um candidato Literal referia-se ao volume 4 completo de 'A Comédia Humana' (que também contém 'O coronel Chabert'); optou-se pela edição avulsa, mais representativa de uma leitura individual da obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

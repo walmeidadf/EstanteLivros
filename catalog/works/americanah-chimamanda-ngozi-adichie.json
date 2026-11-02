@@ -1,0 +1,64 @@
+{
+  "slug": "americanah-chimamanda-ngozi-adichie",
+  "title": "Americanah",
+  "originalTitle": "Americanah",
+  "originalTitleRomanized": null,
+  "authors": [
+    "chimamanda-ngozi-adichie"
+  ],
+  "language": "inglês",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "raça",
+    "imigração",
+    "identidade",
+    "amor",
+    "África"
+  ],
+  "edition": {
+    "title": "Americanah",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535924732",
+    "isbn10": "8535924736",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cku3vtr70858515vd7b0akgen.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora completado para 'Chimamanda Ngozi Adichie'; escolhida a tradução brasileira (Julia Romeu, Companhia das Letras, 2014).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cku3vtr70858515vd7b0akgen",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL16805415W",
+      "url": "https://openlibrary.org/works/OL16805415W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9iabwhf5885424hl2atanqyl",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fc940dbbe1cf",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library apresenta ano de primeira publicação incorreto (1969) para este work; corrigido para 2013 com base em conhecimento bibliográfico.",
+    "validatedAt": "2026-08-13"
+  }
+}

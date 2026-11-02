@@ -1,0 +1,64 @@
+{
+  "slug": "o-quinze-rachel-de-queiroz",
+  "title": "O Quinze",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "rachel-de-queiroz"
+  ],
+  "language": "português",
+  "firstPublished": 1930,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance regionalista"
+  ],
+  "themes": [
+    "seca",
+    "nordeste",
+    "sobrevivência",
+    "família"
+  ],
+  "edition": {
+    "title": "O Quinze",
+    "language": "português",
+    "publisher": "José Olympio",
+    "year": null,
+    "isbn13": "9788508153633",
+    "isbn10": "8508153635",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/8960570-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Raquel de Queiroz' para a grafia correta 'Rachel de Queiroz'; romance de estreia (1930), marco do regionalismo nordestino; escolhida edição José Olympio como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt4lz08n1166635l77a3a36avgd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL20301301W",
+      "url": "https://openlibrary.org/works/OL20301301W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznknvc014938210sb5nc3biddd",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fcc24b4402a7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal por vezes agrupam coletâneas ('Três romances', 'Quatro romances') sob pontuação alta; optou-se pela edição avulsa de 'O quinze'.",
+    "validatedAt": "2026-08-13"
+  }
+}

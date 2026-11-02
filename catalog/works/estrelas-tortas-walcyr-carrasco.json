@@ -1,0 +1,57 @@
+{
+  "slug": "estrelas-tortas-walcyr-carrasco",
+  "title": "Estrelas Tortas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "walcyr-carrasco"
+  ],
+  "language": "português",
+  "firstPublished": 1997,
+  "type": "infantojuvenil",
+  "genres": [
+    "drama",
+    "infantojuvenil"
+  ],
+  "themes": [
+    "adolescência",
+    "drogas",
+    "amizade"
+  ],
+  "edition": {
+    "title": "Estrelas Tortas",
+    "language": "português",
+    "publisher": "Editora Moderna",
+    "year": 1997,
+    "isbn13": "9788516015961",
+    "isbn10": "8516015963",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/ckx0mszxz5463661ghdocgggt8w.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Walcy' para Walcyr Carrasco; candidato Literal com score 0.99 corresponde exatamente ao título e autor (Getúlio Delphin é provavelmente ilustrador da edição); classificação de gênero/temas por inferência editorial (Editora Moderna, coleção juvenil).",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx0mszxz5463661ghdocgggt8w",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fujbfw440066htizw9eqk4fm",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8e238e62fda7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

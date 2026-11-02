@@ -1,0 +1,58 @@
+{
+  "slug": "a-menina-que-roubava-livros-markus-zusak",
+  "title": "A Menina que Roubava Livros",
+  "originalTitle": "The Book Thief",
+  "originalTitleRomanized": null,
+  "authors": [
+    "markus-zusak"
+  ],
+  "language": "inglês",
+  "firstPublished": 2005,
+  "type": "infantojuvenil",
+  "genres": [
+    "ficção histórica",
+    "young adult"
+  ],
+  "themes": [
+    "segunda guerra mundial",
+    "livros",
+    "morte",
+    "família adotiva"
+  ],
+  "edition": {
+    "title": "A Menina que Roubava Livros",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2011,
+    "isbn13": "9788580570182",
+    "isbn10": "8580570182",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/ckr1tsed214mb01cr9jq94cio.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Autor corrigido de 'Markus Suzak' para 'Markus Zusak'. Candidato Literal 'a menina que roubava livros' (Intrínseca) tem título exato (score 1.0), preferido sobre outro candidato que apenas cita o título no nome de outro produto.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckr1tsed214mb01cr9jq94cio",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckqus1jvw1czo01euqpdt9yxo",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9ab31d8d880b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

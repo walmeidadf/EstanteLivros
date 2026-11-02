@@ -1,0 +1,51 @@
+{
+  "slug": "o-caderno-proibido-alba-de-cespedes",
+  "title": "O caderno proibido",
+  "originalTitle": "Quaderno proibito",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alba-de-cespedes"
+  ],
+  "language": "italiano",
+  "firstPublished": 1952,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "diário íntimo",
+    "papel da mulher",
+    "família",
+    "Itália do pós-guerra"
+  ],
+  "edition": {
+    "title": "Caderno Proibido",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2022,
+    "isbn13": "9786559212194",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559212194/caderno-proibido.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato local correspondia à obra. Identificado por conhecimento literário (romance italiano de Alba de Céspedes, 1952) e confirmado por busca web: edição brasileira 'Caderno Proibido', Companhia das Letras, 2022, tradução de Joana Angélica d'Ávila Melo.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9786559212194/caderno-proibido",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-29365830a011",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

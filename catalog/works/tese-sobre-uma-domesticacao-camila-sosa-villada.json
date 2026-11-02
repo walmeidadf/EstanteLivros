@@ -1,0 +1,64 @@
+{
+  "slug": "tese-sobre-uma-domesticacao-camila-sosa-villada",
+  "title": "Tese sobre uma domesticação",
+  "originalTitle": "Tesis sobre una domesticación",
+  "originalTitleRomanized": null,
+  "authors": [
+    "camila-sosa-villada"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura LGBTQIA+"
+  ],
+  "themes": [
+    "transgeneridade",
+    "casamento",
+    "poder e classe",
+    "corpo"
+  ],
+  "edition": {
+    "title": "Tese sobre uma domesticação",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2019,
+    "isbn13": "9788535938289",
+    "isbn10": null,
+    "format": "ebook",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/production/covers/useruploads/cm7x3f9l4001n0hygagoef4hx.jpeg",
+    "source": "literal"
+  },
+  "catalogerNote": "Único candidato plausível corresponde exatamente ao título/autora; segundo romance de Camila Sosa Villada, publicado originalmente em espanhol em 2019, traduzido pela Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cm7x3f9v07095270h16tckyye1v",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://es.wikipedia.org/wiki/Tesis_sobre_una_domesticaci%C3%B3n",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cm7x3f9v07095280h16qn117b8v",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-177b1adbdf44",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

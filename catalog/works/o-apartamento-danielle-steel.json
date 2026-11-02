@@ -1,0 +1,69 @@
+{
+  "slug": "o-apartamento-danielle-steel",
+  "title": "O Apartamento",
+  "originalTitle": "The Apartment",
+  "originalTitleRomanized": null,
+  "authors": [
+    "danielle-steel"
+  ],
+  "language": "inglês",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção contemporânea",
+    "romance"
+  ],
+  "themes": [
+    "amizade",
+    "Nova York",
+    "vida profissional"
+  ],
+  "edition": {
+    "title": "The Apartment",
+    "language": "inglês",
+    "publisher": "Random House",
+    "year": 2016,
+    "isbn13": "9781446487761",
+    "isbn10": "1446487768",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/cku7ttg1m4584381fsufw1eli7j.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "O registro original mantém o título em inglês (\"The apartment\"); a única tradução para português localizada é uma edição portuguesa de 2024 (Bertrand), posterior à leitura registrada em 2017, então usei a edição original em inglês (Random House, 2016) como representativa, bem documentada nos candidatos Literal/OpenLibrary.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cku7ttg1m4584381fsufw1eli7j",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL17344325W",
+      "url": "https://openlibrary.org/works/OL17344325W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.bertrand.pt/livro/o-apartamento-danielle-steel/21418571",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzod94u71252390tbvruibpwg3",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-003727c09f0a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "OpenLibrary listou idioma 'spa' para uma obra em inglês; Literal e OpenLibrary concordam quanto a título e autoria.",
+    "validatedAt": "2026-08-13"
+  }
+}

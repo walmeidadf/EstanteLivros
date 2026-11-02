@@ -1,0 +1,66 @@
+{
+  "slug": "baviera-tropical-betina-anton",
+  "title": "Baviera Tropical",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "betina-anton"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "não-ficção",
+  "genres": [
+    "história",
+    "biografia",
+    "jornalismo investigativo"
+  ],
+  "themes": [
+    "nazismo",
+    "Josef Mengele",
+    "imigração",
+    "Brasil",
+    "Segunda Guerra Mundial"
+  ],
+  "edition": {
+    "title": "Baviera Tropical: A história de Josef Mengele, o médico nazista mais procurado do mundo, que viveu quase vinte anos no Brasil sem nunca ser pego",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2023,
+    "isbn13": "9786556925509",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707044651i/207240354.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Nenhum candidato local correspondia (todos eram guias de viagem sobre a região da Baviera). Identificado por busca web como reportagem biográfica de Betina Anton sobre Josef Mengele, publicada pela Todavia em 2023 (Prêmio Jabuti 2024).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/baviera-tropical",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publishnews.com.br/materias/2024/03/26/baviera-tropical-da-jornalista-betina-anton-sera-publicado-na-italia-pela-einaudi",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.goodreads.com/book/show/207240354",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-e9582f620be7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal eram todos sobre a região geográfica da Baviera, não sobre o livro; descartados.",
+    "validatedAt": "2026-08-13"
+  }
+}

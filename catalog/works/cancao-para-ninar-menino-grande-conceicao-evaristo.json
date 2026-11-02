@@ -1,0 +1,70 @@
+{
+  "slug": "cancao-para-ninar-menino-grande-conceicao-evaristo",
+  "title": "Canção para ninar menino grande",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "conceicao-evaristo"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura afro-brasileira"
+  ],
+  "themes": [
+    "violência policial",
+    "luto materno",
+    "racismo",
+    "maternidade"
+  ],
+  "edition": {
+    "title": "Canção para ninar menino grande",
+    "language": "português",
+    "publisher": "Pallas Editora",
+    "year": 2022,
+    "isbn13": "9786556020891",
+    "isbn10": "6556020893",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=cI6cEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Título e autora batem exatamente com dois candidatos do Literal (score 1.0) e um do OpenLibrary (score 0.98, sob o nome completo da autora); ano de primeira publicação (2018) conforme OpenLibrary, edição brasileira representativa pela Pallas Editora (2022).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqfnxbc22092160htso4y0yex0",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32365577W",
+      "url": "https://openlibrary.org/works/OL32365577W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "cI6cEAAAQBAJ",
+      "url": "https://books.google.com/books?id=cI6cEAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clqfnxbe92092470hts4ctikfob",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-29956b0fa0b7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

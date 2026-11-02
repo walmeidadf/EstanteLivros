@@ -1,0 +1,63 @@
+{
+  "slug": "o-homem-duplicado-jose-saramago",
+  "title": "O homem duplicado",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 2002,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção especulativa"
+  ],
+  "themes": [
+    "identidade",
+    "duplo",
+    "alienação"
+  ],
+  "edition": {
+    "title": "O Homem Duplicado",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535912883",
+    "isbn10": "8535912886",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12811014-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; escolhida a edição da Companhia das Letras (2008), com capa e ISBN disponíveis.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv6l2b1434251913sr32ii7pbh",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL28175141W",
+      "url": "https://openlibrary.org/works/OL28175141W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzn1n7ba6374650sb5kvpwxmmw",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-3fcea65a0d9f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

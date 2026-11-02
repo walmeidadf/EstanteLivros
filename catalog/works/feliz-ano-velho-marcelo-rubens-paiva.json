@@ -1,0 +1,65 @@
+{
+  "slug": "feliz-ano-velho-marcelo-rubens-paiva",
+  "title": "Feliz Ano Velho",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "marcelo-rubens-paiva"
+  ],
+  "language": "português",
+  "firstPublished": 1982,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "literatura brasileira",
+    "narrativa autobiográfica"
+  ],
+  "themes": [
+    "acidente",
+    "deficiência",
+    "superação",
+    "família",
+    "juventude"
+  ],
+  "edition": {
+    "title": "Feliz Ano Velho",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2015,
+    "isbn13": "9788579624193",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15210512-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library. Obra autobiográfica clássica de Marcelo Rubens Paiva (1982, sobre o acidente que o deixou tetraplégico); usada a reedição Alfaguara de 2015 como edição representativa, com capa e ISBN disponíveis.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkd71u2335202h8g92xf8dis",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL45132166W",
+      "url": "https://openlibrary.org/works/OL45132166W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoa003z9860150sb58xjwawjt",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c84c9c599e9c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

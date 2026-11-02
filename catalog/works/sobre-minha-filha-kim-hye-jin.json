@@ -1,0 +1,63 @@
+{
+  "slug": "sobre-minha-filha-kim-hye-jin",
+  "title": "Sobre Minha Filha",
+  "originalTitle": "딸에 대하여",
+  "originalTitleRomanized": "Ttal-e Daehayeo",
+  "authors": [
+    "kim-hye-jin"
+  ],
+  "language": "coreano",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "maternidade",
+    "identidade LGBTQ+",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "Sobre Minha Filha",
+    "language": "português",
+    "publisher": "Fósforo",
+    "year": 2022,
+    "isbn13": "9786589733928",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=R-yKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Título provisório 'Minha filha' é forma abreviada do título real 'Sobre Minha Filha', romance da autora sul-coreana Kim Hye-jin (título original 딸에 대하여, 2017, também conhecido em inglês como 'Concerning/About My Daughter'), publicado no Brasil pela Fósforo em 2022.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clgyxxw1o2973660h2rg2byf4he",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.goodreads.com/book/show/59703696-concerning-my-daughter",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clgyxxw1q2973770h2rk90eo1eq",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-00a94a52cfc2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

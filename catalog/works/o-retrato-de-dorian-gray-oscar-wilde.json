@@ -1,0 +1,66 @@
+{
+  "slug": "o-retrato-de-dorian-gray-oscar-wilde",
+  "title": "O Retrato de Dorian Gray",
+  "originalTitle": "The Picture of Dorian Gray",
+  "originalTitleRomanized": null,
+  "authors": [
+    "oscar-wilde"
+  ],
+  "language": "inglês",
+  "firstPublished": 1890,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "gótico",
+    "clássico"
+  ],
+  "themes": [
+    "vaidade",
+    "hedonismo",
+    "moralidade",
+    "duplo",
+    "decadência"
+  ],
+  "edition": {
+    "title": "O Retrato de Dorian Gray",
+    "language": "português",
+    "publisher": "Biblioteca Azul (Editora Globo)",
+    "year": 2013,
+    "isbn13": "9788525054135",
+    "isbn10": "8525054135",
+    "format": "capa dura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/production/covers/useruploads/cl3cenm73003c0jyx0kd8gnzo.jpeg",
+    "source": "literal"
+  },
+  "catalogerNote": "Clássico amplamente conhecido; escolhida a única edição brasileira com texto integral sem cortes de censura, Biblioteca Azul/Editora Globo (2013, capa dura, trad. Jorio Dauster), confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl3cenogi13516600jyx5atn4je3",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://leitura.com.br/o-retrato-de-dorian-gray-L999-9788525054135",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9h6p9pp15082260on93l17b1i6",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8e1dfb4be1d9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Vários candidatos Literal com mesmo título/autor e diferentes editoras (FV Éditions, Martin Claret, Penguin Clássicos); escolhida a edição Biblioteca Azul por ser referência de texto integral no Brasil.",
+    "validatedAt": "2026-08-13"
+  }
+}

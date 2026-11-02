@@ -1,0 +1,63 @@
+{
+  "slug": "na-minha-pele-lazaro-ramos",
+  "title": "Na Minha Pele",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "lazaro-ramos"
+  ],
+  "language": "português",
+  "firstPublished": 2017,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "ensaio"
+  ],
+  "themes": [
+    "racismo",
+    "identidade negra",
+    "infância"
+  ],
+  "edition": {
+    "title": "Na Minha Pele",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 2017,
+    "isbn13": "9788547000417",
+    "isbn10": "8547000410",
+    "format": null,
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10839726-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Única edição existente da obra; Literal e OpenLibrary concordam plenamente em título, autoria, ano, editora e ISBN, o que justifica edition_match=exact.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksw0kexo5097363g8ghw57q0ca",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24320910W",
+      "url": "https://openlibrary.org/works/OL24320910W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwr47y2v15633031eb2j26pkthq",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0c1888a04ab4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

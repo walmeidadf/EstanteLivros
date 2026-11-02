@@ -1,0 +1,53 @@
+{
+  "slug": "pantaleao-e-as-visitadoras-mario-vargas-llosa",
+  "title": "Pantaleão e as Visitadoras",
+  "originalTitle": "Pantaleón y las visitadoras",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mario-vargas-llosa"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1973,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "sátira",
+    "humor"
+  ],
+  "themes": [
+    "exército",
+    "prostituição",
+    "burocracia",
+    "Amazônia peruana"
+  ],
+  "edition": {
+    "title": "Pantaleão e as Visitadoras",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2007,
+    "isbn13": "9788560281121",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788560281121/pantaleao-e-as-visitadoras.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Autor tinha erro de grafia (\"LLosa\" -> Llosa). O único candidato local plausível (isbn 9789722032605) é uma edição portuguesa com título mal grafado (\"visitadores\"); optou-se pela edição brasileira representativa (Alfaguara, 2007), confirmada por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788560281121/pantaleao-e-as-visitadoras",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-e0fc8e2f52be",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal trazia título com erro de digitação (\"e as visitadores\") e ISBN de edição portuguesa; substituído por edição brasileira encontrada via busca.",
+    "validatedAt": "2026-08-13"
+  }
+}

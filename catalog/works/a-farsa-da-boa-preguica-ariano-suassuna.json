@@ -1,0 +1,58 @@
+{
+  "slug": "a-farsa-da-boa-preguica-ariano-suassuna",
+  "title": "A Farsa da Boa Preguiça",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "ariano-suassuna"
+  ],
+  "language": "português",
+  "firstPublished": 1960,
+  "type": "teatro",
+  "genres": [
+    "farsa",
+    "teatro popular",
+    "comédia"
+  ],
+  "themes": [
+    "preguiça",
+    "cultura popular nordestina",
+    "sátira social"
+  ],
+  "edition": {
+    "title": "A Farsa da Boa Preguiça",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": null,
+    "isbn13": "9788520942888",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdn.awsli.com.br/600x1000/2088/2088593/produto/142516503/preguica-ug4bdhy9w8.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato automático correspondia (regra conservadora, sem candidatos válidos). Identificado por conhecimento bibliográfico como a farsa teatral de Ariano Suassuna (escrita em 1960, estreada em 1961). Localizada via busca a edição vigente pela Nova Fronteira; ano de publicação desta edição específica não confirmado.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.novafronteira.com.br/a-farsa-da-boa-preguica",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/A_Farsa_da_Boa_Pregui%C3%A7a",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-dac3c9c55ca5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

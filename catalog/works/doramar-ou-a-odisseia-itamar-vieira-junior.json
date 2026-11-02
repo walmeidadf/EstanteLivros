@@ -1,0 +1,64 @@
+{
+  "slug": "doramar-ou-a-odisseia-itamar-vieira-junior",
+  "title": "Doramar ou a Odisseia",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "itamar-vieira-junior"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "conto"
+  ],
+  "themes": [
+    "Bahia",
+    "memória",
+    "identidade",
+    "natureza"
+  ],
+  "edition": {
+    "title": "Doramar ou a Odisseia: Histórias",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2021,
+    "isbn13": "9786556921464",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/4/cld16nffk1463460hbmc1frgijm.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título corrigido para 'Doramar ou a Odisseia' (coletânea de histórias); primeira edição Todavia, junho de 2021, confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cld16nffk1463460hbmc1frgijm",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/doramar-ou-a-odisseia-historias",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cld16nffl1463470hbm5936ekpq",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7b53ac8cf08d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

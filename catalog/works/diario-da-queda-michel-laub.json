@@ -1,0 +1,60 @@
+{
+  "slug": "diario-da-queda-michel-laub",
+  "title": "Diário da queda",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "michel-laub"
+  ],
+  "language": "português",
+  "firstPublished": 2011,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama psicológico"
+  ],
+  "themes": [
+    "memória",
+    "trauma",
+    "identidade judaica",
+    "Holocausto",
+    "culpa",
+    "relação pai-filho"
+  ],
+  "edition": {
+    "title": "Diário da queda",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2011,
+    "isbn13": "9788535918175",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535918175/diario-da-queda.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "'Michel Lab' é um erro de grafia para o autor brasileiro 'Michel Laub'; nenhum candidato local correspondia à obra. Identificado por busca web como 'Diário da queda' (2011, Companhia das Letras), romance premiado sobre memória, culpa e Holocausto, condizente com o título abreviado 'A queda' da lista original.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535918175/diario-da-queda",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Di%C3%A1rio_da_queda",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-9ec126cbfc88",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

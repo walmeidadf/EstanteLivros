@@ -1,0 +1,59 @@
+{
+  "slug": "lutas-e-metamorfoses-de-uma-mulher-edouard-louis",
+  "title": "Lutas e metamorfoses de uma mulher",
+  "originalTitle": "Combats et métamorphoses d'une femme",
+  "originalTitleRomanized": null,
+  "authors": [
+    "edouard-louis"
+  ],
+  "language": "francês",
+  "firstPublished": 2021,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "autoficção",
+    "ficção literária"
+  ],
+  "themes": [
+    "classe social",
+    "gênero",
+    "violência doméstica",
+    "emancipação",
+    "família"
+  ],
+  "edition": {
+    "title": "Lutas e metamorfoses de uma mulher",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2023,
+    "isbn13": "9786556924618",
+    "isbn10": "655692461X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=1CrFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0, mesma editora brasileira habitual do autor (Todavia); título e autor conferem com original_entry.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cls881bwk2023640gu46navovt4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cls881bwm2023720gu44yrp6tgd",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-870ebadf937b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

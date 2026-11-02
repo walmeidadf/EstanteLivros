@@ -1,0 +1,54 @@
+{
+  "slug": "madame-bovary-gustave-flaubert",
+  "title": "Madame Bovary",
+  "originalTitle": "Madame Bovary",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gustave-flaubert"
+  ],
+  "language": "francês",
+  "firstPublished": 1857,
+  "type": "romance",
+  "genres": [
+    "realismo",
+    "ficção literária"
+  ],
+  "themes": [
+    "adultério",
+    "sociedade provinciana",
+    "insatisfação"
+  ],
+  "edition": {
+    "title": "Madame Bovary: costumes de província",
+    "language": "português",
+    "publisher": "Penguin-Companhia das Letras",
+    "year": 2011,
+    "isbn13": "9788563560315",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local trazia edição em português; edição Penguin-Companhia das Letras (2011, trad. Mário Laranjeira) confirmada via busca como a tradução brasileira de referência.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL893707W",
+      "url": "https://openlibrary.org/works/OL893707W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/trechos/85037.pdf",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-585890b9360a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal/OL retornados eram edições em alemão, italiano, inglês, sueco ou francês; nenhuma em português-BR.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "elefantes-barrem-beatriz-leal-craveiro",
+  "title": "Elefantes Barrem",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "beatriz-leal-craveiro"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "destino",
+    "rotina",
+    "paranoia"
+  ],
+  "edition": {
+    "title": "Elefantes Barrem",
+    "language": "português",
+    "publisher": "Penalux",
+    "year": 2020,
+    "isbn13": null,
+    "isbn10": "6586139805",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia (regra automática marcou 'unresolved'); localizado via busca web: romance 'Elefantes barrem', de Beatriz Leal Craveiro, publicado pela Penalux em 2020, ambientado em Brasília.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.goodreads.com/book/show/55642304-elefantes-barrem",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Elefantes-barrem-Beatriz-Leal-Craveiro/dp/6586139805",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-f88ec58cc03e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

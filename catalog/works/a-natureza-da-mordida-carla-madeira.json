@@ -1,0 +1,63 @@
+{
+  "slug": "a-natureza-da-mordida-carla-madeira",
+  "title": "A natureza da mordida",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carla-madeira"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "família",
+    "violência",
+    "relações humanas"
+  ],
+  "edition": {
+    "title": "A Natureza da Mordida",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2018,
+    "isbn13": "9788566256352",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/production/covers/useruploads/cldssmmr500000htv0w4t53u8.jpeg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; edição brasileira original (2018) confirmada.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cldssmnid4452000huzfu7nn1sr",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32409904W",
+      "url": "https://openlibrary.org/works/OL32409904W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cldssmnid4452010huzbokgdmt7",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-36acc2dcc1b5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

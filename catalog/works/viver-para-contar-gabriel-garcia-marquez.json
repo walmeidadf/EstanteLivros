@@ -1,0 +1,63 @@
+{
+  "slug": "viver-para-contar-gabriel-garcia-marquez",
+  "title": "Viver para contar",
+  "originalTitle": "Vivir para contarla",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2002,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias"
+  ],
+  "themes": [
+    "infância",
+    "Colômbia",
+    "formação do escritor",
+    "família"
+  ],
+  "edition": {
+    "title": "Viver para contar",
+    "language": "português",
+    "publisher": "Editora Record",
+    "year": 2019,
+    "isbn13": "9788501116680",
+    "isbn10": "8501116688",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=TwiQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo (1.0) corresponde exatamente; primeiro volume de memórias de García Márquez, publicado no Brasil pela Record (2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clp354hmb1580010htifmr1zi00",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "TwiQDwAAQBAJ",
+      "url": "https://books.google.com/books?id=TwiQDwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clp354hn91580170hti1vt3liyr",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-1f7a5fbe7bff",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

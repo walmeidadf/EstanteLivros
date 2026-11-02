@@ -1,0 +1,58 @@
+{
+  "slug": "as-flores-do-bem-sidarta-ribeiro",
+  "title": "As Flores do Bem",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "sidarta-ribeiro"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "ciência",
+  "genres": [
+    "divulgação científica",
+    "ensaio"
+  ],
+  "themes": [
+    "drogas psicoativas",
+    "neurociência",
+    "cultura",
+    "psicofarmacologia"
+  ],
+  "edition": {
+    "title": "As Flores do Bem",
+    "language": "português",
+    "publisher": "Fósforo",
+    "year": 2023,
+    "isbn13": "9786584568600",
+    "isbn10": "6584568601",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=B93eEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Título provisório corrigido para 'As Flores do Bem' (grafia oficial); ensaio de divulgação científica do neurocientista Sidarta Ribeiro sobre drogas psicoativas. Candidato Literal com score máximo confirma autor e edição (Fósforo, 2023).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clr9cty3q9564840htssvyff6bt",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clr9cty3s9564970htsc5oisiff",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-423e5fe31ec2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

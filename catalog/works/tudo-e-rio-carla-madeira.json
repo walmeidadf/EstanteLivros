@@ -1,0 +1,63 @@
+{
+  "slug": "tudo-e-rio-carla-madeira",
+  "title": "Tudo é rio",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carla-madeira"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "ciúme",
+    "família",
+    "sistema prisional"
+  ],
+  "edition": {
+    "title": "Tudo é rio",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2021,
+    "isbn13": "9786555872316",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckvi1pjrl68982q7dgszbipr1.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library quanto a título, autora e ISBN; ano de primeira publicação corrigido para 2021 (segundo romance de Carla Madeira, lançado pela Record).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvi1pjrl68982q7dgszbipr1",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL38075794W",
+      "url": "https://openlibrary.org/works/OL38075794W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzne3g9611852250sb53e9orb5m",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-37ea0bbf27de",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library indicava erroneamente 'first_publication_year=1988', incompatível com a carreira da autora (estreou em 2018); corrigido para 2021 com base em conhecimento bibliográfico.",
+    "validatedAt": "2026-08-13"
+  }
+}

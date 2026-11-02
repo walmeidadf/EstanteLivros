@@ -1,0 +1,64 @@
+{
+  "slug": "o-velho-e-o-mar-ernest-hemingway",
+  "title": "O Velho e o Mar",
+  "originalTitle": "The Old Man and the Sea",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ernest-hemingway"
+  ],
+  "language": "inglês",
+  "firstPublished": 1952,
+  "type": "novela",
+  "genres": [
+    "ficção literária",
+    "aventura"
+  ],
+  "themes": [
+    "luta",
+    "natureza",
+    "solidão",
+    "resistência"
+  ],
+  "edition": {
+    "title": "O Velho e o Mar",
+    "language": "português",
+    "publisher": "Bertrand Brasil",
+    "year": 2013,
+    "isbn13": "9788528617986",
+    "isbn10": "852861798X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/cley7cndo13857580hje1ssw9oei.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Obra amplamente reconhecida; candidato Literal e OpenLibrary com ISBN idêntico (Bertrand Brasil) confirmam a edição brasileira representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cley7cndo13857580hje1ssw9oei",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL28958851W",
+      "url": "https://openlibrary.org/works/OL28958851W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cley7cndo13857590hjeim1x60ew",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8f8fe817f245",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

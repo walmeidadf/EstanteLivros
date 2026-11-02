@@ -1,0 +1,64 @@
+{
+  "slug": "a-vida-invisivel-de-euridice-gusmao-martha-batalha",
+  "title": "A vida invisível de Eurídice Gusmão",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "martha-batalha"
+  ],
+  "language": "português",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "humor"
+  ],
+  "themes": [
+    "feminismo",
+    "papéis de gênero",
+    "Rio de Janeiro",
+    "vida doméstica"
+  ],
+  "edition": {
+    "title": "A vida invisível de Eurídice Gusmão",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2016,
+    "isbn13": "9788543805658",
+    "isbn10": "8543805651",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10839816-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título/autora conferem exatamente com candidato Literal (score 1.0) e Open Library; ano e editora (2016, Companhia das Letras) confirmados por ambas as fontes.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsq56c094465615vt7sbnhtai",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24320977W",
+      "url": "https://openlibrary.org/works/OL24320977W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzujhiw015709060tbvhf8jfezk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-16ae188e9a8f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

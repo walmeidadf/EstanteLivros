@@ -1,0 +1,55 @@
+{
+  "slug": "a-peste-albert-camus",
+  "title": "A peste",
+  "originalTitle": "La Peste",
+  "originalTitleRomanized": null,
+  "authors": [
+    "albert-camus"
+  ],
+  "language": "francês",
+  "firstPublished": 1947,
+  "type": "romance",
+  "genres": [
+    "ficção filosófica",
+    "ficção literária"
+  ],
+  "themes": [
+    "existencialismo",
+    "absurdo",
+    "epidemia",
+    "solidariedade"
+  ],
+  "edition": {
+    "title": "A peste",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2017,
+    "isbn13": "9788501111241",
+    "isbn10": "8501111244",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local trazia uma edição brasileira segura (ISBNs de Portugal/possível erro de região); busca web confirmou a edição clássica da Record (trad. Valerie Rumjanek), amplamente reeditada no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/produto/a-peste-2/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/peste-Nova-Edi%C3%A7%C3%A3o-Albert-Camus/dp/8501111244",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-bb6ea24b560e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal traziam ISBNs de edição portuguesa e um ISBN aparentemente incorreto (prefixo espanhol) para uma suposta edição pt-BR; optou-se pela edição real da Record confirmada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

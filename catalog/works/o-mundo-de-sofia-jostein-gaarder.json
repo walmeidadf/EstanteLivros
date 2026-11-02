@@ -1,0 +1,63 @@
+{
+  "slug": "o-mundo-de-sofia-jostein-gaarder",
+  "title": "O mundo de Sofia",
+  "originalTitle": "Sofies verden",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jostein-gaarder"
+  ],
+  "language": "norueguês",
+  "firstPublished": 1991,
+  "type": "romance",
+  "genres": [
+    "ficção filosófica",
+    "infantojuvenil"
+  ],
+  "themes": [
+    "filosofia",
+    "história das ideias",
+    "amadurecimento"
+  ],
+  "edition": {
+    "title": "O Mundo de Sofia",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 1995,
+    "isbn13": "9788571644755",
+    "isbn10": "8571644756",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/ckrm1sety930665183selkvqm6e.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso total entre Literal e OpenLibrary (score 1.0) para título, autor, ISBN e editora (Companhia das Letras, 1995).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrm1sety930665183selkvqm6e",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL16981323W",
+      "url": "https://openlibrary.org/works/OL16981323W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqhktf711397551eb2ocpyl579",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-2ecefba5c25a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

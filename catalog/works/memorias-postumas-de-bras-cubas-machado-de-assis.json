@@ -1,0 +1,58 @@
+{
+  "slug": "memorias-postumas-de-bras-cubas-machado-de-assis",
+  "title": "Memórias póstumas de Brás Cubas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "machado-de-assis"
+  ],
+  "language": "português",
+  "firstPublished": 1881,
+  "type": "romance",
+  "genres": [
+    "realismo",
+    "ficção literária clássica"
+  ],
+  "themes": [
+    "morte",
+    "sátira social",
+    "narrador defunto",
+    "elite brasileira do século XIX"
+  ],
+  "edition": {
+    "title": "Memórias Póstumas de Brás Cubas",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788543801636",
+    "isbn10": "854380163X",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cl1jrai4v490610hem1jwkm88z.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Clássico consagrado da literatura brasileira; múltiplos candidatos de ambos provedores com score 1.0. Escolhida como representativa a edição da Companhia das Letras (2014), por ser amplamente disponível e confiável.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl1jrai4v490610hem1jwkm88z",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1003017W",
+      "url": "https://openlibrary.org/works/OL1003017W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-2fe51fb16ca9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Muitas edições concorrentes com score idêntico (1.0) entre domínio público e editoras; optei pela edição de maior porte editorial (Companhia das Letras) como representativa.",
+    "validatedAt": "2026-08-13"
+  }
+}

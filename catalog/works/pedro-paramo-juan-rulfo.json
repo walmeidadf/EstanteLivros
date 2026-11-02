@@ -1,0 +1,64 @@
+{
+  "slug": "pedro-paramo-juan-rulfo",
+  "title": "Pedro Páramo",
+  "originalTitle": "Pedro Páramo",
+  "originalTitleRomanized": null,
+  "authors": [
+    "juan-rulfo"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1955,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "morte",
+    "memória",
+    "fantasmas",
+    "poder"
+  ],
+  "edition": {
+    "title": "Pedro Páramo",
+    "language": "português",
+    "publisher": "Record (BestBolso)",
+    "year": 2009,
+    "isbn13": "9788577991167",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://www.record.com.br/cdn/shop/files/8d12a8340f3296798ae95fcfb871cecf.jpg?v=1778321035",
+    "source": "editora"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Ruan Rulfo' para 'Juan Rulfo'. Nenhum candidato local trazia edição brasileira; localizada via busca a edição de bolso da Record/BestBolso (trad. Eric Nepomuceno), amplamente disponível no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL1731119W",
+      "url": "https://openlibrary.org/works/OL1731119W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/pedro-paramo-edicao-de-bolso/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Pedro_P%C3%A1ramo_(livro)",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-c98268f4b59d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/Open Library trazem apenas edições em espanhol, inglês, italiano etc.; nenhuma edição brasileira constava no cache local, por isso usada edição localizada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

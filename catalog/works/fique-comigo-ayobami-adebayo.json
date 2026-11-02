@@ -1,0 +1,70 @@
+{
+  "slug": "fique-comigo-ayobami-adebayo",
+  "title": "Fique comigo",
+  "originalTitle": "Stay with Me",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ayobami-adebayo"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "Nigéria",
+    "casamento",
+    "família",
+    "infertilidade",
+    "maternidade"
+  ],
+  "edition": {
+    "title": "Fique Comigo",
+    "language": "português",
+    "publisher": "HarperCollins Brasil",
+    "year": 2018,
+    "isbn13": "9788595083202",
+    "isbn10": "8595083207",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs5m2rp14549090igao66ecd6w.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido para a grafia correta (Ayòbámi Adébáyò); título original 'Stay with Me' (2017), edição brasileira HarperCollins (2018) confirmada por múltiplas fontes.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs5m2rp14549090igao66ecd6w",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL19711761W",
+      "url": "https://openlibrary.org/works/OL19711761W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://harpercollins.com.br/products/fique-comigo-ayobami-adebayo",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckw0vi3j321346015htg171hpz5",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-362740eb9d15",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library retornou apenas a edição em inglês (título 'Stay with me', score de título baixo); usada edição brasileira do Literal. | Fundida com work-af9301746f4e ('Fique Comigo').",
+    "validatedAt": "2026-08-13"
+  }
+}

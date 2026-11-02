@@ -1,0 +1,61 @@
+{
+  "slug": "as-avos-e-outras-historias-doris-lessing",
+  "title": "As Avós e Outras Histórias",
+  "originalTitle": "The Grandmothers",
+  "originalTitleRomanized": null,
+  "authors": [
+    "doris-lessing"
+  ],
+  "language": "inglês",
+  "firstPublished": 2003,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "novelas"
+  ],
+  "themes": [
+    "amor proibido",
+    "maternidade",
+    "convenções sociais",
+    "gerações"
+  ],
+  "edition": {
+    "title": "As Avós e Outras Histórias",
+    "language": "português",
+    "publisher": "Editorial Presença",
+    "year": 2008,
+    "isbn13": "9789722340045",
+    "isbn10": "9722340042",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome da autora corrigido de 'Doris Lessin' para 'Doris Lessing'. Candidato Literal corresponde à edição portuguesa de 'The Grandmothers' (2003), coletânea de quatro novelas cujo título em português é o mesmo do conto de abertura.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvybb4p0978706cx7d2o9xf6lt",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.wook.pt/livro/as-avos-e-outras-historias-doris-lessing/218354",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzt3rqvp9940710tbvydgdxcho",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-966eeb3f9e74",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

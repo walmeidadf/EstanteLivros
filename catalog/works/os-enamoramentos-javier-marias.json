@@ -1,0 +1,63 @@
+{
+  "slug": "os-enamoramentos-javier-marias",
+  "title": "Os Enamoramentos",
+  "originalTitle": "Los enamoramientos",
+  "originalTitleRomanized": null,
+  "authors": [
+    "javier-marias"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2011,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "morte",
+    "memória",
+    "verdade"
+  ],
+  "edition": {
+    "title": "Os Enamoramentos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2012,
+    "isbn13": "9788535921533",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12372586-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library, mesmo ISBN (9788535921533), Companhia das Letras, tradução de Eduardo Brandão.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsnkieg1543970yz7a9lmhq52y",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26417330W",
+      "url": "https://openlibrary.org/works/OL26417330W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzscqr0k15039340tbvzm0b127s",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e61d50575b05",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

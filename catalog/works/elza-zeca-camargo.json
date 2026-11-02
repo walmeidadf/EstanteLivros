@@ -1,0 +1,47 @@
+{
+  "slug": "elza-zeca-camargo",
+  "title": "Elza",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "zeca-camargo"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "memória",
+    "família",
+    "identidade"
+  ],
+  "edition": {
+    "title": "Elza",
+    "language": "português",
+    "publisher": "Leya",
+    "year": 2018,
+    "isbn13": "9788544107737",
+    "isbn10": "8544107737",
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": null,
+  "catalogerNote": "Candidato OpenLibrary corresponde exatamente a título, autor e ano (Zeca Camargo, Leya, 2018); único romance do autor com esse título, justificando edition_match exact.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL45827038W",
+      "url": "https://openlibrary.org/works/OL45827038W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-65e7f82426b5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal retornados eram todos irrelevantes (livros de outros autores); usada apenas a entrada OpenLibrary correta.",
+    "validatedAt": "2026-08-13"
+  }
+}

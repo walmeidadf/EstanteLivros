@@ -1,0 +1,58 @@
+{
+  "slug": "capitaes-da-areia-jorge-amado",
+  "title": "Capitães da Areia",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jorge-amado"
+  ],
+  "language": "português",
+  "firstPublished": 1937,
+  "type": "romance",
+  "genres": [
+    "realismo social",
+    "ficção literária"
+  ],
+  "themes": [
+    "infância abandonada",
+    "pobreza",
+    "marginalidade",
+    "Salvador"
+  ],
+  "edition": {
+    "title": "Capitães da Areia",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535911695",
+    "isbn10": "8535911693",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535911695/capitaes-da-areia.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Título corrigido: o nome correto do clássico de Jorge Amado é 'Capitães da Areia' (não 'de areia'). Candidatos locais traziam apenas edições portuguesas ou dados incompletos; edição brasileira representativa identificada por busca web (Companhia das Letras, 2008).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1248156W",
+      "url": "https://openlibrary.org/works/OL1248156W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535911695/capitaes-da-areia",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-31e44a0eb6d4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos do Literal/OpenLibrary traziam ISBN/editora portugueses (972-...) ou incompletos; optei pela edição brasileira atual da Companhia das Letras, mais facilmente reconhecível.",
+    "validatedAt": "2026-08-13"
+  }
+}

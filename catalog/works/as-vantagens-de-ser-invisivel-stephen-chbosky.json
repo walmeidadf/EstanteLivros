@@ -1,0 +1,64 @@
+{
+  "slug": "as-vantagens-de-ser-invisivel-stephen-chbosky",
+  "title": "As Vantagens de Ser Invisível",
+  "originalTitle": "The Perks of Being a Wallflower",
+  "originalTitleRomanized": null,
+  "authors": [
+    "stephen-chbosky"
+  ],
+  "language": "inglês",
+  "firstPublished": 1999,
+  "type": "infantojuvenil",
+  "genres": [
+    "coming-of-age",
+    "drama"
+  ],
+  "themes": [
+    "adolescência",
+    "trauma",
+    "amizade",
+    "saúde mental"
+  ],
+  "edition": {
+    "title": "As Vantagens de Ser Invisível",
+    "language": "português",
+    "publisher": "Rocco",
+    "year": 2007,
+    "isbn13": "9788532522337",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckrxp7raf8055317982m272aqk.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente ao título e autor; edição brasileira publicada pela Rocco (selo Rocco Jovens Leitores), 2007.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrxp7raf8055317982m272aqk",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://digital.rocco.com.br/library/publication/as-vantagens-de-ser-invisivel-1682694577",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckqut0aw61r3201euwklyts3x",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7fb0ae83b1b5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

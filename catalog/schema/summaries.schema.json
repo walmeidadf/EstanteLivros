@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://estante-da-lila/schema/summaries.schema.json",
+  "title": "Resumos gerados",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summaries"],
+  "properties": {
+    "summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["scope", "text", "approved", "updatedAt", "source"],
+        "properties": {
+          "scope": { "type": "string", "pattern": "^(autoria:[a-z0-9]+(-[a-z0-9]+)*|ano:[0-9]{4}|pais:[A-Z]{2})$" },
+          "text": { "type": "string" },
+          "approved": { "type": "boolean" },
+          "updatedAt": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "source": { "type": ["string", "null"], "minLength": 1 }
+        }
+      }
+    }
+  }
+}

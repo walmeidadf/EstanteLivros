@@ -1,0 +1,58 @@
+{
+  "slug": "eu-sei-por-que-o-passaro-canta-na-gaiola-maya-angelou",
+  "title": "Eu sei por que o pássaro canta na gaiola",
+  "originalTitle": "I Know Why the Caged Bird Sings",
+  "originalTitleRomanized": null,
+  "authors": [
+    "maya-angelou"
+  ],
+  "language": "inglês",
+  "firstPublished": 1969,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "literatura afro-americana"
+  ],
+  "themes": [
+    "racismo",
+    "infância",
+    "trauma",
+    "resiliência"
+  ],
+  "edition": {
+    "title": "Eu sei por que o pássaro canta na gaiola",
+    "language": "português",
+    "publisher": "Alto Astral",
+    "year": 2018,
+    "isbn13": "9788582467190",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/cksvyvy1f2879073g8gkflz1ls6.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título correto é 'Eu sei por que o pássaro canta na gaiola' (I Know Why the Caged Bird Sings, 1969), autobiografia de Maya Angelou; título provisório é paráfrase imprecisa da lista original.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyvy1f2879073g8gkflz1ls6",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznyiuwp4574200sb5t1huctxh",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b67dd2e9d772",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Há múltiplas edições brasileiras concorrentes do mesmo título (Alto Astral 2018, edição portuguesa 2017, José Olympio 2022); optou-se pela edição com metadados mais completos e maior score no candidato Literal.",
+    "validatedAt": "2026-08-13"
+  }
+}

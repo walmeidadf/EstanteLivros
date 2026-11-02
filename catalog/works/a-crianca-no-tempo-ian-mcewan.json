@@ -1,0 +1,63 @@
+{
+  "slug": "a-crianca-no-tempo-ian-mcewan",
+  "title": "A criança no tempo",
+  "originalTitle": "The Child in Time",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ian-mcewan"
+  ],
+  "language": "inglês",
+  "firstPublished": 1987,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "perda",
+    "tempo",
+    "paternidade",
+    "luto"
+  ],
+  "edition": {
+    "title": "A Criança no Tempo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2018,
+    "isbn13": "9788535930856",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930856/a-crianca-no-tempo.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nome do autor corrigido para Ian McEwan; usada a edição brasileira da Companhia das Letras (2018) em vez da edição portuguesa (Público, 2003) do candidato Literal, por ser mais amplamente disponível no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl6vcwzg111846860ii20d51h628",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535930856/a-crianca-no-tempo",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i9a9v916120680ohlwebfhvsi",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-420c00c39fc0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal correspondia a uma edição portuguesa (Público); substituída pela edição brasileira da Companhia das Letras, confirmada por busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

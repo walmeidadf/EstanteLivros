@@ -1,0 +1,63 @@
+{
+  "slug": "garota-mulher-outras-bernardine-evaristo",
+  "title": "Garota, mulher, outras",
+  "originalTitle": "Girl, Woman, Other",
+  "originalTitleRomanized": null,
+  "authors": [
+    "bernardine-evaristo"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "identidade racial",
+    "gênero",
+    "Reino Unido",
+    "múltiplas gerações"
+  ],
+  "edition": {
+    "title": "Garota, mulher, outras",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2020,
+    "isbn13": "9786557820254",
+    "isbn10": "6557820257",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Vnf8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome da autora corrigido (Bernadete->Bernardine Evaristo). Único candidato plausível do Literal, com título e editora (Companhia das Letras, 2020) condizentes com a tradução brasileira de 'Girl, Woman, Other', vencedor do Booker Prize 2019.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl61ha0in6011740igoxgk5lzl5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "Vnf8DwAAQBAJ",
+      "url": "https://books.google.com/books?id=Vnf8DwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clhca0ezs1011930heramqj82n4",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-262ea6c20e6d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

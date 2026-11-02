@@ -1,0 +1,56 @@
+{
+  "slug": "as-benevolentes-jonathan-littell",
+  "title": "As benevolentes",
+  "originalTitle": "Les Bienveillantes",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jonathan-littell"
+  ],
+  "language": "francês",
+  "firstPublished": 2006,
+  "type": "romance",
+  "genres": [
+    "ficção histórica"
+  ],
+  "themes": [
+    "Segunda Guerra Mundial",
+    "Holocausto",
+    "nazismo"
+  ],
+  "edition": {
+    "title": "As benevolentes",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2007,
+    "isbn13": "9788579621864",
+    "isbn10": "8579621860",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=AjkqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Autor corrigido de 'John Rittel' para 'Jonathan Littell'. Candidato Literal (Alfaguara, 2007) é a edição brasileira consagrada de 'Les Bienveillantes'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw8fzp0f16193241efsnfday5qg",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzq295ph12499390tbv3sheufl4",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-62e3db17576b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

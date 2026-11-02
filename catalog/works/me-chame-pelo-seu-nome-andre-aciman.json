@@ -1,0 +1,58 @@
+{
+  "slug": "me-chame-pelo-seu-nome-andre-aciman",
+  "title": "Me chame pelo seu nome",
+  "originalTitle": "Call Me by Your Name",
+  "originalTitleRomanized": null,
+  "authors": [
+    "andre-aciman"
+  ],
+  "language": "inglês",
+  "firstPublished": 2007,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "LGBTQIA+"
+  ],
+  "themes": [
+    "amor",
+    "juventude",
+    "identidade",
+    "Itália"
+  ],
+  "edition": {
+    "title": "Me Chame Pelo Seu Nome",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2018,
+    "isbn13": "9788551002742",
+    "isbn10": "8551002740",
+    "format": null,
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/cksvyp0fv2446823g8gx6way87l.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido (André Acimam->André Aciman). Candidato Literal com score alto (0.98), coincidindo com edição Intrínseca (2018) e ano de leitura (2018) do registro.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyp0fv2446823g8gx6way87l",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznclssc11148460sb5buv1rojf",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-305cde214b1b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

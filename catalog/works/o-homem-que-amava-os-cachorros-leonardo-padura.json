@@ -1,0 +1,59 @@
+{
+  "slug": "o-homem-que-amava-os-cachorros-leonardo-padura",
+  "title": "O Homem Que Amava os Cachorros",
+  "originalTitle": "El hombre que amaba a los perros",
+  "originalTitleRomanized": null,
+  "authors": [
+    "leonardo-padura"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "romance político"
+  ],
+  "themes": [
+    "exílio",
+    "trotskismo",
+    "história do século XX",
+    "Cuba",
+    "assassinato de Trotsky"
+  ],
+  "edition": {
+    "title": "O Homem Que Amava os Cachorros",
+    "language": "português",
+    "publisher": "Boitempo Editorial",
+    "year": 2015,
+    "isbn13": "9788575593622",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cksxkwqlv3024832h8gkind28ej.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Correspondência exata entre título/autor e o candidato Literal de maior pontuação; romance de Leonardo Padura sobre o assassinato de Trotsky, edição brasileira pela Boitempo.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkwqlv3024832h8gkind28ej",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp0h2pp11862660tbvwrfej1zm",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-fbc01f908c86",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

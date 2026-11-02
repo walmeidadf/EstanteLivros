@@ -1,0 +1,64 @@
+{
+  "slug": "ainda-estou-aqui-marcelo-rubens-paiva",
+  "title": "Ainda estou aqui",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "marcelo-rubens-paiva"
+  ],
+  "language": "português",
+  "firstPublished": 2015,
+  "type": "biografia",
+  "genres": [
+    "memórias",
+    "não-ficção"
+  ],
+  "themes": [
+    "ditadura militar",
+    "família",
+    "desaparecimento político",
+    "memória"
+  ],
+  "edition": {
+    "title": "Ainda estou aqui",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2015,
+    "isbn13": "9788579624162",
+    "isbn10": "8579624169",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckx0mkycf4594901ghdp9puaaue.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); biografia/relato de Marcelo Rubens Paiva sobre o pai, Rubens Paiva, desaparecido político na ditadura.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx0mkycf4594901ghdp9puaaue",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL32642395W",
+      "url": "https://openlibrary.org/works/OL32642395W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckx0mkycf4594911ghdn4xdnnsl",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8acb623dd7b3",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library indicava ano de publicação 2014, Literal indicava 2015; adotado 2015, data amplamente divulgada do lançamento do livro.",
+    "validatedAt": "2026-08-13"
+  }
+}

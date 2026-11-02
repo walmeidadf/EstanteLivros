@@ -1,0 +1,50 @@
+{
+  "slug": "o-reformatorio-nickel-colson-whitehead",
+  "title": "O Reformatório Nickel",
+  "originalTitle": "The Nickel Boys",
+  "originalTitleRomanized": null,
+  "authors": [
+    "colson-whitehead"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "drama"
+  ],
+  "themes": [
+    "racismo",
+    "reformatório",
+    "EUA",
+    "infância",
+    "injustiça"
+  ],
+  "edition": {
+    "title": "O Reformatório Nickel",
+    "language": "português",
+    "publisher": "HarperCollins Brasil",
+    "year": 2020,
+    "isbn13": "9788595085497",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos locais eram irrelevantes (título truncado 'O', autores diversos sem relação); busca web confirmou 'O Reformatório Nickel', tradução brasileira de 'The Nickel Boys' (Colson Whitehead, Pulitzer 2020), publicado pela HarperCollins Brasil (trad. Rogério Galindo). Autor corrigido de 'Carlson' para 'Colson' Whitehead.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://harpercollins.com.br/products/o-reformatorio-nickel-colson-whitehead",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-7482765e2ad6",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local em português; dados confirmados via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

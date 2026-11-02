@@ -1,0 +1,64 @@
+{
+  "slug": "ensaio-sobre-a-cegueira-jose-saramago",
+  "title": "Ensaio sobre a Cegueira",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 1995,
+  "type": "romance",
+  "genres": [
+    "ficção distópica",
+    "alegoria"
+  ],
+  "themes": [
+    "cegueira",
+    "sociedade",
+    "colapso civilizacional",
+    "natureza humana"
+  ],
+  "edition": {
+    "title": "Ensaio sobre a Cegueira",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 1995,
+    "isbn13": null,
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=g0MgAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; romance clássico de José Saramago (Nobel de Literatura), edição brasileira Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt02ivql232045bt7ogpuhmhxh",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL27420W",
+      "url": "https://openlibrary.org/works/OL27420W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzmpoz2p1648610sb5rsu8rqtk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7e5be27593d2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

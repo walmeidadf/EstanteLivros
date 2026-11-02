@@ -1,0 +1,57 @@
+{
+  "slug": "o-senhor-das-moscas-william-golding",
+  "title": "O Senhor das Moscas",
+  "originalTitle": "Lord of the Flies",
+  "originalTitleRomanized": null,
+  "authors": [
+    "william-golding"
+  ],
+  "language": "inglês",
+  "firstPublished": 1954,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "alegoria",
+    "distopia"
+  ],
+  "themes": [
+    "natureza humana",
+    "civilização vs. barbárie",
+    "poder",
+    "infância",
+    "sobrevivência"
+  ],
+  "edition": {
+    "title": "O Senhor das Moscas",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2014,
+    "isbn13": "9788579622878",
+    "isbn10": "8579622875",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico amplamente conhecido; nenhum candidato Literal correspondia à obra (falsos positivos por título parecido, ex. 'O Senhor', 'O senhor das ilhas'); edição brasileira identificada via busca web (Alfaguara, 2014, trad. Sergio Flaksman).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788579622878/senhor-das-moscas",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Senhor-das-moscas-William-Golding/dp/8579622875",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-8a8748812017",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal fornecidos eram incompatíveis (títulos semelhantes, obras diferentes); nenhum aproveitado.",
+    "validatedAt": "2026-08-13"
+  }
+}

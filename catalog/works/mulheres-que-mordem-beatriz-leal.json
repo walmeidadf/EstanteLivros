@@ -1,0 +1,60 @@
+{
+  "slug": "mulheres-que-mordem-beatriz-leal",
+  "title": "Mulheres que mordem",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "beatriz-leal"
+  ],
+  "language": "português",
+  "firstPublished": 2015,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "ditadura argentina",
+    "memória",
+    "maternidade",
+    "adoção"
+  ],
+  "edition": {
+    "title": "Mulheres que Mordem",
+    "language": "português",
+    "publisher": "Ímã Editorial",
+    "year": 2015,
+    "isbn13": "9788561012403",
+    "isbn10": "8561012404",
+    "format": null,
+    "match": "exact"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato do Literal correspondia; OpenLibrary trouxe correspondência exata (score 1.0). Confirmado por busca web: primeiro romance de Beatriz Leal (Ímã Editorial, 2015), finalista do Prêmio Jabuti 2016, sobre a ditadura argentina.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL43633150W",
+      "url": "https://openlibrary.org/works/OL43633150W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/mulheres-que-mordem/artigo/f00c0404-2c16-468d-9745-fbb52e377ed9",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Mulheres-que-Mordem-Beatriz-Leal/dp/8561012404",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-2f996bd255d4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

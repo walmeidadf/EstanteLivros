@@ -1,0 +1,58 @@
+{
+  "slug": "a-cachorra-pilar-quintana",
+  "title": "A Cachorra",
+  "originalTitle": "La perra",
+  "originalTitleRomanized": null,
+  "authors": [
+    "pilar-quintana"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "maternidade",
+    "natureza",
+    "perda",
+    "Colômbia"
+  ],
+  "edition": {
+    "title": "A Cachorra",
+    "language": "português",
+    "publisher": "Editora Intrínseca",
+    "year": 2020,
+    "isbn13": "9786555601008",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=K0cBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente; romance 'La perra' (2017) da colombiana Pilar Quintana, traduzido pela Intrínseca em 2020. Nome da autora corrigido (espaço extra removido).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw5d9zyb48995413g696wp3q4k",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clqazdxqc14408510hi5uh8hb61i",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c92c2ce4cbdf",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

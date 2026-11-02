@@ -1,0 +1,63 @@
+{
+  "slug": "redemoinho-em-dia-quente-jarid-arraes",
+  "title": "Redemoinho em dia quente",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jarid-arraes"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "mulheres nordestinas",
+    "violência",
+    "resistência",
+    "Nordeste"
+  ],
+  "edition": {
+    "title": "Redemoinho em Dia Quente",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2019,
+    "isbn13": "9788556520890",
+    "isbn10": "8556520898",
+    "format": null,
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10867246-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso total entre Literal e OpenLibrary (score 1.0), título, autora, ISBN e ano de leitura (2020) coerentes com a única edição publicada (Alfaguara, 2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt02mj5d247207bt7oc7fnn63d",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24344364W",
+      "url": "https://openlibrary.org/works/OL24344364W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoc4okn763190tbv3snoiw17",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-28b8a19a73df",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

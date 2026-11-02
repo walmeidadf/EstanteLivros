@@ -1,0 +1,57 @@
+{
+  "slug": "cordilheira-daniel-galera",
+  "title": "Cordilheira",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "daniel-galera"
+  ],
+  "language": "português",
+  "firstPublished": 2008,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "luto",
+    "criação artística",
+    "relações amorosas",
+    "Buenos Aires"
+  ],
+  "edition": {
+    "title": "Cordilheira",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535913262",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535913262/cordilheira.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato do Literal correspondia (títulos em inglês/espanhol sem relação); OpenLibrary trouxe correspondência exata (score 1.0). Única edição publicada (Companhia das Letras, 2008), coleção Amores Expressos, vencedora do Prêmio Machado de Assis de Romance.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL12787976W",
+      "url": "https://openlibrary.org/works/OL12787976W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535913262/cordilheira",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-2e60ea0fbd48",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal só retornou títulos incorretos (Cordillera Tales, etc.); descartados por não corresponderem à obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

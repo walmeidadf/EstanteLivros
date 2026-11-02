@@ -1,0 +1,71 @@
+{
+  "slug": "se-deus-me-chamar-nao-vou-mariana-salomao-carrara",
+  "title": "Se Deus me chamar não vou",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "mariana-salomao-carrara"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "coming-of-age"
+  ],
+  "themes": [
+    "morte",
+    "infância",
+    "família",
+    "fé",
+    "solidão"
+  ],
+  "edition": {
+    "title": "Se Deus me chamar não vou",
+    "language": "português",
+    "publisher": "Editora Nós",
+    "year": 2019,
+    "isbn13": "9788569020455",
+    "isbn10": "8569020457",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/ckt02n7sx251441bt7o3oyevghz.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance finalista do Prêmio Jabuti, publicado pela Editora Nós em 2019, confirmado via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt02n7sx251441bt7o3oyevghz",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24292212W",
+      "url": "https://openlibrary.org/works/OL24292212W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://institutoaurora.org/se-deus-me-chamar-nao-vou/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwrazohv4714501eb214l5d9mn",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8a1409675d20",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

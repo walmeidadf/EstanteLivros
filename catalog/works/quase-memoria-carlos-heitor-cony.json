@@ -1,0 +1,49 @@
+{
+  "slug": "quase-memoria-carlos-heitor-cony",
+  "title": "Quase Memória",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carlos-heitor-cony"
+  ],
+  "language": "português",
+  "firstPublished": 1995,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "autoficção"
+  ],
+  "themes": [
+    "ditadura militar",
+    "memória",
+    "jornalismo",
+    "exílio"
+  ],
+  "edition": {
+    "title": "Quase Memória: Romance Fake",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 1995,
+    "isbn13": "9788571644878",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Consenso entre Literal (sem ISBN) e Open Library (ISBN 9788571644878), mesmo título e autor, Companhia das Letras, 1995.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1004149W",
+      "url": "https://openlibrary.org/works/OL1004149W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-e7508503a97b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

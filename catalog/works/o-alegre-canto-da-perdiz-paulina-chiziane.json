@@ -1,0 +1,61 @@
+{
+  "slug": "o-alegre-canto-da-perdiz-paulina-chiziane",
+  "title": "O Alegre Canto da Perdiz",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "paulina-chiziane"
+  ],
+  "language": "português",
+  "firstPublished": 2008,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura africana de língua portuguesa"
+  ],
+  "themes": [
+    "poligamia",
+    "tradição",
+    "Moçambique",
+    "mulheres"
+  ],
+  "edition": {
+    "title": "O Alegre Canto da Perdiz",
+    "language": "português",
+    "publisher": "Dublinense",
+    "year": 2018,
+    "isbn13": "9788583181040",
+    "isbn10": "8583181047",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autora corrigida de 'Pauline Chiziane' para 'Paulina Chiziane'. Candidato Literal com score alto confirmado via busca web como a edição brasileira da Dublinense (2018).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvph58d4249202m7d3ktp4kjl",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.dublinense.com.br/livros/o-alegre-canto-da-perdiz/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzu6kepc9852310tbvqps3xfz6",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9c21cc6a18b9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

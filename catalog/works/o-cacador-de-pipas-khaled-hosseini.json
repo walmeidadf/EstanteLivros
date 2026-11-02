@@ -1,0 +1,60 @@
+{
+  "slug": "o-cacador-de-pipas-khaled-hosseini",
+  "title": "O caçador de pipas",
+  "originalTitle": "The Kite Runner",
+  "originalTitleRomanized": null,
+  "authors": [
+    "khaled-hosseini"
+  ],
+  "language": "inglês",
+  "firstPublished": 2003,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "drama"
+  ],
+  "themes": [
+    "amizade",
+    "culpa",
+    "redenção",
+    "Afeganistão",
+    "imigração",
+    "relação pai-filho"
+  ],
+  "edition": {
+    "title": "O caçador de pipas",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2021,
+    "isbn13": "9786559870042",
+    "isbn10": "6559870049",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=XtmlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Khaled Hosseine' para 'Khaled Hosseini'; romance best-seller 'The Kite Runner', edição brasileira pela Globo Livros (2021, score 0.98).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cln9a2ueu4702860htixnuj8f2j",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cln9a2uex4702920hti055vnqlb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-a97e471b8dd6",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Há também edição mais antiga pela Nova Fronteira (2005); optou-se pela edição Globo Livros mais recente e com maior score.",
+    "validatedAt": "2026-08-13"
+  }
+}

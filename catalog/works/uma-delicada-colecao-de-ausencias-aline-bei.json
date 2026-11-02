@@ -1,0 +1,53 @@
+{
+  "slug": "uma-delicada-colecao-de-ausencias-aline-bei",
+  "title": "Uma Delicada Coleção de Ausências",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "aline-bei"
+  ],
+  "language": "português",
+  "firstPublished": 2025,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama"
+  ],
+  "themes": [
+    "família",
+    "memória",
+    "mulheres",
+    "gerações",
+    "cuidado"
+  ],
+  "edition": {
+    "title": "Uma Delicada Coleção de Ausências",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2025,
+    "isbn13": "9788535941296",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535941296/uma-delicada-colecao-de-ausencias.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Candidatos locais eram todos incompatíveis (baixa pontuação); busca web confirmou romance de Aline Bei lançado pela Companhia das Letras em junho de 2025, compatível com a leitura registrada em 2026.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535941296/uma-delicada-colecao-de-ausencias",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-918e9e4b8bb2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

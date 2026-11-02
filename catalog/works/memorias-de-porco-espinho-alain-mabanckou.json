@@ -1,0 +1,55 @@
+{
+  "slug": "memorias-de-porco-espinho-alain-mabanckou",
+  "title": "Memórias de Porco-espinho",
+  "originalTitle": "Mémoires de porc-épic",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alain-mabanckou"
+  ],
+  "language": "francês",
+  "firstPublished": 2006,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura africana",
+    "sátira"
+  ],
+  "themes": [
+    "duplo animal",
+    "folclore africano",
+    "violência"
+  ],
+  "edition": {
+    "title": "Memórias de Porco-espinho",
+    "language": "português",
+    "publisher": "Malê",
+    "year": 2017,
+    "isbn13": "9788592736224",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia à obra (todos com títulos parecidos mas autoria/tema incompatíveis). Busca web confirmou 'Memórias de Porco-espinho', de Alain Mabanckou, vencedor do Prix Renaudot 2006, publicado no Brasil pela Editora Malê em 2017; título original francês 'Mémoires de porc-épic'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.editoramale.com.br/product-page/mem%C3%B3rias-de-porco-espinho",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Mem%C3%B3rias-Porco-Espinho-Alain-Mabanckou/dp/8592736226",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-014d80aa37df",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

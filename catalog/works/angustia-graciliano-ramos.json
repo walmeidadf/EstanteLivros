@@ -1,0 +1,58 @@
+{
+  "slug": "angustia-graciliano-ramos",
+  "title": "Angústia",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "graciliano-ramos"
+  ],
+  "language": "português",
+  "firstPublished": 1936,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "regionalismo"
+  ],
+  "themes": [
+    "angústia existencial",
+    "ciúme",
+    "crime",
+    "decadência social"
+  ],
+  "edition": {
+    "title": "Angústia",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2008,
+    "isbn13": "9788501067128",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckvbjnvka140181jf8by539y8hh.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (múltiplas edições de Record/José Olympio). Nome do autor corrigido para capitalização padrão.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvbjnvka140181jf8by539y8hh",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzph10oe2853130tbvwx4cgfqy",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e4ca18ec05fc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

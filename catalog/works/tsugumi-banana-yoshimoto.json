@@ -1,0 +1,52 @@
+{
+  "slug": "tsugumi-banana-yoshimoto",
+  "title": "Tsugumi",
+  "originalTitle": "つぐみ",
+  "originalTitleRomanized": "Tsugumi",
+  "authors": [
+    "banana-yoshimoto"
+  ],
+  "language": "japonês",
+  "firstPublished": 1989,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amizade",
+    "família",
+    "juventude",
+    "memória",
+    "morte"
+  ],
+  "edition": {
+    "title": "Tsugumi",
+    "language": "português",
+    "publisher": "Estação Liberdade",
+    "year": 2008,
+    "isbn13": "9788483830260",
+    "isbn10": "8483830264",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10112329-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Todos os candidatos Literal eram edições em alemão ou inglês; usada a edição brasileira encontrada na Open Library (Estação Liberdade, 2008), editora reconhecida por publicar Banana Yoshimoto no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL20811831W",
+      "url": "https://openlibrary.org/works/OL20811831W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-f4ee09dfe6cc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "O registro da Open Library mistura ISBNs de edições diferentes (Estação Liberdade/Brasil e Tusquets/Espanha) sob o mesmo work; mantido apenas o ISBN da edição brasileira.",
+    "validatedAt": "2026-08-13"
+  }
+}

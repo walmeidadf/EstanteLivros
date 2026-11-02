@@ -1,0 +1,58 @@
+{
+  "slug": "em-agosto-nos-vemos-gabriel-garcia-marquez",
+  "title": "Em agosto nos vemos",
+  "originalTitle": "En agosto nos vemos",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2024,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico"
+  ],
+  "themes": [
+    "amor",
+    "envelhecimento",
+    "memória",
+    "Caribe"
+  ],
+  "edition": {
+    "title": "Em agosto nos vemos",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2024,
+    "isbn13": "9788501921499",
+    "isbn10": "8501921491",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=kY_5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com correspondência quase exata (score 0.99); obra póstuma de Gabriel García Márquez publicada em 2024 pela Record no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cltnh1x8z6324010hweclb8fohu",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cltnh1x916324080hwe97h1rtwp",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-3b0eaa4de026",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

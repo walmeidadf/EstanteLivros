@@ -1,0 +1,64 @@
+{
+  "slug": "doutor-jivago-boris-pasternak",
+  "title": "Doutor Jivago",
+  "originalTitle": "Doktor Zhivago",
+  "originalTitleRomanized": null,
+  "authors": [
+    "boris-pasternak"
+  ],
+  "language": "russo",
+  "firstPublished": 1957,
+  "type": "romance",
+  "genres": [
+    "romance histórico",
+    "ficção literária"
+  ],
+  "themes": [
+    "revolução russa",
+    "amor",
+    "guerra",
+    "exílio interior"
+  ],
+  "edition": {
+    "title": "Doutor Jivago",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2017,
+    "isbn13": "9788554510367",
+    "isbn10": "8554510364",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=Q1Q6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo; clássico de Pasternak (1957), edição brasileira Companhia das Letras (2017, tradução direta do russo).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsnix6e1538156yz7awap8dod9",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL43474158W",
+      "url": "https://openlibrary.org/works/OL43474158W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzrbkrde15504250tbvxxro6x6i",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-4f0d5d562459",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library trouxe apenas uma edição antiga em português ('O Doutor Jivago', Editora Itatiaia) sem ISBN; preferida a edição Literal mais recente e completa.",
+    "validatedAt": "2026-08-13"
+  }
+}

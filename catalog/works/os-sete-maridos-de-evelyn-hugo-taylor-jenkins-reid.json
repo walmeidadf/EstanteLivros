@@ -1,0 +1,69 @@
+{
+  "slug": "os-sete-maridos-de-evelyn-hugo-taylor-jenkins-reid",
+  "title": "Os Sete Maridos de Evelyn Hugo",
+  "originalTitle": "The Seven Husbands of Evelyn Hugo",
+  "originalTitleRomanized": null,
+  "authors": [
+    "taylor-jenkins-reid"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama",
+    "LGBTQ+"
+  ],
+  "themes": [
+    "fama",
+    "segredo",
+    "Hollywood",
+    "identidade",
+    "amor"
+  ],
+  "edition": {
+    "title": "Os Sete Maridos de Evelyn Hugo",
+    "language": "português",
+    "publisher": "Paralela",
+    "year": 2019,
+    "isbn13": "9788584391509",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autor corrigido de 'Red' para 'Taylor Jenkins Reid'; melhor candidato do Literal correspondia à edição portuguesa (Portugal, sem editora informada), então a edição brasileira representativa (selo Paralela, Companhia das Letras, 2019) foi confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckqut9n0s1uym01euzybkgph2",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL18203673W",
+      "url": "https://openlibrary.org/works/OL18203673W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788584391509/os-sete-maridos-de-evelyn-hugo",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Os_Sete_Maridos_de_Evelyn_Hugo",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-76a74f2fa6a0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal de maior pontuação era a edição de Portugal; optei pela edição brasileira (Paralela) identificada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

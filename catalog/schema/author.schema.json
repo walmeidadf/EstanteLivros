@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://estante-da-lila/schema/author.schema.json",
+  "title": "Autoria",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "name", "aliases", "country", "languages", "primaryLanguage", "bio", "photo", "references"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 80 },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "country": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+    "languages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "primaryLanguage": { "type": "string", "minLength": 1 },
+    "bio": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["text", "source", "url"],
+          "properties": {
+            "text": { "type": "string", "minLength": 1 },
+            "source": { "type": "string", "minLength": 1 },
+            "url": { "type": ["string", "null"], "pattern": "^https?://" }
+          }
+        }
+      ]
+    },
+    "photo": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["file", "license", "author", "sourceUrl"],
+          "properties": {
+            "file": { "type": "string", "minLength": 1 },
+            "license": { "type": "string", "minLength": 1 },
+            "author": { "type": ["string", "null"], "minLength": 1 },
+            "sourceUrl": { "type": "string", "pattern": "^https?://" }
+          }
+        }
+      ]
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["provider", "id", "url"],
+        "properties": {
+          "provider": { "type": "string", "minLength": 1 },
+          "id": { "type": ["string", "null"], "minLength": 1 },
+          "url": { "type": ["string", "null"], "pattern": "^https?://" }
+        }
+      }
+    }
+  }
+}

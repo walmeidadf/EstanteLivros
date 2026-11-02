@@ -1,0 +1,59 @@
+{
+  "slug": "do-amor-e-outros-demonios-gabriel-garcia-marquez",
+  "title": "Do amor e outros demônios",
+  "originalTitle": "Del amor y otros demonios",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1994,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "loucura",
+    "religião",
+    "colonialismo",
+    "Cartagena das Índias"
+  ],
+  "edition": {
+    "title": "Do Amor e Outros Demônios",
+    "language": "português",
+    "publisher": "Record",
+    "year": 1994,
+    "isbn13": "9788501042286",
+    "isbn10": "8501042285",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://www.record.com.br/cdn/shop/files/4b1bd5d9fd7722657662b8c911bbd96e_26228a8a-f1b6-4b5b-98d1-b97fb838f40c.jpg?v=1782964060",
+    "source": "editora"
+  },
+  "catalogerNote": "Título correto em português é 'Do amor e outros demônios' (não 'De amor'); nenhum candidato local correspondia à obra (todos com baixo score). Identificado por conhecimento literário e confirmado por busca web: romance de Gabriel García Márquez (1994), edição brasileira pela Editora Record, tradução de Moacir Werneck de Castro.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/do-amor-e-outros-demonios",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/do-amor-e-outros-demonios/artigo/0b3767c1-0924-4177-89d0-a5d7a375f7a5",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-28c2b9158d7e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "ilusoes-perdidas-honore-de-balzac",
+  "title": "Ilusões Perdidas",
+  "originalTitle": "Illusions perdues",
+  "originalTitleRomanized": null,
+  "authors": [
+    "honore-de-balzac"
+  ],
+  "language": "francês",
+  "firstPublished": 1843,
+  "type": "romance",
+  "genres": [
+    "romance de formação",
+    "crítica social",
+    "realismo"
+  ],
+  "themes": [
+    "ambição",
+    "jornalismo",
+    "Paris",
+    "desilusão"
+  ],
+  "edition": {
+    "title": "Ilusões Perdidas",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2002,
+    "isbn13": "9788535902716",
+    "isbn10": "8535902716",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckznmg24r3112230ibnm35ic64q.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo; clássico de Balzac (parte da Comédia Humana), publicado em três partes entre 1837 e 1843. Edição brasileira Companhia das Letras (2002).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckznmg24r3112230ibnm35ic64q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ib0qro92889124hlptfinpmu",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-512b66bb0706",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

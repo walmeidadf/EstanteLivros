@@ -1,0 +1,64 @@
+{
+  "slug": "a-paixao-segundo-g-h-clarice-lispector",
+  "title": "A Paixão Segundo G.H.",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "clarice-lispector"
+  ],
+  "language": "português",
+  "firstPublished": 1964,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura introspectiva"
+  ],
+  "themes": [
+    "identidade",
+    "existencialismo",
+    "epifania",
+    "linguagem"
+  ],
+  "edition": {
+    "title": "A Paixão Segundo G.H.",
+    "language": "português",
+    "publisher": "Relógio D'Água",
+    "year": 2000,
+    "isbn13": "9789727085637",
+    "isbn10": "9727085636",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/ckt079ba46138614y3v91ap6aa.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Obra canônica de Clarice Lispector, publicada originalmente em 1964; escolhida edição portuguesa (Relógio D'Água) por ser a que apresentava capa e ISBN completos entre os candidatos.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt079ba46138614y3v91ap6aa",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1002138W",
+      "url": "https://openlibrary.org/works/OL1002138W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp7xjfp15570370tbvdisx8xnr",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-f605150223fc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

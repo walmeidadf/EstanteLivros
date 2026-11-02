@@ -1,0 +1,56 @@
+{
+  "slug": "comigo-no-cinema-martha-medeiros",
+  "title": "Comigo no Cinema",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "martha-medeiros"
+  ],
+  "language": "português",
+  "firstPublished": 2019,
+  "type": "crônica",
+  "genres": [
+    "crônica"
+  ],
+  "themes": [
+    "cinema",
+    "relações",
+    "cotidiano"
+  ],
+  "edition": {
+    "title": "Comigo no Cinema",
+    "language": "português",
+    "publisher": "L&PM Editores",
+    "year": 2019,
+    "isbn13": "9788525439239",
+    "isbn10": "8525439231",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=hvK-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente a título, autora e ano de leitura (2020, obra publicada em 2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvuatahe11470691fxxhhm0pdr0",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9iahs7e30123924hls8sqd1gl",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8f713d0d8ca9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

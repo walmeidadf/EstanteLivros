@@ -1,0 +1,64 @@
+{
+  "slug": "a-cabeca-do-santo-socorro-acioli",
+  "title": "A Cabeça do Santo",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "socorro-acioli"
+  ],
+  "language": "português",
+  "firstPublished": 2014,
+  "type": "infantojuvenil",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "fé",
+    "segredos",
+    "interior do Brasil",
+    "amadurecimento"
+  ],
+  "edition": {
+    "title": "A Cabeça do Santo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788580869354",
+    "isbn10": "8580869358",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=2CKoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance juvenil de Socorro Acioli, primeira edição Companhia das Letras 2014, ano coincide com a leitura.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl5h9v8kd5508490h0uxwpq8hco",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL21464434W",
+      "url": "https://openlibrary.org/works/OL21464434W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp1nryk12487760tbvi45bvupg",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-692eaa97a10d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

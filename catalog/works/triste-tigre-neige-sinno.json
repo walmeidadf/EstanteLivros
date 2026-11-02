@@ -1,0 +1,76 @@
+{
+  "slug": "triste-tigre-neige-sinno",
+  "title": "Triste Tigre",
+  "originalTitle": "Triste tigre",
+  "originalTitleRomanized": null,
+  "authors": [
+    "neige-sinno"
+  ],
+  "language": "francês",
+  "firstPublished": 2023,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "não-ficção"
+  ],
+  "themes": [
+    "abuso sexual infantil",
+    "trauma",
+    "família",
+    "justiça"
+  ],
+  "edition": {
+    "title": "Triste Tigre",
+    "language": "português",
+    "publisher": "Amarcord",
+    "year": 2025,
+    "isbn13": "9786585854245",
+    "isbn10": "6585854241",
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://www.record.com.br/cdn/shop/files/04cfc93b8823503d07f451492e40873c.jpg?v=1778319841",
+    "source": "editora"
+  },
+  "catalogerNote": "Título e autora com ordem/grafia corrigidas ('Tigre triste'/'Niege Sino' -> 'Triste Tigre'/'Neige Sinno'). O único candidato do Literal (edição francesa original) confirma a obra; edição brasileira (Amarcord, ago/2025) coincide exatamente com o ano de leitura (2025).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cllwk4r342419520htu43i2qp98",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publishnews.com.br/materias/2025/08/04/neige-sinno-lanca-triste-tigre-na-travessa-de-pinheiros",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/triste-tigre",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Sad_Tiger_(memoir)",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cllwk4r352419550htu0af7fxqg",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-31a9db01b927",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

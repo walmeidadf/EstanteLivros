@@ -1,0 +1,58 @@
+{
+  "slug": "a-caixa-preta-amos-oz",
+  "title": "A Caixa Preta",
+  "originalTitle": "קופסה שחורה",
+  "originalTitleRomanized": null,
+  "authors": [
+    "amos-oz"
+  ],
+  "language": "hebraico",
+  "firstPublished": 1987,
+  "type": "romance",
+  "genres": [
+    "romance epistolar",
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "Israel",
+    "divórcio",
+    "memória"
+  ],
+  "edition": {
+    "title": "A Caixa Preta",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2011,
+    "isbn13": "9788535910674",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cky81v3wp14078390ik6qeczoqoq.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 0.96 corresponde; nome do autor corrigido ('Amoz oz' -> 'Amos Oz'). Romance epistolar 'Black Box' (1987), traduzido por Nancy Rozenchan, Companhia das Letras (2011).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky81v3wp14078390ik6qeczoqoq",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9h4g5it9868900on9teyaak6x",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-d8bd8de1e394",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

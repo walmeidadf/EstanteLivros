@@ -1,0 +1,59 @@
+{
+  "slug": "nossa-senhora-do-nilo-scholastique-mukasonga",
+  "title": "Nossa Senhora do Nilo",
+  "originalTitle": "Notre-Dame du Nil",
+  "originalTitleRomanized": null,
+  "authors": [
+    "scholastique-mukasonga"
+  ],
+  "language": "francês",
+  "firstPublished": 2012,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura pós-colonial"
+  ],
+  "themes": [
+    "etnicidade",
+    "colonialismo",
+    "adolescência",
+    "Ruanda",
+    "violência étnica"
+  ],
+  "edition": {
+    "title": "Nossa senhora do Nilo",
+    "language": "português",
+    "publisher": "Editora Nós",
+    "year": 2017,
+    "isbn13": "9786586135145",
+    "isbn10": "6586135141",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=VJwXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso claro (score 1.0); romance de Scholastique Mukasonga sobre Ruanda pré-genocídio, publicado no Brasil pela Editora Nós (2017).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx614j7g2195661493mi7k3dpe",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzuei4jo13493870tbvno2pi974",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9fb95e58cd70",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

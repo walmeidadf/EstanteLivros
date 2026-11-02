@@ -29,10 +29,11 @@ da autoria, necessário para o Atlas por país e a página País.
 - [x] `AGENTS.md` + hook de início de sessão; detalhes em `docs/`
 - [x] Primeiro commit e push para `walmeidadf/EstanteLivros`
 
-## F1 — Catálogo canônico
-- [ ] Schema de obra, autoria, leitura, tema e resumo, com slugs estáveis
-- [ ] Migração de `legacy/exports/*.csv` para `catalog/`
-- [ ] Validador e relatório de cobertura
+## F1 — Catálogo canônico ✓
+Spec: [`docs/specs/catalogo-canonico/`](specs/catalogo-canonico/).
+- [x] Schema de obra, autoria, leitura, vocabulários e resumo, com slugs estáveis
+- [x] Migração de `legacy/exports/*.csv` para `catalog/` (302 obras, 215 autorias, 309 leituras)
+- [x] Validador e relatório de cobertura (`docs/plans/cobertura.md`)
 
 ## F2 — Enriquecimento (por impacto visual)
 1. [ ] Autorias via Wikidata: país, idiomas, idioma principal, foto Commons + licença

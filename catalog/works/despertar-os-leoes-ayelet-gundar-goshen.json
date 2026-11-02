@@ -1,0 +1,55 @@
+{
+  "slug": "despertar-os-leoes-ayelet-gundar-goshen",
+  "title": "Despertar os Leões",
+  "originalTitle": "ער",
+  "originalTitleRomanized": "Er",
+  "authors": [
+    "ayelet-gundar-goshen"
+  ],
+  "language": "hebraico",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "thriller psicológico"
+  ],
+  "themes": [
+    "culpa",
+    "imigração",
+    "moralidade",
+    "segredos"
+  ],
+  "edition": {
+    "title": "Despertar os Leões",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2020,
+    "isbn13": "9786580309962",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia à obra. Busca web confirmou que se trata de 'Despertar os Leões' (título provisório trazia artigo extra 'O'), romance da israelense Ayelet Gundar-Goshen (título original hebraico ער / 'Er', conhecido em inglês como 'Waking Lions'), publicado no Brasil pela Todavia em 2020, tradução de Paulo Geiger.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/despertar-os-leoes",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Ayelet_Gundar-Goshen",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-0c9c641271e1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

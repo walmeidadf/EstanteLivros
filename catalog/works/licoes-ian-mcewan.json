@@ -1,0 +1,57 @@
+{
+  "slug": "licoes-ian-mcewan",
+  "title": "Lições",
+  "originalTitle": "Lessons",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ian-mcewan"
+  ],
+  "language": "inglês",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "memória",
+    "história do século XX",
+    "amadurecimento",
+    "arrependimento"
+  ],
+  "edition": {
+    "title": "Lições",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2022,
+    "isbn13": "9786557826836",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=64-JEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Ian Macwean' para 'Ian McEwan'; candidato Literal corresponde exatamente ao romance 'Lessons' (2022), publicado no Brasil como 'Lições' pela Companhia das Letras.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clhca15ct1061760herlqwobmsx",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clhca15ct1061790her50t4ecrj",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ee814beb036c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

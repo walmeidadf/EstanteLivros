@@ -1,0 +1,58 @@
+{
+  "slug": "o-lar-da-srta-peregrine-para-criancas-peculiares-ransom-riggs",
+  "title": "O Lar da Srta. Peregrine para Crianças Peculiares",
+  "originalTitle": "Miss Peregrine's Home for Peculiar Children",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ransom-riggs"
+  ],
+  "language": "inglês",
+  "firstPublished": 2011,
+  "type": "infantojuvenil",
+  "genres": [
+    "fantasia",
+    "jovem adulto"
+  ],
+  "themes": [
+    "órfãos",
+    "poderes sobrenaturais",
+    "segunda guerra mundial",
+    "identidade"
+  ],
+  "edition": {
+    "title": "O Lar da Srta. Peregrine para Crianças Peculiares",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2016,
+    "isbn13": "9788551000687",
+    "isbn10": "8551000683",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://loja.intrinseca.com.br/media/catalog/product/cache/8567ccf46cd018fb9c5ffa55e4290c37/9/7/9788551000687_1_stdsdqfxnkzocsxp.jpeg",
+    "source": "editora"
+  },
+  "catalogerNote": "Título provisório em inglês continha erro ('Mrs.' em vez de 'Miss'); identificado como o romance juvenil de fantasia de Ransom Riggs. Todos os candidatos locais eram incompatíveis (obras de outros autores); edição brasileira (Intrínseca, 2016) localizada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.m.wikipedia.org/wiki/Miss_Peregrine%27s_Home_for_Peculiar_Children",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://loja.intrinseca.com.br/o-lar-da-srta-peregrine-para-criancas-peculiares",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-4d94e8b75c96",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato Literal/Open Library correspondia à obra correta; resolvido via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

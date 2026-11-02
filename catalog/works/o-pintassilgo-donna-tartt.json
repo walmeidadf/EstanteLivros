@@ -1,0 +1,65 @@
+{
+  "slug": "o-pintassilgo-donna-tartt",
+  "title": "O pintassilgo",
+  "originalTitle": "The Goldfinch",
+  "originalTitleRomanized": null,
+  "authors": [
+    "donna-tartt"
+  ],
+  "language": "inglês",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "bildungsroman"
+  ],
+  "themes": [
+    "luto",
+    "arte",
+    "família",
+    "culpa",
+    "amizade"
+  ],
+  "edition": {
+    "title": "O pintassilgo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788543801117",
+    "isbn10": "8543801117",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=JvOnBAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Donna Tart' para 'Donna Tartt'; candidato Literal (score 0.997) corresponde à edição brasileira de 'O pintassilgo' pela Companhia das Letras (2014), tradução de 'The Goldfinch'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clhnsr1e62050530hrp9kowu2cz",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL16809803W",
+      "url": "https://openlibrary.org/works/OL16809803W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clhnsr1f42050630hrposqscc45",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9edaec825cf2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library retorna o work em inglês com score de título baixo (title diferente: 'The Goldfinch'), mas autor e obra coincidem; usado apenas como referência do work original.",
+    "validatedAt": "2026-08-13"
+  }
+}

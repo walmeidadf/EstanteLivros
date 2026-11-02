@@ -1,0 +1,65 @@
+{
+  "slug": "viva-o-povo-brasileiro-joao-ubaldo-ribeiro",
+  "title": "Viva o Povo Brasileiro",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "joao-ubaldo-ribeiro"
+  ],
+  "language": "português",
+  "firstPublished": 1984,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico",
+    "romance histórico"
+  ],
+  "themes": [
+    "identidade nacional",
+    "escravidão",
+    "história do Brasil",
+    "Bahia"
+  ],
+  "edition": {
+    "title": "Viva o Povo Brasileiro - Edição especial de 30 anos",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2014,
+    "isbn13": "9788579623516",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=0jcqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library. Escolhida a edição especial de 30 anos (Alfaguara, 2014) por ter ISBN disponível e ser amplamente distribuída.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuyj9itk45263315txjru4ovti",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL8046954W",
+      "url": "https://openlibrary.org/works/OL8046954W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fph2881238903f9iza9a42ewj",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ea86108f6695",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

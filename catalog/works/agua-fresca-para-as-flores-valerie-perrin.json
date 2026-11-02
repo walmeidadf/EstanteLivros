@@ -1,0 +1,62 @@
+{
+  "slug": "agua-fresca-para-as-flores-valerie-perrin",
+  "title": "Água fresca para as flores",
+  "originalTitle": "Changer l'eau des fleurs",
+  "originalTitleRomanized": null,
+  "authors": [
+    "valerie-perrin"
+  ],
+  "language": "francês",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "luto",
+    "memória",
+    "amor"
+  ],
+  "edition": {
+    "title": "Água fresca para as flores",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2022,
+    "isbn13": "9786555602319",
+    "isbn10": "6555602317",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=7BJfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam sobre título e autora; edição Intrínseca (2022) coerente com o ano de leitura relatado (2023).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqazd26c14316380hi5mjvj1jtb",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL28769176W",
+      "url": "https://openlibrary.org/works/OL28769176W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clqazd26c14316410hi5e53fs5x9",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-5bffd4a14540",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

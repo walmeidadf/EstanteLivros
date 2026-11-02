@@ -1,0 +1,53 @@
+{
+  "slug": "palestina-joe-sacco",
+  "title": "Palestina",
+  "originalTitle": "Palestine",
+  "originalTitleRomanized": null,
+  "authors": [
+    "joe-sacco"
+  ],
+  "language": "inglês",
+  "firstPublished": 1996,
+  "type": "quadrinhos/graphic novel",
+  "genres": [
+    "quadrinhos",
+    "jornalismo",
+    "não-ficção"
+  ],
+  "themes": [
+    "conflito israelo-palestino",
+    "guerra",
+    "direitos humanos",
+    "ocupação"
+  ],
+  "edition": {
+    "title": "Palestina",
+    "language": "português",
+    "publisher": "Veneta",
+    "year": 2022,
+    "isbn13": "9786586691405",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://veneta.com.br/cdn/shop/files/1_278ba71d-5d0a-424f-a623-a8cc37820553.png",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato local (espanhol, italiano, indonésio) correspondia à edição brasileira; busca web confirmou a edição da Veneta (2022, trad. Cris Siqueira), quadrinho-reportagem clássico de Joe Sacco.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://veneta.com.br/products/palestina",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-9a165256a052",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos locais traziam apenas edições em espanhol, italiano e indonésio da mesma obra; nenhuma delas é a edição brasileira usada.",
+    "validatedAt": "2026-08-13"
+  }
+}

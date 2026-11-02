@@ -1,0 +1,64 @@
+{
+  "slug": "o-lobo-da-estepe-hermann-hesse",
+  "title": "O Lobo da Estepe",
+  "originalTitle": "Der Steppenwolf",
+  "originalTitleRomanized": null,
+  "authors": [
+    "hermann-hesse"
+  ],
+  "language": "alemão",
+  "firstPublished": 1927,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance psicológico"
+  ],
+  "themes": [
+    "alienação",
+    "crise existencial",
+    "dualidade",
+    "solidão"
+  ],
+  "edition": {
+    "title": "O Lobo da Estepe",
+    "language": "português",
+    "publisher": "BestBolso (selo Record)",
+    "year": 2009,
+    "isbn13": "9788577991075",
+    "isbn10": "8577991075",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs4p3vj12853080iga1qwy6th8.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título e autor confirmados (grafia 'Hermann Hesse'); candidato Literal 'O lobo da estepe' (trad. Ivo Barroso, BestBolso/Record, 2009) é edição brasileira representativa amplamente disponível.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4p3vj12853080iga1qwy6th8",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/o-lobo-da-estepe-edicao-de-bolso",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzohg9jg3281140tbvz6zbetlo",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ec3c2584d45f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library retornou apenas uma edição autopublicada (CreateSpace, 2016) com coautoria duvidosa ('Giancarlo Del Pino'); descartada em favor do candidato Literal, mais consistente com as edições brasileiras conhecidas da obra.",
+    "validatedAt": "2026-08-13"
+  }
+}

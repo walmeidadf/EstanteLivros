@@ -1,0 +1,61 @@
+{
+  "slug": "o-idiota-fiodor-dostoievski",
+  "title": "O Idiota",
+  "originalTitle": "Idiot",
+  "originalTitleRomanized": null,
+  "authors": [
+    "fiodor-dostoievski"
+  ],
+  "language": "russo",
+  "firstPublished": 1869,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance psicológico"
+  ],
+  "themes": [
+    "bondade",
+    "loucura",
+    "sociedade russa",
+    "amor"
+  ],
+  "edition": {
+    "title": "O Idiota",
+    "language": "português",
+    "publisher": "Editora 34",
+    "year": 2014,
+    "isbn13": "9788573262551",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico de Dostoiévski (1869). Candidatos locais traziam apenas edições portuguesas sem editora clara; optou-se pela edição brasileira consagrada da Editora 34 (trad. direta do russo de Paulo Bezerra), confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsnfb6m1526891yz7a3eagmx5c",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/idiota-Fi%C3%B3dor-Dostoi%C3%A9vski/dp/8573262559",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp99gc816099550tbv4beyggx1",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-489222b0373f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal apresentavam edições de Portugal sem metadados completos de editora; substituídos por edição brasileira de referência (Editora 34) localizada via busca.",
+    "validatedAt": "2026-08-13"
+  }
+}

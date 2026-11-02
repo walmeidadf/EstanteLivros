@@ -1,0 +1,62 @@
+{
+  "slug": "frankenstein-mary-shelley",
+  "title": "Frankenstein",
+  "originalTitle": "Frankenstein; or, The Modern Prometheus",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mary-shelley"
+  ],
+  "language": "inglês",
+  "firstPublished": 1818,
+  "type": "romance",
+  "genres": [
+    "terror gótico",
+    "ficção científica"
+  ],
+  "themes": [
+    "criação e responsabilidade",
+    "ambição científica",
+    "isolamento",
+    "monstruosidade",
+    "vingança"
+  ],
+  "edition": {
+    "title": "Frankenstein, ou O Prometeu Moderno",
+    "language": "português",
+    "publisher": "DarkSide Books",
+    "year": 2017,
+    "isbn13": "9788594540188",
+    "isbn10": null,
+    "format": "capa dura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico canônico; escolhida a edição brasileira da DarkSide Books (coleção Medo Clássico, 2017, ISBN 9788594540188) como edição representativa, amplamente disponível e ilustrada, confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26860869W",
+      "url": "https://openlibrary.org/works/OL26860869W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://darkside.blog.br/mary-shelley-criadora-de-frankenstein-eternizou-o-nosso-medo-do-desconhecido/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.publishnews.com.br/materias/2017/03/22/darkside-publica-edicao-caprichada-de-frankenstein",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-a3aa1542f513",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Múltiplos candidatos Literal/Open Library com score 1.0 mas em idiomas variados (inglês, espanhol, francês); nenhum correspondia exatamente à edição DarkSide, localizada via busca web e associada ao work OL que já lista a DarkSide Books como editora.",
+    "validatedAt": "2026-08-13"
+  }
+}

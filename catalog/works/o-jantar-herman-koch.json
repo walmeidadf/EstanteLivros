@@ -1,0 +1,49 @@
+{
+  "slug": "o-jantar-herman-koch",
+  "title": "O jantar",
+  "originalTitle": "Het diner",
+  "originalTitleRomanized": null,
+  "authors": [
+    "herman-koch"
+  ],
+  "language": "holandês",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "suspense psicológico"
+  ],
+  "themes": [
+    "paternidade",
+    "moralidade",
+    "violência",
+    "classe social"
+  ],
+  "edition": {
+    "title": "O Jantar",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2013,
+    "isbn13": "9788580574180",
+    "isbn10": "8580574188",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum dos 5 candidatos Literal correspondia (todos eram obras distintas). Identificado via busca web: romance de Herman Koch, edição brasileira pela Intrínseca (2013), título original neerlandês 'Het diner' (2009).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://intrinseca.com.br/livro/o-jantar/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-1a9627141f8b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

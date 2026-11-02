@@ -1,0 +1,57 @@
+{
+  "slug": "herdeiras-do-mar-mary-lynn-bracht",
+  "title": "Herdeiras do Mar",
+  "originalTitle": "White Chrysanthemum",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mary-lynn-bracht"
+  ],
+  "language": "inglês",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção histórica"
+  ],
+  "themes": [
+    "Coreia",
+    "guerra",
+    "irmãs",
+    "haenyeo (mergulhadoras)"
+  ],
+  "edition": {
+    "title": "Herdeiras do Mar",
+    "language": "português",
+    "publisher": "Editora Paralela",
+    "year": 2020,
+    "isbn13": "9788554517533",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=1jnnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido ('Mary Lyn Bratch' -> 'Mary Lynn Bracht'). Romance de estreia sobre as mergulhadoras haenyeo da ilha de Jeju, título original em inglês 'White Chrysanthemum' (2018); candidato Literal com maior score confirma a edição brasileira.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktvizp1u1243927yz7ats33v8m6",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznxk0dg4118750sb5cbyl7v3p",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-13b7877293cc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

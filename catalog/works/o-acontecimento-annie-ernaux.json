@@ -1,0 +1,64 @@
+{
+  "slug": "o-acontecimento-annie-ernaux",
+  "title": "O Acontecimento",
+  "originalTitle": "L'Événement",
+  "originalTitleRomanized": null,
+  "authors": [
+    "annie-ernaux"
+  ],
+  "language": "francês",
+  "firstPublished": 2000,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "narrativa autobiográfica"
+  ],
+  "themes": [
+    "aborto clandestino",
+    "corpo feminino",
+    "classe social",
+    "França"
+  ],
+  "edition": {
+    "title": "O Acontecimento",
+    "language": "português",
+    "publisher": "Fósforo Editora",
+    "year": 2022,
+    "isbn13": "9786589733553",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://fosforoeditora.fbitsstatic.net/img/p/o-acontecimento-70252/256729.jpg?w=500&h=500&v=no-change&qs=ignore",
+    "source": "editora"
+  },
+  "catalogerNote": "Candidato Literal confirma a obra (score 0.977), mas trazia apenas a edição portuguesa (ISBN 9789897111853); localizada via busca a edição brasileira pela Fósforo Editora (2022, trad. Isadora de Araújo Pontes), preferida por ser brasileira.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clc85s3r13206490hbyqrxm5r0o",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.fosforoeditora.com.br/produto/o-acontecimento-70252",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clhxx9u8c15853660iens93levra",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-d0935510e14a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal indicava edição portuguesa; substituída pela edição brasileira Fósforo conforme preferência das instruções por edição brasileira representativa.",
+    "validatedAt": "2026-08-13"
+  }
+}

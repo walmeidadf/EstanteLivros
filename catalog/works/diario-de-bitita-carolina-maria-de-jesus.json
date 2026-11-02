@@ -1,0 +1,62 @@
+{
+  "slug": "diario-de-bitita-carolina-maria-de-jesus",
+  "title": "Diário de Bitita",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carolina-maria-de-jesus"
+  ],
+  "language": "português",
+  "firstPublished": 1982,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "narrativa autobiográfica"
+  ],
+  "themes": [
+    "infância",
+    "pobreza",
+    "racismo",
+    "memória",
+    "Brasil rural"
+  ],
+  "edition": {
+    "title": "Diário de Bitita",
+    "language": "português",
+    "publisher": "SESI-SP",
+    "year": 2014,
+    "isbn13": "9788582054826",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidatos (os 5 candidatos Literal eram de outras obras). Identificado por conhecimento bibliográfico e busca web: autobiografia de infância de Carolina Maria de Jesus, escrita em português, publicada primeiro em tradução francesa póstuma (1982) e depois no Brasil pela Nova Fronteira (1986); usada como representativa a edição SESI-SP (2014, ISBN 9788582054826), mais recente e disponível, sem imagem de capa confirmada.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://carolinamariadejesus.ims.com.br/diario-de-bitita/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Di%C3%A1rio_de_Bitita",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.livrofacil.net/diario-de-bitita-9788582054826/p",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-d0f0e11a8610",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

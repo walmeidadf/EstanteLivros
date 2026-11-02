@@ -1,0 +1,71 @@
+{
+  "slug": "oracao-para-desaparecer-socorro-acioli",
+  "title": "Oração para Desaparecer",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "socorro-acioli"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "ficção literária"
+  ],
+  "themes": [
+    "amor",
+    "memória",
+    "identidade",
+    "migração",
+    "ancestralidade"
+  ],
+  "edition": {
+    "title": "Oração para Desaparecer",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2023,
+    "isbn13": "9786559215706",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15204631-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; romance de realismo fantástico de Socorro Acioli publicado pela Companhia das Letras em 2023, confirmado na página oficial da editora.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqazcojt14284900hi58xree5i9",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL42531182W",
+      "url": "https://openlibrary.org/works/OL42531182W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9786559215706/oracao-para-desaparecer",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clqazcojt14284930hi5a9gf4aj1",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-f4767abb22e7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library indicou editora 'Particular Editora' e ano 2024, mas com o mesmo ISBN do candidato Literal; a página oficial da Companhia das Letras confirma publicação em 2023 — adotado esse dado.",
+    "validatedAt": "2026-08-13"
+  }
+}

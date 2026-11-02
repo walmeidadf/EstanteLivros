@@ -1,0 +1,2476 @@
+{
+  "readings": [
+    {
+      "sequence": 1,
+      "year": null,
+      "work": "os-espioes-luis-fernando-verissimo",
+      "reread": false,
+      "originalEntry": "Os espiões - Luiz Fernando Veríssimo",
+      "notes": null
+    },
+    {
+      "sequence": 2,
+      "year": null,
+      "work": "o-alquimista-paulo-coelho",
+      "reread": false,
+      "originalEntry": "O alquimista - Paulo Coelho",
+      "notes": null
+    },
+    {
+      "sequence": 3,
+      "year": null,
+      "work": "a-tregua-mario-benedetti",
+      "reread": false,
+      "originalEntry": "A trégua - Mário Benedetti",
+      "notes": null
+    },
+    {
+      "sequence": 4,
+      "year": null,
+      "work": "as-mentiras-que-os-homens-contam-luis-fernando-verissimo",
+      "reread": false,
+      "originalEntry": "As mentiras que os homens contam - Luiz fernando Veríssimo",
+      "notes": null
+    },
+    {
+      "sequence": 5,
+      "year": null,
+      "work": "comedias-para-se-ler-na-escola-luis-fernando-verissimo",
+      "reread": false,
+      "originalEntry": "Comédias para se ler na escola -   Luiz fernando Veríssimo",
+      "notes": null
+    },
+    {
+      "sequence": 6,
+      "year": null,
+      "work": "o-retrato-de-dorian-gray-oscar-wilde",
+      "reread": false,
+      "originalEntry": "O retrato de Dorian Gray - Oscar Wilde",
+      "notes": null
+    },
+    {
+      "sequence": 7,
+      "year": null,
+      "work": "a-metamorfose-franz-kafka",
+      "reread": false,
+      "originalEntry": "A metamorfose - Franz Kafka",
+      "notes": null
+    },
+    {
+      "sequence": 8,
+      "year": null,
+      "work": "a-morte-de-ivan-ilitch-liev-tolstoi",
+      "reread": false,
+      "originalEntry": "A morte de Ivan Ilitch - Leon Tolstoi",
+      "notes": null
+    },
+    {
+      "sequence": 9,
+      "year": null,
+      "work": "a-menina-que-roubava-livros-markus-zusak",
+      "reread": false,
+      "originalEntry": "A menina que roubava livros - Markus Suzak",
+      "notes": null
+    },
+    {
+      "sequence": 10,
+      "year": null,
+      "work": "dias-perfeitos-raphael-montes",
+      "reread": false,
+      "originalEntry": "Dias perfeitos - Raphael Montes",
+      "notes": null
+    },
+    {
+      "sequence": 11,
+      "year": null,
+      "work": "o-cacador-de-pipas-khaled-hosseini",
+      "reread": false,
+      "originalEntry": "O caçador de pipas - Khaled Hosseine",
+      "notes": null
+    },
+    {
+      "sequence": 12,
+      "year": null,
+      "work": "feliz-ano-velho-marcelo-rubens-paiva",
+      "reread": false,
+      "originalEntry": "Feliz ano velho - Marcelo Rubens Paiva",
+      "notes": null
+    },
+    {
+      "sequence": 13,
+      "year": null,
+      "work": "suite-toquio-giovana-madalosso",
+      "reread": false,
+      "originalEntry": "Suíte tóquio - Giovana Madalosso",
+      "notes": null
+    },
+    {
+      "sequence": 14,
+      "year": null,
+      "work": "vista-chinesa-tatiana-salem-levy",
+      "reread": false,
+      "originalEntry": "Vista Chinesa - Tatiana Salem Levy",
+      "notes": null
+    },
+    {
+      "sequence": 15,
+      "year": null,
+      "work": "codigos-de-familia-zelia-gattai",
+      "reread": false,
+      "originalEntry": "Códigos de família - Zélia Gattai",
+      "notes": null
+    },
+    {
+      "sequence": 16,
+      "year": null,
+      "work": "olhai-os-lirios-do-campo-erico-verissimo",
+      "reread": false,
+      "originalEntry": "Olhai os lírios do campo - Érico Veríssimo",
+      "notes": null
+    },
+    {
+      "sequence": 17,
+      "year": null,
+      "work": "a-cidade-do-sol-khaled-hosseini",
+      "reread": false,
+      "originalEntry": "A cidade do sol - Khaled Hosseini",
+      "notes": null
+    },
+    {
+      "sequence": 18,
+      "year": null,
+      "work": "incidente-em-antares-erico-verissimo",
+      "reread": false,
+      "originalEntry": "Incidente em Antares - Érico Veríssimo",
+      "notes": null
+    },
+    {
+      "sequence": 19,
+      "year": null,
+      "work": "viva-o-povo-brasileiro-joao-ubaldo-ribeiro",
+      "reread": false,
+      "originalEntry": "Viva o povo brasileiro - João Ubaldo Ribeiro",
+      "notes": null
+    },
+    {
+      "sequence": 20,
+      "year": null,
+      "work": "tocaia-grande-jorge-amado",
+      "reread": false,
+      "originalEntry": "Tocaia Grande - Jorge Amado",
+      "notes": null
+    },
+    {
+      "sequence": 21,
+      "year": null,
+      "work": "sargento-getulio-joao-ubaldo-ribeiro",
+      "reread": false,
+      "originalEntry": "Sargento Getúlio - João ubaldo Ribeiro",
+      "notes": null
+    },
+    {
+      "sequence": 22,
+      "year": null,
+      "work": "a-casa-dos-budas-ditosos-joao-ubaldo-ribeiro",
+      "reread": false,
+      "originalEntry": "A casa dos budas ditosos - João Ubaldo Ribeiro",
+      "notes": null
+    },
+    {
+      "sequence": 23,
+      "year": null,
+      "work": "o-filho-eterno-cristovao-tezza",
+      "reread": false,
+      "originalEntry": "Filho eterno - Cristovão Tezza",
+      "notes": null
+    },
+    {
+      "sequence": 24,
+      "year": null,
+      "work": "a-mulher-que-escreveu-a-biblia-moacyr-scliar",
+      "reread": false,
+      "originalEntry": "A mulher que escreveu a bíblia - Moacyr Scliar",
+      "notes": null
+    },
+    {
+      "sequence": 25,
+      "year": null,
+      "work": "o-velho-e-o-mar-ernest-hemingway",
+      "reread": false,
+      "originalEntry": "O velho e o mar - Ernest Hemingway",
+      "notes": null
+    },
+    {
+      "sequence": 26,
+      "year": null,
+      "work": "vidas-secas-graciliano-ramos",
+      "reread": false,
+      "originalEntry": "Vidas Secas - Graciliano ramos",
+      "notes": null
+    },
+    {
+      "sequence": 27,
+      "year": null,
+      "work": "o-quinze-rachel-de-queiroz",
+      "reread": false,
+      "originalEntry": "O quinze - Raquel de Queiroz",
+      "notes": null
+    },
+    {
+      "sequence": 28,
+      "year": null,
+      "work": "as-intermitencias-da-morte-jose-saramago",
+      "reread": false,
+      "originalEntry": "As intermitências da morte - José Saramago",
+      "notes": null
+    },
+    {
+      "sequence": 29,
+      "year": null,
+      "work": "diario-da-queda-michel-laub",
+      "reread": false,
+      "originalEntry": "A queda - Michel Lab",
+      "notes": null
+    },
+    {
+      "sequence": 30,
+      "year": null,
+      "work": "judas-amos-oz",
+      "reread": false,
+      "originalEntry": "Judas - Amoz oz",
+      "notes": null
+    },
+    {
+      "sequence": 31,
+      "year": null,
+      "work": "de-amor-e-trevas-amos-oz",
+      "reread": false,
+      "originalEntry": "De amor e de trevas - Amoz oz",
+      "notes": null
+    },
+    {
+      "sequence": 32,
+      "year": null,
+      "work": "a-caixa-preta-amos-oz",
+      "reread": false,
+      "originalEntry": "A caixa preta - Amoz oz",
+      "notes": null
+    },
+    {
+      "sequence": 33,
+      "year": null,
+      "work": "a-casa-das-belas-adormecidas-yasunari-kawabata",
+      "reread": false,
+      "originalEntry": "A casa das belas adormecidas - Yasunari kawabata",
+      "notes": null
+    },
+    {
+      "sequence": 34,
+      "year": null,
+      "work": "memoria-de-minhas-putas-tristes-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "Minhas putas tristes - Gabriel Garcia Marques",
+      "notes": null
+    },
+    {
+      "sequence": 35,
+      "year": null,
+      "work": "do-amor-e-outros-demonios-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "De amor e outros demônios - Gabriel garcia Marques",
+      "notes": null
+    },
+    {
+      "sequence": 36,
+      "year": null,
+      "work": "cronica-de-uma-morte-anunciada-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "Crônica de uma morte anunciada _ Gabriel garcia Marquez",
+      "notes": null
+    },
+    {
+      "sequence": 37,
+      "year": null,
+      "work": "ensaio-sobre-a-cegueira-jose-saramago",
+      "reread": false,
+      "originalEntry": "Ensaio sobre a cegueira - José Saramago",
+      "notes": null
+    },
+    {
+      "sequence": 38,
+      "year": null,
+      "work": "a-insustentavel-leveza-do-ser-milan-kundera",
+      "reread": false,
+      "originalEntry": "A insustentável leveza do ser - Milan Kundera",
+      "notes": null
+    },
+    {
+      "sequence": 39,
+      "year": null,
+      "work": "a-festa-do-bode-mario-vargas-llosa",
+      "reread": false,
+      "originalEntry": "A festa do Bode - Mario Vargas Llosa",
+      "notes": null
+    },
+    {
+      "sequence": 40,
+      "year": null,
+      "work": "pantaleao-e-as-visitadoras-mario-vargas-llosa",
+      "reread": false,
+      "originalEntry": "Pantaleão e as visitadoras - Mario Vargas LLosa",
+      "notes": null
+    },
+    {
+      "sequence": 41,
+      "year": null,
+      "work": "viver-para-contar-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "Viver para contar - Gabriel Garcia Marquez",
+      "notes": null
+    },
+    {
+      "sequence": 42,
+      "year": null,
+      "work": "depois-daquela-viagem-valeria-piassa-polizzi",
+      "reread": false,
+      "originalEntry": "Depois daquela viagem - Valéria Polizzi",
+      "notes": null
+    },
+    {
+      "sequence": 43,
+      "year": null,
+      "work": "o-capote-nikolai-gogol",
+      "reread": false,
+      "originalEntry": "O capote - Gogol",
+      "notes": null
+    },
+    {
+      "sequence": 44,
+      "year": null,
+      "work": "cem-dias-entre-ceu-e-mar-amyr-klink",
+      "reread": false,
+      "originalEntry": "Cem dias entre céu e mar - Amir Klink",
+      "notes": null
+    },
+    {
+      "sequence": 45,
+      "year": null,
+      "work": "a-peste-albert-camus",
+      "reread": false,
+      "originalEntry": "A peste - Albert camus",
+      "notes": null
+    },
+    {
+      "sequence": 46,
+      "year": null,
+      "work": "o-estrangeiro-albert-camus",
+      "reread": false,
+      "originalEntry": "O estrangeiro - Albert Camus",
+      "notes": null
+    },
+    {
+      "sequence": 47,
+      "year": null,
+      "work": "caim-jose-saramago",
+      "reread": false,
+      "originalEntry": "Caim - José Saramago",
+      "notes": null
+    },
+    {
+      "sequence": 48,
+      "year": null,
+      "work": "o-gato-preto-e-outros-contos-de-terror-edgar-allan-poe",
+      "reread": false,
+      "originalEntry": "O gato preto e outros contos - Edgar Allan Poe",
+      "notes": null
+    },
+    {
+      "sequence": 49,
+      "year": null,
+      "work": "a-caverna-jose-saramago",
+      "reread": false,
+      "originalEntry": "A caverna - José Saramago",
+      "notes": null
+    },
+    {
+      "sequence": 50,
+      "year": null,
+      "work": "barba-ensopada-de-sangue-daniel-galera",
+      "reread": false,
+      "originalEntry": "Barba ensopada de sangue - Daniel Galera",
+      "notes": null
+    },
+    {
+      "sequence": 51,
+      "year": null,
+      "work": "crime-e-castigo-fiodor-dostoievski",
+      "reread": false,
+      "originalEntry": "Crime e castigo - Doistoieviski",
+      "notes": null
+    },
+    {
+      "sequence": 52,
+      "year": null,
+      "work": "o-homem-duplicado-jose-saramago",
+      "reread": false,
+      "originalEntry": "O homem duplicado - José Saramago",
+      "notes": null
+    },
+    {
+      "sequence": 53,
+      "year": null,
+      "work": "travessuras-da-menina-ma-mario-vargas-llosa",
+      "reread": false,
+      "originalEntry": "As travessuras da menina má - Vargas llosa",
+      "notes": null
+    },
+    {
+      "sequence": 54,
+      "year": 2014,
+      "work": "as-pequenas-memorias-jose-saramago",
+      "reread": false,
+      "originalEntry": "Pequenas memórias - José Saramago (2014)",
+      "notes": null
+    },
+    {
+      "sequence": 55,
+      "year": 2014,
+      "work": "memoria-da-pedra-mauricio-lyrio",
+      "reread": false,
+      "originalEntry": "memória da pedra - Maurício Lyrio",
+      "notes": null
+    },
+    {
+      "sequence": 56,
+      "year": 2014,
+      "work": "a-cabeca-do-santo-socorro-acioli",
+      "reread": false,
+      "originalEntry": "A cabeça do santo - Socorro Acioli",
+      "notes": null
+    },
+    {
+      "sequence": 57,
+      "year": 2014,
+      "work": "cordilheira-daniel-galera",
+      "reread": false,
+      "originalEntry": "Cordilheira - Daniel Galera",
+      "notes": null
+    },
+    {
+      "sequence": 58,
+      "year": 2014,
+      "work": "odio-amizade-namoro-amor-casamento-alice-munro",
+      "reread": false,
+      "originalEntry": "Amor, namoro, casamento e amizade - Alice Munro",
+      "notes": null
+    },
+    {
+      "sequence": 59,
+      "year": 2014,
+      "work": "o-coronel-chabert-honore-de-balzac",
+      "reread": false,
+      "originalEntry": "O coronel Chaubert - Honoré de Balzac",
+      "notes": null
+    },
+    {
+      "sequence": 60,
+      "year": 2014,
+      "work": "reparacao-ian-mcewan",
+      "reread": false,
+      "originalEntry": "Reparação - Ian Macwean",
+      "notes": null
+    },
+    {
+      "sequence": 61,
+      "year": 2014,
+      "work": "um-solitario-a-espreita-milton-hatoum",
+      "reread": false,
+      "originalEntry": "Um solitário à espreita - Milton Hatoum",
+      "notes": null
+    },
+    {
+      "sequence": 62,
+      "year": 2014,
+      "work": "o-clube-do-livro-do-fim-da-vida-will-schwalbe",
+      "reread": false,
+      "originalEntry": "O clube do livro do fim da vida - Will Shaube",
+      "notes": null
+    },
+    {
+      "sequence": 63,
+      "year": 2014,
+      "work": "madame-bovary-gustave-flaubert",
+      "reread": false,
+      "originalEntry": "Madame Bovary - Gustave Flaubert",
+      "notes": null
+    },
+    {
+      "sequence": 64,
+      "year": 2014,
+      "work": "educar-meninas-e-meninos-relacoes-de-genero-na-escola-daniela-auad",
+      "reread": false,
+      "originalEntry": "Educar meninos e meninas - Daniela Auad",
+      "notes": null
+    },
+    {
+      "sequence": 65,
+      "year": 2014,
+      "work": "ansiedade-como-enfrentar-o-mal-do-seculo-augusto-cury",
+      "reread": false,
+      "originalEntry": "Ansiedade - Augusto Cury",
+      "notes": null
+    },
+    {
+      "sequence": 66,
+      "year": 2014,
+      "work": "os-transparentes-ondjaki",
+      "reread": false,
+      "originalEntry": "Os transparents - Ondjaki",
+      "notes": null
+    },
+    {
+      "sequence": 67,
+      "year": 2014,
+      "work": "as-avos-e-outras-historias-doris-lessing",
+      "reread": false,
+      "originalEntry": "As avós - Doris Lessin",
+      "notes": null
+    },
+    {
+      "sequence": 68,
+      "year": 2014,
+      "work": "a-confissao-da-leoa-mia-couto",
+      "reread": false,
+      "originalEntry": "A confissão da leoa - Mia Couto",
+      "notes": null
+    },
+    {
+      "sequence": 69,
+      "year": 2014,
+      "work": "minha-querida-sputnik-haruki-murakami",
+      "reread": false,
+      "originalEntry": "Minha querida Sputnik - Harumi Murakami",
+      "notes": null
+    },
+    {
+      "sequence": 70,
+      "year": 2014,
+      "work": "semiramis-ana-miranda",
+      "reread": false,
+      "originalEntry": "Semíramis - Ana Miranda",
+      "notes": null
+    },
+    {
+      "sequence": 71,
+      "year": 2014,
+      "work": "o-jantar-herman-koch",
+      "reread": false,
+      "originalEntry": "O jantar - Herman koch",
+      "notes": null
+    },
+    {
+      "sequence": 72,
+      "year": 2014,
+      "work": "os-enamoramentos-javier-marias",
+      "reread": false,
+      "originalEntry": "Os enamoramentos - Javier Marias",
+      "notes": null
+    },
+    {
+      "sequence": 73,
+      "year": 2014,
+      "work": "o-pai-goriot-honore-de-balzac",
+      "reread": false,
+      "originalEntry": "O Goriot - Honoré de Balzac",
+      "notes": null
+    },
+    {
+      "sequence": 74,
+      "year": 2015,
+      "work": "o-pintassilgo-donna-tartt",
+      "reread": false,
+      "originalEntry": "O pintassilgo - Donna Tart (2015)",
+      "notes": null
+    },
+    {
+      "sequence": 75,
+      "year": 2015,
+      "work": "relato-de-um-certo-oriente-milton-hatoum",
+      "reread": false,
+      "originalEntry": "Relato de um certo oriente - Milton Hatoum",
+      "notes": null
+    },
+    {
+      "sequence": 76,
+      "year": 2015,
+      "work": "vida-querida-alice-munro",
+      "reread": false,
+      "originalEntry": "Vida querida - Alice Munro",
+      "notes": null
+    },
+    {
+      "sequence": 77,
+      "year": 2015,
+      "work": "a-felicidade-conjugal-liev-tolstoi",
+      "reread": false,
+      "originalEntry": "A felicidade conjugal - Leon Tolstoi",
+      "notes": null
+    },
+    {
+      "sequence": 78,
+      "year": 2015,
+      "work": "judas-amos-oz",
+      "reread": true,
+      "originalEntry": "Judas - Amoz oz",
+      "notes": null
+    },
+    {
+      "sequence": 79,
+      "year": 2015,
+      "work": "a-festa-da-insignificancia-milan-kundera",
+      "reread": false,
+      "originalEntry": "A festa da insignificância - Milan Kundera",
+      "notes": null
+    },
+    {
+      "sequence": 80,
+      "year": 2015,
+      "work": "o-tempo-entre-costuras-maria-duenas",
+      "reread": false,
+      "originalEntry": "O tempo entre costuras - Maria Dueñas",
+      "notes": null
+    },
+    {
+      "sequence": 81,
+      "year": 2015,
+      "work": "a-hora-dos-ruminantes-jose-j-veiga",
+      "reread": false,
+      "originalEntry": "A hora dos ruminantes - José J Veiga",
+      "notes": null
+    },
+    {
+      "sequence": 82,
+      "year": 2015,
+      "work": "no-teu-deserto-miguel-sousa-tavares",
+      "reread": false,
+      "originalEntry": "No teu deserto - J Tavares",
+      "notes": null
+    },
+    {
+      "sequence": 83,
+      "year": 2015,
+      "work": "o-lobo-da-estepe-hermann-hesse",
+      "reread": false,
+      "originalEntry": "O lobo da estepe - Herman Hesse",
+      "notes": null
+    },
+    {
+      "sequence": 84,
+      "year": 2015,
+      "work": "a-balada-de-adam-henry-ian-mcewan",
+      "reread": false,
+      "originalEntry": "A balada de Adam Henry - Ian Macwean",
+      "notes": null
+    },
+    {
+      "sequence": 85,
+      "year": 2015,
+      "work": "o-morro-dos-ventos-uivantes-emily-bronte",
+      "reread": false,
+      "originalEntry": "O morro dos ventos uivantes - Emile Bront",
+      "notes": null
+    },
+    {
+      "sequence": 86,
+      "year": 2015,
+      "work": "sergio-y-vai-a-america-alexandre-vidal-porto",
+      "reread": false,
+      "originalEntry": "Sérgio vai à América - Alessandro d Lobato",
+      "notes": null
+    },
+    {
+      "sequence": 87,
+      "year": 2015,
+      "work": "correr-drauzio-varella",
+      "reread": false,
+      "originalEntry": "Correr - Drauzio Varela",
+      "notes": null
+    },
+    {
+      "sequence": 88,
+      "year": 2015,
+      "work": "feliz-ano-velho-marcelo-rubens-paiva",
+      "reread": true,
+      "originalEntry": "Feliz ano velho - Marcelo Rubens Paiva",
+      "notes": null
+    },
+    {
+      "sequence": 89,
+      "year": 2015,
+      "work": "a-redoma-de-vidro-sylvia-plath",
+      "reread": false,
+      "originalEntry": "A redoma de vidro - Sylvia Plath",
+      "notes": null
+    },
+    {
+      "sequence": 90,
+      "year": 2015,
+      "work": "todos-nos-adoravamos-caubois-carol-bensimon",
+      "reread": false,
+      "originalEntry": "Todos nós adorávamos cowboys - Carol Bensimon",
+      "notes": null
+    },
+    {
+      "sequence": 91,
+      "year": 2015,
+      "work": "a-chave-de-casa-tatiana-salem-levy",
+      "reread": false,
+      "originalEntry": "A chave da casa - Tatiana Salém Levi",
+      "notes": null
+    },
+    {
+      "sequence": 92,
+      "year": 2015,
+      "work": "tres-contos-gustave-flaubert",
+      "reread": false,
+      "originalEntry": "Três contos - Gustave Flaubert",
+      "notes": null
+    },
+    {
+      "sequence": 93,
+      "year": 2015,
+      "work": "um-copo-de-colera-raduan-nassar",
+      "reread": false,
+      "originalEntry": "UM copo de cólera  - Raduan nassar",
+      "notes": null
+    },
+    {
+      "sequence": 94,
+      "year": 2015,
+      "work": "o-mestre-e-margarida-mikhail-bulgakov",
+      "reread": false,
+      "originalEntry": "O mestre e a Margarida - Mickael Bugakov",
+      "notes": null
+    },
+    {
+      "sequence": 95,
+      "year": 2016,
+      "work": "grande-sertao-veredas-joao-guimaraes-rosa",
+      "reread": false,
+      "originalEntry": "Grande sertão veredas - Guimarães Rosa (2016)",
+      "notes": null
+    },
+    {
+      "sequence": 96,
+      "year": 2016,
+      "work": "a-consciencia-de-zeno-italo-svevo",
+      "reread": false,
+      "originalEntry": "A consciência de Zeno - Italo Svevo",
+      "notes": null
+    },
+    {
+      "sequence": 97,
+      "year": 2016,
+      "work": "passaporte-para-a-china-cronicas-de-viagem-lygia-fagundes-telles",
+      "reread": false,
+      "originalEntry": "Passaporte para a China - ligya fagundes Teles",
+      "notes": null
+    },
+    {
+      "sequence": 98,
+      "year": 2016,
+      "work": "ainda-estou-aqui-marcelo-rubens-paiva",
+      "reread": false,
+      "originalEntry": "Ainda estou aqui - Marcelo Rubens Paiva",
+      "notes": null
+    },
+    {
+      "sequence": 99,
+      "year": 2016,
+      "work": "clarice-benjamin-moser",
+      "reread": false,
+      "originalEntry": "Clarice - uma biografia - Benjamim Moser",
+      "notes": null
+    },
+    {
+      "sequence": 100,
+      "year": 2016,
+      "work": "uma-aprendizagem-ou-o-livro-dos-prazeres-clarice-lispector",
+      "reread": false,
+      "originalEntry": "Uma aprendizagem ou livro dos prazeres - Clarice Lispector",
+      "notes": null
+    },
+    {
+      "sequence": 101,
+      "year": 2016,
+      "work": "o-amante-japones-isabel-allende",
+      "reread": false,
+      "originalEntry": "The japanese lover - Isabel Allende",
+      "notes": null
+    },
+    {
+      "sequence": 102,
+      "year": 2017,
+      "work": "blue-danielle-steel",
+      "reread": false,
+      "originalEntry": "Blue - Danielle Steel (2017)",
+      "notes": null
+    },
+    {
+      "sequence": 103,
+      "year": 2017,
+      "work": "o-apartamento-danielle-steel",
+      "reread": false,
+      "originalEntry": "The apartment - Danielle Steel",
+      "notes": null
+    },
+    {
+      "sequence": 104,
+      "year": 2017,
+      "work": "o-lar-da-srta-peregrine-para-criancas-peculiares-ransom-riggs",
+      "reread": false,
+      "originalEntry": "Mrs. peregrine and the peculiar children",
+      "notes": null
+    },
+    {
+      "sequence": 105,
+      "year": 2017,
+      "work": "a-filha-perdida-elena-ferrante",
+      "reread": false,
+      "originalEntry": "A filha perdida - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 106,
+      "year": 2017,
+      "work": "uma-separacao-katie-kitamura",
+      "reread": false,
+      "originalEntry": "A separation - Katie Kitamura",
+      "notes": null
+    },
+    {
+      "sequence": 107,
+      "year": 2017,
+      "work": "cem-anos-de-solidao-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "Cem anos de solidão - Gabriel Garcia Marques",
+      "notes": null
+    },
+    {
+      "sequence": 108,
+      "year": 2017,
+      "work": "sagarana-joao-guimaraes-rosa",
+      "reread": false,
+      "originalEntry": "Sagarana - Guimarães Rosa",
+      "notes": null
+    },
+    {
+      "sequence": 109,
+      "year": 2017,
+      "work": "ragtime-e-l-doctorow",
+      "reread": false,
+      "originalEntry": "Ragtime - L.A. Doctorow",
+      "notes": null
+    },
+    {
+      "sequence": 110,
+      "year": 2017,
+      "work": "quase-memoria-carlos-heitor-cony",
+      "reread": false,
+      "originalEntry": "Quase memória - Carlos Heitor Cony",
+      "notes": null
+    },
+    {
+      "sequence": 111,
+      "year": 2017,
+      "work": "estrelas-tortas-walcyr-carrasco",
+      "reread": false,
+      "originalEntry": "Estrelas tortas - Walcy Carrasco",
+      "notes": null
+    },
+    {
+      "sequence": 112,
+      "year": 2017,
+      "work": "a-mulher-de-pes-descalcos-scholastique-mukasonga",
+      "reread": false,
+      "originalEntry": "A mulher dos pés descalços - Scholastique Mukasonga",
+      "notes": null
+    },
+    {
+      "sequence": 113,
+      "year": 2017,
+      "work": "as-alegrias-da-maternidade-buchi-emecheta",
+      "reread": false,
+      "originalEntry": "As alegrias da maternidade - Buchi Emecheta",
+      "notes": null
+    },
+    {
+      "sequence": 114,
+      "year": 2017,
+      "work": "pedro-paramo-juan-rulfo",
+      "reread": false,
+      "originalEntry": "Pedro Páramo - Ruan Rulfo",
+      "notes": null
+    },
+    {
+      "sequence": 115,
+      "year": 2017,
+      "work": "stoner-john-williams",
+      "reread": false,
+      "originalEntry": "Stoner - John Willians",
+      "notes": null
+    },
+    {
+      "sequence": 116,
+      "year": 2017,
+      "work": "os-vestigios-do-dia-kazuo-ishiguro",
+      "reread": false,
+      "originalEntry": "Os vestígios do dia - Kazuo Ishiguro",
+      "notes": null
+    },
+    {
+      "sequence": 117,
+      "year": 2017,
+      "work": "as-tres-marias-rachel-de-queiroz",
+      "reread": false,
+      "originalEntry": "As três Marias - Rachel de Queiroz",
+      "notes": null
+    },
+    {
+      "sequence": 118,
+      "year": 2017,
+      "work": "na-minha-pele-lazaro-ramos",
+      "reread": false,
+      "originalEntry": "Na minha pele - Lázaro Ramos",
+      "notes": null
+    },
+    {
+      "sequence": 119,
+      "year": 2017,
+      "work": "a-praca-do-diamante-merce-rodoreda",
+      "reread": false,
+      "originalEntry": "A praça do diamante - Mercê Rodoreda",
+      "notes": null
+    },
+    {
+      "sequence": 120,
+      "year": 2018,
+      "work": "as-benevolentes-jonathan-littell",
+      "reread": false,
+      "originalEntry": "As benevolentes - John Rittel (2018)",
+      "notes": null
+    },
+    {
+      "sequence": 121,
+      "year": 2018,
+      "work": "so-garotos-patti-smith",
+      "reread": false,
+      "originalEntry": "só garotos - Patty Smith",
+      "notes": null
+    },
+    {
+      "sequence": 122,
+      "year": 2018,
+      "work": "the-underground-railroad-os-caminhos-para-a-liberdade-colson-whitehead",
+      "reread": false,
+      "originalEntry": "Underground railroad  - Carlson Whitehead",
+      "notes": null
+    },
+    {
+      "sequence": 123,
+      "year": 2018,
+      "work": "tempo-de-migrar-para-o-norte-tayeb-salih",
+      "reread": false,
+      "originalEntry": "O tempo de migrar para o norte - Tayeb Salih",
+      "notes": null
+    },
+    {
+      "sequence": 124,
+      "year": 2018,
+      "work": "a-obscena-senhora-d-hilda-hilst",
+      "reread": false,
+      "originalEntry": "A obscena Senhora D - Hilda Hilst",
+      "notes": null
+    },
+    {
+      "sequence": 125,
+      "year": 2018,
+      "work": "a-crianca-no-tempo-ian-mcewan",
+      "reread": false,
+      "originalEntry": "A criança no tempo - Ian Macwean",
+      "notes": null
+    },
+    {
+      "sequence": 126,
+      "year": 2018,
+      "work": "cancao-de-ninar-leila-slimani",
+      "reread": false,
+      "originalEntry": "Canção de ninar - Leila Slimani",
+      "notes": null
+    },
+    {
+      "sequence": 127,
+      "year": 2018,
+      "work": "me-chame-pelo-seu-nome-andre-aciman",
+      "reread": false,
+      "originalEntry": "Me chame pelo seu nome - André Acimam",
+      "notes": null
+    },
+    {
+      "sequence": 128,
+      "year": 2018,
+      "work": "hibisco-roxo-chimamanda-ngozi-adichie",
+      "reread": false,
+      "originalEntry": "Hibisco Roxo - Chimamanda Ngozi",
+      "notes": null
+    },
+    {
+      "sequence": 129,
+      "year": 2018,
+      "work": "a-mao-e-a-luva-machado-de-assis",
+      "reread": false,
+      "originalEntry": "A mão e a luva - Machado de Assis",
+      "notes": null
+    },
+    {
+      "sequence": 130,
+      "year": 2018,
+      "work": "dom-casmurro-machado-de-assis",
+      "reread": false,
+      "originalEntry": "Dom Casmurro - Machado de Assis",
+      "notes": null
+    },
+    {
+      "sequence": 131,
+      "year": 2018,
+      "work": "voragem-jun-ichiro-tanizaki",
+      "reread": false,
+      "originalEntry": "Voragem - Junishiro Tonizaki",
+      "notes": null
+    },
+    {
+      "sequence": 132,
+      "year": 2018,
+      "work": "memorias-de-porco-espinho-alain-mabanckou",
+      "reread": false,
+      "originalEntry": "Memória de porco-espinho - Alain Mabanckou",
+      "notes": null
+    },
+    {
+      "sequence": 133,
+      "year": 2019,
+      "work": "eu-sei-por-que-o-passaro-canta-na-gaiola-maya-angelou",
+      "reread": false,
+      "originalEntry": "Porque o pássaro canta na gaiola - Maya Angelou (2019)",
+      "notes": null
+    },
+    {
+      "sequence": 134,
+      "year": 2019,
+      "work": "a-amiga-genial-elena-ferrante",
+      "reread": false,
+      "originalEntry": "A amiga genial - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 135,
+      "year": 2019,
+      "work": "historia-do-novo-sobrenome-elena-ferrante",
+      "reread": false,
+      "originalEntry": "História do novo sobrenome - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 136,
+      "year": 2019,
+      "work": "historia-de-quem-foge-e-de-quem-fica-elena-ferrante",
+      "reread": false,
+      "originalEntry": "História de quem vai e de quem fica - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 137,
+      "year": 2019,
+      "work": "historia-da-menina-perdida-elena-ferrante",
+      "reread": false,
+      "originalEntry": "História da menina perdida - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 138,
+      "year": 2019,
+      "work": "o-corpo-dela-e-outras-farras-carmen-maria-machado",
+      "reread": false,
+      "originalEntry": "O corpo dela e outras farras - Carmem Maria Machado",
+      "notes": null
+    },
+    {
+      "sequence": 139,
+      "year": 2019,
+      "work": "o-sol-e-para-todos-harper-lee",
+      "reread": false,
+      "originalEntry": "O sol é para todos - Harper Lee",
+      "notes": null
+    },
+    {
+      "sequence": 140,
+      "year": 2020,
+      "work": "mulherzinhas-louisa-may-alcott",
+      "reread": false,
+      "originalEntry": "Mulherzinhas - Laura May Alcott (2020)",
+      "notes": null
+    },
+    {
+      "sequence": 141,
+      "year": 2020,
+      "work": "o-olho-mais-azul-toni-morrison",
+      "reread": false,
+      "originalEntry": "O olho mais azul - Tony Morrison",
+      "notes": null
+    },
+    {
+      "sequence": 142,
+      "year": 2020,
+      "work": "americanah-chimamanda-ngozi-adichie",
+      "reread": false,
+      "originalEntry": "Americanah - Chimamanda Ngozi",
+      "notes": null
+    },
+    {
+      "sequence": 143,
+      "year": 2020,
+      "work": "a-melhor-historia-esta-por-vir-maria-duenas",
+      "reread": false,
+      "originalEntry": "A melhor história estar por vir - Maria Dueñas",
+      "notes": null
+    },
+    {
+      "sequence": 144,
+      "year": 2020,
+      "work": "fique-comigo-ayobami-adebayo",
+      "reread": false,
+      "originalEntry": "Fique comigo - Ayobami Adeyabo",
+      "notes": null
+    },
+    {
+      "sequence": 145,
+      "year": 2020,
+      "work": "anna-karienina-liev-tolstoi",
+      "reread": false,
+      "originalEntry": "Anna Karenina - Liev Tolstoi",
+      "notes": null
+    },
+    {
+      "sequence": 146,
+      "year": 2020,
+      "work": "crocodilo-javier-a-contreras",
+      "reread": false,
+      "originalEntry": "O crocodilo - Javier Contreras",
+      "notes": null
+    },
+    {
+      "sequence": 147,
+      "year": 2020,
+      "work": "redemoinho-em-dia-quente-jarid-arraes",
+      "reread": false,
+      "originalEntry": "Redemoinho em dia quente - Jarid Arraes",
+      "notes": null
+    },
+    {
+      "sequence": 148,
+      "year": 2020,
+      "work": "meu-pequeno-pais-gael-faye",
+      "reread": false,
+      "originalEntry": "Meu pequeno país - Gael Fae",
+      "notes": null
+    },
+    {
+      "sequence": 149,
+      "year": 2020,
+      "work": "os-segredos-que-guardamos-lara-prescott",
+      "reread": false,
+      "originalEntry": "O segredo que guardamos - Lara Prescott",
+      "notes": null
+    },
+    {
+      "sequence": 150,
+      "year": 2020,
+      "work": "comigo-no-cinema-martha-medeiros",
+      "reread": false,
+      "originalEntry": "Comigo no cinema - Martha Medeiros",
+      "notes": null
+    },
+    {
+      "sequence": 151,
+      "year": 2020,
+      "work": "doutor-jivago-boris-pasternak",
+      "reread": false,
+      "originalEntry": "Doutor Jivago - Bóris Pasternak",
+      "notes": null
+    },
+    {
+      "sequence": 152,
+      "year": 2020,
+      "work": "um-amor-incomodo-elena-ferrante",
+      "reread": false,
+      "originalEntry": "Um amor incômodo - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 153,
+      "year": 2020,
+      "work": "o-amor-nos-tempos-do-colera-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "O amor nos tempos do cólera - Gabriel Garcia Marques",
+      "notes": null
+    },
+    {
+      "sequence": 154,
+      "year": 2020,
+      "work": "um-lugar-bem-longe-daqui-delia-owens",
+      "reread": false,
+      "originalEntry": "Um lugar bem longe daqui - Delia Owens",
+      "notes": null
+    },
+    {
+      "sequence": 155,
+      "year": 2020,
+      "work": "a-menina-da-montanha-tara-westover",
+      "reread": false,
+      "originalEntry": "A menina da montanha - Tara Westover",
+      "notes": null
+    },
+    {
+      "sequence": 156,
+      "year": 2020,
+      "work": "orlando-virginia-woolf",
+      "reread": false,
+      "originalEntry": "Orlando - Virgínia Woolf",
+      "notes": null
+    },
+    {
+      "sequence": 157,
+      "year": 2020,
+      "work": "aguapes-jhumpa-lahiri",
+      "reread": false,
+      "originalEntry": "Aguapés - Jhumpa Lahiri",
+      "notes": null
+    },
+    {
+      "sequence": 158,
+      "year": 2020,
+      "work": "memorial-de-maria-moura-rachel-de-queiroz",
+      "reread": false,
+      "originalEntry": "Memorial de Maria Moura - Raquel de Queiróz",
+      "notes": null
+    },
+    {
+      "sequence": 159,
+      "year": 2020,
+      "work": "a-vida-mentirosa-dos-adultos-elena-ferrante",
+      "reread": false,
+      "originalEntry": "A vida mentirosa dos adultos - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 160,
+      "year": 2020,
+      "work": "dias-de-abandono-elena-ferrante",
+      "reread": false,
+      "originalEntry": "Dias de abandono - Elena Ferrante",
+      "notes": null
+    },
+    {
+      "sequence": 161,
+      "year": 2020,
+      "work": "bonsai-alejandro-zambra",
+      "reread": false,
+      "originalEntry": "Bonsai - Alejandro Jambra",
+      "notes": null
+    },
+    {
+      "sequence": 162,
+      "year": 2021,
+      "work": "jane-eyre-charlotte-bronte",
+      "reread": false,
+      "originalEntry": "Jane Eyre - Charlotte Brontê(2021)",
+      "notes": null
+    },
+    {
+      "sequence": 163,
+      "year": 2021,
+      "work": "vasto-mar-de-sargacos-jean-rhys",
+      "reread": false,
+      "originalEntry": "Vasto mar de sargaços - Jean Rhys",
+      "notes": null
+    },
+    {
+      "sequence": 164,
+      "year": 2021,
+      "work": "garota-mulher-outras-bernardine-evaristo",
+      "reread": false,
+      "originalEntry": "Garota, mulher, outras - Bernadete Evaristo",
+      "notes": null
+    },
+    {
+      "sequence": 165,
+      "year": 2021,
+      "work": "torto-arado-itamar-vieira-junior",
+      "reread": false,
+      "originalEntry": "Torto Arado - Itamar Vieira Junior",
+      "notes": null
+    },
+    {
+      "sequence": 166,
+      "year": 2021,
+      "work": "eu-nao-sei-quem-voce-e-penny-hancock",
+      "reread": false,
+      "originalEntry": "Não sei quem você é - Peggy Wankok",
+      "notes": null
+    },
+    {
+      "sequence": 167,
+      "year": 2021,
+      "work": "longo-e-claro-rio-liz-moore",
+      "reread": false,
+      "originalEntry": "Longo e claro rio - Liz Moore",
+      "notes": null
+    },
+    {
+      "sequence": 168,
+      "year": 2021,
+      "work": "o-homem-que-amava-os-cachorros-leonardo-padura",
+      "reread": false,
+      "originalEntry": "O homem que amava os cachorros - Leonardo Padura",
+      "notes": null
+    },
+    {
+      "sequence": 169,
+      "year": 2021,
+      "work": "a-paciente-silenciosa-alex-michaelides",
+      "reread": false,
+      "originalEntry": "A paciente silenciosa - Alex Michaelides",
+      "notes": null
+    },
+    {
+      "sequence": 170,
+      "year": 2021,
+      "work": "contra-mim-valter-hugo-mae",
+      "reread": false,
+      "originalEntry": "Contra mim - Walter Hugo Mãe",
+      "notes": null
+    },
+    {
+      "sequence": 171,
+      "year": 2021,
+      "work": "pachinko-min-jin-lee",
+      "reread": false,
+      "originalEntry": "Pachinko - Mim Jin Lee",
+      "notes": null
+    },
+    {
+      "sequence": 172,
+      "year": 2021,
+      "work": "diario-de-bitita-carolina-maria-de-jesus",
+      "reread": false,
+      "originalEntry": "O diário de Bitita - Carolina Maria de Jesus",
+      "notes": null
+    },
+    {
+      "sequence": 173,
+      "year": 2021,
+      "work": "as-vantagens-de-ser-invisivel-stephen-chbosky",
+      "reread": false,
+      "originalEntry": "As vantagens de ser invisível -Stephen Chbosky",
+      "notes": null
+    },
+    {
+      "sequence": 174,
+      "year": 2021,
+      "work": "os-sete-maridos-de-evelyn-hugo-taylor-jenkins-reid",
+      "reread": false,
+      "originalEntry": "Os sete maridos de Evelyn Hugo - Taylor Jenkins Red",
+      "notes": null
+    },
+    {
+      "sequence": 175,
+      "year": 2021,
+      "work": "a-metade-perdida-brit-bennett",
+      "reread": false,
+      "originalEntry": "A metade perdida - Brit Bennet",
+      "notes": null
+    },
+    {
+      "sequence": 176,
+      "year": 2021,
+      "work": "emburrecimento-programado-o-curriculo-oculto-da-escolarizacao-obrigatoria-john",
+      "reread": false,
+      "originalEntry": "Emburrecimento programado - John Taylor Gatto",
+      "notes": null
+    },
+    {
+      "sequence": 177,
+      "year": 2021,
+      "work": "carta-a-rainha-louca-maria-valeria-rezende",
+      "reread": false,
+      "originalEntry": "Carta a rainha louca - Maria Valéria Rezende",
+      "notes": null
+    },
+    {
+      "sequence": 178,
+      "year": 2021,
+      "work": "vozes-de-tchernobil-svetlana-aleksievitch",
+      "reread": false,
+      "originalEntry": "As vozes de Chernobyl - Svetlana Alexijevich",
+      "notes": null
+    },
+    {
+      "sequence": 179,
+      "year": 2021,
+      "work": "um-de-nos-esta-mentindo-karen-m-mcmanus",
+      "reread": false,
+      "originalEntry": "Um de nós está mentindo - Karen M. McManus",
+      "notes": null
+    },
+    {
+      "sequence": 180,
+      "year": 2021,
+      "work": "tudo-e-rio-carla-madeira",
+      "reread": false,
+      "originalEntry": "Tudo é rio - Carla Madeira",
+      "notes": null
+    },
+    {
+      "sequence": 181,
+      "year": 2021,
+      "work": "sapiens-uma-breve-historia-da-humanidade-yuval-noah-harari",
+      "reread": false,
+      "originalEntry": "Sapiens - Yuval Noah Haran",
+      "notes": null
+    },
+    {
+      "sequence": 182,
+      "year": 2021,
+      "work": "o-romance-da-minha-vida-leonardo-padura",
+      "reread": false,
+      "originalEntry": "O romance da minha vida - Leonardo Padura",
+      "notes": null
+    },
+    {
+      "sequence": 183,
+      "year": 2022,
+      "work": "herdeiras-do-mar-mary-lynn-bracht",
+      "reread": false,
+      "originalEntry": "Herdeiras do mar - Mary Lyn Bratch (2022)",
+      "notes": null
+    },
+    {
+      "sequence": 184,
+      "year": 2022,
+      "work": "fique-comigo-ayobami-adebayo",
+      "reread": true,
+      "originalEntry": "Fique comigo - Adeyabo",
+      "notes": null
+    },
+    {
+      "sequence": 185,
+      "year": 2022,
+      "work": "o-avesso-da-pele-jeferson-tenorio",
+      "reread": false,
+      "originalEntry": "O avesso da pele - Jeferson Tenório",
+      "notes": null
+    },
+    {
+      "sequence": 186,
+      "year": 2022,
+      "work": "rita-lee-uma-autobiografia-rita-lee",
+      "reread": false,
+      "originalEntry": "Rita Lee - uma autobiografia",
+      "notes": null
+    },
+    {
+      "sequence": 187,
+      "year": 2022,
+      "work": "olhos-d-agua-conceicao-evaristo",
+      "reread": false,
+      "originalEntry": "Olhos d'água - Conceição Evaristo",
+      "notes": null
+    },
+    {
+      "sequence": 188,
+      "year": 2022,
+      "work": "o-peso-do-passaro-morto-aline-bei",
+      "reread": false,
+      "originalEntry": "O peso do pássaro morto - Aline Bei",
+      "notes": null
+    },
+    {
+      "sequence": 189,
+      "year": 2022,
+      "work": "se-deus-me-chamar-nao-vou-mariana-salomao-carrara",
+      "reread": false,
+      "originalEntry": "Se Deus me chamar não vou - Mariana Salomão Carrara",
+      "notes": null
+    },
+    {
+      "sequence": 190,
+      "year": 2022,
+      "work": "o-reformatorio-nickel-colson-whitehead",
+      "reread": false,
+      "originalEntry": "O reformatório niquel - Carlson Whitehead",
+      "notes": null
+    },
+    {
+      "sequence": 191,
+      "year": 2022,
+      "work": "a-paixao-segundo-g-h-clarice-lispector",
+      "reread": false,
+      "originalEntry": "A paixão segundo GH - clarice Lispector",
+      "notes": null
+    },
+    {
+      "sequence": 192,
+      "year": 2022,
+      "work": "o-bom-filho-you-jeong-jeong",
+      "reread": false,
+      "originalEntry": "O bom filho - Jeong You",
+      "notes": null
+    },
+    {
+      "sequence": 193,
+      "year": 2022,
+      "work": "a-cidade-ilhada-milton-hatoum",
+      "reread": false,
+      "originalEntry": "A cidade ilhada - Milton hatoum",
+      "notes": null
+    },
+    {
+      "sequence": 194,
+      "year": 2022,
+      "work": "minha-crianca-trans-relato-de-uma-mae-ao-descobrir-que-o-amor-nao-tem-genero",
+      "reread": false,
+      "originalEntry": "Minha criança trans - Tamires Nunes",
+      "notes": null
+    },
+    {
+      "sequence": 195,
+      "year": 2022,
+      "work": "a-pediatra-andrea-del-fuego",
+      "reread": false,
+      "originalEntry": "A pediatra - Andrea Del Fuego",
+      "notes": null
+    },
+    {
+      "sequence": 196,
+      "year": 2022,
+      "work": "vespera-carla-madeira",
+      "reread": false,
+      "originalEntry": "Véspera - Carla Madeira",
+      "notes": null
+    },
+    {
+      "sequence": 197,
+      "year": 2022,
+      "work": "a-vegetariana-han-kang",
+      "reread": false,
+      "originalEntry": "A vegetariana - Hang kang",
+      "notes": null
+    },
+    {
+      "sequence": 198,
+      "year": 2022,
+      "work": "kim-jiyoung-nascida-em-1982-cho-nam-joo",
+      "reread": false,
+      "originalEntry": "Kim Jiyong, nascida em 1982 - Cho Nanjoo",
+      "notes": null
+    },
+    {
+      "sequence": 199,
+      "year": 2022,
+      "work": "nossa-senhora-do-nilo-scholastique-mukasonga",
+      "reread": false,
+      "originalEntry": "Nossa senhora do Nilo - Scholastique Mukasonga",
+      "notes": null
+    },
+    {
+      "sequence": 200,
+      "year": 2022,
+      "work": "um-teto-todo-seu-virginia-woolf",
+      "reread": false,
+      "originalEntry": "Um teto todo seu - Virgínia Woolf",
+      "notes": null
+    },
+    {
+      "sequence": 201,
+      "year": 2022,
+      "work": "kindred-lacos-de-sangue-octavia-e-butler",
+      "reread": false,
+      "originalEntry": "Kindred - Laços de sangue - Octavia Buttler",
+      "notes": null
+    },
+    {
+      "sequence": 202,
+      "year": 2022,
+      "work": "o-acontecimento-annie-ernaux",
+      "reread": false,
+      "originalEntry": "O acontecimento - Annie Earnux",
+      "notes": null
+    },
+    {
+      "sequence": 203,
+      "year": 2022,
+      "work": "a-livraria-magica-de-paris-nina-george",
+      "reread": false,
+      "originalEntry": "Uma livraria mágica em Paris - Nina george",
+      "notes": null
+    },
+    {
+      "sequence": 204,
+      "year": 2022,
+      "work": "a-maquina-de-fazer-espanhois-valter-hugo-mae",
+      "reread": false,
+      "originalEntry": "A máquina de fazer espanhóis - Valter Hugo Mae",
+      "notes": null
+    },
+    {
+      "sequence": 205,
+      "year": 2023,
+      "work": "o-lugar-annie-ernaux",
+      "reread": false,
+      "originalEntry": "O lugar - Annie Ernaux (2023)",
+      "notes": null
+    },
+    {
+      "sequence": 206,
+      "year": 2023,
+      "work": "a-natureza-da-mordida-carla-madeira",
+      "reread": false,
+      "originalEntry": "A natureza da mordida - Carla Madeira",
+      "notes": null
+    },
+    {
+      "sequence": 207,
+      "year": 2023,
+      "work": "sobre-minha-filha-kim-hye-jin",
+      "reread": false,
+      "originalEntry": "Minha filha - Kim Hye-jin",
+      "notes": null
+    },
+    {
+      "sequence": 208,
+      "year": 2023,
+      "work": "despertar-os-leoes-ayelet-gundar-goshen",
+      "reread": false,
+      "originalEntry": "O despertar dos leões - Aylety Gundar Goshen",
+      "notes": null
+    },
+    {
+      "sequence": 209,
+      "year": 2023,
+      "work": "politica-e-para-todos-gabriela-prioli",
+      "reread": false,
+      "originalEntry": "Política é para todos - gabriela Priori",
+      "notes": null
+    },
+    {
+      "sequence": 210,
+      "year": 2023,
+      "work": "a-vida-invisivel-de-euridice-gusmao-martha-batalha",
+      "reread": false,
+      "originalEntry": "A vida invisível de Euridice Gusmão - Martha Batalha",
+      "notes": null
+    },
+    {
+      "sequence": 211,
+      "year": 2023,
+      "work": "terrapreta-rita-carelli",
+      "reread": false,
+      "originalEntry": "Terra preta - Rita Carelli",
+      "notes": null
+    },
+    {
+      "sequence": 212,
+      "year": 2023,
+      "work": "o-parque-das-irmas-magnificas-camila-sosa-villada",
+      "reread": false,
+      "originalEntry": "O parque das irmãs magnifícas - Camila Sosa Villada",
+      "notes": null
+    },
+    {
+      "sequence": 213,
+      "year": 2023,
+      "work": "licoes-ian-mcewan",
+      "reread": false,
+      "originalEntry": "Lições - Ian Macwean",
+      "notes": null
+    },
+    {
+      "sequence": 214,
+      "year": 2023,
+      "work": "tres-irmas-as-mulheres-que-definiram-a-china-moderna-jung-chang",
+      "reread": false,
+      "originalEntry": "As três irmãs - Jung Chang",
+      "notes": null
+    },
+    {
+      "sequence": 215,
+      "year": 2023,
+      "work": "o-alegre-canto-da-perdiz-paulina-chiziane",
+      "reread": false,
+      "originalEntry": "O alegre canto da perdiz - Pauline Chiziane",
+      "notes": null
+    },
+    {
+      "sequence": 216,
+      "year": 2023,
+      "work": "a-cachorra-pilar-quintana",
+      "reread": false,
+      "originalEntry": "A cachorra - Pilar Quintana",
+      "notes": null
+    },
+    {
+      "sequence": 217,
+      "year": 2023,
+      "work": "mulheres-que-mordem-beatriz-leal",
+      "reread": false,
+      "originalEntry": "Mulheres que mordem - Beatriz Leal",
+      "notes": null
+    },
+    {
+      "sequence": 218,
+      "year": 2023,
+      "work": "o-que-o-sol-faz-com-as-flores-rupi-kaur",
+      "reread": false,
+      "originalEntry": "O que o sol faz com as flores - Hupi kaur",
+      "notes": null
+    },
+    {
+      "sequence": 219,
+      "year": 2023,
+      "work": "elefantes-barrem-beatriz-leal-craveiro",
+      "reread": false,
+      "originalEntry": "Elefantes Barrem - Beatriz Leal",
+      "notes": null
+    },
+    {
+      "sequence": 220,
+      "year": 2023,
+      "work": "a-revolucao-dos-bichos-george-orwell",
+      "reread": false,
+      "originalEntry": "A revolução dos bichos - George Orwell",
+      "notes": null
+    },
+    {
+      "sequence": 221,
+      "year": 2023,
+      "work": "agua-fresca-para-as-flores-valerie-perrin",
+      "reread": false,
+      "originalEntry": "Água fresca para as flores - Valerie Perrin",
+      "notes": null
+    },
+    {
+      "sequence": 222,
+      "year": 2023,
+      "work": "salvar-o-fogo-itamar-vieira-junior",
+      "reread": false,
+      "originalEntry": "Salvar o fogo - Itamar Vieria Junior",
+      "notes": null
+    },
+    {
+      "sequence": 223,
+      "year": 2023,
+      "work": "a-parabola-do-semeador-octavia-butler",
+      "reread": false,
+      "originalEntry": "A palavra do semeador - Octavia Buttler",
+      "notes": null
+    },
+    {
+      "sequence": 224,
+      "year": 2023,
+      "work": "a-extincao-das-abelhas-natalia-borges-polesso",
+      "reread": false,
+      "originalEntry": "A extinção das abelhas - Natália Borges Polesso",
+      "notes": null
+    },
+    {
+      "sequence": 225,
+      "year": 2023,
+      "work": "cidada-de-segunda-classe-buchi-emecheta",
+      "reread": false,
+      "originalEntry": "Cidadã de segunda classe - Buchi Emecheta",
+      "notes": null
+    },
+    {
+      "sequence": 226,
+      "year": 2023,
+      "work": "e-a-ales-jon-fosse",
+      "reread": false,
+      "originalEntry": "É a Ales - Joan Fosse",
+      "notes": null
+    },
+    {
+      "sequence": 227,
+      "year": 2024,
+      "work": "tudo-sobre-o-amor-bell-hooks",
+      "reread": false,
+      "originalEntry": "Tudo sobre o amor - Bell Hooks (2024)",
+      "notes": null
+    },
+    {
+      "sequence": 228,
+      "year": 2024,
+      "work": "amada-toni-morrison",
+      "reread": false,
+      "originalEntry": "Amada - Tony Morrison",
+      "notes": null
+    },
+    {
+      "sequence": 229,
+      "year": 2024,
+      "work": "becos-da-memoria-conceicao-evaristo",
+      "reread": false,
+      "originalEntry": "Becos da memória - Conceição Evaristo",
+      "notes": null
+    },
+    {
+      "sequence": 230,
+      "year": 2024,
+      "work": "como-escrever-bem-william-zinsser",
+      "reread": false,
+      "originalEntry": "Como escrever bem - William Sasser",
+      "notes": null
+    },
+    {
+      "sequence": 231,
+      "year": 2024,
+      "work": "aprender-a-viver-filosofia-para-os-novos-tempos-luc-ferry",
+      "reread": false,
+      "originalEntry": "Aprender a viver - Luc Ferry",
+      "notes": null
+    },
+    {
+      "sequence": 232,
+      "year": 2024,
+      "work": "processos-de-revisao-textual-eugenio-vinci-de-moraes",
+      "reread": false,
+      "originalEntry": "Revisão textual - Eugênio Vinci de Moraes",
+      "notes": null
+    },
+    {
+      "sequence": 233,
+      "year": 2024,
+      "work": "mrs-dalloway-virginia-woolf",
+      "reread": false,
+      "originalEntry": "Mrs. Dalloway - Virgínia Woolf",
+      "notes": null
+    },
+    {
+      "sequence": 234,
+      "year": 2024,
+      "work": "bem-vindos-a-livraria-hyunam-dong-hwang-bo-reum",
+      "reread": false,
+      "originalEntry": "Bem vindos à livraria Hyunam-dong - Hwang Bo-reum",
+      "notes": null
+    },
+    {
+      "sequence": 235,
+      "year": 2024,
+      "work": "o-mundo-de-sofia-jostein-gaarder",
+      "reread": false,
+      "originalEntry": "O mundo de Sofia - Jostein Gaarder",
+      "notes": null
+    },
+    {
+      "sequence": 236,
+      "year": 2024,
+      "work": "ilusoes-perdidas-honore-de-balzac",
+      "reread": false,
+      "originalEntry": "Ilusões perdidas - Honoré de Balzac",
+      "notes": null
+    },
+    {
+      "sequence": 237,
+      "year": 2024,
+      "work": "maternidade-sheila-heti",
+      "reread": false,
+      "originalEntry": "Maternidade - Sheila Heti",
+      "notes": null
+    },
+    {
+      "sequence": 238,
+      "year": 2024,
+      "work": "o-sol-tambem-se-levanta-ernest-hemingway",
+      "reread": false,
+      "originalEntry": "The sun also rises - Ernest Hemingway",
+      "notes": null
+    },
+    {
+      "sequence": 239,
+      "year": 2024,
+      "work": "nada-carmen-laforet",
+      "reread": false,
+      "originalEntry": "Nada - Carmem Laforeti",
+      "notes": null
+    },
+    {
+      "sequence": 240,
+      "year": 2024,
+      "work": "elza-zeca-camargo",
+      "reread": false,
+      "originalEntry": "Elza - Zeca Camargo",
+      "notes": null
+    },
+    {
+      "sequence": 241,
+      "year": 2024,
+      "work": "como-se-fosse-um-monstro-fabiane-guimaraes",
+      "reread": false,
+      "originalEntry": "Como se fosse um monstro - Fabiane Guimarães",
+      "notes": null
+    },
+    {
+      "sequence": 242,
+      "year": 2024,
+      "work": "memorias-postumas-de-bras-cubas-machado-de-assis",
+      "reread": false,
+      "originalEntry": "Memórias póstumas de Brás Cubas - Machado de Assis",
+      "notes": null
+    },
+    {
+      "sequence": 243,
+      "year": 2024,
+      "work": "manifesto-antimaternalista-vera-iaconelli",
+      "reread": false,
+      "originalEntry": "Manifesto antimaternalista - Vera Iaconelli",
+      "notes": null
+    },
+    {
+      "sequence": 244,
+      "year": 2024,
+      "work": "acolhendo-sua-crianca-interior-stefanie-stahl",
+      "reread": false,
+      "originalEntry": "Acolhendo sua criança interior - Stefanie Stahl",
+      "notes": null
+    },
+    {
+      "sequence": 245,
+      "year": 2024,
+      "work": "a-biblioteca-dos-sonhos-secretos-michiko-aoyama",
+      "reread": false,
+      "originalEntry": "A biblioteca dos sonhos secretos - Michiko Ayoama",
+      "notes": null
+    },
+    {
+      "sequence": 246,
+      "year": 2024,
+      "work": "em-agosto-nos-vemos-gabriel-garcia-marquez",
+      "reread": false,
+      "originalEntry": "Em agosto nos vemos - Gabriel Garcia Marques",
+      "notes": null
+    },
+    {
+      "sequence": 247,
+      "year": 2024,
+      "work": "violeta-isabel-allende",
+      "reread": false,
+      "originalEntry": "Violeta _ Isabel Allende",
+      "notes": null
+    },
+    {
+      "sequence": 248,
+      "year": 2024,
+      "work": "tese-sobre-uma-domesticacao-camila-sosa-villada",
+      "reread": false,
+      "originalEntry": "tese sobre uma domesticação - Camila Sosa Villada",
+      "notes": null
+    },
+    {
+      "sequence": 249,
+      "year": 2024,
+      "work": "o-crime-do-cais-do-valongo-eliana-alves-cruz",
+      "reread": false,
+      "originalEntry": "O crime do cais do valongo - Eliane Alves Cruz",
+      "notes": null
+    },
+    {
+      "sequence": 250,
+      "year": 2024,
+      "work": "palestina-joe-sacco",
+      "reread": false,
+      "originalEntry": "Palestina - Joe Sacco",
+      "notes": null
+    },
+    {
+      "sequence": 251,
+      "year": 2024,
+      "work": "tsugumi-banana-yoshimoto",
+      "reread": false,
+      "originalEntry": "Tsugumi - Banana Yoshimoto",
+      "notes": null
+    },
+    {
+      "sequence": 252,
+      "year": 2024,
+      "work": "angustia-graciliano-ramos",
+      "reread": false,
+      "originalEntry": "Angústia - graciliano Ramos",
+      "notes": null
+    },
+    {
+      "sequence": 253,
+      "year": 2024,
+      "work": "lutas-e-metamorfoses-de-uma-mulher-edouard-louis",
+      "reread": false,
+      "originalEntry": "Lutas e metamorfoses de uma mulher - Edouard Louis",
+      "notes": null
+    },
+    {
+      "sequence": 254,
+      "year": 2024,
+      "work": "salvar-o-fogo-itamar-vieira-junior",
+      "reread": true,
+      "originalEntry": "Salvar o fogo - Itamar Vieira Junior",
+      "notes": null
+    },
+    {
+      "sequence": 255,
+      "year": 2024,
+      "work": "doramar-ou-a-odisseia-itamar-vieira-junior",
+      "reread": false,
+      "originalEntry": "Doramar e Odisseia _ Itamar Vieria Junior",
+      "notes": null
+    },
+    {
+      "sequence": 256,
+      "year": 2024,
+      "work": "apague-a-luz-se-for-chorar-fabiane-guimaraes",
+      "reread": false,
+      "originalEntry": "Apague a luz se for chorar - Fabiane Guimarães",
+      "notes": null
+    },
+    {
+      "sequence": 257,
+      "year": 2025,
+      "work": "monique-se-liberta-edouard-louis",
+      "reread": false,
+      "originalEntry": "Monique se liberta - Edouard Louis (2025)",
+      "notes": null
+    },
+    {
+      "sequence": 258,
+      "year": 2025,
+      "work": "sr-loverman-bernardine-evaristo",
+      "reread": false,
+      "originalEntry": "Sr, Loverman - Bernadine Evaristo",
+      "notes": null
+    },
+    {
+      "sequence": 259,
+      "year": 2025,
+      "work": "tres-valerie-perrin",
+      "reread": false,
+      "originalEntry": "Três - Valerie Perrine",
+      "notes": null
+    },
+    {
+      "sequence": 260,
+      "year": 2025,
+      "work": "o-caderno-proibido-alba-de-cespedes",
+      "reread": false,
+      "originalEntry": "O caderno proibido - Alba de Céspedes",
+      "notes": null
+    },
+    {
+      "sequence": 261,
+      "year": 2025,
+      "work": "o-cerebro-e-a-menopausa-lisa-mosconi",
+      "reread": false,
+      "originalEntry": "O cérebro e a menopausa - Lisa mosconi",
+      "notes": null
+    },
+    {
+      "sequence": 262,
+      "year": 2025,
+      "work": "o-senhor-das-moscas-william-golding",
+      "reread": false,
+      "originalEntry": "O senhor das moscas - William Golding",
+      "notes": null
+    },
+    {
+      "sequence": 263,
+      "year": 2025,
+      "work": "essencial-franz-kafka-franz-kafka",
+      "reread": false,
+      "originalEntry": "Franz Kafka essencial - Contos - kafka",
+      "notes": null
+    },
+    {
+      "sequence": 264,
+      "year": 2025,
+      "work": "cancao-para-ninar-menino-grande-conceicao-evaristo",
+      "reread": false,
+      "originalEntry": "Canção para ninar menino grande - Conceição Evaristo",
+      "notes": null
+    },
+    {
+      "sequence": 265,
+      "year": 2025,
+      "work": "quem-tem-medo-do-genero-judith-butler",
+      "reread": false,
+      "originalEntry": "Quem tem medo do gênero - Judith Buttler",
+      "notes": null
+    },
+    {
+      "sequence": 266,
+      "year": 2025,
+      "work": "surpreendente-mauricio-gomyde",
+      "reread": false,
+      "originalEntry": "Surpreendente - Maurício gomide",
+      "notes": null
+    },
+    {
+      "sequence": 267,
+      "year": 2025,
+      "work": "capitaes-da-areia-jorge-amado",
+      "reread": false,
+      "originalEntry": "Capitães de areia - Jorge Amado",
+      "notes": null
+    },
+    {
+      "sequence": 268,
+      "year": 2025,
+      "work": "oracao-para-desaparecer-socorro-acioli",
+      "reread": false,
+      "originalEntry": "Oração para desaparecer - Socorro Acioli",
+      "notes": null
+    },
+    {
+      "sequence": 269,
+      "year": 2025,
+      "work": "o-idiota-fiodor-dostoievski",
+      "reread": false,
+      "originalEntry": "O idiota - Dostoieviski",
+      "notes": null
+    },
+    {
+      "sequence": 270,
+      "year": 2025,
+      "work": "a-biblioteca-da-meia-noite-matt-haig",
+      "reread": false,
+      "originalEntry": "A biblioteca da meia-noite - Matt Haig",
+      "notes": null
+    },
+    {
+      "sequence": 271,
+      "year": 2025,
+      "work": "a-vegetariana-han-kang",
+      "reread": true,
+      "originalEntry": "A vegetarian - Han Kang",
+      "notes": null
+    },
+    {
+      "sequence": 272,
+      "year": 2025,
+      "work": "a-louca-da-casa-rosa-montero",
+      "reread": false,
+      "originalEntry": "A louca da casa - Rosa Monteiro",
+      "notes": null
+    },
+    {
+      "sequence": 273,
+      "year": 2025,
+      "work": "as-flores-do-bem-sidarta-ribeiro",
+      "reread": false,
+      "originalEntry": "Flores do bem - Sidarta Ribeiro",
+      "notes": null
+    },
+    {
+      "sequence": 274,
+      "year": 2025,
+      "work": "triste-tigre-neige-sinno",
+      "reread": false,
+      "originalEntry": "Tigre triste - Niege Sino",
+      "notes": null
+    },
+    {
+      "sequence": 275,
+      "year": 2025,
+      "work": "enterre-seus-mortos-ana-paula-maia",
+      "reread": false,
+      "originalEntry": "Enterrem seus mortos - Ana Paula Maia",
+      "notes": null
+    },
+    {
+      "sequence": 276,
+      "year": 2025,
+      "work": "a-boa-sorte-rosa-montero",
+      "reread": false,
+      "originalEntry": "A boa sorte - Rosa Montero",
+      "notes": null
+    },
+    {
+      "sequence": 277,
+      "year": 2025,
+      "work": "a-insubmissa-cristina-peri-rossi",
+      "reread": false,
+      "originalEntry": "A insubmissa - Cristina Peri Rossi",
+      "notes": null
+    },
+    {
+      "sequence": 278,
+      "year": 2025,
+      "work": "tomara-que-voce-seja-deportado-uma-viagem-pela-distopia-americana-jamil-chade",
+      "reread": false,
+      "originalEntry": "Espero que você seja deportado - Jamil Chade",
+      "notes": null
+    },
+    {
+      "sequence": 279,
+      "year": 2025,
+      "work": "mudar-metodo-edouard-louis",
+      "reread": false,
+      "originalEntry": "Método - Edouard LOuis",
+      "notes": null
+    },
+    {
+      "sequence": 280,
+      "year": 2025,
+      "work": "a-farsa-da-boa-preguica-ariano-suassuna",
+      "reread": false,
+      "originalEntry": "A farsa da boa preguiça - Ariano Suassuna",
+      "notes": null
+    },
+    {
+      "sequence": 281,
+      "year": 2025,
+      "work": "de-quatro-miranda-july",
+      "reread": false,
+      "originalEntry": "De quatro - Miranda July",
+      "notes": null
+    },
+    {
+      "sequence": 282,
+      "year": 2025,
+      "work": "saude-mental-genero-e-dispositivos-cultura-e-processos-de-subjetivacao-valeska",
+      "reread": false,
+      "originalEntry": "Saúde mental, gênero e dispositivos - Waleska Zanello",
+      "notes": null
+    },
+    {
+      "sequence": 283,
+      "year": 2025,
+      "work": "dom-casmurro-em-quadrinhos-machado-de-assis",
+      "reread": false,
+      "originalEntry": "Dom Casmurro quadrinhos - Machado de Assis",
+      "notes": null
+    },
+    {
+      "sequence": 284,
+      "year": 2026,
+      "work": "batida-so-giovana-madalosso",
+      "reread": false,
+      "originalEntry": "Batida só - Giovana madalosso (2026)",
+      "notes": null
+    },
+    {
+      "sequence": 285,
+      "year": 2026,
+      "work": "o-perigo-de-estar-lucida-rosa-montero",
+      "reread": false,
+      "originalEntry": "O perigo de estar lúcida - Rosa Montero",
+      "notes": null
+    },
+    {
+      "sequence": 286,
+      "year": 2026,
+      "work": "uma-duas-eliane-brum",
+      "reread": false,
+      "originalEntry": "Uma duas - Eliane Brum",
+      "notes": null
+    },
+    {
+      "sequence": 287,
+      "year": 2026,
+      "work": "meu-ano-de-descanso-e-relaxamento-ottessa-moshfegh",
+      "reread": false,
+      "originalEntry": "Meu ano de descanso e relaxamento - Othessa Moshfegh",
+      "notes": null
+    },
+    {
+      "sequence": 288,
+      "year": 2026,
+      "work": "na-voz-dela-alba-de-cespedes",
+      "reread": false,
+      "originalEntry": "Na voz dela - Alba de Céspedes",
+      "notes": null
+    },
+    {
+      "sequence": 289,
+      "year": 2026,
+      "work": "persepolis-marjane-satrapi",
+      "reread": false,
+      "originalEntry": "Persépolis - Marjane Satrapi",
+      "notes": null
+    },
+    {
+      "sequence": 290,
+      "year": 2026,
+      "work": "baviera-tropical-betina-anton",
+      "reread": false,
+      "originalEntry": "Baviera tropical - Betina Anton",
+      "notes": null
+    },
+    {
+      "sequence": 291,
+      "year": 2026,
+      "work": "bem-comportadas-elise-loehnen",
+      "reread": false,
+      "originalEntry": "Bem-comportadas - Elise Lehnen",
+      "notes": null
+    },
+    {
+      "sequence": 292,
+      "year": 2026,
+      "work": "humanos-exemplares-juliana-leite",
+      "reread": false,
+      "originalEntry": "Humanos exemplares - Juliana Leite",
+      "notes": null
+    },
+    {
+      "sequence": 293,
+      "year": 2026,
+      "work": "a-mulher-desiludida-simone-de-beauvoir",
+      "reread": false,
+      "originalEntry": "A mulher desiludida - Simone de beauvoir",
+      "notes": null
+    },
+    {
+      "sequence": 294,
+      "year": 2026,
+      "work": "uma-delicada-colecao-de-ausencias-aline-bei",
+      "reread": false,
+      "originalEntry": "Uma delicada coleção de ausências - Aline Bei",
+      "notes": null
+    },
+    {
+      "sequence": 295,
+      "year": 2026,
+      "work": "frankenstein-mary-shelley",
+      "reread": false,
+      "originalEntry": "Frankenstein - Mary Shelley",
+      "notes": null
+    },
+    {
+      "sequence": 296,
+      "year": 2026,
+      "work": "sobre-a-terra-somos-belos-por-um-instante-ocean-vuong",
+      "reread": false,
+      "originalEntry": "Sobre a terra somos belos por um instante - Ocean Vuing",
+      "notes": null
+    },
+    {
+      "sequence": 297,
+      "year": 2026,
+      "work": "o-invencivel-verao-de-liliana-cristina-rivera-garza",
+      "reread": false,
+      "originalEntry": "O invencível verão de Liliana - Cristina Rivera Garza",
+      "notes": null
+    },
+    {
+      "sequence": 298,
+      "year": 2026,
+      "work": "a-vida-pela-frente-romain-gary",
+      "reread": false,
+      "originalEntry": "A vida pela frente - Émile Ajar (Romain Gary)",
+      "notes": null
+    },
+    {
+      "sequence": 299,
+      "year": 2026,
+      "work": "o-perigo-de-estar-lucida-rosa-montero",
+      "reread": true,
+      "originalEntry": "O perigo de estar lúcida - Rosa Montero 2° leitura",
+      "notes": null
+    },
+    {
+      "sequence": 300,
+      "year": 2026,
+      "work": "kitchen-banana-yoshimoto",
+      "reread": false,
+      "originalEntry": "Kitchen - Banana Yoshimoto",
+      "notes": null
+    },
+    {
+      "sequence": 301,
+      "year": 2026,
+      "work": "o-genero-eterno-renato-fino",
+      "reread": false,
+      "originalEntry": "Gênero eterno - Renato Fino",
+      "notes": null
+    },
+    {
+      "sequence": 302,
+      "year": 2026,
+      "work": "nunca-minta-freida-mcfadden",
+      "reread": false,
+      "originalEntry": "Nunca minta - Freida Mcfadden",
+      "notes": null
+    },
+    {
+      "sequence": 303,
+      "year": 2026,
+      "work": "aguas-de-telhado-carolina-schettini",
+      "reread": false,
+      "originalEntry": "Águas de telhado - Carolina Schettini",
+      "notes": null
+    },
+    {
+      "sequence": 304,
+      "year": 2026,
+      "work": "o-colibri-sandro-veronesi",
+      "reread": false,
+      "originalEntry": "O colibri - Sandro Veronesi",
+      "notes": null
+    },
+    {
+      "sequence": 305,
+      "year": 2026,
+      "work": "o-grande-mentecapto-fernando-sabino",
+      "reread": false,
+      "originalEntry": "O grande mentecapto - Fernando Sabino",
+      "notes": null
+    },
+    {
+      "sequence": 306,
+      "year": 2026,
+      "work": "a-cachorra-pilar-quintana",
+      "reread": true,
+      "originalEntry": "A cachorra - Pilar Quintana",
+      "notes": null
+    },
+    {
+      "sequence": 307,
+      "year": 2026,
+      "work": "jacaranda-gael-faye",
+      "reread": false,
+      "originalEntry": "Jacarandá - Gaël Faye",
+      "notes": null
+    },
+    {
+      "sequence": 308,
+      "year": 2026,
+      "work": "mau-habito-alana-s-portero",
+      "reread": false,
+      "originalEntry": "Mau hábito - Alana Portero",
+      "notes": null
+    },
+    {
+      "sequence": 309,
+      "year": 2026,
+      "work": "a-mais-recondita-memoria-dos-homens-mohamed-mbougar-sarr",
+      "reread": false,
+      "originalEntry": "A mais recôndita memória dos homens - Mohamed Mbougar Sarr",
+      "notes": null
+    }
+  ]
+}

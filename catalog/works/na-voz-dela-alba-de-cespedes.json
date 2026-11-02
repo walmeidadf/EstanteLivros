@@ -1,0 +1,51 @@
+{
+  "slug": "na-voz-dela-alba-de-cespedes",
+  "title": "Na voz dela",
+  "originalTitle": "Dalla parte di lei",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alba-de-cespedes"
+  ],
+  "language": "italiano",
+  "firstPublished": 1949,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "condição feminina",
+    "casamento",
+    "silenciamento",
+    "Itália do século XX"
+  ],
+  "edition": {
+    "title": "Na voz dela",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2025,
+    "isbn13": "9788535939934",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535939934/na-voz-dela.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Candidatos locais eram registros genéricos (\"na\", metadados corrompidos); busca web confirmou a edição brasileira de 2025 pela Companhia das Letras, tradução do romance italiano \"Dalla parte di lei\" (1949).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535939934/na-voz-dela",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-dfb8fb43cf12",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal não tinham relação com a obra (títulos \"na\" com autores diversos); descartados.",
+    "validatedAt": "2026-08-13"
+  }
+}

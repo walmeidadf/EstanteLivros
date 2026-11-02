@@ -1,0 +1,73 @@
+{
+  "slug": "de-amor-e-trevas-amos-oz",
+  "title": "De Amor e Trevas",
+  "originalTitle": "סיפור על אהבה וחושך",
+  "originalTitleRomanized": null,
+  "authors": [
+    "amos-oz"
+  ],
+  "language": "hebraico",
+  "firstPublished": 2002,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "narrativa histórica"
+  ],
+  "themes": [
+    "família",
+    "Jerusalém",
+    "identidade judaica",
+    "história de Israel"
+  ],
+  "edition": {
+    "title": "De Amor e Trevas",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535906479",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título e autor corrigidos ('De amor e de trevas'/'Amoz oz' -> 'De Amor e Trevas'/'Amos Oz'); memórias 'A Tale of Love and Darkness' (2002), publicadas no Brasil como 'De Amor e Trevas' pela Companhia das Letras (2008, trad. Milton Lando).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckv8x7d0t25768788b2g3cvk2b",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535906479/de-amor-e-trevas",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/A_Tale_of_Love_and_Darkness",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fqcj3r335672f9izqkr6b5rn",
+      "url": null,
+      "fields": "obra"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL9158746M",
+      "url": null,
+      "fields": "edição"
+    }
+  ],
+  "legacyId": "work-cbac3831b92e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal também retorna 'Uma História de Amor e Trevas' (edição portuguesa, Leya); mantida a edição brasileira 'De Amor e Trevas', mais compatível com o título da entrada original e confirmada por Open Library (publisher Companhia das Letras).",
+    "validatedAt": "2026-08-13"
+  }
+}

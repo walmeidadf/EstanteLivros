@@ -1,0 +1,71 @@
+{
+  "slug": "mrs-dalloway-virginia-woolf",
+  "title": "Mrs. Dalloway",
+  "originalTitle": "Mrs. Dalloway",
+  "originalTitleRomanized": null,
+  "authors": [
+    "virginia-woolf"
+  ],
+  "language": "inglês",
+  "firstPublished": 1925,
+  "type": "romance",
+  "genres": [
+    "modernismo",
+    "ficção literária",
+    "fluxo de consciência"
+  ],
+  "themes": [
+    "tempo",
+    "memória",
+    "sociedade londrina",
+    "saúde mental"
+  ],
+  "edition": {
+    "title": "Mrs. Dalloway",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2017,
+    "isbn13": "9788582850572",
+    "isbn10": "8582850573",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clqhm08d18606690hi5a15cdc22.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre múltiplos candidatos com score máximo; edição brasileira Companhia das Letras (2017, trad. Claudio Alves Marcondes) confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqhm08d18606690hi5a15cdc22",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL39349W",
+      "url": "https://openlibrary.org/works/OL39349W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788582850572/mrs-dalloway",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clqhm08d18606720hi5lpc6ayhc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-780dc9acf1a1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

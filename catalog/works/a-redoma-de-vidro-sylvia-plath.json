@@ -1,0 +1,57 @@
+{
+  "slug": "a-redoma-de-vidro-sylvia-plath",
+  "title": "A Redoma de Vidro",
+  "originalTitle": "The Bell Jar",
+  "originalTitleRomanized": null,
+  "authors": [
+    "sylvia-plath"
+  ],
+  "language": "inglês",
+  "firstPublished": 1963,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "semi-autobiográfico"
+  ],
+  "themes": [
+    "saúde mental",
+    "depressão",
+    "feminismo"
+  ],
+  "edition": {
+    "title": "A Redoma de Vidro",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2019,
+    "isbn13": "9788525068644",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=DyiNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente a título, autora e editora (Globo Livros/Biblioteca Azul), com score máximo. Publicado originalmente sob pseudônimo Victoria Lucas em 1963.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyor4j2437323g8gcnswcyp7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznazty110425170sb5c80p1f71",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0eff8fb82dcc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

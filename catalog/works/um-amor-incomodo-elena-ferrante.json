@@ -1,0 +1,58 @@
+{
+  "slug": "um-amor-incomodo-elena-ferrante",
+  "title": "Um amor incômodo",
+  "originalTitle": "L'amore molesto",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 1992,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama psicológico"
+  ],
+  "themes": [
+    "maternidade",
+    "memória",
+    "identidade feminina",
+    "luto"
+  ],
+  "edition": {
+    "title": "Um amor incômodo",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2017,
+    "isbn13": "9788551001387",
+    "isbn10": "8551001388",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/ckt4ly0id1162801l77at3cph85o.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso claro (score 1.0) entre título e autor; primeiro romance de Elena Ferrante, publicado no Brasil pela Intrínseca (2017).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt4ly0id1162801l77at3cph85o",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzobw0a4658520tbvmmouvy93",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9f561b032152",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

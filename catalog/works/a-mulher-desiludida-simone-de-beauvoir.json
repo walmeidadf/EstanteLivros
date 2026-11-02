@@ -1,0 +1,67 @@
+{
+  "slug": "a-mulher-desiludida-simone-de-beauvoir",
+  "title": "A Mulher Desiludida",
+  "originalTitle": "La femme rompue",
+  "originalTitleRomanized": null,
+  "authors": [
+    "simone-de-beauvoir"
+  ],
+  "language": "francês",
+  "firstPublished": 1967,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "existencialismo"
+  ],
+  "themes": [
+    "velhice",
+    "casamento",
+    "solidão",
+    "feminismo"
+  ],
+  "edition": {
+    "title": "A Mulher Desiludida",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": 2010,
+    "isbn13": "9788520922637",
+    "isbn10": "8520922635",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Coletânea de três novelas de Simone de Beauvoir ('La femme rompue', 1967); candidato Literal com score máximo (título/autor exatos) confirmado. ISBN e editora da edição brasileira (Nova Fronteira) complementados via busca web, pois o candidato local não trazia esses dados.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx615q332307831493u9oz3fgy",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/a-mulher-desiludida/artigo/b8b27188-5f96-48b0-9364-a2e092d776fe",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.novafronteira.com.br/a-mulher-desiludida",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzrodgdh4413000tbvf0eke0lg",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-46ab03f273a2",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "tocaia-grande-jorge-amado",
+  "title": "Tocaia Grande",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jorge-amado"
+  ],
+  "language": "português",
+  "firstPublished": 1984,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "regionalismo"
+  ],
+  "themes": [
+    "cacau",
+    "violência",
+    "formação de povoados",
+    "Bahia"
+  ],
+  "edition": {
+    "title": "Tocaia Grande",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535911848",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Candidatos Literal eram todos irrelevantes (romances distintos com \"tocada\"/\"tocaría\"); Open Library confirmou o autor (Jorge Leal Amado de Faria = Jorge Amado) e busca web trouxe a edição brasileira atual (Companhia das Letras, 2008, isbn 9788535911848).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1248264W",
+      "url": "https://openlibrary.org/works/OL1248264W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535911848/tocaia-grande",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-e99e9d1d76fa",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal não retornou candidato correto; ISBN da edição corrente veio de busca web complementar à Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

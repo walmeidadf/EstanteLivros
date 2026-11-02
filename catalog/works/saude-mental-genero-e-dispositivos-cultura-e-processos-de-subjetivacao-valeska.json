@@ -1,0 +1,55 @@
+{
+  "slug": "saude-mental-genero-e-dispositivos-cultura-e-processos-de-subjetivacao-valeska",
+  "title": "Saúde Mental, Gênero e Dispositivos: Cultura e Processos de Subjetivação",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "valeska-zanello"
+  ],
+  "language": "português",
+  "firstPublished": 2018,
+  "type": "não-ficção",
+  "genres": [
+    "psicologia",
+    "estudos de gênero"
+  ],
+  "themes": [
+    "saúde mental",
+    "gênero",
+    "subjetivação",
+    "feminismo"
+  ],
+  "edition": {
+    "title": "Saúde Mental, Gênero e Dispositivos: Cultura e Processos de Subjetivação",
+    "language": "português",
+    "publisher": "Appris",
+    "year": 2018,
+    "isbn13": "9788547310288",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia à obra. Busca web confirmou o livro 'Saúde Mental, Gênero e Dispositivos: Cultura e Processos de Subjetivação', de Valeska Zanello (nome provisório grafado incorretamente como 'Waleska'), publicado pela Appris em 2018.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://editoraappris.com.br/produto/saude-mental-genero-e-dispositivos-cultura-e-processos-de-subjetivacao/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://crp04.org.br/saude-mental-genero-e-dispositivos-cultura-e-processos-de-subjetivacao/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-13ebae1494ad",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

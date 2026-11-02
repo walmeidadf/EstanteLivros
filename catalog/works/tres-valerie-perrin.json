@@ -1,0 +1,60 @@
+{
+  "slug": "tres-valerie-perrin",
+  "title": "Três",
+  "originalTitle": "Trois",
+  "originalTitleRomanized": null,
+  "authors": [
+    "valerie-perrin"
+  ],
+  "language": "francês",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama"
+  ],
+  "themes": [
+    "amizade",
+    "segredos",
+    "passado"
+  ],
+  "edition": {
+    "title": "Três",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2023,
+    "isbn13": "9786555606645",
+    "isbn10": "6555606649",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autora corrigida de 'Valerie Perrine' (atriz) para 'Valérie Perrin' (escritora francesa). O único candidato Literal disponível é a edição portuguesa (Portugal); substituí os dados de edição pela edição brasileira da Intrínseca (2023), confirmada por busca web, mantendo o work_id do Literal por se tratar da mesma obra.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clhxx1ai714921320ienyhvcge4o",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Tr%C3%AAs-Val%C3%A9rie-Perrin/dp/6555606649",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clhxx1ai714921330iendmbdjn3s",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-1239b1e7a96c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal trazia apenas a edição de Portugal (idioma 'pt', editora não informada); complementei com a edição brasileira via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

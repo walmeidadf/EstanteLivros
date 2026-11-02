@@ -1,0 +1,66 @@
+{
+  "slug": "a-praca-do-diamante-merce-rodoreda",
+  "title": "A praça do diamante",
+  "originalTitle": "La Plaça del Diamant",
+  "originalTitleRomanized": null,
+  "authors": [
+    "merce-rodoreda"
+  ],
+  "language": "catalão",
+  "firstPublished": 1962,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "Guerra Civil Espanhola",
+    "cotidiano",
+    "memória",
+    "Barcelona"
+  ],
+  "edition": {
+    "title": "A Praça do Diamante",
+    "language": "português",
+    "publisher": "Planeta do Brasil",
+    "year": 2017,
+    "isbn13": null,
+    "isbn10": "8542211871",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome da autora com acento corrigido (Mercè, não Mercê). Candidato Literal com score 1.0 confirma título/autor; edição brasileira de referência (Planeta do Brasil/TAG, 2017, trad. Luis Reyes Gil) localizada por busca web, já que o candidato local não trazia ISBN/editora.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckx0mnqsu4979041ghdtmzca5iy",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Diamante-Rodoreda-Gabriel-M%C3%A1rquez-Apresenta%C3%A7%C3%A3o/dp/8542211871",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://issuu.com/taglivros/docs/12.dez.2017.a_pra__a_do_diamante",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzqyfdbq9748820tbv0r6sizdt",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-274d2762d192",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

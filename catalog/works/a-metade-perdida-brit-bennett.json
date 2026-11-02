@@ -1,0 +1,59 @@
+{
+  "slug": "a-metade-perdida-brit-bennett",
+  "title": "A Metade Perdida",
+  "originalTitle": "The Vanishing Half",
+  "originalTitleRomanized": null,
+  "authors": [
+    "brit-bennett"
+  ],
+  "language": "inglês",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama familiar"
+  ],
+  "themes": [
+    "raça",
+    "identidade",
+    "família",
+    "gêmeas",
+    "passing racial"
+  ],
+  "edition": {
+    "title": "A Metade Perdida",
+    "language": "português",
+    "publisher": "Editora Intrínseca",
+    "year": 2021,
+    "isbn13": "9786555601558",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cl24ubruj15715000if0iqz076ag.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 0.997 corresponde exatamente; sobrenome da autora corrigido ('Bennet' -> 'Bennett'). Romance 'The Vanishing Half' (2020), edição brasileira Intrínseca (2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl24ubruj15715000if0iqz076ag",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fyq4qk453420htizh853bx66",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-d8b7a08e66fe",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

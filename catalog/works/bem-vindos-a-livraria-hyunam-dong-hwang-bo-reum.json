@@ -1,0 +1,58 @@
+{
+  "slug": "bem-vindos-a-livraria-hyunam-dong-hwang-bo-reum",
+  "title": "Bem-vindos à Livraria Hyunam-dong",
+  "originalTitle": "Welcome to the Hyunam-dong Bookshop",
+  "originalTitleRomanized": null,
+  "authors": [
+    "hwang-bo-reum"
+  ],
+  "language": "coreano",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "ficção reconfortante",
+    "slice of life"
+  ],
+  "themes": [
+    "livrarias",
+    "comunidade",
+    "autoconhecimento",
+    "segunda chance"
+  ],
+  "edition": {
+    "title": "Bem-vindos à Livraria Hyunam-dong",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2023,
+    "isbn13": "9786555606362",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=zxTNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com pontuação máxima corresponde exatamente à obra; romance coreano de Hwang Bo-reum, edição brasileira Intrínseca (2023).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqazcr3q14290010hi5g4p6kwzc",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clo8ghz883493090hs9h86dkpij",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7962a3aa28bb",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

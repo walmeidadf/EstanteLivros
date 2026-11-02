@@ -1,0 +1,49 @@
+{
+  "slug": "como-escrever-bem-william-zinsser",
+  "title": "Como escrever bem",
+  "originalTitle": "On Writing Well",
+  "originalTitleRomanized": null,
+  "authors": [
+    "william-zinsser"
+  ],
+  "language": "inglês",
+  "firstPublished": 1976,
+  "type": "não-ficção",
+  "genres": [
+    "escrita",
+    "jornalismo",
+    "guia de referência"
+  ],
+  "themes": [
+    "escrita não-ficcional",
+    "jornalismo",
+    "estilo"
+  ],
+  "edition": {
+    "title": "Como escrever bem: O clássico manual americano de escrita jornalística e de não ficção",
+    "language": "português",
+    "publisher": "Fósforo",
+    "year": 2021,
+    "isbn13": "9786589733515",
+    "isbn10": "6589733511",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum dos 5 candidatos Literal correspondia à obra. Identificado via busca web como 'On Writing Well' de William Zinsser (nome provisório 'William Sasser' estava incorreto), clássico manual de escrita, edição brasileira pela Fósforo (2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.fosforoeditora.com.br/produto/como-escrever-bem-o-classico-manual-americano-de-escrita-jornalistica-e-de-nao-ficcao-70330",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-19e5fd511319",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

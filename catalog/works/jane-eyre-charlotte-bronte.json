@@ -1,0 +1,49 @@
+{
+  "slug": "jane-eyre-charlotte-bronte",
+  "title": "Jane Eyre",
+  "originalTitle": "Jane Eyre",
+  "originalTitleRomanized": null,
+  "authors": [
+    "charlotte-bronte"
+  ],
+  "language": "inglês",
+  "firstPublished": 1847,
+  "type": "romance",
+  "genres": [
+    "romance gótico",
+    "ficção literária clássica"
+  ],
+  "themes": [
+    "amor",
+    "independência",
+    "classe social",
+    "moralidade"
+  ],
+  "edition": {
+    "title": "Jane Eyre",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": 2021,
+    "isbn13": "9786556400532",
+    "isbn10": "655640053X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico canônico com consenso entre Literal e Open Library (múltiplas edições em inglês/outras línguas); nenhum candidato local trazia edição brasileira, então foi selecionada edição representativa em português via busca web (Nova Fronteira, 2021).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.novafronteira.com.br/jane-eyre-box-as-irmas-bronte",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-b07dd5078ece",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal/Open Library fornecidos estavam em inglês, espanhol, alemão ou turco; edição brasileira representativa localizada via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

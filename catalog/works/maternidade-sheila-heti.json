@@ -1,0 +1,64 @@
+{
+  "slug": "maternidade-sheila-heti",
+  "title": "Maternidade",
+  "originalTitle": "Motherhood",
+  "originalTitleRomanized": null,
+  "authors": [
+    "sheila-heti"
+  ],
+  "language": "inglês",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "autoficção",
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "decisão de não ter filhos",
+    "arte e criação",
+    "tempo e memória"
+  ],
+  "edition": {
+    "title": "Maternidade",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2019,
+    "isbn13": "9788554513344",
+    "isbn10": "8554513347",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=IsWHDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0) para 'Maternidade' de Sheila Heti; edição brasileira da Companhia das Letras (2019) é a única tradução conhecida e serve como edição representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4qd3413057960igai3minuzd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL34816959W",
+      "url": "https://openlibrary.org/works/OL34816959W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clmf21i3z1567550hhy3c4ltegp",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9eb528dd65ee",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library retorna o work da edição em espanhol ('Maternidad'), mas título/autor coincidem com a obra; usado apenas como referência de work id.",
+    "validatedAt": "2026-08-13"
+  }
+}

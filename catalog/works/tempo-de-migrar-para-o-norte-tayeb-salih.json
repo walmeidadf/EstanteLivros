@@ -1,0 +1,49 @@
+{
+  "slug": "tempo-de-migrar-para-o-norte-tayeb-salih",
+  "title": "Tempo de migrar para o norte",
+  "originalTitle": "موسم الهجرة إلى الشمال",
+  "originalTitleRomanized": null,
+  "authors": [
+    "tayeb-salih"
+  ],
+  "language": "árabe",
+  "firstPublished": 1966,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura pós-colonial"
+  ],
+  "themes": [
+    "colonialismo",
+    "identidade",
+    "Sudão",
+    "choque cultural"
+  ],
+  "edition": {
+    "title": "Tempo de Migrar para o Norte",
+    "language": "português",
+    "publisher": "Planeta do Brasil",
+    "year": 2004,
+    "isbn13": "9788589885119",
+    "isbn10": "8589885119",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidato adequado (os 5 candidatos Literal eram obras não relacionadas). Identificado via busca web como clássico sudanês de Tayeb Salih (1966, conhecido em inglês como 'Season of Migration to the North'), traduzido no Brasil pela Planeta em 2004 (trad. Safa Abou-Chahla Jubran).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-231d7d9e4a00",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

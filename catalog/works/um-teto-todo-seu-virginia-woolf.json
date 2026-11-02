@@ -1,0 +1,64 @@
+{
+  "slug": "um-teto-todo-seu-virginia-woolf",
+  "title": "Um Teto Todo Seu",
+  "originalTitle": "A Room of One's Own",
+  "originalTitleRomanized": null,
+  "authors": [
+    "virginia-woolf"
+  ],
+  "language": "inglês",
+  "firstPublished": 1929,
+  "type": "ensaio",
+  "genres": [
+    "ensaio feminista",
+    "crítica literária"
+  ],
+  "themes": [
+    "feminismo",
+    "autonomia",
+    "escrita",
+    "gênero"
+  ],
+  "edition": {
+    "title": "Um Teto Todo Seu",
+    "language": "português",
+    "publisher": "Tordesilhas",
+    "year": 2014,
+    "isbn13": "9788564406872",
+    "isbn10": "856440687X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cksxl59on4347378gvf3auaq7.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; edição brasileira Tordesilhas (2014) do clássico ensaio feminista de Virginia Woolf.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxl59on4347378gvf3auaq7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL36113979W",
+      "url": "https://openlibrary.org/works/OL36113979W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzobzjrx710720tbvrszbix2r",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7bdaac2ad664",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

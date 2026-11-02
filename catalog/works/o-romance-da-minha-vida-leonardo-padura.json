@@ -1,0 +1,58 @@
+{
+  "slug": "o-romance-da-minha-vida-leonardo-padura",
+  "title": "O romance da minha vida",
+  "originalTitle": "La novela de mi vida",
+  "originalTitleRomanized": null,
+  "authors": [
+    "leonardo-padura"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2002,
+  "type": "romance",
+  "genres": [
+    "romance histórico",
+    "ficção literária"
+  ],
+  "themes": [
+    "exílio",
+    "Cuba",
+    "identidade",
+    "literatura"
+  ],
+  "edition": {
+    "title": "O romance da minha vida",
+    "language": "português",
+    "publisher": "Boitempo",
+    "year": 2019,
+    "isbn13": "9788575597248",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://boitempoeditorial.fbitsstatic.net/img/p/o-romance-da-minha-vida-152788/338439.jpg?w=290&h=420&v=no-value",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato local correspondia à obra; busca web confirmou tratar-se de 'La novela de mi vida' (2002) de Leonardo Padura, publicado no Brasil pela Boitempo (2019, trad. Monica Stahel).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.boitempoeditorial.com.br/produto/o-romance-da-minha-vida-152788",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.jornaldocomercio.com/_conteudo/cultura/2019/12/718412-exilio-e-o-tema-de-o-romance-da-minha-vida--do-cubano-leonardo-padura.html",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-342849444914",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Regra automática marcou como 'unresolved' por falta de candidatos Literal/Open Library relevantes; resolvido via busca web direta no site da editora.",
+    "validatedAt": "2026-08-13"
+  }
+}

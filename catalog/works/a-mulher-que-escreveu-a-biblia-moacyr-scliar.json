@@ -1,0 +1,63 @@
+{
+  "slug": "a-mulher-que-escreveu-a-biblia-moacyr-scliar",
+  "title": "A mulher que escreveu a Bíblia",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "moacyr-scliar"
+  ],
+  "language": "português",
+  "firstPublished": 1999,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção histórica"
+  ],
+  "themes": [
+    "religião",
+    "autoria bíblica",
+    "condição feminina"
+  ],
+  "edition": {
+    "title": "A mulher que escreveu a Bíblia",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 1999,
+    "isbn13": "9788571649378",
+    "isbn10": "8571649375",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/3715763-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam plenamente sobre título, autor e ano; edição Companhia das Letras confirmada.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky81v20d14071480ik6tkk4v7qw",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL455823W",
+      "url": "https://openlibrary.org/works/OL455823W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i9ryyr6502220ohl4al3h91b",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-58dc04de3ebf",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "sargento-getulio-joao-ubaldo-ribeiro",
+  "title": "Sargento Getúlio",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "joao-ubaldo-ribeiro"
+  ],
+  "language": "português",
+  "firstPublished": 1971,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance regionalista"
+  ],
+  "themes": [
+    "sertão",
+    "violência",
+    "poder",
+    "nordeste",
+    "moral"
+  ],
+  "edition": {
+    "title": "Sargento Getúlio",
+    "language": "português",
+    "publisher": "Editora Nova Fronteira",
+    "year": 1982,
+    "isbn13": "9788520904206",
+    "isbn10": "8520904203",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor confirmado (João Ubaldo Ribeiro); consenso entre Literal e Open Library; escolhida edição de 1982 pela Nova Fronteira como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrrrdspc24721517984gj5dwbe",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL19930101W",
+      "url": "https://openlibrary.org/works/OL19930101W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwqlp6yz15636111eb26vs83res",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8b9cf17f8a0e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library lista três 'obras' distintas para o mesmo livro com anos 1971, 1975 e 2007 (provável duplicação de work_id na fonte); ano de primeira publicação definido como 1971 (edição original, Civilização Brasileira) por conhecimento bibliográfico.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "mau-habito-alana-s-portero",
+  "title": "Mau hábito",
+  "originalTitle": "La mala costumbre",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alana-s-portero"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2023,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura LGBTQIA+"
+  ],
+  "themes": [
+    "identidade trans",
+    "adolescência",
+    "Madri operária"
+  ],
+  "edition": {
+    "title": "Mau hábito",
+    "language": "português",
+    "publisher": "Amarcord",
+    "year": 2024,
+    "isbn13": "9786585854092",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia (todos irrelevantes). Identificada via busca web como o romance de estreia de Alana S. Portero, 'La mala costumbre', publicado no Brasil pela Amarcord (2024), coerente com ano de leitura (2026).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/mau-habito",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Mau-h%C3%A1bito-Alana-Portero/dp/6585854098",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-62905a90decf",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/OL não continham a obra; identificação feita inteiramente via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

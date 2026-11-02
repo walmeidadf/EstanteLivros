@@ -1,0 +1,65 @@
+{
+  "slug": "o-filho-eterno-cristovao-tezza",
+  "title": "O filho eterno",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "cristovao-tezza"
+  ],
+  "language": "português",
+  "firstPublished": 2007,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "autoficção"
+  ],
+  "themes": [
+    "paternidade",
+    "deficiência",
+    "síndrome de Down",
+    "aceitação",
+    "luto de expectativas"
+  ],
+  "edition": {
+    "title": "O filho eterno",
+    "language": "português",
+    "publisher": "Editora Record",
+    "year": 2007,
+    "isbn13": null,
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=n-R1AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Título corrigido de 'Filho eterno' para o título correto 'O filho eterno'; romance autobiográfico de Cristóvão Tezza, Editora Record (2007), consenso entre Literal e Open Library.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckybxqc0m15387900ihol2n7auht",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL2305990W",
+      "url": "https://openlibrary.org/works/OL2305990W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clc6t5cbb6074420hd0rv6zu9wc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-aa0dc980c06a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

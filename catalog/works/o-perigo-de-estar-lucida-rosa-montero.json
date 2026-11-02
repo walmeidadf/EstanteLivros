@@ -1,0 +1,64 @@
+{
+  "slug": "o-perigo-de-estar-lucida-rosa-montero",
+  "title": "O perigo de estar lúcida",
+  "originalTitle": "El peligro de estar cuerda",
+  "originalTitleRomanized": null,
+  "authors": [
+    "rosa-montero"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2022,
+  "type": "ensaio",
+  "genres": [
+    "ensaio",
+    "não-ficção literária"
+  ],
+  "themes": [
+    "criatividade",
+    "loucura",
+    "escrita",
+    "saúde mental"
+  ],
+  "edition": {
+    "title": "O perigo de estar lúcida",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2023,
+    "isbn13": "9786556925516",
+    "isbn10": "6556925519",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=NLnaEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo (1.0) corresponde exatamente; ensaio de Rosa Montero sobre criatividade e loucura, edição brasileira Todavia (2023); as duas leituras registradas (2026, incluindo releitura) permanecem como uma única obra.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cmpuamdgp12086460dmqyhnv6x3e",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "NLnaEAAAQBAJ",
+      "url": "https://books.google.com/books?id=NLnaEAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cmpuamdgq12086540dmqk4tzhg8x",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-224c907f3494",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "depois-daquela-viagem-valeria-piassa-polizzi",
+  "title": "Depois Daquela Viagem",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "valeria-piassa-polizzi"
+  ],
+  "language": "português",
+  "firstPublished": 1997,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "não-ficção"
+  ],
+  "themes": [
+    "HIV/Aids",
+    "adolescência",
+    "superação",
+    "prevenção"
+  ],
+  "edition": {
+    "title": "Depois Daquela Viagem",
+    "language": "português",
+    "publisher": "Ática",
+    "year": 2003,
+    "isbn13": "9788508087426",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckrwnlpsz138035117988is8nc02.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora completado ('Valéria Polizzi' -> 'Valéria Piassa Polizzi'). Autobiografia pioneira sobre viver com HIV/Aids no Brasil, publicada pela Ática em 1997; usei a edição Literal (2003, ISBN 9788508087426) como representativa por ser a de maior score.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrwnlpsz138035117988is8nc02",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL12883039W",
+      "url": "https://openlibrary.org/works/OL12883039W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Val%C3%A9ria_Polizzi",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://becoliterario.com/depois-daquela-viagem-2016/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp0a3ze11758090tbvqehkshjc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-090b96998275",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato OpenLibrary refere-se a uma edição portuguesa (Publicações Dom Quixote); mantive a edição brasileira do Literal como representativa.",
+    "validatedAt": "2026-08-13"
+  }
+}

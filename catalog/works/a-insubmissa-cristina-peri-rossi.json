@@ -1,0 +1,55 @@
+{
+  "slug": "a-insubmissa-cristina-peri-rossi",
+  "title": "A Insubmissa",
+  "originalTitle": "La insumisa",
+  "originalTitleRomanized": null,
+  "authors": [
+    "cristina-peri-rossi"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2020,
+  "type": "romance",
+  "genres": [
+    "romance de formação",
+    "autoficção"
+  ],
+  "themes": [
+    "infância",
+    "identidade",
+    "homossexualidade",
+    "família"
+  ],
+  "edition": {
+    "title": "A Insubmissa",
+    "language": "português",
+    "publisher": "Bazar do Tempo",
+    "year": 2025,
+    "isbn13": "9786585984546",
+    "isbn10": "6585984544",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato fornecido correspondia (todos eram falsos positivos do título truncado 'A'); busca web confirmou 'La insumisa' (2020) de Cristina Peri Rossi, publicada no Brasil como 'A Insubmissa' pela Bazar do Tempo (2025, trad. Anita Rivera Guerra).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.bazardotempo.com.br/products/a-insubmissa",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://escotilha.com.br/literatura/livro-a-insubmissa-cristina-peri-rossi-bazar-do-tempo-resenha-critica/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-c157ce0da334",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

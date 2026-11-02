@@ -1,0 +1,64 @@
+{
+  "slug": "a-melhor-historia-esta-por-vir-maria-duenas",
+  "title": "A melhor história está por vir",
+  "originalTitle": "Misión Olvido",
+  "originalTitleRomanized": null,
+  "authors": [
+    "maria-duenas"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2012,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama"
+  ],
+  "themes": [
+    "memória",
+    "recomeço",
+    "arquivos históricos",
+    "segunda guerra mundial"
+  ],
+  "edition": {
+    "title": "A melhor história está por vir",
+    "language": "português",
+    "publisher": "Planeta",
+    "year": 2012,
+    "isbn13": "9788576659761",
+    "isbn10": "857665976X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=G9i5DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Título provisório era o título real 'A melhor história está por vir' (romance de María Dueñas, título original 'Misión Olvido', 2012); nenhum candidato local (Literal/OpenLibrary/Google Books) correspondia à obra, identificada via busca web (Editora Planeta).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "google_books",
+      "id": "G9i5DwAAQBAJ",
+      "url": "https://books.google.com/books?id=G9i5DwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.planetadelivros.com.br/livro-a-melhor-historia-esta-por-vir/167280",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estantevirtual.com.br/livro/a-melhor-historia-esta-por-vir-0LC-8204-000-BK",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-8051a449cc83",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos locais fornecidos não continham a obra correta; dados de edição obtidos via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

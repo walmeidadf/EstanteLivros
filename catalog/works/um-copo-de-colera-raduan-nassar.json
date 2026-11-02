@@ -1,0 +1,51 @@
+{
+  "slug": "um-copo-de-colera-raduan-nassar",
+  "title": "Um Copo de Cólera",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "raduan-nassar"
+  ],
+  "language": "português",
+  "firstPublished": 1978,
+  "type": "novela",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "relacionamento amoroso",
+    "violência",
+    "poder",
+    "linguagem"
+  ],
+  "edition": {
+    "title": "Um Copo de Cólera",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535923506",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12369841-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título e autor corrigidos quanto à capitalização (\"UM copo de cólera\"/\"Raduan nassar\"). Preferida a edição brasileira Companhia das Letras (2013) sobre o candidato Literal de edição portuguesa (isbn 9789896653675).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26415108W",
+      "url": "https://openlibrary.org/works/OL26415108W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-e2ffdeb59c17",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal trazia edição portuguesa (prefixo ISBN 978-989, Companhia das Letras Portugal); optou-se pela edição brasileira via Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "tres-contos-gustave-flaubert",
+  "title": "Três contos",
+  "originalTitle": "Trois contes",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gustave-flaubert"
+  ],
+  "language": "francês",
+  "firstPublished": 1877,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "conto clássico"
+  ],
+  "themes": [
+    "fé",
+    "sacrifício",
+    "moralidade"
+  ],
+  "edition": {
+    "title": "Três Contos",
+    "language": "português",
+    "publisher": "LeBooks Editora",
+    "year": 2020,
+    "isbn13": "9786586079784",
+    "isbn10": "6586079780",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=1Jf9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consensus candidate; coletânea clássica de Flaubert (1877, inclui 'Um coração simples', 'A lenda de São Julião Hospitaleiro' e 'Herodíade'); edição brasileira LeBooks (2020) escolhida como representativa entre os candidatos Literal.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsl820p90823415vt7i01vd7q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "1Jf9DwAAQBAJ",
+      "url": "https://books.google.com/books?id=1Jf9DwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fnhu13562859f9izyt67ubag",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-21daa6c5480f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library apontava uma edição galega (Editorial Galaxia); preferiu-se a edição em português do Brasil (LeBooks) do Literal.",
+    "validatedAt": "2026-08-13"
+  }
+}

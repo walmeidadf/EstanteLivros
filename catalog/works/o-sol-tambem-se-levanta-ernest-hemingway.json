@@ -1,0 +1,55 @@
+{
+  "slug": "o-sol-tambem-se-levanta-ernest-hemingway",
+  "title": "O sol também se levanta",
+  "originalTitle": "The Sun Also Rises",
+  "originalTitleRomanized": null,
+  "authors": [
+    "ernest-hemingway"
+  ],
+  "language": "inglês",
+  "firstPublished": 1926,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "geração perdida"
+  ],
+  "themes": [
+    "expatriados",
+    "pós-Primeira Guerra",
+    "Paris",
+    "Espanha"
+  ],
+  "edition": {
+    "title": "O sol também se levanta",
+    "language": "português",
+    "publisher": "Record",
+    "year": null,
+    "isbn13": null,
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Leitor registrou o título em inglês; a tradução brasileira consagrada é 'O sol também se levanta' (Editora Record), também publicada historicamente como 'Fiesta'. ISBN e ano de edição específicos não puderam ser confirmados.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL62979W",
+      "url": "https://openlibrary.org/works/OL62979W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://record.com.br/produto/o-sol-tambem-se-levanta/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-63f0b355ec76",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal/OL eram edições em inglês; edição brasileira identificada via busca web sem ISBN confirmado.",
+    "validatedAt": "2026-08-13"
+  }
+}

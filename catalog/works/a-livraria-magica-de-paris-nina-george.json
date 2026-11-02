@@ -1,0 +1,53 @@
+{
+  "slug": "a-livraria-magica-de-paris-nina-george",
+  "title": "A Livraria Mágica de Paris",
+  "originalTitle": "Das Lavendelzimmer",
+  "originalTitleRomanized": null,
+  "authors": [
+    "nina-george"
+  ],
+  "language": "alemão",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance"
+  ],
+  "themes": [
+    "luto",
+    "amor",
+    "livros",
+    "viagem",
+    "cura"
+  ],
+  "edition": {
+    "title": "A Livraria Mágica de Paris",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2016,
+    "isbn13": "9788501107619",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://www.record.com.br/cdn/shop/files/7f84e47a2797c4b07863e39db9109c05_1000x.jpg",
+    "source": "busca_web"
+  },
+  "catalogerNote": "Nenhum candidato local correspondia (romances de amor genéricos sem relação); identificado por busca web como \"A Livraria Mágica de Paris\" de Nina George (best-seller internacional \"The Little Paris Bookshop\"), publicado pela Record em 2016.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/products/a-livraria-magica-de-paris/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-eb2f96c43839",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal eram todos obras distintas (\"Uma farsa de amor na Espanha\", \"Uma Breve História do Tempo\", etc.); nenhum aceito.",
+    "validatedAt": "2026-08-13"
+  }
+}

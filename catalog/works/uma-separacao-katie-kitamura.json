@@ -1,0 +1,67 @@
+{
+  "slug": "uma-separacao-katie-kitamura",
+  "title": "Uma Separação",
+  "originalTitle": "A Separation",
+  "originalTitleRomanized": null,
+  "authors": [
+    "katie-kitamura"
+  ],
+  "language": "inglês",
+  "firstPublished": 2017,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "suspense psicológico"
+  ],
+  "themes": [
+    "casamento",
+    "luto",
+    "identidade",
+    "Grécia"
+  ],
+  "edition": {
+    "title": "Uma Separação",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2021,
+    "isbn13": "9786559213375",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local trazia edição em português (todos em inglês); busca web confirmou 'Uma Separação', publicada pela Companhia das Letras (2021, trad. Sonia Moreira), primeiro romance de Kitamura publicado no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckwqq2lb83142501eb2e34loulj",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL20046530W",
+      "url": "https://openlibrary.org/works/OL20046530W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9786559213375/uma-separacao",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://rascunho.com.br/noticias/katie-kitamura-tem-romance-publicado-no-brasil-pela-primeira-vez/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-c6c6f4178241",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal e Open Library só traziam edições em inglês; edição brasileira confirmada via busca web (companhiadasletras.com.br).",
+    "validatedAt": "2026-08-13"
+  }
+}

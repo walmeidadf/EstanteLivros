@@ -1,0 +1,62 @@
+{
+  "slug": "a-filha-perdida-elena-ferrante",
+  "title": "A filha perdida",
+  "originalTitle": "La figlia oscura",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 2006,
+  "type": "novela",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "identidade feminina",
+    "conflitos familiares"
+  ],
+  "edition": {
+    "title": "A filha perdida",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2016,
+    "isbn13": "9788551000335",
+    "isbn10": "8551000330",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/ckt1ym58z14365415u77bc6jwa4.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam plenamente; edição Intrínseca é a tradução brasileira consagrada de 'La figlia oscura'.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckt1ym58z14365415u77bc6jwa4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL31360298W",
+      "url": "https://openlibrary.org/works/OL31360298W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznpahd2372340sb50kqmjcks",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-54bf4fb00122",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

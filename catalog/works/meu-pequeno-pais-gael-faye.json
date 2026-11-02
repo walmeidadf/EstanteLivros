@@ -1,0 +1,67 @@
+{
+  "slug": "meu-pequeno-pais-gael-faye",
+  "title": "Meu Pequeno País",
+  "originalTitle": "Petit pays",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gael-faye"
+  ],
+  "language": "francês",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "infância",
+    "guerra civil",
+    "Burundi",
+    "exílio"
+  ],
+  "edition": {
+    "title": "Meu Pequeno País",
+    "language": "português",
+    "publisher": "Rádio Londres",
+    "year": 2019,
+    "isbn13": "9788567861272",
+    "isbn10": "8567861276",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nome do autor corrigido para 'Gaël Faye' (provisório trazia 'Gael Fae'); romance autobiográfico sobre a infância no Burundi/Ruanda. Título provisório já correspondia à edição brasileira da Rádio Londres (2019); candidato Literal local só trazia dados da edição francesa, complementados via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl23umzxg13500790if0xe02ojo4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://pt.wikipedia.org/wiki/Meu_Pequeno_Pa%C3%ADs",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/meu-pequeno-pais-1-ed-2019/artigo/85947fed-9569-477d-bae9-11d5c6057c4a",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl23umzxg13500800if0vhmn56a4",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-5259aa9395bc",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Literal não trazia ISBN/editora da edição brasileira (apenas título/autor da edição em francês); completado via busca web (Rádio Londres, 2019).",
+    "validatedAt": "2026-08-13"
+  }
+}

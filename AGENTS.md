@@ -46,7 +46,22 @@ legacy/             legado local, FORA do git (CSVs validados, caches, scripts a
 | [`design/DESIGN_HANDOFF.md`](design/DESIGN_HANDOFF.md) | Tokens, componentes, telas, rotas e estados (base das specs visuais) |
 | [`design/DESIGN_BRIEF.md`](design/DESIGN_BRIEF.md) | Briefing de design e números do catálogo |
 
+## Comandos
+Python 3.9+, só biblioteca padrão.
+
+```bash
+python3 pipeline/migrate_legacy.py --dry-run   # resumo, sem gravar
+python3 pipeline/migrate_legacy.py             # legacy/exports/*.csv → catalog/
+python3 pipeline/validate_catalog.py           # valida e gera docs/plans/cobertura.md
+python3 -m unittest discover -s pipeline/tests # testes
+```
+
+O validador sai com código 1 se houver qualquer erro. Rode-o depois de toda
+alteração no `catalog/`.
+
 ## Estado atual
-- F0 (fundação) concluída e publicada em `main`. Próximo: F1, schema do catálogo e migração
-  de `legacy/exports/*.csv` para `catalog/`.
+- F0 e F1 concluídas: `catalog/` tem 302 obras, 215 autorias e 309 leituras,
+  validados. Cobertura em `docs/plans/cobertura.md`.
+- Próximo: F2 (enriquecimento: autorias, capas, temas) e S1 do app, em paralelo.
+- Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Remoto: `git@github.com:walmeidadf/EstanteLivros.git`.

@@ -1,0 +1,65 @@
+{
+  "slug": "amada-toni-morrison",
+  "title": "Amada",
+  "originalTitle": "Beloved",
+  "originalTitleRomanized": null,
+  "authors": [
+    "toni-morrison"
+  ],
+  "language": "inglês",
+  "firstPublished": 1987,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "realismo mágico"
+  ],
+  "themes": [
+    "escravidão",
+    "memória",
+    "trauma",
+    "maternidade",
+    "racismo"
+  ],
+  "edition": {
+    "title": "Amada",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2018,
+    "isbn13": "9788535910698",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckw5dahj049605013g6euqzow2t.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido de 'Tony Morrison' para 'Toni Morrison'; romance 'Beloved' (1987), edição brasileira 'Amada' pela Companhia das Letras (trad. José Rubens Siqueira).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckw5dahj049605013g6euqzow2t",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26415036W",
+      "url": "https://openlibrary.org/works/OL26415036W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ftk6am1089477htizwfou8chk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-f71e54d6c6ea",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal e Open Library divergem no ano de impressão desta edição sob o mesmo ISBN (2018 vs. 2007); mantido 2018 conforme o registro mais recente do Literal.",
+    "validatedAt": "2026-08-13"
+  }
+}

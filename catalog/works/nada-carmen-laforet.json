@@ -1,0 +1,64 @@
+{
+  "slug": "nada-carmen-laforet",
+  "title": "Nada",
+  "originalTitle": "Nada",
+  "originalTitleRomanized": null,
+  "authors": [
+    "carmen-laforet"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1945,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "pós-guerra espanhola",
+    "família",
+    "juventude",
+    "Barcelona"
+  ],
+  "edition": {
+    "title": "Nada",
+    "language": "português",
+    "publisher": "Cavalo de Ferro",
+    "year": 2008,
+    "isbn13": "9789728791902",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/cl6wbjel4542860ii2cos1lr9a.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Romance de estreia de Carmen Laforet (1945, Prêmio Nadal); nome da autora corrigido (constava 'Carmem Laforeti'). Candidato Literal com maior score corresponde à edição portuguesa (Cavalo de Ferro, 2008), única edição em português localizada nas fontes.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl6wbjel4542860ii2cos1lr9a",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.wook.pt/livro/nada-carmen-laforet/171741",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Nada_(novel)",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-c8085384cb77",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhuma edição brasileira foi localizada nos candidatos ou na busca; usada edição portuguesa como representativa.",
+    "validatedAt": "2026-08-13"
+  }
+}

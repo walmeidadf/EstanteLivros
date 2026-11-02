@@ -1,0 +1,63 @@
+{
+  "slug": "as-mentiras-que-os-homens-contam-luis-fernando-verissimo",
+  "title": "As mentiras que os homens contam",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "luis-fernando-verissimo"
+  ],
+  "language": "português",
+  "firstPublished": 2000,
+  "type": "romance",
+  "genres": [
+    "humor",
+    "ficção literária"
+  ],
+  "themes": [
+    "relações amorosas",
+    "mentira",
+    "masculinidade"
+  ],
+  "edition": {
+    "title": "As mentiras que os homens contam",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 2000,
+    "isbn13": "9788573023381",
+    "isbn10": "8573023384",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/4921054-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consensus candidate; nome do autor corrigido para 'Luís Fernando Veríssimo'; Literal e Open Library convergem na edição original Objetiva, 2000.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl3h3khz013320840hir9p4rfqoi",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1003967W",
+      "url": "https://openlibrary.org/works/OL1003967W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl3h3khz013320850hir71lgkjd1",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-1e73cfdb1339",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

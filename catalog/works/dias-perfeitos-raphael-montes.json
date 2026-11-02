@@ -1,0 +1,63 @@
+{
+  "slug": "dias-perfeitos-raphael-montes",
+  "title": "Dias Perfeitos",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "raphael-montes"
+  ],
+  "language": "português",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "suspense",
+    "thriller psicológico"
+  ],
+  "themes": [
+    "obsessão",
+    "crime",
+    "relacionamento abusivo"
+  ],
+  "edition": {
+    "title": "Dias Perfeitos",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535924015",
+    "isbn10": "8535924019",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksz9f60q2752498q7oucez5z99.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance policial brasileiro de Raphael Montes, primeira edição Companhia das Letras 2014.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksz9f60q2752498q7oucez5z99",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL19363160W",
+      "url": "https://openlibrary.org/works/OL19363160W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckwr96gbb3424201eb2mkmxe0ps",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-42b7c1d69b59",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "o-mestre-e-margarida-mikhail-bulgakov",
+  "title": "O Mestre e Margarida",
+  "originalTitle": "Мастер и Маргарита",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mikhail-bulgakov"
+  ],
+  "language": "russo",
+  "firstPublished": 1967,
+  "type": "romance",
+  "genres": [
+    "realismo mágico",
+    "sátira",
+    "ficção literária"
+  ],
+  "themes": [
+    "bem e mal",
+    "censura",
+    "amor",
+    "União Soviética"
+  ],
+  "edition": {
+    "title": "O Mestre e Margarida",
+    "language": "português",
+    "publisher": "Editora 34",
+    "year": 2017,
+    "isbn13": "9788573266801",
+    "isbn10": "8573266805",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cky7rcg6d8853580ik6j8lcj9q4.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Mickael Bugakov' para Mikhail Bulgákov; usada a edição da Editora 34 (tradução direta do russo), com consenso entre Literal e Open Library.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky7rcg6d8853580ik6j8lcj9q4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL27701896W",
+      "url": "https://openlibrary.org/works/OL27701896W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fofp5w1544552f9izy5zh46tm",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-37c51f255cc8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Havia edição concorrente da Alfaguara (2011) sem autoria preenchida no Literal; preferida a edição com metadados completos e consenso com Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

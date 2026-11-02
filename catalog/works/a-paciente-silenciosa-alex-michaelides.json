@@ -1,0 +1,64 @@
+{
+  "slug": "a-paciente-silenciosa-alex-michaelides",
+  "title": "A Paciente Silenciosa",
+  "originalTitle": "The Silent Patient",
+  "originalTitleRomanized": null,
+  "authors": [
+    "alex-michaelides"
+  ],
+  "language": "inglês",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "suspense psicológico",
+    "thriller"
+  ],
+  "themes": [
+    "silêncio",
+    "trauma",
+    "psicoterapia",
+    "crime"
+  ],
+  "edition": {
+    "title": "A Paciente Silenciosa",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2019,
+    "isbn13": "9788501116437",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckuvq5pfv898531j7abh742u40.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde; thriller psicológico de best-seller de Alex Michaelides (2019), edição brasileira Globo Livros (2019).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuvq5pfv898531j7abh742u40",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL19096402W",
+      "url": "https://openlibrary.org/works/OL19096402W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzn6ri1g8587210sb5s5hzdpsq",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-de4096fe5132",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "codigos-de-familia-zelia-gattai",
+  "title": "Códigos de família",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "zelia-gattai"
+  ],
+  "language": "português",
+  "firstPublished": 2001,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "amizade",
+    "Bahia"
+  ],
+  "edition": {
+    "title": "Códigos de família",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2010,
+    "isbn13": "9788580861525",
+    "isbn10": "8580861527",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=26aVN2ILxYYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library confirmando título, autora e obra; usada edição da Companhia das Letras (2010), com capa e ISBN disponíveis.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clrahb0s42379290htsisbz1zvt",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1004780W",
+      "url": "https://openlibrary.org/works/OL1004780W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clrahb0s42379320hts0p1m4ef6",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-35c8b2a550c4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Divergência de editora/ano entre candidatos Literal (Companhia das Letras, 2010) e Open Library (Record, 1ª edição de 2001); mantida a edição com capa disponível.",
+    "validatedAt": "2026-08-13"
+  }
+}

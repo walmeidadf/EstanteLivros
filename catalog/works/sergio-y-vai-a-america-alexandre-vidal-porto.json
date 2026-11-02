@@ -1,0 +1,69 @@
+{
+  "slug": "sergio-y-vai-a-america-alexandre-vidal-porto",
+  "title": "Sergio Y. vai à América",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "alexandre-vidal-porto"
+  ],
+  "language": "português",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "sexualidade",
+    "psicanálise",
+    "identidade",
+    "imigração"
+  ],
+  "edition": {
+    "title": "Sergio Y. vai à América",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535924213",
+    "isbn10": "8535924213",
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535924213/sergio-y-vai-a-america.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Título 'Sérgio vai à América' corresponde quase exatamente a 'Sergio Y. vai à América', de Alexandre Vidal Porto (Companhia das Letras, 2014); único candidato do Literal com essa grafia (score de título 0.95). O nome do autor na lista original ('Alessandro d Lobato') não corresponde a nenhum autor real localizado, tratado como erro de transcrição.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl23umph113478610if0vj1ap4zo",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535924213/sergio-y-vai-a-america",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.goodreads.com/book/show/17969553-s-rgio-y-vai-am-rica",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl23umph213478640if0w0fn9ge6",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-304a86e41dc9",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Divergência entre o autor extraído da lista original ('Alessandro d Lobato') e o autor real da obra identificada ('Alexandre Vidal Porto'); mantive o autor correto por não haver nenhuma obra real com o título e autor conforme extraído.",
+    "validatedAt": "2026-08-13"
+  }
+}

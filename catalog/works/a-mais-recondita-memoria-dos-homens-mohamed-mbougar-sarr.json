@@ -1,0 +1,76 @@
+{
+  "slug": "a-mais-recondita-memoria-dos-homens-mohamed-mbougar-sarr",
+  "title": "A mais recôndita memória dos homens",
+  "originalTitle": "La plus secrète mémoire des hommes",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mohamed-mbougar-sarr"
+  ],
+  "language": "francês",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "metaficção"
+  ],
+  "themes": [
+    "literatura e autoria",
+    "diáspora africana",
+    "colonialismo",
+    "busca identitária"
+  ],
+  "edition": {
+    "title": "A mais recôndita memória dos homens",
+    "language": "português",
+    "publisher": "Fósforo",
+    "year": 2023,
+    "isbn13": "9786584568068",
+    "isbn10": "6584568067",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=yaW9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal bate perfeitamente com título/autor (score 1.0); romance de Sarr vencedor do Prêmio Goncourt 2021, título original confirmado por busca web; edição brasileira Fósforo (2023) é a única tradução conhecida.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clqmp2q855012900hsh63y0w7gk",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "yaW9EAAAQBAJ",
+      "url": "https://books.google.com/books?id=yaW9EAAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://fr.wikipedia.org/wiki/La_Plus_Secr%C3%A8te_M%C3%A9moire_des_hommes",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/The_Most_Secret_Memory_of_Men",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clqmp2q895013100hsh63f088gc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-152c1f2bdf8b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

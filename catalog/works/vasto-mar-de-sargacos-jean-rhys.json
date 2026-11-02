@@ -1,0 +1,64 @@
+{
+  "slug": "vasto-mar-de-sargacos-jean-rhys",
+  "title": "Vasto mar de sargaços",
+  "originalTitle": "Wide Sargasso Sea",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jean-rhys"
+  ],
+  "language": "inglês",
+  "firstPublished": 1966,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "pós-colonial"
+  ],
+  "themes": [
+    "colonialismo",
+    "loucura",
+    "identidade",
+    "Caribe"
+  ],
+  "edition": {
+    "title": "Vasto Mar de Sargaços",
+    "language": "português",
+    "publisher": "Rocco",
+    "year": 2012,
+    "isbn13": "9788532527776",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs4pkg012912960igae22tct59.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título e autora inequívocos ('Wide Sargasso Sea', 1966); candidato Literal corresponde à edição brasileira da Rocco (2012), confirmada por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4pkg012912960igae22tct59",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/vasto-mar-de-sargacos-1-ed-2012/artigo/b9d9ad24-5a05-49cf-8073-a06c1a846207",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckxs4pkg012912970iga531gn8wb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-32ff7b3f57c5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Open Library não retornou candidato; demais candidatos Literal eram obras não relacionadas (título parecido, autoria incompatível).",
+    "validatedAt": "2026-08-13"
+  }
+}

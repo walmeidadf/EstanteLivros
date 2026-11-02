@@ -1,0 +1,62 @@
+{
+  "slug": "historia-da-menina-perdida-elena-ferrante",
+  "title": "História da menina perdida",
+  "originalTitle": "Storia della bambina perduta",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "amizade feminina",
+    "Nápoles",
+    "envelhecimento"
+  ],
+  "edition": {
+    "title": "História da menina perdida",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2017,
+    "isbn13": "9788525064431",
+    "isbn10": "8525064432",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cktsqb9mx94729315vt2lc0cjfr.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam plenamente; quarto e último volume da tetralogia napolitana de Ferrante.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsqb9mx94729315vt2lc0cjfr",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL42531222W",
+      "url": "https://openlibrary.org/works/OL42531222W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznpsrei637670sb50ro9sgr9",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-6716dd902370",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

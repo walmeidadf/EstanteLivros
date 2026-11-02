@@ -1,0 +1,55 @@
+{
+  "slug": "surpreendente-mauricio-gomyde",
+  "title": "Surpreendente!",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "mauricio-gomyde"
+  ],
+  "language": "português",
+  "firstPublished": 2015,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance de formação"
+  ],
+  "themes": [
+    "cinema",
+    "amizade",
+    "doença",
+    "estrada"
+  ],
+  "edition": {
+    "title": "Surpreendente!",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2015,
+    "isbn13": "9788580578089",
+    "isbn10": "8580578086",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local correspondia (todos eram de obras irrelevantes); identificado via busca web como o romance 'Surpreendente!' de Maurício Gomyde (grafia corrigida de 'Gomide'), Intrínseca 2015, finalista do Jabuti 2016.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://intrinseca.com.br/livro/surpreendente/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/surpreendente-1-ed-2015/artigo/74d11cb6-3b80-4dcf-b3ba-8fdd69267dd7",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-72b847ec73f8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos do Literal eram todos de obras não relacionadas (baixíssima pontuação de autor); dados vieram de busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

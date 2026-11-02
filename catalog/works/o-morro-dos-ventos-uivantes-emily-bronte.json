@@ -1,0 +1,64 @@
+{
+  "slug": "o-morro-dos-ventos-uivantes-emily-bronte",
+  "title": "O morro dos ventos uivantes",
+  "originalTitle": "Wuthering Heights",
+  "originalTitleRomanized": null,
+  "authors": [
+    "emily-bronte"
+  ],
+  "language": "inglês",
+  "firstPublished": 1847,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance gótico"
+  ],
+  "themes": [
+    "amor obsessivo",
+    "vingança",
+    "natureza",
+    "classe social"
+  ],
+  "edition": {
+    "title": "O Morro dos Ventos Uivantes",
+    "language": "português",
+    "publisher": "LeBooks Editora",
+    "year": 2020,
+    "isbn13": "9786587921129",
+    "isbn10": "6587921124",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=pyD5DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Autora corrigida de 'Emile Bront' para 'Emily Brontë'; clássico de 1847 inequívoco; entre vários candidatos Literal empatados (score 0.9635), escolhida a edição LeBooks com capa disponível.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsowo7a93064415vtqoxcbdyo",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "google_books",
+      "id": "pyD5DwAAQBAJ",
+      "url": "https://books.google.com/books?id=pyD5DwAAQBAJ",
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznytnvf4723400sb5sdak4eli",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-182afb781585",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

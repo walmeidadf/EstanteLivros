@@ -1,0 +1,56 @@
+{
+  "slug": "dias-de-abandono-elena-ferrante",
+  "title": "Dias de Abandono",
+  "originalTitle": "I giorni dell'abbandono",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 2002,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "abandono",
+    "maternidade",
+    "crise existencial"
+  ],
+  "edition": {
+    "title": "Dias de Abandono",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2016,
+    "isbn13": "9788525062932",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cktsqb9mz94729515vtt3kbpzgw.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente a título, autora e editora (Globo Livros), com score máximo.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsqb9mz94729515vtt3kbpzgw",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzubzxr412301460tbv6ieess7d",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-0e9d68641f36",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

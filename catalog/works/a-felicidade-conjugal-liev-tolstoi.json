@@ -1,0 +1,58 @@
+{
+  "slug": "a-felicidade-conjugal-liev-tolstoi",
+  "title": "A felicidade conjugal",
+  "originalTitle": "Semeynoe schastie",
+  "originalTitleRomanized": null,
+  "authors": [
+    "liev-tolstoi"
+  ],
+  "language": "russo",
+  "firstPublished": 1859,
+  "type": "novela",
+  "genres": [
+    "ficção literária clássica",
+    "romance psicológico"
+  ],
+  "themes": [
+    "casamento",
+    "amor",
+    "desilusão",
+    "amadurecimento"
+  ],
+  "edition": {
+    "title": "A Felicidade Conjugal seguido de O Diabo",
+    "language": "português",
+    "publisher": "L&PM",
+    "year": 2012,
+    "isbn13": "9788525425898",
+    "isbn10": "8525425893",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=aF13cVV896MC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Novela clássica de Tolstói; a edição L&PM reúne 'A felicidade conjugal' e 'O Diabo', formato comum de publicação da novela no Brasil — usada como edição representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cku6amjyq1695351fsujg6xz9k1",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fnzh811010512f9iz5ongz6cd",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9f7fcda93a45",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Grafia do nome do autor varia entre candidatos ('Leo Tolstoy', 'Leon Tolstoi', 'Leon Tolstói'); adotada a forma 'Liev Tolstói', comum em edições brasileiras recentes.",
+    "validatedAt": "2026-08-13"
+  }
+}

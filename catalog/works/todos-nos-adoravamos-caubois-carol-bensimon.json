@@ -1,0 +1,64 @@
+{
+  "slug": "todos-nos-adoravamos-caubois-carol-bensimon",
+  "title": "Todos Nós Adorávamos Caubóis",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carol-bensimon"
+  ],
+  "language": "português",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "road novel"
+  ],
+  "themes": [
+    "amizade",
+    "identidade",
+    "viagem",
+    "Rio Grande do Sul"
+  ],
+  "edition": {
+    "title": "Todos Nós Adorávamos Caubóis",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2013,
+    "isbn13": "9788535923360",
+    "isbn10": "8535923365",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/10864860-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Título provisório usava a grafia inglesa 'cowboys'; o título correto publicado é 'caubóis'. Literal e OpenLibrary concordam no mesmo ISBN (Companhia das Letras, 2013).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkmpej2698002h8ga4t62svd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL24341454W",
+      "url": "https://openlibrary.org/works/OL24341454W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo51thn7583340sb5bkurngzh",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-92413669ed76",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

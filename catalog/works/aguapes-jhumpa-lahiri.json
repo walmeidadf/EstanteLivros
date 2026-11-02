@@ -1,0 +1,56 @@
+{
+  "slug": "aguapes-jhumpa-lahiri",
+  "title": "Aguapés",
+  "originalTitle": "The Lowland",
+  "originalTitleRomanized": null,
+  "authors": [
+    "jhumpa-lahiri"
+  ],
+  "language": "inglês",
+  "firstPublished": 2013,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "ficção histórica"
+  ],
+  "themes": [
+    "Índia",
+    "irmãos",
+    "exílio",
+    "política",
+    "memória"
+  ],
+  "edition": {
+    "title": "Aguapés",
+    "language": "português",
+    "publisher": "Biblioteca Azul",
+    "year": 2014,
+    "isbn13": "9788525056665",
+    "isbn10": "8525056669",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática marcou como 'unresolved' pois os candidatos locais eram irrelevantes (livros em grego); busca web identificou 'Aguapés' como o romance 'The Lowland', de Jhumpa Lahiri (finalista do Man Booker e do National Book Award em 2013), editado no Brasil pela Biblioteca Azul (2014).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/aguapes-1-ed-2014/artigo/3cc79814-5746-456c-becf-eee3f38f9026",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Aguap%C3%A9s-Jhumpa-Lahiri/dp/8525056669",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-7388922da261",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local era relevante; título confirmado via busca web (sinopse compatível: irmãos Subhash e Udayan, Índia/EUA).",
+    "validatedAt": "2026-08-13"
+  }
+}

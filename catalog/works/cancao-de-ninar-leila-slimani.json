@@ -1,0 +1,58 @@
+{
+  "slug": "cancao-de-ninar-leila-slimani",
+  "title": "Canção de Ninar",
+  "originalTitle": "Chanson douce",
+  "originalTitleRomanized": null,
+  "authors": [
+    "leila-slimani"
+  ],
+  "language": "francês",
+  "firstPublished": 2016,
+  "type": "romance",
+  "genres": [
+    "thriller psicológico",
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "classe social",
+    "violência doméstica",
+    "trabalho doméstico"
+  ],
+  "edition": {
+    "title": "Canção de Ninar",
+    "language": "português",
+    "publisher": "Editora Planeta do Brasil",
+    "year": 2018,
+    "isbn13": "9788542212655",
+    "isbn10": "8542212657",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cksxkylrr3091622h8gd1rjq889.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo corresponde exatamente à edição brasileira (Planeta do Brasil, 2018) do romance vencedor do prêmio Goncourt.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxkylrr3091622h8gd1rjq889",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckznpa6jv365880sb5vq05w8uz",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9a2d3c313ed7",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

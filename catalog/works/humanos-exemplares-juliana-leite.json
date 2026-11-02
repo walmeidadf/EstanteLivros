@@ -1,0 +1,63 @@
+{
+  "slug": "humanos-exemplares-juliana-leite",
+  "title": "Humanos exemplares",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "juliana-leite"
+  ],
+  "language": "português",
+  "firstPublished": 2022,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "velhice",
+    "memória",
+    "família",
+    "solidão"
+  ],
+  "edition": {
+    "title": "Humanos exemplares",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2022,
+    "isbn13": "9786559211869",
+    "isbn10": "655921186X",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/clhca13l11057280hergao8wb5v.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com correspondência exata (score 1.0); confirmado por busca web como segundo romance de Juliana Leite, publicado pela Companhia das Letras em 2022.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clhca13l11057280hergao8wb5v",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9786559211869/humanos-exemplares",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "clhca13l11057310her06ojydsj",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-3626c5008dca",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

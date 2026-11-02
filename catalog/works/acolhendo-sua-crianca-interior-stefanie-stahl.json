@@ -1,0 +1,54 @@
+{
+  "slug": "acolhendo-sua-crianca-interior-stefanie-stahl",
+  "title": "Acolhendo sua criança interior",
+  "originalTitle": "Das Kind in dir muss Heimat finden",
+  "originalTitleRomanized": null,
+  "authors": [
+    "stefanie-stahl"
+  ],
+  "language": "alemão",
+  "firstPublished": 2015,
+  "type": "autoajuda",
+  "genres": [
+    "psicologia",
+    "autoajuda"
+  ],
+  "themes": [
+    "infância",
+    "autoconhecimento",
+    "relacionamentos"
+  ],
+  "edition": {
+    "title": "Acolhendo sua criança interior: Uma abordagem inovadora para curar as feridas da infância",
+    "language": "português",
+    "publisher": "Sextante",
+    "year": 2022,
+    "isbn13": "9786555643558",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Nenhum candidato local foi retornado (regra automática conservadora); busca web identificou com segurança a obra de autoajuda de Stefanie Stahl, publicada no Brasil pela Sextante (2022).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://sextante.com.br/products/acolhendo-sua-crianca-interior",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Acolhendo-sua-crian%C3%A7a-interior-abordagem-ebook/dp/B09Y6DJDH9",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-b669dd95d7bb",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

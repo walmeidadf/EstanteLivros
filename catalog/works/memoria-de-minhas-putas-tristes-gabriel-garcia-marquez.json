@@ -1,0 +1,63 @@
+{
+  "slug": "memoria-de-minhas-putas-tristes-gabriel-garcia-marquez",
+  "title": "Memória de minhas putas tristes",
+  "originalTitle": "Memoria de mis putas tristes",
+  "originalTitleRomanized": null,
+  "authors": [
+    "gabriel-garcia-marquez"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2004,
+  "type": "novela",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "velhice",
+    "amor",
+    "solidão",
+    "memória"
+  ],
+  "edition": {
+    "title": "Memória de Minhas Putas Tristes",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2005,
+    "isbn13": "9788501072658",
+    "isbn10": "8501072656",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/ckr1sjgfr0qri01crmsqxg5ko.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título corrigido para 'Memória de minhas putas tristes' (tradução brasileira usual); preferida a edição da Record (Brasil) em vez da edição portuguesa (Dom Quixote, prefixo ISBN 972) do primeiro candidato.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckr1sjgfr0qri01crmsqxg5ko",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL468803W",
+      "url": "https://openlibrary.org/works/OL468803W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckquqy8m50vzu01eusrbyk1hb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-3cc3b83087b8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Primeiro candidato Literal referia-se à edição portuguesa; optou-se pela edição brasileira (Record, ISBN 9788501072658), também presente no candidato Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

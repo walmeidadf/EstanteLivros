@@ -1,0 +1,56 @@
+{
+  "slug": "vista-chinesa-tatiana-salem-levy",
+  "title": "Vista Chinesa",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "tatiana-salem-levy"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "Rio de Janeiro",
+    "memória"
+  ],
+  "edition": {
+    "title": "Vista Chinesa",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2021,
+    "isbn13": "9786551140211",
+    "isbn10": "6551140211",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=oWEdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "google_books"
+  },
+  "catalogerNote": "Romance brasileiro de Tatiana Salem Levy; edição original da Todavia (2021) confirmada por múltiplos candidatos Literal com score máximo.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clcuc98l613665970hv1ppixg90g",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clcuc98l813666050hv1ob984m7v",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b8a0647e642d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "O registro do Open Library corresponde à tradução para o inglês (Scribe Publications/Libros del Asteroide, 2022) e não à edição original brasileira; optou-se pela edição Todavia em português, mais representativa para este catálogo.",
+    "validatedAt": "2026-08-13"
+  }
+}

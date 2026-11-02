@@ -1,0 +1,56 @@
+{
+  "slug": "essencial-franz-kafka-franz-kafka",
+  "title": "Essencial Franz Kafka",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "franz-kafka"
+  ],
+  "language": "alemão",
+  "firstPublished": null,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "conto",
+    "literatura fantástica"
+  ],
+  "themes": [
+    "alienação",
+    "burocracia",
+    "absurdo",
+    "identidade"
+  ],
+  "edition": {
+    "title": "Essencial Franz Kafka",
+    "language": "português",
+    "publisher": "Penguin-Companhia (Companhia das Letras)",
+    "year": 2011,
+    "isbn13": "9788563560230",
+    "isbn10": "8563560239",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título provisório 'Franz Kafka essencial - Contos' corresponde à antologia 'Essencial Franz Kafka' (seleção, tradução e comentários de Modesto Carone, Penguin-Companhia/Companhia das Letras, 2011), reunindo contos, a novela 'A Metamorfose' completa e aforismos; nenhum candidato local correspondia (eram biografias sobre Kafka), identificado via busca web. Ano de primeira publicação deixado em branco por se tratar de antologia com textos de datas variadas.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788563560230/essencial-franz-kafka",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/trechos/9788563560230.pdf",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-8ea02c4e242d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal/Open Library eram biografias sobre Kafka (não coletâneas de sua ficção); descartados por não corresponderem ao gênero indicado no título provisório ('Contos').",
+    "validatedAt": "2026-08-13"
+  }
+}

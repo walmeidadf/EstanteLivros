@@ -1,0 +1,52 @@
+{
+  "slug": "orlando-virginia-woolf",
+  "title": "Orlando",
+  "originalTitle": "Orlando: A Biography",
+  "originalTitleRomanized": null,
+  "authors": [
+    "virginia-woolf"
+  ],
+  "language": "inglês",
+  "firstPublished": 1928,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "modernismo",
+    "biografia ficcional"
+  ],
+  "themes": [
+    "identidade de gênero",
+    "tempo",
+    "imortalidade"
+  ],
+  "edition": {
+    "title": "Orlando",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": null,
+    "isbn13": "9788520942031",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdn.awsli.com.br/600x1000/2088/2088593/produto/142516681/9ee19a2eb0.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Clássico de Virginia Woolf (1928); nenhum dos candidatos locais (Literal/OpenLibrary) trazia uma edição em português, apenas edições em inglês, italiano e turco. Complementei via busca web com a edição brasileira da Nova Fronteira (ISBN 9788520942031); não foi possível confirmar o ano exato dessa impressão específica.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.novafronteira.com.br/orlando-box-grandes-obras-de-virginia-woolf",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-14478f7443d3",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal e OpenLibrary fornecidos são de edições em outros idiomas (inglês, italiano, turco), nenhum em português; edição brasileira obtida via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

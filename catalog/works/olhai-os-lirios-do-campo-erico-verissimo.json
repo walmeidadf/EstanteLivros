@@ -1,0 +1,65 @@
+{
+  "slug": "olhai-os-lirios-do-campo-erico-verissimo",
+  "title": "Olhai os Lírios do Campo",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "erico-verissimo"
+  ],
+  "language": "português",
+  "firstPublished": 1938,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance urbano"
+  ],
+  "themes": [
+    "amor",
+    "doença",
+    "ambição",
+    "família",
+    "Porto Alegre"
+  ],
+  "edition": {
+    "title": "Olhai os Lírios do Campo",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2005,
+    "isbn13": "9788535906097",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15138040-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Candidato de consenso entre Literal e Open Library, mesma edição (ISBN 9788535906097, Companhia das Letras). Título e autor já estavam corretos na extração original.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxl3yr01730378gle81hh5q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL10342477W",
+      "url": "https://openlibrary.org/works/OL10342477W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzp0w9ft12084280tbvsaaiius0",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-dfe02b5b9197",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

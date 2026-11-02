@@ -1,0 +1,58 @@
+{
+  "slug": "como-se-fosse-um-monstro-fabiane-guimaraes",
+  "title": "Como se Fosse um Monstro",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "fabiane-guimaraes"
+  ],
+  "language": "português",
+  "firstPublished": 2023,
+  "type": "romance",
+  "genres": [
+    "suspense dramático",
+    "ficção literária"
+  ],
+  "themes": [
+    "maternidade",
+    "barriga de aluguel",
+    "luto",
+    "classe social"
+  ],
+  "edition": {
+    "title": "Como se Fosse um Monstro",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2023,
+    "isbn13": "9786557828380",
+    "isbn10": "655782838X",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=tO-nEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo (título e autor exatos); segundo romance de Fabiane Guimarães (Alfaguara, 2023), suspense dramático sobre barriga de aluguel.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clejw0duf8975560hvzl0xclx0a",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clqazdrrp14390970hi5y2xa3vqp",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-4e7d62595f2e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

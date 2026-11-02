@@ -1,0 +1,64 @@
+{
+  "slug": "contra-mim-valter-hugo-mae",
+  "title": "Contra mim",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "valter-hugo-mae"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "memórias",
+    "literatura portuguesa contemporânea"
+  ],
+  "themes": [
+    "infância",
+    "memória",
+    "identidade",
+    "família"
+  ],
+  "edition": {
+    "title": "Contra Mim",
+    "language": "português",
+    "publisher": "Porto Editora",
+    "year": 2020,
+    "isbn13": "9789720033659",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckuwipjuy2223972b7a12tkjwe2.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome do autor corrigido de 'Walter Hugo Mãe' para 'valter hugo mãe' (grafia estilizada do autor); obra autobiográfica de 2020 publicada pela Porto Editora, identificada via candidato Literal (score 0.98) e confirmada por busca web; classificação como memórias é aproximada dada a natureza híbrida do texto.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuwipjuy2223972b7a12tkjwe2",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.portoeditora.pt/produtos/ficha/contra-mim/24148563",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo3bp0u6845430sb5b5cyk2ef",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-19d124e0a81e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "a-casa-dos-budas-ditosos-joao-ubaldo-ribeiro",
+  "title": "A Casa dos Budas Ditosos",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "joao-ubaldo-ribeiro"
+  ],
+  "language": "português",
+  "firstPublished": 1999,
+  "type": "romance",
+  "genres": [
+    "ficção erótica",
+    "ficção literária",
+    "humor"
+  ],
+  "themes": [
+    "sexualidade",
+    "memória",
+    "identidade brasileira"
+  ],
+  "edition": {
+    "title": "A Casa dos Budas Ditosos",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 1999,
+    "isbn13": "9788573022391",
+    "isbn10": "8573022396",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/13131553-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam plenamente na edição original da Objetiva (1999).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckuyj9ix345287315tx0l8vdwrn",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL1002174W",
+      "url": "https://openlibrary.org/works/OL1002174W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzucnana12635620tbve7q59wuc",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-9a30bd7c5051",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

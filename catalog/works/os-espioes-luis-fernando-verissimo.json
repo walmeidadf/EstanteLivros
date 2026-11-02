@@ -1,0 +1,64 @@
+{
+  "slug": "os-espioes-luis-fernando-verissimo",
+  "title": "Os Espiões",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "luis-fernando-verissimo"
+  ],
+  "language": "português",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "humor",
+    "suspense",
+    "ficção literária"
+  ],
+  "themes": [
+    "identidade",
+    "segredo",
+    "paixão"
+  ],
+  "edition": {
+    "title": "Os Espiões",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 2009,
+    "isbn13": "9788560281992",
+    "isbn10": "8560281991",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckvvx41uu16398541fxxbef9f0bd.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; obra original em português, grafia do nome do autor corrigida para Luís Fernando Veríssimo.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvvx41uu16398541fxxbef9f0bd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL15318478W",
+      "url": "https://openlibrary.org/works/OL15318478W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzu23pky7968780tbvz689v57g",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-71495949378e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

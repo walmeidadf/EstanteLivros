@@ -1,0 +1,64 @@
+{
+  "slug": "o-sol-e-para-todos-harper-lee",
+  "title": "O Sol é para Todos",
+  "originalTitle": "To Kill a Mockingbird",
+  "originalTitleRomanized": null,
+  "authors": [
+    "harper-lee"
+  ],
+  "language": "inglês",
+  "firstPublished": 1960,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama jurídico"
+  ],
+  "themes": [
+    "racismo",
+    "justiça",
+    "infância",
+    "sul dos EUA"
+  ],
+  "edition": {
+    "title": "O Sol é para Todos",
+    "language": "português",
+    "publisher": "José Olympio",
+    "year": 2015,
+    "isbn13": "9788503012645",
+    "isbn10": "8503012642",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckvvdrhf1408299cx7d477rd57p.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library; título histórico da edição brasileira de 'To Kill a Mockingbird', publicado pela José Olympio.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvvdrhf1408299cx7d477rd57p",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26428570W",
+      "url": "https://openlibrary.org/works/OL26428570W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoyoqvq11079000tbv9pfdnbqk",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-75b1f8529f0b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

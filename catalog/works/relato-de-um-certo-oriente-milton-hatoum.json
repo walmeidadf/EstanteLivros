@@ -1,0 +1,63 @@
+{
+  "slug": "relato-de-um-certo-oriente-milton-hatoum",
+  "title": "Relato de um Certo Oriente",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "milton-hatoum"
+  ],
+  "language": "português",
+  "firstPublished": 1989,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "Amazônia",
+    "memória",
+    "família",
+    "imigração"
+  ],
+  "edition": {
+    "title": "Relato de um Certo Oriente",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2008,
+    "isbn13": "9788535912661",
+    "isbn10": "8535912665",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15109346-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance de estreia de Milton Hatoum (1989), ambientado em Manaus.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckvr21qer16407731eyw5f7vhac5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL3940969W",
+      "url": "https://openlibrary.org/works/OL3940969W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzqk6c2f3393040tbvrrgt0844",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-48ad4c59db88",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "a-tregua-mario-benedetti",
+  "title": "A trégua",
+  "originalTitle": "La tregua",
+  "originalTitleRomanized": null,
+  "authors": [
+    "mario-benedetti"
+  ],
+  "language": "espanhol",
+  "firstPublished": 1960,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "drama"
+  ],
+  "themes": [
+    "solidão",
+    "envelhecimento",
+    "amor",
+    "rotina de trabalho"
+  ],
+  "edition": {
+    "title": "A trégua",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2007,
+    "isbn13": "9788579621017",
+    "isbn10": "8579621011",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=wcmTXagfBuIC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Título e autor confirmados por original_entry e consenso entre Literal e Open Library (score 1.0); escolhida edição brasileira Alfaguara (2007) como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckztxwc6d952590huoxcg6su92",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL45043301W",
+      "url": "https://openlibrary.org/works/OL45043301W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i84k2l1554420ohl20kebsva",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-8252a0cc713f",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Havia candidatos de 'A Trégua'/'La tregua' de Primo Levi (falso positivo por título idêntico); descartados por autoria incompatível com original_entry.",
+    "validatedAt": "2026-08-13"
+  }
+}

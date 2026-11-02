@@ -1,0 +1,62 @@
+{
+  "slug": "vespera-carla-madeira",
+  "title": "Véspera",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "carla-madeira"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "família",
+    "violência",
+    "perdão"
+  ],
+  "edition": {
+    "title": "Véspera",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2021,
+    "isbn13": "9786555872989",
+    "isbn10": "6555872985",
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/15136107-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Literal e OpenLibrary concordam plenamente; edição única publicada (2021) coincide com o ano de leitura relatado (2022), justificando edition_match exact.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "clbcoudvs16281680hc7fnzm2tf5",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL37892764W",
+      "url": "https://openlibrary.org/works/OL37892764W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "clbcoudvs16281690hc79pyi040o",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-60859f944966",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

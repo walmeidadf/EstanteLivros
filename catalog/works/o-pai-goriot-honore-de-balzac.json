@@ -1,0 +1,58 @@
+{
+  "slug": "o-pai-goriot-honore-de-balzac",
+  "title": "O pai Goriot",
+  "originalTitle": "Le Père Goriot",
+  "originalTitleRomanized": null,
+  "authors": [
+    "honore-de-balzac"
+  ],
+  "language": "francês",
+  "firstPublished": 1835,
+  "type": "romance",
+  "genres": [
+    "realismo",
+    "clássico francês"
+  ],
+  "themes": [
+    "paternidade",
+    "ambição social",
+    "dinheiro",
+    "decadência"
+  ],
+  "edition": {
+    "title": "O pai Goriot",
+    "language": "português",
+    "publisher": "Globo Livros",
+    "year": 2015,
+    "isbn13": "9788525060006",
+    "isbn10": "8525060003",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/cktsrzcil7880001esv10gc5r7q.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Título corrigido de 'O Goriot' para o título consagrado em português 'O pai Goriot' (tradução de 'Le Père Goriot'); edição Globo Livros (2015).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktsrzcil7880001esv10gc5r7q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ibpv8p31853224hlnhiwxpfy",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-ad0a29cd1abe",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato Open Library traz título em espanhol/galego ('Tio goriot, o'), não correspondente à edição brasileira; descartado em favor do candidato Literal em português.",
+    "validatedAt": "2026-08-13"
+  }
+}

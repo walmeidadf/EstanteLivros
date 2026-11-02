@@ -1,0 +1,65 @@
+{
+  "slug": "apague-a-luz-se-for-chorar-fabiane-guimaraes",
+  "title": "Apague a Luz se for Chorar",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "fabiane-guimaraes"
+  ],
+  "language": "português",
+  "firstPublished": 2021,
+  "type": "romance",
+  "genres": [
+    "romance",
+    "suspense doméstico",
+    "ficção literária brasileira"
+  ],
+  "themes": [
+    "família",
+    "segredos",
+    "interior do Brasil",
+    "classe social"
+  ],
+  "edition": {
+    "title": "Apague a Luz se for Chorar",
+    "language": "português",
+    "publisher": "Alfaguara",
+    "year": 2021,
+    "isbn13": "9788556521033",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/13325412-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso Literal/Open Library; romance de estreia de Fabiane Guimarães (2021, Alfaguara), suspense familiar ambientado no interior do Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cl5frisa13981340io2emn2qxqh",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "OL32312514W",
+      "url": "https://openlibrary.org/works/OL32312514W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i8vitu10434790ohlm2redpei",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-cd9e350f5f59",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Há dois ISBNs candidatos para impressões diferentes da mesma obra (9786557821329 e 9788556521033); mantido o ISBN confirmado também por Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "a-casa-das-belas-adormecidas-yasunari-kawabata",
+  "title": "A casa das belas adormecidas",
+  "originalTitle": "Nemureru Bijo",
+  "originalTitleRomanized": null,
+  "authors": [
+    "yasunari-kawabata"
+  ],
+  "language": "japonês",
+  "firstPublished": 1961,
+  "type": "novela",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "velhice",
+    "desejo",
+    "morte"
+  ],
+  "edition": {
+    "title": "A casa das belas adormecidas",
+    "language": "português",
+    "publisher": "Estação Liberdade",
+    "year": 2004,
+    "isbn13": "9788574480985",
+    "isbn10": "8574480983",
+    "format": "brochura",
+    "match": "exact"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksxktcuk2918482h8g26z7ngau.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score máximo; única tradução brasileira em circulação (Estação Liberdade, trad. Meiko Shimon), tornando plausível edition_match exact.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksxktcuk2918482h8g26z7ngau",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.estacaoliberdade.com.br/casa-das-belas-adormecidas",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fituqh7309810xiz0gr6y6qx",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-640929d787e1",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

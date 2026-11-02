@@ -1,0 +1,49 @@
+{
+  "slug": "a-cidade-ilhada-milton-hatoum",
+  "title": "A cidade ilhada",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "milton-hatoum"
+  ],
+  "language": "português",
+  "firstPublished": 2009,
+  "type": "coletânea de contos",
+  "genres": [
+    "ficção literária",
+    "contos"
+  ],
+  "themes": [
+    "Manaus",
+    "memória",
+    "imigração",
+    "Amazônia"
+  ],
+  "edition": {
+    "title": "A cidade ilhada",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2009,
+    "isbn13": "9788535913873",
+    "isbn10": "8535913874",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Apesar da recomendação automática de 'investigar criação', o Open Library já contém registro exato ('A cidade ilhada', Milton Hatoum, Companhia das Letras, 2009) com pontuação máxima; nenhum candidato Literal correspondia (todos eram falsos positivos de título 'A Cidade ...').",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL18618386W",
+      "url": "https://openlibrary.org/works/OL18618386W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-c289c7fcafe4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

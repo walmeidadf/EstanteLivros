@@ -1,0 +1,63 @@
+{
+  "slug": "o-olho-mais-azul-toni-morrison",
+  "title": "O olho mais azul",
+  "originalTitle": "The Bluest Eye",
+  "originalTitleRomanized": null,
+  "authors": [
+    "toni-morrison"
+  ],
+  "language": "inglês",
+  "firstPublished": 1970,
+  "type": "romance",
+  "genres": [
+    "ficção literária"
+  ],
+  "themes": [
+    "racismo",
+    "infância",
+    "padrões de beleza",
+    "abuso"
+  ],
+  "edition": {
+    "title": "O olho mais azul",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2003,
+    "isbn13": "9788535903157",
+    "isbn10": "8535903151",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cksvyojpo2429703g8gcu37ucwd.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Corrigido nome da autora (Tony->Toni Morrison). Candidato do Literal corresponde à edição brasileira de 'The Bluest Eye' pela Companhia das Letras; usei o work_id do OpenLibrary (obra original em inglês) por ausência de candidato traduzido lá.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyojpo2429703g8gcu37ucwd",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL50565W",
+      "url": "https://openlibrary.org/works/OL50565W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzo9j1xd9613060sb56t25xw6h",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-274916df99fe",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "OpenLibrary só retornou a obra em inglês (score de título baixo por não ser tradução); Literal trouxe a edição brasileira correta, usada como fonte principal.",
+    "validatedAt": "2026-08-13"
+  }
+}

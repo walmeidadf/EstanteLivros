@@ -1,0 +1,59 @@
+{
+  "slug": "um-lugar-bem-longe-daqui-delia-owens",
+  "title": "Um Lugar Bem Longe Daqui",
+  "originalTitle": "Where the Crawdads Sing",
+  "originalTitleRomanized": null,
+  "authors": [
+    "delia-owens"
+  ],
+  "language": "inglês",
+  "firstPublished": 2018,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "mistério"
+  ],
+  "themes": [
+    "natureza",
+    "solidão",
+    "abandono",
+    "crime",
+    "pântanos"
+  ],
+  "edition": {
+    "title": "Um Lugar Bem Longe Daqui",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2019,
+    "isbn13": "9788551004876",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/1/cksvyjqrq2265373g8gpd43hk60.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal corresponde exatamente ao título, autora e edição brasileira (Intrínseca, 2019), coerente com o ano de leitura (2020).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cksvyjqrq2265373g8gpd43hk60",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzndz0zi11788700sb549hcvxny",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e835929e915c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

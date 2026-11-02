@@ -1,0 +1,49 @@
+{
+  "slug": "semiramis-ana-miranda",
+  "title": "Semíramis",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "ana-miranda"
+  ],
+  "language": "português",
+  "firstPublished": 2014,
+  "type": "romance",
+  "genres": [
+    "romance histórico",
+    "ficção literária"
+  ],
+  "themes": [
+    "Antiguidade",
+    "Mesopotâmia",
+    "poder",
+    "mitologia"
+  ],
+  "edition": {
+    "title": "Semíramis",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2014,
+    "isbn13": "9788535923902",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Todos os candidatos Literal eram obras homônimas não relacionadas (Costanza Casati, ópera de Catel, etc.); o único candidato correto veio do Open Library (Ana Maria Miranda, Companhia das Letras, 2014), coincidindo com o ano de leitura de 2014.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL23396770W",
+      "url": "https://openlibrary.org/works/OL23396770W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-e496917a273a",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Literal não retornou nenhum candidato correto; usado somente o candidato Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

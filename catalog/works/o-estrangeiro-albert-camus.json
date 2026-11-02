@@ -1,0 +1,61 @@
+{
+  "slug": "o-estrangeiro-albert-camus",
+  "title": "O estrangeiro",
+  "originalTitle": "L'Étranger",
+  "originalTitleRomanized": null,
+  "authors": [
+    "albert-camus"
+  ],
+  "language": "francês",
+  "firstPublished": 1942,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "existencialismo/absurdo"
+  ],
+  "themes": [
+    "absurdo",
+    "alienação",
+    "moralidade",
+    "Argélia colonial"
+  ],
+  "edition": {
+    "title": "O Estrangeiro",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2010,
+    "isbn13": null,
+    "isbn10": "8501014869",
+    "format": null,
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Clássico universalmente conhecido; candidato Literal bate no título/autor mas sem ISBN; edição brasileira de referência é a da Editora Record (trad. Valerie Rumjanek Chaves), adotada como representativa.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckszxe6fh511606as7oc91k0ojz",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/produto/o-estrangeiro-edicao-de-bolso/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9fmz6fd544936e0izooe1sdfv",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-1759157875e5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

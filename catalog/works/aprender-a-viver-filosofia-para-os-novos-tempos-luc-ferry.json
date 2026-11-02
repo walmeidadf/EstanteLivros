@@ -1,0 +1,64 @@
+{
+  "slug": "aprender-a-viver-filosofia-para-os-novos-tempos-luc-ferry",
+  "title": "Aprender a Viver: Filosofia para os Novos Tempos",
+  "originalTitle": "Apprendre à vivre: Traité de philosophie à l'usage des jeunes générations",
+  "originalTitleRomanized": null,
+  "authors": [
+    "luc-ferry"
+  ],
+  "language": "francês",
+  "firstPublished": 2006,
+  "type": "filosofia",
+  "genres": [
+    "filosofia",
+    "divulgação filosófica"
+  ],
+  "themes": [
+    "sentido da vida",
+    "história da filosofia",
+    "amor",
+    "morte"
+  ],
+  "edition": {
+    "title": "Aprender a Viver: Filosofia para os Novos Tempos",
+    "language": "português",
+    "publisher": "Objetiva",
+    "year": 2007,
+    "isbn13": "9788573028317",
+    "isbn10": "8573028319",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckznmgnbx3170290ibnpzh7ijvv.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com pontuação máxima corresponde exatamente ao título e autor; obra de divulgação filosófica de Luc Ferry, edição brasileira Objetiva (2007) confirmada via busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckznmgnbx3170290ibnpzh7ijvv",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/aprender-a-viver-filosofia-para-os-novos-tempos/artigo/d5ca6da4-6dbc-42c4-81ae-7bd032265417",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9ib0qum92893624hl1bm4lwi5",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-7062ccd292a8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

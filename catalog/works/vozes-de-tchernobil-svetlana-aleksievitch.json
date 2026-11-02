@@ -1,0 +1,49 @@
+{
+  "slug": "vozes-de-tchernobil-svetlana-aleksievitch",
+  "title": "Vozes de Tchernóbil",
+  "originalTitle": "Чернобыльская молитва: Хроника будущего",
+  "originalTitleRomanized": null,
+  "authors": [
+    "svetlana-aleksievitch"
+  ],
+  "language": "russo",
+  "firstPublished": 1997,
+  "type": "não-ficção",
+  "genres": [
+    "reportagem",
+    "história oral"
+  ],
+  "themes": [
+    "desastre nuclear",
+    "União Soviética",
+    "memória coletiva",
+    "sofrimento humano"
+  ],
+  "edition": {
+    "title": "Vozes de Tchernóbil: a história oral do desastre nuclear",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2016,
+    "isbn13": "9788535927085",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Regra automática não encontrou candidatos (unresolved), mas a obra é facilmente identificável: 'Vozes de Tchernóbil' de Svetlana Aleksiévitch (Nobel 2015), publicada no Brasil pela Companhia das Letras (2016, trad. Sonia Branco).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535927085/vozes-de-tchernobil",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-68be1f01d1be",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Nenhum candidato local relevante foi retornado; identificação feita inteiramente via busca web.",
+    "validatedAt": "2026-08-13"
+  }
+}

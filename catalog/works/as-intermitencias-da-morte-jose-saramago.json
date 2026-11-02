@@ -1,0 +1,53 @@
+{
+  "slug": "as-intermitencias-da-morte-jose-saramago",
+  "title": "As Intermitências da Morte",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 2005,
+  "type": "romance",
+  "genres": [
+    "ficção especulativa",
+    "sátira",
+    "realismo mágico"
+  ],
+  "themes": [
+    "morte",
+    "burocracia",
+    "mortalidade",
+    "sociedade"
+  ],
+  "edition": {
+    "title": "As Intermitências da Morte",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2005,
+    "isbn13": "9788535907254",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/13180964-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Consenso entre provedores confirma a obra; escolhida a edição brasileira Companhia das Letras (2005) como representativa, em vez das edições portuguesas (Caminho, Leya) presentes nos candidatos Literal.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL13742593W",
+      "url": "https://openlibrary.org/works/OL13742593W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-da94dc8a636e",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal traziam apenas edições portuguesas (Leya, Caminho); usada edição brasileira Companhia das Letras via Open Library.",
+    "validatedAt": "2026-08-13"
+  }
+}

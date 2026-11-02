@@ -1,0 +1,59 @@
+{
+  "slug": "persepolis-marjane-satrapi",
+  "title": "Persépolis",
+  "originalTitle": "Persepolis",
+  "originalTitleRomanized": null,
+  "authors": [
+    "marjane-satrapi"
+  ],
+  "language": "francês",
+  "firstPublished": 2000,
+  "type": "quadrinhos/graphic novel",
+  "genres": [
+    "autobiografia",
+    "graphic novel"
+  ],
+  "themes": [
+    "Irã",
+    "revolução islâmica",
+    "infância",
+    "guerra",
+    "exílio"
+  ],
+  "edition": {
+    "title": "Persépolis (edição completa)",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2007,
+    "isbn13": "9788535911626",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12648921-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "A leitura registrada como obra única corresponde à edição integral brasileira 'Persépolis (completo)' da Companhia das Letras (2007, trad. Paulo Werneck), que reúne os quatro volumes originais em francês.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL5735175W",
+      "url": "https://openlibrary.org/works/OL5735175W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535911626/persepolis-completo",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-6743d7f9e8f0",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos locais traziam apenas volumes individuais em vários idiomas; optou-se pela edição integral brasileira, mais compatível com uma única entrada de leitura.",
+    "validatedAt": "2026-08-13"
+  }
+}

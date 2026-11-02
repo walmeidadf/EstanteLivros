@@ -1,0 +1,59 @@
+{
+  "slug": "grande-sertao-veredas-joao-guimaraes-rosa",
+  "title": "Grande Sertão: Veredas",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "joao-guimaraes-rosa"
+  ],
+  "language": "português",
+  "firstPublished": 1956,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "regionalismo"
+  ],
+  "themes": [
+    "sertão",
+    "amor",
+    "identidade",
+    "bem e mal",
+    "jagunçagem"
+  ],
+  "edition": {
+    "title": "Grande Sertão: Veredas",
+    "language": "português",
+    "publisher": "Nova Fronteira",
+    "year": 2016,
+    "isbn13": "9788520922675",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/cky81xb9914290700ik6zp00qex4.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso entre fontes; a nota do source_entry indica leitura em 2016, e o candidato Literal com edição de 2016 corresponde bem a essa data.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cky81xb9914290700ik6zp00qex4",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzsnydfm3069830tbvu3kqwclb",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-e23add11ce07",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

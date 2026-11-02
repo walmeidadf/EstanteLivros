@@ -1,0 +1,52 @@
+{
+  "slug": "caim-jose-saramago",
+  "title": "Caim",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "jose-saramago"
+  ],
+  "language": "português",
+  "firstPublished": 2009,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "sátira bíblica"
+  ],
+  "themes": [
+    "religião",
+    "livre-arbítrio",
+    "crítica bíblica",
+    "violência divina"
+  ],
+  "edition": {
+    "title": "Caim (edição exclusiva com caligrafia da capa por Milton Hatoum)",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2020,
+    "isbn13": "9788535930320",
+    "isbn10": null,
+    "format": null,
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/id/12372594-L.jpg",
+    "source": "openlibrary"
+  },
+  "catalogerNote": "Último romance de Saramago, publicado originalmente pela Caminho (Portugal, 2009). Preferi como representativa a edição brasileira da Companhia das Letras (2020), presente nos candidatos OpenLibrary, por ser a edição de referência no Brasil.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL26417338W",
+      "url": "https://openlibrary.org/works/OL26417338W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    }
+  ],
+  "legacyId": "work-1409bd4f57d8",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Vários candidatos Literal e OpenLibrary apontam para a edição original portuguesa (Caminho, 2009); optei pela edição brasileira Companhia das Letras como representativa, mantendo 2009 como ano de primeira publicação.",
+    "validatedAt": "2026-08-13"
+  }
+}

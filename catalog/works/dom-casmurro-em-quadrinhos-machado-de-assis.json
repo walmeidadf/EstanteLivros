@@ -1,0 +1,72 @@
+{
+  "slug": "dom-casmurro-em-quadrinhos-machado-de-assis",
+  "title": "Dom Casmurro em Quadrinhos",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "machado-de-assis",
+    "wellington-srbek",
+    "jose-aguiar"
+  ],
+  "language": "português",
+  "firstPublished": 2013,
+  "type": "quadrinhos/graphic novel",
+  "genres": [
+    "quadrinhos",
+    "adaptação literária"
+  ],
+  "themes": [
+    "ciúme",
+    "amor",
+    "traição",
+    "memória"
+  ],
+  "edition": {
+    "title": "Dom Casmurro em Quadrinhos",
+    "language": "português",
+    "publisher": "Nemo",
+    "year": 2013,
+    "isbn13": "9788564823020",
+    "isbn10": "8564823020",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/cover/2/ckz30iolt246720huy93h7nkjh.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "O título provisório já indica 'quadrinhos', portanto tratei como a adaptação em HQ de Dom Casmurro (roteiro de Wellington Srbek, arte de José Aguiar, Editora Nemo, 2013), obra distinta do romance original de Machado de Assis (1899), conforme regra de separar romance e adaptação em quadrinhos.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckz30iolt246720huy93h7nkjh",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.bvirtual.com.br/NossoAcervo/Publicacao/dom-casmurro-de-machado-de-assis-versao-em-quadrinhos-194336",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.pluricom.com.br/clientes/grupo-editorial-autentica/noticias/2011/11/dom-casmurro-de-machado-de-assis-numa-versao-em-quadrinhos",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cl9i7n9xj15890160ohl9sawrz6h",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-054461cfcce4",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidato OpenLibrary (Dom Casmurro, OL1003040W) refere-se ao romance original, não à versão em quadrinhos; usei apenas os dados do candidato Literal que já apontava para a versão em HQ com Srbek/Aguiar.",
+    "validatedAt": "2026-08-13"
+  }
+}

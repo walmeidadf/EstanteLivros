@@ -1,0 +1,52 @@
+{
+  "slug": "anna-karienina-liev-tolstoi",
+  "title": "Anna Kariênina",
+  "originalTitle": "Анна Каренина",
+  "originalTitleRomanized": null,
+  "authors": [
+    "liev-tolstoi"
+  ],
+  "language": "russo",
+  "firstPublished": 1877,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "romance realista"
+  ],
+  "themes": [
+    "amor",
+    "adultério",
+    "sociedade russa",
+    "família"
+  ],
+  "edition": {
+    "title": "Anna Kariênina",
+    "language": "português",
+    "publisher": "Companhia das Letras",
+    "year": 2017,
+    "isbn13": "9788535929225",
+    "isbn10": null,
+    "format": "capa dura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535929225/anna-karienina.jpg",
+    "source": "editora"
+  },
+  "catalogerNote": "Nenhum candidato local trazia edição em português; busca web confirmou a tradução de Rubens Figueiredo (direto do russo), publicada pela Companhia das Letras (2017).",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.companhiadasletras.com.br/livro/9788535929225/anna-karienina",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-3d268886c37b",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Todos os candidatos Literal/Open Library eram edições em inglês, espanhol ou italiano; resolvido via busca web direta no site da editora.",
+    "validatedAt": "2026-08-13"
+  }
+}

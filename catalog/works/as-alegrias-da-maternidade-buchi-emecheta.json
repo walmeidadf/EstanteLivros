@@ -1,0 +1,65 @@
+{
+  "slug": "as-alegrias-da-maternidade-buchi-emecheta",
+  "title": "As alegrias da maternidade",
+  "originalTitle": "The Joys of Motherhood",
+  "originalTitleRomanized": null,
+  "authors": [
+    "buchi-emecheta"
+  ],
+  "language": "inglês",
+  "firstPublished": 1979,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "literatura pós-colonial",
+    "literatura africana"
+  ],
+  "themes": [
+    "maternidade",
+    "patriarcado",
+    "colonialismo",
+    "papel da mulher"
+  ],
+  "edition": {
+    "title": "As alegrias da maternidade",
+    "language": "português",
+    "publisher": "Dublinense",
+    "year": 2018,
+    "isbn13": "9788583181101",
+    "isbn10": "8583181101",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/2/ckxs4pans12883020igafm94ljr7.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Consenso claro (score 1.0); romance de Buchi Emecheta publicado no Brasil pela Dublinense; busca web confirmou editora e ISBN do candidato Literal.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckxs4pans12883020igafm94ljr7",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.dublinense.com.br/livros/as-alegrias-da-maternidade/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzsppjtp3830620tbvo3g6z3tz",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-a929228acab5",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

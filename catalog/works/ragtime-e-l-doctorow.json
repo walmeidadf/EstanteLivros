@@ -1,0 +1,54 @@
+{
+  "slug": "ragtime-e-l-doctorow",
+  "title": "Ragtime",
+  "originalTitle": "Ragtime",
+  "originalTitleRomanized": null,
+  "authors": [
+    "e-l-doctorow"
+  ],
+  "language": "inglês",
+  "firstPublished": 1975,
+  "type": "romance",
+  "genres": [
+    "ficção histórica"
+  ],
+  "themes": [
+    "Estados Unidos",
+    "início do século XX",
+    "imigração",
+    "racismo"
+  ],
+  "edition": {
+    "title": "Ragtime",
+    "language": "português",
+    "publisher": "Record",
+    "year": 2017,
+    "isbn13": null,
+    "isbn10": "8577990176",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autor corrigido de 'L.A. Doctorow' para 'E. L. Doctorow'. Nenhum candidato local trazia edição em português; edição brasileira Record confirmada via busca, mas ISBN-13 não pôde ser verificado com certeza.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "openlibrary",
+      "id": "OL28347377W",
+      "url": "https://openlibrary.org/works/OL28347377W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Ragtime-L-Doctorow/dp/8577990176",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-5ea5fc5c11ce",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": "Candidatos Literal/OL só traziam edições em inglês e turco; edição brasileira (Record) obtida via busca web com dados parciais.",
+    "validatedAt": "2026-08-13"
+  }
+}

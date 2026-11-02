@@ -1,0 +1,56 @@
+{
+  "slug": "minha-crianca-trans-relato-de-uma-mae-ao-descobrir-que-o-amor-nao-tem-genero",
+  "title": "Minha Criança Trans?: Relato de uma Mãe ao Descobrir que o Amor Não Tem Gênero",
+  "originalTitle": null,
+  "originalTitleRomanized": null,
+  "authors": [
+    "thamirys-nunes"
+  ],
+  "language": "português",
+  "firstPublished": 2020,
+  "type": "autobiografia/memórias",
+  "genres": [
+    "não-ficção",
+    "memórias",
+    "ativismo LGBTQIA+"
+  ],
+  "themes": [
+    "maternidade",
+    "transgeneridade",
+    "infância",
+    "aceitação"
+  ],
+  "edition": {
+    "title": "Minha Criança Trans?: Relato de uma Mãe ao Descobrir que o Amor Não Tem Gênero",
+    "language": "português",
+    "publisher": null,
+    "year": 2020,
+    "isbn13": null,
+    "isbn10": null,
+    "format": "ebook",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Autora corrigida de 'Tamires Nunes' para 'Thamirys Nunes'; obra autopublicada/independente localizada via busca web (relato autobiográfico sobre maternidade e transgeneridade infantil), sem ISBN nem candidatos em bases bibliográficas convencionais.",
+  "confidence": "medium",
+  "references": [
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.amazon.com.br/Minha-Crian%C3%A7a-Trans-Relato-descobrir-ebook/dp/B08BQZJ2Y3",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.minhacriancatrans.com.br/livro",
+      "fields": "complementação de campos ausentes/conflitantes"
+    }
+  ],
+  "legacyId": "work-9abf212ee661",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "mulherzinhas-louisa-may-alcott",
+  "title": "Mulherzinhas",
+  "originalTitle": "Little Women",
+  "originalTitleRomanized": null,
+  "authors": [
+    "louisa-may-alcott"
+  ],
+  "language": "inglês",
+  "firstPublished": 1868,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "infantojuvenil"
+  ],
+  "themes": [
+    "família",
+    "amadurecimento",
+    "irmãs",
+    "Guerra Civil Americana"
+  ],
+  "edition": {
+    "title": "Mulherzinhas",
+    "language": "português",
+    "publisher": "L&PM",
+    "year": 2017,
+    "isbn13": "9788525437068",
+    "isbn10": "8525437069",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/3/ckrxp7lff792981798dydvnwx6.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Nome da autora corrigido (Laura May->Louisa May Alcott). Vários candidatos Literal com o título correto; escolhida a edição L&PM (2017, coleção Pocket) coerente com o ano de leitura (2020) registrado no source_entry.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckrxp7lff792981798dydvnwx6",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzmu1h2s3318540sb5hzvh32ds",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-302f60702aba",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

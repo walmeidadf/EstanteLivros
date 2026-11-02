@@ -1,0 +1,67 @@
+{
+  "slug": "o-amante-japones-isabel-allende",
+  "title": "O amante japonês",
+  "originalTitle": "El amante japonés",
+  "originalTitleRomanized": null,
+  "authors": [
+    "isabel-allende"
+  ],
+  "language": "espanhol",
+  "firstPublished": 2015,
+  "type": "romance",
+  "genres": [
+    "ficção histórica",
+    "romance"
+  ],
+  "themes": [
+    "amor proibido",
+    "segunda guerra mundial",
+    "memória",
+    "imigração"
+  ],
+  "edition": {
+    "title": "O amante japonês",
+    "language": "português",
+    "publisher": "Bertrand Brasil",
+    "year": 2015,
+    "isbn13": "9788528620276",
+    "isbn10": "8528620271",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": null,
+  "catalogerNote": "Título provisório 'The japanese lover' é o título em inglês; Isabel Allende escreve originalmente em espanhol ('El amante japonés', 2015). Edição brasileira pela Bertrand Brasil (2015) confirmada via busca web; candidatos locais traziam apenas edições em inglês.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "ckr1uh8ke1bu601cr5lhbab6f",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.travessa.com.br/o-amante-japones-1-ed-2015/artigo/4f17d56b-8155-4a2f-8d9f-87e36dada3dc",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.record.com.br/produto/o-amante-japones/",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "ckqusndgd1lv901eunbjkaif6",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-b7b1fff3749c",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

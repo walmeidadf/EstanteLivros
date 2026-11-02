@@ -1,0 +1,64 @@
+{
+  "slug": "a-vida-mentirosa-dos-adultos-elena-ferrante",
+  "title": "A vida mentirosa dos adultos",
+  "originalTitle": "La vita bugiarda degli adulti",
+  "originalTitleRomanized": null,
+  "authors": [
+    "elena-ferrante"
+  ],
+  "language": "italiano",
+  "firstPublished": 2019,
+  "type": "romance",
+  "genres": [
+    "ficção literária",
+    "bildungsroman"
+  ],
+  "themes": [
+    "adolescência",
+    "família",
+    "Nápoles",
+    "identidade"
+  ],
+  "edition": {
+    "title": "A vida mentirosa dos adultos",
+    "language": "português",
+    "publisher": "Intrínseca",
+    "year": 2020,
+    "isbn13": "9788551006375",
+    "isbn10": "8551006371",
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "https://assets.literal.club/4/cktk50f2a213705nr7aojgnn8gy.jpg",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com correspondência exata (score 1.0); edição brasileira (Intrínseca, 2020) do romance de Elena Ferrante.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cktk50f2a213705nr7aojgnn8gy",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "openlibrary",
+      "id": "/works/OL20884629W",
+      "url": "https://openlibrary.org/works/OL20884629W",
+      "fields": "obra, primeira publicação, idioma original, edição, ISBN, capa"
+    },
+    {
+      "provider": "literal",
+      "id": "ckzoh7v133145350tbvu0fu5zzv",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-41cc149f7d2d",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}

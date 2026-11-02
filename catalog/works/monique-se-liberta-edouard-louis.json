@@ -1,0 +1,70 @@
+{
+  "slug": "monique-se-liberta-edouard-louis",
+  "title": "Monique se Liberta",
+  "originalTitle": "Monique s'évade",
+  "originalTitleRomanized": null,
+  "authors": [
+    "edouard-louis"
+  ],
+  "language": "francês",
+  "firstPublished": 2024,
+  "type": "romance",
+  "genres": [
+    "autoficção",
+    "narrativa memorialística"
+  ],
+  "themes": [
+    "maternidade",
+    "classe social",
+    "violência doméstica",
+    "libertação"
+  ],
+  "edition": {
+    "title": "Monique se Liberta",
+    "language": "português",
+    "publisher": "Todavia",
+    "year": 2024,
+    "isbn13": "9786556927053",
+    "isbn10": null,
+    "format": "brochura",
+    "match": "representative"
+  },
+  "cover": {
+    "sourceUrl": "http://books.google.com/books/content?id=kYoYEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "source": "literal"
+  },
+  "catalogerNote": "Candidato Literal com score 1.0 corresponde exatamente. Obra recente (2024/2025) de Édouard Louis sobre sua mãe; título original francês 'Monique s'évade' (Seuil, 2024), edição brasileira Todavia (2024, trad. Marília Scalzo), confirmada por busca web.",
+  "confidence": "high",
+  "references": [
+    {
+      "provider": "literal",
+      "id": "cmlpohvoe16614440dmpkw5f8h8q",
+      "url": null,
+      "fields": "edição, ISBN, editora, capa"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://todavialivros.com.br/livros/monique-se-liberta",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "web",
+      "id": null,
+      "url": "https://www.babelio.com/livres/Louis-Monique-sevade/1583515",
+      "fields": "complementação de campos ausentes/conflitantes"
+    },
+    {
+      "provider": "literal",
+      "id": "cmlpohvoe16614960dmpmwk5nepn",
+      "url": null,
+      "fields": "obra"
+    }
+  ],
+  "legacyId": "work-c8e79d088062",
+  "audit": {
+    "validationStatus": "validated",
+    "sourceConflicts": null,
+    "validatedAt": "2026-08-13"
+  }
+}
