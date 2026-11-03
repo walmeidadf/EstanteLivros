@@ -146,3 +146,14 @@ de outro país. Vale conferir o país de toda autoria nova no relatório.
 
 Por autoria nova (manutenção), a média ficou em ~US$ 0,001 de OpenAI, 0,2
 busca da SerpApi e 0,1 crédito do Tavily.
+
+## Fechamento da F2.1 (2026-11-02)
+
+- 209 bios aprovadas em lote (`review_summaries.py --approve-file`), para o app
+  começar com conteúdo real. A Lila revisa vendo a interface.
+- Estado final: 206/215 identificadas (158 confirmadas, 41 prováveis, 7 manuais,
+  9 não encontradas), 202 com país, 174 com foto, 209 bios aprovadas.
+- Custo total da carga: ~US$ 0,24 na OpenAI, 47 buscas na SerpApi, 24 do Tavily.
+- **Pendências não bloqueantes** (corrigir vendo o app): escolher 40 fotos,
+  identificar 9 autorias sem Wikidata, escrever 6 bios faltantes e revisar o
+  estilo das bios aprovadas.

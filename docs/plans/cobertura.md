@@ -24,7 +24,7 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 | Foto | 174 | 215 | 80,9% |
 | Foto do Commons | 173 | 215 | 80,5% |
 | Bio proposta (inclui aprovadas) | 209 | 215 | 97,2% |
-| Bio aprovada | 0 | 215 | 0,0% |
+| Bio aprovada | 209 | 215 | 97,2% |
 
 | Identificação | Autorias |
 |---|---:|

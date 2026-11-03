@@ -7,7 +7,8 @@ F0 Fundação ─► F1 Catálogo canônico ─┬─► F2 Enriquecimento (sess
 
 F2 e F3 andam em paralelo depois da F1: o design tem fallback para capa
 (tipográfica), foto (iniciais), bio e resumos (a seção some). A exceção é o país
-da autoria, necessário para o Atlas por país e a página País.
+da autoria, necessário para o Atlas por país e a página País — por isso a F2.1
+(autorias) foi feita antes do app. O resto da base se corrige vendo a interface.
 
 ## Decisões tomadas
 - PWA (site estático instalável), não app nativo.
@@ -22,7 +23,14 @@ da autoria, necessário para o Atlas por país e a página País.
   Cloudflare: o Cloudflare Access protege o modo da Lila sem código. Na AWS,
   isso exige Cognito ou uma função na borda.
 - Domínio.
-- Fotos de autoria: aceitar só licenças livres (Wikimedia Commons)?
+
+## Decisões resolvidas na F2.1
+- Fotos de autoria: **qualquer fonte**, não só licença livre. A origem é
+  registrada. Commons automático; as demais escolhidas em revisão.
+- Bio: busca (Wikipédia, depois Tavily) + resumo/tradução via OpenAI; aprovação
+  humana. A bio vive em `summaries.json` (`autoria:{slug}`), não na autoria.
+- País: só o principal. Chaves de API em `.env` (modelo em `.env.example`).
+- A base não precisa estar completa para a F3 começar: corrige-se vendo o app.
 
 ## F0 — Fundação
 - [x] Estrutura de pastas, legado em `legacy/`
@@ -36,12 +44,18 @@ Spec: [`docs/specs/catalogo-canonico/`](specs/catalogo-canonico/).
 - [x] Validador e relatório de cobertura (`docs/plans/cobertura.md`)
 
 ## F2 — Enriquecimento (por impacto visual)
-1. [ ] Autorias via Wikidata: país, idiomas, idioma principal, foto Commons + licença
+1. [x] **F2.1 Autorias** via Wikidata: país, idiomas, foto, bio. Spec:
+   [`docs/specs/enriquecimento-autorias/`](specs/enriquecimento-autorias/).
+   206/215 identificadas, 202 com país, 174 com foto, 209 bios aprovadas.
+   Em revisão contínua: 40 fotos, 9 sem Wikidata, 6 sem bio.
 2. [ ] Capas: baixar as 223, trocar as de baixa resolução, buscar as 79 que faltam
 3. [ ] Temas: reduzir 496 para ~40–60, revisado com a Lila
 4. [ ] Títulos originais: separar título e romanização (21 não latinos)
 5. [ ] Wikidata das obras e o `first_publication_year` que falta
-6. [ ] Resumos de autoria, ano e país, com fluxo de aprovação
+6. [ ] Resumos de ano e país, com o mesmo fluxo da bio (reaproveita F2.1)
+
+A F2.1 vem **antes** da F3 por causa do país (necessário ao Atlas). As demais
+frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 
 ## F3 — App (spec-driven)
 | Spec | Escopo |

@@ -83,10 +83,16 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   Log de cada execução: `docs/plans/enriquecimento-execucoes.md`.
 
 ## Estado atual
-- F0 e F1 concluídas: `catalog/` tem 302 obras, 215 autorias e 309 leituras,
-  validados. Cobertura em `docs/plans/cobertura.md`.
-- F2.1 (autorias): scripts prontos; execução real em andamento
-  (`docs/specs/enriquecimento-autorias/tasks.md`, tarefas 17–22).
-- Depois: F2 restante (capas, temas, resumos de ano/país); F3 (app) em outra sessão.
+- **F0 e F1 concluídas.** `catalog/` tem 302 obras, 215 autorias e 309 leituras,
+  validados (0 erros). Cobertura em `docs/plans/cobertura.md`.
+- **F2.1 (autorias) concluída.** 206 de 215 autorias identificadas no Wikidata,
+  202 com país, 174 com foto e **209 bios aprovadas**. Aprendizados em
+  `docs/plans/aprendizados-enriquecimento.md`.
+- **Revisão contínua, não bloqueante:** 40 fotos a escolher
+  (`docs/plans/revisao-fotos.html`), 9 autorias sem Wikidata e 6 sem bio. Isso
+  será corrigido olhando o app, não antes dele.
+- **Próximo (nova sessão): F3 — o app.** Começar pela spec S1 (fundação visual),
+  a partir de `design/DESIGN_HANDOFF.md`. Ver `docs/plans/HANDOVER.md`.
+- Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Remoto: `git@github.com:walmeidadf/EstanteLivros.git`.

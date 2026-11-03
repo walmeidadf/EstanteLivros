@@ -146,11 +146,11 @@ Tarefas na mesma chave podem ser feitas em paralelo.
   - `--dry-run --wave 2` (custo) e `--wave 2`. **(revisão)** Ler uma amostra de 20 bios. Se o prompt mudar, criar a nova versão e usar `--regenerate-prompt`.
   - _Requisitos: 5.1–5.4, 13.3_
 
-- [ ] 21. Onda 3 (cota)
+- [x] 21. Onda 3 (cota)
   - `--dry-run --wave 3` para conferir o orçamento, depois `--wave 3`. **(revisão com a Lila)** Escolher fotos em `revisao-fotos.html` → `author_photos.json` → nova execução da etapa `photo`. Aprovar ou rejeitar bios com `review_summaries.py`.
   - _Requisitos: 3.3, 3.4, 6.2, 12.2, 12.4_
 
-- [ ] 22. Fechamento
+- [x] 22. Fechamento
   - Validador com 0 erros; cobertura atualizada; escrever `docs/plans/aprendizados-enriquecimento.md` (acerto por fonte, ajustes e motivos, decisões manuais, custo por autoria nova).
   - Atualizar `docs/ROADMAP.md` (F2.1 concluída) e `AGENTS.md` (estado atual).
   - _Requisitos: 9.1, 13.4_
