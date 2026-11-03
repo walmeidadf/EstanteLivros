@@ -62,7 +62,7 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 |---|---|
 | S1 `estante-fundacao` ✓ | Astro 7, tokens, fontes (Fontsource), camada de dados (Zod), componentes base, vitrine |
 | S2 `estante-inicio-busca` ✓ | Início (carrosséis + cartão Linha do tempo) e busca (índice estático + ilha). No ar. |
-| S3 `linha-do-tempo` | Linha do tempo, Ano, Sem data |
+| S3 `linha-do-tempo` ✓ | Linha do tempo, Ano, Sem data. Quita o 404 de `/linha-do-tempo` e `/ano/{ano}`. |
 | S4 `atlas` | Atlas (idioma e país), Idioma, País, Tema |
 | S5 `obra-autoria` | Obra e Autoria |
 | S6 `pwa-offline` | Manifest, offline, instalação |

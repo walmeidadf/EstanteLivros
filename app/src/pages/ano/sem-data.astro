@@ -1,0 +1,105 @@
+---
+/**
+ * Sem data (/ano/sem-data) — "Os primeiros da lista": as leituras sem ano,
+ * pela sequence (handoff §6.3, §8). Sem big numbers nem navegação de ano; cada
+ * item mostra "nº N da lista" no lugar do ano.
+ *
+ * Rota literal: tem precedência sobre /ano/[year]. A regra vem de
+ * buildUndated(); WHERE não houver leitura sem ano, a página renderiza vazia e
+ * a Linha do tempo deixa de linká-la (design §3.3, §10). Sem JavaScript.
+ */
+import Base from "@/layouts/Base.astro";
+import CoverCaption from "@/components/CoverCaption.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildUndated } from "@/lib/timeline.ts";
+
+const undated = buildUndated(getCatalog());
+---
+
+<Base title="Os primeiros da lista · A estante da Lila">
+  <header class="top">
+    <nav aria-label="Navegação">
+      <a class="nav-home" href="/linha-do-tempo">‹ Linha do tempo</a>
+    </nav>
+    <h1 class="t-screen-title">Os primeiros da lista</h1>
+    <p class="lead">Leituras anotadas no caderno antes de os anos entrarem na conta.</p>
+  </header>
+
+  {
+    undated && (
+      <main class="undated-body">
+        <ol class="grid-3">
+          {undated.items.map((item) => (
+            <li>
+              <CoverCaption work={item.work} href={item.href} size="grid" />
+              <span class="seq">{item.undatedLabel}</span>
+            </li>
+          ))}
+        </ol>
+      </main>
+    )
+  }
+</Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: var(--gutter);
+  }
+  .nav-home {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    min-height: var(--tap);
+    display: inline-flex;
+    align-items: center;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .nav-home:hover {
+    color: var(--text);
+  }
+  .lead {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: var(--faint);
+    margin: 0;
+    max-width: 56ch;
+  }
+
+  .undated-body {
+    padding: 8px var(--gutter) 48px;
+  }
+  .grid-3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--grid-gap-x);
+    row-gap: var(--grid-gap-y);
+  }
+  .grid-3 li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .seq {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+  }
+
+  @media (min-width: 760px) {
+    .top,
+    .undated-body {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

@@ -102,9 +102,16 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   + ilha vanilla). Componente `Carousel` reusável e a regra de seleção em
   `app/src/lib/home.ts`. 54 testes verdes. Validada em produção (desktop +
   celular).
-- **Próximo (nova sessão): F3 · S3 (`linha-do-tempo`).** Linha do tempo, Ano e
-  Sem data. Ver `docs/plans/handover-s2-s3.md` (inclui a dívida de rota: a S2 já
-  linka `/ano/{ano}` e `/linha-do-tempo`, hoje 404).
+- **F3 · S3 (`linha-do-tempo`) concluída.** Telas Linha do tempo
+  (`/linha-do-tempo`), Ano (`/ano/{ano}`, 13 anos) e Sem data (`/ano/sem-data`),
+  quitando a dívida de rota da S2. Componente novo `YearBand` (Faixa do ano,
+  reusa `Spine`+`Shelf`) e a regra de seleção em `app/src/lib/timeline.ts`.
+  Única mudança na camada de dados: `approvedSummaryByScope` no modelo (para o
+  resumo de ano). 69 testes verdes; build do catálogo real em código 0.
+- **Próximo (nova sessão): F3 · S4 (`atlas`).** Atlas (idioma e país), Idioma,
+  País e Tema. Ver `docs/plans/handover-s3-s4.md` (a `YearBand` já serve à
+  prateleira por país; `/obra`, `/autoria`, `/tema`, `/atlas` seguem 404 até
+  S4/S5).
 - Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);

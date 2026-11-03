@@ -14,7 +14,7 @@ import type { WorkView } from "@/lib/catalog/model.ts";
 interface Props {
   work: WorkView;
   href: string;
-  size?: "hero" | "rail";
+  size?: "hero" | "rail" | "grid";
 }
 
 const { work, href, size = "rail" } = Astro.props;
@@ -49,6 +49,10 @@ const authorNames = work.authors.map((a) => a.name).join("; ");
   }
   .size-rail {
     width: var(--cover-rail-w);
+  }
+  /* Na grade, o item ocupa a largura da coluna (não largura fixa). */
+  .size-grid {
+    width: 100%;
   }
   .caption {
     display: flex;

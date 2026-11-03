@@ -1,0 +1,133 @@
+---
+/**
+ * Faixa do ano (handoff §4) — uma linha clicável com o rótulo (o ano, na linha
+ * do tempo; o país, na S4), notas opcionais, a contagem "N ›" em --accent e,
+ * embaixo, uma fileira de lombadas mini sobre a prateleira.
+ *
+ * Genérica: não conhece o catálogo. Recebe tudo pronto de quem a usa — na S3,
+ * a página da Linha do tempo (via timeline.ts); na S4, a prateleira por país.
+ * As notas e a ordem das lombadas são decididas fora (nunca aqui).
+ *
+ * A fileira de lombadas é decorativa (aria-hidden): o ano e a contagem já estão
+ * em texto no link (handoff §10). Reusa Spine (lombada mini) e Shelf
+ * (prateleira) da S1. Renderiza sem JavaScript.
+ */
+import Spine from "@/components/Spine.astro";
+import Shelf from "@/components/Shelf.astro";
+
+interface Props {
+  /** Rótulo principal (o ano "2024"; o nome do país na S4). */
+  label: string;
+  /** Destino da linha inteira. */
+  href: string;
+  /** Contagem exibida como "N ›". */
+  count: number;
+  /** Notas automáticas curtas (0..n); vazio na prateleira por país. */
+  notes?: string[];
+  /** Uma lombada por item, na ordem recebida. */
+  spines: { language: string }[];
+}
+
+const { label, href, count, notes = [], spines } = Astro.props;
+---
+
+<a class="band" href={href}>
+  <span class="line">
+    <span class="label">{label}</span>
+    {
+      notes.length > 0 && (
+        <span class="notes">
+          {notes.map((note, i) => (
+            <>
+              {i > 0 && <span class="dot" aria-hidden="true">·</span>}
+              <span class="note">{note}</span>
+            </>
+          ))}
+        </span>
+      )
+    }
+    <span class="count">{count} ›</span>
+  </span>
+
+  <span class="shelf-wrap" aria-hidden="true">
+    <span class="spines">
+      {spines.map((s, i) => <Spine language={s.language} index={i} />)}
+    </span>
+    <Shelf />
+  </span>
+</a>
+
+<style>
+  .band {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px var(--gutter);
+    min-height: var(--tap);
+    text-decoration: none;
+    color: var(--text);
+    border-top: 1px solid var(--line-soft);
+    /* a faixa nunca é mais larga que seu contêiner (evita rolagem lateral) */
+    max-width: 100%;
+    min-width: 0;
+  }
+  .band:hover .label {
+    text-decoration: underline;
+  }
+
+  .line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--title);
+    flex: 0 0 auto;
+  }
+  .notes {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+    /* ocupa o meio, mas cede espaço à contagem (que nunca some) */
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .note {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    color: var(--faint);
+  }
+  .dot {
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .count {
+    margin-left: auto;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+
+  .shelf-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 100%;
+  }
+  .spines {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    /* Em anos cheios, a fileira quebra em linhas; nunca vira carrossel. */
+    flex-wrap: wrap;
+    row-gap: 6px;
+    min-height: 48px;
+    max-width: 100%;
+  }
+</style>

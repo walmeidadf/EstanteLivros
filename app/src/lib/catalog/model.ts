@@ -74,6 +74,13 @@ export type CatalogModel = {
   authors: AuthorView[];
   worksBySlug: Map<string, WorkView>;
   authorsBySlug: Map<string, AuthorView>;
+  /**
+   * Texto dos summaries APROVADOS, por scope completo (ex.: "ano:2024",
+   * "autoria:han-kang", "pais:PT"). É a mesma fonte da bio de autoria; o
+   * resumo de ano (tela Ano, S3) consulta "ano:{ano}" aqui, para não reler
+   * disco nem reclassificar aprovação.
+   */
+  approvedSummaryByScope: Map<string, string>;
 };
 
 /** Monta o grafo tipado a partir do catálogo cru já validado. */
@@ -82,10 +89,15 @@ export function buildModel(raw: RawCatalog): CatalogModel {
     raw.vocabularies.countries.map((c) => [c.code, c.name] as const),
   );
 
-  // Bio aprovada por autoria (scope "autoria:{slug}", approved).
+  // Summaries aprovados, indexados pelo scope completo. Do mesmo laço sai a
+  // bio de autoria (scope "autoria:{slug}") e o resumo de ano ("ano:{ano}",
+  // consumido pela S3). Não aprovados ficam de fora — a seção some.
+  const approvedSummaryByScope = new Map<string, string>();
   const bioBySlug = new Map<string, string>();
   for (const s of raw.summaries) {
-    if (s.scope.startsWith("autoria:") && s.approved) {
+    if (!s.approved) continue;
+    approvedSummaryByScope.set(s.scope, s.text);
+    if (s.scope.startsWith("autoria:")) {
       bioBySlug.set(s.scope.slice("autoria:".length), s.text);
     }
   }
@@ -172,6 +184,7 @@ export function buildModel(raw: RawCatalog): CatalogModel {
     authors: [...authorViews.values()],
     worksBySlug: workViews,
     authorsBySlug: authorViews,
+    approvedSummaryByScope,
   };
 }
 
