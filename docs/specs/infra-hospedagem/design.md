@@ -142,6 +142,7 @@ economiza build e deixa o histórico de deploy limpo.
 |---|---|
 | `Account → Cloudflare Pages → Edit` | criar deploys no projeto Pages |
 | `User → Memberships → Read` | o Wrangler v4 exige para autenticar na conta |
+| `User → User Details → Read` | o Wrangler v4 lê a identidade do dono do token antes de publicar |
 
 - **Account Resources:** restrito à conta do projeto (não "todas as contas").
 - **Nada além disso:** sem Zone/DNS, Workers, R2, KV, Access (R3.5).

@@ -80,7 +80,7 @@ possível, para limitar o estrago caso ele vaze.
 
 #### Critérios de aceitação
 
-1. THE token do Cloudflare SHALL ter apenas as permissões necessárias para o Direct Upload: `Account → Cloudflare Pages → Edit` e `User → Memberships → Read`.
+1. THE token do Cloudflare SHALL ter apenas as permissões necessárias para o Direct Upload com Wrangler v4: `Account → Cloudflare Pages → Edit`, `User → Memberships → Read` e `User → User Details → Read`.
 2. THE token SHALL ser limitado em Account Resources à conta do projeto, não a todas as contas.
 3. THE token e o account ID SHALL residir nos secrets do GitHub; a documentação da spec SHALL instruir a criá-los e a NÃO os colocar no `.env` nem no git.
 4. THE spec SHALL registrar a recomendação de rotacionar o token antes do uso em produção (porque esteve em texto puro no `.env` local durante o setup) e de dar TTL ao token.

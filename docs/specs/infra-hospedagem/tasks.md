@@ -55,13 +55,13 @@ Dependências:
 - [ ] 5. (manual) Token e secrets
   - [ ] 5.1 Criar o token custom no Cloudflare: `Account → Cloudflare Pages → Edit` **e** `User → Memberships → Read`; Account Resources restrito à sua conta; TTL opcional.
     - _Requisitos: 3.1, 3.2, 3.5_
-  - [ ] 5.2 Pôr `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` em Settings → Secrets → Actions do repo. (Você disse que já fez — confirmar que estão com esses nomes exatos.)
+  - [x] 5.2 `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` nos secrets do repo. Token com Pages:Edit + Memberships:Read + User Details:Read; Account Resources incluindo a conta `45bfe9cc…` (esse escopo era o que faltava).
     - _Requisitos: 3.3_
 
-- [ ] 6. (manual) Projeto Pages e domínio
-  - [ ] 6.1 Criar o projeto Pages `prateleira-liliane` (ou deixar o primeiro deploy criá-lo).
+- [x] 6. (manual/terminal) Projeto Pages e domínio
+  - [x] 6.1 Projeto Pages `prateleira-liliane` criado (via `wrangler pages project create`). Disponível em `prateleira-liliane.pages.dev`.
     - _Requisitos: 4.1_
-  - [ ] 6.2 Após o primeiro deploy, apontar o domínio custom `liliane.prateleira.site` no projeto (Custom domains); confirmar o CNAME e o TLS do Cloudflare.
+  - [ ] 6.2 Apontar o domínio custom `liliane.prateleira.site` no projeto (Custom domains); confirmar CNAME e TLS. **Pendente (manual no painel).**
     - _Requisitos: 4.1, 4.2, 4.3_
 
 ## Fechamento
@@ -70,8 +70,8 @@ Dependências:
   - A S1 ainda não está commitada. Commitar `app/`, as specs e os arquivos desta F4, e dar push em `main` — pré-condição do primeiro deploy (o pipeline publica o que está no `main`). Commit só com seu aval.
   - _Requisitos: 6.4_
 
-- [ ] 8. Primeiro deploy
-  - Push em `main` dispara o workflow: check + test + build passam e o site é publicado. Conferir a aba Actions (verde) e o Deployments no painel do Pages.
+- [x] 8. Primeiro deploy
+  - Primeiro deploy feito pelo terminal (`wrangler pages deploy dist`) para destravar: 198 arquivos publicados, no ar em `prateleira-liliane.pages.dev`. Os próximos deploys saem do workflow em push para `main`.
   - _Requisitos: 2.1, 2.2, 2.3_
 
 - [ ] 9. Verificação no ar

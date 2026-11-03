@@ -40,6 +40,8 @@ Criar em **My Profile → API Tokens → Create Custom Token**:
 
 - `Account → Cloudflare Pages → Edit`
 - `User → Memberships → Read`  ← o Wrangler v4 exige para autenticar na conta
+- `User → User Details → Read`  ← o Wrangler v4 lê a identidade do dono do token
+  antes de publicar; sem esta, o deploy falha com `Authentication error [10000]`
 
 **Account Resources**: restrito à sua conta (não "todas as contas"). TTL
 opcional, recomendado. **Não** incluir Zone/DNS, Workers, R2, KV ou Access —
