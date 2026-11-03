@@ -1,0 +1,100 @@
+---
+/**
+ * Linha do tempo (/linha-do-tempo) — uma faixa do ano por ano, do mais recente
+ * ao mais antigo (handoff §6.2). Fecha o 404 que a S2 deixou nesta rota.
+ *
+ * Composição pura: chama getCatalog() uma vez, pede os recortes a
+ * buildTimeline()/buildUndated() e posiciona. A regra (ordem, notas, contagem)
+ * vive em timeline.ts; a página só itera. Renderiza sem JavaScript.
+ */
+import Base from "@/layouts/Base.astro";
+import NavChips from "@/components/NavChips.astro";
+import YearBand from "@/components/YearBand.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildTimeline, buildUndated } from "@/lib/timeline.ts";
+
+const catalog = getCatalog();
+const bands = buildTimeline(catalog);
+const hasUndated = buildUndated(catalog) !== null;
+---
+
+<Base title="Linha do tempo · A estante da Lila">
+  <header class="top">
+    <NavChips active="linha-do-tempo" />
+    <h1 class="t-screen-title">Linha do tempo</h1>
+  </header>
+
+  <main class="timeline">
+    {
+      bands.map((band) => (
+        <YearBand
+          label={String(band.year)}
+          href={band.href}
+          count={band.count}
+          notes={band.notes}
+          spines={band.spines}
+        />
+      ))
+    }
+
+    {
+      hasUndated && (
+        <a class="undated" href="/ano/sem-data">
+          <span class="undated-title">Os primeiros da lista</span>
+          <span class="undated-hint">leituras sem ano registrado ›</span>
+        </a>
+      )
+    }
+  </main>
+</Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: var(--gutter);
+    padding-bottom: 8px;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 48px;
+  }
+
+  .undated {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px var(--gutter) 0;
+    padding: 16px;
+    border: 1px dashed var(--dashed);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--muted);
+  }
+  .undated:hover {
+    color: var(--text);
+    border-color: var(--text);
+  }
+  .undated-title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--title);
+  }
+  .undated-hint {
+    font-family: var(--font-ui);
+    font-size: 12px;
+  }
+
+  @media (min-width: 760px) {
+    .top,
+    .timeline {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

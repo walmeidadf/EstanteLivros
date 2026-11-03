@@ -142,6 +142,44 @@ test("bio aprovada aparece; não aprovada vira null", () => {
   assert.equal(byslug.get("bio-pendente")!.bio, null);
 });
 
+test("approvedSummaryByScope: ano aprovado entra, não-aprovado fica fora", () => {
+  const model = buildModel(
+    catalog({
+      authors: [author("a")],
+      works: [work("obra", ["a"])],
+      readings: [
+        { sequence: 1, year: 2024, work: "obra", reread: false, originalEntry: "e1", notes: null },
+        { sequence: 2, year: 2025, work: "obra", reread: false, originalEntry: "e2", notes: null },
+      ],
+      summaries: [
+        summary("ano:2024", true, "o ano das estreias"),
+        summary("ano:2025", false, "rascunho não revisado"),
+      ],
+    }),
+  );
+  assert.equal(model.approvedSummaryByScope.get("ano:2024"), "o ano das estreias");
+  assert.equal(model.approvedSummaryByScope.get("ano:2025"), undefined);
+});
+
+test("approvedSummaryByScope inclui a bio de autoria; a bio segue intacta", () => {
+  const model = buildModel(
+    catalog({
+      authors: [author("com-bio"), author("bio-pendente")],
+      works: [],
+      summaries: [
+        summary("autoria:com-bio", true, "bio da autora"),
+        summary("autoria:bio-pendente", false, "ainda em revisão"),
+      ],
+    }),
+  );
+  // mesma fonte: o mapa e o campo bio batem para o aprovado
+  assert.equal(model.approvedSummaryByScope.get("autoria:com-bio"), "bio da autora");
+  assert.equal(model.authorsBySlug.get("com-bio")!.bio, "bio da autora");
+  // o não aprovado fica de fora dos dois
+  assert.equal(model.approvedSummaryByScope.get("autoria:bio-pendente"), undefined);
+  assert.equal(model.authorsBySlug.get("bio-pendente")!.bio, null);
+});
+
 test("país da obra vem das autorias (uma por país)", () => {
   const model = buildModel(
     catalog({

@@ -1,0 +1,260 @@
+---
+/**
+ * Ano (/ano/{ano}) — um ano por vez: ano gigante, nota, big numbers, mix de
+ * idiomas, resumo (só se aprovado) e a grade de 3 colunas na ordem do caderno
+ * (handoff §6.3). Fecha o 404 que a S2 deixou em /ano/{ano}.
+ *
+ * getStaticPaths emite uma página por ANO COM LEITURA (a rota literal
+ * /ano/sem-data mora em sem-data.astro e tem precedência sobre [year]). A
+ * regra toda vem de buildYear(); a página só posiciona. Sem JavaScript.
+ */
+import Base from "@/layouts/Base.astro";
+import CoverCaption from "@/components/CoverCaption.astro";
+import { languageColor } from "@/lib/language-color.ts";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildYear } from "@/lib/timeline.ts";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return [...catalog.aggregates.readingsByYear.keys()].map((year) => ({
+    params: { year: String(year) },
+  }));
+}
+
+const catalog = getCatalog();
+const year = Number(Astro.params.year);
+const data = buildYear(catalog, year);
+
+const note = data.notes[0] ?? null;
+const bigNumbers = [
+  { value: data.readings, label: data.readings === 1 ? "leitura" : "leituras" },
+  { value: data.languages, label: data.languages === 1 ? "idioma" : "idiomas" },
+  { value: data.authors, label: data.authors === 1 ? "autoria" : "autorias" },
+  { value: data.rereads, label: data.rereads === 1 ? "releitura" : "releituras" },
+];
+---
+
+<Base title={`${year} · A estante da Lila`}>
+  <header class="top">
+    <nav class="yearnav" aria-label="Navegação entre anos">
+      {
+        data.prev !== null ? (
+          <a class="nav-prev" href={`/ano/${data.prev}`}>‹ {data.prev}</a>
+        ) : (
+          <span class="nav-prev disabled" aria-hidden="true">‹</span>
+        )
+      }
+      <a class="nav-home" href="/linha-do-tempo">Linha do tempo</a>
+      {
+        data.next !== null ? (
+          <a class="nav-next" href={`/ano/${data.next}`}>{data.next} ›</a>
+        ) : (
+          <span class="nav-next disabled" aria-hidden="true">›</span>
+        )
+      }
+    </nav>
+
+    <h1 class="t-year-giant year">{year}</h1>
+    {note && <p class="note">{note}</p>}
+  </header>
+
+  <main class="year-body">
+    <section class="bignumbers" aria-label="Números do ano">
+      {
+        bigNumbers.map((n) => (
+          <div class="bn">
+            <span class="t-bignumber bn-value">{n.value}</span>
+            <span class="t-label bn-label">{n.label}</span>
+          </div>
+        ))
+      }
+    </section>
+
+    {
+      data.mix.length > 0 && (
+        <section class="mix" aria-label="Idiomas do ano">
+          <div class="mix-bar" aria-hidden="true">
+            {data.mix.map((slice) => (
+              <span
+                class="mix-seg"
+                style={`width:${slice.pct}%;background:${languageColor(slice.language).bg}`}
+              />
+            ))}
+          </div>
+          <ul class="mix-legend">
+            {data.mix.map((slice) => (
+              <li>
+                <span
+                  class="mix-dot"
+                  style={`background:${languageColor(slice.language).bg}`}
+                  aria-hidden="true"
+                />
+                {slice.language} — {slice.count}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      data.summary && (
+        <section class="summary">
+          <p class="t-body">{data.summary}</p>
+        </section>
+      )
+    }
+
+    <ol class="grid-3">
+      {
+        data.items.map((item) => (
+          <li>
+            <CoverCaption work={item.work} href={item.href} size="grid" />
+          </li>
+        ))
+      }
+    </ol>
+  </main>
+</Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: var(--gutter);
+  }
+  .yearnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .yearnav a,
+  .yearnav .disabled {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    min-height: var(--tap);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--muted);
+  }
+  .yearnav a:hover {
+    color: var(--text);
+  }
+  .yearnav .nav-home {
+    color: var(--faint);
+  }
+  .yearnav .disabled {
+    color: var(--line);
+    cursor: default;
+  }
+
+  .year {
+    color: var(--accent);
+  }
+  .note {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: var(--faint);
+    margin: 0;
+  }
+
+  .year-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 8px var(--gutter) 48px;
+  }
+
+  .bignumbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line-soft);
+    border: 1px solid var(--line-soft);
+  }
+  .bn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 12px;
+    background: var(--ground);
+  }
+  .bn-value {
+    color: var(--title);
+  }
+  .bn-label {
+    color: var(--faint);
+  }
+
+  .mix {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mix-bar {
+    display: flex;
+    height: 12px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--bar-neutral);
+  }
+  .mix-seg {
+    height: 100%;
+  }
+  .mix-legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+  .mix-legend li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .mix-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  .summary {
+    max-width: 62ch;
+  }
+  .summary .t-body {
+    color: var(--text);
+    margin: 0;
+  }
+
+  .grid-3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--grid-gap-x);
+    row-gap: var(--grid-gap-y);
+  }
+
+  @media (min-width: 760px) {
+    .top,
+    .year-body {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+    .bignumbers {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
