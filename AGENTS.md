@@ -91,8 +91,16 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
 - **Revisão contínua, não bloqueante:** 40 fotos a escolher
   (`docs/plans/revisao-fotos.html`), 9 autorias sem Wikidata e 6 sem bio. Isso
   será corrigido olhando o app, não antes dele.
-- **Próximo (nova sessão): F3 — o app.** Começar pela spec S1 (fundação visual),
-  a partir de `design/DESIGN_HANDOFF.md`. Ver `docs/plans/HANDOVER.md`.
+- **F3 · S1 (`estante-fundacao`) concluída.** App em `app/` (Astro 7 estático):
+  tokens, fontes, cor por idioma, camada de dados (Zod), componentes base e a
+  vitrine `/styleguide`. 32 testes verdes, build do catálogo real em código 0.
+- **F4 (`infra-hospedagem`) concluída — no ar.** Publicado em
+  `liliane.prateleira.site` (Cloudflare Pages), deploy automático por GitHub
+  Actions a cada push em `main` (portão check + test + build).
+- **Próximo (nova sessão): F3 · S2 (`estante-inicio-busca`).** Tela Início e
+  busca. Ver `docs/plans/handover-s1-s2.md`.
 - Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
+- Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);
+  `gh secret set CLOUDFLARE_API_TOKEN` após rotacionar. Detalhes em `infra/README.md`.
 - Remoto: `git@github.com:walmeidadf/EstanteLivros.git`.

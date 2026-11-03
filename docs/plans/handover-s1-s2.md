@@ -1,7 +1,14 @@
-# Handover — fim da S1, início da S2
+# Handover — fim da S1 + F4, início da S2
 
-Escrito ao concluir a spec `estante-fundacao` (S1). Serve para retomar a F3 na
-spec seguinte (S2 `estante-inicio-busca`).
+Escrito ao concluir a S1 (`estante-fundacao`) e a F4 (`infra-hospedagem`).
+Serve para retomar a F3 na spec seguinte (S2 `estante-inicio-busca`).
+
+## Onde o projeto está (resumo)
+
+- **S1 concluída**: app em `app/`, fundação pronta e testada (detalhe abaixo).
+- **F4 concluída — no ar**: `liliane.prateleira.site` (Cloudflare Pages),
+  deploy automático por GitHub Actions a cada push em `main`.
+- `main` sincronizado, worktree limpa, branch de feature apagada.
 
 ## O que a S1 entregou
 
@@ -50,9 +57,22 @@ build com código 1 e mensagem citando arquivo e campo.
   autoria), como ilha. A S1 não montou índice nenhum — é o grosso da S2.
 - O placeholder atual de `/` (`src/pages/index.astro`) será substituído.
 
+## Deploy (F4) — o que a S2 precisa saber
+
+- Todo push em `main` que toque `app/**` ou `catalog/**` republica sozinho
+  (`.github/workflows/deploy.yml`). O portão roda `check` + `test` + `build`
+  antes de publicar; catálogo ou tipos quebrados não vão ao ar.
+- Trabalho normal da S2: branch → PR (gera preview no Pages) → merge em `main`
+  (deploy de produção). Mudança só de documentação pode ir direto no `main`.
+- Segredos: o token do Cloudflare é secret de CI no GitHub, não do `.env`. Se
+  rotacionar, sincronizar com `gh secret set CLOUDFLARE_API_TOKEN`. Ver
+  `infra/README.md`.
+- `/styleguide` leva `noindex`; continua acessível em produção (não divulgar).
+
 ## Pendências herdadas (não bloqueiam a S2)
 
 - Capas de obra ainda não existem no catálogo (frente de F2). `Cover` já cai na
   capa tipográfica; quando as capas entrarem, passam pelo mesmo `images.ts`
   (estender para capas de obra, hoje só fotos de autoria).
-- Excluir `/styleguide` do deploy público: tratar na F4.
+- Higiene de segurança (quando quiser): rotacionar o token do Cloudflare e
+  removê-lo do `.env` (o deploy já lê dos secrets do GitHub).
