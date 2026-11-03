@@ -256,5 +256,12 @@ const bigNumbers = [
     .bignumbers {
       grid-template-columns: repeat(4, 1fr);
     }
+    /* No desktop as capas mantêm o tamanho do Início (não esticam para
+       preencher a largura): mais colunas, cada uma do tamanho de uma capa. */
+    .grid-3 {
+      grid-template-columns: repeat(auto-fill, var(--cover-hero-w));
+      justify-content: start;
+      column-gap: 20px;
+    }
   }
 </style>
