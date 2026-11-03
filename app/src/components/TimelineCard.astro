@@ -1,0 +1,85 @@
+---
+/**
+ * Cartão "Linha do tempo" (handoff §6.1): fecha o Início com um mini-gráfico de
+ * barras por ano e leva à linha do tempo (S3). O cartão inteiro é um link; o
+ * rótulo em texto carrega o significado e o gráfico é enfeite (aria-hidden).
+ *
+ * Só anos conhecidos (as leituras sem data não viram barra — handoff §1): a
+ * série já chega filtrada de `home.ts`. Nenhum dia/mês é mostrado ou inventado.
+ */
+import type { YearBar } from "@/lib/home.ts";
+
+interface Props {
+  bars: YearBar[];
+  href?: string;
+}
+
+const { bars, href = "/linha-do-tempo" } = Astro.props;
+const maxCount = bars.reduce((m, b) => Math.max(m, b.count), 1);
+const firstYear = bars.length ? bars[0]!.year : null;
+const lastYear = bars.length ? bars[bars.length - 1]!.year : null;
+---
+
+<a class="timeline" href={href}>
+  <span class="label t-label">Linha do tempo</span>
+  <span class="chart" aria-hidden="true">
+    {
+      bars.map((b) => (
+        <span
+          class:list={["bar", { current: b.current }]}
+          style={`--h:${Math.round((b.count / maxCount) * 100)}%`}
+        />
+      ))
+    }
+  </span>
+  {
+    firstYear !== null && lastYear !== null && (
+      <span class="range">
+        {firstYear === lastYear ? `${firstYear}` : `${firstYear}–${lastYear}`}
+      </span>
+    )
+  }
+</a>
+
+<style>
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-inline: var(--gutter);
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--text);
+  }
+  .timeline:hover {
+    border-color: var(--border);
+  }
+  .label {
+    color: var(--muted);
+  }
+  .chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 56px;
+  }
+  .bar {
+    flex: 1 1 0;
+    min-width: 2px;
+    height: var(--h);
+    min-height: 2px;
+    background: var(--bar-neutral);
+    border-radius: 1px;
+  }
+  .bar.current {
+    background: var(--accent);
+  }
+  .range {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    color: var(--faint);
+  }
+</style>

@@ -1,0 +1,68 @@
+---
+/**
+ * Chips de navegação do topo (handoff §6.1, §4): Estante · Atlas · Linha do
+ * tempo. O chip ativo usa --accent e é marcado com aria-current (não navega
+ * para a própria tela); os outros são links. Alvo de toque ≥ 44px.
+ *
+ * Atlas e Linha do tempo apontam para rotas de S4/S3 — 404 temporário aceito
+ * até essas telas existirem.
+ */
+interface Props {
+  /** Qual modo está ativo. */
+  active: "estante" | "atlas" | "linha-do-tempo";
+}
+
+const { active } = Astro.props;
+
+const chips = [
+  { id: "estante", label: "Estante", href: "/" },
+  { id: "atlas", label: "Atlas", href: "/atlas" },
+  { id: "linha-do-tempo", label: "Linha do tempo", href: "/linha-do-tempo" },
+] as const;
+---
+
+<nav class="chips" aria-label="Seções da estante">
+  {
+    chips.map((chip) =>
+      chip.id === active ? (
+        <span class="chip active" aria-current="page">
+          {chip.label}
+        </span>
+      ) : (
+        <a class="chip" href={chip.href}>
+          {chip.label}
+        </a>
+      ),
+    )
+  }
+</nav>
+
+<style>
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a.chip:hover {
+    border-color: var(--text);
+  }
+  .chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+</style>

@@ -1,13 +1,152 @@
 ---
+/**
+ * Início (/) — a primeira tela pública da estante (handoff §6.1).
+ *
+ * Composição pura: chama getCatalog() uma vez, pede os recortes a buildHome()
+ * e posiciona os componentes. Nenhuma regra de negócio mora aqui — ela vive em
+ * home.ts (design §2, §4). Só a busca é interativa (ilha); o resto renderiza e
+ * navega sem JavaScript.
+ */
 import Base from "@/layouts/Base.astro";
-// Página inicial — placeholder da S1. A tela Início de verdade é a S2.
+import SearchBox from "@/components/SearchBox.astro";
+import NavChips from "@/components/NavChips.astro";
+import Carousel from "@/components/Carousel.astro";
+import CoverCaption from "@/components/CoverCaption.astro";
+import AuthorChip from "@/components/AuthorChip.astro";
+import TimelineCard from "@/components/TimelineCard.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildHome } from "@/lib/home.ts";
+
+const catalog = getCatalog();
+const home = buildHome(catalog);
 ---
 
 <Base title="A estante da Lila">
-  <main style="padding: var(--gutter);">
+  <header class="top">
     <h1 class="t-screen-title">A estante da Lila</h1>
-    <p class="t-body">
-      Fundação em construção (spec S1). A tela Início chega na S2.
-    </p>
+    <SearchBox />
+    <NavChips active="estante" />
+  </header>
+
+  <main class="home">
+    {
+      home.currentYear && (
+        <Carousel
+          title={home.currentYear.title}
+          href={home.currentYear.href}
+          total={home.currentYear.total}
+          shown={home.currentYear.items.length}
+        >
+          {home.currentYear.items.map((item) => (
+            <CoverCaption work={item.work} href={item.href} size="hero" />
+          ))}
+        </Carousel>
+      )
+    }
+
+    {
+      home.recurringAuthors && (
+        <section class="authors">
+          <div class="head">
+            <h2 class="t-section-title">Quem sempre volta</h2>
+          </div>
+          <div class="author-rail">
+            {home.recurringAuthors.map((pick) => (
+              <AuthorChip author={pick.author} href={pick.href} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      home.themeRails.map((rail) => (
+        <Carousel
+          title={rail.title}
+          href={rail.href}
+          total={rail.total}
+          shown={rail.items.length}
+        >
+          {rail.items.map((item) => (
+            <CoverCaption work={item.work} href={item.href} />
+          ))}
+        </Carousel>
+      ))
+    }
+
+    {
+      home.rereads && (
+        <Carousel
+          title={home.rereads.title}
+          href={home.rereads.href}
+          total={home.rereads.total}
+          shown={home.rereads.items.length}
+        >
+          {home.rereads.items.map((item) => (
+            <CoverCaption work={item.work} href={item.href} />
+          ))}
+        </Carousel>
+      )
+    }
+
+    <TimelineCard bars={home.yearBars} />
   </main>
 </Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: var(--gutter);
+    padding-bottom: 8px;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 48px;
+  }
+
+  .authors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .authors .head {
+    padding-inline: var(--gutter);
+  }
+  .authors .head h2 {
+    color: var(--title);
+  }
+  .author-rail {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--gutter);
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    scroll-padding-inline: var(--gutter);
+  }
+  .author-rail::-webkit-scrollbar {
+    display: none;
+  }
+  .author-rail > :global(*) {
+    scroll-snap-align: start;
+  }
+
+  /* Desktop: contém a largura e centraliza; os carrosséis seguem sangrando. */
+  @media (min-width: 760px) {
+    .top {
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .home {
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+/**
+ * Item de carrossel: capa + título e autoria em texto SOB a capa (handoff §9 —
+ * o texto nunca mora só na imagem). O item inteiro é um link para a obra.
+ *
+ * Compõe o componente Capa da S1: herda a capa tipográfica (nenhuma capa de
+ * obra existe ainda), o selo "2×" das releituras e o `lang`/`dir` dos títulos
+ * não latinos. Recebe uma WorkView já resolvida (a página não passa o catálogo
+ * cru).
+ */
+import Cover from "@/components/Cover.astro";
+import type { WorkView } from "@/lib/catalog/model.ts";
+
+interface Props {
+  work: WorkView;
+  href: string;
+  size?: "hero" | "rail";
+}
+
+const { work, href, size = "rail" } = Astro.props;
+const authorNames = work.authors.map((a) => a.name).join("; ");
+---
+
+<a class:list={["item", `size-${size}`]} href={href}>
+  <Cover
+    title={work.title}
+    language={work.language}
+    originalTitle={work.originalTitle}
+    author={authorNames}
+    rereadBadge={work.reread}
+    size={size}
+  />
+  <span class="caption">
+    <span class="title">{work.title}</span>
+    {authorNames && <span class="author">{authorNames}</span>}
+  </span>
+</a>
+
+<style>
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .size-hero {
+    width: var(--cover-hero-w);
+  }
+  .size-rail {
+    width: var(--cover-rail-w);
+  }
+  .caption {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .title {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text);
+    /* até 2 linhas, com reticências */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .author {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--faint);
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+  }
+  .item:hover .title {
+    text-decoration: underline;
+  }
+</style>
