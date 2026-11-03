@@ -68,8 +68,12 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 | S6 `pwa-offline` | Manifest, offline, instalação |
 | S7 `compartilhar` | Modo da Lila, retrospectiva 9:16, card de livro |
 
-## F4 — Infra e deploy
-- Spec `infra-hospedagem`, logo após S1, para a Lila testar no Samsung cedo.
+## F4 — Infra e deploy ✓ (no ar)
+- Spec [`infra-hospedagem`](specs/infra-hospedagem/) concluída. App no ar em
+  `prateleira-liliane.pages.dev` (Cloudflare Pages), deploy automático por
+  GitHub Actions a cada push em `main`, com portão check + test + build.
+- Pendente (manual): apontar o domínio custom `liliane.prateleira.site`.
+- Cloudflare Access (modo da Lila) fica preparado para a S7.
 
 ## F5 — Admin
 - Adicionar leitura em poucos toques, reaproveitando os scripts da F2.

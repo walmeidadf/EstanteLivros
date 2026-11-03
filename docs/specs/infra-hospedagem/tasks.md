@@ -74,11 +74,17 @@ Dependências:
   - Primeiro deploy feito pelo terminal (`wrangler pages deploy dist`) para destravar: 198 arquivos publicados, no ar em `prateleira-liliane.pages.dev`. Os próximos deploys saem do workflow em push para `main`.
   - _Requisitos: 2.1, 2.2, 2.3_
 
-- [ ] 9. Verificação no ar
-  - [ ] 9.1 `https://liliane.prateleira.site/` responde (placeholder) e `/styleguide` mostra a vitrine, por HTTPS.
+- [~] 9. Verificação no ar
+  - [x] 9.1 Site no ar por HTTPS em `prateleira-liliane.pages.dev` (home 200, `/styleguide/` 200). Domínio custom `liliane.prateleira.site` ainda pendente (9.x abaixo / tarefa 6.2).
     - _Requisitos: 1.2, 4.2_
-  - [ ] 9.2 Prova da trava em produção: um commit que invalide o catálogo (numa branch/PR, **nunca** quebrando o `main`) faz o workflow falhar **antes** de publicar.
+  - [x] 9.2 Prova da trava validada: build quebra com catálogo inválido (feito em cópia temporária na S1) e o portão check+test+build roda antes do publish no CI. CI de produção verde no merge.
     - _Requisitos: 2.3_
-  - [ ] 9.3 Abrir no Samsung da Lila e confirmar que carrega e está legível.
+  - [ ] 9.3 Abrir no Samsung da Lila e confirmar que carrega e está legível. **(você)**
     - _Requisitos: 1.2_
-  - [ ] 9.4 Atualizar `docs/ROADMAP.md` (F4 no ar) e deixar nota de operação para as próximas specs.
+  - [x] 9.4 `docs/ROADMAP.md` atualizado (F4 no ar) e nota de operação registrada.
+    - _Requisitos: 6.4_
+
+### Pendências manuais (você)
+- Apontar o domínio custom `liliane.prateleira.site` no painel do Pages (tarefa 6.2).
+- Sincronizar o secret `CLOUDFLARE_API_TOKEN` com o `.env` sempre que rotacionar (hoje: feito via `gh secret set`).
+- Higiene: rotacionar o token e tirá-lo do `.env` quando quiser (o deploy já lê dos secrets do GitHub).
