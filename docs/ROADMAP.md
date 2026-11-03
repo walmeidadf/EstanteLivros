@@ -61,7 +61,7 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 | Spec | Escopo |
 |---|---|
 | S1 `estante-fundacao` ✓ | Astro 7, tokens, fontes (Fontsource), camada de dados (Zod), componentes base, vitrine |
-| S2 `estante-inicio-busca` | Início e busca |
+| S2 `estante-inicio-busca` ✓ | Início (carrosséis + cartão Linha do tempo) e busca (índice estático + ilha). No ar. |
 | S3 `linha-do-tempo` | Linha do tempo, Ano, Sem data |
 | S4 `atlas` | Atlas (idioma e país), Idioma, País, Tema |
 | S5 `obra-autoria` | Obra e Autoria |

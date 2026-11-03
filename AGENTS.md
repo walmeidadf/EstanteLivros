@@ -97,8 +97,14 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
 - **F4 (`infra-hospedagem`) concluída — no ar.** Publicado em
   `liliane.prateleira.site` (Cloudflare Pages), deploy automático por GitHub
   Actions a cada push em `main` (portão check + test + build).
-- **Próximo (nova sessão): F3 · S2 (`estante-inicio-busca`).** Tela Início e
-  busca. Ver `docs/plans/handover-s1-s2.md`.
+- **F3 · S2 (`estante-inicio-busca`) concluída — no ar.** Tela Início (`/`,
+  carrosséis + cartão Linha do tempo) e busca (índice estático de 517 entradas
+  + ilha vanilla). Componente `Carousel` reusável e a regra de seleção em
+  `app/src/lib/home.ts`. 54 testes verdes. Validada em produção (desktop +
+  celular).
+- **Próximo (nova sessão): F3 · S3 (`linha-do-tempo`).** Linha do tempo, Ano e
+  Sem data. Ver `docs/plans/handover-s2-s3.md` (inclui a dívida de rota: a S2 já
+  linka `/ano/{ano}` e `/linha-do-tempo`, hoje 404).
 - Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);

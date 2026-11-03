@@ -109,12 +109,12 @@ Dependências (tarefas na mesma chave podem ir em paralelo):
     - _Requisitos: 1.2_
   - [x] 11.2 `npm run build` contra o catálogo real: código 0; `/` gerada; `/search-index.json` emitido com ~517 entradas (302 obras + 215 autorias); nenhuma rede. _(517 entradas confirmadas; preview serviu `/` 200 e `/search-index.json` 200 application/json.)_
     - _Requisitos: 7.1, 7.9, 1.2_
-  - [ ] 11.3 Acessibilidade/desempenho: só a busca carrega `<script>`; carrosséis rolam sem JS; capas `lazy`/2:3; decorativos `aria-hidden`; chip ativo `aria-current`; contraste pelos tokens/§3.2.
+  - [x] 11.3 Acessibilidade/desempenho: só a busca carrega `<script>`; carrosséis rolam sem JS; capas `lazy`/2:3; decorativos `aria-hidden`; chip ativo `aria-current`; contraste pelos tokens/§3.2. _(Conferido no browser do desktop e do celular.)_
     - _Requisitos: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6_
-  - [ ] 11.4 Busca sem JS: com JavaScript desligado, `/` continua legível e navegável e o campo não quebra a página.
+  - [x] 11.4 Busca sem JS: com JavaScript desligado, `/` continua legível e navegável e o campo não quebra a página.
     - _Requisitos: 7.8, 1.2_
 
-- [ ] 12. Fechamento
-  - [ ] 12.1 PR (gera preview no Pages); conferir o Início no preview (carrosséis, busca, chips) e anotar os 404 esperados dos destinos de S3–S5.
+- [x] 12. Fechamento
+  - [x] 12.1 PR #2 (preview no Pages); Início conferido no preview e em produção (desktop + celular); 404 esperados dos destinos de S3–S5 anotados.
     - _Requisitos: 1.1_
-  - [ ] 12.2 Atualizar `docs/ROADMAP.md` (S2 concluída) e nota de handover para a S3 (`linha-do-tempo`), listando os destinos que a S2 já linka e esperam página.
+  - [x] 12.2 Atualizar `docs/ROADMAP.md` (S2 concluída) e nota de handover para a S3 (`linha-do-tempo`), listando os destinos que a S2 já linka e esperam página.
