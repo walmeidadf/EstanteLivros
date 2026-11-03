@@ -72,7 +72,8 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 - Spec [`infra-hospedagem`](specs/infra-hospedagem/) concluída. App no ar em
   `prateleira-liliane.pages.dev` (Cloudflare Pages), deploy automático por
   GitHub Actions a cada push em `main`, com portão check + test + build.
-- Pendente (manual): apontar o domínio custom `liliane.prateleira.site`.
+- No ar em `liliane.prateleira.site` (domínio custom, HTTPS) e em
+  `prateleira-liliane.pages.dev`.
 - Cloudflare Access (modo da Lila) fica preparado para a S7.
 
 ## F5 — Admin

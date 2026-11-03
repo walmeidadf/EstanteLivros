@@ -61,7 +61,7 @@ Dependências:
 - [x] 6. (manual/terminal) Projeto Pages e domínio
   - [x] 6.1 Projeto Pages `prateleira-liliane` criado (via `wrangler pages project create`). Disponível em `prateleira-liliane.pages.dev`.
     - _Requisitos: 4.1_
-  - [ ] 6.2 Apontar o domínio custom `liliane.prateleira.site` no projeto (Custom domains); confirmar CNAME e TLS. **Pendente (manual no painel).**
+  - [x] 6.2 Domínio custom `liliane.prateleira.site` apontado e no ar por HTTPS (home e `/styleguide/` em 200; TLS do Cloudflare/Google Trust Services, válido até fev/2027).
     - _Requisitos: 4.1, 4.2, 4.3_
 
 ## Fechamento
@@ -74,8 +74,8 @@ Dependências:
   - Primeiro deploy feito pelo terminal (`wrangler pages deploy dist`) para destravar: 198 arquivos publicados, no ar em `prateleira-liliane.pages.dev`. Os próximos deploys saem do workflow em push para `main`.
   - _Requisitos: 2.1, 2.2, 2.3_
 
-- [~] 9. Verificação no ar
-  - [x] 9.1 Site no ar por HTTPS em `prateleira-liliane.pages.dev` (home 200, `/styleguide/` 200). Domínio custom `liliane.prateleira.site` ainda pendente (9.x abaixo / tarefa 6.2).
+- [x] 9. Verificação no ar
+  - [x] 9.1 Site no ar por HTTPS no domínio custom `liliane.prateleira.site` (home 200, `/styleguide/` 200) e em `prateleira-liliane.pages.dev`.
     - _Requisitos: 1.2, 4.2_
   - [x] 9.2 Prova da trava validada: build quebra com catálogo inválido (feito em cópia temporária na S1) e o portão check+test+build roda antes do publish no CI. CI de produção verde no merge.
     - _Requisitos: 2.3_
