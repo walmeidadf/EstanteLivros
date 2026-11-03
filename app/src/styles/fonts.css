@@ -1,0 +1,23 @@
+/*
+ * Fontes auto-hospedadas via Fontsource (handoff §3.3).
+ *
+ * Nada de hotlink: os arquivos .woff2 vêm dos pacotes @fontsource* e são
+ * empacotados no build. Versões fixadas no package.json.
+ *
+ * Carga sob demanda: cada arquivo abaixo traz seu próprio `unicode-range`, de
+ * modo que o navegador só baixa a fonte Noto do alfabeto que de fato aparecer
+ * na página (coreano, japonês, hebraico). Sem JavaScript.
+ */
+
+/* Display/títulos — Bodoni Moda variável (opsz 6–96): regular e itálico. */
+@import "@fontsource-variable/bodoni-moda/wght.css";
+@import "@fontsource-variable/bodoni-moda/wght-italic.css";
+
+/* Interface/texto — Manrope variável (400–800). */
+@import "@fontsource-variable/manrope/wght.css";
+
+/* Títulos originais em outros alfabetos — só o subconjunto do script, peso 400.
+   O unicode-range de cada subset garante a carga sob demanda. */
+@import "@fontsource/noto-serif-kr/korean-400.css";
+@import "@fontsource/noto-serif-jp/japanese-400.css";
+@import "@fontsource/noto-serif-hebrew/hebrew-400.css";

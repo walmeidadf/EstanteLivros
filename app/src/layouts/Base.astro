@@ -1,0 +1,38 @@
+---
+/**
+ * Layout base de toda página da estante.
+ *
+ * Fixa `lang="pt-BR"`, importa (nesta ordem) tokens → fontes → tipografia →
+ * reset/global, e aplica o fundo --ground. Tudo renderiza sem JavaScript.
+ */
+import "@/styles/tokens.css";
+import "@/styles/fonts.css";
+import "@/styles/type.css";
+import "@/styles/global.css";
+
+interface Props {
+  /** Título do documento (vai para <title>). */
+  title: string;
+  /** Descrição opcional para meta description. */
+  description?: string;
+  /** Quando true, adiciona noindex (ex.: vitrine, fora do site público). */
+  noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

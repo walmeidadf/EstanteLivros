@@ -1,0 +1,26 @@
+---
+/**
+ * Prateleira — faixa de madeira com gradiente e sombra, sobre a qual capas e
+ * lombadas se apoiam (handoff §4). Puramente decorativa: aria-hidden.
+ */
+interface Props {
+  /** Classe extra opcional. */
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<div class:list={["shelf", className]} aria-hidden="true"></div>
+
+<style>
+  .shelf {
+    height: var(--shelf-height);
+    background: linear-gradient(
+      to bottom,
+      var(--wood-top),
+      var(--wood-bottom)
+    );
+    border-radius: 1px;
+    box-shadow: 0 10px 14px -10px rgba(0, 0, 0, 0.7);
+  }
+</style>

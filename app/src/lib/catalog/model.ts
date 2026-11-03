@@ -1,0 +1,180 @@
+/*
+ * Modelo de domínio (executa no build).
+ *
+ * Caminho de mão única, passo 2: modelar. Transforma o catálogo cru em um
+ * grafo tipado e navegável, aplicando aqui — uma vez, para todas as telas — as
+ * regras de negócio:
+ *   - releitura = UMA obra com várias leituras (nunca duplicada);
+ *   - só o ANO existe; leitura sem ano é "sem data" e guarda a sequence;
+ *   - a bio de uma autoria só aparece se houver summary approved;
+ *   - o país de uma obra vem do país das autorias.
+ *
+ * Componentes e páginas consomem este modelo, não os JSON crus.
+ */
+import { languageColor, type LanguageColor } from "../language-color.ts";
+import type { RawCatalog } from "./load.ts";
+import type { Work as RawWork } from "./schema.ts";
+
+export type ReadingView = {
+  sequence: number;
+  /** Ano da leitura, ou null quando "sem data" (ver `undated`). */
+  year: number | null;
+  reread: boolean;
+  /** true quando não há ano: a leitura mora em "Os primeiros da lista". */
+  undated: boolean;
+};
+
+export type PhotoView = {
+  /** Caminho do mestre relativo a catalog/media/ (ex.: authors/han-kang.jpg). */
+  file: string;
+};
+
+export type AuthorView = {
+  slug: string;
+  name: string;
+  country: string | null;
+  countryName: string | null;
+  languages: string[];
+  primaryLanguage: string;
+  /** Cor do idioma principal — usada no avatar. */
+  color: LanguageColor;
+  photo: PhotoView | null;
+  /** Bio só quando há summary approved; senão null (a seção "Sobre" some). */
+  bio: string | null;
+  /** Obras da autoria na estante. */
+  works: WorkView[];
+};
+
+export type WorkView = {
+  slug: string;
+  title: string;
+  originalTitle: string | null;
+  originalTitleRomanized: string | null;
+  language: string;
+  /** Cor do idioma original — eixo visual de lombadas e capas. */
+  color: LanguageColor;
+  firstPublished: number | null;
+  type: string;
+  genres: string[];
+  themes: string[];
+  authors: AuthorView[];
+  /** Países das autorias (ISO-2), sem repetição — base do Atlas por país. */
+  countries: string[];
+  readings: ReadingView[];
+  /** true quando a obra foi lida mais de uma vez (selo "2×"). */
+  reread: boolean;
+  edition: RawWork["edition"];
+  /** URL de origem da capa — PROVENIÊNCIA apenas; nunca usada como src. */
+  coverSourceUrl: string | null;
+  catalogerNote: string | null;
+};
+
+export type CatalogModel = {
+  works: WorkView[];
+  authors: AuthorView[];
+  worksBySlug: Map<string, WorkView>;
+  authorsBySlug: Map<string, AuthorView>;
+};
+
+/** Monta o grafo tipado a partir do catálogo cru já validado. */
+export function buildModel(raw: RawCatalog): CatalogModel {
+  const countryNameByCode = new Map(
+    raw.vocabularies.countries.map((c) => [c.code, c.name] as const),
+  );
+
+  // Bio aprovada por autoria (scope "autoria:{slug}", approved).
+  const bioBySlug = new Map<string, string>();
+  for (const s of raw.summaries) {
+    if (s.scope.startsWith("autoria:") && s.approved) {
+      bioBySlug.set(s.scope.slice("autoria:".length), s.text);
+    }
+  }
+
+  // Leituras por obra (uma obra, várias leituras), ordenadas por sequence.
+  const readingsByWork = new Map<string, ReadingView[]>();
+  for (const r of raw.readings) {
+    const list = readingsByWork.get(r.work) ?? [];
+    list.push({
+      sequence: r.sequence,
+      year: r.year,
+      reread: r.reread,
+      undated: r.year === null,
+    });
+    readingsByWork.set(r.work, list);
+  }
+  for (const list of readingsByWork.values()) {
+    list.sort((a, b) => a.sequence - b.sequence);
+  }
+
+  // Nós de autoria (sem obras ainda; ligadas no segundo passo).
+  const authorViews = new Map<string, AuthorView>();
+  for (const a of raw.authors) {
+    authorViews.set(a.slug, {
+      slug: a.slug,
+      name: a.name,
+      country: a.country,
+      countryName: a.country ? (countryNameByCode.get(a.country) ?? null) : null,
+      languages: a.languages,
+      primaryLanguage: a.primaryLanguage,
+      color: languageColor(a.primaryLanguage),
+      photo: a.photo ? { file: a.photo.file } : null,
+      bio: bioBySlug.get(a.slug) ?? null,
+      works: [],
+    });
+  }
+
+  // Nós de obra, ligando as autorias resolvidas.
+  const workViews = new Map<string, WorkView>();
+  for (const w of raw.works) {
+    const authors = w.authors
+      .map((slug) => authorViews.get(slug))
+      .filter((a): a is AuthorView => a !== undefined);
+
+    const countries = uniq(
+      authors
+        .map((a) => a.country)
+        .filter((c): c is string => c !== null),
+    );
+
+    const readings = readingsByWork.get(w.slug) ?? [];
+
+    const view: WorkView = {
+      slug: w.slug,
+      title: w.title,
+      originalTitle: w.originalTitle,
+      originalTitleRomanized: w.originalTitleRomanized,
+      language: w.language,
+      color: languageColor(w.language),
+      firstPublished: w.firstPublished,
+      type: w.type,
+      genres: w.genres,
+      themes: w.themes,
+      authors,
+      countries,
+      readings,
+      reread: readings.length > 1,
+      edition: w.edition,
+      coverSourceUrl: w.cover ? w.cover.sourceUrl : null,
+      catalogerNote: w.catalogerNote,
+    };
+    workViews.set(w.slug, view);
+  }
+
+  // Ligar obras às autorias (back-reference), na ordem dos arquivos de obra.
+  for (const view of workViews.values()) {
+    for (const author of view.authors) {
+      author.works.push(view);
+    }
+  }
+
+  return {
+    works: [...workViews.values()],
+    authors: [...authorViews.values()],
+    worksBySlug: workViews,
+    authorsBySlug: authorViews,
+  };
+}
+
+function uniq<T>(items: T[]): T[] {
+  return [...new Set(items)];
+}
