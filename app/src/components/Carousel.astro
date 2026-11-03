@@ -1,0 +1,187 @@
+---
+/**
+ * Carrossel — fileira de rolagem horizontal genérica (handoff §9).
+ *
+ * Rola nativamente por toque e teclado (scroll-snap); funciona sem JavaScript.
+ * A última peça fica cortada para sinalizar que rola; termina num cartão
+ * tracejado "ver todos (N)". O título da seção é o mesmo link do cartão. No
+ * desktop, setas ‹ › fora das capas são REFORÇO (um script mínimo), ocultas
+ * quando não há JS. Sem bolinhas, contador, barra ou rolagem automática.
+ *
+ * Não conhece o catálogo: recebe título, destino, total e os itens via slot.
+ */
+interface Props {
+  title: string;
+  /** Destino do título e do cartão "ver todos". */
+  href: string;
+  /** Total de itens no recorte (N do "ver todos (N)"). */
+  total: number;
+  /** Quantos itens estão de fato no slot (para decidir se cabe "ver todos"). */
+  shown: number;
+  /** Prefixo do rótulo do cartão final. */
+  labelAllPrefix?: string;
+}
+
+const { title, href, total, shown, labelAllPrefix = "ver todos" } = Astro.props;
+
+// Só mostra o cartão "ver todos" quando há mais itens do que os exibidos.
+const showAll = total > shown;
+---
+
+<section class="carousel">
+  <div class="head">
+    <a class="title t-section-title" href={href}>{title}</a>
+  </div>
+
+  <div class="viewport">
+    <div class="rail" tabindex="0">
+      <slot />
+      {
+        showAll && (
+          <a class="see-all" href={href}>
+            <span class="see-all-label">
+              {labelAllPrefix} ({total})
+            </span>
+          </a>
+        )
+      }
+    </div>
+
+    <button class="arrow arrow-prev" type="button" aria-label="Anterior" hidden>
+      ‹
+    </button>
+    <button class="arrow arrow-next" type="button" aria-label="Próximos" hidden>
+      ›
+    </button>
+  </div>
+</section>
+
+<style>
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .head {
+    padding-inline: var(--gutter);
+  }
+  .title {
+    color: var(--title);
+    text-decoration: none;
+  }
+  .title:hover {
+    text-decoration: underline;
+  }
+
+  .viewport {
+    position: relative;
+  }
+
+  .rail {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* sangra até as bordas; o padding-right menor que um item deixa a próxima
+       peça aparecer pela metade (sinaliza que rola) */
+    padding-inline: var(--gutter);
+    padding-bottom: 4px;
+    scrollbar-width: none; /* Firefox: sem barra */
+    scroll-padding-inline: var(--gutter);
+  }
+  .rail::-webkit-scrollbar {
+    display: none; /* WebKit: sem barra */
+  }
+  .rail > :global(*) {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+
+  /* Cartão tracejado "ver todos (N)" */
+  .see-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--cover-rail-w);
+    aspect-ratio: var(--cover-ratio);
+    border: 1px dashed var(--dashed);
+    border-radius: 2px;
+    color: var(--muted);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+  }
+  .see-all:hover {
+    color: var(--text);
+    border-color: var(--text);
+  }
+  .see-all-label {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /* Setas: só no desktop e só com JS (o script remove [hidden]). */
+  .arrow {
+    display: none;
+  }
+  @media (hover: hover) and (min-width: 760px) {
+    .viewport:where(.enhanced) .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: calc(50% - 22px);
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .viewport:where(.enhanced) .arrow:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+    .viewport:where(.enhanced) .arrow-prev {
+      left: 2px;
+    }
+    .viewport:where(.enhanced) .arrow-next {
+      right: 2px;
+    }
+  }
+</style>
+
+<script>
+  // Reforço progressivo: liga as setas do desktop. Sem este script, a fileira
+  // ainda rola por toque e teclado (handoff §9). Cada carrossel é independente.
+  for (const viewport of document.querySelectorAll<HTMLElement>(".viewport")) {
+    const rail = viewport.querySelector<HTMLElement>(".rail");
+    const prev = viewport.querySelector<HTMLButtonElement>(".arrow-prev");
+    const next = viewport.querySelector<HTMLButtonElement>(".arrow-next");
+    if (!rail || !prev || !next) continue;
+
+    viewport.classList.add("enhanced");
+    prev.hidden = false;
+    next.hidden = false;
+
+    const step = () => Math.max(rail.clientWidth * 0.8, 160);
+    const update = () => {
+      const max = rail.scrollWidth - rail.clientWidth - 1;
+      prev.disabled = rail.scrollLeft <= 0;
+      next.disabled = rail.scrollLeft >= max;
+    };
+
+    prev.addEventListener("click", () =>
+      rail.scrollBy({ left: -step(), behavior: "smooth" }),
+    );
+    next.addEventListener("click", () =>
+      rail.scrollBy({ left: step(), behavior: "smooth" }),
+    );
+    rail.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+</script>

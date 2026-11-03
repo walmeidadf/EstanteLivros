@@ -1,0 +1,218 @@
+---
+/**
+ * Busca (handoff §4) — ilha pequena, sem framework.
+ *
+ * O markup é estático: um formulário de busca com campo de ~52px e ícone de
+ * lupa, mais uma lista de resultados vazia. Sem JavaScript o campo aparece mas
+ * não filtra, e o resto do Início continua inteiro (a busca é interação, não
+ * leitura — design §7.3).
+ *
+ * O `<script>` abaixo é a ilha: no primeiro foco baixa `/search-index.json`
+ * UMA vez e, a cada tecla, filtra com a MESMA `fold`/`matches` do build,
+ * injetando os resultados como links. Não chama API externa.
+ */
+---
+
+<form class="search" role="search" autocomplete="off">
+  <label class="field">
+    <span class="visually-hidden">Buscar livro ou autoria</span>
+    <svg
+      class="icon"
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"></circle>
+      <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+    </svg>
+    <input
+      class="input"
+      type="search"
+      name="q"
+      placeholder="Buscar livro ou autoria"
+      aria-label="Buscar livro ou autoria"
+      aria-controls="search-results"
+      enterkeyhint="search"
+    />
+  </label>
+  <ul id="search-results" class="results" role="listbox" hidden></ul>
+</form>
+
+<style>
+  .search {
+    position: relative;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 52px;
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-input);
+    background: var(--surface);
+    color: var(--faint);
+  }
+  .field:focus-within {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+  .icon {
+    flex: 0 0 auto;
+  }
+  .input {
+    flex: 1 1 auto;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 16px; /* ≥16px evita zoom no iOS/Android */
+  }
+  .input::placeholder {
+    color: var(--faint);
+  }
+  .results {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 6px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  .results :global(a) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .results :global(a:hover),
+  .results :global(a:focus) {
+    background: var(--line-soft);
+  }
+  .results :global(.r-label) {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .results :global(.r-kind) {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+  .results :global(.r-empty) {
+    padding: 10px 12px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    color: var(--faint);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<script>
+  import { fold, matches, type SearchEntry } from "@/lib/search.ts";
+
+  const form = document.querySelector<HTMLFormElement>(".search");
+  const input = form?.querySelector<HTMLInputElement>(".input");
+  const results = form?.querySelector<HTMLUListElement>("#search-results");
+  if (form && input && results) {
+    const LIMIT = 20;
+    let entries: SearchEntry[] | null = null;
+    let loading = false;
+
+    async function ensureIndex() {
+      if (entries || loading) return;
+      loading = true;
+      try {
+        const res = await fetch("/search-index.json");
+        entries = (await res.json()) as SearchEntry[];
+      } catch {
+        entries = [];
+      } finally {
+        loading = false;
+      }
+    }
+
+    function escapeHtml(s: string): string {
+      return s.replace(/[&<>"']/g, (c) =>
+        c === "&" ? "&amp;"
+        : c === "<" ? "&lt;"
+        : c === ">" ? "&gt;"
+        : c === '"' ? "&quot;"
+        : "&#39;",
+      );
+    }
+
+    function render(hits: SearchEntry[]) {
+      if (hits.length === 0) {
+        results!.innerHTML = '<li class="r-empty">Nada encontrado.</li>';
+      } else {
+        results!.innerHTML = hits
+          .map((e) => {
+            const kind = e.type === "author" ? "Autoria" : "Livro";
+            return `<li role="option"><a href="${e.href}"><span class="r-label">${escapeHtml(
+              e.label,
+            )}</span><span class="r-kind">${kind}</span></a></li>`;
+          })
+          .join("");
+      }
+      results!.hidden = false;
+    }
+
+    function clear() {
+      results!.hidden = true;
+      results!.innerHTML = "";
+    }
+
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    function onInput() {
+      const q = fold(input!.value);
+      if (q.length === 0) {
+        clear();
+        return;
+      }
+      const list = entries ?? [];
+      const hits: SearchEntry[] = [];
+      for (const e of list) {
+        if (matches(e, q)) {
+          hits.push(e);
+          if (hits.length >= LIMIT) break;
+        }
+      }
+      render(hits);
+    }
+
+    input.addEventListener("focus", ensureIndex, { once: true });
+    input.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(onInput, 90);
+    });
+    form.addEventListener("submit", (ev) => ev.preventDefault());
+    document.addEventListener("click", (ev) => {
+      if (!form.contains(ev.target as Node)) clear();
+    });
+  }
+</script>

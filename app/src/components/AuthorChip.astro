@@ -1,0 +1,61 @@
+---
+/**
+ * Item de "quem sempre volta": avatar da autoria + nome em texto, dentro de um
+ * link para a página da autoria. Usa o Avatar de iniciais da S1 — foto local
+ * derivada no build quando houver, senão as iniciais na cor do idioma.
+ */
+import InitialsAvatar from "@/components/InitialsAvatar.astro";
+import { deriveAuthorPhoto } from "@/lib/images.ts";
+import type { AuthorView } from "@/lib/catalog/model.ts";
+
+interface Props {
+  author: AuthorView;
+  href: string;
+  size?: number;
+}
+
+const { author, href, size = 88 } = Astro.props;
+
+// Deriva a foto (1:1) no build; null quando não há mestre → cai nas iniciais.
+const photo = author.photo
+  ? await deriveAuthorPhoto(author.photo.file, "1:1")
+  : null;
+---
+
+<a class="chip" href={href} style={`--chip-w:${size}px;`}>
+  <InitialsAvatar
+    name={author.name}
+    language={author.primaryLanguage}
+    image={photo}
+    size={size}
+  />
+  <span class="name">{author.name}</span>
+</a>
+
+<style>
+  .chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: var(--chip-w);
+    text-decoration: none;
+    color: inherit;
+  }
+  .name {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .chip:hover .name {
+    text-decoration: underline;
+  }
+</style>
