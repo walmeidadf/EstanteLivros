@@ -1,0 +1,54 @@
+/*
+ * Tokens visuais — valores exatos do handoff de design.
+ * Fontes: DESIGN_HANDOFF.md §3.1 (cores de interface) e §3.4 (medidas).
+ * Não inventar valores: qualquer mudança vem do handoff.
+ */
+
+:root {
+  /* ---- §3.1 Cores de interface ---- */
+  --ground: #0e1714; /* fundo de todas as telas */
+  --surface: #15211d; /* campo de busca, caixas */
+  --line-soft: #1f2d28; /* divisórias entre linhas de lista */
+  --line: #2d3e37; /* divisórias de seção */
+  --border: #33443d; /* borda de chips e botões secundários */
+  --border-input: #3a4c45; /* borda do campo de busca */
+  --dashed: #4a5c54; /* borda tracejada ("ver todos", "sem data") */
+  --text: #ede6d6; /* texto corrente */
+  --title: #f4ebd8; /* títulos em serifa */
+  --muted: #bfc8c2; /* texto secundário */
+  --faint: #a9b5ae; /* rótulos, contagens (passa 4.5:1 no --ground) */
+  --accent: #e8c678; /* destaque: chip ativo, contagens, ano atual */
+  --accent-ink: #1a1408; /* texto sobre --accent */
+  --wood-top: #5b3e26; /* prateleira (topo do gradiente) */
+  --wood-bottom: #3a2716; /* prateleira (base do gradiente) */
+  --bar-neutral: #4b5e55; /* barras neutras de gráfico */
+
+  /* ---- §3.4 Medidas ---- */
+  --gutter: 16px; /* margem lateral */
+  --tap: 44px; /* alvo de toque mínimo */
+  --radius-pill: 22px; /* raio de chips e botões */
+
+  /* Capa: sempre 2:3 */
+  --cover-ratio: 2 / 3;
+  --cover-shadow: 0 16px 22px -14px rgba(0, 0, 0, 0.8);
+  --cover-hero-w: 136px; /* destaque 136×204 */
+  --cover-hero-h: 204px;
+  --cover-rail-w: 104px; /* carrossel 104×156 */
+  --cover-rail-h: 156px;
+
+  /* Grade de 3 colunas */
+  --grid-gap-x: 12px;
+  --grid-gap-y: 20px;
+
+  /* Prateleira */
+  --shelf-height: 8px; /* faixa de 6–9 px */
+
+  /* ---- Famílias tipográficas (§3.3) ----
+     Os nomes "… Variable" vêm dos pacotes @fontsource-variable. */
+  --font-display: "Bodoni Moda Variable", Georgia, serif;
+  --font-ui: "Manrope Variable", system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --font-serif-kr: "Noto Serif KR", serif;
+  --font-serif-jp: "Noto Serif JP", serif;
+  --font-serif-hebrew: "Noto Serif Hebrew", serif;
+}

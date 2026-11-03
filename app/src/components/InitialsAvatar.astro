@@ -1,0 +1,90 @@
+---
+/**
+ * Avatar de iniciais — círculo na cor do idioma principal da autoria com as
+ * iniciais em Bodoni itálico (handoff §4). Quando há foto local derivada,
+ * mostra a foto no lugar das iniciais. `alt` = nome.
+ */
+import { languageColor } from "@/lib/language-color.ts";
+import { initials } from "@/lib/text.ts";
+import type { DerivedImage } from "@/lib/images.ts";
+
+interface Props {
+  name: string;
+  /** Idioma principal da autoria (define a cor do círculo e do anel). */
+  language: string;
+  /** Foto derivada no build; ausente/null → iniciais. */
+  image?: DerivedImage | null;
+  /** Diâmetro em px. */
+  size?: number;
+  /** Anel na cor do idioma (usado no retrato grande da página de Autoria). */
+  ring?: boolean;
+}
+
+const {
+  name,
+  language,
+  image = null,
+  size = 56,
+  ring = false,
+} = Astro.props;
+
+const { bg, ink } = languageColor(language);
+const text = initials(name);
+// Iniciais ocupam ~42% do diâmetro.
+const fontSize = Math.round(size * 0.42);
+---
+
+<span
+  class:list={["avatar", { ring }]}
+  style={`--av-size:${size}px;--av-bg:${bg};--av-ink:${ink};--av-fs:${fontSize}px;`}
+>
+  {
+    image ? (
+      <img
+        class="avatar-img"
+        src={image.src}
+        srcset={image.srcset}
+        width={size}
+        height={size}
+        alt={name}
+        loading="lazy"
+        decoding="async"
+      />
+    ) : (
+      <span class="initials" aria-label={name}>
+        {text}
+      </span>
+    )
+  }
+</span>
+
+<style>
+  .avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--av-size);
+    height: var(--av-size);
+    border-radius: 50%;
+    background: var(--av-bg);
+    color: var(--av-ink);
+    overflow: hidden;
+    flex: 0 0 auto;
+  }
+  .avatar.ring {
+    box-shadow: 0 0 0 2px var(--ground), 0 0 0 4px var(--av-bg);
+  }
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .initials {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--av-fs);
+    line-height: 1;
+  }
+</style>

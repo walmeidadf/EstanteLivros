@@ -1,0 +1,166 @@
+---
+/**
+ * Capa tipográfica — fallback de capa (handoff §4, referência telas/Capas.dc.html).
+ * Fundo na cor do idioma; título em Bodoni itálico no topo; título original
+ * (quando difere, com lang/dir e fonte Noto se não latino) e autoria em caixa
+ * alta no rodapé, separados por um filete. O título encolhe em até 3 passos
+ * conforme o comprimento, sem JavaScript.
+ */
+import { languageColor } from "@/lib/language-color.ts";
+import { detectScript, scriptDir } from "@/lib/text.ts";
+
+interface Props {
+  title: string;
+  language: string;
+  /** Título original, só mostrado quando difere do título pt-BR. */
+  originalTitle?: string | null;
+  /** Nome(s) de autoria para o rodapé. */
+  author?: string;
+  size?: "hero" | "rail" | "grid";
+}
+
+const {
+  title,
+  language,
+  originalTitle = null,
+  author = "",
+  size = "grid",
+} = Astro.props;
+
+const { bg, ink } = languageColor(language);
+
+// Encolhimento do título em até 3 passos, por faixa de comprimento (sem JS).
+function titleStep(len: number): 0 | 1 | 2 | 3 {
+  if (len <= 14) return 0;
+  if (len <= 24) return 1;
+  if (len <= 40) return 2;
+  return 3;
+}
+const step = titleStep(title.length);
+
+// Título original: só quando difere e não é vazio. Detecta o alfabeto para a
+// fonte e o dir.
+const showOriginal =
+  originalTitle != null &&
+  originalTitle.trim().length > 0 &&
+  originalTitle.trim() !== title.trim();
+const script = showOriginal ? detectScript(originalTitle!) : "latin";
+const dir = scriptDir(script);
+
+// Fonte Noto conforme o script; latino usa a serifa display padrão.
+const notoVar =
+  script === "cjk"
+    ? "var(--font-serif-jp)"
+    : script === "hebrew"
+      ? "var(--font-serif-hebrew)"
+      : "inherit";
+
+// lang aproximado para o atributo HTML (o CJK fica sem distinção fina aqui).
+const originalLang =
+  script === "hebrew"
+    ? "he"
+    : script === "cyrillic"
+      ? "ru"
+      : script === "cjk"
+        ? language === "coreano"
+          ? "ko"
+          : language === "japonês"
+            ? "ja"
+            : undefined
+        : undefined;
+---
+
+<div
+  class:list={["cover", `size-${size}`, `step-${step}`]}
+  style={`--cv-bg:${bg};--cv-ink:${ink};`}
+>
+  <span class="title">{title}</span>
+  <span class="foot">
+    {
+      showOriginal && (
+        <span
+          class="original"
+          lang={originalLang}
+          dir={dir}
+          style={`font-family:${notoVar};`}
+        >
+          {originalTitle}
+        </span>
+      )
+    }
+    <span class="rule" aria-hidden="true"></span>
+    {author && <span class="author">{author}</span>}
+  </span>
+</div>
+
+<style>
+  .cover {
+    aspect-ratio: var(--cover-ratio);
+    box-sizing: border-box;
+    padding: 10px 9px;
+    background: var(--cv-bg);
+    color: var(--cv-ink);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--cover-shadow);
+    overflow: hidden;
+  }
+  .size-hero {
+    width: var(--cover-hero-w);
+  }
+  .size-rail {
+    width: var(--cover-rail-w);
+  }
+
+  .title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    /* corta no subtítulo, nunca no meio: até 4 linhas, com reticências */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+  }
+  /* 3 passos de encolhimento por faixa de comprimento */
+  .step-0 .title {
+    font-size: 20px;
+  }
+  .step-1 .title {
+    font-size: 17px;
+  }
+  .step-2 .title {
+    font-size: 15px;
+  }
+  .step-3 .title {
+    font-size: 13px;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .original {
+    font-size: 11px;
+    opacity: 0.92;
+    line-height: 1.15;
+  }
+  .rule {
+    height: 1px;
+    background: currentColor;
+    opacity: 0.55;
+  }
+  .author {
+    font-family: var(--font-ui);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+</style>

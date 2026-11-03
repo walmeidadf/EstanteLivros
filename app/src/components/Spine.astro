@@ -1,0 +1,40 @@
+---
+/**
+ * Lombada mini — barra de 4px de largura e altura determinística (30–48px) a
+ * partir do índice, na cor do idioma original (handoff §4). Uma por livro.
+ * Decorativa: aria-hidden. O dado (título, ano) existe em texto no contexto.
+ */
+import { languageColor } from "@/lib/language-color.ts";
+
+interface Props {
+  /** Idioma original da obra (define a cor). */
+  language: string;
+  /** Índice do livro na fileira (define a altura, de forma estável). */
+  index: number;
+}
+
+const { language, index } = Astro.props;
+const { bg } = languageColor(language);
+
+// Altura determinística entre 30 e 48px. Hash simples do índice para variar
+// sem aleatoriedade — estável entre builds.
+const MIN = 30;
+const RANGE = 18; // 30..48
+const height = MIN + (((index * 2654435761) >>> 0) % (RANGE + 1));
+---
+
+<span
+  class="spine"
+  style={`--spine-bg:${bg};--spine-h:${height}px;`}
+  aria-hidden="true"></span>
+
+<style>
+  .spine {
+    display: inline-block;
+    width: 4px;
+    height: var(--spine-h);
+    background: var(--spine-bg);
+    border-radius: 1px;
+    vertical-align: bottom;
+  }
+</style>

@@ -1,0 +1,4 @@
+# Artefatos do app (também cobertos pelo .gitignore da raiz)
+node_modules/
+dist/
+.astro/

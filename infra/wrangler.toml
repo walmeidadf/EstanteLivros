@@ -1,0 +1,7 @@
+# Config mínima do Cloudflare Pages para o Direct Upload.
+# Só o necessário para o wrangler saber qual projeto e qual diretório publicar.
+# O deploy roda pelo GitHub Actions (ver .github/workflows/deploy.yml).
+
+name = "prateleira-liliane"
+pages_build_output_dir = "app/dist"
+compatibility_date = "2026-11-03"

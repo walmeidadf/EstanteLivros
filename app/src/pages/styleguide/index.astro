@@ -1,0 +1,302 @@
+---
+/**
+ * Vitrine (styleguide) — verificação visual da S1 e tela de abertura da
+ * palestra. Mostra os tokens, a cor por idioma e os componentes base em todos
+ * os seus estados, com DADOS REAIS do catálogo.
+ *
+ * Fora do site público: a rota mora em /styleguide, leva `noindex`, e nenhuma
+ * página pública linka para ela (R8.3). No deploy (F4) a rota é excluída do que
+ * vai ao ar. Renderiza sem JavaScript (R8.4).
+ */
+import Base from "@/layouts/Base.astro";
+import Shelf from "@/components/Shelf.astro";
+import Spine from "@/components/Spine.astro";
+import Cover from "@/components/Cover.astro";
+import TypographicCover from "@/components/TypographicCover.astro";
+import InitialsAvatar from "@/components/InitialsAvatar.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import {
+  languagesWithOwnColor,
+  languageColor,
+  OTHER_LANGUAGE_COLOR,
+} from "@/lib/language-color.ts";
+import { deriveAuthorPhoto } from "@/lib/images.ts";
+
+const INTERFACE_TOKENS = [
+  "--ground", "--surface", "--line-soft", "--line", "--border",
+  "--border-input", "--dashed", "--text", "--title", "--muted", "--faint",
+  "--accent", "--accent-ink", "--wood-top", "--wood-bottom", "--bar-neutral",
+];
+
+const catalog = getCatalog();
+
+// Autorias reais: uma com foto, uma sem.
+const withPhoto = catalog.authorsBySlug.get("han-kang");
+const withoutPhoto = catalog.authorsBySlug.get("beatriz-leal");
+
+const hanKangPhoto =
+  withPhoto?.photo != null
+    ? await deriveAuthorPhoto(withPhoto.photo.file, "1:1")
+    : null;
+
+// Idiomas: os de cor própria + um "outros" real (catalão existe no catálogo).
+const ownColorLanguages = languagesWithOwnColor();
+
+// Obras reais para a capa tipográfica em cada estado de alfabeto/comprimento.
+const coverCases = [
+  catalog.worksBySlug.get("torto-arado-itamar-vieira-junior"),
+  catalog.worksBySlug.get(
+    "emburrecimento-programado-o-curriculo-oculto-da-escolarizacao-obrigatoria-john",
+  ),
+  catalog.worksBySlug.get("crime-e-castigo-fiodor-dostoievski"),
+  catalog.worksBySlug.get("de-amor-e-trevas-amos-oz"),
+  catalog.worksBySlug.get("a-vegetariana-han-kang"),
+].filter((w) => w !== undefined);
+
+// Uma fileira de lombadas reais (as primeiras 24 obras), sobre a prateleira.
+const spineRow = catalog.works.slice(0, 24);
+---
+
+<Base title="Vitrine — fundação (S1)" noindex>
+  <main>
+    <header>
+      <p class="t-label">Estante da Lila · spec S1</p>
+      <h1 class="t-screen-title">Vitrine da fundação</h1>
+      <p class="t-body">
+        Tokens, cor por idioma e componentes base, com dados reais do catálogo
+        ({catalog.works.length} obras, {catalog.authors.length} autorias).
+      </p>
+    </header>
+
+    <!-- Tokens de cor -->
+    <section>
+      <h2 class="t-section-title">Tokens de cor</h2>
+      <div class="swatches">
+        {
+          INTERFACE_TOKENS.map((token) => (
+            <figure class="swatch">
+              <span class="chip" style={`background:var(${token})`} />
+              <figcaption class="t-body">{token}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Cor por idioma -->
+    <section>
+      <h2 class="t-section-title">Cor por idioma</h2>
+      <div class="lang-grid">
+        {
+          ownColorLanguages.map((lang) => {
+            const c = languageColor(lang);
+            return (
+              <div class="lang-card" style={`background:${c.bg};color:${c.ink}`}>
+                <strong>{lang}</strong>
+                <small>{c.bg} · {c.ink}</small>
+              </div>
+            );
+          })
+        }
+        <div
+          class="lang-card"
+          style={`background:${OTHER_LANGUAGE_COLOR.bg};color:${OTHER_LANGUAGE_COLOR.ink}`}
+        >
+          <strong>catalão → outros</strong>
+          <small>{OTHER_LANGUAGE_COLOR.bg} · {OTHER_LANGUAGE_COLOR.ink}</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipografia -->
+    <section>
+      <h2 class="t-section-title">Tipografia</h2>
+      <div class="type-samples">
+        <p class="t-screen-title">Título de tela</p>
+        <p class="t-year-giant">2024</p>
+        <p class="t-section-title">Título de seção</p>
+        <p class="t-bignumber">302</p>
+        <p class="t-label">Rótulo em caixa alta</p>
+        <p class="t-body">Texto corrente em Manrope, 15px.</p>
+      </div>
+    </section>
+
+    <!-- Avatar de iniciais -->
+    <section>
+      <h2 class="t-section-title">Avatar de iniciais</h2>
+      <div class="row">
+        {
+          withPhoto && (
+            <figure class="demo">
+              <InitialsAvatar
+                name={withPhoto.name}
+                language={withPhoto.primaryLanguage}
+                image={hanKangPhoto}
+                size={96}
+              />
+              <figcaption class="t-body">{withPhoto.name} (foto real)</figcaption>
+            </figure>
+          )
+        }
+        {
+          withoutPhoto && (
+            <figure class="demo">
+              <InitialsAvatar
+                name={withoutPhoto.name}
+                language={withoutPhoto.primaryLanguage}
+                size={96}
+                ring
+              />
+              <figcaption class="t-body">{withoutPhoto.name} (iniciais)</figcaption>
+            </figure>
+          )
+        }
+      </div>
+    </section>
+
+    <!-- Capa tipográfica em estados -->
+    <section>
+      <h2 class="t-section-title">Capa tipográfica (estados)</h2>
+      <div class="covers">
+        {
+          coverCases.map((w) => (
+            <figure class="demo">
+              <div style="width:136px">
+                <TypographicCover
+                  title={w!.title}
+                  language={w!.language}
+                  originalTitle={w!.originalTitle}
+                  author={w!.authors.map((a) => a.name).join("; ")}
+                  size="hero"
+                />
+              </div>
+              <figcaption class="t-body">{w!.language}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Capa (fallback para tipográfica — nenhuma capa de obra ainda) + selo -->
+    <section>
+      <h2 class="t-section-title">Capa (fallback) e selo de releitura</h2>
+      <div class="covers">
+        {
+          coverCases.slice(0, 2).map((w) => (
+            <figure class="demo">
+              <div style="width:136px">
+                <Cover
+                  title={w!.title}
+                  language={w!.language}
+                  originalTitle={w!.originalTitle}
+                  author={w!.authors.map((a) => a.name).join("; ")}
+                  rereadBadge={w!.reread}
+                  size="hero"
+                />
+              </div>
+              <figcaption class="t-body">
+                {w!.reread ? "com selo 2×" : "leitura única"}
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Lombadas sobre a prateleira -->
+    <section>
+      <h2 class="t-section-title">Lombadas e prateleira</h2>
+      <div class="shelf-demo">
+        <div class="spines">
+          {spineRow.map((w, i) => <Spine language={w.language} index={i} />)}
+        </div>
+        <Shelf />
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  section {
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+  .swatch {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .chip {
+    display: block;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .lang-card {
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-ui);
+  }
+  .lang-card small {
+    opacity: 0.8;
+    font-size: 11px;
+  }
+  .type-samples {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .row,
+  .covers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+  }
+  .demo {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .shelf-demo {
+    max-width: 320px;
+  }
+  .spines {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 56px;
+  }
+</style>

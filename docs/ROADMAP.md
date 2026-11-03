@@ -60,7 +60,7 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 ## F3 — App (spec-driven)
 | Spec | Escopo |
 |---|---|
-| S1 `estante-fundacao` | Astro, tokens, fontes, camada de dados, componentes base |
+| S1 `estante-fundacao` ✓ | Astro 7, tokens, fontes (Fontsource), camada de dados (Zod), componentes base, vitrine |
 | S2 `estante-inicio-busca` | Início e busca |
 | S3 `linha-do-tempo` | Linha do tempo, Ano, Sem data |
 | S4 `atlas` | Atlas (idioma e país), Idioma, País, Tema |
