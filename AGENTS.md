@@ -35,6 +35,9 @@ legacy/             legado local, FORA do git (CSVs validados, caches, scripts a
 - Sem estrelas ou notas. Dados incompletos usam os fallbacks do design, nunca "—".
 - Código e identificadores em inglês; interface e docs em pt-BR.
 - Dependências com versão fixada. Não fazer hotlink de imagens externas.
+- Artefatos descartáveis (screenshots, dumps, builds de verificação) vão em
+  `temp/` (dentro do projeto, no `.gitignore`), nunca em `/tmp` ou fora do
+  workspace — escrever fora exige aprovação e trava o fluxo.
 
 ## Documentos
 | Documento | Conteúdo |

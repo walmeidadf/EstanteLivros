@@ -101,5 +101,11 @@ const undated = buildUndated(getCatalog());
       margin-inline: auto;
       width: 100%;
     }
+    /* Mesmas capas do Início no desktop: colunas de tamanho fixo, sem esticar. */
+    .grid-3 {
+      grid-template-columns: repeat(auto-fill, var(--cover-hero-w));
+      justify-content: start;
+      column-gap: 20px;
+    }
   }
 </style>
