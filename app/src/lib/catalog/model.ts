@@ -22,11 +22,24 @@ export type ReadingView = {
   reread: boolean;
   /** true quando não há ano: a leitura mora em "Os primeiros da lista". */
   undated: boolean;
+  /** Como a leitura estava no caderno (tela Obra, "Como estava no caderno"). */
+  originalEntry: string;
 };
 
 export type PhotoView = {
   /** Caminho do mestre relativo a catalog/media/ (ex.: authors/han-kang.jpg). */
   file: string;
+  /** Crédito da foto (atribuição). Nulos quando a fonte não os informa. */
+  author: string | null;
+  license: string | null;
+  sourceUrl: string | null;
+};
+
+/** Fonte citada de uma bio (mesmo summary aprovado que a origina). */
+export type BioSource = {
+  /** Rótulo para exibir (ex.: "Wikipédia (pt)"). */
+  label: string;
+  url: string | null;
 };
 
 export type AuthorView = {
@@ -41,6 +54,8 @@ export type AuthorView = {
   photo: PhotoView | null;
   /** Bio só quando há summary approved; senão null (a seção "Sobre" some). */
   bio: string | null;
+  /** Fonte da bio (do mesmo summary aprovado); null quando não há bio. */
+  bioSource: BioSource | null;
   /** Obras da autoria na estante. */
   works: WorkView[];
 };
@@ -94,11 +109,18 @@ export function buildModel(raw: RawCatalog): CatalogModel {
   // consumido pela S3). Não aprovados ficam de fora — a seção some.
   const approvedSummaryByScope = new Map<string, string>();
   const bioBySlug = new Map<string, string>();
+  const bioSourceBySlug = new Map<string, BioSource>();
   for (const s of raw.summaries) {
     if (!s.approved) continue;
     approvedSummaryByScope.set(s.scope, s.text);
     if (s.scope.startsWith("autoria:")) {
-      bioBySlug.set(s.scope.slice("autoria:".length), s.text);
+      const slug = s.scope.slice("autoria:".length);
+      bioBySlug.set(slug, s.text);
+      // A fonte citada da bio vem do mesmo summary aprovado. Só guardamos
+      // quando há rótulo de fonte; a URL pode faltar (vira link só com url).
+      if (s.source) {
+        bioSourceBySlug.set(slug, { label: s.source, url: s.sourceUrl });
+      }
     }
   }
 
@@ -111,6 +133,7 @@ export function buildModel(raw: RawCatalog): CatalogModel {
       year: r.year,
       reread: r.reread,
       undated: r.year === null,
+      originalEntry: r.originalEntry,
     });
     readingsByWork.set(r.work, list);
   }
@@ -129,8 +152,18 @@ export function buildModel(raw: RawCatalog): CatalogModel {
       languages: a.languages,
       primaryLanguage: a.primaryLanguage,
       color: languageColor(a.primaryLanguage),
-      photo: a.photo ? { file: a.photo.file } : null,
+      photo: a.photo
+        ? {
+            file: a.photo.file,
+            author: a.photo.author,
+            license: a.photo.license,
+            sourceUrl: a.photo.sourceUrl,
+          }
+        : null,
       bio: bioBySlug.get(a.slug) ?? null,
+      bioSource: bioBySlug.has(a.slug)
+        ? (bioSourceBySlug.get(a.slug) ?? null)
+        : null,
       works: [],
     });
   }

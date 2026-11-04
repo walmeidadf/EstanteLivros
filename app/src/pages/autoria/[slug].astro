@@ -1,0 +1,156 @@
+---
+/**
+ * Autoria (/autoria/{slug}) — handoff §6.8. Retrato e números no topo, bio com
+ * a fonte, a grade "Na estante da Lila" com "lido em {ano}" sob cada capa, e os
+ * temas que mais aparecem. Sem JavaScript.
+ *
+ * Uma página por autoria (getStaticPaths). A regra vem de buildAuthorPage(); a
+ * página só posiciona.
+ */
+import Base from "@/layouts/Base.astro";
+import BackLink from "@/components/BackLink.astro";
+import AuthorHeader from "@/components/AuthorHeader.astro";
+import WorkGrid from "@/components/WorkGrid.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildAuthorPage, type AuthorPage } from "@/lib/author-page.ts";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return catalog.authors.map((a) => ({
+    params: { slug: a.slug },
+    props: { page: buildAuthorPage(catalog, a.slug) },
+  }));
+}
+
+const { page } = Astro.props as { page: AuthorPage };
+---
+
+<Base title={`${page.author.name} · A estante da Lila`}>
+  <div class="top">
+    <BackLink />
+  </div>
+
+  <AuthorHeader page={page} />
+
+  <main class="autoria">
+    {
+      page.bio && (
+        <section class="block bio" aria-labelledby="sobre-h">
+          <h2 id="sobre-h" class="t-section-title">Sobre</h2>
+          <p>{page.bio.text}</p>
+          {page.bio.source && (
+            <p class="source">
+              Fonte:{" "}
+              {page.bio.source.url ? (
+                <a href={page.bio.source.url} rel="nofollow noopener">
+                  {page.bio.source.label}
+                </a>
+              ) : (
+                page.bio.source.label
+              )}
+            </p>
+          )}
+        </section>
+      )
+    }
+
+    {
+      page.works.length > 0 && (
+        <section class="block" aria-labelledby="estante-h">
+          <h2 id="estante-h" class="t-section-title">Na estante da Lila</h2>
+          <WorkGrid items={page.works} captionFor={page.captionFor} />
+        </section>
+      )
+    }
+
+    {
+      page.themes && (
+        <section class="block" aria-labelledby="temas-h">
+          <h2 id="temas-h" class="t-section-title">Temas que mais aparecem</h2>
+          <ul class="themes">
+            {page.themes.map((t) => (
+              <li>
+                <a class="chip" href={t.href}>
+                  {t.label}
+                  <span class="count"> · {t.count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </main>
+</Base>
+
+<style>
+  .top {
+    padding: 4px var(--gutter) 0;
+  }
+  .autoria {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px var(--gutter) 48px;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bio p {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--text);
+    max-width: 62ch;
+  }
+  .bio .source {
+    font-size: 13px;
+    color: var(--faint);
+  }
+  .bio .source a {
+    color: var(--faint);
+    text-decoration: underline;
+  }
+
+  .themes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .chip:hover {
+    border-color: var(--text);
+  }
+  .count {
+    color: var(--faint);
+    font-weight: 400;
+  }
+
+  @media (min-width: 760px) {
+    .autoria,
+    .top {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,276 @@
+---
+/**
+ * Obra (/obra/{slug}) — handoff §6.9. Capa e título no topo, ficha, leituras,
+ * temas, edição de referência e o registro do catálogo. Fecha a dívida de rota
+ * de todas as grades, capas e resultados de busca. Sem JavaScript.
+ *
+ * Uma página por obra (getStaticPaths). A regra vem de buildWorkPage(); a
+ * página só posiciona.
+ */
+import Base from "@/layouts/Base.astro";
+import BackLink from "@/components/BackLink.astro";
+import WorkHeader from "@/components/WorkHeader.astro";
+import DescriptionList from "@/components/DescriptionList.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildWorkPage, type WorkPage } from "@/lib/work-page.ts";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return catalog.works.map((w) => ({
+    params: { slug: w.slug },
+    props: { page: buildWorkPage(catalog, w.slug) },
+  }));
+}
+
+const { page } = Astro.props as { page: WorkPage };
+const { work } = page;
+---
+
+<Base title={`${work.title} · A estante da Lila`}>
+  <div class="top">
+    <BackLink />
+  </div>
+
+  <WorkHeader page={page} />
+
+  <main class="obra">
+    <section class="block" aria-label="Ficha">
+      <DescriptionList facts={page.facts} />
+    </section>
+
+    <section class="block" aria-labelledby="leituras-h">
+      <h2 id="leituras-h" class="t-section-title">{page.readingsHeading}</h2>
+      <ol class="readings">
+        {
+          page.readings.map((r) => (
+            <li>
+              {r.year ? (
+                <a class="when" href={r.year.href}>
+                  {r.year.value}
+                </a>
+              ) : (
+                <a class="when" href={r.undatedHref!}>
+                  Entre os primeiros da lista
+                </a>
+              )}
+              <span class="role">{r.role}</span>
+              <span class="seq">nº {r.sequence} da lista</span>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    {
+      page.themes && (
+        <section class="block" aria-labelledby="temas-h">
+          <h2 id="temas-h" class="t-section-title">Temas</h2>
+          <ul class="themes">
+            {page.themes.map((t) => (
+              <li>
+                <a class="chip" href={t.href}>
+                  {t.label}
+                  {t.count !== null && <span class="count"> · {t.count}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      page.edition && (
+        <section class="block" aria-labelledby="edicao-h">
+          <h2 id="edicao-h" class="t-section-title">{page.edition.label}</h2>
+          <dl class="edition">
+            {page.edition.lines.map((line) => (
+              <div class="erow">
+                <dt class="t-label">{line.label}</dt>
+                <dd>{line.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
+    {
+      (page.catalogerNote || page.notebook.length > 0) && (
+        <section class="block register" aria-label="Registro do catálogo">
+          {page.catalogerNote && (
+            <div class="note">
+              <h2 class="t-label">Nota do catalogador</h2>
+              <p>{page.catalogerNote}</p>
+            </div>
+          )}
+          {page.notebook.length > 0 && (
+            <div class="notebook">
+              <h2 class="t-label">Como estava no caderno</h2>
+              {page.notebook.map((entry) => (
+                <figure>
+                  <blockquote>{entry.text}</blockquote>
+                  <figcaption>{entry.when}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+        </section>
+      )
+    }
+  </main>
+</Base>
+
+<style>
+  .top {
+    padding: 4px var(--gutter) 0;
+  }
+  .obra {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px var(--gutter) 48px;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .readings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line-soft);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .readings li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 12px;
+    padding: 12px 14px;
+    background: var(--ground);
+    font-family: var(--font-ui);
+    font-size: 15px;
+    color: var(--text);
+  }
+  .when {
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .when:hover {
+    text-decoration: underline;
+  }
+  .role {
+    color: var(--muted);
+  }
+  .seq {
+    color: var(--faint);
+    font-size: 13px;
+    margin-left: auto;
+  }
+
+  .themes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .chip:hover {
+    border-color: var(--text);
+  }
+  .count {
+    color: var(--faint);
+    font-weight: 400;
+  }
+
+  .edition {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line-soft);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .erow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding: 12px 14px;
+    background: var(--ground);
+  }
+  .erow .t-label {
+    margin: 0;
+    color: var(--faint);
+    min-width: 120px;
+  }
+  .erow dd {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  .register {
+    gap: 20px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+  .register h2 {
+    margin: 0 0 6px;
+    color: var(--faint);
+  }
+  .register p,
+  .register blockquote {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .notebook figure {
+    margin: 0 0 12px;
+  }
+  .notebook blockquote {
+    padding-left: 12px;
+    border-left: 2px solid var(--line);
+    font-style: italic;
+  }
+  .notebook figcaption {
+    margin-top: 4px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    color: var(--faint);
+  }
+
+  @media (min-width: 760px) {
+    .obra,
+    .top {
+      max-width: 760px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

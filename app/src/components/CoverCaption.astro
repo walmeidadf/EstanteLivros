@@ -10,7 +10,7 @@
  */
 import Cover from "@/components/Cover.astro";
 import type { WorkView } from "@/lib/catalog/model.ts";
-import { detectScript, originalTitleLang, scriptDir } from "@/lib/text.ts";
+import { originalTitlePresentation } from "@/lib/text.ts";
 
 interface Props {
   work: WorkView;
@@ -23,25 +23,14 @@ interface Props {
 const { work, href, size = "rail", showOriginal = false } = Astro.props;
 const authorNames = work.authors.map((a) => a.name).join("; ");
 
-// Título original: só quando existe e difere do pt-BR.
-const original =
-  showOriginal &&
-  work.originalTitle != null &&
-  work.originalTitle.trim() !== "" &&
-  work.originalTitle.trim() !== work.title.trim()
-    ? work.originalTitle
-    : null;
-const script = original ? detectScript(original) : "latin";
-const originalDir = scriptDir(script);
-const originalLang = original ? originalTitleLang(work.language, original) : undefined;
-const originalFont =
-  script === "cjk"
-    ? work.language === "coreano"
-      ? "var(--font-serif-kr)"
-      : "var(--font-serif-jp)"
-    : script === "hebrew"
-      ? "var(--font-serif-hebrew)"
-      : null;
+// Título original: só quando existe e difere do pt-BR (regra única em text.ts).
+const presentation = showOriginal
+  ? originalTitlePresentation(work.language, work.title, work.originalTitle)
+  : null;
+const original = presentation?.text ?? null;
+const originalDir = presentation?.dir ?? "ltr";
+const originalLang = presentation?.lang;
+const originalFont = presentation?.font ?? null;
 ---
 
 <a class:list={["item", `size-${size}`]} href={href}>
@@ -68,6 +57,13 @@ const originalFont =
       )
     }
     {authorNames && <span class="author">{authorNames}</span>}
+    {
+      Astro.slots.has("caption") && (
+        <span class="extra">
+          <slot name="caption" />
+        </span>
+      )
+    }
   </span>
 </a>
 
@@ -136,6 +132,12 @@ const originalFont =
     -webkit-line-clamp: 1;
     line-clamp: 1;
     overflow: hidden;
+  }
+  .extra {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--faint);
+    line-height: 1.2;
   }
   .item:hover .title {
     text-decoration: underline;

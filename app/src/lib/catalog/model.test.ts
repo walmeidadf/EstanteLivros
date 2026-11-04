@@ -180,6 +180,109 @@ test("approvedSummaryByScope inclui a bio de autoria; a bio segue intacta", () =
   assert.equal(model.authorsBySlug.get("bio-pendente")!.bio, null);
 });
 
+test("originalEntry chega à leitura", () => {
+  const model = buildModel(
+    catalog({
+      authors: [author("a")],
+      works: [work("obra", ["a"])],
+      readings: [
+        {
+          sequence: 3,
+          year: 2021,
+          work: "obra",
+          reread: false,
+          originalEntry: "47. A Vegetariana - Han Kang",
+          notes: null,
+        },
+      ],
+    }),
+  );
+  assert.equal(
+    model.works[0]!.readings[0]!.originalEntry,
+    "47. A Vegetariana - Han Kang",
+  );
+});
+
+test("crédito da foto: presente quando há foto, campos nulos preservados", () => {
+  const model = buildModel(
+    catalog({
+      authors: [
+        author("com-foto", {
+          photo: {
+            file: "authors/com-foto.jpg",
+            license: "CC BY-SA 4.0",
+            author: "Fulano",
+            sourceUrl: "https://commons.wikimedia.org/x",
+            source: "commons",
+          },
+        }),
+        author("sem-foto"),
+        author("foto-sem-credito", {
+          photo: {
+            file: "authors/foto-sem-credito.jpg",
+            license: null,
+            author: null,
+            sourceUrl: "https://commons.wikimedia.org/y",
+            source: "commons",
+          },
+        }),
+      ],
+    }),
+  );
+  const comFoto = model.authorsBySlug.get("com-foto")!.photo!;
+  assert.equal(comFoto.file, "authors/com-foto.jpg");
+  assert.equal(comFoto.author, "Fulano");
+  assert.equal(comFoto.license, "CC BY-SA 4.0");
+  assert.equal(comFoto.sourceUrl, "https://commons.wikimedia.org/x");
+  assert.equal(model.authorsBySlug.get("sem-foto")!.photo, null);
+  const semCredito = model.authorsBySlug.get("foto-sem-credito")!.photo!;
+  assert.equal(semCredito.author, null);
+  assert.equal(semCredito.license, null);
+  assert.equal(semCredito.sourceUrl, "https://commons.wikimedia.org/y");
+});
+
+test("bioSource: vem do summary aprovado; null sem bio; link só com url", () => {
+  const withSource = summary("autoria:com-fonte", true, "bio");
+  withSource.source = "Wikipédia (pt)";
+  withSource.sourceUrl = "https://pt.wikipedia.org/wiki/X";
+  const noUrl = summary("autoria:sem-url", true, "bio");
+  noUrl.source = "Enciclopédia";
+  noUrl.sourceUrl = null;
+  const model = buildModel(
+    catalog({
+      authors: [
+        author("com-fonte"),
+        author("sem-url"),
+        author("sem-bio"),
+        author("bio-pendente"),
+      ],
+      summaries: [
+        withSource,
+        noUrl,
+        (() => {
+          const s = summary("autoria:bio-pendente", false, "rascunho");
+          s.source = "Wikipédia (pt)";
+          return s;
+        })(),
+      ],
+    }),
+  );
+  const byslug = model.authorsBySlug;
+  assert.deepEqual(byslug.get("com-fonte")!.bioSource, {
+    label: "Wikipédia (pt)",
+    url: "https://pt.wikipedia.org/wiki/X",
+  });
+  assert.deepEqual(byslug.get("sem-url")!.bioSource, {
+    label: "Enciclopédia",
+    url: null,
+  });
+  // bio aprovada mas sem campo source → bioSource null
+  assert.equal(byslug.get("sem-bio")!.bioSource, null);
+  // bio não aprovada → sem bio e sem fonte, mesmo com source no JSON
+  assert.equal(byslug.get("bio-pendente")!.bio, null);
+  assert.equal(byslug.get("bio-pendente")!.bioSource, null);
+});
+
 test("país da obra vem das autorias (uma por país)", () => {
   const model = buildModel(
     catalog({

@@ -1,0 +1,128 @@
+---
+/**
+ * Topo da página de Obra (handoff §6.9): capa grande apoiada na prateleira,
+ * título pt-BR, título original (com lang/dir/fonte) e romanização, e a(s)
+ * autoria(s) com avatar. Empilha no celular; capa à esquerda e texto à direita
+ * no desktop. Recebe o WorkPage já resolvido (a página não faz regra).
+ */
+import Cover from "@/components/Cover.astro";
+import Shelf from "@/components/Shelf.astro";
+import AuthorChip from "@/components/AuthorChip.astro";
+import type { WorkPage } from "@/lib/work-page.ts";
+
+interface Props {
+  page: WorkPage;
+}
+const { page } = Astro.props;
+const { work, original, romanized, authors } = page;
+---
+
+<header class="work-header">
+  <div class="cover-col">
+    <div class="cover-wrap">
+      <Cover
+        title={work.title}
+        language={work.language}
+        originalTitle={work.originalTitle}
+        author={authors.map((a) => a.name).join("; ")}
+        rereadBadge={work.reread}
+        size="hero"
+      />
+    </div>
+    <Shelf />
+  </div>
+
+  <div class="text-col">
+    <h1 class="title">{work.title}</h1>
+    {
+      original && (
+        <p
+          class="original"
+          lang={original.lang}
+          dir={original.dir}
+          style={original.font ? `font-family:${original.font};` : undefined}
+        >
+          {original.text}
+        </p>
+      )
+    }
+    {romanized && <p class="romanized">{romanized}</p>}
+
+    <div class="authors">
+      {authors.map((a) => (
+        <AuthorChip
+          author={work.authors.find((w) => w.slug === a.slug)!}
+          href={a.href}
+          layout="row"
+          size={48}
+        />
+      ))}
+    </div>
+  </div>
+</header>
+
+<style>
+  .work-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: var(--gutter);
+  }
+  .cover-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  .cover-wrap {
+    /* a prateleira abaixo tem a largura da capa */
+    width: var(--cover-hero-w);
+  }
+  .cover-col :global(.shelf) {
+    width: var(--cover-hero-w);
+  }
+  .title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(32px, 9vw, 46px);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--title);
+    overflow-wrap: anywhere;
+  }
+  .original {
+    margin: 8px 0 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(18px, 5vw, 22px);
+    line-height: 1.1;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+  .romanized {
+    margin: 2px 0 0;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: var(--faint);
+  }
+  .authors {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  @media (min-width: 640px) {
+    .work-header {
+      flex-direction: row;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    .text-col {
+      padding-top: 8px;
+      min-width: 0;
+    }
+  }
+</style>
