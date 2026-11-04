@@ -1,6 +1,12 @@
 # Sistema
 .DS_Store
 
+# Área de trabalho descartável do agente (screenshots, dumps, builds de
+# verificação). Fica DENTRO do projeto para não precisar de aprovação a cada
+# escrita fora do workspace. Nada aqui é versionado, exceto o .gitkeep.
+temp/*
+!temp/.gitkeep
+
 # Legado (mantido só localmente como referência e fonte da migração)
 legacy/
 
