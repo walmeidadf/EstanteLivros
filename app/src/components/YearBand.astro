@@ -18,20 +18,34 @@ import Shelf from "@/components/Shelf.astro";
 interface Props {
   /** Rótulo principal (o ano "2024"; o nome do país na S4). */
   label: string;
-  /** Destino da linha inteira. */
-  href: string;
-  /** Contagem exibida como "N ›". */
+  /** Destino da linha inteira. Sem `href`, a faixa não é link (S4: "Outros países"). */
+  href?: string;
+  /** Contagem exibida como "N ›" (sem o "›" quando não há link). */
   count: number;
   /** Notas automáticas curtas (0..n); vazio na prateleira por país. */
   notes?: string[];
   /** Uma lombada por item, na ordem recebida. */
   spines: { language: string }[];
+  /**
+   * Uma prateleira por linha de lombadas (S4). Para faixas com muitas lombadas,
+   * que quebram em várias linhas: cada linha ganha a sua prateleira, em vez de
+   * uma só sob a última. Padrão false = markup e CSS da Linha do tempo (S3).
+   */
+  shelfPerRow?: boolean;
 }
 
-const { label, href, count, notes = [], spines } = Astro.props;
+const {
+  label,
+  href,
+  count,
+  notes = [],
+  spines,
+  shelfPerRow = false,
+} = Astro.props;
+const Tag = href ? "a" : "div";
 ---
 
-<a class="band" href={href}>
+<Tag class="band" href={href}>
   <span class="line">
     <span class="label">{label}</span>
     {
@@ -46,16 +60,16 @@ const { label, href, count, notes = [], spines } = Astro.props;
         </span>
       )
     }
-    <span class="count">{count} ›</span>
+    <span class="count">{href ? `${count} ›` : count}</span>
   </span>
 
   <span class="shelf-wrap" aria-hidden="true">
-    <span class="spines">
+    <span class:list={["spines", { "per-row": shelfPerRow }]}>
       {spines.map((s, i) => <Spine language={s.language} index={i} />)}
     </span>
-    <Shelf />
+    {!shelfPerRow && <Shelf />}
   </span>
-</a>
+</Tag>
 
 <style>
   .band {
@@ -71,7 +85,7 @@ const { label, href, count, notes = [], spines } = Astro.props;
     max-width: 100%;
     min-width: 0;
   }
-  .band:hover .label {
+  a.band:hover .label {
     text-decoration: underline;
   }
 
@@ -129,5 +143,27 @@ const { label, href, count, notes = [], spines } = Astro.props;
     row-gap: 6px;
     min-height: 48px;
     max-width: 100%;
+  }
+
+  /* Uma prateleira por linha: células de altura fixa (lombada mais alta 48px +
+     prateleira), lombadas apoiadas no topo da prateleira de cada linha. */
+  .spines.per-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 4px);
+    column-gap: 3px;
+    row-gap: 0;
+    grid-auto-rows: calc(48px + var(--shelf-height));
+    align-items: end;
+    min-height: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 48px,
+      var(--wood-top) 48px,
+      var(--wood-bottom) calc(48px + var(--shelf-height))
+    );
+  }
+  .spines.per-row > :global(.spine) {
+    margin-bottom: var(--shelf-height);
   }
 </style>

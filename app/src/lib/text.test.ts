@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { initials, detectScript, scriptDir, languageTag } from "./text.ts";
+import { initials, detectScript, scriptDir, languageTag, originalTitleLang } from "./text.ts";
 
 test("languageTag cobre os 15 idiomas e devolve undefined para o resto", () => {
   const all = ["português","inglês","espanhol","francês","italiano","russo","japonês","alemão","hebraico","coreano","norueguês","catalão","tcheco","árabe","holandês"];
@@ -49,4 +49,11 @@ test("direção de escrita (hebraico é RTL)", () => {
   assert.equal(scriptDir("hebrew"), "rtl");
   assert.equal(scriptDir("latin"), "ltr");
   assert.equal(scriptDir("cjk"), "ltr");
+});
+
+test("lang do título original: omite quando é romanização de idioma não latino", () => {
+  assert.equal(originalTitleLang("japonês", "Nemureru Bijo"), undefined);
+  assert.equal(originalTitleLang("japonês", "海辺のカフカ"), "ja");
+  assert.equal(originalTitleLang("espanhol", "La tregua"), "es");
+  assert.equal(originalTitleLang("hebraico", "סיפור על אהבה וחושך"), "he");
 });

@@ -10,6 +10,7 @@
  */
 import Base from "@/layouts/Base.astro";
 import CoverCaption from "@/components/CoverCaption.astro";
+import BigNumbers from "@/components/BigNumbers.astro";
 import { languageColor } from "@/lib/language-color.ts";
 import { getCatalog } from "@/lib/catalog/index.ts";
 import { buildYear } from "@/lib/timeline.ts";
@@ -59,16 +60,7 @@ const bigNumbers = [
   </header>
 
   <main class="year-body">
-    <section class="bignumbers" aria-label="Números do ano">
-      {
-        bigNumbers.map((n) => (
-          <div class="bn">
-            <span class="t-bignumber bn-value">{n.value}</span>
-            <span class="t-label bn-label">{n.label}</span>
-          </div>
-        ))
-      }
-    </section>
+    <BigNumbers items={bigNumbers} label="Números do ano" />
 
     {
       data.mix.length > 0 && (
@@ -169,27 +161,6 @@ const bigNumbers = [
     padding: 8px var(--gutter) 48px;
   }
 
-  .bignumbers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--line-soft);
-    border: 1px solid var(--line-soft);
-  }
-  .bn {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding: 16px 12px;
-    background: var(--ground);
-  }
-  .bn-value {
-    color: var(--title);
-  }
-  .bn-label {
-    color: var(--faint);
-  }
-
   .mix {
     display: flex;
     flex-direction: column;
@@ -252,9 +223,6 @@ const bigNumbers = [
       max-width: 960px;
       margin-inline: auto;
       width: 100%;
-    }
-    .bignumbers {
-      grid-template-columns: repeat(4, 1fr);
     }
     /* No desktop as capas mantêm o tamanho do Início (não esticam para
        preencher a largura): mais colunas, cada uma do tamanho de uma capa. */

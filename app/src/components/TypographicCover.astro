@@ -7,7 +7,7 @@
  * conforme o comprimento, sem JavaScript.
  */
 import { languageColor } from "@/lib/language-color.ts";
-import { detectScript, scriptDir } from "@/lib/text.ts";
+import { detectScript, originalTitleLang, scriptDir } from "@/lib/text.ts";
 
 interface Props {
   title: string;
@@ -55,19 +55,10 @@ const notoVar =
       ? "var(--font-serif-hebrew)"
       : "inherit";
 
-// lang aproximado para o atributo HTML (o CJK fica sem distinção fina aqui).
-const originalLang =
-  script === "hebrew"
-    ? "he"
-    : script === "cyrillic"
-      ? "ru"
-      : script === "cjk"
-        ? language === "coreano"
-          ? "ko"
-          : language === "japonês"
-            ? "ja"
-            : undefined
-        : undefined;
+// lang do título original = tag do idioma da obra (nome pt-BR → BCP-47).
+const originalLang = showOriginal
+  ? originalTitleLang(language, originalTitle!)
+  : undefined;
 ---
 
 <div

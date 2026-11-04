@@ -35,6 +35,22 @@ const LANGUAGE_TAGS: Readonly<Record<string, string>> = {
   holandês: "nl",
 };
 
+/** Idiomas cujo alfabeto nativo não é o latino. */
+const NON_LATIN_LANGUAGES = new Set(["coreano", "japonês", "hebraico", "russo", "árabe"]);
+
+/**
+ * `lang` de um TÍTULO ORIGINAL: a tag do idioma da obra, exceto quando o título
+ * está em alfabeto latino num idioma de outro alfabeto (ex.: "Nemureru Bijo",
+ * romanização de uma obra japonesa) — aí marcar `ja` seria errado e o atributo
+ * é omitido.
+ */
+export function originalTitleLang(language: string, text: string): string | undefined {
+  if (NON_LATIN_LANGUAGES.has(language) && detectScript(text) === "latin") {
+    return undefined;
+  }
+  return languageTag(language);
+}
+
 /**
  * Tag `lang` do idioma original (nome pt-BR, como no catálogo). Idioma sem
  * tag conhecida devolve `undefined`: o atributo some, nunca é inventado.

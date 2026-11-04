@@ -12,9 +12,13 @@ interface Props {
   author: AuthorView;
   href: string;
   size?: number;
+  /** "stack" (padrão): avatar sobre o nome. "row": avatar à esquerda (S4). */
+  layout?: "stack" | "row";
+  /** Texto secundário sob o nome (ex.: "8 leituras"); só no layout "row". */
+  meta?: string;
 }
 
-const { author, href, size = 88 } = Astro.props;
+const { author, href, size = 88, layout = "stack", meta } = Astro.props;
 
 // Deriva a foto (1:1) no build; null quando não há mestre → cai nas iniciais.
 const photo = author.photo
@@ -22,14 +26,27 @@ const photo = author.photo
   : null;
 ---
 
-<a class="chip" href={href} style={`--chip-w:${size}px;`}>
+<a
+  class:list={["chip", { row: layout === "row" }]}
+  href={href}
+  style={`--chip-w:${size}px;`}
+>
   <InitialsAvatar
     name={author.name}
     language={author.primaryLanguage}
     image={photo}
     size={size}
   />
-  <span class="name">{author.name}</span>
+  {
+    layout === "row" ? (
+      <span class="text">
+        <span class="name">{author.name}</span>
+        {meta && <span class="meta">{meta}</span>}
+      </span>
+    ) : (
+      <span class="name">{author.name}</span>
+    )
+  }
 </a>
 
 <style>
@@ -57,5 +74,29 @@ const photo = author.photo
   }
   .chip:hover .name {
     text-decoration: underline;
+  }
+
+  /* Layout em linha (S4): avatar à esquerda, nome e meta à direita. */
+  .chip.row {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    min-height: var(--tap);
+  }
+  .chip.row .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .chip.row .name {
+    text-align: left;
+    font-size: 14px;
+  }
+  .chip.row .meta {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    color: var(--faint);
   }
 </style>
