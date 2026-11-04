@@ -5,8 +5,9 @@
  * - `detectScript`: detecta o alfabeto de um texto (para escolher a fonte Noto
  *   e o `dir`), olhando as faixas Unicode. Usado no título original não latino.
  *
- * Puro e sem dependências — roda sob node --test.
+ * Puro — roda sob node --test.
  */
+import { fold } from "./search.ts";
 
 export type Script =
   | "latin"
@@ -57,6 +58,59 @@ export function originalTitleLang(language: string, text: string): string | unde
  */
 export function languageTag(language: string): string | undefined {
   return LANGUAGE_TAGS[language];
+}
+
+/** Apresentação de um título original pronto para o HTML. */
+export type OriginalTitlePresentation = {
+  /** O próprio texto do título original. */
+  text: string;
+  /** `lang` do atributo HTML; ausente em romanização de idioma não latino. */
+  lang?: string;
+  /** `dir` do atributo HTML (rtl para hebraico/árabe). */
+  dir: "ltr" | "rtl";
+  /** Custom property de fonte Noto, ou ausente (fonte padrão). */
+  font?: string;
+};
+
+/**
+ * Decide se, e como, mostrar o título ORIGINAL de uma obra (telas Obra e as
+ * grades/carrosséis). Devolve `null` quando não há original ou quando ele é
+ * igual ao título pt-BR (comparando sem caixa e sem acento, via `fold`). É a
+ * regra única: `CoverCaption` e a página da Obra a consomem, para o `lang`,
+ * o `dir` e a fonte Noto nunca divergirem.
+ */
+export function originalTitlePresentation(
+  language: string,
+  title: string,
+  original: string | null | undefined,
+): OriginalTitlePresentation | null {
+  const text = (original ?? "").trim();
+  if (text === "") return null;
+  if (fold(text) === fold(title.trim())) return null;
+
+  const script = detectScript(text);
+  const dir = scriptDir(script);
+  const lang = originalTitleLang(language, text);
+  const font = originalTitleFont(language, script);
+  return font ? { text, lang, dir, font } : { text, lang, dir };
+}
+
+/**
+ * Fonte Noto para o título original pelo script (e pelo idioma, que decide
+ * coreano vs japonês dentro do CJK). Devolve `undefined` para latim/cirílico
+ * (a fonte padrão serve).
+ */
+export function originalTitleFont(
+  language: string,
+  script: Script,
+): string | undefined {
+  if (script === "cjk") {
+    return language === "coreano"
+      ? "var(--font-serif-kr)"
+      : "var(--font-serif-jp)";
+  }
+  if (script === "hebrew") return "var(--font-serif-hebrew)";
+  return undefined;
 }
 
 /**

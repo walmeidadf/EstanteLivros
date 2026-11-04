@@ -17,9 +17,14 @@ import type { GridWork } from "@/lib/atlas.ts";
 interface Props {
   items: GridWork[];
   sortable?: boolean;
+  /**
+   * Legenda opcional por obra (ex.: "lido em 2022 e 2025" na página de
+   * Autoria). Sem esta prop, a grade é idêntica à das telas S4.
+   */
+  captionFor?: (slug: string) => string | null;
 }
 
-const { items, sortable = false } = Astro.props;
+const { items, sortable = false, captionFor } = Astro.props;
 
 const options = [
   { key: "seq", label: "Da lista" },
@@ -53,16 +58,20 @@ const options = [
 
   <ol class="grid-3" data-grid>
     {
-      items.map((item) => (
-        <li {...toDataset(item.sort)}>
-          <CoverCaption
-            work={item.work}
-            href={item.href}
-            size="grid"
-            showOriginal
-          />
-        </li>
-      ))
+      items.map((item) => {
+        const caption = captionFor ? captionFor(item.work.slug) : null;
+        return (
+          <li {...toDataset(item.sort)}>
+            {caption ? (
+              <CoverCaption work={item.work} href={item.href} size="grid" showOriginal>
+                <Fragment slot="caption">{caption}</Fragment>
+              </CoverCaption>
+            ) : (
+              <CoverCaption work={item.work} href={item.href} size="grid" showOriginal />
+            )}
+          </li>
+        );
+      })
     }
   </ol>
 </div>

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { initials, detectScript, scriptDir, languageTag, originalTitleLang } from "./text.ts";
+import { initials, detectScript, scriptDir, languageTag, originalTitleLang, originalTitlePresentation } from "./text.ts";
 
 test("languageTag cobre os 15 idiomas e devolve undefined para o resto", () => {
   const all = ["português","inglês","espanhol","francês","italiano","russo","japonês","alemão","hebraico","coreano","norueguês","catalão","tcheco","árabe","holandês"];
@@ -56,4 +56,64 @@ test("lang do título original: omite quando é romanização de idioma não lat
   assert.equal(originalTitleLang("japonês", "海辺のカフカ"), "ja");
   assert.equal(originalTitleLang("espanhol", "La tregua"), "es");
   assert.equal(originalTitleLang("hebraico", "סיפור על אהבה וחושך"), "he");
+});
+
+test("originalTitlePresentation: null quando ausente ou igual ao pt-BR", () => {
+  assert.equal(originalTitlePresentation("português", "Torto Arado", null), null);
+  assert.equal(originalTitlePresentation("português", "Torto Arado", ""), null);
+  assert.equal(originalTitlePresentation("português", "Torto Arado", "  "), null);
+  // igual ignorando caixa e acento
+  assert.equal(
+    originalTitlePresentation("inglês", "Beloved", "beloved"),
+    null,
+  );
+  assert.equal(
+    originalTitlePresentation("português", "A Hora da Estrela", "A hora da estréia")?.text,
+    "A hora da estréia",
+    "títulos diferentes não são colapsados",
+  );
+});
+
+test("originalTitlePresentation: coreano em alfabeto nativo", () => {
+  const p = originalTitlePresentation("coreano", "A Vegetariana", "채식주의자")!;
+  assert.equal(p.text, "채식주의자");
+  assert.equal(p.lang, "ko");
+  assert.equal(p.dir, "ltr");
+  assert.equal(p.font, "var(--font-serif-kr)");
+});
+
+test("originalTitlePresentation: japonês usa a fonte JP", () => {
+  const p = originalTitlePresentation("japonês", "Kafka à Beira-Mar", "海辺のカフカ")!;
+  assert.equal(p.font, "var(--font-serif-jp)");
+  assert.equal(p.lang, "ja");
+});
+
+test("originalTitlePresentation: hebraico é RTL com fonte própria", () => {
+  const p = originalTitlePresentation("hebraico", "De Amor e Trevas", "סיפור על אהבה וחושך")!;
+  assert.equal(p.dir, "rtl");
+  assert.equal(p.font, "var(--font-serif-hebrew)");
+  assert.equal(p.lang, "he");
+});
+
+test("originalTitlePresentation: árabe é RTL, sem fonte dedicada", () => {
+  const p = originalTitlePresentation("árabe", "As Mil e Uma Noites", "ألف ليلة وليلة")!;
+  assert.equal(p.dir, "rtl");
+  assert.equal(p.lang, "ar");
+  assert.equal(p.font, undefined);
+});
+
+test("originalTitlePresentation: latino não ganha fonte e mantém lang do idioma", () => {
+  const p = originalTitlePresentation("espanhol", "A Trégua", "La tregua")!;
+  assert.equal(p.dir, "ltr");
+  assert.equal(p.lang, "es");
+  assert.equal(p.font, undefined);
+});
+
+test("originalTitlePresentation: romanização de idioma não latino não leva lang", () => {
+  const p = originalTitlePresentation("japonês", "Sputnik, Meu Amor", "Supūtoniku no Koibito")!;
+  assert.equal(p.text, "Supūtoniku no Koibito");
+  assert.equal(p.lang, undefined);
+  assert.equal(p.dir, "ltr");
+  // detectado como latino → sem fonte CJK
+  assert.equal(p.font, undefined);
 });
