@@ -117,8 +117,8 @@ Dependências (tarefas na mesma chave podem ir em paralelo):
 
 ## Fechamento
 
-- [ ] 11. PR e merge
-  - PR aberto da branch `feat/linha-do-tempo` (gera preview no Pages). Aguarda revisão/aprovação/teste da Lila; merge em `main` dispara o deploy de produção. _(Conferência de celular fica para o preview do Pages, num aparelho.)_
+- [x] 11. PR e merge
+  - PR #3 (a S3) e PR #4 (ajuste das capas da grade no desktop, para o mesmo tamanho do Início, mais a pasta `temp/`) mergeados em `main`; deploy de produção verde. Linha do tempo, Ano e Sem data respondem 200 em `liliane.prateleira.site`. Conferido pela Lila no desktop e no celular.
   - _Requisitos: 2.1_
 
 - [x] 12. Documentação

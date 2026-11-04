@@ -7,8 +7,13 @@ seguinte (S4 `atlas`).
 
 - **S1 concluída**: fundação do app (ver `handover-s1-s2.md`).
 - **S2 concluída — no ar**: Início e busca (`liliane.prateleira.site`).
-- **S3 concluída**: Linha do tempo, Ano e Sem data. Quita a dívida de rota que
-  a S2 deixou (`/linha-do-tempo` e `/ano/{ano}` davam 404).
+- **S3 concluída — no ar**: Linha do tempo, Ano e Sem data. Quita a dívida de
+  rota que a S2 deixou (`/linha-do-tempo` e `/ano/{ano}` davam 404). PRs #3 e
+  #4 mergeados; validada em produção no desktop e no celular.
+- `main` sincronizada, worktree limpa, branch de feature apagada.
+- **Pasta `temp/`** (no `.gitignore`): artefatos descartáveis (screenshots,
+  dumps, builds de verificação) vão lá, nunca em `/tmp`, para não pedir
+  aprovação a cada escrita fora do workspace.
 
 ## O que a S3 entregou
 
@@ -22,8 +27,9 @@ Três telas, compostas com os componentes da S1/S2 e um componente novo:
   existem (inerte nos extremos); ano gigante em `--accent`; big numbers
   (leituras · idiomas · autorias · releituras); barra de mix de idiomas com
   legenda; resumo só se houver summary `approved` (hoje nenhum, a seção some);
-  grade de 3 colunas na ordem do caderno. **Sem botão "Compartilhar"** (fica
-  para a S7).
+  grade na ordem do caderno: 3 colunas no celular; no desktop, colunas de
+  largura fixa (`--cover-hero-w`, 136px, `auto-fill`), no mesmo tamanho de capa
+  do Início. **Sem botão "Compartilhar"** (fica para a S7).
 - **Sem data (`/ano/sem-data`)**: "Os primeiros da lista", cada item com
   "nº N da lista" (a `sequence`) no lugar do ano; sem big numbers nem nav.
 

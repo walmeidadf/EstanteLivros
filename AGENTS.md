@@ -105,12 +105,14 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   + ilha vanilla). Componente `Carousel` reusável e a regra de seleção em
   `app/src/lib/home.ts`. 54 testes verdes. Validada em produção (desktop +
   celular).
-- **F3 · S3 (`linha-do-tempo`) concluída.** Telas Linha do tempo
+- **F3 · S3 (`linha-do-tempo`) concluída — no ar.** Telas Linha do tempo
   (`/linha-do-tempo`), Ano (`/ano/{ano}`, 13 anos) e Sem data (`/ano/sem-data`),
   quitando a dívida de rota da S2. Componente novo `YearBand` (Faixa do ano,
   reusa `Spine`+`Shelf`) e a regra de seleção em `app/src/lib/timeline.ts`.
   Única mudança na camada de dados: `approvedSummaryByScope` no modelo (para o
   resumo de ano). 69 testes verdes; build do catálogo real em código 0.
+  Validada em produção (desktop + celular). Na grade de Ano/Sem data, as capas
+  do desktop têm largura fixa (`--cover-hero-w`), igual ao Início, e não esticam.
 - **Próximo (nova sessão): F3 · S4 (`atlas`).** Atlas (idioma e país), Idioma,
   País e Tema. Ver `docs/plans/handover-s3-s4.md` (a `YearBand` já serve à
   prateleira por país; `/obra`, `/autoria`, `/tema`, `/atlas` seguem 404 até
