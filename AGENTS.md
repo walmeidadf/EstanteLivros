@@ -113,10 +113,18 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   resumo de ano). 69 testes verdes; build do catálogo real em código 0.
   Validada em produção (desktop + celular). Na grade de Ano/Sem data, as capas
   do desktop têm largura fixa (`--cover-hero-w`), igual ao Início, e não esticam.
-- **Próximo (nova sessão): F3 · S4 (`atlas`).** Atlas (idioma e país), Idioma,
-  País e Tema. Ver `docs/plans/handover-s3-s4.md` (a `YearBand` já serve à
-  prateleira por país; `/obra`, `/autoria`, `/tema`, `/atlas` seguem 404 até
-  S4/S5).
+- **F3 · S4 (`atlas`) concluída — no ar.** Atlas por idioma (`/atlas`) e por
+  país (`/atlas/pais`, alternador = duas rotas estáticas), Idioma (15), País
+  (36) e Tema (493), quitando o 404 de `/atlas` e `/tema/{slug}`. Regra em
+  `app/src/lib/atlas.ts`; `YearBand` ganhou `shelfPerRow` e `href` opcional;
+  extraídos `BigNumbers` e `AuthorRail`; ordenação da grade (Idioma e Tema) é
+  uma ilha vanilla. 108 testes verdes; build com 563 páginas. Camada
+  `lib/catalog/` inalterada. Fix de colunas iguais nas grades no celular
+  (`minmax(0, 1fr)`) no PR #6.
+- **Próximo (nova sessão): F3 · S5 (`obra-autoria`).** Páginas Obra
+  (`/obra/{slug}`) e Autoria (`/autoria/{slug}`), destinos de quase todos os
+  links. Ver `docs/plans/handover-s4-s5.md`. Até lá, esses links caem no Início
+  (o Cloudflare Pages serve o `index.html` quando não há 404.html); é esperado.
 - Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);

@@ -120,7 +120,7 @@ Início ─┬─ Linha do tempo ── Ano ── Obra
         ├─ Atlas ─┬─ Idioma (ver todos) ── Obra
         │         └─ País: prateleiras por país ── País (ver todos) ── Obra
         ├─ Carrossel de autoria ── Autoria ── Obra
-        ├─ Carrosséis de tema ── Tema (pendente) ── Obra
+        ├─ Carrosséis de tema ── Tema ── Obra
         └─ Busca ── Obra / Autoria
 Obra ── Autoria · Idioma · Ano(s) da leitura · Compartilhar (retrospectiva/card)
 ```
@@ -152,16 +152,16 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 - Botão "Compartilhar {ano}" leva à retrospectiva (§6.9).
 - Em `sem-data`: título "Os primeiros da lista", sem big numbers de ano; cada item mostra "nº N da lista".
 
-### 6.4 Atlas — `telas/AtlasV2.dc.html` — `/atlas?por=idioma|pais`
-- Alternador **Idioma original | País** (padrão: idioma).
+### 6.4 Atlas — `telas/AtlasV2.dc.html` — `/atlas` (idioma) e `/atlas/pais`
+- Alternador **Idioma original | País** (padrão: idioma). **Implementado como duas rotas estáticas** (`/atlas` e `/atlas/pais`), em vez de `?por=`: a query não chega ao HTML estático e o alternador funciona assim sem JavaScript. As duas vistas repetem os três blocos abaixo.
 - **Por idioma:** uma linha por idioma (nome, contagem "N ›" e lombadas mini, uma por obra), ordenada por quantidade. A linha leva a `/idioma/{slug}`.
 - **Quem ela mais lê:** lista de autorias com avatar e contagem, levando a `/autoria/{slug}`.
 - **Temas que voltam:** nuvem tipográfica (tamanho proporcional à frequência; os maiores em itálico e `--accent`). Leva a `/tema/{slug}`.
 - **Quando foram escritos:** barras por época (séc. XIX, séc. XX, 2000s, 2010s, 2020s) a partir de `first_publication_year`.
 
-### 6.5 Atlas · por país — `/atlas?por=pais` (**ainda não desenhado; seguir esta descrição**)
+### 6.5 Atlas · por país — `/atlas/pais` (implementado conforme esta descrição)
 - Mesma linguagem da Linha do tempo: **uma faixa por país** (nome do país em Bodoni, contagem "N ›" e fileira de lombadas mini na cor do idioma de cada obra, sobre a prateleira).
-- Ordenado por quantidade. Países com poucas obras podem ser agrupados em "outros países" depois das 10 primeiras faixas.
+- Ordenado por quantidade. As 10 primeiras faixas aparecem sozinhas; o resto vira o bloco "Outros países" (uma faixa sem link + um chip por país). Obras sem país não aparecem nesta vista.
 - Tocar numa faixa leva a `/pais/{slug}` (§6.7).
 - Fonte do país: o país da **autoria** (§7.2). Uma obra com várias autorias de países diferentes conta em cada um deles.
 
@@ -204,8 +204,8 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 - Gerar uma versão por ano e uma "de sempre". Sugestão técnica: renderizar no build com Satori + resvg, ou no navegador com html-to-image.
 - Variações futuras: card de livro em 1:1 ou 4:5.
 
-### 6.11 Tema (ver todos) — `/tema/{slug}` (**pendente**)
-- Reutilizar o template de Idioma: cabeçalho escuro em vez de colorido, nome do tema em Bodoni itálico, big numbers e grade.
+### 6.11 Tema (ver todos) — `/tema/{slug}` (implementado)
+- Template de Idioma: cabeçalho escuro (`--surface`) em vez de colorido, nome do tema em Bodoni itálico, big numbers (obras · autorias · idiomas) e grade ordenável. Todo tema tem página; variantes que diferem só por caixa/acento são um tema só.
 
 ## 7. Dados
 
@@ -292,7 +292,7 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 
 ## 12. Pendências
 
-1. Desenhar `/atlas?por=pais` (§6.5) e `/tema/{slug}` (§6.11).
+1. ~~Desenhar `/atlas/pais` (§6.5) e `/tema/{slug}` (§6.11).~~ Feito na S4.
 2. Layout desktop: largura máxima do conteúdo, mais colunas na grade e setas nos carrosséis.
 3. Card de livro para compartilhar (1:1 ou 4:5).
 4. Definir quais temas viram carrossel no Início (sugestão: os 4 mais frequentes + "Lidos duas vezes").

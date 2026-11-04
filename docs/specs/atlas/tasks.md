@@ -182,10 +182,10 @@ Obs.: a tarefa 4 usa `grid-sort.ts` (tarefa 3) em `toGridWork`, e a 6 usa
 
 ## Fechamento
 
-- [ ] 18. PR, merge e documentação
-  - [ ] 18.1 Abrir o PR de `feat/atlas` (título curto; descrição com resumo, o que foi testado e o 404 temporário de `/obra` e `/autoria`); conferir o preview do Pages e o portão de CI (check + test + build) verdes; merge em `main`; deploy de produção verde; as rotas novas respondem 200 em `liliane.prateleira.site`; os links "Atlas" do cabeçalho e dos carrosséis de tema do Início deixam de levar a 404.
+- [x] 18. PR, merge e documentação
+  - [x] 18.1 Abrir o PR de `feat/atlas` (título curto; descrição com resumo, o que foi testado e o 404 temporário de `/obra` e `/autoria`); conferir o preview do Pages e o portão de CI (check + test + build) verdes; merge em `main`; deploy de produção verde; as rotas novas respondem 200 em `liliane.prateleira.site`; os links "Atlas" do cabeçalho e dos carrosséis de tema do Início deixam de levar a 404.
     - _Requisitos: 12.6, 12.7_
-  - [ ] 18.2 Documentação (direto na `main`): `design/DESIGN_HANDOFF.md` §6.4/§6.5 anotando que o alternador usa `/atlas` e `/atlas/pais` (desvio da query string) e §6.11 deixando de ser "pendente" com o desenho adotado, além de §12 (pendências); `docs/ROADMAP.md` (S4 ✓, dívida de rota de `/atlas` e `/tema` quitada); `AGENTS.md` (estado atual: S4 concluída, próximo S5 `obra-autoria`, número de testes); `docs/plans/handover-s4-s5.md` (o que a S4 entrega e reusa na S5: `AuthorChip layout="row"`, `BigNumbers`, `AuthorRail`, `WorkGrid`, `languageTag`, `onGround`; destinos ainda em 404: `/obra` e `/autoria`; tarefa de pipeline: normalizar variantes de caixa dos temas; dívida: CSS de grade repetido em Ano, Sem data e `WorkGrid`).
+  - [x] 18.2 Documentação (direto na `main`): `design/DESIGN_HANDOFF.md` §6.4/§6.5 anotando que o alternador usa `/atlas` e `/atlas/pais` (desvio da query string) e §6.11 deixando de ser "pendente" com o desenho adotado, além de §12 (pendências); `docs/ROADMAP.md` (S4 ✓, dívida de rota de `/atlas` e `/tema` quitada); `AGENTS.md` (estado atual: S4 concluída, próximo S5 `obra-autoria`, número de testes); `docs/plans/handover-s4-s5.md` (o que a S4 entrega e reusa na S5: `AuthorChip layout="row"`, `BigNumbers`, `AuthorRail`, `WorkGrid`, `languageTag`, `onGround`; destinos ainda em 404: `/obra` e `/autoria`; tarefa de pipeline: normalizar variantes de caixa dos temas; dívida: CSS de grade repetido em Ano, Sem data e `WorkGrid`).
     - _Requisitos: 12.8_
-  - [ ] 18.3 Limpar `temp/` (baseline e capturas) e apagar a branch local `feat/atlas` após o merge.
+  - [x] 18.3 Limpar `temp/` (baseline e capturas) e apagar a branch local `feat/atlas` após o merge.
     - _Requisitos: 12.7_
