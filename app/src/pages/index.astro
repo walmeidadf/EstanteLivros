@@ -13,6 +13,7 @@ import NavChips from "@/components/NavChips.astro";
 import Carousel from "@/components/Carousel.astro";
 import CoverCaption from "@/components/CoverCaption.astro";
 import AuthorChip from "@/components/AuthorChip.astro";
+import AuthorRail from "@/components/AuthorRail.astro";
 import TimelineCard from "@/components/TimelineCard.astro";
 import { getCatalog } from "@/lib/catalog/index.ts";
 import { buildHome } from "@/lib/home.ts";
@@ -46,16 +47,11 @@ const home = buildHome(catalog);
 
     {
       home.recurringAuthors && (
-        <section class="authors">
-          <div class="head">
-            <h2 class="t-section-title">Quem sempre volta</h2>
-          </div>
-          <div class="author-rail">
-            {home.recurringAuthors.map((pick) => (
-              <AuthorChip author={pick.author} href={pick.href} />
-            ))}
-          </div>
-        </section>
+        <AuthorRail title="Quem sempre volta">
+          {home.recurringAuthors.map((pick) => (
+            <AuthorChip author={pick.author} href={pick.href} />
+          ))}
+        </AuthorRail>
       )
     }
 
@@ -106,34 +102,6 @@ const home = buildHome(catalog);
     flex-direction: column;
     gap: 32px;
     padding-bottom: 48px;
-  }
-
-  .authors {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .authors .head {
-    padding-inline: var(--gutter);
-  }
-  .authors .head h2 {
-    color: var(--title);
-  }
-  .author-rail {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-inline: var(--gutter);
-    padding-bottom: 4px;
-    scrollbar-width: none;
-    scroll-padding-inline: var(--gutter);
-  }
-  .author-rail::-webkit-scrollbar {
-    display: none;
-  }
-  .author-rail > :global(*) {
-    scroll-snap-align: start;
   }
 
   /* Desktop: contém a largura e centraliza; os carrosséis seguem sangrando. */

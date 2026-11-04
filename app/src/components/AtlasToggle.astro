@@ -1,0 +1,61 @@
+---
+/**
+ * Alternador do Atlas (handoff §6.4): "Idioma original | País". São dois links
+ * para rotas estáticas separadas (/atlas e /atlas/pais), então funciona sem
+ * JavaScript, vale offline e tem botão voltar correto. A vista atual leva
+ * aria-current="page" e o estilo de chip ativo.
+ */
+interface Props {
+  active: "idioma" | "pais";
+}
+
+const { active } = Astro.props;
+
+const options = [
+  { id: "idioma", label: "Idioma original", href: "/atlas" },
+  { id: "pais", label: "País", href: "/atlas/pais" },
+] as const;
+---
+
+<nav class="toggle" aria-label="Ver o Atlas por">
+  {
+    options.map((opt) => (
+      <a
+        class:list={["opt", { active: opt.id === active }]}
+        href={opt.href}
+        aria-current={opt.id === active ? "page" : undefined}
+      >
+        {opt.label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .toggle {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .opt {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 18px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .opt:hover {
+    border-color: var(--text);
+  }
+  .opt.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+</style>

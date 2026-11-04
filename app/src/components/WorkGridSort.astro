@@ -1,0 +1,41 @@
+---
+/**
+ * Ilha de ordenação da WorkGrid (vanilla). Fica em componente próprio para só
+ * ser enviada às telas que ordenam (Idioma e Tema); País e Atlas não levam JS.
+ */
+---
+
+<script>
+  import { compareBy, fromDataset, type SortKey } from "@/lib/grid-sort.ts";
+
+  document.querySelectorAll<HTMLElement>("[data-workgrid]").forEach((root) => {
+    const controls = root.querySelector<HTMLElement>(".sort");
+    const grid = root.querySelector<HTMLOListElement>("[data-grid]");
+    const status = root.querySelector<HTMLElement>("[data-status]");
+    if (!controls || !grid) return;
+
+    controls.hidden = false; // só existe com JavaScript
+
+    controls.addEventListener("click", (ev) => {
+      const button = (ev.target as HTMLElement).closest<HTMLButtonElement>(
+        "button[data-sort]",
+      );
+      if (!button) return;
+      const key = button.dataset.sort as SortKey;
+      const compare = compareBy(key);
+
+      const rows = Array.from(grid.children) as HTMLElement[];
+      rows.sort((a, b) => compare(fromDataset(a.dataset), fromDataset(b.dataset)));
+      grid.append(...rows); // move os <li> existentes; não recria
+
+      controls
+        .querySelectorAll<HTMLButtonElement>("button[data-sort]")
+        .forEach((b) =>
+          b.setAttribute("aria-pressed", b === button ? "true" : "false"),
+        );
+      if (status) {
+        status.textContent = `Ordenação: ${(button.dataset.label ?? "").toLowerCase()}`;
+      }
+    });
+  });
+</script>

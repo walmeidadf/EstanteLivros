@@ -10,15 +10,38 @@
  */
 import Cover from "@/components/Cover.astro";
 import type { WorkView } from "@/lib/catalog/model.ts";
+import { detectScript, originalTitleLang, scriptDir } from "@/lib/text.ts";
 
 interface Props {
   work: WorkView;
   href: string;
   size?: "hero" | "rail" | "grid";
+  /** Mostra o título original (itálico, com lang/dir) sob o título (S4). */
+  showOriginal?: boolean;
 }
 
-const { work, href, size = "rail" } = Astro.props;
+const { work, href, size = "rail", showOriginal = false } = Astro.props;
 const authorNames = work.authors.map((a) => a.name).join("; ");
+
+// Título original: só quando existe e difere do pt-BR.
+const original =
+  showOriginal &&
+  work.originalTitle != null &&
+  work.originalTitle.trim() !== "" &&
+  work.originalTitle.trim() !== work.title.trim()
+    ? work.originalTitle
+    : null;
+const script = original ? detectScript(original) : "latin";
+const originalDir = scriptDir(script);
+const originalLang = original ? originalTitleLang(work.language, original) : undefined;
+const originalFont =
+  script === "cjk"
+    ? work.language === "coreano"
+      ? "var(--font-serif-kr)"
+      : "var(--font-serif-jp)"
+    : script === "hebrew"
+      ? "var(--font-serif-hebrew)"
+      : null;
 ---
 
 <a class:list={["item", `size-${size}`]} href={href}>
@@ -32,6 +55,18 @@ const authorNames = work.authors.map((a) => a.name).join("; ");
   />
   <span class="caption">
     <span class="title">{work.title}</span>
+    {
+      original && (
+        <span
+          class="original"
+          lang={originalLang}
+          dir={originalDir}
+          style={originalFont ? `font-family:${originalFont};` : undefined}
+        >
+          {original}
+        </span>
+      )
+    }
     {authorNames && <span class="author">{authorNames}</span>}
   </span>
 </a>
@@ -66,6 +101,18 @@ const authorNames = work.authors.map((a) => a.name).join("; ");
     line-height: 1.25;
     color: var(--text);
     /* até 2 linhas, com reticências */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .original {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--muted);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;

@@ -1,0 +1,136 @@
+---
+/**
+ * Grade de obras (Idioma, País, Tema): 3 colunas no celular; no desktop,
+ * colunas de largura fixa (--cover-hero-w), no mesmo tamanho de capa do Início.
+ * Uma peça por obra, com título pt-BR e título original (lang/dir).
+ *
+ * Ordenação (só com `sortable`): os controles nascem `hidden` e a ilha vanilla
+ * os revela — sem JavaScript a grade fica na ordem do caderno. A ilha reordena
+ * os <li> existentes pelos data-* (grid-sort.ts); não recria peças, não usa
+ * rede e não persiste a escolha.
+ */
+import CoverCaption from "@/components/CoverCaption.astro";
+import { toDataset } from "@/lib/grid-sort.ts";
+import WorkGridSort from "@/components/WorkGridSort.astro";
+import type { GridWork } from "@/lib/atlas.ts";
+
+interface Props {
+  items: GridWork[];
+  sortable?: boolean;
+}
+
+const { items, sortable = false } = Astro.props;
+
+const options = [
+  { key: "seq", label: "Da lista" },
+  { key: "title", label: "Título" },
+  { key: "author", label: "Autoria" },
+  { key: "year", label: "Ano de publicação" },
+] as const;
+---
+
+<div class="workgrid" data-workgrid={sortable ? "" : undefined}>
+  {
+    sortable && (
+      <>
+        <div class="sort" hidden role="group" aria-label="Ordenar por">
+          {options.map((o) => (
+            <button
+              type="button"
+              class="opt"
+              data-sort={o.key}
+              data-label={o.label}
+              aria-pressed={o.key === "seq" ? "true" : "false"}
+            >
+              {o.label}
+            </button>
+          ))}
+        </div>
+        <p class="visually-hidden" role="status" aria-live="polite" data-status />
+      </>
+    )
+  }
+
+  <ol class="grid-3" data-grid>
+    {
+      items.map((item) => (
+        <li {...toDataset(item.sort)}>
+          <CoverCaption
+            work={item.work}
+            href={item.href}
+            size="grid"
+            showOriginal
+          />
+        </li>
+      ))
+    }
+  </ol>
+</div>
+
+{sortable && <WorkGridSort />}
+
+<style>
+  .workgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .sort[hidden] {
+    display: none;
+  }
+  .opt {
+    min-height: var(--tap);
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .opt:hover {
+    border-color: var(--text);
+  }
+  .opt[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .grid-3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--grid-gap-x);
+    row-gap: var(--grid-gap-y);
+  }
+
+  @media (min-width: 760px) {
+    /* No desktop as capas mantêm o tamanho do Início (não esticam). */
+    .grid-3 {
+      grid-template-columns: repeat(auto-fill, var(--cover-hero-w));
+      justify-content: start;
+      column-gap: 20px;
+    }
+  }
+</style>

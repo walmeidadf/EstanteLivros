@@ -1,0 +1,201 @@
+---
+/**
+ * Os três blocos que as duas vistas do Atlas compartilham (handoff §6.4):
+ * "Quem ela mais lê", "Temas que voltam" e "Quando foram escritos". Cada bloco
+ * pode ser `null` (sem conteúdo) e então não é renderizado. Estático, sem JS.
+ */
+import AuthorChip from "@/components/AuthorChip.astro";
+import { readingsLabel, type AtlasShared } from "@/lib/atlas.ts";
+
+interface Props {
+  authors: AtlasShared["authors"];
+  cloud: AtlasShared["cloud"];
+  eras: AtlasShared["eras"];
+}
+
+const { authors, cloud, eras } = Astro.props;
+const maxEra = eras ? Math.max(...eras.map((e) => e.count)) : 0;
+---
+
+{
+  authors && (
+    <section class="block" aria-labelledby="ins-authors">
+      <h2 id="ins-authors" class="t-section-title">Quem ela mais lê</h2>
+      <ol class="authors">
+        {authors.map((pick) => (
+          <li>
+            <AuthorChip
+              author={pick.author}
+              href={pick.href}
+              layout="row"
+              size={52}
+              meta={readingsLabel(pick.readings)}
+            />
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+{
+  cloud && (
+    <section class="block" aria-labelledby="ins-themes">
+      <h2 id="ins-themes" class="t-section-title">Temas que voltam</h2>
+      <ul class="cloud">
+        {cloud.map((t) => (
+          <li>
+            <a class={`theme tier-${t.tier}`} href={t.href}>
+              {t.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+{
+  eras && (
+    <section class="block" aria-labelledby="ins-eras">
+      <h2 id="ins-eras" class="t-section-title">Quando foram escritos</h2>
+      <ul class="eras">
+        {eras.map((e) => (
+          <li class="era">
+            <span class="era-label">{e.label}</span>
+            <span class="era-bar" aria-hidden="true">
+              <span
+                class:list={["era-fill", { top: e.count === maxEra && maxEra > 0 }]}
+                style={`width:${e.pct}%`}
+              />
+            </span>
+            <span class="era-count">
+              {e.count} {e.count === 1 ? "obra" : "obras"}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+<style>
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 var(--gutter);
+  }
+  .block h2 {
+    color: var(--title);
+  }
+
+  .authors {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px 24px;
+  }
+
+  .cloud {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px 14px;
+  }
+  .theme {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    text-decoration: none;
+    line-height: 1;
+  }
+  .theme:hover {
+    text-decoration: underline;
+  }
+  .tier-1 {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .tier-2 {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--text);
+  }
+  .tier-3,
+  .tier-4 {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--accent);
+  }
+  .tier-3 {
+    font-size: 24px;
+  }
+  .tier-4 {
+    font-size: 32px;
+  }
+
+  .eras {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .era {
+    display: grid;
+    grid-template-columns: 84px 1fr 72px;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+  }
+  .era-label {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .era-bar {
+    display: block;
+    height: 12px;
+    background: var(--surface);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .era-fill {
+    display: block;
+    height: 100%;
+    background: var(--bar-neutral);
+  }
+  .era-fill.top {
+    background: var(--accent);
+  }
+  .era-count {
+    color: var(--faint);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 760px) {
+    .block {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+    .authors {
+      grid-template-columns: 1fr 1fr;
+    }
+    .era {
+      grid-template-columns: 100px 1fr 80px;
+    }
+  }
+</style>

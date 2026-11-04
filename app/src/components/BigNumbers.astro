@@ -1,0 +1,63 @@
+---
+/**
+ * Big numbers (handoff §4): grade de 2 ou 3 colunas com o número em Bodoni 700
+ * e o rótulo embaixo, separados por filetes. Usada em Ano, Idioma, País e Tema.
+ *
+ * Colunas: até 3 itens ocupam uma coluna cada; com 4 itens são 2 colunas no
+ * celular e 4 no desktop. As cores vêm de custom properties com padrão nos
+ * tokens, para o cabeçalho colorido de Idioma poder sobrescrevê-las:
+ * --bn-bg, --bn-fg, --bn-muted, --bn-line.
+ */
+interface Props {
+  items: { value: string | number; label: string }[];
+  /** Rótulo acessível da região (ex.: "Números do ano"). */
+  label: string;
+}
+
+const { items, label } = Astro.props;
+const mobileCols = items.length <= 3 ? items.length : 2;
+---
+
+<section
+  class="bignumbers"
+  aria-label={label}
+  style={`--bn-cols-m:${mobileCols};--bn-cols-d:${items.length};`}
+>
+  {
+    items.map((n) => (
+      <div class="bn">
+        <span class="t-bignumber bn-value">{n.value}</span>
+        <span class="t-label bn-label">{n.label}</span>
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .bignumbers {
+    display: grid;
+    grid-template-columns: repeat(var(--bn-cols-m), 1fr);
+    gap: 1px;
+    background: var(--bn-line, var(--line-soft));
+    border: 1px solid var(--bn-line, var(--line-soft));
+  }
+  .bn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 12px;
+    background: var(--bn-bg, var(--ground));
+  }
+  .bn-value {
+    color: var(--bn-fg, var(--title));
+  }
+  .bn-label {
+    color: var(--bn-muted, var(--faint));
+  }
+
+  @media (min-width: 760px) {
+    .bignumbers {
+      grid-template-columns: repeat(var(--bn-cols-d), 1fr);
+    }
+  }
+</style>

@@ -5,6 +5,8 @@ import {
   languageColorVars,
   languagesWithOwnColor,
   OTHER_LANGUAGE_COLOR,
+  contrastRatio,
+  onGround,
 } from "./language-color.ts";
 
 // Os 15 idiomas presentes hoje em catalog/vocabularies.json.
@@ -81,4 +83,25 @@ test("languageColorVars emite as custom properties", () => {
     languageColorVars("tcheco"),
     `--lang-bg:${OTHER_LANGUAGE_COLOR.bg};--lang-ink:${OTHER_LANGUAGE_COLOR.ink};`,
   );
+});
+
+test("contrastRatio: preto/branco = 21 e cor igual = 1", () => {
+  assert.equal(Math.round(contrastRatio("#000000", "#FFFFFF")), 21);
+  assert.equal(contrastRatio("#C89B3C", "#C89B3C"), 1);
+});
+
+test("onGround mantém as cores que já passam 4.5:1 (português, japonês, coreano)", () => {
+  for (const lang of ["português", "japonês", "coreano"]) {
+    const { bg } = languageColor(lang);
+    assert.equal(onGround(bg), bg.toUpperCase());
+  }
+});
+
+test("onGround clareia as demais até passar 4.5:1 sobre --ground", () => {
+  for (const lang of ["inglês", "francês", "russo", "alemão", "espanhol", "tcheco"]) {
+    const { bg } = languageColor(lang);
+    const out = onGround(bg);
+    assert.notEqual(out, bg.toUpperCase(), `${lang} muda`);
+    assert.ok(contrastRatio(out, "#0E1714") >= 4.5, `${lang} passa 4.5:1`);
+  }
 });
