@@ -1,0 +1,92 @@
+---
+/**
+ * Cabeçalho das telas "ver todos" de Idioma e Tema (handoff §6.6, §6.11): link
+ * de voltar, rótulo em caixa alta, título em Bodoni itálico e os big numbers
+ * (slot).
+ *
+ * Com `tone`, o bloco usa a cor do idioma (fundo e texto do par de §3.2). Sem
+ * `tone` (Tema), usa o fundo escuro --surface. Os big numbers herdam as cores
+ * pelas custom properties --bn-* do componente BigNumbers.
+ */
+interface Props {
+  kicker: string;
+  title: string;
+  back: { href: string; label: string };
+  tone?: { bg: string; ink: string };
+}
+
+const { kicker, title, back, tone } = Astro.props;
+const style = tone
+  ? `--bh-bg:${tone.bg};--bh-ink:${tone.ink};--bh-line:color-mix(in srgb, ${tone.ink} 30%, transparent);`
+  : `--bh-bg:var(--surface);--bh-ink:var(--title);--bh-line:var(--line);`;
+---
+
+<header class:list={["browse", { toned: !!tone }]} style={style}>
+  <div class="inner">
+    <a class="back" href={back.href}>‹ {back.label}</a>
+    <p class="t-label kicker">{kicker}</p>
+    <h1 class="title">{title}</h1>
+    <div class="numbers">
+      <slot />
+    </div>
+  </div>
+</header>
+
+<style>
+  .browse {
+    background: var(--bh-bg);
+    color: var(--bh-ink);
+    border-bottom: 1px solid var(--bh-line);
+    /* big numbers dentro do cabeçalho */
+    --bn-bg: var(--bh-bg);
+    --bn-fg: var(--bh-ink);
+    --bn-muted: var(--bh-ink);
+    --bn-line: var(--bh-line);
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px var(--gutter) 24px;
+  }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    align-self: flex-start;
+    color: var(--bh-ink);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+  .back:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .kicker {
+    margin: 0;
+    color: var(--bh-ink);
+    opacity: 0.8;
+  }
+  .title {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(48px, 16vw, 78px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--bh-ink);
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 760px) {
+    .inner {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,79 @@
+---
+/**
+ * Atlas · por idioma (/atlas) — uma faixa por idioma original, por quantidade
+ * de obras (handoff §6.4), e os blocos compartilhados (quem ela mais lê, temas
+ * que voltam, quando foram escritos). Fecha o 404 de /atlas que a S2 deixou.
+ *
+ * Composição pura: a regra vive em atlas.ts. Sem JavaScript.
+ */
+import Base from "@/layouts/Base.astro";
+import NavChips from "@/components/NavChips.astro";
+import AtlasToggle from "@/components/AtlasToggle.astro";
+import AtlasInsights from "@/components/AtlasInsights.astro";
+import YearBand from "@/components/YearBand.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildAtlasByLanguage, buildAtlasShared } from "@/lib/atlas.ts";
+
+const catalog = getCatalog();
+const bands = buildAtlasByLanguage(catalog);
+const shared = buildAtlasShared(catalog);
+---
+
+<Base title="Atlas · A estante da Lila">
+  <header class="top">
+    <NavChips active="atlas" />
+    <h1 class="t-screen-title">Atlas</h1>
+    <AtlasToggle active="idioma" />
+  </header>
+
+  <main class="atlas">
+    <div class="bands">
+      {
+        bands.map((band) => (
+          <YearBand
+            label={band.label}
+            href={band.href}
+            count={band.count}
+            spines={band.spines}
+            shelfPerRow
+          />
+        ))
+      }
+    </div>
+
+    <AtlasInsights
+      authors={shared.authors}
+      cloud={shared.cloud}
+      eras={shared.eras}
+    />
+  </main>
+</Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: var(--gutter);
+    padding-bottom: 8px;
+  }
+  .atlas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+  .bands {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 760px) {
+    .top,
+    .atlas {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

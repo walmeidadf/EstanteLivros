@@ -1,0 +1,137 @@
+---
+/**
+ * Atlas · por país (/atlas/pais) — uma faixa por país (as 10 maiores) e o bloco
+ * "Outros países" para o resto, com um chip por país agrupado (handoff §6.5).
+ * País = país da autoria; uma obra com autorias de países diferentes conta em
+ * cada um. Obras sem país não aparecem aqui.
+ *
+ * Composição pura: a regra vive em atlas.ts. Sem JavaScript.
+ */
+import Base from "@/layouts/Base.astro";
+import NavChips from "@/components/NavChips.astro";
+import AtlasToggle from "@/components/AtlasToggle.astro";
+import AtlasInsights from "@/components/AtlasInsights.astro";
+import YearBand from "@/components/YearBand.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildAtlasByCountry, buildAtlasShared } from "@/lib/atlas.ts";
+
+const catalog = getCatalog();
+const { bands, others } = buildAtlasByCountry(catalog);
+const shared = buildAtlasShared(catalog);
+---
+
+<Base title="Atlas por país · A estante da Lila">
+  <header class="top">
+    <NavChips active="atlas" />
+    <h1 class="t-screen-title">Atlas</h1>
+    <AtlasToggle active="pais" />
+  </header>
+
+  <main class="atlas">
+    <div class="bands">
+      {
+        bands.map((band) => (
+          <YearBand
+            label={band.label}
+            href={band.href}
+            count={band.count}
+            spines={band.spines}
+            shelfPerRow
+          />
+        ))
+      }
+
+      {
+        others && (
+          <>
+            <YearBand
+              label={others.band.label}
+              count={others.band.count}
+              spines={others.band.spines}
+              shelfPerRow
+            />
+            <nav class="others" aria-label="Outros países">
+              <ul>
+                {others.countries.map((c) => (
+                  <li>
+                    <a class="chip" href={c.href}>
+                      {c.name} <span class="n">{c.count}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </>
+        )
+      }
+    </div>
+
+    <AtlasInsights
+      authors={shared.authors}
+      cloud={shared.cloud}
+      eras={shared.eras}
+    />
+  </main>
+</Base>
+
+<style>
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: var(--gutter);
+    padding-bottom: 8px;
+  }
+  .atlas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+  .bands {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .others {
+    padding: 4px var(--gutter) 0;
+  }
+  .others ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: var(--tap);
+    padding: 0 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .chip:hover {
+    border-color: var(--text);
+  }
+  .chip .n {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  @media (min-width: 760px) {
+    .top,
+    .atlas {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

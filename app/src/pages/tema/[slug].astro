@@ -1,0 +1,52 @@
+---
+/**
+ * Tema (/tema/{slug}) — todas as obras de um tema (handoff §6.11, a partir do
+ * template de Idioma): cabeçalho escuro com big numbers e a grade ordenável.
+ * Fecha o 404 dos carrosséis de tema do Início.
+ *
+ * Uma página por tema (variantes de caixa/acento agrupadas pelo slug).
+ */
+import Base from "@/layouts/Base.astro";
+import BrowseHeader from "@/components/BrowseHeader.astro";
+import BigNumbers from "@/components/BigNumbers.astro";
+import WorkGrid from "@/components/WorkGrid.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildThemePages, type ThemePage } from "@/lib/atlas.ts";
+
+export function getStaticPaths() {
+  return buildThemePages(getCatalog()).map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props as { page: ThemePage };
+---
+
+<Base title={`${page.name} · Tema · A estante da Lila`}>
+  <BrowseHeader
+    kicker="Tema"
+    title={page.name}
+    back={{ href: "/atlas", label: "Atlas" }}
+  >
+    <BigNumbers items={page.numbers} label="Números do tema" />
+  </BrowseHeader>
+
+  <main class="browse">
+    <WorkGrid items={page.items} sortable />
+  </main>
+</Base>
+
+<style>
+  .browse {
+    padding: 24px var(--gutter) 48px;
+  }
+
+  @media (min-width: 760px) {
+    .browse {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

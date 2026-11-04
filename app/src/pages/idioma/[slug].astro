@@ -1,0 +1,74 @@
+---
+/**
+ * Idioma (/idioma/{slug}) — todas as obras de um idioma original (handoff
+ * §6.6): cabeçalho na cor do idioma com big numbers, carrossel de avatares das
+ * autorias e a grade ordenável. Sem texto descritivo (decisão de design).
+ *
+ * Uma página por idioma com obra (getStaticPaths). A regra vem de
+ * buildLanguagePages(); a página só posiciona.
+ */
+import Base from "@/layouts/Base.astro";
+import BrowseHeader from "@/components/BrowseHeader.astro";
+import BigNumbers from "@/components/BigNumbers.astro";
+import AuthorRail from "@/components/AuthorRail.astro";
+import AuthorChip from "@/components/AuthorChip.astro";
+import WorkGrid from "@/components/WorkGrid.astro";
+import { getCatalog } from "@/lib/catalog/index.ts";
+import { buildLanguagePages, type LanguagePage } from "@/lib/atlas.ts";
+
+export function getStaticPaths() {
+  return buildLanguagePages(getCatalog()).map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props as { page: LanguagePage };
+---
+
+<Base title={`${page.name} · Idioma original · A estante da Lila`}>
+  <BrowseHeader
+    kicker="Idioma original"
+    title={page.name}
+    back={{ href: "/atlas", label: "Atlas" }}
+    tone={page.color}
+  >
+    <BigNumbers items={page.numbers} label="Números do idioma" />
+  </BrowseHeader>
+
+  <main class="browse">
+    {
+      page.authors && (
+        <AuthorRail title="Autorias">
+          {page.authors.map((pick) => (
+            <AuthorChip author={pick.author} href={pick.href} />
+          ))}
+        </AuthorRail>
+      )
+    }
+
+    <div class="grid-wrap">
+      <WorkGrid items={page.items} sortable />
+    </div>
+  </main>
+</Base>
+
+<style>
+  .browse {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 24px 0 48px;
+  }
+  .grid-wrap {
+    padding-inline: var(--gutter);
+  }
+
+  @media (min-width: 760px) {
+    .browse {
+      max-width: 960px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>
