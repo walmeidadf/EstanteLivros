@@ -88,6 +88,13 @@ const originalFont =
   /* Na grade, o item ocupa a largura da coluna (não largura fixa). */
   .size-grid {
     width: 100%;
+    /* Na grade o item nunca é mais largo que a coluna (palavra longa no título
+       ou na autoria quebra em vez de alargar a coluna). */
+    min-width: 0;
+  }
+  .size-grid .caption {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
   .caption {
     display: flex;
