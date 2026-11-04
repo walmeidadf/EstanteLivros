@@ -1,0 +1,157 @@
+---
+/**
+ * Topo da página de Autoria (handoff §6.8): retrato (foto 1:1 derivada no build
+ * ou avatar de iniciais, 132 px, com anel na cor do idioma), crédito discreto
+ * da foto, nome, linha "País · escreve em {idiomas}" e os big numbers. Recebe o
+ * AuthorPage já resolvido.
+ */
+import InitialsAvatar from "@/components/InitialsAvatar.astro";
+import BigNumbers from "@/components/BigNumbers.astro";
+import { deriveAuthorPhoto } from "@/lib/images.ts";
+import type { AuthorPage } from "@/lib/author-page.ts";
+
+interface Props {
+  page: AuthorPage;
+}
+const { page } = Astro.props;
+const { author, credit, context, numbers } = page;
+
+const photo = author.photo ? await deriveAuthorPhoto(author.photo.file, "1:1") : null;
+
+// A linha de crédito só aparece com foto e com ao menos um campo preenchido.
+const creditParts = credit
+  ? [credit.author, credit.license].filter((s): s is string => Boolean(s))
+  : [];
+const showCredit = photo !== null && (creditParts.length > 0 || Boolean(credit?.sourceUrl));
+---
+
+<header class="author-header">
+  <div class="portrait">
+    <InitialsAvatar
+      name={author.name}
+      language={page.portrait.language}
+      image={photo}
+      size={132}
+      ring
+    />
+    {
+      showCredit && (
+        <p class="credit">
+          {creditParts.join(" · ")}
+          {credit?.sourceUrl && (
+            <>
+              {creditParts.length > 0 && " · "}
+              <a href={credit.sourceUrl} rel="nofollow noopener">
+                fonte
+              </a>
+            </>
+          )}
+        </p>
+      )
+    }
+  </div>
+
+  <div class="text">
+    <h1 class="name">{author.name}</h1>
+    <p class="context">
+      {
+        context.country && (
+          <>
+            <a href={context.country.href}>{context.country.text}</a>
+            <span class="sep" aria-hidden="true"> · </span>
+          </>
+        )
+      }
+      <span class="writes">escreve em </span>
+      {
+        context.languages.map((lang, i) => (
+          <>
+            {i > 0 && <span class="sep" aria-hidden="true">, </span>}
+            <a href={lang.href}>{lang.text}</a>
+          </>
+        ))
+      }
+    </p>
+
+    <BigNumbers items={numbers} label="Números da autoria" />
+  </div>
+</header>
+
+<style>
+  .author-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-inline: var(--gutter);
+    text-align: center;
+  }
+  .portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .credit {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: var(--faint);
+    max-width: 240px;
+  }
+  .credit a {
+    color: var(--faint);
+    text-decoration: underline;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+  .name {
+    margin: 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(34px, 10vw, 52px);
+    line-height: 1;
+    color: var(--title);
+    overflow-wrap: anywhere;
+  }
+  .context {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  .context a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 2px;
+  }
+  .context a:hover {
+    text-decoration-color: currentColor;
+  }
+  .writes {
+    color: var(--faint);
+  }
+
+  @media (min-width: 640px) {
+    .author-header {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 28px;
+      text-align: left;
+    }
+    .portrait {
+      flex: 0 0 auto;
+    }
+    .text {
+      align-items: flex-start;
+      padding-top: 4px;
+    }
+  }
+</style>

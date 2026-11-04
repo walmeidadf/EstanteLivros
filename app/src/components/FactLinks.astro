@@ -1,0 +1,44 @@
+---
+/**
+ * Lista de links separados por "·" dentro de um valor de ficha (ex.: País com
+ * mais de uma autoria). Cada link com alvo de toque confortável.
+ */
+import type { FactLink } from "@/lib/work-page.ts";
+
+interface Props {
+  links: FactLink[];
+}
+const { links } = Astro.props;
+---
+
+<span class="links">
+  {
+    links.map((link, i) => (
+      <>
+        {i > 0 && <span class="sep" aria-hidden="true">·</span>}
+        <a href={link.href}>{link.text}</a>
+      </>
+    ))
+  }
+</span>
+
+<style>
+  .links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .links a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 2px;
+  }
+  .links a:hover {
+    text-decoration-color: currentColor;
+  }
+  .sep {
+    color: var(--faint);
+  }
+</style>

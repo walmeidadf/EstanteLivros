@@ -1,0 +1,32 @@
+---
+/**
+ * Link de voltar para a Estante (telas Obra e Autoria da S5). Alvo de toque
+ * ≥ 44 px; mesmo estilo do "voltar" do BrowseHeader.
+ */
+interface Props {
+  /** Destino; padrão a Estante (handoff: voltar sempre à estante na S5). */
+  href?: string;
+  label?: string;
+}
+const { href = "/", label = "Estante" } = Astro.props;
+---
+
+<a class="back" href={href}>‹ {label}</a>
+
+<style>
+  .back {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    color: var(--muted);
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+  .back:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+</style>

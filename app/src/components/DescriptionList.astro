@@ -1,0 +1,67 @@
+---
+/**
+ * Ficha em forma de lista de definição: um par rótulo/valor por linha. O valor
+ * é texto puro ou uma lista de links (ex.: idioma, país). As linhas vazias já
+ * foram removidas pela camada de seleção (não há "—" aqui).
+ */
+import FactLinks from "@/components/FactLinks.astro";
+import type { Fact } from "@/lib/work-page.ts";
+
+interface Props {
+  facts: Fact[];
+}
+const { facts } = Astro.props;
+---
+
+<dl class="facts">
+  {
+    facts.map((fact) => (
+      <div class="row">
+        <dt class="t-label">{fact.label}</dt>
+        <dd>
+          {fact.kind === "links" ? <FactLinks links={fact.links} /> : fact.text}
+        </dd>
+      </div>
+    ))
+  }
+</dl>
+
+<style>
+  .facts {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line-soft);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding: 12px 14px;
+    background: var(--ground);
+  }
+  .t-label {
+    margin: 0;
+    color: var(--faint);
+    flex: 0 0 auto;
+    min-width: 120px;
+  }
+  dd {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 15px;
+    color: var(--text);
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 560px) {
+    .row {
+      flex-wrap: nowrap;
+      align-items: baseline;
+    }
+  }
+</style>
