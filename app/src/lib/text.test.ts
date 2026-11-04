@@ -1,6 +1,19 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { initials, detectScript, scriptDir } from "./text.ts";
+import { initials, detectScript, scriptDir, languageTag } from "./text.ts";
+
+test("languageTag cobre os 15 idiomas e devolve undefined para o resto", () => {
+  const all = ["português","inglês","espanhol","francês","italiano","russo","japonês","alemão","hebraico","coreano","norueguês","catalão","tcheco","árabe","holandês"];
+  for (const l of all) assert.ok(languageTag(l), l);
+  assert.equal(languageTag("português"), "pt");
+  assert.equal(languageTag("klingon"), undefined);
+});
+
+test("árabe é detectado e escreve da direita para a esquerda", () => {
+  assert.equal(detectScript("ألف ليلة وليلة"), "arabic");
+  assert.equal(scriptDir("arabic"), "rtl");
+  assert.equal(scriptDir("hebrew"), "rtl");
+});
 
 test("iniciais de nome com dois nomes", () => {
   assert.equal(initials("Han Kang"), "HK");

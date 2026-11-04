@@ -57,3 +57,63 @@ export function languageColorVars(language: string): string {
 export function languagesWithOwnColor(): string[] {
   return Object.keys(LANGUAGE_COLORS);
 }
+
+/* ---- Legibilidade sobre o fundo escuro (S4, design §4.3) ---- */
+
+/** Espelha o token `--ground` (tokens.css). */
+const GROUND_HEX = "#0E1714";
+/** Espelha o token `--title` (tokens.css): destino do clareamento. */
+const TITLE_HEX = "#F4EBD8";
+
+function parseHex(hex: string): [number, number, number] {
+  const h = hex.replace("#", "");
+  return [
+    parseInt(h.slice(0, 2), 16),
+    parseInt(h.slice(2, 4), 16),
+    parseInt(h.slice(4, 6), 16),
+  ];
+}
+
+function toHex([r, g, b]: [number, number, number]): string {
+  const part = (n: number) =>
+    Math.max(0, Math.min(255, Math.round(n)))
+      .toString(16)
+      .padStart(2, "0");
+  return `#${part(r)}${part(g)}${part(b)}`.toUpperCase();
+}
+
+function luminance(hex: string): number {
+  const lin = parseHex(hex).map((v) => {
+    const c = v / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  }) as [number, number, number];
+  return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2];
+}
+
+/** Razão de contraste WCAG entre duas cores `#RRGGBB` (1..21). */
+export function contrastRatio(hexA: string, hexB: string): number {
+  const [hi, lo] = [luminance(hexA), luminance(hexB)].sort((a, b) => b - a);
+  return (hi! + 0.05) / (lo! + 0.05);
+}
+
+/**
+ * Cor legível como TEXTO sobre `--ground`: devolve a própria cor se já passa em
+ * `min` (padrão 4.5:1); senão a mistura com `--title` em passos de 5% até
+ * passar, preservando a matiz o quanto possível.
+ */
+export function onGround(hex: string, min = 4.5): string {
+  const base = hex.toUpperCase();
+  if (contrastRatio(base, GROUND_HEX) >= min) return base;
+  const from = parseHex(base);
+  const to = parseHex(TITLE_HEX);
+  for (let step = 1; step <= 20; step++) {
+    const t = step / 20;
+    const mixed = toHex([
+      from[0] + (to[0] - from[0]) * t,
+      from[1] + (to[1] - from[1]) * t,
+      from[2] + (to[2] - from[2]) * t,
+    ]);
+    if (contrastRatio(mixed, GROUND_HEX) >= min) return mixed;
+  }
+  return TITLE_HEX;
+}
