@@ -64,7 +64,7 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 | S2 `estante-inicio-busca` ✓ | Início (carrosséis + cartão Linha do tempo) e busca (índice estático + ilha). No ar. |
 | S3 `linha-do-tempo` ✓ | Linha do tempo, Ano, Sem data. Quita o 404 de `/linha-do-tempo` e `/ano/{ano}`. |
 | S4 `atlas` ✓ | Atlas (idioma e país), Idioma, País, Tema. Quita o 404 de `/atlas` e `/tema/{slug}`. No ar. |
-| S5 `obra-autoria` | Obra e Autoria |
+| S5 `obra-autoria` ✓ | Obra (`/obra/{slug}`, 302) e Autoria (`/autoria/{slug}`, 215). Quita a última dívida de rota. No ar. |
 | S6 `pwa-offline` | Manifest, offline, instalação |
 | S7 `compartilhar` | Modo da Lila, retrospectiva 9:16, card de livro |
 

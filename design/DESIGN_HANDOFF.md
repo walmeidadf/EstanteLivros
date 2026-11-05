@@ -180,7 +180,7 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 - Big numbers (obras · autorias) e destaque da autoria mais lida no país.
 - Grade de 3 colunas.
 
-### 6.8 Autoria — `telas/Autor.dc.html` — `/autoria/{slug}`
+### 6.8 Autoria — `telas/Autor.dc.html` — `/autoria/{slug}` (implementado na S5)
 - Retrato: foto, quando houver, ou avatar de iniciais grande (132 px, com anel na cor do idioma).
 - Nome em Bodoni itálico; linha "País · escreve em {idiomas}".
 - Big numbers: livros lidos · posição no ranking da estante (só se estiver entre as 10 primeiras; senão, mostrar outra métrica ou omitir).
@@ -188,7 +188,21 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 - Grade "Na estante da Lila" com "lido em {ano}" sob cada capa.
 - Temas que mais aparecem nos livros dessa autoria.
 
-### 6.9 Obra — `telas/ObraV2.dc.html` — `/obra/{slug}`
+**Como ficou (S5):**
+- Crédito da foto numa linha discreta sob o retrato (autor · licença · link da
+  fonte), omitido no avatar de iniciais.
+- **Posição:** `1 + nº de autorias com estritamente mais leituras`; empates
+  dividem a posição, marcada "(empatada)". Só aparece no top 10; fora dele, o
+  big number vira "primeira leitura" (menor ano), omitido se não houver ano.
+  **Divergência registrada:** o corte do top 10 do Atlas ("Quem ela mais lê")
+  desempata por nome; então uma autoria "9ª (empatada)" aqui pode não aparecer
+  naquela lista. Aceito; não corrigido.
+- Big numbers ficam numa **faixa própria abaixo** do retrato+nome (não ao lado),
+  para equilibrar o peso visual com a ficha e a grade.
+- "Temas que mais aparecem": só temas em 2+ obras da autoria, top 10, com a
+  contagem; some para autoria de um livro só.
+
+### 6.9 Obra — `telas/ObraV2.dc.html` — `/obra/{slug}` (implementado na S5)
 - Capa grande sobre a prateleira; título pt-BR; título original (no alfabeto original, mais a romanização quando houver).
 - Autoria com avatar, levando a `/autoria/{slug}`.
 - Ficha: idioma original (link para `/idioma/{slug}`), primeira publicação, tipo, gêneros.
@@ -197,6 +211,22 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 - Caixa "Edição brasileira de referência": editora, ano, ISBN formatado. Se `edition_match = representative`, isso não é necessariamente a edição que ela leu, e o rótulo deixa isso implícito.
 - "Nota do catalogador" (`decision_reason`) e "Como estava no caderno" (`original_entry`).
 - Botão "Compartilhar" gera um card do livro (§6.10).
+
+**Como ficou (S5):**
+- **País na ficha** (acréscimo): uma linha com o país de cada autoria, link para
+  `/pais/{slug}`; some sem país.
+- Título original **some quando difere do pt-BR só por caixa/acento** (regra
+  `fold`), não só na Obra mas em todas as grades/carrosséis — afeta 4 obras
+  (`Jacarandá`, `Bonsai`, `Persépolis`, `Triste Tigre`).
+- "primeira leitura"/"releitura" vêm da **posição** na ordem, não do flag
+  `reread`. Leitura sem ano: "Entre os primeiros da lista" → `/ano/sem-data`.
+- Rótulo da edição: `exact` → "Edição lida"; `representative` em português →
+  "Edição brasileira de referência", nos demais → "Edição de referência".
+  **ISBN sem hífens** (hifenizar exige tabela de faixas; errar parece erro).
+- "Nota do catalogador" = `catalogerNote`; "Como estava no caderno" =
+  `originalEntry` de cada leitura. Ambos **visíveis** (sem `<details>`). Nenhum
+  sinal para `confidence = medium`.
+- **Sem "Compartilhar"** (fica para a S7; sem botão nem stub).
 
 ### 6.10 Retrospectiva / compartilhar — `telas/Retro.dc.html`
 - Peça **story 9:16** (referência em 540×960; exportar em **1080×1920 PNG**).
@@ -293,7 +323,9 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 ## 12. Pendências
 
 1. ~~Desenhar `/atlas/pais` (§6.5) e `/tema/{slug}` (§6.11).~~ Feito na S4.
-2. Layout desktop: largura máxima do conteúdo, mais colunas na grade e setas nos carrosséis.
-3. Card de livro para compartilhar (1:1 ou 4:5).
+   ~~Obra (§6.9) e Autoria (§6.8).~~ Feito na S5.
+2. Layout desktop: conteúdo centralizado em largura máxima (feito em todas as
+   telas até a S5). Falta: mais colunas na grade e setas nos carrosséis.
+3. Card de livro para compartilhar (1:1 ou 4:5) — S7.
 4. Definir quais temas viram carrossel no Início (sugestão: os 4 mais frequentes + "Lidos duas vezes").
 5. Fluxo de revisão dos resumos gerados pela Lila (fora deste escopo).

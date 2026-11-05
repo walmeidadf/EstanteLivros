@@ -121,11 +121,21 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   uma ilha vanilla. 108 testes verdes; build com 563 páginas. Camada
   `lib/catalog/` inalterada. Fix de colunas iguais nas grades no celular
   (`minmax(0, 1fr)`) no PR #6.
-- **Próximo (nova sessão): F3 · S5 (`obra-autoria`).** Páginas Obra
-  (`/obra/{slug}`) e Autoria (`/autoria/{slug}`), destinos de quase todos os
-  links. Ver `docs/plans/handover-s4-s5.md`. Até lá, esses links caem no Início
-  (o Cloudflare Pages serve o `index.html` quando não há 404.html); é esperado.
-- Depois da F3: o resto da F2 (capas, temas, resumos de ano/país).
+- **F3 · S5 (`obra-autoria`) concluída — no ar.** Páginas Obra (`/obra/{slug}`,
+  302) e Autoria (`/autoria/{slug}`, 215), quitando a **última dívida de rota**:
+  capas, avatares e resultados de busca agora abrem a página certa. Regra em
+  `app/src/lib/work-page.ts` e `author-page.ts`; `route-integrity.ts` confere no
+  teste que todo link `/obra` e `/autoria` resolve. Modelo ganhou 3 campos
+  aditivos (`originalEntry`, crédito da foto, `bioSource`); `CoverCaption`/
+  `WorkGrid` ganharam legenda opcional; `originalTitlePresentation` extraído
+  para `text.ts`. Componentes novos: `WorkHeader`, `AuthorHeader`, `BackLink`,
+  `DescriptionList`, `FactLinks`. Sem `<script>` nas duas telas. 151 testes
+  verdes; build com **1080 páginas**. Validada em produção (desktop + celular),
+  PRs #7, #8 (alinhar cabeçalhos no desktop) e #9 (big numbers em faixa).
+- **Próximo (nova sessão): a F3 do app fechou**; falta só **S6 (`pwa-offline`)**
+  e **S7 (`compartilhar`)**. O caminho recomendado é retomar a **F2** (capas,
+  temas, resumos de ano/país), agora corrigindo o que o app mostra. Ver
+  `docs/plans/handover-s5-s6.md`.
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);
   `gh secret set CLOUDFLARE_API_TOKEN` após rotacionar. Detalhes em `infra/README.md`.
