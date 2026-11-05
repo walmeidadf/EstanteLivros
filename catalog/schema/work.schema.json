@@ -49,7 +49,15 @@
           "required": ["sourceUrl", "source"],
           "properties": {
             "sourceUrl": { "type": "string", "pattern": "^https?://" },
-            "source": { "$ref": "#/$defs/optionalText" }
+            "source": { "$ref": "#/$defs/optionalText" },
+            "file": {
+              "type": ["string", "null"],
+              "pattern": "^covers/[a-z0-9]+(-[a-z0-9]+)*\\.(jpg|png|webp|gif)$"
+            },
+            "license": { "$ref": "#/$defs/optionalText" },
+            "credit": { "$ref": "#/$defs/optionalText" },
+            "focus": { "enum": ["top", "center", "bottom", null] },
+            "display": { "enum": ["typographic", null] }
           }
         }
       ]

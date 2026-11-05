@@ -63,8 +63,21 @@ export const workSchema = z
       })
       .strict(),
     // cover: objeto OU null — NUNCA string.
+    // Campos de enriquecimento (file/license/credit/focus/display) são aditivos
+    // e opcionais; obras ainda não enriquecidas trazem só sourceUrl/source.
     cover: z
-      .object({ sourceUrl: httpUrl, source: optionalText })
+      .object({
+        sourceUrl: httpUrl,
+        source: optionalText,
+        file: z
+          .string()
+          .regex(/^covers\/[a-z0-9]+(-[a-z0-9]+)*\.(jpg|png|webp|gif)$/)
+          .nullish(),
+        license: optionalText.optional(),
+        credit: optionalText.optional(),
+        focus: z.enum(["top", "center", "bottom"]).nullish(),
+        display: z.literal("typographic").nullish(),
+      })
       .strict()
       .nullable(),
     catalogerNote: optionalText,
