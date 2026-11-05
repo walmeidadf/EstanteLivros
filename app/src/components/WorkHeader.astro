@@ -125,4 +125,13 @@ const { work, original, romanized, authors } = page;
       min-width: 0;
     }
   }
+
+  /* No desktop, o cabeçalho ocupa a mesma coluna centralizada do conteúdo
+     (ficha, leituras…), para a capa e o título alinharem com os rótulos. */
+  @media (min-width: 760px) {
+    .work-header {
+      max-width: 760px;
+      margin-inline: auto;
+    }
+  }
 </style>

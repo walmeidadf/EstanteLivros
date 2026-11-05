@@ -154,4 +154,13 @@ const showCredit = photo !== null && (creditParts.length > 0 || Boolean(credit?.
       padding-top: 4px;
     }
   }
+
+  /* No desktop, o cabeçalho ocupa a mesma coluna centralizada do conteúdo
+     (bio, grade…), para o retrato alinhar com as seções de baixo. */
+  @media (min-width: 760px) {
+    .author-header {
+      max-width: 960px;
+      margin-inline: auto;
+    }
+  }
 </style>
