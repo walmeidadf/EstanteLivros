@@ -63,6 +63,29 @@ def _existing_countries(existing: Optional[Catalog]) -> List[Dict[str, Any]]:
     return []
 
 
+_ENRICHED_COVER_FIELDS = ("file", "license", "credit", "focus", "display")
+
+
+def merge_cover(cover_url: Optional[str], cover_source: Optional[str],
+                previous: Optional[Mapping[str, Any]]) -> Optional[Dict[str, Any]]:
+    """Recompõe a capa do CSV preservando os campos enriquecidos (F2 · capas).
+
+    `sourceUrl`/`source` vêm do legado; `file`, `license`, `credit`, `focus` e
+    `display` são mantidos do catálogo atual, mesmo quando o CSV deixa de trazer
+    uma URL (a capa local escolhida não se perde)."""
+    prev = previous if isinstance(previous, dict) else {}
+    enriched = {k: prev[k] for k in _ENRICHED_COVER_FIELDS
+                if isinstance(prev, dict) and prev.get(k) is not None}
+    if cover_url:
+        return {"sourceUrl": cover_url, "source": cover_source, **enriched}
+    # Sem URL no legado: só sobra capa se já havia campo enriquecido, e nesse
+    # caso a proveniência (sourceUrl/source) do catálogo atual é mantida — o
+    # schema exige sourceUrl numa capa não nula.
+    if not enriched or not prev.get("sourceUrl"):
+        return None
+    return {"sourceUrl": prev.get("sourceUrl"), "source": prev.get("source"), **enriched}
+
+
 def build_references(work_row: Mapping[str, str], sources: Iterable[Mapping[str, str]]) -> List[Dict[str, Any]]:
     refs: List[Dict[str, Any]] = []
     seen = set()
@@ -95,9 +118,10 @@ def build(legacy: LegacyData, registry: SlugRegistry,
           existing_summaries: Any = None,
           existing: Optional[Catalog] = None) -> BuildResult:
     """Monta o catálogo. `existing` é o catálogo atual: os campos enriquecidos
-    das autorias (F2) e `vocabularies.countries` são preservados."""
+    das autorias e das capas (F2) e `vocabularies.countries` são preservados."""
     overrides = overrides or {}
     existing_authors = existing.authors if existing is not None else {}
+    existing_works = existing.works if existing is not None else {}
     work_rows = sorted(legacy.works, key=lambda r: r["work_id"])
     work_ids = {r["work_id"] for r in work_rows}
 
@@ -177,7 +201,8 @@ def build(legacy: LegacyData, registry: SlugRegistry,
                 "format": _known(row["physical_format"]),
                 "match": text(row["edition_match"]),
             },
-            "cover": {"sourceUrl": cover_url, "source": text(row["cover_source"])} if cover_url else None,
+            "cover": merge_cover(cover_url, text(row["cover_source"]),
+                                 (existing_works.get(slug) or {}).get("cover")),
             "catalogerNote": text(row["decision_reason"]),
             "confidence": text(row["confidence"]),
             "references": build_references(row, sources),
