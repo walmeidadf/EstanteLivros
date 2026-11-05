@@ -26,64 +26,72 @@ const showCredit = photo !== null && (creditParts.length > 0 || Boolean(credit?.
 ---
 
 <header class="author-header">
-  <div class="portrait">
-    <InitialsAvatar
-      name={author.name}
-      language={page.portrait.language}
-      image={photo}
-      size={132}
-      ring
-    />
-    {
-      showCredit && (
-        <p class="credit">
-          {creditParts.join(" · ")}
-          {credit?.sourceUrl && (
-            <>
-              {creditParts.length > 0 && " · "}
-              <a href={credit.sourceUrl} rel="nofollow noopener">
-                fonte
-              </a>
-            </>
-          )}
-        </p>
-      )
-    }
-  </div>
-
-  <div class="text">
-    <h1 class="name">{author.name}</h1>
-    <p class="context">
+  <div class="identity">
+    <div class="portrait">
+      <InitialsAvatar
+        name={author.name}
+        language={page.portrait.language}
+        image={photo}
+        size={132}
+        ring
+      />
       {
-        context.country && (
-          <>
-            <a href={context.country.href}>{context.country.text}</a>
-            <span class="sep" aria-hidden="true"> · </span>
-          </>
+        showCredit && (
+          <p class="credit">
+            {creditParts.join(" · ")}
+            {credit?.sourceUrl && (
+              <>
+                {creditParts.length > 0 && " · "}
+                <a href={credit.sourceUrl} rel="nofollow noopener">
+                  fonte
+                </a>
+              </>
+            )}
+          </p>
         )
       }
-      <span class="writes">escreve em </span>
-      {
-        context.languages.map((lang, i) => (
-          <>
-            {i > 0 && <span class="sep" aria-hidden="true">, </span>}
-            <a href={lang.href}>{lang.text}</a>
-          </>
-        ))
-      }
-    </p>
+    </div>
 
-    <BigNumbers items={numbers} label="Números da autoria" />
+    <div class="text">
+      <h1 class="name">{author.name}</h1>
+      <p class="context">
+        {
+          context.country && (
+            <>
+              <a href={context.country.href}>{context.country.text}</a>
+              <span class="sep" aria-hidden="true"> · </span>
+            </>
+          )
+        }
+        <span class="writes">escreve em </span>
+        {
+          context.languages.map((lang, i) => (
+            <>
+              {i > 0 && <span class="sep" aria-hidden="true">, </span>}
+              <a href={lang.href}>{lang.text}</a>
+            </>
+          ))
+        }
+      </p>
+    </div>
   </div>
+
+  <BigNumbers items={numbers} label="Números da autoria" />
 </header>
 
 <style>
   .author-header {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding-inline: var(--gutter);
+  }
+  /* Faixa superior: retrato + nome/país/idioma. Os big numbers vêm abaixo. */
+  .identity {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding-inline: var(--gutter);
     text-align: center;
   }
   .portrait {
@@ -140,7 +148,7 @@ const showCredit = photo !== null && (creditParts.length > 0 || Boolean(credit?.
   }
 
   @media (min-width: 640px) {
-    .author-header {
+    .identity {
       flex-direction: row;
       align-items: flex-start;
       gap: 28px;
