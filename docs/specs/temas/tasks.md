@@ -23,16 +23,16 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
   - [x] 1.4 Atualizar fixtures/helpers (pipeline e app) para o `tags` opcional; testes atuais verdes sem `tags`.
     - _Requisitos: 4.1_
 
-- [ ] 2. `lib/themes.py` — carga, validação e aplicação
-  - [ ] 2.1 `theme_key` (= `unify_key`), `slugify_theme` (espelho do app), `THEME_FLOOR = 5` (com comentário cruzando com `CLOUD_MIN_WORKS`).
+- [x] 2. `lib/themes.py` — carga, validação e aplicação
+  - [x] 2.1 `theme_key` (= `unify_key`), `slugify_theme` (espelho do app), `THEME_FLOOR = 5` (com comentário cruzando com `CLOUD_MIN_WORKS`).
     - _Requisitos: 1.3_
-  - [ ] 2.2 `ThemeConfig.load`: valida `version`, `targetSize`, tamanho da taxonomia, minúsculas, sem repetição por chave, sem colisão de slug, chaves do mapa únicas, destino na taxonomia, taxonomia toda alcançada; erros viram `ThemeConfigError`.
+  - [x] 2.2 `ThemeConfig.load`: valida `version`, `targetSize`, tamanho da taxonomia, minúsculas, sem repetição por chave, sem colisão de slug, chaves do mapa únicas, destino na taxonomia, taxonomia toda alcançada; erros viram `ThemeConfigError`.
     - _Requisitos: 1.1, 1.2, 1.3, 2.4, 2.5, 2.6_
-  - [ ] 2.3 `apply(raw, cfg)` → `Applied(themes, tags, unmapped)`: união ordenada sem repetição; `tags` sem perda, uma por chave, grafia do CSV; `[]` = só tag.
+  - [x] 2.3 `apply(raw, cfg)` → `Applied(themes, tags, unmapped)`: união ordenada sem repetição; `tags` sem perda, uma por chave, grafia do CSV; `[]` = só tag.
     - _Requisitos: 2.1, 2.2, 2.3, 3.1, 3.2_
-  - [ ] 2.4 `summary(works, cfg)` para dry-run/cobertura/revisão (canônicos, abaixo do piso, média, único tema, total de tags).
+  - [x] 2.4 `summary(works, cfg)` para dry-run/cobertura/revisão (canônicos, abaixo do piso, média, único tema, total de tags).
     - _Requisitos: 3.8, 4.5_
-  - [ ] 2.5 `test_themes.py`: `apply` (união, um-para-vários, só tag, variantes de caixa/acento, tags sem perda) e `load` (destino fora da taxonomia, taxonomia sem uso, chave repetida, slug colidindo, fora do targetSize, arquivo ausente).
+  - [x] 2.5 `test_themes.py`: `apply` (união, um-para-vários, só tag, variantes de caixa/acento, tags sem perda) e `load` (destino fora da taxonomia, taxonomia sem uso, chave repetida, slug colidindo, fora do targetSize, arquivo ausente).
     - _Requisitos: 10.1_
 
 ## Build e migração
