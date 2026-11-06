@@ -155,8 +155,8 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   maioria das da Literal tem lado menor < 400 px). `images.ts` deriva capas
   (2:3, AVIF, `focus`), `cover-selection.ts` decide real × tipográfica. 219
   testes do pipeline e 156 do app verdes. Ver `docs/plans/handover-capas.md`.
-- **Próximo (nova sessão):** F2 restante (**temas**, **resumos de ano/país**,
-  **títulos originais**), **S6 (`pwa-offline`)** e **S7 (`compartilhar`)**. A
+- **Próximo (nova sessão):** F2 restante (**temas**, **resumos de ano/país**; os
+  dados das obras são uma tarefa curta), **S6 (`pwa-offline`)** e **S7 (`compartilhar`)**. A
   lista completa, com o botão "Compartilhar {ano}" da S7, está em
   `docs/ROADMAP.md` ("Próximos passos").
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).

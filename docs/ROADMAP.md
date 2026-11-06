@@ -65,10 +65,14 @@ Spec: [`docs/specs/catalogo-canonico/`](specs/catalogo-canonico/).
    seguem na tipográfica e em `docs/plans/capas-backlog.md` (melhoria contínua,
    2ª onda paga). A maioria das capas da Literal tem lado menor < 400 px
    (mediana 319 px); só 25 passam de 400 px.
-3. [ ] Temas: reduzir 496 para ~40–60, revisado com a Lila
-4. [ ] Títulos originais: separar título e romanização (21 não latinos)
-5. [ ] Wikidata das obras e o `first_publication_year` que falta
-6. [ ] Resumos de ano e país, com o mesmo fluxo da bio (reaproveita F2.1)
+3. [ ] **F2.3 Temas**: reduzir 496 para ~40–60, revisado com a Lila (spec própria;
+   leva junto o `404.astro` e a escolha dos temas do Início)
+4. [ ] **F2.4/2.5 Dados das obras**: *quase pronto*, então vira tarefa curta, sem
+   spec. Medido em `cobertura.md` (6/nov/2026): título original 185/187,
+   romanização 8/21 (faltam 13), ano de primeira publicação 301/302. A lista de
+   16 campos vai para `docs/plans/`. Wikidata das obras não é mais necessário.
+5. [ ] **F2.6 Resumos de ano e país**, com o mesmo fluxo da bio (spec própria,
+   reaproveita F2.1; ~49 textos: 13 anos e 36 países)
 
 A F2.1 vem **antes** da F3 por causa do país (necessário ao Atlas). As demais
 frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
@@ -94,12 +98,16 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 
 ## Próximos passos e o que fica para depois
 **Escolha o próximo (nenhum depende do outro):**
-- **F2.3 Temas:** reduzir ~496 para ~40–60, revisado com a Lila. Afeta nuvem do
-  Atlas, chips da Obra e temas da Autoria.
-- **F2.6 Resumos de ano e país:** mesmo fluxo da bio. Ao aprovar, as seções que
-  hoje somem em Ano e País passam a aparecer.
-- **F2.4/2.5 Títulos originais e `first_publication_year`:** 21 romanizações e
-  os anos que faltam (alimenta "Quando foram escritos" no Atlas).
+- **F2.3 Temas** (spec): reduzir ~496 para ~40–60, revisado com a Lila. Afeta
+  nuvem do Atlas, chips da Obra e temas da Autoria. Leva junto o `404.astro` (as
+  páginas de tema caem de ~493 para ~50, e as URLs antigas somem) e a decisão de
+  quais temas viram carrossel no Início (handoff §12.4).
+- **F2.6 Resumos de ano e país** (spec): mesmo fluxo da bio. Ao aprovar, as
+  seções que hoje somem em Ano e País passam a aparecer. Vem depois dos temas,
+  porque o prompt pode citar temas e já usa os normalizados.
+- **F2.4/2.5 Dados das obras** (tarefa curta, sem spec): 13 romanizações, 2
+  títulos originais e 1 ano de primeira publicação. Inclui a fonte da capa
+  tipográfica coreana, que também trata título não latino.
 - **S6 `pwa-offline`:** manifest, service worker, ícones, instalação, offline.
 - **S7 `compartilhar`** (precisa do modo autenticado da Lila): botão
   "Compartilhar {ano}" nos anos fechados (Ano, handoff §6.3) e retrospectiva
@@ -114,11 +122,14 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 **Fica para depois (F5 Admin):** adicionar leitura em poucos toques,
 reaproveitando os scripts da F2.
 
-**Pequenas dívidas anotadas:** CSS de grade repetido (Ano, Sem data, WorkGrid);
-`404.astro` (hoje rota desconhecida serve o Início com 200); mais colunas na
-grade e setas nos carrosséis no desktop; capa da Obra com 136 px (poderia ser
-maior); fonte da capa tipográfica coreana; renomear `photo.author` para
-`photo.credit` nas autorias, por consistência com `cover.credit`.
+**Pequenas dívidas anotadas:**
+- *Polimento do desktop* (mini-spec futura): CSS de grade repetido (Ano, Sem data,
+  WorkGrid), mais colunas na grade, setas nos carrosséis, capa da Obra com 136 px
+  (poderia ser maior).
+- *Tarefa isolada:* renomear `photo.author` para `photo.credit` nas autorias,
+  por consistência com `cover.credit` (mexe em 215 autorias, schema e pipeline).
+- *Entram na F2.3:* `404.astro` (hoje rota desconhecida serve o Início com 200).
+- *Entra nos dados das obras:* fonte da capa tipográfica coreana.
 
 ## F5 — Admin
 - Adicionar leitura em poucos toques, reaproveitando os scripts da F2.
