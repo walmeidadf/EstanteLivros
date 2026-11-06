@@ -56,6 +56,17 @@ da autoria, necessário para o Atlas por país e a página País — por isso a 
 - O mapa foi aprovado como o rascunho, sem rodada de ajustes; pode ser revisto
   editando `themes.json`.
 
+## Decisões resolvidas nos dados das obras (F2.4/2.5)
+- A migração recompõe título original, romanização e ano a partir do CSV do legado
+  (fora do git). Por isso a correção é **dado versionado**: `pipeline/config/work_overrides.json`
+  (por slug, com `source` e `date`), aplicado no `build.py`; `audit.overrides` lista
+  os campos corrigidos e o validador acusa `work.override-drift`.
+- `null` no override é **ausência intencional** (coletânea sem título original ou ano
+  único): a cobertura não conta como lacuna. Vale para Essencial Kafka e O gato preto.
+- As 13 romanizações são manuais (Hepburn, Romanização Revisada e transliteração
+  simples); troca-se editando o arquivo e migrando.
+- A capa tipográfica usa a mesma regra de fonte da grade (coreano em Noto Serif KR).
+
 ## F0 — Fundação
 - [x] Estrutura de pastas, legado em `legacy/`
 - [x] `AGENTS.md` + hook de início de sessão; detalhes em `docs/`
@@ -80,12 +91,10 @@ Spec: [`docs/specs/catalogo-canonico/`](specs/catalogo-canonico/).
 3. [x] **F2.3 Temas**. Spec: [`docs/specs/temas/`](specs/temas/). 493 temas viraram
    58 canônicos + `tags`; `/tema` caiu de 493 para 58 páginas; `404.astro`. No ar
    (PR #11). Encontrou e corrigiu a proveniência de 43 capas (ver handover).
-4. [ ] **F2.4/2.5 Dados das obras**: *quase pronto*, então vira tarefa curta, sem
-   spec. Medido em `cobertura.md` (6/nov/2026): título original 185/187,
-   romanização 8/21 (faltam 13), ano de primeira publicação 301/302. A lista de
-   16 campos vai para `docs/plans/`. Wikidata das obras não é mais necessário.
-5. [ ] **F2.6 Resumos de ano e país**, com o mesmo fluxo da bio (spec própria,
-   reaproveita F2.1; ~49 textos: 13 anos e 36 países)
+4. [x] **F2.4/2.5 Dados das obras** (tarefa curta, sem spec; PR #12). 13
+   romanizações, 2 títulos originais e 1 ano resolvidos; a cobertura está em 100%.
+   Correções vivem em `pipeline/config/work_overrides.json`. Wikidata das obras não
+   é mais necessário.
 
 A F2.1 vem **antes** da F3 por causa do país (necessário ao Atlas). As demais
 frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
@@ -111,12 +120,6 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 
 ## Próximos passos e o que fica para depois
 **Escolha o próximo (nenhum depende do outro):**
-- **F2.6 Resumos de ano e país** (spec): mesmo fluxo da bio. Ao aprovar, as
-  seções que hoje somem em Ano e País passam a aparecer. Os temas já estão
-  normalizados (58), então o prompt pode citá-los.
-- **F2.4/2.5 Dados das obras** (tarefa curta, sem spec): 13 romanizações, 2
-  títulos originais e 1 ano de primeira publicação. Inclui a fonte da capa
-  tipográfica coreana, que também trata título não latino.
 - **S6 `pwa-offline`:** manifest, service worker, ícones, instalação, offline.
 - **S7 `compartilhar`** (precisa do modo autenticado da Lila): botão
   "Compartilhar {ano}" nos anos fechados (Ano, handoff §6.3) e retrospectiva

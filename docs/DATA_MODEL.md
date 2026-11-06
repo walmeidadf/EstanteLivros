@@ -56,6 +56,10 @@ catalog/
 }
 ```
 
+- `audit.overrides` (opcional, aditivo): campos corrigidos por
+  `pipeline/config/work_overrides.json` (`originalTitle`, `originalTitleRomanized`,
+  `firstPublished`). Só aparece nas obras corrigidas.
+
 - `authors`: slugs de autoria, na ordem de crédito.
 - `themes` × `tags` (F2.3). `themes` são **temas canônicos** (~40–60, em minúsculas):
   é o que o app mostra e navega (`/tema/{slug}`, Atlas, chips da Obra, Início).
@@ -208,8 +212,22 @@ viram uma lista fechada e editada à mão.
 | `photo.file` | a foto referenciada existe em `catalog/media/` |
 | `summary.scope-unique` | no máximo um resumo por escopo |
 | `summary.approved` | resumo aprovado tem texto e escopo existente |
+| `work.override-drift` | `work_overrides.json`, `catalog/works/` e `audit.overrides` concordam |
+| `work.romanization` | romanização só existe para título original em alfabeto não latino |
 
 Uma obra lida mais de uma vez é **uma** obra com várias leituras.
+
+## Correções de obras
+
+`pipeline/config/work_overrides.json` (`{ "version": 1, "works": { slug: … } }`)
+corrige à mão `originalTitle`, `originalTitleRomanized` e `firstPublished`, porque a
+migração recompõe esses campos do CSV legado (fora do git) a cada execução. Cada
+entrada exige `source` (origem) e aceita `date`. A correção vence o CSV. `null`
+marca ausência intencional (ex.: coletânea sem título original): o campo fica
+`null` e a cobertura não o conta como lacuna. Uma correção igual ao CSV gera aviso
+na migração. O validador confere: `work.override-drift` (catálogo, arquivo e
+`audit.overrides` divergentes) e `work.romanization` (romanização sem título
+original não latino).
 
 ## Slugs estáveis e exceções
 

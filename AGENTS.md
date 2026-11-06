@@ -175,10 +175,14 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   com `theme.taxonomy` e `theme.drift`. Corrigiu 43 `cover.source` errados e
   o `merge_cover` (arquivo e proveniência andam juntos). 272 testes do pipeline e
   159 do app verdes. Ver `docs/plans/handover-temas.md`.
-- **Próximo (nova sessão): dados das obras (tarefa curta) e depois a F2.6 (resumos
-  de ano/país).** A sessão seguinte faz a S6 (`pwa-offline`) e a S7 (`compartilhar`).
-  Ponto de entrada: `docs/plans/handover-s6-s7.md` (ordem decidida, estado,
-  combinados de trabalho, fatos e perguntas de cada frente). Ficam depois,
+- **F2.4/2.5 (dados das obras) concluída — no ar (PR #12).** Cobertura de título
+  original, romanização e ano em 100%. Correções em
+  `pipeline/config/work_overrides.json` (origem por entrada; `null` = ausência
+  intencional), `audit.overrides` e `work.override-drift` no validador. 287 testes
+  do pipeline e 160 do app verdes; build com 646 páginas.
+- **Próximo: S6 (`pwa-offline`) e depois S7 (`compartilhar`).** Resumos de ano e
+  país (F2.6) foram descartados. Ponto de entrada: `docs/plans/handover-s6-s7.md`
+  (estado, combinados de trabalho, fatos e perguntas de cada frente). Ficam depois,
   independentes: polimento do desktop e `photo.author` → `photo.credit`. Lista
   completa, com o botão "Compartilhar {ano}" da S7, em `docs/ROADMAP.md`
   ("Próximos passos").
