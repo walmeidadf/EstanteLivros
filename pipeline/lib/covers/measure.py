@@ -46,4 +46,6 @@ def run(ctx: CoverContext, work: Dict[str, Any]) -> str:
         counts[entry["klass"]] = counts.get(entry["klass"], 0) + 1
     if not counts:
         return "sem candidatas"
-    return " · ".join(f"{LABELS[k]} {v}" for k, v in sorted(counts.items()))
+    # Um resultado por obra (a melhor candidata), para o log somar obras e não classes.
+    best = next(k for k in (GOOD, BORDERLINE, LOW) if k in counts)
+    return f"melhor: {LABELS[best]}"

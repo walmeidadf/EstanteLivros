@@ -109,9 +109,10 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
 
 ## Execução real
 
-- [ ] 12. Baixar e medir os 223 mestres
+- [x] 12. Baixar e medir os 223 mestres
   - `python3 pipeline/enrich_covers.py --dry-run` e depois `--steps download,measure`; conferir classes e falhas na cobertura.
   - _Requisitos: 1.1, 2.1_
+  - _Resultado (6/nov/2026):_ 207 baixadas e 16 com HTTP 404 (link quebrado na Literal). Melhor candidata por obra: 24 boas, 105 limítrofes, 78 baixas; 10 candidatas fora da faixa 2:3. Lado menor: mediana 319 px, mínimo 100 px, máximo 1763 px.
 
 - [ ] 13. **(revisão)** Escolher capas dos existentes
   - Abrir `docs/plans/revisao-capas.html`; preencher `cover_choices.json` (real / `typographic` / `none`) e marcar `focus` onde o centro corta mal; rodar `--steps apply`.
