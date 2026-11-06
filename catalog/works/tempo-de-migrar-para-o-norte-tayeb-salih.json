@@ -2,7 +2,7 @@
   "slug": "tempo-de-migrar-para-o-norte-tayeb-salih",
   "title": "Tempo de migrar para o norte",
   "originalTitle": "موسم الهجرة إلى الشمال",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Mawsim al-Hijra ila al-Shamal",
   "authors": [
     "tayeb-salih"
   ],
@@ -48,6 +48,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": null,
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

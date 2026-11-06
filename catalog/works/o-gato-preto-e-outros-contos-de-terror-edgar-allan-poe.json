@@ -58,6 +58,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Vários candidatos com títulos muito parecidos ('O Gato Preto', 'O Gato Preto E Outros Contos', 'O Gato Preto e outras histórias') de editoras diferentes; sem ISBN na lista original não é possível determinar a edição exata lida.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitle"
+    ]
   }
 }

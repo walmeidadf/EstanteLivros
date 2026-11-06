@@ -2,7 +2,7 @@
   "slug": "crime-e-castigo-fiodor-dostoievski",
   "title": "Crime e Castigo",
   "originalTitle": "Преступление и наказание",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Prestuplenie i Nakazanie",
   "authors": [
     "fiodor-dostoievski"
   ],
@@ -61,6 +61,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Vários candidatos Literal têm título e pontuação idênticos (mesma obra em diferentes línguas/editoras); optou-se pela edição em português do Brasil de tradução mais reconhecida.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

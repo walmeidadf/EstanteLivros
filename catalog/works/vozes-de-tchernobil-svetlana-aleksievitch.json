@@ -2,7 +2,7 @@
   "slug": "vozes-de-tchernobil-svetlana-aleksievitch",
   "title": "Vozes de Tchernóbil",
   "originalTitle": "Чернобыльская молитва: Хроника будущего",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Chernobylskaya Molitva: Khronika Budushchego",
   "authors": [
     "svetlana-aleksievitch"
   ],
@@ -53,6 +53,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Nenhum candidato local relevante foi retornado; identificação feita inteiramente via busca web.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

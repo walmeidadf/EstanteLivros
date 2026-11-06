@@ -7,7 +7,12 @@
  * conforme o comprimento, sem JavaScript.
  */
 import { languageColor } from "@/lib/language-color.ts";
-import { detectScript, originalTitleLang, scriptDir } from "@/lib/text.ts";
+import {
+  detectScript,
+  originalTitleFont,
+  originalTitleLang,
+  scriptDir,
+} from "@/lib/text.ts";
 
 interface Props {
   title: string;
@@ -47,13 +52,9 @@ const showOriginal =
 const script = showOriginal ? detectScript(originalTitle!) : "latin";
 const dir = scriptDir(script);
 
-// Fonte Noto conforme o script; latino usa a serifa display padrão.
-const notoVar =
-  script === "cjk"
-    ? "var(--font-serif-jp)"
-    : script === "hebrew"
-      ? "var(--font-serif-hebrew)"
-      : "inherit";
+// Fonte Noto conforme o script e o idioma (coreano × japonês); latim e cirílico
+// usam a serifa display padrão.
+const notoVar = originalTitleFont(language, script) ?? "inherit";
 
 // lang do título original = tag do idioma da obra (nome pt-BR → BCP-47).
 const originalLang = showOriginal

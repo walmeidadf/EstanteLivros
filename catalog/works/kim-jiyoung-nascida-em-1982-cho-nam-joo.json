@@ -2,7 +2,7 @@
   "slug": "kim-jiyoung-nascida-em-1982-cho-nam-joo",
   "title": "Kim Jiyoung, nascida em 1982",
   "originalTitle": "82년생 김지영",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "82-nyeonsaeng Gim Jiyeong",
   "authors": [
     "cho-nam-joo"
   ],
@@ -65,6 +65,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": null,
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

@@ -2,7 +2,7 @@
   "slug": "de-amor-e-trevas-amos-oz",
   "title": "De Amor e Trevas",
   "originalTitle": "סיפור על אהבה וחושך",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Sipur al Ahava ve-Choshech",
   "authors": [
     "amos-oz"
   ],
@@ -73,6 +73,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Literal também retorna 'Uma História de Amor e Trevas' (edição portuguesa, Leya); mantida a edição brasileira 'De Amor e Trevas', mais compatível com o título da entrada original e confirmada por Open Library (publisher Companhia das Letras).",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

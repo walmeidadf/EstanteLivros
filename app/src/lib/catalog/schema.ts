@@ -107,6 +107,12 @@ export const workSchema = z
         validationStatus: optionalText,
         sourceConflicts: optionalText,
         validatedAt: isoDate.nullable(),
+        /** Campos corrigidos à mão em pipeline/config/work_overrides.json. */
+        overrides: z
+          .array(
+            z.enum(["originalTitle", "originalTitleRomanized", "firstPublished"]),
+          )
+          .optional(),
       })
       .strict(),
   })

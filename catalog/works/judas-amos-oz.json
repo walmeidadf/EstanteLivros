@@ -2,7 +2,7 @@
   "slug": "judas-amos-oz",
   "title": "Judas",
   "originalTitle": "הבשורה על פי יהודה",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Habsora al pi Yehuda",
   "authors": [
     "amos-oz"
   ],
@@ -59,6 +59,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Candidatos Literal e Open Library eram todos edições estrangeiras; ISBN/capa da edição brasileira vieram de busca web.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

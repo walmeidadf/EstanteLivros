@@ -2,7 +2,7 @@
   "slug": "o-capote-nikolai-gogol",
   "title": "O Capote",
   "originalTitle": "Шинель",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Shinel",
   "authors": [
     "nikolai-gogol"
   ],
@@ -61,6 +61,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": null,
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

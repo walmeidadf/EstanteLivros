@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "works": {
+    "a-biblioteca-dos-sonhos-secretos-michiko-aoyama": {
+      "originalTitleRomanized": "Osagashimono wa Toshoshitsu made",
+      "source": "Romanização Hepburn feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "a-caixa-preta-amos-oz": {
+      "originalTitleRomanized": "Kufsa Shchora",
+      "source": "Transliteração simples do hebraico feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "a-morte-de-ivan-ilitch-liev-tolstoi": {
+      "originalTitleRomanized": "Smert Ivana Ilicha",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "anna-karienina-liev-tolstoi": {
+      "originalTitleRomanized": "Anna Karenina",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "crime-e-castigo-fiodor-dostoievski": {
+      "originalTitleRomanized": "Prestuplenie i Nakazanie",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "de-amor-e-trevas-amos-oz": {
+      "originalTitleRomanized": "Sipur al Ahava ve-Choshech",
+      "source": "Transliteração simples do hebraico feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "judas-amos-oz": {
+      "originalTitleRomanized": "Habsora al pi Yehuda",
+      "source": "Transliteração simples do hebraico feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "kim-jiyoung-nascida-em-1982-cho-nam-joo": {
+      "originalTitleRomanized": "82-nyeonsaeng Gim Jiyeong",
+      "source": "Romanização Revisada do coreano feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "o-capote-nikolai-gogol": {
+      "originalTitleRomanized": "Shinel",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "o-mestre-e-margarida-mikhail-bulgakov": {
+      "originalTitleRomanized": "Master i Margarita",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "sapiens-uma-breve-historia-da-humanidade-yuval-noah-harari": {
+      "originalTitleRomanized": "Kitsur Toldot ha-Enoshut",
+      "source": "Transliteração simples do hebraico feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "tempo-de-migrar-para-o-norte-tayeb-salih": {
+      "originalTitleRomanized": "Mawsim al-Hijra ila al-Shamal",
+      "source": "Transliteração simples do árabe feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "vozes-de-tchernobil-svetlana-aleksievitch": {
+      "originalTitleRomanized": "Chernobylskaya Molitva: Khronika Budushchego",
+      "source": "Transliteração simples do russo feita à mão; a revisar pela Lila",
+      "date": "2026-11-06"
+    },
+    "essencial-franz-kafka-franz-kafka": {
+      "originalTitle": null,
+      "firstPublished": null,
+      "source": "Antologia em português (seleção de Modesto Carone, 2011): não há título original nem ano único; ausência intencional",
+      "date": "2026-11-06"
+    },
+    "o-gato-preto-e-outros-contos-de-terror-edgar-allan-poe": {
+      "originalTitle": null,
+      "source": "Coletânea montada por editoras brasileiras: não há título original; ausência intencional",
+      "date": "2026-11-06"
+    }
+  }
+}

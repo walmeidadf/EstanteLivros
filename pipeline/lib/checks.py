@@ -14,6 +14,8 @@ from typing import Any, Dict, List, Optional, Set
 
 from .schema import load_schema, validate
 from .themes import ThemeConfig, apply as apply_themes
+from .titles import has_non_latin
+from .work_overrides import WorkOverride
 
 # Leituras 1..UNDATED_HEAD do caderno não têm ano (o registro 54 inicia 2014).
 UNDATED_HEAD = 53
@@ -288,6 +290,39 @@ def check_themes(cat: Catalog, cfg: Optional[ThemeConfig]) -> List[Issue]:
     return issues
 
 
+def check_work_overrides(cat: Catalog, overrides: Optional[Dict[str, WorkOverride]]) -> List[Issue]:
+    """`work_overrides.json` e o catálogo andam juntos (`work.override-drift`).
+
+    Cada correção aponta para uma obra existente, está aplicada em `catalog/works/`
+    e registrada em `audit.overrides`; romanização só existe para título original
+    não latino. Sem o arquivo (catálogos de teste), nada é conferido."""
+    if not overrides:
+        return []
+    issues: List[Issue] = []
+    for slug, ov in sorted(overrides.items()):
+        rel = f"catalog/works/{slug}.json"
+        w = cat.works.get(slug)
+        if not isinstance(w, dict):
+            issues.append(Issue("pipeline/config/work_overrides.json", f"works.{slug}", "work.override-drift",
+                                "obra inexistente no catálogo"))
+            continue
+        for key, value in ov.values.items():
+            if w.get(key) != value:
+                issues.append(Issue(rel, key, "work.override-drift",
+                                    f"{w.get(key)!r} não bate com a correção {value!r} (rode migrate_legacy.py)"))
+        audit = w.get("audit") if isinstance(w.get("audit"), dict) else {}
+        if sorted(audit.get("overrides") or []) != sorted(ov.values):
+            issues.append(Issue(rel, "audit.overrides", "work.override-drift",
+                                f"deveria listar {sorted(ov.values)} (rode migrate_legacy.py)"))
+    for stem, w in sorted(cat.works.items()):
+        romanized = w.get("originalTitleRomanized")
+        original = w.get("originalTitle")
+        if romanized and not (isinstance(original, str) and has_non_latin(original)):
+            issues.append(Issue(f"catalog/works/{stem}.json", "originalTitleRomanized", "work.romanization",
+                                "romanização sem título original em alfabeto não latino"))
+    return issues
+
+
 def check_photos(cat: Catalog) -> List[Issue]:
     if cat.media is None:
         return []
@@ -348,7 +383,8 @@ def check_summaries(cat: Catalog) -> List[Issue]:
 
 def check_catalog(cat: Catalog, schemas: Dict[str, Dict[str, Any]],
                   undated_head: Optional[int] = None,
-                  themes_cfg: Optional[ThemeConfig] = None) -> List[Issue]:
+                  themes_cfg: Optional[ThemeConfig] = None,
+                  work_overrides: Optional[Dict[str, WorkOverride]] = None) -> List[Issue]:
     issues = list(cat.load_issues)
     issues += check_schema_rule(cat, schemas)
     issues += check_file_slug(cat)
@@ -356,6 +392,7 @@ def check_catalog(cat: Catalog, schemas: Dict[str, Dict[str, Any]],
     issues += check_sequence(cat, undated_head)
     issues += check_vocab(cat)
     issues += check_themes(cat, themes_cfg)
+    issues += check_work_overrides(cat, work_overrides)
     issues += check_photos(cat)
     issues += check_covers(cat)
     issues += check_summaries(cat)

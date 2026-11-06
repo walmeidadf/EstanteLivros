@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { initials, detectScript, scriptDir, languageTag, originalTitleLang, originalTitlePresentation } from "./text.ts";
+import { initials, detectScript, scriptDir, languageTag, originalTitleLang, originalTitleFont, originalTitlePresentation } from "./text.ts";
 
 test("languageTag cobre os 15 idiomas e devolve undefined para o resto", () => {
   const all = ["português","inglês","espanhol","francês","italiano","russo","japonês","alemão","hebraico","coreano","norueguês","catalão","tcheco","árabe","holandês"];
@@ -116,4 +116,10 @@ test("originalTitlePresentation: romanização de idioma não latino não leva l
   assert.equal(p.dir, "ltr");
   // detectado como latino → sem fonte CJK
   assert.equal(p.font, undefined);
+});
+
+test("originalTitleFont: coreano e japonês usam fontes diferentes (capa tipográfica)", () => {
+  assert.equal(originalTitleFont("coreano", "cjk"), "var(--font-serif-kr)");
+  assert.equal(originalTitleFont("japonês", "cjk"), "var(--font-serif-jp)");
+  assert.equal(originalTitleFont("russo", "cyrillic"), undefined);
 });
