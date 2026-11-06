@@ -297,6 +297,38 @@ test("país da obra vem das autorias (uma por país)", () => {
   assert.deepEqual(model.works[0]!.countries.sort(), ["BR", "KR"]);
 });
 
+test("capa: três estados chegam à WorkView; a sourceUrl segue só como proveniência", () => {
+  const url = "https://example.org/capa.jpg";
+  const model = buildModel(
+    catalog({
+      authors: [author("a")],
+      works: [
+        work("sem-capa", ["a"]),
+        work("nao-revisada", ["a"], { cover: { sourceUrl: url, source: "literal" } }),
+        work("real", ["a"], {
+          cover: { sourceUrl: url, source: "openlibrary", file: "covers/real.jpg", focus: "bottom" },
+        }),
+        work("tipografica", ["a"], {
+          cover: { sourceUrl: url, source: "literal", display: "typographic" },
+        }),
+      ],
+      readings: [],
+    }),
+  );
+  const view = (slug: string) => model.worksBySlug.get(slug)!;
+  assert.deepEqual(
+    [view("sem-capa").coverFile, view("sem-capa").coverFocus, view("sem-capa").coverDisplay],
+    [null, "center", null],
+  );
+  assert.equal(view("nao-revisada").coverFile, null);
+  assert.equal(view("nao-revisada").coverSourceUrl, url);
+  assert.deepEqual(
+    [view("real").coverFile, view("real").coverFocus, view("real").coverDisplay],
+    ["covers/real.jpg", "bottom", null],
+  );
+  assert.equal(view("tipografica").coverDisplay, "typographic");
+});
+
 test("idioma sem cor própria cai em 'outros'", () => {
   const model = buildModel(
     catalog({

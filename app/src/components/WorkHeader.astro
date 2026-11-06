@@ -8,6 +8,7 @@
 import Cover from "@/components/Cover.astro";
 import Shelf from "@/components/Shelf.astro";
 import AuthorChip from "@/components/AuthorChip.astro";
+import { deriveCoverOf } from "@/lib/images.ts";
 import type { WorkPage } from "@/lib/work-page.ts";
 
 interface Props {
@@ -15,6 +16,9 @@ interface Props {
 }
 const { page } = Astro.props;
 const { work, original, romanized, authors } = page;
+
+// Capa real (derivada no build) quando escolhida; senão null → tipográfica.
+const image = await deriveCoverOf(work);
 ---
 
 <header class="work-header">
@@ -25,6 +29,7 @@ const { work, original, romanized, authors } = page;
         language={work.language}
         originalTitle={work.originalTitle}
         author={authors.map((a) => a.name).join("; ")}
+        image={image}
         rereadBadge={work.reread}
         size="hero"
       />

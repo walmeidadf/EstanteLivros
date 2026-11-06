@@ -95,15 +95,17 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
 
 ## App: derivar e mostrar
 
-- [ ] 11. Derivação e seleção
-  - [ ] 11.1 `app/src/lib/images.ts`: glob de `catalog/media/covers/*`, `deriveWorkCover(coverFile, focus, widths)` (2:3, AVIF, `object-position` = `focus`) e `hasWorkCover`; `buildSrcset` aceita `position`.
+- [x] 11. Derivação e seleção
+  - [x] 11.1 `app/src/lib/images.ts`: glob de `catalog/media/covers/*`, `deriveWorkCover(coverFile, focus, widths)` (2:3, AVIF, `object-position` = `focus`) e `hasWorkCover`; `buildSrcset` aceita `position`.
     - _Requisitos: 7.1, 7.2, 7.4_
-  - [ ] 11.2 `model.ts → WorkView`: `coverFile`, `coverFocus`, `coverDisplay` derivados de `w.cover` (`coverSourceUrl` segue como proveniência). Testes em `model.test.ts` (com/sem campos; `display:"typographic"` zera a seleção).
+  - [x] 11.2 `model.ts → WorkView`: `coverFile`, `coverFocus`, `coverDisplay` derivados de `w.cover` (`coverSourceUrl` segue como proveniência). Testes em `model.test.ts` (com/sem campos; `display:"typographic"` zera a seleção).
     - _Requisitos: 7.3, 10.2_
-  - [ ] 11.3 `CoverCaption.astro` e `WorkHeader.astro`: derivar quando `coverFile && coverDisplay !== "typographic"` e passar ao `Cover`; senão `null` → tipográfica. Selo "2×" e `loading="lazy"` intactos.
+  - [x] 11.3 `CoverCaption.astro` e `WorkHeader.astro`: derivar quando `coverFile && coverDisplay !== "typographic"` e passar ao `Cover`; senão `null` → tipográfica. Selo "2×" e `loading="lazy"` intactos.
     - _Requisitos: 7.3, 7.5_
-  - [ ] 11.4 Diff de HTML contra a `main` (baseline em `temp/`, normalizando `data-astro-cid-*`) provando que obras sem capa não mudam; `route-integrity` verde.
+  - [x] 11.4 Diff de HTML contra a `main` (baseline em `temp/`, normalizando `data-astro-cid-*`) provando que obras sem capa não mudam; `route-integrity` verde.
     - _Requisitos: 7.6, 10.2_
+    - _Como ficou:_ nas 1080 páginas o corpo do HTML e o conteúdo do CSS são idênticos ao baseline. Em 761 páginas dois blocos de CSS de componentes (escopos `data-astro-cid` distintos, sem `:global`) trocaram de ordem, porque `CoverCaption` passou a importar `images.ts`; isso não altera a cascata. Também verificado com um mestre de verdade (temporário, revertido): capa 2:3 de 408×612, `srcset` 104–408 px, `sizes` por tamanho e caminho local em `/_astro/`.
+    - _Decisão de implementação:_ a regra "qual capa mostrar" ficou em `src/lib/cover-selection.ts` (pura, testada), com larguras próprias de capa (104/136/272/408) e `sizes` no `Cover`, para o navegador não baixar sempre a maior.
 
 ## Execução real
 
