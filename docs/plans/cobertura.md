@@ -8,7 +8,9 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 
 | Campo | Preenchidos | Total | % |
 |---|---:|---:|---:|
-| Capa | 223 | 302 | 73,8% |
+| Capa com URL de origem | 234 | 302 | 77,5% |
+| Capa local escolhida (mestre em `catalog/media/covers/`) | 131 | 302 | 43,4% |
+| Capa revisada: fica a tipográfica | 0 | 302 | 0,0% |
 | Título original (obras não escritas em português) | 185 | 187 | 98,9% |
 | Romanização (títulos originais não latinos) | 8 | 21 | 38,1% |
 | Ano de primeira publicação | 301 | 302 | 99,7% |

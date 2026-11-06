@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535929225/anna-karienina.jpg",
-    "source": "editora"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788535929225-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/anna-karienina-liev-tolstoi.jpg"
   },
   "catalogerNote": "Nenhum candidato local trazia edição em português; busca web confirmou a tradução de Rubens Figueiredo (direto do russo), publicada pela Companhia das Letras (2017).",
   "confidence": "high",

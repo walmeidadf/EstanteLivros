@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10864860-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/todos-nos-adoravamos-caubois-carol-bensimon.jpg"
   },
   "catalogerNote": "Título provisório usava a grafia inglesa 'cowboys'; o título correto publicado é 'caubóis'. Literal e OpenLibrary concordam no mesmo ISBN (Companhia das Letras, 2013).",
   "confidence": "high",

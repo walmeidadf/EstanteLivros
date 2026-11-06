@@ -111,6 +111,16 @@ class ChecksTest(unittest.TestCase):
         cat.media = {"authors/autora-a.jpg"}
         self.assertEqual(self.codes(cat), [])
 
+    def test_capa_inexistente(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["cover"] = {"sourceUrl": "https://x.org/a.jpg", "source": "openlibrary",
+                                        "file": "covers/obra-a.jpg", "license": None, "credit": None,
+                                        "focus": "top", "display": None}
+        cat.media = set()
+        self.assertEqual(self.codes(cat), ["cover.file"])
+        cat.media = {"covers/obra-a.jpg"}
+        self.assertEqual(self.codes(cat), [])
+
     def test_varios_erros_todos_reportados(self):
         cat = helpers.valid_catalog()
         cat.works["obra-a"]["confidence"] = "x"

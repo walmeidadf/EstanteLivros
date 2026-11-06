@@ -265,6 +265,18 @@ def check_photos(cat: Catalog) -> List[Issue]:
     return issues
 
 
+def check_covers(cat: Catalog) -> List[Issue]:
+    if cat.media is None:
+        return []
+    issues = []
+    for stem, w in sorted(cat.works.items()):
+        cover = w.get("cover") if isinstance(w, dict) else None
+        if isinstance(cover, dict) and isinstance(cover.get("file"), str) and cover["file"] not in cat.media:
+            issues.append(Issue(f"catalog/works/{stem}.json", "cover.file", "cover.file",
+                                f"arquivo catalog/media/{cover['file']} não existe"))
+    return issues
+
+
 def check_summaries(cat: Catalog) -> List[Issue]:
     issues = []
     rel = "catalog/summaries.json"
@@ -308,5 +320,6 @@ def check_catalog(cat: Catalog, schemas: Dict[str, Dict[str, Any]],
     issues += check_sequence(cat, undated_head)
     issues += check_vocab(cat)
     issues += check_photos(cat)
+    issues += check_covers(cat)
     issues += check_summaries(cat)
     return issues

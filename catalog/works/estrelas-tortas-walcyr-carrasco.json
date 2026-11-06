@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://assets.literal.club/1/ckx0mszxz5463661ghdocgggt8w.jpg",
-    "source": "literal"
+    "source": "literal",
+    "file": "covers/estrelas-tortas-walcyr-carrasco.jpg"
   },
   "catalogerNote": "Nome do autor corrigido de 'Walcy' para Walcyr Carrasco; candidato Literal com score 0.99 corresponde exatamente ao título e autor (Getúlio Delphin é provavelmente ilustrador da edição); classificação de gênero/temas por inferência editorial (Editora Moderna, coleção juvenil).",
   "confidence": "medium",

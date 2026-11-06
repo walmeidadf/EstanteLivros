@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12372586-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/os-enamoramentos-javier-marias.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library, mesmo ISBN (9788535921533), Companhia das Letras, tradução de Eduardo Brandão.",
   "confidence": "high",

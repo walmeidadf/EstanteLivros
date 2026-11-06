@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/cover/2/ckt079ba46138614y3v91ap6aa.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9789727085637-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/a-paixao-segundo-g-h-clarice-lispector.jpg"
   },
   "catalogerNote": "Obra canônica de Clarice Lispector, publicada originalmente em 1964; escolhida edição portuguesa (Relógio D'Água) por ser a que apresentava capa e ISBN completos entre os candidatos.",
   "confidence": "high",

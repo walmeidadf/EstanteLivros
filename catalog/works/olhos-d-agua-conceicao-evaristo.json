@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/4/cksvyl13f2314403g8g2x0s02on.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788534705257-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/olhos-d-agua-conceicao-evaristo.jpg"
   },
   "catalogerNote": "Consenso entre Literal e OpenLibrary (score 1.0). Coletânea de contos de Conceição Evaristo, Pallas Editora, primeira edição 2014; optei pela edição de 2014 (ISBN coincide com OpenLibrary) como representativa, havendo também reimpressão de 2016 com novo ISBN.",
   "confidence": "high",

@@ -11,6 +11,7 @@
  *
  * Componentes e páginas consomem este modelo, não os JSON crus.
  */
+import { coverFields, type CoverFields } from "../cover-selection.ts";
 import { languageColor, type LanguageColor } from "../language-color.ts";
 import type { RawCatalog } from "./load.ts";
 import type { Work as RawWork } from "./schema.ts";
@@ -81,6 +82,10 @@ export type WorkView = {
   edition: RawWork["edition"];
   /** URL de origem da capa — PROVENIÊNCIA apenas; nunca usada como src. */
   coverSourceUrl: string | null;
+  /** Mestre local, foco e escolha "fica tipográfica" (ver cover-selection.ts). */
+  coverFile: CoverFields["coverFile"];
+  coverFocus: CoverFields["coverFocus"];
+  coverDisplay: CoverFields["coverDisplay"];
   catalogerNote: string | null;
 };
 
@@ -200,6 +205,7 @@ export function buildModel(raw: RawCatalog): CatalogModel {
       reread: readings.length > 1,
       edition: w.edition,
       coverSourceUrl: w.cover ? w.cover.sourceUrl : null,
+      ...coverFields(w.cover),
       catalogerNote: w.catalogerNote,
     };
     workViews.set(w.slug, view);

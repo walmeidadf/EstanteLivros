@@ -32,7 +32,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/13325412-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/apague-a-luz-se-for-chorar-fabiane-guimaraes.jpg"
   },
   "catalogerNote": "Consenso Literal/Open Library; romance de estreia de Fabiane Guimarães (2021, Alfaguara), suspense familiar ambientado no interior do Brasil.",
   "confidence": "high",

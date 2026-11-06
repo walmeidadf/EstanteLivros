@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/8960570-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/o-quinze-rachel-de-queiroz.jpg"
   },
   "catalogerNote": "Nome da autora corrigido de 'Raquel de Queiroz' para a grafia correta 'Rachel de Queiroz'; romance de estreia (1930), marco do regionalismo nordestino; escolhida edição José Olympio como representativa.",
   "confidence": "high",

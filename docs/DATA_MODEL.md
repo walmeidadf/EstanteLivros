@@ -60,8 +60,19 @@ catalog/
   `originalTitleRomanized` só existe para títulos em alfabeto não latino.
 - `edition`: edição brasileira **de referência**. `match: representative` quer
   dizer que não é necessariamente a edição que a Lila leu; `exact`, que é.
-- `cover`: `null` quando não há capa (o app usa a capa tipográfica). Na F2, a
-  imagem mestre vai para `catalog/media/covers/` e nunca é usada por hotlink.
+- `cover`: `null` quando não há capa (o app usa a capa tipográfica). Fora isso,
+  `sourceUrl`/`source` são **proveniência** (nunca viram `src`). Os campos de
+  enriquecimento (F2 · capas) são aditivos e opcionais:
+  - `file`: `covers/{slug}.{ext}` — o mestre local, baixado para
+    `catalog/media/covers/` e **nunca** usado por hotlink; o build do app deriva
+    o `src` a partir dele.
+  - `license`, `credit`: licença e crédito da imagem (ou `null`).
+  - `focus`: `top` | `center` | `bottom` — enquadramento do corte 2:3 no build
+    (ausente = `center`). O mestre não é recortado; só o derivado muda.
+  - `display`: `"typographic"` marca "revisada: fica a capa tipográfica".
+  - **Três estados da capa:** `file` presente → usa a capa real; `display:
+    "typographic"` → revisada, fica tipográfica; nenhum dos dois → ainda não
+    revisada (o app mostra a tipográfica como padrão seguro).
 - `references`: `provider` ∈ `literal`, `openlibrary`, `google_books`,
   `wikidata`, `web`.
 - `legacyId`: `work_id` do catálogo legado, para rastreabilidade. Obras novas

@@ -31,8 +31,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/1/ckxz6gxrz10761220hwi1la4v064.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9786587235301-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/tudo-sobre-o-amor-bell-hooks.jpg"
   },
   "catalogerNote": "Candidato Literal com score 1.0 confirma a obra; ensaio de bell hooks (2000) sobre amor, gênero e sociedade, edição brasileira pela Editora Elefante (2021). Nome da autora mantido em minúsculas, grafia estilizada usual da própria autora.",
   "confidence": "high",

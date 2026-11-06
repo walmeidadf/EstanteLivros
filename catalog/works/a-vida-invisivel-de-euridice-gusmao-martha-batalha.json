@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10839816-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/a-vida-invisivel-de-euridice-gusmao-martha-batalha.jpg"
   },
   "catalogerNote": "Título/autora conferem exatamente com candidato Literal (score 1.0) e Open Library; ano e editora (2016, Companhia das Letras) confirmados por ambas as fontes.",
   "confidence": "high",

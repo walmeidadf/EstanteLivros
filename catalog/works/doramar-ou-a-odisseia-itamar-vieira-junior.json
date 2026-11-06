@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/cover/4/cld16nffk1463460hbmc1frgijm.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9786556921464-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/doramar-ou-a-odisseia-itamar-vieira-junior.jpg"
   },
   "catalogerNote": "Título corrigido para 'Doramar ou a Odisseia' (coletânea de histórias); primeira edição Todavia, junho de 2021, confirmada via busca web.",
   "confidence": "high",

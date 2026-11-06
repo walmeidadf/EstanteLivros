@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/14158825-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/vidas-secas-graciliano-ramos.jpg"
   },
   "catalogerNote": "Clássico da literatura brasileira (romance de 30); escolhida edição padrão da Record (ISBN 9788501114785), a mais amplamente disponível no mercado, confirmada via Open Library e busca web. Candidatos Literal traziam edições antigas sem ISBN ou reedições especiais menos representativas.",
   "confidence": "high",

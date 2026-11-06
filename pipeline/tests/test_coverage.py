@@ -14,7 +14,9 @@ class CoverageTest(unittest.TestCase):
 
     def test_denominadores(self):
         rows = {name: (filled, total) for name, filled, total in work_rows(list(self.cat.works.values()))}
-        self.assertEqual(rows["Capa"], (1, 2))
+        self.assertEqual(rows["Capa com URL de origem"], (1, 2))
+        self.assertEqual(rows["Capa local escolhida (mestre em `catalog/media/covers/`)"], (0, 2))
+        self.assertEqual(rows["Capa revisada: fica a tipográfica"], (0, 2))
         self.assertEqual(rows["Título original (obras não escritas em português)"], (1, 1))
         self.assertEqual(rows["Romanização (títulos originais não latinos)"], (0, 1))
         authors = {name: (f, t) for name, f, t in author_rows(list(self.cat.authors.values()))}
@@ -35,7 +37,7 @@ class CoverageTest(unittest.TestCase):
     def test_conteudo_e_determinismo(self):
         text = render_coverage(self.cat)
         self.assertEqual(text, render_coverage(helpers.clone(self.cat)))
-        self.assertIn("| Capa | 1 | 2 | 50,0% |", text)
+        self.assertIn("| Capa com URL de origem | 1 | 2 | 50,0% |", text)
         self.assertIn("- Autora A ← autora a", text)
         self.assertIn("| Releituras | 1 |", text)
         self.assertNotIn("2026-", text)  # sem data de execução

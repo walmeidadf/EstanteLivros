@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10839726-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/na-minha-pele-lazaro-ramos.jpg"
   },
   "catalogerNote": "Única edição existente da obra; Literal e OpenLibrary concordam plenamente em título, autoria, ano, editora e ISBN, o que justifica edition_match=exact.",
   "confidence": "high",

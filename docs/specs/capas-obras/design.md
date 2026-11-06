@@ -125,7 +125,7 @@ Proporção `width/height` guardada no estado; capas longe de 2:3 (ex.: fora de
 
 ### Etapa `search` — só gratuito (R3)
 
-Para obras sem `sourceUrl` e para as "baixas", nesta ordem (R3.1):
+Para obras sem `sourceUrl` e para as que ainda não têm capa "boa" (baixas, limítrofes e downloads com erro), nesta ordem (R3.1). A busca nas limítrofes foi acrescentada depois do download real (6/nov/2026): só 24 das 207 capas do catálogo eram boas, e a Open Library pode oferecer uma versão maior para a Lila comparar na revisão:
 
 1. A própria `cover.sourceUrl`, quando existir (já tratada no `download`).
 2. **Open Library Covers**: `https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg`

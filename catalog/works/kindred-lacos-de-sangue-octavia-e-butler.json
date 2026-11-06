@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788592795870-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/kindred-lacos-de-sangue-octavia-e-butler.jpg"
+  },
   "catalogerNote": "Consenso entre Literal e Open Library; autora corrigida (Octavia E. Butler); dados de 2ª edição brasileira (Morro Branco, 2019) confirmados via busca web.",
   "confidence": "high",
   "references": [

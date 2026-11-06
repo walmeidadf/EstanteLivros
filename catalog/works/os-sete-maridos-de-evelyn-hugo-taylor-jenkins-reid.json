@@ -31,7 +31,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788584391509-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/os-sete-maridos-de-evelyn-hugo-taylor-jenkins-reid.jpg"
+  },
   "catalogerNote": "Autor corrigido de 'Red' para 'Taylor Jenkins Reid'; melhor candidato do Literal correspondia à edição portuguesa (Portugal, sem editora informada), então a edição brasileira representativa (selo Paralela, Companhia das Letras, 2019) foi confirmada via busca web.",
   "confidence": "high",
   "references": [

@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788535927085-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/vozes-de-tchernobil-svetlana-aleksievitch.jpg"
+  },
   "catalogerNote": "Regra automática não encontrou candidatos (unresolved), mas a obra é facilmente identificável: 'Vozes de Tchernóbil' de Svetlana Aleksiévitch (Nobel 2015), publicada no Brasil pela Companhia das Letras (2016, trad. Sonia Branco).",
   "confidence": "high",
   "references": [

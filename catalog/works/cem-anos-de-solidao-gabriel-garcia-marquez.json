@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/4/cktsl49bf7288841esvggw0mqz5.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788501078896-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/cem-anos-de-solidao-gabriel-garcia-marquez.jpg"
   },
   "catalogerNote": "Nome do autor corrigido ('Garcia Marques' para 'García Márquez'); obra-prima do realismo mágico (1967). Escolhida edição brasileira da Record traduzida por Eric Nepomuceno, confirmada via busca (ISBN usado em diversas reimpressões).",
   "confidence": "high",

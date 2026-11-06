@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/p/9788535911695/capitaes-da-areia.jpg",
-    "source": "editora"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788535911695-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/capitaes-da-areia-jorge-amado.jpg"
   },
   "catalogerNote": "Título corrigido: o nome correto do clássico de Jorge Amado é 'Capitães da Areia' (não 'de areia'). Candidatos locais traziam apenas edições portuguesas ou dados incompletos; edição brasileira representativa identificada por busca web (Companhia das Letras, 2008).",
   "confidence": "high",

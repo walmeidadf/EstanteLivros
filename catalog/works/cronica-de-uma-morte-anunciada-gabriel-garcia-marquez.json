@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788501019431-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/cronica-de-uma-morte-anunciada-gabriel-garcia-marquez.jpg"
+  },
   "catalogerNote": "Nome do autor corrigido ('Gabriel garcia Marquez' -> 'Gabriel García Márquez'). Candidato Literal (editora Leya, edição portuguesa) corresponde ao título/autor, mas optei por complementar com a edição brasileira da Editora Record (ISBN 9788501019431), confirmada por busca web, por ser a edição de referência no Brasil.",
   "confidence": "high",
   "references": [

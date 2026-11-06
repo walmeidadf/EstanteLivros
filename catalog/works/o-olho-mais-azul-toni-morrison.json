@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://assets.literal.club/2/cksvyojpo2429703g8gcu37ucwd.jpg",
-    "source": "literal"
+    "source": "literal",
+    "file": "covers/o-olho-mais-azul-toni-morrison.jpg"
   },
   "catalogerNote": "Corrigido nome da autora (Tony->Toni Morrison). Candidato do Literal corresponde à edição brasileira de 'The Bluest Eye' pela Companhia das Letras; usei o work_id do OpenLibrary (obra original em inglês) por ausência de candidato traduzido lá.",
   "confidence": "high",

@@ -4,9 +4,9 @@
  * senão, delega para a capa tipográfica (handoff §4, §8). Selo "2×" opcional
  * para releituras. O `src` é sempre o derivado local (R6.4).
  *
- * Na S1 nenhuma capa de OBRA foi baixada ainda, então o caminho normal é a
- * capa tipográfica. O componente já aceita um mestre derivado para quando as
- * capas entrarem (mesma assinatura de imagem usada no avatar).
+ * Quem monta a capa (CoverCaption, WorkHeader) deriva a imagem com
+ * `deriveCoverOf(work)`; sem capa real escolhida o componente recebe `null` e
+ * mostra a tipográfica, com o mesmo HTML de sempre.
  */
 import TypographicCover from "@/components/TypographicCover.astro";
 import type { DerivedImage } from "@/lib/images.ts";
@@ -32,6 +32,15 @@ const {
   rereadBadge = false,
   size = "grid",
 } = Astro.props;
+
+// Largura de exibição de cada tamanho, para o navegador escolher no srcset:
+// destaque e carrossel têm largura fixa; a grade tem 3 colunas no celular
+// (16 px de margem, 12 px de vão) e colunas de 136 px a partir de 760 px.
+const SIZES = {
+  hero: "136px",
+  rail: "104px",
+  grid: "(min-width: 760px) 136px, calc((100vw - 56px) / 3)",
+} as const;
 ---
 
 <div class:list={["cover-frame", `size-${size}`]}>
@@ -41,6 +50,7 @@ const {
         class="cover-img"
         src={image.src}
         srcset={image.srcset}
+        sizes={SIZES[size]}
         width={image.width}
         height={image.height}
         alt={title}

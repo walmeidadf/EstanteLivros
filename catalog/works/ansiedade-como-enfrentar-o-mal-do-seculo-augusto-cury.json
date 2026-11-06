@@ -29,8 +29,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/cover/4/ckv6kw3vl35904715txj0kokrnm.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788502218482-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/ansiedade-como-enfrentar-o-mal-do-seculo-augusto-cury.jpg"
   },
   "catalogerNote": "Consenso Literal com score máximo; obra de autoajuda brasileira de Augusto Cury sobre ansiedade, publicada pela Saraiva (2013).",
   "confidence": "high",

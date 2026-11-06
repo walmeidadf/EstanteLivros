@@ -138,6 +138,40 @@ class PreserveEnrichmentTest(unittest.TestCase):
         self.assertEqual(again.vocabularies["countries"], enriched.vocabularies["countries"])
         self.assertIsNone(again.authors["neil-gaiman"]["country"])
 
+    def test_preserva_campos_enriquecidos_da_capa(self):
+        first = run_build().catalog
+        enriched = helpers.clone(first)
+        # (1) obra com cover_url no CSV: preserva file/license/credit/focus/display.
+        enriched.works["a-vegetariana-han-kang"]["cover"].update(
+            file="covers/a-vegetariana-han-kang.jpg", license="CC BY 4.0", credit="Todavia",
+            focus="top", display=None)
+        # (2) obra sem cover_url no CSV, mas com capa local escolhida: mantida pela proveniência.
+        enriched.works["belas-maldicoes-neil-gaiman"]["cover"] = {
+            "sourceUrl": "https://covers.openlibrary.org/b/isbn/9780000000000-L.jpg",
+            "source": "openlibrary", "file": "covers/belas-maldicoes-neil-gaiman.jpg",
+            "license": None, "credit": None, "focus": None, "display": None}
+        # (3) obra revisada como "fica tipográfica": display preservado.
+        enriched.works["os-espioes-luis-fernando-verissimo"]["cover"].update(display="typographic")
+        with tempfile.TemporaryDirectory() as tmp:
+            legacy = read_legacy(helpers.write_legacy(Path(tmp)))
+        again = build(legacy, SlugRegistry(), OVERRIDES, None, enriched).catalog
+
+        veg = again.works["a-vegetariana-han-kang"]["cover"]
+        self.assertEqual(veg["sourceUrl"], "https://example.org/vegetariana.jpg")  # do CSV
+        self.assertEqual((veg["file"], veg["license"], veg["credit"], veg["focus"]),
+                         ("covers/a-vegetariana-han-kang.jpg", "CC BY 4.0", "Todavia", "top"))
+        neil = again.works["belas-maldicoes-neil-gaiman"]["cover"]
+        self.assertEqual(neil["file"], "covers/belas-maldicoes-neil-gaiman.jpg")
+        self.assertEqual(neil["source"], "openlibrary")
+        self.assertEqual(again.works["os-espioes-luis-fernando-verissimo"]["cover"]["display"], "typographic")
+        # obra sem capa nem enriquecimento segue sem capa.
+        self.assertIsNone(again.works["comedias-para-se-ler-na-escola-luis-fernando-verissimo"]["cover"])
+
+    def test_capa_nao_sobrevive_sem_url_nem_enriquecimento(self):
+        # Sem cover_url no CSV e sem campos enriquecidos, a capa some (não vira {}).
+        first = run_build().catalog
+        self.assertIsNone(first.works["comedias-para-se-ler-na-escola-luis-fernando-verissimo"]["cover"])
+
 
 if __name__ == "__main__":
     unittest.main()

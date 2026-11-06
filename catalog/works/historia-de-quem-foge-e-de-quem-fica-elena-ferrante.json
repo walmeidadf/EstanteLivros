@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788525062505-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/historia-de-quem-foge-e-de-quem-fica-elena-ferrante.jpg"
+  },
   "catalogerNote": "Título provisório continha erro ('vai' em vez de 'foge'); terceiro volume da Série Napolitana de Elena Ferrante. Candidato Literal (score 1.0) corresponde à mesma obra; título e dados de edição corrigidos via busca (edição brasileira Biblioteca Azul/Globo, 2016), pois o candidato local trazia ISBN de edição portuguesa com título malformatado.",
   "confidence": "high",
   "references": [

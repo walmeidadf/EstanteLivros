@@ -3,13 +3,14 @@
  * Item de carrossel: capa + título e autoria em texto SOB a capa (handoff §9 —
  * o texto nunca mora só na imagem). O item inteiro é um link para a obra.
  *
- * Compõe o componente Capa da S1: herda a capa tipográfica (nenhuma capa de
- * obra existe ainda), o selo "2×" das releituras e o `lang`/`dir` dos títulos
- * não latinos. Recebe uma WorkView já resolvida (a página não passa o catálogo
+ * Compõe o componente Capa da S1: mostra a capa real derivada no build quando
+ * a Lila escolheu uma e, senão, a capa tipográfica; herda o selo "2×" das
+ * releituras e o `lang`/`dir` dos títulos não latinos. Recebe uma WorkView já resolvida (a página não passa o catálogo
  * cru).
  */
 import Cover from "@/components/Cover.astro";
 import type { WorkView } from "@/lib/catalog/model.ts";
+import { deriveCoverOf } from "@/lib/images.ts";
 import { originalTitlePresentation } from "@/lib/text.ts";
 
 interface Props {
@@ -22,6 +23,9 @@ interface Props {
 
 const { work, href, size = "rail", showOriginal = false } = Astro.props;
 const authorNames = work.authors.map((a) => a.name).join("; ");
+
+// Capa real (derivada no build) quando escolhida; senão null → tipográfica.
+const image = await deriveCoverOf(work);
 
 // Título original: só quando existe e difere do pt-BR (regra única em text.ts).
 const presentation = showOriginal
@@ -39,6 +43,7 @@ const originalFont = presentation?.font ?? null;
     language={work.language}
     originalTitle={work.originalTitle}
     author={authorNames}
+    image={image}
     rereadBadge={work.reread}
     size={size}
   />

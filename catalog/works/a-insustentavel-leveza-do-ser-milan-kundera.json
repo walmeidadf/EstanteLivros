@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12369915-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/a-insustentavel-leveza-do-ser-milan-kundera.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library sobre título/autor; optou-se pela edição brasileira da Companhia das Letras (2017), mais amplamente disponível, em vez da edição portuguesa listada como candidato principal no Literal.",
   "confidence": "high",

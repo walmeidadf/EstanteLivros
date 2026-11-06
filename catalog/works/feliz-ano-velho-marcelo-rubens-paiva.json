@@ -32,7 +32,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15210512-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/feliz-ano-velho-marcelo-rubens-paiva.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library. Obra autobiográfica clássica de Marcelo Rubens Paiva (1982, sobre o acidente que o deixou tetraplégico); usada a reedição Alfaguara de 2015 como edição representativa, com capa e ISBN disponíveis.",
   "confidence": "high",

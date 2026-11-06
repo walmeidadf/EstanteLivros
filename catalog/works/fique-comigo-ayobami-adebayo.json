@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/2/ckxs5m2rp14549090igao66ecd6w.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788595083202-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/fique-comigo-ayobami-adebayo.jpg"
   },
   "catalogerNote": "Nome da autora corrigido para a grafia correta (Ayòbámi Adébáyò); título original 'Stay with Me' (2017), edição brasileira HarperCollins (2018) confirmada por múltiplas fontes.",
   "confidence": "high",
