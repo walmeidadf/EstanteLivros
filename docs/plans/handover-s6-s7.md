@@ -1,9 +1,56 @@
-# Handover — da sessão F2 (capas e temas) para S6 e S7
+# Handover — da sessão F2 (capas e temas) para a próxima
 
 Escrito em 6/nov/2026, ao fim da sessão que fez as capas (F2.2) e os temas (F2.3).
-A próxima sessão começa pela **S6 (`pwa-offline`)** e segue para a **S7
-(`compartilhar`)**. Este arquivo é o ponto de entrada; os detalhes ficam nos docs
-citados.
+Este arquivo é o ponto de entrada; os detalhes ficam nos docs citados.
+
+## Ordem decidida para a próxima sessão
+
+O mantenedor quer fazer **primeiro**, nesta ordem:
+
+1. **Dados das obras** (tarefa curta, sem spec).
+2. **F2.6 Resumos de ano e país** (spec, no mesmo formato das anteriores).
+
+**S6 (`pwa-offline`) e S7 (`compartilhar`)** ficam para a sessão seguinte; as seções
+sobre elas mais abaixo continuam valendo e já têm fatos e perguntas.
+
+### 1. Dados das obras (fatos de 6/nov/2026)
+
+- Faltam: **13 romanizações** (título original não latino sem `originalTitleRomanized`),
+  **2 títulos originais** (`essencial-franz-kafka-franz-kafka` e
+  `o-gato-preto-e-outros-contos-de-terror-edgar-allan-poe`) e **1 ano de primeira
+  publicação** (`essencial-franz-kafka-franz-kafka`). A lista das 13 sai de um
+  script curto com `has_non_latin` (`pipeline/lib/titles.py`) sobre `catalog/works/`.
+- Mais a fonte da capa tipográfica coreana: `TypographicCover` usa `--font-serif-jp`;
+  a grade (`CoverCaption`) já usa `--font-serif-kr`.
+- **Armadilha que torna a tarefa menos trivial:** `migrate_legacy.py` recompõe
+  `originalTitle`, `originalTitleRomanized` e `firstPublished` a partir do CSV legado
+  (`split_original` em `lib/titles.py`) a cada execução. Editar `catalog/works/*.json`
+  direto seria desfeito pela próxima migração (o mesmo problema que os temas tiveram),
+  e o CSV fica em `legacy/`, fora do git. Antes de corrigir, **decidir onde a
+  correção vive**: por exemplo um override versionado em `pipeline/config/` aplicado no
+  build, com a origem registrada (regra do AGENTS: o pipeline é o único que escreve no
+  catálogo, com proveniência). As romanizações precisam de revisão humana.
+
+### 2. F2.6 Resumos de ano e país (fatos de 6/nov/2026)
+
+- **Infra pronta (da bio, F2.1):** `pipeline/lib/summaries.py`,
+  `pipeline/review_summaries.py` (`--list --pending`, `--approve`, `--reject`, `--edit`),
+  `pipeline/lib/providers/openai_client.py`, prompts em `pipeline/config/prompts/`
+  (`author-bio-v1` a `v3`), `summary_rejections.json`, teto de custo em
+  `budgets.json` (`openai.maxUsdPerRun` = 2,0) e `OPENAI_*` no `.env`
+  (`gpt-5.4-mini`).
+- **Escopos:** `ano:YYYY` (13 anos, 2014 a 2026) e `pais:XX` (36 países). O validador
+  só aceita resumo aprovado cujo escopo aponte para algo que existe.
+- **Hoje:** 209 resumos de `autoria:` aprovados e **nenhum** de ano ou país.
+- **O app já está pronto:** a tela Ano lê `ano:{ano}` (`timeline.ts`) e a tela País lê
+  `pais:{código}` (`atlas.ts`); sem resumo aprovado, o bloco some. Falta só gerar e
+  aprovar. Resumo não aprovado nunca aparece.
+- **Perguntas para os requisitos:** de que dados o prompt se alimenta (títulos,
+  autorias, idiomas e os 58 temas canônicos, só do catálogo, sem fontes externas, ao
+  contrário da bio); o que fazer com 2026, que está em andamento e ficaria
+  desatualizado; tamanho e tom (handoff §6.3 e §6.7: texto curto, "frase curta" no
+  país); regras duras: nada de nota ou estrela, nunca dia ou mês, nenhum fato que o
+  catálogo não tenha; como a Lila revisa (em sessão, pela CLI, como na bio).
 
 ## Como retomar (leia nesta ordem)
 
@@ -180,11 +227,10 @@ antes de escrever os requisitos: o que ele protege e o que o app consegue ler.
   para `/404`. Rotas de tema antigas dão 404.
 - **Preview:** o alias `head.prateleira-liliane.pages.dev` é compartilhado entre PRs.
 
-## Sugestão de abertura para a nova sessão
+## Sugestão de abertura para a sessão da S6 e da S7 (a seguinte)
 
-> Estante da Lila. A F2.2 (capas) e a F2.3 (temas) estão no ar. Antes de propor
-> qualquer coisa, leia `docs/plans/handover-s6-s7.md`, o `AGENTS.md` e o
-> `docs/ROADMAP.md`. Vamos fazer a S6 (`pwa-offline`), spec-driven como nas
-> anteriores: proponha o escopo exato e as decisões em aberto, e pare para eu aprovar
-> antes dos requisitos. Depois seguimos para a S7 (`compartilhar`), que depende de
-> decidirmos como o app reconhece a Lila (Cloudflare Access).
+> Estante da Lila. Antes de propor qualquer coisa, leia `docs/plans/handover-s6-s7.md`,
+> o `AGENTS.md` e o `docs/ROADMAP.md`. Vamos fazer a S6 (`pwa-offline`), spec-driven
+> como nas anteriores: proponha o escopo exato e as decisões em aberto, e pare para eu
+> aprovar antes dos requisitos. Depois seguimos para a S7 (`compartilhar`), que depende
+> de decidirmos como o app reconhece a Lila (Cloudflare Access).

@@ -175,12 +175,13 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   com `theme.taxonomy` e `theme.drift`. Corrigiu 43 `cover.source` errados e
   o `merge_cover` (arquivo e proveniência andam juntos). 272 testes do pipeline e
   159 do app verdes. Ver `docs/plans/handover-temas.md`.
-- **Próximo (nova sessão): S6 (`pwa-offline`), depois S7 (`compartilhar`).** Ponto
-  de entrada: `docs/plans/handover-s6-s7.md` (estado, combinados de trabalho, fatos
-  e perguntas das duas specs, sugestão de abertura). Ficam depois, independentes:
-  **F2.6** resumos de ano/país, dados das obras (tarefa curta) e polimento do
-  desktop. Lista completa, com o botão "Compartilhar {ano}" da S7, em
-  `docs/ROADMAP.md` ("Próximos passos").
+- **Próximo (nova sessão): dados das obras (tarefa curta) e depois a F2.6 (resumos
+  de ano/país).** A sessão seguinte faz a S6 (`pwa-offline`) e a S7 (`compartilhar`).
+  Ponto de entrada: `docs/plans/handover-s6-s7.md` (ordem decidida, estado,
+  combinados de trabalho, fatos e perguntas de cada frente). Ficam depois,
+  independentes: polimento do desktop e `photo.author` → `photo.credit`. Lista
+  completa, com o botão "Compartilhar {ano}" da S7, em `docs/ROADMAP.md`
+  ("Próximos passos").
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);
   `gh secret set CLOUDFLARE_API_TOKEN` após rotacionar. Detalhes em `infra/README.md`.
