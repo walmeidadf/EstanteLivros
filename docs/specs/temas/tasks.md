@@ -116,9 +116,11 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
   - [x] 13.2 Diff de HTML contra a `main`: Linha do tempo, Ano, País, Idioma e Sem data inalterados; nenhuma `tag` fora da taxonomia em `dist/` nem em `search-index.json`.
     - _Requisitos: 6.3, 6.4, 10.5_
     - _Resultado:_ mudaram só Início (1), Atlas (2), Tema (55 das 58; 3 idênticas), Obra (302) e Autoria (35). Ano (14), Idioma (15), País (36), Linha do tempo e vitrine idênticos ao baseline; 435 páginas de tema extintas. Nenhuma `tag` só-tag aparece em HTML ou no índice de busca, exceto onde é nome legítimo (países, a autora Clarice Lispector, o título *Doutor Jivago*). Os 1177 links `/tema/` resolvem.
-  - [ ] 13.3 No preview do PR: `curl -sI` em rota inexistente (status 404) e olhada em Início, Atlas (nuvem), Obra e Autoria (desktop + celular). Registrar o status aqui.
+  - [x] 13.3 No preview do PR: `curl -sI` em rota inexistente (status 404) e olhada em Início, Atlas (nuvem), Obra e Autoria (desktop + celular). Registrar o status aqui.
     - _Requisitos: 8.4_
-  - [ ] 13.4 Atualizar `ROADMAP.md` (F2.3 feita), `AGENTS.md` (`review_themes.py`), `DESIGN_HANDOFF.md` (§12.4 resolvido) e escrever `docs/plans/handover-temas.md`.
+  - [x] 13.4 Atualizar `ROADMAP.md` (F2.3 feita), `AGENTS.md` (`review_themes.py`), `DESIGN_HANDOFF.md` (§12.4 resolvido) e escrever `docs/plans/handover-temas.md`.
     - _Requisitos: —_
 
 _Registro (6/nov/2026), preview do PR #11:_ rotas existentes 200; `/tema/rota-que-nao-existe` e `/obra/nao-existe` devolvem **404** com a página nova (título "Página não encontrada"); `/404.html` responde 308 para `/404`. A parte do status do 13.3 está comprovada; falta a olhada visual depois da migração.
+
+_Fechamento (6/nov/2026):_ PR #11 mergeado (`2e1e19f`). O mantenedor testou em produção, no desktop e no celular: por autoria, por obra e com slug inexistente (página 404). Docs atualizados na `main`; handover em `docs/plans/handover-temas.md`.

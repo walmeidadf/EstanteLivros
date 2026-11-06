@@ -237,6 +237,11 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
 ### 6.11 Tema (ver todos) — `/tema/{slug}` (implementado)
 - Template de Idioma: cabeçalho escuro (`--surface`) em vez de colorido, nome do tema em Bodoni itálico, big numbers (obras · autorias · idiomas) e grade ordenável. Todo tema tem página; variantes que diferem só por caixa/acento são um tema só.
 
+**Como ficou (F2.3):** os temas são **58 canônicos** (de 493), todos com 5+ obras, então
+há 58 páginas `/tema/{slug}`. Os temas originais ficam em `tags` e não aparecem em tela.
+Como todo tema passa do piso, a contagem aparece em todos os chips da Obra. URLs de
+temas antigos dão 404 (página própria, §8).
+
 ## 7. Dados
 
 ### 7.1 Campos existentes (ver o briefing, §4)
@@ -333,5 +338,7 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
    Lila escolheu uma (131 de 302). Corte central 2:3; `focus` opcional por obra.
    Em aberto: a capa da Obra usa o tamanho de destaque (136 px) e poderia ser
    maior.
-4. Definir quais temas viram carrossel no Início (sugestão: os 4 mais frequentes + "Lidos duas vezes").
+4. ~~Definir quais temas viram carrossel no Início.~~ Decidido (F2.3): os 4 mais
+   frequentes, automático (hoje família, memória, amor, identidade) + "Lidos duas
+   vezes". Sem lista editorial.
 5. Fluxo de revisão dos resumos gerados pela Lila (fora deste escopo).

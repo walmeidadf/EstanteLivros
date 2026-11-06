@@ -79,6 +79,19 @@ python3 pipeline/enrich_covers.py --only slug-da-obra       # manutenção (obra
 - Limiares em `enrich.json` (bloco `cover`): boa ≥ 400 px, baixa < 250 px.
 - Backlog em `docs/plans/capas-backlog.md`; log em `docs/plans/capas-execucoes.md`.
 
+### Temas canônicos (taxonomia + mapa em `pipeline/config/themes.json`)
+`themes` da obra são os 58 temas canônicos; `tags` guardam os originais (só
+registro, em nenhuma tela). O mapa é aplicado pela migração; o validador confere.
+
+```bash
+python3 pipeline/review_themes.py     # lê legacy + themes.json → docs/plans/revisao-temas.md
+python3 pipeline/migrate_legacy.py    # aplica o mapa (código 1 se faltar mapeamento, 2 sem themes.json)
+```
+
+- Tema novo no caderno: acrescente o original em `themes.json` (lista de canônicos;
+  `[]` = só tag) e migre. Para mudar uma fusão, edite o mapa e migre de novo.
+- `theme.drift` no validador = `themes.json` mudou e o catálogo não: rode a migração.
+
 ### Enriquecimento de autorias (Wikidata, país, foto, bio)
 Chaves em `.env` (modelo: `.env.example`). Rode **sempre** `--dry-run` antes:
 ele mostra o que gastaria (OpenAI, SerpApi, Tavily) sem gastar.
@@ -155,8 +168,15 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   maioria das da Literal tem lado menor < 400 px). `images.ts` deriva capas
   (2:3, AVIF, `focus`), `cover-selection.ts` decide real × tipográfica. 219
   testes do pipeline e 156 do app verdes. Ver `docs/plans/handover-capas.md`.
-- **Próximo (nova sessão):** F2 restante (**temas**, **resumos de ano/país**; os
-  dados das obras são uma tarefa curta), **S6 (`pwa-offline`)** e **S7 (`compartilhar`)**. A
+- **F2.3 (`temas`) concluída — no ar (PR #11).** 493 temas viraram **58
+  canônicos** + `tags` (originais, só registro). `/tema` caiu de 493 para 58
+  páginas; build com **646 páginas**. `404.astro` (status 404 confirmado no
+  Pages). Mapa em `pipeline/config/themes.json`, aplicado na migração; validador
+  com `theme.taxonomy` e `theme.drift`. Corrigiu 43 `cover.source` errados e
+  o `merge_cover` (arquivo e proveniência andam juntos). 272 testes do pipeline e
+  159 do app verdes. Ver `docs/plans/handover-temas.md`.
+- **Próximo (nova sessão):** **resumos de ano/país** (F2.6; os dados das obras
+  são uma tarefa curta), **S6 (`pwa-offline`)** e **S7 (`compartilhar`)**. A
   lista completa, com o botão "Compartilhar {ano}" da S7, está em
   `docs/ROADMAP.md` ("Próximos passos").
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).

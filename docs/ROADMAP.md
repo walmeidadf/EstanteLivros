@@ -19,8 +19,8 @@ da autoria, necessário para o Atlas por país e a página País — por isso a 
 - Legado local em `legacy/`, fora do git.
 
 ## Decisões em aberto
-- Nenhuma de infraestrutura. As abertas hoje são de produto: quais temas
-  sobrevivem à redução (F2.3) e quais anos ganham retrospectiva (S7).
+- Nenhuma de infraestrutura. A aberta hoje é de produto: quais anos ganham
+  retrospectiva (S7).
 
 ## Decisões resolvidas na F4
 - Hospedagem: **Cloudflare Pages** (o Cloudflare Access protege o modo da Lila
@@ -44,6 +44,18 @@ da autoria, necessário para o Atlas por país e a página País — por isso a 
 - Onda 1 gratuita (URL do catálogo + Open Library por ISBN). Onda 2, paga
   (SerpApi/Tavily), só depois, para o backlog.
 
+## Decisões resolvidas nos temas (F2.3)
+- **58 temas canônicos** (de 493), todos com 5+ obras (o piso da nuvem do Atlas).
+  Os 493 originais ficam em `tags`, só para registro: em nenhuma tela, rota ou busca.
+- Taxonomia e mapa são **dados** (`pipeline/config/themes.json`), aplicados dentro
+  do build do catálogo; tema fora do mapa interrompe a migração, nunca passa
+  em silêncio. O validador refaz o mapeamento a partir das `tags` (`theme.drift`).
+- Início segue com os 4 temas mais frequentes, automático (família 77, memória 65,
+  amor 46, identidade 43). Sem lista editorial nem exclusão.
+- Rota inexistente passa a dar **404** (página própria), em vez do Início com 200.
+- O mapa foi aprovado como o rascunho, sem rodada de ajustes; pode ser revisto
+  editando `themes.json`.
+
 ## F0 — Fundação
 - [x] Estrutura de pastas, legado em `legacy/`
 - [x] `AGENTS.md` + hook de início de sessão; detalhes em `docs/`
@@ -65,8 +77,9 @@ Spec: [`docs/specs/catalogo-canonico/`](specs/catalogo-canonico/).
    seguem na tipográfica e em `docs/plans/capas-backlog.md` (melhoria contínua,
    2ª onda paga). A maioria das capas da Literal tem lado menor < 400 px
    (mediana 319 px); só 25 passam de 400 px.
-3. [ ] **F2.3 Temas**: reduzir 496 para ~40–60, revisado com a Lila (spec própria;
-   leva junto o `404.astro` e a escolha dos temas do Início)
+3. [x] **F2.3 Temas**. Spec: [`docs/specs/temas/`](specs/temas/). 493 temas viraram
+   58 canônicos + `tags`; `/tema` caiu de 493 para 58 páginas; `404.astro`. No ar
+   (PR #11). Encontrou e corrigiu a proveniência de 43 capas (ver handover).
 4. [ ] **F2.4/2.5 Dados das obras**: *quase pronto*, então vira tarefa curta, sem
    spec. Medido em `cobertura.md` (6/nov/2026): título original 185/187,
    romanização 8/21 (faltam 13), ano de primeira publicação 301/302. A lista de
@@ -98,13 +111,9 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 
 ## Próximos passos e o que fica para depois
 **Escolha o próximo (nenhum depende do outro):**
-- **F2.3 Temas** (spec): reduzir ~496 para ~40–60, revisado com a Lila. Afeta
-  nuvem do Atlas, chips da Obra e temas da Autoria. Leva junto o `404.astro` (as
-  páginas de tema caem de ~493 para ~50, e as URLs antigas somem) e a decisão de
-  quais temas viram carrossel no Início (handoff §12.4).
 - **F2.6 Resumos de ano e país** (spec): mesmo fluxo da bio. Ao aprovar, as
-  seções que hoje somem em Ano e País passam a aparecer. Vem depois dos temas,
-  porque o prompt pode citar temas e já usa os normalizados.
+  seções que hoje somem em Ano e País passam a aparecer. Os temas já estão
+  normalizados (58), então o prompt pode citá-los.
 - **F2.4/2.5 Dados das obras** (tarefa curta, sem spec): 13 romanizações, 2
   títulos originais e 1 ano de primeira publicação. Inclui a fonte da capa
   tipográfica coreana, que também trata título não latino.
@@ -118,6 +127,9 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 - Capas: 171 obras no backlog. Segunda onda paga ou escolha manual de edição.
   Obra nova: `enrich_covers.py --only slug`.
 - Autorias: 40 fotos a escolher, 9 sem Wikidata, 6 sem bio.
+- Temas: obra nova com tema fora do mapa para a migração e lista o que falta;
+  acrescentar o original em `pipeline/config/themes.json`. Ajustes de fusão
+  (por exemplo, estreitar "família") são edições no mesmo arquivo + migração.
 
 **Fica para depois (F5 Admin):** adicionar leitura em poucos toques,
 reaproveitando os scripts da F2.
@@ -133,7 +145,6 @@ JSON, separados do código, para que um gerador futuro escreva o mesmo formato.
   (poderia ser maior).
 - *Tarefa isolada:* renomear `photo.author` para `photo.credit` nas autorias,
   por consistência com `cover.credit` (mexe em 215 autorias, schema e pipeline).
-- *Entram na F2.3:* `404.astro` (hoje rota desconhecida serve o Início com 200).
 - *Entra nos dados das obras:* fonte da capa tipográfica coreana.
 
 ## F5 — Admin
