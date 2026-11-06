@@ -71,7 +71,7 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## Revisão (CLI de leitura)
 
-- [ ] 7. `pipeline/review_themes.py`
+- [x] 7. `pipeline/review_themes.py`
   - `read_legacy` + `ThemeConfig.load` → `docs/plans/revisao-temas.md` (não grava no catálogo): pendências, resumo, bloco por tema, só tag, mapeados para vários, atenção (único tema, perda > 50%). Determinístico, cobre todos os originais. Teste em `test_themes.py`.
   - _Requisitos: 5.1, 5.2, 5.3, 5.4, 5.5, 10.2_
 

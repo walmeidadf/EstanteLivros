@@ -1,5 +1,7 @@
 """Temas canônicos: carga/validação do themes.json, aplicação do mapa e resumo."""
 
+import contextlib
+import io
 import json
 import tempfile
 import unittest
@@ -8,8 +10,9 @@ from pathlib import Path
 import helpers  # noqa: F401  (ajusta o sys.path para o pipeline)
 from lib import themes
 from lib.build import ThemeMappingError, build
-from lib.legacy_reader import LegacyDataError, read_legacy
+from lib.legacy_reader import LegacyDataError, read_legacy, split_list
 from lib.slugs import SlugRegistry
+from lib.themes_review import ReviewWork, render_review
 from lib.themes import Applied, ThemeConfig, ThemeConfigError, apply, slugify_theme, theme_key
 
 
@@ -223,6 +226,88 @@ class BuildComTemasTest(unittest.TestCase):
         a = run_build(helpers.themes_config()).files
         b = run_build(helpers.themes_config()).files
         self.assertEqual(json.dumps(a, sort_keys=False), json.dumps(b, sort_keys=False))
+
+
+def review_works():
+    return [ReviewWork(f"{w['title_pt_br']} ({split_list(w['authors'])[0]})", split_list(w["themes"]))
+            for w in sorted(helpers.WORKS, key=lambda w: w["work_id"])]
+
+
+class RevisaoTest(unittest.TestCase):
+    def setUp(self):
+        self.cfg = helpers.themes_config()
+
+    def test_cobre_todos_os_originais_e_e_deterministico(self):
+        text = render_review(review_works(), self.cfg)
+        self.assertEqual(text, render_review(review_works(), helpers.themes_config()))
+        for original in ("apocalipse", "amizade", "segredo", "família", "violência", "escola", "corpo", "identidade"):
+            self.assertIn(original, text)
+        self.assertIn("4 obras · 8 temas originais · 6 temas canônicos (alvo 1 a 10) · 6 abaixo do piso de 5 obras.", text)
+        self.assertNotIn("## Pendências", text)
+
+    def test_bloco_por_tema_com_originais_e_obras_so_com_ele(self):
+        text = render_review(review_works(), self.cfg)
+        self.assertIn("### identidade · 2 obra(s)", text)
+        self.assertIn("Originais: identidade (2), segredo (1)", text)
+        self.assertIn("Obras que ficam só com este tema (1): Os Espiões (Luís Fernando Veríssimo)", text)
+        self.assertIn("| identidade ⚠ | 2 | 2 |", text)
+
+    def test_so_tag_varios_destinos_e_unico_tema(self):
+        self.cfg.mapping[theme_key("violência")] = ["violência", "corpo"]
+        text = render_review(review_works(), self.cfg)
+        self.assertIn("## Só tag (1)", text)
+        self.assertIn("família (1)", text)
+        self.assertIn("- violência → violência, corpo", text)
+        self.assertIn("- Os Espiões (Luís Fernando Veríssimo): identidade", text)
+
+    def test_original_sem_entrada_aparece_como_pendencia_em_destaque(self):
+        del self.cfg.mapping[theme_key("segredo")]
+        text = render_review(review_works(), self.cfg)
+        self.assertIn("## Pendências", text)
+        self.assertIn("- **segredo** (1 obra(s)): Os Espiões (Luís Fernando Veríssimo)", text)
+        self.assertIn("segredo", text.split("## Resumo")[0])
+
+    def test_obra_que_perde_mais_da_metade_dos_originais(self):
+        for original in ("apocalipse", "amizade"):
+            self.cfg.mapping[theme_key(original)] = []
+        text = render_review(review_works(), self.cfg)
+        self.assertIn("## Pendências", text)  # Belas Maldições ficaria sem tema
+        self.assertIn("Belas Maldições (Neil Gaiman): apocalipse, amizade", text)
+        self.assertIn("- Belas Maldições (Neil Gaiman): 2 de 2", text)
+
+
+class RevisaoCliTest(unittest.TestCase):
+    def setUp(self):
+        import review_themes
+
+        self.module = review_themes
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        self.legacy = helpers.write_legacy(self.root / "legacy")
+        self.themes = helpers.write_themes_config(self.root / "cfg")
+        self.out = self.root / "docs" / "revisao-temas.md"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def run_quiet(self, *args):
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            return self.module.run(*args)
+
+    def test_gera_o_documento_sem_tocar_no_legado(self):
+        before = helpers.tree_bytes(self.legacy)
+        self.assertEqual(self.run_quiet(self.legacy, self.themes, self.out), 0)
+        self.assertIn("# Revisão de temas", self.out.read_text(encoding="utf-8"))
+        self.assertEqual(helpers.tree_bytes(self.legacy), before)
+        first = self.out.read_bytes()
+        self.run_quiet(self.legacy, self.themes, self.out)
+        self.assertEqual(self.out.read_bytes(), first)
+
+    def test_entrada_invalida_codigo_2(self):
+        self.themes.write_text('{"version": 3}', encoding="utf-8")
+        self.assertEqual(self.run_quiet(self.legacy, self.themes, self.out), 2)
+        self.assertFalse(self.out.exists())
+        self.assertEqual(self.run_quiet(self.root / "nao-existe", self.themes, self.out), 2)
 
 
 if __name__ == "__main__":
