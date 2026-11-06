@@ -8,8 +8,8 @@
  * até essas telas existirem.
  */
 interface Props {
-  /** Qual modo está ativo. */
-  active: "estante" | "atlas" | "linha-do-tempo";
+  /** Qual modo está ativo; `null` = nenhum (os três são links, ex.: página 404). */
+  active: "estante" | "atlas" | "linha-do-tempo" | null;
 }
 
 const { active } = Astro.props;

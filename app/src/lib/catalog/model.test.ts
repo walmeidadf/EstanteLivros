@@ -329,6 +329,29 @@ test("capa: três estados chegam à WorkView; a sourceUrl segue só como proveni
   assert.equal(view("tipografica").coverDisplay, "typographic");
 });
 
+test("tags (temas originais) ficam fora da WorkView: só os temas canônicos", () => {
+  const model = buildModel(
+    catalog({
+      authors: [author("a")],
+      works: [
+        work("obra", ["a"], {
+          themes: ["memória"],
+          tags: ["tempo e memória", "crise dos opioides"],
+        }),
+      ],
+      readings: [],
+    }),
+  );
+  const view = model.worksBySlug.get("obra")!;
+  assert.deepEqual(view.themes, ["memória"]);
+  assert.equal("tags" in view, false);
+  // O grafo é circular (obra ↔ autoria): confere os campos da própria obra.
+  const leaked = Object.values(view).some(
+    (v) => Array.isArray(v) && v.some((x) => x === "crise dos opioides"),
+  );
+  assert.equal(leaked, false);
+});
+
 test("idioma sem cor própria cai em 'outros'", () => {
   const model = buildModel(
     catalog({

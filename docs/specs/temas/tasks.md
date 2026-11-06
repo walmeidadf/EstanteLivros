@@ -77,15 +77,16 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## App
 
-- [ ] 8. Modelo e navegação
-  - [ ] 8.1 `model.ts`: `WorkView` NÃO expõe `tags`; teste em `model.test.ts`.
+- [x] 8. Modelo e navegação
+  - [x] 8.1 `model.ts`: `WorkView` NÃO expõe `tags`; teste em `model.test.ts`.
     - _Requisitos: 6.4, 10.4_
-  - [ ] 8.2 `NavChips.astro`: `active` aceita `null` (nenhum ativo). Páginas atuais com HTML idêntico (diff).
+  - [x] 8.2 `NavChips.astro`: `active` aceita `null` (nenhum ativo). Páginas atuais com HTML idêntico (diff).
     - _Requisitos: 8.2_
-  - [ ] 8.3 `route-integrity` roda sobre os temas novos; sem mudança de código.
+  - [x] 8.3 `route-integrity` roda sobre os temas novos; sem mudança de código.
     - _Requisitos: 6.5, 10.4_
 
-- [ ] 9. Página 404 (`src/pages/404.astro`)
+- [x] 9. Página 404 (`src/pages/404.astro`)
+  - _Como ficou:_ 1081 páginas no build (1080 + `404.html`); as 1080 existentes idênticas ao baseline (corpo e CSS).
   - `Base` com `noindex`, `h1` "Esse endereço não existe", uma frase, `NavChips active={null}` (Início, Atlas, Linha do tempo, 44 px); sem JS; gera `dist/404.html`. Build com rotas existentes inalteradas.
   - _Requisitos: 8.1, 8.2, 8.3, 8.5_
 
