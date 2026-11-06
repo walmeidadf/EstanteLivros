@@ -13,14 +13,14 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## Fundação: schema e módulo de temas
 
-- [ ] 1. Campo `tags` (aditivo)
-  - [ ] 1.1 `catalog/schema/work.schema.json`: `tags` (textList) opcional, depois de `themes`.
+- [x] 1. Campo `tags` (aditivo)
+  - [x] 1.1 `catalog/schema/work.schema.json`: `tags` (textList) opcional, depois de `themes`.
     - _Requisitos: 4.1_
-  - [ ] 1.2 `app/src/lib/catalog/schema.ts`: `workSchema` ganha `tags: textList.optional()` (espelha o JSON Schema). Teste novo `schema.test.ts`: aceita `tags`, rejeita campo desconhecido.
+  - [x] 1.2 `app/src/lib/catalog/schema.ts`: `workSchema` ganha `tags: textList.optional()` (espelha o JSON Schema). Teste novo `schema.test.ts`: aceita `tags`, rejeita campo desconhecido.
     - _Requisitos: 4.1, 10.4_
-  - [ ] 1.3 `docs/DATA_MODEL.md`: `themes` (canônicos, navegáveis) × `tags` (originais, só registro); normalização em `pipeline/config/themes.json`.
+  - [x] 1.3 `docs/DATA_MODEL.md`: `themes` (canônicos, navegáveis) × `tags` (originais, só registro); normalização em `pipeline/config/themes.json`.
     - _Requisitos: 4.3_
-  - [ ] 1.4 Atualizar fixtures/helpers (pipeline e app) para o `tags` opcional; testes atuais verdes sem `tags`.
+  - [x] 1.4 Atualizar fixtures/helpers (pipeline e app) para o `tags` opcional; testes atuais verdes sem `tags`.
     - _Requisitos: 4.1_
 
 - [ ] 2. `lib/themes.py` — carga, validação e aplicação
