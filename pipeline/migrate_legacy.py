@@ -62,7 +62,7 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
         return 1
 
     result.catalog.media = scan_media(catalog_dir / "media")
-    issues = check_catalog(result.catalog, schemas)
+    issues = check_catalog(result.catalog, schemas, themes_cfg=themes)
     cat = result.catalog
     readings = cat.readings["readings"]
     aliases = sum(len(g.aliases) for g in result.unified)

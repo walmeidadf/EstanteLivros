@@ -20,6 +20,7 @@ from lib.checks import Catalog, Issue, check_catalog, load_catalog, load_schemas
 from lib.coverage import render_coverage  # noqa: E402
 from lib.jsonio import write_text_atomic  # noqa: E402
 from lib.schema import SchemaError  # noqa: E402
+from lib.themes import ThemeConfig, ThemeConfigError  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -43,7 +44,17 @@ def run(catalog_dir: Path, report: Optional[Path]) -> int:
         print(f"erro ao carregar schemas: {exc}", file=sys.stderr)
         return 1
     cat = load_catalog(catalog_dir)
-    issues = check_catalog(cat, schemas)
+    themes_cfg = None
+    # themes.json fica em pipeline/config, ao lado de catalog/. Catálogos fora do
+    # repositório (testes em pastas temporárias) não o têm: a regra é pulada.
+    themes_path = catalog_dir.parent / "pipeline" / "config" / "themes.json"
+    if themes_path.is_file():
+        try:
+            themes_cfg = ThemeConfig.load(themes_path)
+        except ThemeConfigError as exc:
+            print(f"themes.json inválido: {exc}", file=sys.stderr)
+            return 1
+    issues = check_catalog(cat, schemas, themes_cfg=themes_cfg)
     if report is not None:
         write_report(cat, report)
     print_issues(issues)

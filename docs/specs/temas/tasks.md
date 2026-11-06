@@ -57,12 +57,12 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## Validador e cobertura
 
-- [ ] 5. Regras do validador (`lib/checks.py`)
-  - [ ] 5.1 `check_themes(cat, themes_cfg)`: `theme.taxonomy` (tema de obra ou de `vocabularies.themes` fora da taxonomia) e `theme.drift` (`apply(tags).themes` ≠ `themes`). Sem config, pulado.
+- [x] 5. Regras do validador (`lib/checks.py`)
+  - [x] 5.1 `check_themes(cat, themes_cfg)`: `theme.taxonomy` (tema de obra ou de `vocabularies.themes` fora da taxonomia) e `theme.drift` (`apply(tags).themes` ≠ `themes`). Sem config, pulado.
     - _Requisitos: 4.2, 4.4_
-  - [ ] 5.2 `check_catalog(..., themes_cfg=None)` chama a nova regra; `validate_catalog.py` procura `themes.json` em `../pipeline/config`, carrega e passa; ausente → pula, inválido → erro (código 1).
+  - [x] 5.2 `check_catalog(..., themes_cfg=None)` chama a nova regra; `validate_catalog.py` procura `themes.json` em `../pipeline/config`, carrega e passa; ausente → pula, inválido → erro (código 1).
     - _Requisitos: 4.2_
-  - [ ] 5.3 Testes: `theme.taxonomy` e `theme.drift` (válido e inválido); sem config, regras puladas.
+  - [x] 5.3 Testes: `theme.taxonomy` e `theme.drift` (válido e inválido); sem config, regras puladas.
     - _Requisitos: 10.1_
 
 - [ ] 6. Cobertura (`lib/coverage.py`)
