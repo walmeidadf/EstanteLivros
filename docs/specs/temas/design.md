@@ -143,7 +143,7 @@ configuração, duas regras novas em `check_themes`:
 | Regra | Condição | Mensagem |
 |---|---|---|
 | `theme.taxonomy` | tema de obra, ou de `vocabularies.themes`, fora da taxonomia | `tema 'x' fora da taxonomia (themes.json)` |
-| `theme.drift` | obra com `tags` cujo `apply(tags).themes` difere de `themes` | `themes não bate com o mapa: rode migrate_legacy.py` (R4.5) |
+| `theme.drift` | obra com `tags` cujo `apply(tags).themes` difere de `themes` | `themes não bate com o mapa: rode migrate_legacy.py` (R4.4) |
 
 `validate_catalog.py` procura `themes.json` em `catalog_dir.parent/pipeline/config`.
 Se existir, carrega e passa à verificação; se não existir (catálogos de teste em
