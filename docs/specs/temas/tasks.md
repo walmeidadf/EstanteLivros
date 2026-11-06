@@ -45,14 +45,14 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
   - [x] 3.3 Testes: `themes=None` == antigo; erro acumulado; vocabulário = canônicos; idempotência (resultado não depende de `themes` anterior).
     - _Requisitos: 10.1, 10.3_
 
-- [ ] 4. `migrate_legacy.py`
-  - [ ] 4.1 Carregar `config/themes.json`: ausente/inválido → código 2 com mensagem; passar a config a `build` e a `check_catalog`.
+- [x] 4. `migrate_legacy.py`
+  - [x] 4.1 Carregar `config/themes.json`: ausente/inválido → código 2 com mensagem; passar a config a `build` e a `check_catalog`.
     - _Requisitos: 3.5, 4.2_
-  - [ ] 4.2 `--dry-run`: linha `temas: N canônicos · M originais · K abaixo do piso`.
+  - [x] 4.2 `--dry-run`: linha `temas: N canônicos · M originais · K abaixo do piso`.
     - _Requisitos: 3.8_
-  - [ ] 4.3 Helper de fixture (`themes.json` mínimo) e ajustar `test_cli.py` (setUp, `ValidateCliTest`) e demais chamadores de `migrate_legacy.run`.
+  - [x] 4.3 Helper de fixture (`themes.json` mínimo) e ajustar `test_cli.py` (setUp, `ValidateCliTest`) e demais chamadores de `migrate_legacy.run`.
     - _Requisitos: 10.1_
-  - [ ] 4.4 Testes de CLI: código 1 nada gravado (`tree_bytes` igual); código 2 sem arquivo; idempotência byte a byte; catálogo já normalizado não é desfeito; dry-run imprime a linha.
+  - [x] 4.4 Testes de CLI: código 1 nada gravado (`tree_bytes` igual); código 2 sem arquivo; idempotência byte a byte; catálogo já normalizado não é desfeito; dry-run imprime a linha.
     - _Requisitos: 3.3, 3.5, 3.7, 10.1, 10.3_
 
 ## Validador e cobertura

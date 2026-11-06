@@ -4,7 +4,8 @@
 Uso:
     python3 pipeline/migrate_legacy.py [--legacy legacy/exports] [--catalog catalog] [--dry-run]
 
-Código de saída: 0 ok; 1 dados inválidos; 2 entrada ausente ou colunas faltando.
+Código de saída: 0 ok; 1 dados inválidos (inclui tema sem mapeamento); 2 entrada ausente,
+colunas faltando ou pipeline/config/themes.json ausente/inválido.
 Não faz chamadas de rede e não altera `legacy/` nem `catalog/source/`.
 """
 
@@ -23,6 +24,7 @@ from lib.jsonio import read_json, write_catalog  # noqa: E402
 from lib.legacy_reader import LegacyDataError, LegacyInputError, read_legacy  # noqa: E402
 from lib.schema import SchemaError  # noqa: E402
 from lib.slugs import SlugRegistry  # noqa: E402
+from lib.themes import THEME_FLOOR, ThemeConfig, ThemeConfigError, summarize  # noqa: E402
 from validate_catalog import print_issues, write_report  # noqa: E402
 
 PIPELINE = Path(__file__).resolve().parent
@@ -37,6 +39,12 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
         print(f"entrada inválida:\n{exc}", file=sys.stderr)
         return 2
 
+    try:
+        themes = ThemeConfig.load(config_dir / "themes.json")
+    except ThemeConfigError as exc:
+        print(f"themes.json inválido: {exc}", file=sys.stderr)
+        return 2
+
     slugs_path = config_dir / "slugs.json"
     overrides_path = config_dir / "author_overrides.json"
     registry = SlugRegistry.load(slugs_path)
@@ -47,7 +55,7 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
     existing = load_catalog(catalog_dir) if (catalog_dir / "authors").is_dir() else None
 
     try:
-        result = build(legacy, registry, overrides, existing_summaries, existing)
+        result = build(legacy, registry, overrides, existing_summaries, existing, themes)
         schemas = load_schemas(catalog_dir / "schema")
     except (LegacyDataError, SchemaError) as exc:
         print(f"dados inválidos: {exc}", file=sys.stderr)
@@ -63,6 +71,9 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
           f"releituras: {sum(1 for r in readings if r['reread'])}")
     print(f"slugs novos: {registry.created} · reutilizados: {registry.reused} · truncados: {registry.truncated}")
     print(f"suspeitas de autoria: {len(result.suspects)} (ver docs/plans/cobertura.md)")
+    ts = summarize(cat.works.values())
+    print(f"temas: {ts.canonical} canônicos · {ts.originals} originais · "
+          f"{len(ts.below_floor)} abaixo do piso ({THEME_FLOOR})")
 
     if issues:
         print_issues(issues, out=sys.stderr)

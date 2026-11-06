@@ -28,6 +28,7 @@ class MigrateTest(unittest.TestCase):
         self.config = root / "config"
         self.config.mkdir()
         (self.config / "author_overrides.json").write_text("{}", encoding="utf-8")
+        helpers.write_themes_config(self.config)
         self.report = root / "docs" / "cobertura.md"
 
     def tearDown(self):
@@ -111,6 +112,74 @@ class MigrateTest(unittest.TestCase):
         self.assertEqual(helpers.tree_bytes(self.catalog.parent), before)
 
 
+class MigrateThemesTest(unittest.TestCase):
+    """Migração com os temas canônicos (F2.3)."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        self.legacy = helpers.write_legacy(root / "legacy")
+        self.catalog = helpers.make_catalog_dir(root / "catalog")
+        self.config = root / "config"
+        self.config.mkdir()
+        (self.config / "author_overrides.json").write_text("{}", encoding="utf-8")
+        helpers.write_themes_config(self.config)
+        self.report = root / "docs" / "cobertura.md"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def migrate(self, dry_run=False, legacy=None):
+        return quiet(migrate_legacy.run, legacy or self.legacy, self.catalog, self.config,
+                     self.report, dry_run)
+
+    def test_grava_themes_e_tags_e_imprime_a_linha_de_temas(self):
+        code, out, err = self.migrate()
+        self.assertEqual(code, 0, err)
+        self.assertIn("temas: 6 canônicos · 8 originais · 6 abaixo do piso (5)", out)
+        veg = json.loads((self.catalog / "works" / "a-vegetariana-han-kang.json").read_text(encoding="utf-8"))
+        self.assertEqual((veg["themes"], veg["tags"]), (["corpo", "violência"], ["corpo", "família", "violência"]))
+        vocab = json.loads((self.catalog / "vocabularies.json").read_text(encoding="utf-8"))
+        self.assertEqual(vocab["themes"], ["amizade", "corpo", "escola", "fim do mundo", "identidade", "violência"])
+
+    def test_dry_run_mostra_a_linha_e_nao_grava(self):
+        before = helpers.tree_bytes(self.catalog.parent)
+        code, out, _ = self.migrate(dry_run=True)
+        self.assertEqual(code, 0)
+        self.assertIn("temas: 6 canônicos", out)
+        self.assertIn("--dry-run: nada foi gravado", out)
+        self.assertEqual(helpers.tree_bytes(self.catalog.parent), before)
+
+    def test_tema_sem_mapeamento_codigo_1_nada_gravado(self):
+        works = [dict(w) for w in helpers.WORKS]
+        works[0]["themes"] = "identidade; segredo; tema novo"
+        bad = helpers.write_legacy(Path(self.tmp.name) / "bad", works=works)
+        before = helpers.tree_bytes(self.catalog.parent)
+        code, _, err = self.migrate(legacy=bad)
+        self.assertEqual(code, 1)
+        self.assertIn("'tema novo' (Os Espiões)", err)
+        self.assertEqual(helpers.tree_bytes(self.catalog.parent), before)
+
+    def test_themes_json_ausente_ou_invalido_codigo_2(self):
+        (self.config / "themes.json").unlink()
+        before = helpers.tree_bytes(self.catalog.parent)
+        code, _, err = self.migrate()
+        self.assertEqual(code, 2)
+        self.assertIn("themes.json", err)
+        self.assertEqual(helpers.tree_bytes(self.catalog.parent), before)
+        (self.config / "themes.json").write_text('{"version": 9}', encoding="utf-8")
+        code, _, err = self.migrate()
+        self.assertEqual(code, 2)
+        self.assertIn("version deve ser 1", err)
+
+    def test_catalogo_normalizado_nao_e_desfeito_e_a_migracao_e_idempotente(self):
+        self.migrate()
+        first = helpers.tree_bytes(self.catalog.parent)
+        code, _, err = self.migrate()
+        self.assertEqual(code, 0, err)
+        self.assertEqual(helpers.tree_bytes(self.catalog.parent), first)
+
+
 class ValidateCliTest(unittest.TestCase):
     def test_dois_erros_codigo_1(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -119,6 +188,7 @@ class ValidateCliTest(unittest.TestCase):
             legacy = helpers.write_legacy(root / "legacy")
             config = root / "config"
             config.mkdir()
+            helpers.write_themes_config(config)
             quiet(migrate_legacy.run, legacy, catalog, config, None, False)
             work = catalog / "works" / "a-vegetariana-han-kang.json"
             data = json.loads(work.read_text(encoding="utf-8"))
