@@ -27,6 +27,7 @@ dist/
 # Pipeline: respostas de APIs e folhas de revisão locais
 pipeline/cache/
 docs/plans/revisao-fotos.html
+docs/plans/revisao-capas.html
 
 # Infra
 cdk.out/

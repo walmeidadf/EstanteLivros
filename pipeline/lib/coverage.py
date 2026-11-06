@@ -25,8 +25,13 @@ def work_rows(works: List[Dict[str, Any]]) -> List[Row]:
     translated = [w for w in works if w.get("language") != "português"]
     non_latin = [w for w in works if w.get("originalTitle") and has_non_latin(w["originalTitle"])]
     edition = lambda w, k: (w.get("edition") or {}).get(k)  # noqa: E731
+    cover = lambda w, k: (w.get("cover") or {}).get(k)  # noqa: E731
     return [
-        ("Capa", _count(works, lambda w: w.get("cover") is not None), len(works)),
+        ("Capa com URL de origem", _count(works, lambda w: w.get("cover") is not None), len(works)),
+        ("Capa local escolhida (mestre em `catalog/media/covers/`)",
+         _count(works, lambda w: cover(w, "file") is not None), len(works)),
+        ("Capa revisada: fica a tipográfica", _count(works, lambda w: cover(w, "display") == "typographic"),
+         len(works)),
         ("Título original (obras não escritas em português)",
          _count(translated, lambda w: bool(w.get("originalTitle"))), len(translated)),
         ("Romanização (títulos originais não latinos)",
