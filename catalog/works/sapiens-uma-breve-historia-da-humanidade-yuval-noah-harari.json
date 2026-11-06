@@ -2,7 +2,7 @@
   "slug": "sapiens-uma-breve-historia-da-humanidade-yuval-noah-harari",
   "title": "Sapiens: Uma Breve História da Humanidade",
   "originalTitle": "קיצור תולדות האנושות",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Kitsur Toldot ha-Enoshut",
   "authors": [
     "yuval-noah-harari"
   ],
@@ -61,6 +61,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Nenhum candidato local (Literal/Open Library) apresentava a editora brasileira correta (L&PM) nem ISBN válido para a edição mais conhecida da obra; dado complementado via busca web.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

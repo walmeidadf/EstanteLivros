@@ -2,7 +2,7 @@
   "slug": "anna-karienina-liev-tolstoi",
   "title": "Anna Kariênina",
   "originalTitle": "Анна Каренина",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Anna Karenina",
   "authors": [
     "liev-tolstoi"
   ],
@@ -54,6 +54,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Todos os candidatos Literal/Open Library eram edições em inglês, espanhol ou italiano; resolvido via busca web direta no site da editora.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

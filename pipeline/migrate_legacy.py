@@ -5,7 +5,7 @@ Uso:
     python3 pipeline/migrate_legacy.py [--legacy legacy/exports] [--catalog catalog] [--dry-run]
 
 Código de saída: 0 ok; 1 dados inválidos (inclui tema sem mapeamento); 2 entrada ausente,
-colunas faltando ou pipeline/config/themes.json ausente/inválido.
+colunas faltando, ou pipeline/config/themes.json / work_overrides.json ausente/inválido.
 Não faz chamadas de rede e não altera `legacy/` nem `catalog/source/`.
 """
 
@@ -25,6 +25,7 @@ from lib.legacy_reader import LegacyDataError, LegacyInputError, read_legacy  # 
 from lib.schema import SchemaError  # noqa: E402
 from lib.slugs import SlugRegistry  # noqa: E402
 from lib.themes import THEME_FLOOR, ThemeConfig, ThemeConfigError, summarize  # noqa: E402
+from lib.work_overrides import WorkOverridesError, load as load_work_overrides  # noqa: E402
 from validate_catalog import print_issues, write_report  # noqa: E402
 
 PIPELINE = Path(__file__).resolve().parent
@@ -45,6 +46,11 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
         print(f"themes.json inválido: {exc}", file=sys.stderr)
         return 2
 
+    try:
+        work_overrides = load_work_overrides(config_dir / "work_overrides.json")
+    except WorkOverridesError as exc:
+        print(f"work_overrides.json inválido: {exc}", file=sys.stderr)
+        return 2
     slugs_path = config_dir / "slugs.json"
     overrides_path = config_dir / "author_overrides.json"
     registry = SlugRegistry.load(slugs_path)
@@ -55,14 +61,14 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
     existing = load_catalog(catalog_dir) if (catalog_dir / "authors").is_dir() else None
 
     try:
-        result = build(legacy, registry, overrides, existing_summaries, existing, themes)
+        result = build(legacy, registry, overrides, existing_summaries, existing, themes, work_overrides)
         schemas = load_schemas(catalog_dir / "schema")
     except (LegacyDataError, SchemaError) as exc:
         print(f"dados inválidos: {exc}", file=sys.stderr)
         return 1
 
     result.catalog.media = scan_media(catalog_dir / "media")
-    issues = check_catalog(result.catalog, schemas, themes_cfg=themes)
+    issues = check_catalog(result.catalog, schemas, themes_cfg=themes, work_overrides=work_overrides)
     cat = result.catalog
     readings = cat.readings["readings"]
     aliases = sum(len(g.aliases) for g in result.unified)
@@ -71,6 +77,10 @@ def run(legacy_dir: Path, catalog_dir: Path, config_dir: Path, report: Optional[
           f"releituras: {sum(1 for r in readings if r['reread'])}")
     print(f"slugs novos: {registry.created} · reutilizados: {registry.reused} · truncados: {registry.truncated}")
     print(f"suspeitas de autoria: {len(result.suspects)} (ver docs/plans/cobertura.md)")
+    print(f"correções de obras: {len(work_overrides)}")
+    for slug, key in result.redundant_overrides:
+        print(f"aviso: {slug}.{key}: o legado já traz este valor; a correção pode sair de "
+              "work_overrides.json", file=sys.stderr)
     ts = summarize(cat.works.values())
     print(f"temas: {ts.canonical} canônicos · {ts.originals} originais · "
           f"{len(ts.below_floor)} abaixo do piso ({THEME_FLOOR})")

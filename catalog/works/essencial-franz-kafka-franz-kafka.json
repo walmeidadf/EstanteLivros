@@ -60,6 +60,10 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Todos os candidatos Literal/Open Library eram biografias sobre Kafka (não coletâneas de sua ficção); descartados por não corresponderem ao gênero indicado no título provisório ('Contos').",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitle",
+      "firstPublished"
+    ]
   }
 }

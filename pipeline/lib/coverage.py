@@ -22,8 +22,15 @@ def _count(items: Iterable[Dict[str, Any]], pred: Callable[[Dict[str, Any]], boo
     return sum(1 for item in items if pred(item))
 
 
+def _intentionally_absent(work: Dict[str, Any], key: str) -> bool:
+    """Ausência marcada de propósito em work_overrides.json (ex.: coletânea sem original)."""
+    return work.get(key) is None and key in ((work.get("audit") or {}).get("overrides") or [])
+
+
 def work_rows(works: List[Dict[str, Any]]) -> List[Row]:
-    translated = [w for w in works if w.get("language") != "português"]
+    translated = [w for w in works
+                  if w.get("language") != "português" and not _intentionally_absent(w, "originalTitle")]
+    dated = [w for w in works if not _intentionally_absent(w, "firstPublished")]
     non_latin = [w for w in works if w.get("originalTitle") and has_non_latin(w["originalTitle"])]
     edition = lambda w, k: (w.get("edition") or {}).get(k)  # noqa: E731
     cover = lambda w, k: (w.get("cover") or {}).get(k)  # noqa: E731
@@ -37,7 +44,7 @@ def work_rows(works: List[Dict[str, Any]]) -> List[Row]:
          _count(translated, lambda w: bool(w.get("originalTitle"))), len(translated)),
         ("Romanização (títulos originais não latinos)",
          _count(non_latin, lambda w: bool(w.get("originalTitleRomanized"))), len(non_latin)),
-        ("Ano de primeira publicação", _count(works, lambda w: w.get("firstPublished") is not None), len(works)),
+        ("Ano de primeira publicação", _count(dated, lambda w: w.get("firstPublished") is not None), len(dated)),
         ("ISBN-13", _count(works, lambda w: edition(w, "isbn13") is not None), len(works)),
         ("Editora", _count(works, lambda w: edition(w, "publisher") is not None), len(works)),
     ]

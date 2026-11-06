@@ -13,6 +13,7 @@ from .names import AuthorGroup, find_suspects, group_names, languages_for, unify
 from .slugs import SlugRegistry, strip_accents
 from .themes import ThemeConfig, apply as apply_themes
 from .titles import split_original
+from .work_overrides import WorkOverride, apply as apply_work_override
 
 PROVIDER_ALIASES = {"busca_web": "web"}
 UNKNOWN_VALUES = {"desconhecido"}
@@ -38,6 +39,8 @@ class BuildResult:
     files: Dict[str, Any]
     unified: List[AuthorGroup] = field(default_factory=list)
     suspects: List[Tuple[str, str]] = field(default_factory=list)
+    # (slug, campo): correção de work_overrides.json que o CSV já traz igual
+    redundant_overrides: List[Tuple[str, str]] = field(default_factory=list)
 
 
 def vocab_sort_key(value: str) -> Tuple[str, str]:
@@ -143,7 +146,8 @@ def build(legacy: LegacyData, registry: SlugRegistry,
           overrides: Optional[Mapping[str, Mapping[str, str]]] = None,
           existing_summaries: Any = None,
           existing: Optional[Catalog] = None,
-          themes: Optional[ThemeConfig] = None) -> BuildResult:
+          themes: Optional[ThemeConfig] = None,
+          work_overrides: Optional[Mapping[str, WorkOverride]] = None) -> BuildResult:
     """Monta o catálogo. `existing` é o catálogo atual: os campos enriquecidos
     das autorias e das capas (F2) e `vocabularies.countries` são preservados.
 
@@ -151,6 +155,8 @@ def build(legacy: LegacyData, registry: SlugRegistry,
     `tags` (os originais); sem ela, `themes` fica como vem do CSV e não há `tags`
     (uso como biblioteca e fixtures antigas). A migração sempre a passa."""
     overrides = overrides or {}
+    work_overrides = work_overrides or {}
+    redundant_overrides: List[Tuple[str, str]] = []
     existing_authors = existing.authors if existing is not None else {}
     existing_works = existing.works if existing is not None else {}
     work_rows = sorted(legacy.works, key=lambda r: r["work_id"])
@@ -208,6 +214,9 @@ def build(legacy: LegacyData, registry: SlugRegistry,
         slug = registry.work_slug(row["work_id"], f"{title} {first_name}", first_published)
         work_slug[row["work_id"]] = slug
         original, romanized = split_original(row["original_title"])
+        original, romanized, first_published, corrected, redundant = apply_work_override(
+            work_overrides.get(slug), original, romanized, first_published)
+        redundant_overrides += [(slug, k) for k in redundant]
         language = text(row["original_language"])
         for a in authors:
             lang_occurrences.setdefault(a, []).append((language, first_seq.get(row["work_id"], 10**9)))
@@ -253,9 +262,15 @@ def build(legacy: LegacyData, registry: SlugRegistry,
                 "validationStatus": text(row["validation_status"]),
                 "sourceConflicts": text(row["source_conflicts"]),
                 "validatedAt": text(row["validated_at"]),
+                # Campos corrigidos em pipeline/config/work_overrides.json.
+                **({"overrides": corrected} if corrected else {}),
             },
         }
 
+    unknown_overrides = sorted(set(work_overrides) - set(works))
+    if unknown_overrides:
+        raise LegacyDataError(
+            "work_overrides.json: obra(s) inexistente(s): " + ", ".join(unknown_overrides))
     if unmapped_themes or works_without_theme:
         raise ThemeMappingError(_theme_problems(unmapped_themes, works_without_theme))
 
@@ -317,4 +332,4 @@ def build(legacy: LegacyData, registry: SlugRegistry,
 
     unified = [g for g in groups.values() if g.aliases or g.overridden]
     suspects = find_suspects(groups.values())
-    return BuildResult(catalog, files, unified, suspects)
+    return BuildResult(catalog, files, unified, suspects, sorted(redundant_overrides))

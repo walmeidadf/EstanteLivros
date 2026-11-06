@@ -2,7 +2,7 @@
   "slug": "a-morte-de-ivan-ilitch-liev-tolstoi",
   "title": "A Morte de Ivan Ilitch",
   "originalTitle": "Смерть Ивана Ильича",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Smert Ivana Ilicha",
   "authors": [
     "liev-tolstoi"
   ],
@@ -68,6 +68,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Candidatos Literal divergem na grafia do nome do autor (Tolstoi/Tolstói/Tosltói) e em diferentes editoras/traduções (LeBooks, On Line Editora, tradução portuguesa de Adolfo Casais Monteiro); mantive a obra como um único romance, escolhendo o candidato de maior score como edição representativa.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

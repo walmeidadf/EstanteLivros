@@ -2,7 +2,7 @@
   "slug": "o-mestre-e-margarida-mikhail-bulgakov",
   "title": "O Mestre e Margarida",
   "originalTitle": "Мастер и Маргарита",
-  "originalTitleRomanized": null,
+  "originalTitleRomanized": "Master i Margarita",
   "authors": [
     "mikhail-bulgakov"
   ],
@@ -67,6 +67,9 @@
   "audit": {
     "validationStatus": "validated",
     "sourceConflicts": "Havia edição concorrente da Alfaguara (2011) sem autoria preenchida no Literal; preferida a edição com metadados completos e consenso com Open Library.",
-    "validatedAt": "2026-08-13"
+    "validatedAt": "2026-08-13",
+    "overrides": [
+      "originalTitleRomanized"
+    ]
   }
 }

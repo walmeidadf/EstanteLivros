@@ -87,7 +87,12 @@
       "properties": {
         "validationStatus": { "$ref": "#/$defs/optionalText" },
         "sourceConflicts": { "$ref": "#/$defs/optionalText" },
-        "validatedAt": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+        "validatedAt": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "overrides": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["originalTitle", "originalTitleRomanized", "firstPublished"] }
+        }
       }
     }
   },

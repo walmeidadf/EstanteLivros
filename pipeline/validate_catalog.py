@@ -21,6 +21,7 @@ from lib.coverage import render_coverage  # noqa: E402
 from lib.jsonio import write_text_atomic  # noqa: E402
 from lib.schema import SchemaError  # noqa: E402
 from lib.themes import ThemeConfig, ThemeConfigError  # noqa: E402
+from lib.work_overrides import WorkOverridesError, load as load_work_overrides  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -54,7 +55,15 @@ def run(catalog_dir: Path, report: Optional[Path]) -> int:
         except ThemeConfigError as exc:
             print(f"themes.json inválido: {exc}", file=sys.stderr)
             return 1
-    issues = check_catalog(cat, schemas, themes_cfg=themes_cfg)
+    work_overrides = None
+    overrides_path = catalog_dir.parent / "pipeline" / "config" / "work_overrides.json"
+    if overrides_path.is_file():
+        try:
+            work_overrides = load_work_overrides(overrides_path)
+        except WorkOverridesError as exc:
+            print(f"work_overrides.json inválido: {exc}", file=sys.stderr)
+            return 1
+    issues = check_catalog(cat, schemas, themes_cfg=themes_cfg, work_overrides=work_overrides)
     if report is not None:
         write_report(cat, report)
     print_issues(issues)

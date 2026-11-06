@@ -11,9 +11,9 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 | Capa com URL de origem | 234 | 302 | 77,5% |
 | Capa local escolhida (mestre em `catalog/media/covers/`) | 131 | 302 | 43,4% |
 | Capa revisada: fica a tipográfica | 0 | 302 | 0,0% |
-| Título original (obras não escritas em português) | 185 | 187 | 98,9% |
-| Romanização (títulos originais não latinos) | 8 | 21 | 38,1% |
-| Ano de primeira publicação | 301 | 302 | 99,7% |
+| Título original (obras não escritas em português) | 185 | 185 | 100,0% |
+| Romanização (títulos originais não latinos) | 21 | 21 | 100,0% |
+| Ano de primeira publicação | 301 | 301 | 100,0% |
 | ISBN-13 | 290 | 302 | 96,0% |
 | Editora | 300 | 302 | 99,3% |
 
