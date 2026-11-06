@@ -122,6 +122,11 @@ frentes da F2 rodam depois do app, corrigindo o que a interface mostrar.
 **Fica para depois (F5 Admin):** adicionar leitura em poucos toques,
 reaproveitando os scripts da F2.
 
+**Ideia anotada:** gerar a taxonomia de temas automaticamente para a lista de
+outra pessoa ou de um clube de leitura (agrupamento por LLM ou similaridade, com
+piso de frequência e revisão humana). A spec de temas guarda taxonomia e mapa em
+JSON, separados do código, para que um gerador futuro escreva o mesmo formato.
+
 **Pequenas dívidas anotadas:**
 - *Polimento do desktop* (mini-spec futura): CSS de grade repetido (Ano, Sem data,
   WorkGrid), mais colunas na grade, setas nos carrosséis, capa da Obra com 136 px
