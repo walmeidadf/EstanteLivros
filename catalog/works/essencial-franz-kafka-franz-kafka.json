@@ -30,7 +30,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788563560230-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/essencial-franz-kafka-franz-kafka.jpg"
+  },
   "catalogerNote": "Título provisório 'Franz Kafka essencial - Contos' corresponde à antologia 'Essencial Franz Kafka' (seleção, tradução e comentários de Modesto Carone, Penguin-Companhia/Companhia das Letras, 2011), reunindo contos, a novela 'A Metamorfose' completa e aforismos; nenhum candidato local correspondia (eram biografias sobre Kafka), identificado via busca web. Ano de primeira publicação deixado em branco por se tratar de antologia com textos de datas variadas.",
   "confidence": "high",
   "references": [

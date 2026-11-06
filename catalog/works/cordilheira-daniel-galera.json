@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535913262/cordilheira.jpg",
-    "source": "editora"
+    "source": "literal",
+    "file": "covers/cordilheira-daniel-galera.jpg"
   },
   "catalogerNote": "Nenhum candidato do Literal correspondia (títulos em inglês/espanhol sem relação); OpenLibrary trouxe correspondência exata (score 1.0). Única edição publicada (Companhia das Letras, 2008), coleção Amores Expressos, vencedora do Prêmio Machado de Assis de Romance.",
   "confidence": "high",

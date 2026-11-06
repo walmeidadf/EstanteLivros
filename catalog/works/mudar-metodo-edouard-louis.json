@@ -32,7 +32,8 @@
   },
   "cover": {
     "sourceUrl": "https://img.travessa.com.br/livro/GR/3a/3a2ba307-5fa0-4bbc-9a5e-0b537d91423e.jpg",
-    "source": "busca_web"
+    "source": "literal",
+    "file": "covers/mudar-metodo-edouard-louis.jpg"
   },
   "catalogerNote": "Nenhum candidato local correspondia a 'Método - Edouard LOuis'; identificado por busca web como 'Mudar: Método' de Édouard Louis (tradução de 'Changer: méthode', 2021), publicado no Brasil pela Todavia em 2024, condizente com a leitura registrada em 2025.",
   "confidence": "high",

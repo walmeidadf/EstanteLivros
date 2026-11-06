@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788501111241-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/a-peste-albert-camus.jpg"
+  },
   "catalogerNote": "Nenhum candidato local trazia uma edição brasileira segura (ISBNs de Portugal/possível erro de região); busca web confirmou a edição clássica da Record (trad. Valerie Rumjanek), amplamente reeditada no Brasil.",
   "confidence": "high",
   "references": [

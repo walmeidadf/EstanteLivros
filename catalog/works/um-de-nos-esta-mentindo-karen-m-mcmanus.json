@@ -31,8 +31,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/3/ckuagt65w13868513w13pkovz8f.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788501114181-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/um-de-nos-esta-mentindo-karen-m-mcmanus.jpg"
   },
   "catalogerNote": "Candidato Literal com maior score corresponde exatamente ao livro e à editora conhecida (Record); candidato OpenLibrary descartado por título/idioma incompatíveis (edição polonesa).",
   "confidence": "high",

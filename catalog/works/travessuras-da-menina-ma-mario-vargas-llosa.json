@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788573028089/travessuras-da-menina-ma.jpg",
-    "source": "busca_web"
+    "source": "literal",
+    "file": "covers/travessuras-da-menina-ma-mario-vargas-llosa.jpg"
   },
   "catalogerNote": "Título provisório 'As travessuras da menina má' corrigido para o título oficial 'Travessuras da Menina Má'; nenhum candidato local correspondia, edição brasileira confirmada via busca web (Objetiva/Alfaguara, 2006).",
   "confidence": "high",

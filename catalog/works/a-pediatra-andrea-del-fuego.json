@@ -29,7 +29,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/14625135-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/a-pediatra-andrea-del-fuego.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library, mesmo ISBN (9786557823361), Companhia das Letras, 2021.",
   "confidence": "high",

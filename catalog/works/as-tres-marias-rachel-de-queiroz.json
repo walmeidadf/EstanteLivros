@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15201008-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/as-tres-marias-rachel-de-queiroz.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library. Escolhida a edição José Olympio de 2017, coerente com o ano de leitura registrado (2017).",
   "confidence": "high",

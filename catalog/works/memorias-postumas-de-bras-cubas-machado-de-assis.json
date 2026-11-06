@@ -30,8 +30,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/3/cl1jrai4v490610hem1jwkm88z.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788543801636-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/memorias-postumas-de-bras-cubas-machado-de-assis.jpg"
   },
   "catalogerNote": "Clássico consagrado da literatura brasileira; múltiplos candidatos de ambos provedores com score 1.0. Escolhida como representativa a edição da Companhia das Letras (2014), por ser amplamente disponível e confiável.",
   "confidence": "high",

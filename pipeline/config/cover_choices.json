@@ -1,1 +1,589 @@
-{}
+{
+  "a-amiga-genial-elena-ferrante": {
+    "url": "https://assets.literal.club/2/cksxkqg1x2815752h8g3t1s02aj.jpg",
+    "source": "literal"
+  },
+  "a-caixa-preta-amos-oz": {
+    "url": "https://assets.literal.club/2/cky81v3wp14078390ik6qeczoqoq.jpg",
+    "source": "literal"
+  },
+  "a-casa-das-belas-adormecidas-yasunari-kawabata": {
+    "url": "https://assets.literal.club/2/cksxktcuk2918482h8g26z7ngau.jpg",
+    "source": "literal"
+  },
+  "a-casa-dos-budas-ditosos-joao-ubaldo-ribeiro": {
+    "url": "https://covers.openlibrary.org/b/id/13131553-L.jpg",
+    "source": "literal"
+  },
+  "a-cidade-do-sol-khaled-hosseini": {
+    "url": "https://assets.literal.club/cover/2/clmi9dinu3688690hhymhirbaq8.jpg",
+    "source": "literal"
+  },
+  "a-confissao-da-leoa-mia-couto": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535926828/a-confissao-da-leoa.jpg",
+    "source": "literal"
+  },
+  "a-crianca-no-tempo-ian-mcewan": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930856/a-crianca-no-tempo.jpg",
+    "source": "literal"
+  },
+  "a-extincao-das-abelhas-natalia-borges-polesso": {
+    "url": "https://assets.literal.club/cover/2/clhca1xd91139640her2kwt2kmm.jpg",
+    "source": "literal"
+  },
+  "a-festa-da-insignificancia-milan-kundera": {
+    "url": "https://assets.literal.club/2/ckrqwy6c7663217980qb1a3p7.jpg",
+    "source": "literal"
+  },
+  "a-festa-do-bode-mario-vargas-llosa": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788579620638/a-festa-do-bode.jpg",
+    "source": "literal"
+  },
+  "a-insustentavel-leveza-do-ser-milan-kundera": {
+    "url": "https://covers.openlibrary.org/b/id/12369915-L.jpg",
+    "source": "literal"
+  },
+  "a-louca-da-casa-rosa-montero": {
+    "url": "https://assets.literal.club/2/cktk3yfci190028nr7ahq282jdp.jpg",
+    "source": "literal"
+  },
+  "a-maquina-de-fazer-espanhois-valter-hugo-mae": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788575038130-L.jpg",
+    "source": "openlibrary"
+  },
+  "a-menina-da-montanha-tara-westover": {
+    "url": "https://assets.literal.club/2/ckvqxsikk1622341i7dtfjvpn44.jpg",
+    "source": "literal"
+  },
+  "a-natureza-da-mordida-carla-madeira": {
+    "url": "https://assets.literal.club/production/covers/useruploads/cldssmmr500000htv0w4t53u8.jpeg",
+    "source": "literal"
+  },
+  "a-obscena-senhora-d-hilda-hilst": {
+    "url": "https://assets.literal.club/cover/2/ckvph4208225912m7dnfczn3l8.jpg",
+    "source": "literal"
+  },
+  "a-paciente-silenciosa-alex-michaelides": {
+    "url": "https://assets.literal.club/2/ckuvq5pfv898531j7abh742u40.jpg",
+    "source": "literal"
+  },
+  "a-paixao-segundo-g-h-clarice-lispector": {
+    "url": "https://covers.openlibrary.org/b/isbn/9789727085637-L.jpg",
+    "source": "openlibrary"
+  },
+  "a-parabola-do-semeador-octavia-butler": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788592795399-L.jpg",
+    "source": "openlibrary"
+  },
+  "a-pediatra-andrea-del-fuego": {
+    "url": "https://covers.openlibrary.org/b/id/14625135-L.jpg",
+    "source": "literal"
+  },
+  "a-peste-albert-camus": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788501111241-L.jpg",
+    "source": "openlibrary"
+  },
+  "a-revolucao-dos-bichos-george-orwell": {
+    "url": "https://assets.literal.club/2/ckrwct5c311462421798ka1easbu.jpg",
+    "source": "literal"
+  },
+  "a-vegetariana-han-kang": {
+    "url": "https://assets.literal.club/3/cksj5wvsy1084367q298bwk52jgt.jpg",
+    "source": "literal"
+  },
+  "a-vida-invisivel-de-euridice-gusmao-martha-batalha": {
+    "url": "https://covers.openlibrary.org/b/id/10839816-L.jpg",
+    "source": "literal"
+  },
+  "ainda-estou-aqui-marcelo-rubens-paiva": {
+    "url": "https://assets.literal.club/2/ckx0mkycf4594901ghdp9puaaue.jpg",
+    "source": "literal"
+  },
+  "amada-toni-morrison": {
+    "url": "https://assets.literal.club/2/ckw5dahj049605013g6euqzow2t.jpg",
+    "source": "literal"
+  },
+  "americanah-chimamanda-ngozi-adichie": {
+    "url": "https://assets.literal.club/2/cku3vtr70858515vd7b0akgen.jpg",
+    "source": "literal"
+  },
+  "angustia-graciliano-ramos": {
+    "url": "https://assets.literal.club/2/ckvbjnvka140181jf8by539y8hh.jpg",
+    "source": "literal"
+  },
+  "anna-karienina-liev-tolstoi": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788535929225-L.jpg",
+    "source": "openlibrary"
+  },
+  "ansiedade-como-enfrentar-o-mal-do-seculo-augusto-cury": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788502218482-L.jpg",
+    "source": "openlibrary"
+  },
+  "apague-a-luz-se-for-chorar-fabiane-guimaraes": {
+    "url": "https://covers.openlibrary.org/b/id/13325412-L.jpg",
+    "source": "literal"
+  },
+  "aprender-a-viver-filosofia-para-os-novos-tempos-luc-ferry": {
+    "url": "https://assets.literal.club/2/ckznmgnbx3170290ibnpzh7ijvv.jpg",
+    "source": "literal"
+  },
+  "as-alegrias-da-maternidade-buchi-emecheta": {
+    "url": "https://assets.literal.club/2/ckxs4pans12883020igafm94ljr7.jpg",
+    "source": "literal"
+  },
+  "as-intermitencias-da-morte-jose-saramago": {
+    "url": "https://covers.openlibrary.org/b/id/13180964-L.jpg",
+    "source": "literal"
+  },
+  "as-tres-marias-rachel-de-queiroz": {
+    "url": "https://covers.openlibrary.org/b/id/15201008-L.jpg",
+    "source": "literal"
+  },
+  "as-vantagens-de-ser-invisivel-stephen-chbosky": {
+    "url": "https://assets.literal.club/2/ckrxp7raf8055317982m272aqk.jpg",
+    "source": "literal"
+  },
+  "barba-ensopada-de-sangue-daniel-galera": {
+    "url": "https://assets.literal.club/2/ckpr62m6b162821gjy2m0ahu7q.jpg",
+    "source": "literal"
+  },
+  "baviera-tropical-betina-anton": {
+    "url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707044651i/207240354.jpg",
+    "source": "literal"
+  },
+  "caim-jose-saramago": {
+    "url": "https://covers.openlibrary.org/b/id/12372594-L.jpg",
+    "source": "literal"
+  },
+  "cancao-de-ninar-leila-slimani": {
+    "url": "https://assets.literal.club/3/cksxkylrr3091622h8gd1rjq889.jpg",
+    "source": "literal"
+  },
+  "capitaes-da-areia-jorge-amado": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788535911695-L.jpg",
+    "source": "openlibrary"
+  },
+  "carta-a-rainha-louca-maria-valeria-rezende": {
+    "url": "https://covers.openlibrary.org/b/id/11143086-L.jpg",
+    "source": "literal"
+  },
+  "cem-anos-de-solidao-gabriel-garcia-marquez": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788501078896-L.jpg",
+    "source": "openlibrary"
+  },
+  "contra-mim-valter-hugo-mae": {
+    "url": "https://assets.literal.club/2/ckuwipjuy2223972b7a12tkjwe2.jpg",
+    "source": "literal"
+  },
+  "cordilheira-daniel-galera": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535913262/cordilheira.jpg",
+    "source": "literal"
+  },
+  "crime-e-castigo-fiodor-dostoievski": {
+    "url": "https://assets.literal.club/cover/2/clmqb95uc5025430hgvh3yy95sq.jpg",
+    "source": "literal"
+  },
+  "crocodilo-javier-a-contreras": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535932812/crocodilo.jpg",
+    "source": "literal"
+  },
+  "cronica-de-uma-morte-anunciada-gabriel-garcia-marquez": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788501019431-L.jpg",
+    "source": "openlibrary"
+  },
+  "depois-daquela-viagem-valeria-piassa-polizzi": {
+    "url": "https://assets.literal.club/2/ckrwnlpsz138035117988is8nc02.jpg",
+    "source": "literal"
+  },
+  "diario-da-queda-michel-laub": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535918175/diario-da-queda.jpg",
+    "source": "literal"
+  },
+  "dias-de-abandono-elena-ferrante": {
+    "url": "https://assets.literal.club/3/cktsqb9mz94729515vtt3kbpzgw.jpg",
+    "source": "literal"
+  },
+  "dias-perfeitos-raphael-montes": {
+    "url": "https://assets.literal.club/2/cksz9f60q2752498q7oucez5z99.jpg",
+    "source": "literal"
+  },
+  "dom-casmurro-em-quadrinhos-machado-de-assis": {
+    "url": "https://assets.literal.club/cover/2/ckz30iolt246720huy93h7nkjh.jpg",
+    "source": "literal"
+  },
+  "doramar-ou-a-odisseia-itamar-vieira-junior": {
+    "url": "https://covers.openlibrary.org/b/isbn/9786556921464-L.jpg",
+    "source": "openlibrary"
+  },
+  "enterre-seus-mortos-ana-paula-maia": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930672/enterre-seus-mortos.jpg",
+    "source": "literal"
+  },
+  "essencial-franz-kafka-franz-kafka": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788563560230-L.jpg",
+    "source": "openlibrary"
+  },
+  "estrelas-tortas-walcyr-carrasco": {
+    "url": "https://assets.literal.club/1/ckx0mszxz5463661ghdocgggt8w.jpg",
+    "source": "literal"
+  },
+  "feliz-ano-velho-marcelo-rubens-paiva": {
+    "url": "https://covers.openlibrary.org/b/id/15210512-L.jpg",
+    "source": "literal"
+  },
+  "fique-comigo-ayobami-adebayo": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788595083202-L.jpg",
+    "source": "openlibrary"
+  },
+  "frankenstein-mary-shelley": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788594540188-L.jpg",
+    "source": "openlibrary"
+  },
+  "grande-sertao-veredas-joao-guimaraes-rosa": {
+    "url": "https://assets.literal.club/2/cky81xb9914290700ik6zp00qex4.jpg",
+    "source": "literal"
+  },
+  "historia-da-menina-perdida-elena-ferrante": {
+    "url": "https://assets.literal.club/3/cktsqb9mx94729315vt2lc0cjfr.jpg",
+    "source": "literal"
+  },
+  "historia-de-quem-foge-e-de-quem-fica-elena-ferrante": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788525062505-L.jpg",
+    "source": "openlibrary"
+  },
+  "historia-do-novo-sobrenome-elena-ferrante": {
+    "url": "https://assets.literal.club/3/cktsqb9q394743615vtrcxdtp2p.jpg",
+    "source": "literal"
+  },
+  "humanos-exemplares-juliana-leite": {
+    "url": "https://assets.literal.club/cover/2/clhca13l11057280hergao8wb5v.jpg",
+    "source": "literal"
+  },
+  "ilusoes-perdidas-honore-de-balzac": {
+    "url": "https://assets.literal.club/2/ckznmg24r3112230ibnm35ic64q.jpg",
+    "source": "literal"
+  },
+  "judas-amos-oz": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535925074/judas.jpg",
+    "source": "literal"
+  },
+  "kim-jiyoung-nascida-em-1982-cho-nam-joo": {
+    "url": "https://assets.literal.club/cover/2/clqaze9t414444450hi5c7z6ags6.jpg",
+    "source": "literal"
+  },
+  "kindred-lacos-de-sangue-octavia-e-butler": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788592795870-L.jpg",
+    "source": "openlibrary"
+  },
+  "madame-bovary-gustave-flaubert": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788563560315-L.jpg",
+    "source": "openlibrary"
+  },
+  "manifesto-antimaternalista-vera-iaconelli": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559791309/manifesto-antimaternalista.jpg",
+    "source": "literal"
+  },
+  "memoria-de-minhas-putas-tristes-gabriel-garcia-marquez": {
+    "url": "https://assets.literal.club/4/ckr1sjgfr0qri01crmsqxg5ko.jpg",
+    "source": "literal"
+  },
+  "memorias-postumas-de-bras-cubas-machado-de-assis": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788543801636-L.jpg",
+    "source": "openlibrary"
+  },
+  "meu-ano-de-descanso-e-relaxamento-ottessa-moshfegh": {
+    "url": "https://covers.openlibrary.org/b/isbn/9786580309061-L.jpg",
+    "source": "openlibrary"
+  },
+  "mrs-dalloway-virginia-woolf": {
+    "url": "https://assets.literal.club/cover/2/clqhm08d18606690hi5a15cdc22.jpg",
+    "source": "literal"
+  },
+  "mudar-metodo-edouard-louis": {
+    "url": "https://img.travessa.com.br/livro/GR/3a/3a2ba307-5fa0-4bbc-9a5e-0b537d91423e.jpg",
+    "source": "literal"
+  },
+  "na-minha-pele-lazaro-ramos": {
+    "url": "https://covers.openlibrary.org/b/id/10839726-L.jpg",
+    "source": "literal"
+  },
+  "nada-carmen-laforet": {
+    "url": "https://assets.literal.club/cover/2/cl6wbjel4542860ii2cos1lr9a.jpg",
+    "source": "literal"
+  },
+  "o-alquimista-paulo-coelho": {
+    "url": "https://assets.literal.club/2/cl0k1fqe25683150hkhk0fkvyz7.jpg",
+    "source": "literal"
+  },
+  "o-amor-nos-tempos-do-colera-gabriel-garcia-marquez": {
+    "url": "https://assets.literal.club/production/covers/useruploads/cmawumou4005g0h16e7oh5064.jpeg",
+    "source": "literal"
+  },
+  "o-avesso-da-pele-jeferson-tenorio": {
+    "url": "https://covers.openlibrary.org/b/id/12769862-L.jpg",
+    "source": "literal"
+  },
+  "o-caderno-proibido-alba-de-cespedes": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559212194/caderno-proibido.jpg",
+    "source": "literal"
+  },
+  "o-capote-nikolai-gogol": {
+    "url": "https://assets.literal.club/2/ckxs4vw0013652010igapjv9dku0.jpg",
+    "source": "literal"
+  },
+  "o-clube-do-livro-do-fim-da-vida-will-schwalbe": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788539004997/o-clube-do-livro-do-fim-da-vida.jpg",
+    "source": "literal"
+  },
+  "o-homem-duplicado-jose-saramago": {
+    "url": "https://covers.openlibrary.org/b/id/12811014-L.jpg",
+    "source": "literal"
+  },
+  "o-homem-que-amava-os-cachorros-leonardo-padura": {
+    "url": "https://assets.literal.club/3/cksxkwqlv3024832h8gkind28ej.jpg",
+    "source": "literal"
+  },
+  "o-lar-da-srta-peregrine-para-criancas-peculiares-ransom-riggs": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788551000687-L.jpg",
+    "source": "openlibrary"
+  },
+  "o-lobo-da-estepe-hermann-hesse": {
+    "url": "https://assets.literal.club/2/ckxs4p3vj12853080iga1qwy6th8.jpg",
+    "source": "literal"
+  },
+  "o-mestre-e-margarida-mikhail-bulgakov": {
+    "url": "https://assets.literal.club/2/cky7rcg6d8853580ik6j8lcj9q4.jpg",
+    "source": "literal"
+  },
+  "o-mundo-de-sofia-jostein-gaarder": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788571644755-L.jpg",
+    "source": "openlibrary"
+  },
+  "o-olho-mais-azul-toni-morrison": {
+    "url": "https://assets.literal.club/2/cksvyojpo2429703g8gcu37ucwd.jpg",
+    "source": "literal"
+  },
+  "o-pai-goriot-honore-de-balzac": {
+    "url": "https://assets.literal.club/3/cktsrzcil7880001esv10gc5r7q.jpg",
+    "source": "literal"
+  },
+  "o-peso-do-passaro-morto-aline-bei": {
+    "url": "https://covers.openlibrary.org/b/id/10833052-L.jpg",
+    "source": "literal"
+  },
+  "o-quinze-rachel-de-queiroz": {
+    "url": "https://covers.openlibrary.org/b/id/8960570-L.jpg",
+    "source": "literal"
+  },
+  "o-retrato-de-dorian-gray-oscar-wilde": {
+    "url": "https://assets.literal.club/production/covers/useruploads/cl3cenm73003c0jyx0kd8gnzo.jpeg",
+    "source": "literal"
+  },
+  "o-senhor-das-moscas-william-golding": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788579622878-L.jpg",
+    "source": "openlibrary"
+  },
+  "o-tempo-entre-costuras-maria-duenas": {
+    "url": "https://assets.literal.club/2/cksuwq4zg220139988gzvbef7pi.jpg",
+    "source": "literal"
+  },
+  "o-velho-e-o-mar-ernest-hemingway": {
+    "url": "https://assets.literal.club/cover/2/cley7cndo13857580hje1ssw9oei.jpg",
+    "source": "literal"
+  },
+  "olhai-os-lirios-do-campo-erico-verissimo": {
+    "url": "https://covers.openlibrary.org/b/id/15138040-L.jpg",
+    "source": "literal"
+  },
+  "olhos-d-agua-conceicao-evaristo": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788534705257-L.jpg",
+    "source": "openlibrary"
+  },
+  "oracao-para-desaparecer-socorro-acioli": {
+    "url": "https://covers.openlibrary.org/b/isbn/9786559215706-L.jpg",
+    "source": "openlibrary"
+  },
+  "os-enamoramentos-javier-marias": {
+    "url": "https://covers.openlibrary.org/b/id/12372586-L.jpg",
+    "source": "literal"
+  },
+  "os-espioes-luis-fernando-verissimo": {
+    "url": "https://assets.literal.club/2/ckvvx41uu16398541fxxbef9f0bd.jpg",
+    "source": "literal"
+  },
+  "os-sete-maridos-de-evelyn-hugo-taylor-jenkins-reid": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788584391509-L.jpg",
+    "source": "openlibrary"
+  },
+  "pachinko-min-jin-lee": {
+    "url": "https://assets.literal.club/cover/2/clr321olt1830100hi5l9kd1op9.jpg",
+    "source": "literal"
+  },
+  "pantaleao-e-as-visitadoras-mario-vargas-llosa": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788560281121/pantaleao-e-as-visitadoras.jpg",
+    "source": "literal"
+  },
+  "passaporte-para-a-china-cronicas-de-viagem-lygia-fagundes-telles": {
+    "url": "https://assets.literal.club/2/ckszje0jm25935013v957lklcg5.jpg",
+    "source": "literal"
+  },
+  "persepolis-marjane-satrapi": {
+    "url": "https://covers.openlibrary.org/b/id/12648921-L.jpg",
+    "source": "literal"
+  },
+  "redemoinho-em-dia-quente-jarid-arraes": {
+    "url": "https://covers.openlibrary.org/b/id/10867246-L.jpg",
+    "source": "literal"
+  },
+  "relato-de-um-certo-oriente-milton-hatoum": {
+    "url": "https://covers.openlibrary.org/b/id/15109346-L.jpg",
+    "source": "literal"
+  },
+  "reparacao-ian-mcewan": {
+    "url": "https://assets.literal.club/2/cky81w08314195410ik6xuz9yvx5.jpg",
+    "source": "literal"
+  },
+  "salvar-o-fogo-itamar-vieira-junior": {
+    "url": "https://covers.openlibrary.org/b/id/14834499-L.jpg",
+    "source": "literal"
+  },
+  "se-deus-me-chamar-nao-vou-mariana-salomao-carrara": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788569020455-L.jpg",
+    "source": "openlibrary"
+  },
+  "sergio-y-vai-a-america-alexandre-vidal-porto": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535924213/sergio-y-vai-a-america.jpg",
+    "source": "literal"
+  },
+  "so-garotos-patti-smith": {
+    "url": "https://assets.literal.club/2/cksvynl342403353g8gzzjin4ag.jpg",
+    "source": "literal"
+  },
+  "stoner-john-williams": {
+    "url": "https://acdn-us.mitiendanube.com/stores/001/301/257/products/img-6295-c6c3a8431b61f91ff117273813680013-640-0.webp",
+    "source": "literal"
+  },
+  "terrapreta-rita-carelli": {
+    "url": "https://assets.literal.club/cover/2/clqazdsoc14393630hi56i766wls.jpg",
+    "source": "literal"
+  },
+  "tese-sobre-uma-domesticacao-camila-sosa-villada": {
+    "url": "https://assets.literal.club/production/covers/useruploads/cm7x3f9l4001n0hygagoef4hx.jpeg",
+    "source": "literal"
+  },
+  "todos-nos-adoravamos-caubois-carol-bensimon": {
+    "url": "https://covers.openlibrary.org/b/id/10864860-L.jpg",
+    "source": "literal"
+  },
+  "torto-arado-itamar-vieira-junior": {
+    "url": "https://assets.literal.club/2/cksxkt25z2908762h8g2nn4oiol.jpg",
+    "source": "literal"
+  },
+  "travessuras-da-menina-ma-mario-vargas-llosa": {
+    "url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788573028089/travessuras-da-menina-ma.jpg",
+    "source": "literal"
+  },
+  "tudo-sobre-o-amor-bell-hooks": {
+    "url": "https://covers.openlibrary.org/b/isbn/9786587235301-L.jpg",
+    "source": "openlibrary"
+  },
+  "um-copo-de-colera-raduan-nassar": {
+    "url": "https://covers.openlibrary.org/b/id/12369841-L.jpg",
+    "source": "literal"
+  },
+  "um-de-nos-esta-mentindo-karen-m-mcmanus": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788501114181-L.jpg",
+    "source": "openlibrary"
+  },
+  "um-teto-todo-seu-virginia-woolf": {
+    "url": "https://assets.literal.club/3/cksxl59on4347378gvf3auaq7.jpg",
+    "source": "literal"
+  },
+  "vasto-mar-de-sargacos-jean-rhys": {
+    "url": "https://assets.literal.club/2/ckxs4pkg012912960igae22tct59.jpg",
+    "source": "literal"
+  },
+  "vespera-carla-madeira": {
+    "url": "https://covers.openlibrary.org/b/id/15136107-L.jpg",
+    "source": "literal"
+  },
+  "vida-querida-alice-munro": {
+    "url": "https://covers.openlibrary.org/b/id/12369844-L.jpg",
+    "source": "literal"
+  },
+  "vidas-secas-graciliano-ramos": {
+    "url": "https://covers.openlibrary.org/b/id/14158825-L.jpg",
+    "source": "literal"
+  },
+  "voragem-jun-ichiro-tanizaki": {
+    "url": "https://assets.literal.club/2/ckxs4yzys13913320igaey9cobqm.jpg",
+    "source": "literal"
+  },
+  "vozes-de-tchernobil-svetlana-aleksievitch": {
+    "url": "https://covers.openlibrary.org/b/isbn/9788535927085-L.jpg",
+    "source": "openlibrary"
+  },
+  "a-farsa-da-boa-preguica-ariano-suassuna": {
+    "none": true
+  },
+  "a-filha-perdida-elena-ferrante": {
+    "none": true
+  },
+  "a-metamorfose-franz-kafka": {
+    "none": true
+  },
+  "a-vida-mentirosa-dos-adultos-elena-ferrante": {
+    "none": true
+  },
+  "clarice-benjamin-moser": {
+    "none": true
+  },
+  "eu-sei-por-que-o-passaro-canta-na-gaiola-maya-angelou": {
+    "none": true
+  },
+  "incidente-em-antares-erico-verissimo": {
+    "none": true
+  },
+  "kitchen-banana-yoshimoto": {
+    "none": true
+  },
+  "me-chame-pelo-seu-nome-andre-aciman": {
+    "none": true
+  },
+  "minha-querida-sputnik-haruki-murakami": {
+    "none": true
+  },
+  "o-acontecimento-annie-ernaux": {
+    "none": true
+  },
+  "o-apartamento-danielle-steel": {
+    "none": true
+  },
+  "orlando-virginia-woolf": {
+    "none": true
+  },
+  "palestina-joe-sacco": {
+    "none": true
+  },
+  "tsugumi-banana-yoshimoto": {
+    "none": true
+  },
+  "um-amor-incomodo-elena-ferrante": {
+    "none": true
+  },
+  "um-lugar-bem-longe-daqui-delia-owens": {
+    "none": true
+  },
+  "uma-aprendizagem-ou-o-livro-dos-prazeres-clarice-lispector": {
+    "none": true
+  },
+  "a-mulher-que-escreveu-a-biblia-moacyr-scliar": {
+    "none": true
+  },
+  "mulherzinhas-louisa-may-alcott": {
+    "none": true
+  },
+  "o-romance-da-minha-vida-leonardo-padura": {
+    "none": true
+  }
+}

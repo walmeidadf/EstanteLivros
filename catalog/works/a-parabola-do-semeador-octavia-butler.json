@@ -29,7 +29,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788592795399-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/a-parabola-do-semeador-octavia-butler.jpg"
+  },
   "catalogerNote": "Título provisório 'A palavra do semeador' e autora 'Octavia Buttler' (grafia incorreta) identificados como 'A Parábola do Semeador', de Octavia Butler, tradução brasileira pela Editora Morro Branco (2018); nenhum candidato local correspondia.",
   "confidence": "high",
   "references": [

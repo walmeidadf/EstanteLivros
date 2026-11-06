@@ -29,8 +29,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/4/ckrm1sety930665183selkvqm6e.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788571644755-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/o-mundo-de-sofia-jostein-gaarder.jpg"
   },
   "catalogerNote": "Consenso total entre Literal e OpenLibrary (score 1.0) para título, autor, ISBN e editora (Companhia das Letras, 1995).",
   "confidence": "high",

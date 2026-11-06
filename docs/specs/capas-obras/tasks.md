@@ -114,18 +114,20 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
   - _Requisitos: 1.1, 2.1_
   - _Resultado (6/nov/2026):_ 207 baixadas e 16 com HTTP 404 (link quebrado na Literal). Melhor candidata por obra: 24 boas, 105 limítrofes, 78 baixas; 10 candidatas fora da faixa 2:3. Lado menor: mediana 319 px, mínimo 100 px, máximo 1763 px.
 
-- [ ] 13. **(revisão)** Escolher capas dos existentes
+- [x] 13. **(revisão)** Escolher capas dos existentes
   - Abrir `docs/plans/revisao-capas.html`; preencher `cover_choices.json` (real / `typographic` / `none`) e marcar `focus` onde o centro corta mal; rodar `--steps apply`.
   - _Requisitos: 4.1, 4.2, 6.4_
+  - _Decisão (6/nov/2026), tarefas 13 e 15 juntas:_ ficam só as capas que sustentam o padrão estético. Das 152 candidatas utilizáveis, 131 entram como capa real. 21 recebem `none` (tipográfica e backlog): 18 que a revisão visual reprovou (página de rosto escaneada, capa de edição estrangeira, proporção fora de 2:3 que perde as laterais no corte) e 3 com lado menor < 300 px. Nenhuma recebeu `focus`: o corte central serviu a todas as mantidas.
 
 - [x] 14. Buscar as que faltam/baixas (gratuito)
   - `--steps search` (OL por ISBN); as resolvidas vão à revisão; o resto entra em `capas-backlog.md`.
   - _Requisitos: 3.1, 3.2_
   - _Resultado (6/nov/2026):_ 271 consultas à Open Library, 0 falhas. Achou capa para 75 obras, mas só 1 é boa (74 limítrofes), e nenhuma limítrofe/baixa do catálogo ganhou alternativa boa. 150 obras ficam sem capa utilizável (`capas-backlog.md`).
 
-- [ ] 15. **(revisão)** Escolher as novas e aplicar
+- [x] 15. **(revisão)** Escolher as novas e aplicar
   - Revisar as candidatas da OL em `revisao-capas.html`; completar `cover_choices.json`; `--steps apply`.
   - _Requisitos: 4.1, 4.3_
+  - _Resultado:_ as candidatas da Open Library eram quase todas limítrofes e entraram na mesma revisão da tarefa 13. 171 obras seguem na tipográfica e em `capas-backlog.md` para a melhoria contínua (segunda onda).
 
 - [ ] 16. Fechar a spec
   - [ ] 16.1 `validate_catalog.py` em código 0; `npm run check` + `node --test` + `npm run build` verdes (capas derivadas no build).

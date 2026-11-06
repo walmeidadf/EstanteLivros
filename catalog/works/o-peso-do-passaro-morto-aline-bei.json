@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10833052-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/o-peso-do-passaro-morto-aline-bei.jpg"
   },
   "catalogerNote": "Consenso Literal/Open Library; romance de estreia de Aline Bei, vencedor do Prêmio Rio de Literatura, publicado pela Companhia das Letras (2017).",
   "confidence": "high",

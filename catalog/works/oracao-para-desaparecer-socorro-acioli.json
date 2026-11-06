@@ -31,8 +31,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://covers.openlibrary.org/b/id/15204631-L.jpg",
-    "source": "openlibrary"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9786559215706-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/oracao-para-desaparecer-socorro-acioli.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library; romance de realismo fantástico de Socorro Acioli publicado pela Companhia das Letras em 2023, confirmado na página oficial da editora.",
   "confidence": "high",

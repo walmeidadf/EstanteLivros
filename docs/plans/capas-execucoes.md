@@ -18,3 +18,11 @@ Chamadas: images 223 (cache 0) · Falhas: 16
 | search | sem capa gratuita: backlog 196 · Open Library 75 · sem ISBN: backlog 7 |
 
 Chamadas: openlibrary 387 (cache 0) · Falhas: 0
+
+## 2026-11-06 · apply · 281 obras
+
+| Etapa | Resultado |
+|---|---|
+| apply | capa real (literal) 103 · capa real (openlibrary) 28 |
+
+Chamadas: nenhuma · Falhas: 0

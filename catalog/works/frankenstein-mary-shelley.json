@@ -30,7 +30,11 @@
     "format": "capa dura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788594540188-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/frankenstein-mary-shelley.jpg"
+  },
   "catalogerNote": "Clássico canônico; escolhida a edição brasileira da DarkSide Books (coleção Medo Clássico, 2017, ISBN 9788594540188) como edição representativa, amplamente disponível e ilustrada, confirmada via busca web.",
   "confidence": "high",
   "references": [

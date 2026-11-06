@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535925074/judas.jpg",
-    "source": "busca_web"
+    "source": "literal",
+    "file": "covers/judas-amos-oz.jpg"
   },
   "catalogerNote": "Nome do autor corrigido (\"Amoz oz\" -> Amos Oz). Nenhum candidato local trazia a edição brasileira (só edições em inglês, holandês e eslovaco); confirmada por busca web a edição Companhia das Letras (2014, trad. Paulo Geiger). Há duas leituras (2015 e sem data) associadas à mesma obra.",
   "confidence": "high",

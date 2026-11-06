@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12372594-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/caim-jose-saramago.jpg"
   },
   "catalogerNote": "Último romance de Saramago, publicado originalmente pela Caminho (Portugal, 2009). Preferi como representativa a edição brasileira da Companhia das Letras (2020), presente nos candidatos OpenLibrary, por ser a edição de referência no Brasil.",
   "confidence": "high",

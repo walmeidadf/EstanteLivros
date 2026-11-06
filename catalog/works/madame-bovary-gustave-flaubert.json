@@ -28,7 +28,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788563560315-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/madame-bovary-gustave-flaubert.jpg"
+  },
   "catalogerNote": "Nenhum candidato local trazia edição em português; edição Penguin-Companhia das Letras (2011, trad. Mário Laranjeira) confirmada via busca como a tradução brasileira de referência.",
   "confidence": "high",
   "references": [

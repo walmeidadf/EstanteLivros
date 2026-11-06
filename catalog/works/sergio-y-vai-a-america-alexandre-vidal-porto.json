@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535924213/sergio-y-vai-a-america.jpg",
-    "source": "editora"
+    "source": "literal",
+    "file": "covers/sergio-y-vai-a-america-alexandre-vidal-porto.jpg"
   },
   "catalogerNote": "Título 'Sérgio vai à América' corresponde quase exatamente a 'Sergio Y. vai à América', de Alexandre Vidal Porto (Companhia das Letras, 2014); único candidato do Literal com essa grafia (score de título 0.95). O nome do autor na lista original ('Alessandro d Lobato') não corresponde a nenhum autor real localizado, tratado como erro de transcrição.",
   "confidence": "medium",

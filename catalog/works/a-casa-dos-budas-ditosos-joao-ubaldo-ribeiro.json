@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/13131553-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/a-casa-dos-budas-ditosos-joao-ubaldo-ribeiro.jpg"
   },
   "catalogerNote": "Literal e OpenLibrary concordam plenamente na edição original da Objetiva (1999).",
   "confidence": "high",

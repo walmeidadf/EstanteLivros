@@ -32,7 +32,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788579620638/a-festa-do-bode.jpg",
-    "source": "busca_web"
+    "source": "literal",
+    "file": "covers/a-festa-do-bode-mario-vargas-llosa.jpg"
   },
   "catalogerNote": "Candidatos locais só traziam a edição portuguesa 'A Festa do Chibo'; busca web confirmou a edição brasileira com o título usado pela Lila, publicada pela Alfaguara em 2011.",
   "confidence": "high",

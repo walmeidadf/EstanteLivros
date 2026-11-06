@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12811014-L.jpg",
-    "source": "openlibrary"
+    "source": "literal",
+    "file": "covers/o-homem-duplicado-jose-saramago.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library; escolhida a edição da Companhia das Letras (2008), com capa e ISBN disponíveis.",
   "confidence": "high",

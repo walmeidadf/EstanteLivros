@@ -31,7 +31,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535926828/a-confissao-da-leoa.jpg",
-    "source": "editora"
+    "source": "literal",
+    "file": "covers/a-confissao-da-leoa-mia-couto.jpg"
   },
   "catalogerNote": "Candidato Literal confirma a obra (score 1.0), mas trazia edição portuguesa (Caminho, ISBN 9789722125673); substituída pela edição brasileira Companhia das Letras (2012, ISBN 9788535926828), localizada via busca.",
   "confidence": "high",

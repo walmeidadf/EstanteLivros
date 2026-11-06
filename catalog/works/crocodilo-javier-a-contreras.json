@@ -30,7 +30,8 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535932812/crocodilo.jpg",
-    "source": "editora"
+    "source": "literal",
+    "file": "covers/crocodilo-javier-a-contreras.jpg"
   },
   "catalogerNote": "Título corrigido para 'Crocodilo' (sem artigo) e autor corrigido para Javier A. Contreras, escritor brasileiro; nenhum candidato local correspondia (títulos de uma letra 'O'); busca web identificou o romance vencedor do prêmio APCA 2019, publicado pela Companhia das Letras.",
   "confidence": "high",

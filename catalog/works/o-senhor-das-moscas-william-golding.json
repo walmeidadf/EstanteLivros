@@ -31,7 +31,11 @@
     "format": "brochura",
     "match": "representative"
   },
-  "cover": null,
+  "cover": {
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788579622878-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/o-senhor-das-moscas-william-golding.jpg"
+  },
   "catalogerNote": "Clássico amplamente conhecido; nenhum candidato Literal correspondia à obra (falsos positivos por título parecido, ex. 'O Senhor', 'O senhor das ilhas'); edição brasileira identificada via busca web (Alfaguara, 2014, trad. Sergio Flaksman).",
   "confidence": "high",
   "references": [

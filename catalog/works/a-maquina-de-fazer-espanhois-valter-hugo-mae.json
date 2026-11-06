@@ -29,8 +29,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://covers.openlibrary.org/b/id/12921134-L.jpg",
-    "source": "openlibrary"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788575038130-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/a-maquina-de-fazer-espanhois-valter-hugo-mae.jpg"
   },
   "catalogerNote": "Nome do autor corrigido para 'Valter Hugo Mãe' (grafia oficial); consenso entre Literal e Open Library para a obra. Romance do escritor português (2010); edição brasileira (Cosac Naify) escolhida a partir de registro do Open Library que agrega múltiplas edições sob ISBNs relacionados; ano da edição brasileira aproximado.",
   "confidence": "medium",

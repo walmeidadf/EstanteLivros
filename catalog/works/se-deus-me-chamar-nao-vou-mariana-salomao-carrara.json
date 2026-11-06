@@ -31,8 +31,9 @@
     "match": "representative"
   },
   "cover": {
-    "sourceUrl": "https://assets.literal.club/4/ckt02n7sx251441bt7o3oyevghz.jpg",
-    "source": "literal"
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788569020455-L.jpg",
+    "source": "openlibrary",
+    "file": "covers/se-deus-me-chamar-nao-vou-mariana-salomao-carrara.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance finalista do Prêmio Jabuti, publicado pela Editora Nós em 2019, confirmado via busca web.",
   "confidence": "high",
