@@ -310,5 +310,27 @@ class RevisaoCliTest(unittest.TestCase):
         self.assertEqual(self.run_quiet(self.root / "nao-existe", self.themes, self.out), 2)
 
 
+class CatalogoRealTest(unittest.TestCase):
+    """O catálogo e o themes.json versionados não podem divergir (R4.2, R4.4)."""
+
+    def test_catalogo_real_passa_o_validador_com_a_taxonomia(self):
+        from lib.checks import check_catalog, load_catalog, load_schemas
+
+        root = helpers.ROOT
+        cfg = ThemeConfig.load(root / "pipeline" / "config" / "themes.json")
+        cat = load_catalog(root / "catalog")
+        issues = check_catalog(cat, load_schemas(root / "catalog" / "schema"), themes_cfg=cfg)
+        self.assertEqual([i.format() for i in issues], [])
+        self.assertEqual(set(cat.vocabularies["themes"]), {t for w in cat.works.values() for t in w["themes"]})
+        self.assertTrue(set(cat.vocabularies["themes"]) <= set(cfg.taxonomy))
+        self.assertTrue(all(w.get("tags") for w in cat.works.values()))  # tags em todas as obras
+
+    def test_piso_do_catalogo_real(self):
+        from lib.checks import load_catalog
+
+        summary = themes.summarize(load_catalog(helpers.ROOT / "catalog").works.values())
+        self.assertEqual(summary.below_floor, [])
+
+
 if __name__ == "__main__":
     unittest.main()

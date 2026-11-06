@@ -15,6 +15,10 @@
     "humor"
   ],
   "themes": [
+    "guerra",
+    "poder"
+  ],
+  "tags": [
     "exército",
     "prostituição",
     "burocracia",
@@ -32,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788560281121/pantaleao-e-as-visitadoras.jpg",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/pantaleao-e-as-visitadoras-mario-vargas-llosa.jpg"
   },
   "catalogerNote": "Autor tinha erro de grafia (\"LLosa\" -> Llosa). O único candidato local plausível (isbn 9789722032605) é uma edição portuguesa com título mal grafado (\"visitadores\"); optou-se pela edição brasileira representativa (Alfaguara, 2007), confirmada por busca web.",

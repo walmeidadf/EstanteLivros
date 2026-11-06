@@ -17,6 +17,11 @@
   "themes": [
     "maternidade",
     "gênero",
+    "doença"
+  ],
+  "tags": [
+    "maternidade",
+    "gênero",
     "reprodução",
     "cuidado"
   ],
@@ -32,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559791309/manifesto-antimaternalista.jpg",
-    "source": "literal",
+    "source": "editora",
     "file": "covers/manifesto-antimaternalista-vera-iaconelli.jpg"
   },
   "catalogerNote": "Nenhum candidato Literal correspondia à obra (todos eram livros 'Manifesto' de outros autores); busca web confirmou edição da Zahar (2023) diretamente no site da editora.",

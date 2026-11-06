@@ -97,21 +97,25 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
   - _Requisitos: 1.5, 2.1, 9.1_
   - _Resultado (6/nov/2026):_ rascunho em `temp/temas/themes.json` (gerado por `temp/temas/draft.py`, fora do commit). 58 temas canônicos, todos com 5 ou mais obras (escravidão, educação e nápoles no piso exato); 493 originais mapeados, 51 só tag (lugares e termos únicos); 45 originais com mais de um destino. Média de 3,40 temas por obra (era 3,99); 12 obras com um tema só (quase todas não ficção). Build previsto: 58 páginas `/tema`, 646 no total. Início: os mesmos 4 temas, em outra ordem (família 77, memória 65, amor 46, identidade 43). Documento para a revisão: `docs/plans/revisao-temas.md` (gerado do rascunho, ainda não commitado).
 
-- [ ] 11. **(revisão)** Revisar com a Lila
+- [x] 11. **(revisão)** Revisar com a Lila
   - Abrir `docs/plans/revisao-temas.md`; a Lila indica ajustes (fundir, separar, promover a só tag); eu edito o `themes.json` e regenero. Iterar até aprovar. Registrar a aprovação (data e ajustes) aqui.
   - _Requisitos: 5.6, 9.2, 9.3_
+  - _Aprovação (6/nov/2026):_ o mantenedor dispensou a rodada de revisão do documento e manteve o rascunho **como está, sem ajustes** (58 temas, 493 originais mapeados). A Lila informou estar satisfeita. Os quatro pontos levantados (tamanho de "família", "nápoles" como único lugar, nome "existencialismo", fusões de classe social, feminismo e violência) ficam como estão e podem ser revistos depois editando `themes.json`; o validador (`theme.drift`) acusa se o catálogo não acompanhar.
 
-- [ ] 12. Aplicar ao catálogo (branch + PR)
+- [x] 12. Aplicar ao catálogo (branch + PR)
   - Mover `themes.json` aprovado para `pipeline/config/`; `python3 pipeline/migrate_legacy.py`; conferir o diff de `catalog/` (themes/tags/vocabulário) e o `cobertura.md`; validador em 0 erros. `themes.json` + catálogo normalizado no mesmo commit.
   - _Requisitos: 3.1, 3.6, 4.2, 9.4, 9.5_
+  - _Resultado (6/nov/2026):_ migração real sem slugs novos; 302 obras com `themes` e `tags`, vocabulário com 58 temas; idempotente nos dados reais. **Achado e correção:** o diff mostrou 60 capas alteradas, o que não deveria acontecer. Duas causas, ambas das capas (PR #10): (1) nas escolhas provisórias eu gravei `source: "literal"` para toda capa do catálogo, e o CSV diz `openlibrary`, `editora` ou `busca_web` (43 obras com `source` errado); (2) quando a Lila escolheu a imagem da Open Library no lugar da do catálogo (17 obras), o `merge_cover` trocava a `sourceUrl` pela do CSV e mantinha o `file`, casando a imagem de uma origem com a URL de outra. Corrigido: `merge_cover` mantém `file` e a proveniência dele juntos quando a origem difere, e deixa o CSV mandar quando a URL é a mesma (o que corrige a `source` errada); `cover_choices.json` perdeu o `source` fixo. Resultado: só 43 valores de `source` mudaram, nenhum `sourceUrl` nem `file`; `enrich_covers.py --steps apply` segue sem efeito. 2 testes novos de migração.
 
 ## Fechar a spec
 
 - [ ] 13. Fechamento
-  - [ ] 13.1 `validate_catalog.py` 0 erros; `npm run check` + `node --test` + `npm run build` verdes; total de páginas = `1080 − (493 − N) + 1`.
+  - [x] 13.1 `validate_catalog.py` 0 erros; `npm run check` + `node --test` + `npm run build` verdes; total de páginas = `1080 − (493 − N) + 1`.
     - _Requisitos: 6.1, 6.6, 8.5_
-  - [ ] 13.2 Diff de HTML contra a `main`: Linha do tempo, Ano, País, Idioma e Sem data inalterados; nenhuma `tag` fora da taxonomia em `dist/` nem em `search-index.json`.
+    - _Resultado:_ validador 0 erros; 272 testes do pipeline e 159 do app; `npm run check` limpo; build com **646 páginas** (= 1080 − 493 + 58 + 1), 58 de tema.
+  - [x] 13.2 Diff de HTML contra a `main`: Linha do tempo, Ano, País, Idioma e Sem data inalterados; nenhuma `tag` fora da taxonomia em `dist/` nem em `search-index.json`.
     - _Requisitos: 6.3, 6.4, 10.5_
+    - _Resultado:_ mudaram só Início (1), Atlas (2), Tema (55 das 58; 3 idênticas), Obra (302) e Autoria (35). Ano (14), Idioma (15), País (36), Linha do tempo e vitrine idênticos ao baseline; 435 páginas de tema extintas. Nenhuma `tag` só-tag aparece em HTML ou no índice de busca, exceto onde é nome legítimo (países, a autora Clarice Lispector, o título *Doutor Jivago*). Os 1177 links `/tema/` resolvem.
   - [ ] 13.3 No preview do PR: `curl -sI` em rota inexistente (status 404) e olhada em Início, Atlas (nuvem), Obra e Autoria (desktop + celular). Registrar o status aqui.
     - _Requisitos: 8.4_
   - [ ] 13.4 Atualizar `ROADMAP.md` (F2.3 feita), `AGENTS.md` (`review_themes.py`), `DESIGN_HANDOFF.md` (§12.4 resolvido) e escrever `docs/plans/handover-temas.md`.

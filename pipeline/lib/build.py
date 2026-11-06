@@ -81,11 +81,16 @@ def merge_cover(cover_url: Optional[str], cover_source: Optional[str],
     prev = previous if isinstance(previous, dict) else {}
     enriched = {k: prev[k] for k in _ENRICHED_COVER_FIELDS
                 if isinstance(prev, dict) and prev.get(k) is not None}
-    if cover_url:
+    # O `file` e a proveniência dele andam juntos. Se a Lila escolheu uma imagem de
+    # OUTRA origem que a do legado (ex.: Open Library no lugar da Literal), a
+    # sourceUrl/source do arquivo são mantidas; senão o legado manda (inclusive
+    # para corrigir uma `source` gravada errada).
+    other_origin = bool(prev.get("file")) and prev.get("sourceUrl") not in (None, cover_url)
+    if cover_url and not other_origin:
         return {"sourceUrl": cover_url, "source": cover_source, **enriched}
-    # Sem URL no legado: só sobra capa se já havia campo enriquecido, e nesse
-    # caso a proveniência (sourceUrl/source) do catálogo atual é mantida — o
-    # schema exige sourceUrl numa capa não nula.
+    # Sem URL no legado, ou arquivo de outra origem: só sobra capa se já havia
+    # campo enriquecido, com a proveniência do catálogo atual — o schema exige
+    # sourceUrl numa capa não nula.
     if not enriched or not prev.get("sourceUrl"):
         return None
     return {"sourceUrl": prev.get("sourceUrl"), "source": prev.get("source"), **enriched}

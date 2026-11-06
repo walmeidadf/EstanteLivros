@@ -15,6 +15,10 @@
     "jornalismo investigativo"
   ],
   "themes": [
+    "segunda guerra mundial",
+    "imigração"
+  ],
+  "tags": [
     "nazismo",
     "Josef Mengele",
     "imigração",
@@ -33,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707044651i/207240354.jpg",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/baviera-tropical-betina-anton.jpg"
   },
   "catalogerNote": "Nenhum candidato local correspondia (todos eram guias de viagem sobre a região da Baviera). Identificado por busca web como reportagem biográfica de Betina Anton sobre Josef Mengele, publicada pela Todavia em 2023 (Prêmio Jabuti 2024).",

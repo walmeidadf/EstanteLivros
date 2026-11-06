@@ -14,6 +14,12 @@
     "literatura regionalista"
   ],
   "themes": [
+    "natureza",
+    "imigração",
+    "classe social",
+    "nordeste"
+  ],
+  "tags": [
     "seca",
     "migração",
     "pobreza",
@@ -31,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/14158825-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/vidas-secas-graciliano-ramos.jpg"
   },
   "catalogerNote": "Clássico da literatura brasileira (romance de 30); escolhida edição padrão da Record (ISBN 9788501114785), a mais amplamente disponível no mercado, confirmada via Open Library e busca web. Candidatos Literal traziam edições antigas sem ISBN ou reedições especiais menos representativas.",

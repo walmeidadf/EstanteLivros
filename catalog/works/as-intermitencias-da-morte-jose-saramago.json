@@ -16,6 +16,11 @@
   ],
   "themes": [
     "morte",
+    "poder",
+    "sociedade"
+  ],
+  "tags": [
+    "morte",
     "burocracia",
     "mortalidade",
     "sociedade"
@@ -32,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/13180964-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/as-intermitencias-da-morte-jose-saramago.jpg"
   },
   "catalogerNote": "Consenso entre provedores confirma a obra; escolhida a edição brasileira Companhia das Letras (2005) como representativa, em vez das edições portuguesas (Caminho, Leya) presentes nos candidatos Literal.",

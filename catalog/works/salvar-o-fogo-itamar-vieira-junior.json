@@ -13,6 +13,14 @@
     "ficção literária"
   ],
   "themes": [
+    "nordeste",
+    "amor",
+    "comunidade",
+    "resistência",
+    "crime",
+    "violência"
+  ],
+  "tags": [
     "Bahia",
     "amor",
     "interior da Bahia",
@@ -33,7 +41,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/14834499-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/salvar-o-fogo-itamar-vieira-junior.jpg"
   },
   "catalogerNote": "Corrigido nome do autor (Vieria->Vieira). Literal e OpenLibrary concordam plenamente (score combinado 0.99/1.0) em título, autor e ano, coincidindo com o ano de leitura (2023).",

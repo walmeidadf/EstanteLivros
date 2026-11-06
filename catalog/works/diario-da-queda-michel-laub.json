@@ -16,6 +16,15 @@
   "themes": [
     "memória",
     "trauma",
+    "identidade",
+    "segunda guerra mundial",
+    "culpa",
+    "família",
+    "paternidade"
+  ],
+  "tags": [
+    "memória",
+    "trauma",
     "identidade judaica",
     "Holocausto",
     "culpa",
@@ -33,7 +42,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535918175/diario-da-queda.jpg",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/diario-da-queda-michel-laub.jpg"
   },
   "catalogerNote": "'Michel Lab' é um erro de grafia para o autor brasileiro 'Michel Laub'; nenhum candidato local correspondia à obra. Identificado por busca web como 'Diário da queda' (2011, Companhia das Letras), romance premiado sobre memória, culpa e Holocausto, condizente com o título abreviado 'A queda' da lista original.",

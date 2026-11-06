@@ -15,6 +15,11 @@
   ],
   "themes": [
     "feminismo",
+    "gênero",
+    "cotidiano"
+  ],
+  "tags": [
+    "feminismo",
     "papéis de gênero",
     "Rio de Janeiro",
     "vida doméstica"
@@ -31,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10839816-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/a-vida-invisivel-de-euridice-gusmao-martha-batalha.jpg"
   },
   "catalogerNote": "Título/autora conferem exatamente com candidato Literal (score 1.0) e Open Library; ano e editora (2016, Companhia das Letras) confirmados por ambas as fontes.",

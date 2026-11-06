@@ -14,6 +14,12 @@
     "narrativa epistolar"
   ],
   "themes": [
+    "envelhecimento",
+    "memória",
+    "resistência",
+    "amizade"
+  ],
+  "tags": [
     "velhice",
     "memória",
     "resistência",
@@ -31,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/11143086-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/carta-a-rainha-louca-maria-valeria-rezende.jpg"
   },
   "catalogerNote": "Título e autora batem exatamente com candidato Literal (score 1.0) e Open Library, que juntos confirmam ISBN, ano (2019) e editora (Alfaguara).",

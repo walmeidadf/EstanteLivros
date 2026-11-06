@@ -15,6 +15,12 @@
   ],
   "themes": [
     "luto",
+    "literatura",
+    "família",
+    "doença"
+  ],
+  "tags": [
+    "luto",
     "leitura",
     "família",
     "câncer",
@@ -32,7 +38,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788539004997/o-clube-do-livro-do-fim-da-vida.jpg",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/o-clube-do-livro-do-fim-da-vida-will-schwalbe.jpg"
   },
   "catalogerNote": "O nome do autor estava com grafia incorreta (\"Will Shaube\" -> Will Schwalbe); nenhum candidato local correspondia à obra, então a identificação e a edição brasileira (Objetiva/Companhia das Letras, 2013) foram confirmadas por busca web.",

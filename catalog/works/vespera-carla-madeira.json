@@ -15,6 +15,11 @@
   "themes": [
     "família",
     "violência",
+    "culpa"
+  ],
+  "tags": [
+    "família",
+    "violência",
     "perdão"
   ],
   "edition": {
@@ -29,7 +34,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15136107-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/vespera-carla-madeira.jpg"
   },
   "catalogerNote": "Literal e OpenLibrary concordam plenamente; edição única publicada (2021) coincide com o ano de leitura relatado (2022), justificando edition_match exact.",

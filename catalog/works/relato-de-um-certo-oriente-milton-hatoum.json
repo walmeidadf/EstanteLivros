@@ -13,6 +13,12 @@
     "ficção literária"
   ],
   "themes": [
+    "natureza",
+    "memória",
+    "família",
+    "imigração"
+  ],
+  "tags": [
     "Amazônia",
     "memória",
     "família",
@@ -30,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15109346-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/relato-de-um-certo-oriente-milton-hatoum.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); romance de estreia de Milton Hatoum (1989), ambientado em Manaus.",

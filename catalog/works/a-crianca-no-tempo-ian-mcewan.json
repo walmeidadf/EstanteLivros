@@ -13,6 +13,11 @@
     "ficção literária"
   ],
   "themes": [
+    "luto",
+    "tempo",
+    "paternidade"
+  ],
+  "tags": [
     "perda",
     "tempo",
     "paternidade",
@@ -30,7 +35,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930856/a-crianca-no-tempo.jpg",
-    "source": "literal",
+    "source": "editora",
     "file": "covers/a-crianca-no-tempo-ian-mcewan.jpg"
   },
   "catalogerNote": "Nome do autor corrigido para Ian McEwan; usada a edição brasileira da Companhia das Letras (2018) em vez da edição portuguesa (Público, 2003) do candidato Literal, por ser mais amplamente disponível no Brasil.",
