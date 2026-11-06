@@ -63,7 +63,7 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
 - [x] 7. Etapa `search` — só gratuito (`lib/covers/search.py`, `lib/providers/openlibrary.py`)
   - [x] 7.1 Provedor `openlibrary`: `covers.openlibrary.org/b/isbn/{isbn}-L.jpg?default=false` por `isbn13` e, como alternativa, `isbn10`; 404 (sem capa) tratado e cacheado.
     - _Requisitos: 3.1, 3.4_
-  - [x] 7.2 Fila: obras sem `sourceUrl` + classificadas "baixa"; imagem recebida passa pela aferição do R2; placeholder/pequena descartada; sem fonte → backlog. **Sem SerpApi/Tavily.**
+  - [x] 7.2 Fila: obras sem `sourceUrl` + as que não têm capa "boa" (baixas, limítrofes, download com erro); imagem recebida passa pela aferição do R2; placeholder/pequena descartada; sem fonte → backlog. **Sem SerpApi/Tavily.**
     - _Requisitos: 3.1, 3.2, 3.3_
   - [x] 7.3 User-Agent identificável e pausa `openlibrary` do `enrich.json`.
     - _Requisitos: 3.5_
@@ -118,9 +118,10 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
   - Abrir `docs/plans/revisao-capas.html`; preencher `cover_choices.json` (real / `typographic` / `none`) e marcar `focus` onde o centro corta mal; rodar `--steps apply`.
   - _Requisitos: 4.1, 4.2, 6.4_
 
-- [ ] 14. Buscar as que faltam/baixas (gratuito)
+- [x] 14. Buscar as que faltam/baixas (gratuito)
   - `--steps search` (OL por ISBN); as resolvidas vão à revisão; o resto entra em `capas-backlog.md`.
   - _Requisitos: 3.1, 3.2_
+  - _Resultado (6/nov/2026):_ 271 consultas à Open Library, 0 falhas. Achou capa para 75 obras, mas só 1 é boa (74 limítrofes), e nenhuma limítrofe/baixa do catálogo ganhou alternativa boa. 150 obras ficam sem capa utilizável (`capas-backlog.md`).
 
 - [ ] 15. **(revisão)** Escolher as novas e aplicar
   - Revisar as candidatas da OL em `revisao-capas.html`; completar `cover_choices.json`; `--steps apply`.

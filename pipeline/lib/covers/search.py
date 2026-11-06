@@ -1,4 +1,4 @@
-"""Etapa `search`: capas em fontes GRATUITAS para as obras sem capa utilizável (R3).
+"""Etapa `search`: capas em fontes GRATUITAS para as obras sem capa boa (R3).
 
 Só a Open Library Covers por ISBN. SerpApi e Tavily ficam para uma segunda onda
 (paga): obras sem resolução aqui entram em `docs/plans/capas-backlog.md`.
@@ -12,14 +12,22 @@ from ..images import sniff
 from ..providers import openlibrary
 from .context import CoverContext
 from .download import store_candidate
-from .measure import LOW, classify, describe
+from .measure import GOOD, LOW, classify, describe
 
 
 def _usable(entry: Dict[str, Any]) -> bool:
     return entry.get("klass") not in (None, LOW)
 
 
+def _good(entry: Dict[str, Any]) -> bool:
+    return entry.get("klass") == GOOD
+
+
 def pending(ctx: CoverContext, work: Dict[str, Any]) -> bool:
+    """Busca quando a obra ainda não tem uma capa BOA (lado menor ≥ goodMinSide).
+
+    Inclui as sem capa, as baixas e as limítrofes: para estas, a Open Library
+    pode oferecer uma alternativa melhor, e a Lila compara na revisão."""
     st = ctx.work_state(work["slug"])
     if st.get("searched") and not ctx.refresh:
         return False
@@ -30,7 +38,7 @@ def pending(ctx: CoverContext, work: Dict[str, Any]) -> bool:
             st.get("downloadError", {}).get("url") == cover["sourceUrl"]
         if not attempted:
             return False
-    return not any(_usable(c) for c in st["candidates"])
+    return not any(_good(c) for c in st["candidates"])
 
 
 def isbns(work: Dict[str, Any]) -> List[str]:

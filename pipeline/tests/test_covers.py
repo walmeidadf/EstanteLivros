@@ -189,6 +189,28 @@ class CoversCliTest(unittest.TestCase):
         self.assertIn(RARO, backlog)
         self.assertNotIn(TORTO, backlog)
 
+    def test_limitrofe_tambem_busca_alternativa(self):
+        # Capa do catálogo limítrofe (350×525) + ISBN: a Open Library oferece uma melhor ao lado.
+        self.web.routes.insert(0, ("GET", "img.test/veg.png", (200, helpers.tiny_png(350, 525), PNG)))
+        self.web.routes.insert(0, ("GET", "covers.openlibrary.org/b/isbn/9788588808294",
+                                   (200, helpers.tiny_png(500, 750), PNG)))
+        self.run_cli("--steps", "download,measure,search")
+        veg = self.state()[VEG]
+        self.assertEqual({(c["origin"], c["klass"]) for c in veg["candidates"]},
+                         {("catalog", "borderline"), ("openlibrary", "good")})
+        self.assertFalse(veg["noFreeSource"])
+        backlog = (self.root / "docs" / "plans" / "capas-backlog.md").read_text(encoding="utf-8")
+        self.assertNotIn(VEG, backlog)
+
+    def test_limitrofe_sem_alternativa_continua_utilizavel_e_fora_do_backlog(self):
+        self.web.routes.insert(0, ("GET", "img.test/veg.png", (200, helpers.tiny_png(350, 525), PNG)))
+        self.web.routes.insert(0, ("GET", "covers.openlibrary.org/b/isbn/9788588808294", (404, b"", {})))
+        self.run_cli("--steps", "download,measure,search")
+        veg = self.state()[VEG]
+        self.assertEqual([c["origin"] for c in veg["candidates"]], ["catalog"])
+        self.assertFalse(veg["noFreeSource"])  # a limítrofe do catálogo ainda é utilizável
+        self.assertNotIn(VEG, (self.root / "docs" / "plans" / "capas-backlog.md").read_text(encoding="utf-8"))
+
     def test_ol_sem_capa_404_e_placeholder_pequeno(self):
         self.web.routes.insert(0, ("GET", "covers.openlibrary.org", (404, b"", {})))
         self.run_cli("--steps", "download,measure,search")

@@ -85,7 +85,7 @@ de baixa resolução usando só fontes gratuitas, para não gastar cota nesta on
 
 #### Critérios de aceitação
 
-1. Para obras sem `cover.sourceUrl` e para as classificadas como "baixa", o script SHALL buscar uma capa **só em fontes gratuitas**, nesta ordem: (a) a própria `cover.sourceUrl`, quando existir; (b) a Open Library Covers por `isbn13`, e por `isbn10` como alternativa.
+1. Para obras sem `cover.sourceUrl` e para as que ainda não têm uma capa "boa" (classificadas como "baixa" ou "limítrofe", ou cujo download falhou), o script SHALL buscar uma capa **só em fontes gratuitas**, nesta ordem: (a) a própria `cover.sourceUrl`, quando existir; (b) a Open Library Covers por `isbn13`, e por `isbn10` como alternativa.
 2. THE script SHALL NOT chamar SerpApi nem Tavily nesta spec. As obras que nenhuma fonte gratuita resolver SHALL ser registradas num backlog (`docs/plans/capas-backlog.md`) para uma segunda onda.
 3. WHEN a Open Library devolver um placeholder (imagem "sem capa") ou uma imagem abaixo de 250 px, THE script SHALL descartá-la e tratar a obra como sem capa gratuita.
 4. THE consulta por ISBN SHALL pedir o maior tamanho disponível da Open Library (sufixo `-L`), e a resposta SHALL passar pela aferição de resolução do R2.
