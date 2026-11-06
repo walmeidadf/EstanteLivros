@@ -129,8 +129,9 @@ Dependências: 1 → 2 → 3 → {4, 5, 6} → 7 → 8 → {9, 10} → 11 → 12
   - _Requisitos: 4.1, 4.3_
   - _Resultado:_ as candidatas da Open Library eram quase todas limítrofes e entraram na mesma revisão da tarefa 13. 171 obras seguem na tipográfica e em `capas-backlog.md` para a melhoria contínua (segunda onda).
 
-- [ ] 16. Fechar a spec
-  - [ ] 16.1 `validate_catalog.py` em código 0; `npm run check` + `node --test` + `npm run build` verdes (capas derivadas no build).
+- [x] 16. Fechar a spec
+  - [x] 16.1 `validate_catalog.py` em código 0; `npm run check` + `node --test` + `npm run build` verdes (capas derivadas no build).
     - _Requisitos: 5.5, 7.6_
-  - [ ] 16.2 Conferir `/styleguide` e uma grade real (desktop + celular); atualizar `ROADMAP.md` (F2 item 2) e escrever o handover, anotando o backlog da 2ª onda (paga) e o ponto futuro de renomear `photo.author` → `photo.credit`.
+  - [x] 16.2 Conferir `/styleguide` e uma grade real (desktop + celular); atualizar `ROADMAP.md` (F2 item 2) e escrever o handover, anotando o backlog da 2ª onda (paga) e o ponto futuro de renomear `photo.author` → `photo.credit`.
     - _Requisitos: 9.2_
+  - _Como ficou:_ a conferência visual foi feita no preview do PR #10 (grade, Início, Idioma e Obra, desktop e celular); o `/styleguide` não foi aberto (este PR não o toca). ROADMAP, AGENTS, TECH e handoff atualizados; handover em `docs/plans/handover-capas.md`.

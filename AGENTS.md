@@ -62,6 +62,23 @@ python3 -m unittest discover -s pipeline/tests # testes
 O validador sai com código 1 se houver qualquer erro. Rode-o depois de toda
 alteração no `catalog/`.
 
+### Capas de obras (gratuito: URL do catálogo e Open Library por ISBN)
+A capa real nunca entra sozinha: a Lila escolhe por obra. Sem SerpApi/Tavily.
+
+```bash
+python3 pipeline/enrich_covers.py --dry-run                 # plano, sem baixar nada
+python3 pipeline/enrich_covers.py --steps download,measure  # mestres do catálogo → cache local
+python3 pipeline/enrich_covers.py --steps search            # Open Library por ISBN
+# revisar docs/plans/revisao-capas.html e preencher pipeline/config/cover_choices.json
+python3 pipeline/enrich_covers.py --steps apply             # aplica as escolhas ao catálogo
+python3 pipeline/enrich_covers.py --only slug-da-obra       # manutenção (obra nova)
+```
+
+- Escolhas: `{"url": …, "focus": "top"}` usa a capa real; `{"typographic": true}`
+  mantém a tipográfica (revisada); `{"none": true}` vai ao backlog.
+- Limiares em `enrich.json` (bloco `cover`): boa ≥ 400 px, baixa < 250 px.
+- Backlog em `docs/plans/capas-backlog.md`; log em `docs/plans/capas-execucoes.md`.
+
 ### Enriquecimento de autorias (Wikidata, país, foto, bio)
 Chaves em `.env` (modelo: `.env.example`). Rode **sempre** `--dry-run` antes:
 ele mostra o que gastaria (OpenAI, SerpApi, Tavily) sem gastar.
@@ -132,10 +149,16 @@ python3 pipeline/review_summaries.py --approve autoria:slug # aprovar (ou --reje
   `DescriptionList`, `FactLinks`. Sem `<script>` nas duas telas. 151 testes
   verdes; build com **1080 páginas**. Validada em produção (desktop + celular),
   PRs #7, #8 (alinhar cabeçalhos no desktop) e #9 (big numbers em faixa).
-- **Próximo (nova sessão): a F3 do app fechou**; falta só **S6 (`pwa-offline`)**
-  e **S7 (`compartilhar`)**. O caminho recomendado é retomar a **F2** (capas,
-  temas, resumos de ano/país), agora corrigindo o que o app mostra. Ver
-  `docs/plans/handover-s5-s6.md`.
+- **F2.2 (`capas-obras`) concluída — no ar (PR #10).** 131 de 302 obras com capa
+  real em `catalog/media/covers/`; 171 na tipográfica e em
+  `docs/plans/capas-backlog.md`. Só entram capas de padrão estético alto (a
+  maioria das da Literal tem lado menor < 400 px). `images.ts` deriva capas
+  (2:3, AVIF, `focus`), `cover-selection.ts` decide real × tipográfica. 219
+  testes do pipeline e 156 do app verdes. Ver `docs/plans/handover-capas.md`.
+- **Próximo (nova sessão):** F2 restante (**temas**, **resumos de ano/país**,
+  **títulos originais**), **S6 (`pwa-offline`)** e **S7 (`compartilhar`)**. A
+  lista completa, com o botão "Compartilhar {ano}" da S7, está em
+  `docs/ROADMAP.md` ("Próximos passos").
 - Specs em `docs/specs/` (`.kiro/specs` é link simbólico para lá).
 - Deploy/segredos: token do Cloudflare é secret de CI no GitHub (não no `.env`);
   `gh secret set CLOUDFLARE_API_TOKEN` após rotacionar. Detalhes em `infra/README.md`.

@@ -326,6 +326,12 @@ Para cada tela: o arquivo de referência, a rota sugerida, o conteúdo e os link
    ~~Obra (§6.9) e Autoria (§6.8).~~ Feito na S5.
 2. Layout desktop: conteúdo centralizado em largura máxima (feito em todas as
    telas até a S5). Falta: mais colunas na grade e setas nos carrosséis.
-3. Card de livro para compartilhar (1:1 ou 4:5) — S7.
+3. Card de livro para compartilhar (1:1 ou 4:5) — S7. O botão "Compartilhar
+   {ano}" da tela Ano (§6.3) e o da Obra (§6.9) também são S7 e só aparecem no
+   modo autenticado da Lila.
+6. Capas (F2.2, feito): a capa real aparece no lugar da tipográfica quando a
+   Lila escolheu uma (131 de 302). Corte central 2:3; `focus` opcional por obra.
+   Em aberto: a capa da Obra usa o tamanho de destaque (136 px) e poderia ser
+   maior.
 4. Definir quais temas viram carrossel no Início (sugestão: os 4 mais frequentes + "Lidos duas vezes").
 5. Fluxo de revisão dos resumos gerados pela Lila (fora deste escopo).

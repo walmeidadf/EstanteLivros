@@ -9,7 +9,8 @@
 - Validação do catálogo no build com **Zod**. Catálogo inválido quebra o build.
 - PWA com `@vite-pwa/astro` (manifest, offline, instalação no Android).
 - Imagens: derivados WebP/AVIF (2:3, corte central) gerados no build a partir dos
-  mestres em `catalog/media/`. Nunca fazer hotlink de imagens externas.
+  mestres em `catalog/media/` (`authors/` para fotos, `covers/` para capas de
+  obra). Nunca fazer hotlink de imagens externas.
 - Retrospectiva e cards de compartilhamento: Satori + resvg no build (PNG
   1080×1920), entregues pela Web Share API.
 - Fontes: Bodoni Moda, Manrope e Noto Serif (KR, JP, Hebrew) sob demanda.
