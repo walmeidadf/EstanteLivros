@@ -92,9 +92,10 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## Dados reais: mapa, revisão e aplicação
 
-- [ ] 10. Redigir a taxonomia e o mapa (rascunho em `temp/`)
+- [x] 10. Redigir a taxonomia e o mapa (rascunho em `temp/`)
   - Listar os 496 originais com contagem e co-ocorrência; núcleo nos 52 com 5+ obras; fusões e temas novos para a cauda; mapear cada original (núcleo / tema novo / vários / só tag). `themes.json` fica em `temp/temas/` (fora do commit). Rodar `review_themes.py` apontando para ele.
   - _Requisitos: 1.5, 2.1, 9.1_
+  - _Resultado (6/nov/2026):_ rascunho em `temp/temas/themes.json` (gerado por `temp/temas/draft.py`, fora do commit). 58 temas canônicos, todos com 5 ou mais obras (escravidão, educação e nápoles no piso exato); 493 originais mapeados, 51 só tag (lugares e termos únicos); 45 originais com mais de um destino. Média de 3,40 temas por obra (era 3,99); 12 obras com um tema só (quase todas não ficção). Build previsto: 58 páginas `/tema`, 646 no total. Início: os mesmos 4 temas, em outra ordem (família 77, memória 65, amor 46, identidade 43). Documento para a revisão: `docs/plans/revisao-temas.md` (gerado do rascunho, ainda não commitado).
 
 - [ ] 11. **(revisão)** Revisar com a Lila
   - Abrir `docs/plans/revisao-temas.md`; a Lila indica ajustes (fundir, separar, promover a só tag); eu edito o `themes.json` e regenero. Iterar até aprovar. Registrar a aprovação (data e ajustes) aqui.
@@ -115,3 +116,5 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
     - _Requisitos: 8.4_
   - [ ] 13.4 Atualizar `ROADMAP.md` (F2.3 feita), `AGENTS.md` (`review_themes.py`), `DESIGN_HANDOFF.md` (§12.4 resolvido) e escrever `docs/plans/handover-temas.md`.
     - _Requisitos: —_
+
+_Registro (6/nov/2026), preview do PR #11:_ rotas existentes 200; `/tema/rota-que-nao-existe` e `/obra/nao-existe` devolvem **404** com a página nova (título "Página não encontrada"); `/404.html` responde 308 para `/404`. A parte do status do 13.3 está comprovada; falta a olhada visual depois da migração.
