@@ -6,6 +6,7 @@ from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
 from .checks import Catalog
 from .names import AuthorGroup, find_suspects, unify_key
+from .themes import THEME_FLOOR, summarize
 from .titles import has_non_latin
 
 Row = Tuple[str, int, int]
@@ -77,6 +78,35 @@ def _table(rows: List[Row]) -> List[str]:
     return lines
 
 
+def theme_lines(works: List[Dict[str, Any]]) -> List[str]:
+    """Seção de temas (F2.3): calculada só do catálogo, sem o themes.json."""
+    s = summarize(works)
+    avg = f"{s.avg_per_work:.2f}".replace(".", ",")
+    lines = [
+        "| Métrica | Valor |",
+        "|---|---:|",
+        f"| Temas em uso | {s.canonical} |",
+        f"| Média de temas por obra | {avg} |",
+        f"| Obras com um único tema | {s.single_theme_works} |",
+        f"| Tags (temas originais guardados) | {s.tags} |",
+        "",
+        "### Temas com mais obras",
+        "",
+        "| Tema | Obras |",
+        "|---|---:|",
+    ]
+    top = sorted(s.works_by_theme.items(), key=lambda kv: (-kv[1], kv[0]))[:10]
+    lines += [f"| {theme} | {n} |" for theme, n in top]
+    if s.below_floor:
+        shown = s.below_floor[:15]
+        lines += ["", f"### Temas abaixo do piso ({THEME_FLOOR} obras)", "",
+                  f"{len(s.below_floor)} tema(s). Não bloqueia; é só relatório.", ""]
+        lines += [f"- {theme} ({n})" for theme, n in shown]
+        if len(s.below_floor) > len(shown):
+            lines.append(f"- e mais {len(s.below_floor) - len(shown)}")
+    return lines
+
+
 def render_coverage(cat: Catalog) -> str:
     works = [w for _, w in sorted(cat.works.items()) if isinstance(w, dict)]
     authors = [a for _, a in sorted(cat.authors.items()) if isinstance(a, dict)]
@@ -120,6 +150,7 @@ def render_coverage(cat: Catalog) -> str:
         lines += ["### Fotos órfãs em `catalog/media/`", ""]
         lines += [f"- `{o}`" for o in orphans]
         lines.append("")
+    lines += ["## Temas", "", *theme_lines(works), ""]
     lines += [
         "## Autorias unificadas",
         "",

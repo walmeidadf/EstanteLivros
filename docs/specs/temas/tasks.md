@@ -65,7 +65,7 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
   - [x] 5.3 Testes: `theme.taxonomy` e `theme.drift` (válido e inválido); sem config, regras puladas.
     - _Requisitos: 10.1_
 
-- [ ] 6. Cobertura (`lib/coverage.py`)
+- [x] 6. Cobertura (`lib/coverage.py`)
   - Seção `## Temas`: canônicos, média por obra, obras com um único tema, 10 maiores, abaixo do piso, total de tags. Teste em `test_coverage.py`.
   - _Requisitos: 4.5, 10.1_
 
