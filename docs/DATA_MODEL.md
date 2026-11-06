@@ -39,6 +39,7 @@ catalog/
   "type": "romance",
   "genres": ["drama psicológico", "ficção literária"],
   "themes": ["corpo", "família", "liberdade", "loucura", "violência"],
+  "tags": ["corpo", "família", "liberdade", "loucura", "violência"],
   "edition": {
     "title": "A Vegetariana", "language": "português", "publisher": "Todavia",
     "year": 2018, "isbn13": "9788588808294", "isbn10": "8588808293",
@@ -56,6 +57,13 @@ catalog/
 ```
 
 - `authors`: slugs de autoria, na ordem de crédito.
+- `themes` × `tags` (F2.3). `themes` são **temas canônicos** (~40–60, em minúsculas):
+  é o que o app mostra e navega (`/tema/{slug}`, Atlas, chips da Obra, Início).
+  `tags` guardam os **temas originais** do caderno, sem perda e só para registro:
+  nenhuma tela, rota ou busca as usa. A passagem de uma para outra é o mapa em
+  `pipeline/config/themes.json` (taxonomia + mapa original → canônicos; lista vazia
+  = só tag), aplicado pelo `migrate_legacy.py`. O validador refaz o mapeamento a
+  partir das `tags` e acusa divergência (`theme.drift`). `tags` é opcional.
 - `originalTitle`: `null` quando a obra foi escrita em português.
   `originalTitleRomanized` só existe para títulos em alfabeto não latino.
 - `edition`: edição brasileira **de referência**. `match: representative` quer

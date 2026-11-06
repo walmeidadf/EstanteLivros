@@ -1,0 +1,42 @@
+---
+/**
+ * Página 404 (F2.3, R8): endereço que não existe. O Cloudflare Pages serve este
+ * arquivo (404.html) com status 404 para rotas sem página; antes dele, qualquer
+ * rota desconhecida caía no Início com status 200.
+ *
+ * Estática, sem catálogo e sem JavaScript. Os três chips de navegação viram
+ * links (nenhum ativo), com alvo de toque de 44 px.
+ */
+import Base from "@/layouts/Base.astro";
+import NavChips from "@/components/NavChips.astro";
+---
+
+<Base title="Página não encontrada · A estante da Lila" noindex>
+  <main class="lost">
+    <h1 class="t-screen-title">Esse endereço não existe</h1>
+    <p class="t-body hint">O link pode estar errado ou ter mudado. Volte para a estante por aqui.</p>
+    <NavChips active={null} />
+  </main>
+</Base>
+
+<style>
+  .lost {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: var(--gutter);
+    padding-bottom: 48px;
+  }
+  .hint {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  @media (min-width: 760px) {
+    .lost {
+      max-width: 760px;
+      margin-inline: auto;
+      width: 100%;
+    }
+  }
+</style>

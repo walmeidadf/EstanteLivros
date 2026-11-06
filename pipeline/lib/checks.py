@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 
 from .schema import load_schema, validate
+from .themes import ThemeConfig, apply as apply_themes
 
 # Leituras 1..UNDATED_HEAD do caderno não têm ano (o registro 54 inicia 2014).
 UNDATED_HEAD = 53
@@ -253,6 +254,40 @@ def check_vocab(cat: Catalog) -> List[Issue]:
     return issues
 
 
+def check_themes(cat: Catalog, cfg: Optional[ThemeConfig]) -> List[Issue]:
+    """Temas só da taxonomia (`theme.taxonomy`) e coerentes com o mapa (`theme.drift`).
+
+    A regra `vocab` sozinha não protege: o vocabulário é derivado das próprias
+    obras. Sem configuração (catálogos de teste), nada é conferido."""
+    if cfg is None:
+        return []
+    taxonomy = set(cfg.taxonomy)
+    issues: List[Issue] = []
+    for stem, w in sorted(cat.works.items()):
+        rel = f"catalog/works/{stem}.json"
+        themes = _as_list(w.get("themes"))
+        for i, t in enumerate(themes):
+            if isinstance(t, str) and t not in taxonomy:
+                issues.append(Issue(rel, f"themes[{i}]", "theme.taxonomy",
+                                    f"tema {t!r} fora da taxonomia (pipeline/config/themes.json)"))
+        tags = w.get("tags")
+        if isinstance(tags, list) and all(isinstance(t, str) for t in tags):
+            applied = apply_themes(tags, cfg)
+            if applied.unmapped:
+                issues.append(Issue(rel, "tags", "theme.drift",
+                                    f"tag(s) sem entrada no mapa: {', '.join(map(repr, applied.unmapped))} "
+                                    "(rode migrate_legacy.py)"))
+            elif applied.themes != themes:
+                issues.append(Issue(rel, "themes", "theme.drift",
+                                    f"themes {themes} não bate com o mapa {applied.themes} (rode migrate_legacy.py)"))
+    vocab = cat.vocabularies if isinstance(cat.vocabularies, dict) else {}
+    for i, t in enumerate(_as_list(vocab.get("themes"))):
+        if isinstance(t, str) and t not in taxonomy:
+            issues.append(Issue("catalog/vocabularies.json", f"themes[{i}]", "theme.taxonomy",
+                                f"tema {t!r} fora da taxonomia (pipeline/config/themes.json)"))
+    return issues
+
+
 def check_photos(cat: Catalog) -> List[Issue]:
     if cat.media is None:
         return []
@@ -312,13 +347,15 @@ def check_summaries(cat: Catalog) -> List[Issue]:
 
 
 def check_catalog(cat: Catalog, schemas: Dict[str, Dict[str, Any]],
-                  undated_head: Optional[int] = None) -> List[Issue]:
+                  undated_head: Optional[int] = None,
+                  themes_cfg: Optional[ThemeConfig] = None) -> List[Issue]:
     issues = list(cat.load_issues)
     issues += check_schema_rule(cat, schemas)
     issues += check_file_slug(cat)
     issues += check_references(cat)
     issues += check_sequence(cat, undated_head)
     issues += check_vocab(cat)
+    issues += check_themes(cat, themes_cfg)
     issues += check_photos(cat)
     issues += check_covers(cat)
     issues += check_summaries(cat)

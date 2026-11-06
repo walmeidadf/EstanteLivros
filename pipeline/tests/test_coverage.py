@@ -34,6 +34,20 @@ class CoverageTest(unittest.TestCase):
         self.assertIn("- Autor B (`autor-b`)", text)
         self.assertIn("`authors/sobrou.jpg`", text)
 
+    def test_secao_de_temas(self):
+        self.cat.works["obra-a"]["tags"] = ["tempo e memória", "Nova York"]
+        text = render_coverage(self.cat)
+        self.assertIn("## Temas", text)
+        self.assertIn("| Temas em uso | 1 |", text)
+        self.assertIn("| Média de temas por obra | 1,00 |", text)
+        self.assertIn("| Obras com um único tema | 2 |", text)
+        self.assertIn("| Tags (temas originais guardados) | 2 |", text)
+        self.assertIn("| memória | 2 |", text)
+        self.assertIn("### Temas abaixo do piso (5 obras)", text)
+        self.assertIn("- memória (2)", text)
+        self.assertLess(text.index("## Autorias"), text.index("## Temas"))
+        self.assertLess(text.index("## Temas"), text.index("## Autorias unificadas"))
+
     def test_conteudo_e_determinismo(self):
         text = render_coverage(self.cat)
         self.assertEqual(text, render_coverage(helpers.clone(self.cat)))

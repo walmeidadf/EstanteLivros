@@ -13,6 +13,12 @@
     "ficção literária"
   ],
   "themes": [
+    "feminismo",
+    "nordeste",
+    "violência",
+    "resistência"
+  ],
+  "tags": [
     "mulheres nordestinas",
     "violência",
     "resistência",
@@ -30,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10867246-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/redemoinho-em-dia-quente-jarid-arraes.jpg"
   },
   "catalogerNote": "Consenso total entre Literal e OpenLibrary (score 1.0), título, autora, ISBN e ano de leitura (2020) coerentes com a única edição publicada (Alfaguara, 2019).",

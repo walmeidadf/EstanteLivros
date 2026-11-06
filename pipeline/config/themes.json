@@ -1,0 +1,1492 @@
+{
+  "version": 1,
+  "targetSize": [
+    40,
+    60
+  ],
+  "taxonomy": [
+    "adolescência",
+    "amizade",
+    "amor",
+    "arte",
+    "autoconhecimento",
+    "casamento",
+    "classe social",
+    "colonialismo",
+    "comunidade",
+    "corpo",
+    "cotidiano",
+    "crime",
+    "culpa",
+    "destino",
+    "ditadura",
+    "doença",
+    "educação",
+    "envelhecimento",
+    "escravidão",
+    "exílio",
+    "existencialismo",
+    "família",
+    "feminismo",
+    "gênero",
+    "guerra",
+    "história",
+    "identidade",
+    "imigração",
+    "infância",
+    "literatura",
+    "loucura",
+    "luto",
+    "maternidade",
+    "memória",
+    "moralidade",
+    "morte",
+    "nápoles",
+    "natureza",
+    "nordeste",
+    "paternidade",
+    "poder",
+    "política",
+    "racismo",
+    "religião",
+    "resistência",
+    "saúde mental",
+    "segredos",
+    "segunda guerra mundial",
+    "sexualidade",
+    "sociedade",
+    "solidão",
+    "superação",
+    "tempo",
+    "trabalho",
+    "traição",
+    "trauma",
+    "viagem",
+    "violência"
+  ],
+  "map": {
+    "abandono": [
+      "solidão"
+    ],
+    "aborto clandestino": [
+      "corpo"
+    ],
+    "absurdo": [
+      "existencialismo"
+    ],
+    "abuso": [
+      "trauma",
+      "violência"
+    ],
+    "abuso sexual infantil": [
+      "trauma"
+    ],
+    "acaso": [
+      "culpa"
+    ],
+    "aceitação": [
+      "superação"
+    ],
+    "acidente": [
+      "doença"
+    ],
+    "acusação": [
+      "crime",
+      "segredos"
+    ],
+    "adoção": [
+      "família"
+    ],
+    "adolescência": [
+      "adolescência"
+    ],
+    "adultério": [
+      "traição"
+    ],
+    "Afeganistão": [],
+    "África": [
+      "colonialismo"
+    ],
+    "alegoria política": [
+      "comunidade",
+      "poder"
+    ],
+    "alienação": [
+      "existencialismo"
+    ],
+    "amadurecimento": [
+      "adolescência"
+    ],
+    "Amazônia": [
+      "natureza"
+    ],
+    "Amazônia peruana": [],
+    "ambição": [
+      "poder"
+    ],
+    "ambição científica": [
+      "moralidade"
+    ],
+    "ambição social": [
+      "classe social"
+    ],
+    "ambiguidade narrativa": [
+      "existencialismo"
+    ],
+    "amizade": [
+      "amizade"
+    ],
+    "amizade feminina": [
+      "amizade"
+    ],
+    "amor": [
+      "amor"
+    ],
+    "amor não correspondido": [
+      "amor"
+    ],
+    "amor obsessivo": [
+      "amor"
+    ],
+    "amor proibido": [
+      "amor",
+      "sexualidade"
+    ],
+    "ancestralidade": [
+      "família"
+    ],
+    "Angola": [],
+    "angústia existencial": [
+      "existencialismo"
+    ],
+    "ansiedade": [
+      "saúde mental"
+    ],
+    "Antiguidade": [
+      "história"
+    ],
+    "Argélia colonial": [
+      "colonialismo"
+    ],
+    "arquitetura": [
+      "arte"
+    ],
+    "arquivos históricos": [
+      "história"
+    ],
+    "arrependimento": [
+      "culpa"
+    ],
+    "arte": [
+      "arte"
+    ],
+    "arte e criação": [
+      "arte"
+    ],
+    "assassinato de Trotsky": [
+      "crime",
+      "política"
+    ],
+    "autoanálise": [
+      "autoconhecimento",
+      "saúde mental"
+    ],
+    "autoconhecimento": [
+      "autoconhecimento"
+    ],
+    "autodescoberta": [
+      "autoconhecimento"
+    ],
+    "autonomia": [
+      "feminismo",
+      "resistência"
+    ],
+    "autoria bíblica": [
+      "feminismo",
+      "religião"
+    ],
+    "Bahia": [
+      "nordeste"
+    ],
+    "Barcelona": [],
+    "barriga de aluguel": [
+      "maternidade"
+    ],
+    "bem e mal": [
+      "moralidade"
+    ],
+    "bibliotecas": [
+      "literatura"
+    ],
+    "bondade": [
+      "moralidade"
+    ],
+    "Brasil": [],
+    "Brasil rural": [
+      "nordeste"
+    ],
+    "Buenos Aires": [],
+    "burocracia": [
+      "poder"
+    ],
+    "Burundi": [
+      "guerra"
+    ],
+    "busca identitária": [
+      "identidade"
+    ],
+    "cacau": [
+      "nordeste"
+    ],
+    "câncer": [
+      "doença"
+    ],
+    "capitalismo": [
+      "classe social"
+    ],
+    "Caribe": [],
+    "carreira artística": [
+      "arte"
+    ],
+    "Cartagena das Índias": [],
+    "casamento": [
+      "casamento"
+    ],
+    "Ceará": [
+      "nordeste"
+    ],
+    "cegueira": [
+      "doença"
+    ],
+    "censura": [
+      "ditadura"
+    ],
+    "censura literária": [
+      "ditadura"
+    ],
+    "cérebro": [
+      "envelhecimento"
+    ],
+    "China": [],
+    "choque cultural": [
+      "colonialismo"
+    ],
+    "cidadania": [
+      "política"
+    ],
+    "cinema": [
+      "arte"
+    ],
+    "ciúme": [
+      "traição"
+    ],
+    "civilização": [
+      "história",
+      "sociedade"
+    ],
+    "civilização vs. barbárie": [
+      "sociedade"
+    ],
+    "Clarice Lispector": [],
+    "classe social": [
+      "classe social"
+    ],
+    "coeducação": [
+      "educação"
+    ],
+    "cognição": [
+      "história"
+    ],
+    "colapso civilizacional": [
+      "sociedade"
+    ],
+    "colapso social": [
+      "sociedade"
+    ],
+    "Colômbia": [],
+    "colonialismo": [
+      "colonialismo"
+    ],
+    "comida": [
+      "cotidiano"
+    ],
+    "comunidade": [
+      "comunidade"
+    ],
+    "comunidade rural": [
+      "comunidade"
+    ],
+    "condição feminina": [
+      "feminismo"
+    ],
+    "conexões humanas": [
+      "amizade"
+    ],
+    "conflito israelo-palestino": [
+      "guerra"
+    ],
+    "conflitos familiares": [
+      "família"
+    ],
+    "consumismo": [
+      "classe social"
+    ],
+    "contracultura": [
+      "arte"
+    ],
+    "convenções sociais": [
+      "sociedade"
+    ],
+    "Coreia": [],
+    "Coreia do Sul": [],
+    "corpo": [
+      "corpo"
+    ],
+    "corpo feminino": [
+      "corpo"
+    ],
+    "corrida": [
+      "superação"
+    ],
+    "cotidiano": [
+      "cotidiano"
+    ],
+    "criação artística": [
+      "arte"
+    ],
+    "criação e responsabilidade": [
+      "moralidade"
+    ],
+    "criatividade": [
+      "arte"
+    ],
+    "crime": [
+      "crime"
+    ],
+    "crise dos opioides": [
+      "crime"
+    ],
+    "crise existencial": [
+      "existencialismo"
+    ],
+    "crítica ao sistema escolar": [
+      "educação"
+    ],
+    "crítica bíblica": [
+      "religião"
+    ],
+    "Cuba": [],
+    "cuidado": [
+      "doença"
+    ],
+    "culpa": [
+      "culpa"
+    ],
+    "cultura": [],
+    "cultura patriarcal": [
+      "feminismo"
+    ],
+    "cultura popular nordestina": [
+      "nordeste"
+    ],
+    "cura": [
+      "doença"
+    ],
+    "decadência": [
+      "classe social"
+    ],
+    "decadência social": [
+      "classe social"
+    ],
+    "decisão de não ter filhos": [
+      "maternidade"
+    ],
+    "deficiência": [
+      "doença"
+    ],
+    "democracia": [
+      "política"
+    ],
+    "dependência química": [
+      "saúde mental"
+    ],
+    "depressão": [
+      "saúde mental"
+    ],
+    "desaparecimento político": [
+      "ditadura"
+    ],
+    "desastre nuclear": [
+      "guerra"
+    ],
+    "desejo": [
+      "sexualidade"
+    ],
+    "desilusão": [
+      "existencialismo"
+    ],
+    "destino": [
+      "destino"
+    ],
+    "dever": [
+      "moralidade"
+    ],
+    "diário íntimo": [],
+    "diáspora": [
+      "imigração"
+    ],
+    "diáspora africana": [
+      "colonialismo"
+    ],
+    "diáspora caribenha": [
+      "imigração"
+    ],
+    "diáspora coreana no Japão": [
+      "imigração"
+    ],
+    "dinheiro": [
+      "classe social"
+    ],
+    "diplomacia": [
+      "história"
+    ],
+    "direito de família": [
+      "família"
+    ],
+    "direitos humanos": [
+      "política"
+    ],
+    "discriminação": [
+      "racismo"
+    ],
+    "discurso conservador": [
+      "gênero"
+    ],
+    "ditadura": [
+      "ditadura"
+    ],
+    "ditadura argentina": [
+      "ditadura"
+    ],
+    "ditadura militar": [
+      "ditadura"
+    ],
+    "ditadura salazarista": [
+      "ditadura"
+    ],
+    "divórcio": [
+      "casamento"
+    ],
+    "doença": [
+      "doença"
+    ],
+    "Doutor Jivago": [],
+    "drogas": [
+      "saúde mental"
+    ],
+    "drogas psicoativas": [
+      "saúde mental"
+    ],
+    "dualidade": [
+      "existencialismo"
+    ],
+    "duplo": [
+      "existencialismo"
+    ],
+    "duplo animal": [],
+    "editoração": [
+      "literatura"
+    ],
+    "educação": [
+      "educação"
+    ],
+    "elite brasileira do século XIX": [
+      "classe social"
+    ],
+    "emancipação": [
+      "feminismo",
+      "resistência"
+    ],
+    "envelhecimento": [
+      "envelhecimento"
+    ],
+    "epidemia": [
+      "doença"
+    ],
+    "epifania": [
+      "autoconhecimento"
+    ],
+    "erotismo": [
+      "sexualidade"
+    ],
+    "escola": [
+      "educação"
+    ],
+    "escolarização obrigatória": [
+      "educação"
+    ],
+    "escolhas de vida": [
+      "autoconhecimento"
+    ],
+    "escravidão": [
+      "escravidão"
+    ],
+    "escrita": [
+      "literatura"
+    ],
+    "escrita não-ficcional": [
+      "literatura"
+    ],
+    "Espanha": [],
+    "espionagem": [
+      "crime"
+    ],
+    "Estados Unidos": [],
+    "estilo": [
+      "literatura"
+    ],
+    "estrada": [
+      "viagem"
+    ],
+    "estresse": [
+      "saúde mental"
+    ],
+    "ética médica": [
+      "doença"
+    ],
+    "etnicidade": [
+      "racismo"
+    ],
+    "EUA": [],
+    "evolução humana": [
+      "história"
+    ],
+    "exército": [
+      "guerra"
+    ],
+    "exílio": [
+      "exílio"
+    ],
+    "exílio interior": [
+      "exílio"
+    ],
+    "existencialismo": [
+      "existencialismo"
+    ],
+    "expatriados": [
+      "exílio"
+    ],
+    "fama": [
+      "arte"
+    ],
+    "família": [
+      "família"
+    ],
+    "família adotiva": [
+      "família"
+    ],
+    "família e gerações": [
+      "família"
+    ],
+    "família fundamentalista": [
+      "educação",
+      "família",
+      "religião"
+    ],
+    "família não-tradicional": [
+      "família"
+    ],
+    "fantasmas": [
+      "morte"
+    ],
+    "favela": [
+      "classe social"
+    ],
+    "fé": [
+      "religião"
+    ],
+    "feminicídio": [
+      "violência"
+    ],
+    "feminilidade": [
+      "feminismo"
+    ],
+    "feminismo": [
+      "feminismo"
+    ],
+    "filosofia": [
+      "destino"
+    ],
+    "folclore africano": [],
+    "força feminina": [
+      "feminismo"
+    ],
+    "formação de povoados": [
+      "nordeste"
+    ],
+    "formação do escritor": [
+      "adolescência"
+    ],
+    "França": [],
+    "fuga": [
+      "escravidão",
+      "resistência"
+    ],
+    "gêmeas": [
+      "família"
+    ],
+    "gênero": [
+      "gênero"
+    ],
+    "genocídio": [
+      "guerra",
+      "violência"
+    ],
+    "genocídio de Ruanda": [
+      "guerra",
+      "violência"
+    ],
+    "gerações": [
+      "família"
+    ],
+    "Grécia": [],
+    "guerra": [
+      "guerra"
+    ],
+    "guerra civil": [
+      "guerra"
+    ],
+    "Guerra Civil Americana": [
+      "guerra"
+    ],
+    "Guerra Civil Espanhola": [
+      "guerra"
+    ],
+    "Guerra Fria": [
+      "guerra"
+    ],
+    "guerras napoleônicas": [
+      "guerra"
+    ],
+    "haenyeo (mergulhadoras)": [],
+    "hedonismo": [
+      "moralidade"
+    ],
+    "história": [
+      "história"
+    ],
+    "história da filosofia": [
+      "destino"
+    ],
+    "história das ideias": [
+      "história"
+    ],
+    "história de Israel": [
+      "história"
+    ],
+    "história do Brasil": [
+      "escravidão"
+    ],
+    "história do Chile": [
+      "história"
+    ],
+    "história do século XX": [
+      "história"
+    ],
+    "história latino-americana": [
+      "história"
+    ],
+    "HIV/Aids": [
+      "doença"
+    ],
+    "Hollywood": [
+      "arte"
+    ],
+    "Holocausto": [
+      "segunda guerra mundial"
+    ],
+    "homeschooling": [
+      "educação"
+    ],
+    "homofobia": [
+      "sexualidade"
+    ],
+    "homossexualidade": [
+      "sexualidade"
+    ],
+    "honra": [
+      "moralidade"
+    ],
+    "humor": [],
+    "identidade": [
+      "identidade"
+    ],
+    "identidade brasileira": [
+      "identidade"
+    ],
+    "identidade de gênero": [
+      "gênero"
+    ],
+    "identidade feminina": [
+      "feminismo"
+    ],
+    "identidade judaica": [
+      "identidade"
+    ],
+    "identidade LGBTQ+": [
+      "sexualidade"
+    ],
+    "identidade nacional": [
+      "escravidão"
+    ],
+    "identidade negra": [
+      "racismo"
+    ],
+    "identidade queer": [
+      "gênero",
+      "sexualidade"
+    ],
+    "identidade racial": [
+      "identidade",
+      "racismo"
+    ],
+    "identidade sexual": [
+      "sexualidade"
+    ],
+    "identidade trans": [
+      "gênero"
+    ],
+    "imaginação": [
+      "arte"
+    ],
+    "imigração": [
+      "imigração"
+    ],
+    "imortalidade": [
+      "tempo"
+    ],
+    "independência": [
+      "resistência"
+    ],
+    "Índia": [],
+    "infância": [
+      "infância"
+    ],
+    "infância abandonada": [
+      "classe social",
+      "infância"
+    ],
+    "infância e adolescência": [
+      "adolescência"
+    ],
+    "infertilidade": [
+      "maternidade"
+    ],
+    "início do século XX": [
+      "história"
+    ],
+    "injustiça": [
+      "crime"
+    ],
+    "insatisfação": [
+      "casamento"
+    ],
+    "insignificância": [
+      "existencialismo"
+    ],
+    "interior da Bahia": [
+      "nordeste"
+    ],
+    "interior do Brasil": [
+      "nordeste"
+    ],
+    "Irã": [],
+    "irmãos": [
+      "família"
+    ],
+    "irmãs": [
+      "família"
+    ],
+    "irmãs Soong": [
+      "família"
+    ],
+    "isolamento": [
+      "solidão"
+    ],
+    "Israel": [],
+    "Itália": [],
+    "Itália do pós-guerra": [],
+    "Itália do século XX": [
+      "história"
+    ],
+    "jagunçagem": [
+      "nordeste"
+    ],
+    "Jerusalém": [],
+    "jornada espiritual": [
+      "autoconhecimento",
+      "religião"
+    ],
+    "jornalismo": [
+      "literatura"
+    ],
+    "Josef Mengele": [
+      "segunda guerra mundial"
+    ],
+    "judaísmo": [
+      "religião"
+    ],
+    "justiça": [
+      "crime"
+    ],
+    "juventude": [
+      "adolescência"
+    ],
+    "leitura": [
+      "literatura"
+    ],
+    "liberdade": [
+      "resistência"
+    ],
+    "libertação": [
+      "resistência"
+    ],
+    "língua portuguesa": [
+      "literatura"
+    ],
+    "linguagem": [
+      "literatura"
+    ],
+    "literatura": [
+      "literatura"
+    ],
+    "literatura brasileira": [
+      "literatura"
+    ],
+    "literatura e autoria": [
+      "colonialismo"
+    ],
+    "litoral catarinense": [],
+    "livrarias": [
+      "literatura"
+    ],
+    "livre-arbítrio": [
+      "destino"
+    ],
+    "livros": [
+      "literatura"
+    ],
+    "livros sobre livros": [
+      "literatura"
+    ],
+    "loucura": [
+      "loucura"
+    ],
+    "Luanda": [],
+    "luta": [
+      "resistência"
+    ],
+    "luto": [
+      "luto"
+    ],
+    "luto de expectativas": [
+      "doença",
+      "paternidade"
+    ],
+    "luto materno": [
+      "luto"
+    ],
+    "Madri operária": [],
+    "Manaus": [],
+    "manipulação": [
+      "segredos"
+    ],
+    "mar": [
+      "viagem"
+    ],
+    "marginalidade": [
+      "classe social"
+    ],
+    "Marrocos": [],
+    "masculinidade": [
+      "gênero"
+    ],
+    "maternidade": [
+      "maternidade"
+    ],
+    "medicina": [
+      "doença"
+    ],
+    "meia-idade": [
+      "envelhecimento"
+    ],
+    "memória": [
+      "memória"
+    ],
+    "memória coletiva": [
+      "memória"
+    ],
+    "menopausa": [
+      "envelhecimento"
+    ],
+    "mentira": [
+      "segredos"
+    ],
+    "mercado de trabalho": [
+      "trabalho"
+    ],
+    "Mesopotâmia": [
+      "história"
+    ],
+    "México": [],
+    "migração": [
+      "imigração"
+    ],
+    "mito da caverna de Platão": [
+      "destino"
+    ],
+    "mito e realidade": [
+      "destino"
+    ],
+    "mitologia": [
+      "destino"
+    ],
+    "Moçambique": [],
+    "moda": [
+      "arte"
+    ],
+    "monstruosidade": [
+      "moralidade"
+    ],
+    "moral": [
+      "moralidade"
+    ],
+    "moralidade": [
+      "moralidade"
+    ],
+    "mortalidade": [
+      "morte"
+    ],
+    "morte": [
+      "morte"
+    ],
+    "mudanças climáticas": [
+      "natureza"
+    ],
+    "mulheres": [
+      "feminismo"
+    ],
+    "mulheres negras": [
+      "racismo"
+    ],
+    "mulheres nordestinas": [
+      "feminismo",
+      "nordeste"
+    ],
+    "múltiplas gerações": [
+      "família"
+    ],
+    "multiverso": [
+      "loucura",
+      "tempo"
+    ],
+    "música brasileira": [
+      "arte"
+    ],
+    "Nápoles": [
+      "nápoles"
+    ],
+    "narrador defunto": [
+      "literatura"
+    ],
+    "natureza": [
+      "natureza"
+    ],
+    "natureza humana": [
+      "sociedade"
+    ],
+    "nazismo": [
+      "segunda guerra mundial"
+    ],
+    "neurociência": [
+      "saúde mental"
+    ],
+    "Nigéria": [],
+    "nordeste": [
+      "nordeste"
+    ],
+    "Nova York": [],
+    "obsessão": [
+      "loucura"
+    ],
+    "ocupação": [
+      "guerra"
+    ],
+    "olaria": [
+      "classe social"
+    ],
+    "opressão": [
+      "poder"
+    ],
+    "opressão doméstica": [
+      "feminismo",
+      "violência"
+    ],
+    "orfandade": [
+      "família",
+      "infância"
+    ],
+    "órfãos": [
+      "família"
+    ],
+    "orgulho": [
+      "amor"
+    ],
+    "padrões de beleza": [
+      "corpo",
+      "racismo"
+    ],
+    "paixão": [
+      "amor"
+    ],
+    "pântanos": [
+      "natureza"
+    ],
+    "papéis de gênero": [
+      "gênero"
+    ],
+    "papel da mulher": [
+      "feminismo"
+    ],
+    "paranoia": [
+      "loucura"
+    ],
+    "Paris": [],
+    "passado": [
+      "memória"
+    ],
+    "passing racial": [
+      "racismo"
+    ],
+    "paternidade": [
+      "paternidade"
+    ],
+    "patriarcado": [
+      "feminismo"
+    ],
+    "pecados capitais": [
+      "feminismo",
+      "religião"
+    ],
+    "perda": [
+      "luto"
+    ],
+    "perdão": [
+      "culpa"
+    ],
+    "pobreza": [
+      "classe social"
+    ],
+    "poder": [
+      "poder"
+    ],
+    "poder e classe": [
+      "classe social"
+    ],
+    "poderes sobrenaturais": [
+      "destino"
+    ],
+    "polícia": [
+      "crime"
+    ],
+    "poligamia": [
+      "casamento"
+    ],
+    "política": [
+      "política"
+    ],
+    "Porto Alegre": [],
+    "pós-guerra espanhola": [
+      "guerra"
+    ],
+    "pós-Primeira Guerra": [
+      "exílio"
+    ],
+    "povos indígenas": [
+      "natureza"
+    ],
+    "preguiça": [
+      "nordeste"
+    ],
+    "prevenção": [
+      "doença"
+    ],
+    "propaganda": [
+      "poder"
+    ],
+    "prostituição": [],
+    "província canadense": [],
+    "psicanálise": [
+      "saúde mental"
+    ],
+    "psicofarmacologia": [
+      "saúde mental"
+    ],
+    "psicoterapia": [
+      "saúde mental"
+    ],
+    "quilombo": [
+      "comunidade",
+      "resistência"
+    ],
+    "quilombolas": [
+      "comunidade"
+    ],
+    "raça": [
+      "racismo"
+    ],
+    "racismo": [
+      "racismo"
+    ],
+    "recomeço": [
+      "culpa",
+      "superação"
+    ],
+    "reconstrução pessoal": [
+      "autoconhecimento",
+      "superação"
+    ],
+    "redenção": [
+      "culpa"
+    ],
+    "reencontro": [
+      "amor"
+    ],
+    "reformatório": [
+      "crime"
+    ],
+    "Reino Unido": [],
+    "relação mãe e filha": [
+      "família",
+      "maternidade"
+    ],
+    "relação pai-filha": [
+      "família",
+      "paternidade"
+    ],
+    "relação pai-filho": [
+      "família",
+      "paternidade"
+    ],
+    "relacionamento abusivo": [
+      "amor"
+    ],
+    "relacionamento amoroso": [
+      "amor"
+    ],
+    "relacionamentos": [
+      "amor"
+    ],
+    "relações": [
+      "cotidiano"
+    ],
+    "relações amorosas": [
+      "amor"
+    ],
+    "relações familiares": [
+      "família"
+    ],
+    "relações humanas": [
+      "amizade"
+    ],
+    "religião": [
+      "religião"
+    ],
+    "repressão emocional": [
+      "memória",
+      "trauma"
+    ],
+    "reprodução": [
+      "maternidade"
+    ],
+    "República Dominicana": [
+      "ditadura"
+    ],
+    "resignação": [
+      "existencialismo"
+    ],
+    "resiliência": [
+      "superação"
+    ],
+    "resistência": [
+      "resistência"
+    ],
+    "retorno às origens": [
+      "autoconhecimento"
+    ],
+    "revisão textual": [
+      "literatura"
+    ],
+    "revolução": [
+      "política"
+    ],
+    "revolução cultural": [
+      "política"
+    ],
+    "revolução islâmica": [
+      "política"
+    ],
+    "revolução russa": [
+      "política"
+    ],
+    "revoluções agrícola e científica": [
+      "história"
+    ],
+    "Rio de Janeiro": [],
+    "Rio Grande do Sul": [],
+    "rotina": [
+      "cotidiano"
+    ],
+    "rotina de trabalho": [
+      "cotidiano",
+      "trabalho"
+    ],
+    "Ruanda": [],
+    "sacrifício": [
+      "moralidade"
+    ],
+    "Salvador": [
+      "nordeste"
+    ],
+    "São Paulo": [],
+    "sátira social": [
+      "sociedade"
+    ],
+    "saúde": [
+      "doença"
+    ],
+    "saúde feminina": [
+      "envelhecimento"
+    ],
+    "saúde mental": [
+      "saúde mental"
+    ],
+    "seca": [
+      "natureza"
+    ],
+    "século XX": [
+      "história"
+    ],
+    "segredo": [
+      "segredos"
+    ],
+    "segredos": [
+      "segredos"
+    ],
+    "segredos familiares": [
+      "família",
+      "segredos"
+    ],
+    "segunda chance": [
+      "culpa"
+    ],
+    "segunda guerra mundial": [
+      "segunda guerra mundial"
+    ],
+    "segundas chances": [
+      "culpa"
+    ],
+    "sentido da vida": [
+      "existencialismo"
+    ],
+    "sertão": [
+      "nordeste"
+    ],
+    "sertão nordestino": [
+      "nordeste"
+    ],
+    "sexismo": [
+      "feminismo"
+    ],
+    "sexualidade": [
+      "sexualidade"
+    ],
+    "silenciamento": [
+      "feminismo",
+      "trauma"
+    ],
+    "silêncio": [
+      "solidão",
+      "trauma"
+    ],
+    "síndrome de Down": [
+      "doença",
+      "paternidade"
+    ],
+    "sionismo": [
+      "guerra"
+    ],
+    "sistema prisional": [
+      "crime"
+    ],
+    "sobrevivência": [
+      "superação"
+    ],
+    "sociedade": [
+      "sociedade"
+    ],
+    "sociedade londrina": [
+      "sociedade"
+    ],
+    "sociedade provinciana": [
+      "casamento",
+      "sociedade"
+    ],
+    "sociedade russa": [
+      "sociedade"
+    ],
+    "sofrimento humano": [],
+    "solidão": [
+      "solidão"
+    ],
+    "solidariedade": [
+      "amizade"
+    ],
+    "sonhos": [
+      "autoconhecimento"
+    ],
+    "sono": [
+      "corpo"
+    ],
+    "subjetivação": [
+      "saúde mental"
+    ],
+    "Sudão": [
+      "colonialismo"
+    ],
+    "suicídio": [
+      "luto"
+    ],
+    "sul dos EUA": [
+      "racismo"
+    ],
+    "superação": [
+      "superação"
+    ],
+    "tempo": [
+      "tempo"
+    ],
+    "tempo e memória": [
+      "memória"
+    ],
+    "terra": [
+      "natureza"
+    ],
+    "totalitarismo": [
+      "poder"
+    ],
+    "trabalho": [
+      "trabalho"
+    ],
+    "trabalho doméstico": [
+      "feminismo",
+      "trabalho"
+    ],
+    "trabalho rural": [
+      "trabalho"
+    ],
+    "tradição": [
+      "casamento"
+    ],
+    "traição": [
+      "traição"
+    ],
+    "transformação": [
+      "autoconhecimento",
+      "superação"
+    ],
+    "transformação pessoal": [
+      "autoconhecimento"
+    ],
+    "transgeneridade": [
+      "gênero"
+    ],
+    "trauma": [
+      "trauma"
+    ],
+    "travessia do Atlântico": [
+      "imigração",
+      "viagem"
+    ],
+    "trotskismo": [
+      "política"
+    ],
+    "União Soviética": [
+      "política"
+    ],
+    "vaidade": [
+      "moralidade"
+    ],
+    "velhice": [
+      "envelhecimento"
+    ],
+    "verdade": [
+      "existencialismo"
+    ],
+    "viagem": [
+      "viagem"
+    ],
+    "viagem no tempo": [
+      "escravidão",
+      "tempo"
+    ],
+    "viagens": [
+      "viagem"
+    ],
+    "vício": [
+      "saúde mental"
+    ],
+    "vida acadêmica": [
+      "educação"
+    ],
+    "vida cotidiana": [
+      "cotidiano"
+    ],
+    "vida doméstica": [
+      "cotidiano"
+    ],
+    "vida profissional": [
+      "trabalho"
+    ],
+    "Vietnã": [
+      "imigração"
+    ],
+    "vingança": [
+      "violência"
+    ],
+    "violência": [
+      "violência"
+    ],
+    "violência de gênero": [
+      "gênero",
+      "violência"
+    ],
+    "violência divina": [
+      "religião",
+      "violência"
+    ],
+    "violência doméstica": [
+      "violência"
+    ],
+    "violência étnica": [
+      "racismo",
+      "violência"
+    ],
+    "violência policial": [
+      "violência"
+    ],
+    "Xingu": [
+      "natureza"
+    ]
+  }
+}

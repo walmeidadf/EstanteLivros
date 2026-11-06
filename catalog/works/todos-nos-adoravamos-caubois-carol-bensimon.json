@@ -16,6 +16,11 @@
   "themes": [
     "amizade",
     "identidade",
+    "viagem"
+  ],
+  "tags": [
+    "amizade",
+    "identidade",
     "viagem",
     "Rio Grande do Sul"
   ],
@@ -31,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/10864860-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/todos-nos-adoravamos-caubois-carol-bensimon.jpg"
   },
   "catalogerNote": "Título provisório usava a grafia inglesa 'cowboys'; o título correto publicado é 'caubóis'. Literal e OpenLibrary concordam no mesmo ISBN (Companhia das Letras, 2013).",

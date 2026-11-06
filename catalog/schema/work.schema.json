@@ -25,6 +25,7 @@
     "type": { "$ref": "#/$defs/text" },
     "genres": { "$ref": "#/$defs/textList" },
     "themes": { "$ref": "#/$defs/textList" },
+    "tags": { "$ref": "#/$defs/textList" },
     "edition": {
       "type": "object",
       "additionalProperties": false,

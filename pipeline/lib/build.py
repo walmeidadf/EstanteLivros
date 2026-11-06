@@ -11,6 +11,7 @@ from .checks import Catalog
 from .legacy_reader import Cell, LegacyData, LegacyDataError, integer, split_list, text, yes_no
 from .names import AuthorGroup, find_suspects, group_names, languages_for, unify_key
 from .slugs import SlugRegistry, strip_accents
+from .themes import ThemeConfig, apply as apply_themes
 from .titles import split_original
 
 PROVIDER_ALIASES = {"busca_web": "web"}
@@ -25,6 +26,10 @@ REFERENCE_COLUMNS = [
     ("google_books_id", "google_books_url", "google_books", "edição"),
     ("wikidata_id", "wikidata_url", "wikidata", "obra"),
 ]
+
+
+class ThemeMappingError(LegacyDataError):
+    """Tema original sem destino no themes.json, ou obra que ficaria sem tema."""
 
 
 @dataclass
@@ -76,14 +81,35 @@ def merge_cover(cover_url: Optional[str], cover_source: Optional[str],
     prev = previous if isinstance(previous, dict) else {}
     enriched = {k: prev[k] for k in _ENRICHED_COVER_FIELDS
                 if isinstance(prev, dict) and prev.get(k) is not None}
-    if cover_url:
+    # O `file` e a proveniência dele andam juntos. Se a Lila escolheu uma imagem de
+    # OUTRA origem que a do legado (ex.: Open Library no lugar da Literal), a
+    # sourceUrl/source do arquivo são mantidas; senão o legado manda (inclusive
+    # para corrigir uma `source` gravada errada).
+    other_origin = bool(prev.get("file")) and prev.get("sourceUrl") not in (None, cover_url)
+    if cover_url and not other_origin:
         return {"sourceUrl": cover_url, "source": cover_source, **enriched}
-    # Sem URL no legado: só sobra capa se já havia campo enriquecido, e nesse
-    # caso a proveniência (sourceUrl/source) do catálogo atual é mantida — o
-    # schema exige sourceUrl numa capa não nula.
+    # Sem URL no legado, ou arquivo de outra origem: só sobra capa se já havia
+    # campo enriquecido, com a proveniência do catálogo atual — o schema exige
+    # sourceUrl numa capa não nula.
     if not enriched or not prev.get("sourceUrl"):
         return None
     return {"sourceUrl": prev.get("sourceUrl"), "source": prev.get("source"), **enriched}
+
+
+def _theme_problems(unmapped: Mapping[str, List[str]],
+                    without_theme: List[Tuple[str, List[str]]]) -> str:
+    lines: List[str] = []
+    if unmapped:
+        lines.append(f"{len(unmapped)} tema(s) sem mapeamento em pipeline/config/themes.json:")
+        for original in sorted(unmapped, key=lambda s: (strip_accents(s).lower(), s)):
+            titles = unmapped[original]
+            shown = ", ".join(titles[:3]) + (f" e mais {len(titles) - 3}" if len(titles) > 3 else "")
+            lines.append(f"  {original!r} ({shown})")
+    if without_theme:
+        lines.append(f"{len(without_theme)} obra(s) ficariam sem tema canônico:")
+        for title, originals in without_theme:
+            lines.append(f"  {title}: {', '.join(originals) or '(sem temas no CSV)'}")
+    return "\n".join(lines)
 
 
 def build_references(work_row: Mapping[str, str], sources: Iterable[Mapping[str, str]]) -> List[Dict[str, Any]]:
@@ -116,9 +142,14 @@ ENRICHED_AUTHOR_FIELDS = ("country", "countrySource", "wikidata", "photo")
 def build(legacy: LegacyData, registry: SlugRegistry,
           overrides: Optional[Mapping[str, Mapping[str, str]]] = None,
           existing_summaries: Any = None,
-          existing: Optional[Catalog] = None) -> BuildResult:
+          existing: Optional[Catalog] = None,
+          themes: Optional[ThemeConfig] = None) -> BuildResult:
     """Monta o catálogo. `existing` é o catálogo atual: os campos enriquecidos
-    das autorias e das capas (F2) e `vocabularies.countries` são preservados."""
+    das autorias e das capas (F2) e `vocabularies.countries` são preservados.
+
+    `themes` (F2.3): com a configuração, cada obra recebe `themes` canônicos e
+    `tags` (os originais); sem ela, `themes` fica como vem do CSV e não há `tags`
+    (uso como biblioteca e fixtures antigas). A migração sempre a passa."""
     overrides = overrides or {}
     existing_authors = existing.authors if existing is not None else {}
     existing_works = existing.works if existing is not None else {}
@@ -157,6 +188,8 @@ def build(legacy: LegacyData, registry: SlugRegistry,
     works: Dict[str, Dict[str, Any]] = {}
     work_slug: Dict[str, str] = {}
     lang_occurrences: Dict[str, List[Tuple[str, int]]] = {}
+    unmapped_themes: Dict[str, List[str]] = {}  # original -> títulos das obras
+    works_without_theme: List[Tuple[str, List[str]]] = []
     for row in work_rows:
         file = "obras.csv"
         names = split_list(row["authors"])
@@ -180,6 +213,15 @@ def build(legacy: LegacyData, registry: SlugRegistry,
             lang_occurrences.setdefault(a, []).append((language, first_seq.get(row["work_id"], 10**9)))
         cover_url = text(row["cover_url"])
         sources = [s for s in legacy.sources if s["work_id"] == row["work_id"]]
+        raw_themes = split_list(row["themes"])
+        theme_fields: Dict[str, Any] = {"themes": raw_themes}
+        if themes is not None:
+            applied = apply_themes(raw_themes, themes)
+            for original in applied.unmapped:
+                unmapped_themes.setdefault(original, []).append(title)
+            if not applied.unmapped and not applied.themes:
+                works_without_theme.append((title, raw_themes))
+            theme_fields = {"themes": applied.themes, "tags": applied.tags}
         works[slug] = {
             "slug": slug,
             "title": title,
@@ -190,7 +232,7 @@ def build(legacy: LegacyData, registry: SlugRegistry,
             "firstPublished": first_published,
             "type": text(row["work_type"]),
             "genres": split_list(row["genres"]),
-            "themes": split_list(row["themes"]),
+            **theme_fields,
             "edition": {
                 "title": text(row["edition_title"]),
                 "language": text(row["edition_language"]),
@@ -213,6 +255,9 @@ def build(legacy: LegacyData, registry: SlugRegistry,
                 "validatedAt": text(row["validated_at"]),
             },
         }
+
+    if unmapped_themes or works_without_theme:
+        raise ThemeMappingError(_theme_problems(unmapped_themes, works_without_theme))
 
     authors_out: Dict[str, Dict[str, Any]] = {}
     for key, group in groups.items():

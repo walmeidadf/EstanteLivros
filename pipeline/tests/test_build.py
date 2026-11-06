@@ -167,6 +167,31 @@ class PreserveEnrichmentTest(unittest.TestCase):
         # obra sem capa nem enriquecimento segue sem capa.
         self.assertIsNone(again.works["comedias-para-se-ler-na-escola-luis-fernando-verissimo"]["cover"])
 
+    def test_arquivo_de_outra_origem_mantem_a_proveniencia_dele(self):
+        # A Lila trocou a capa do legado (Literal) por uma da Open Library: o arquivo e a
+        # URL/fonte de onde veio ficam juntos, mesmo que o CSV continue com a URL antiga.
+        first = run_build().catalog
+        enriched = helpers.clone(first)
+        enriched.works["os-espioes-luis-fernando-verissimo"]["cover"] = {
+            "sourceUrl": "https://covers.openlibrary.org/b/isbn/9788560281725-L.jpg", "source": "openlibrary",
+            "file": "covers/os-espioes-luis-fernando-verissimo.jpg", "focus": "top"}
+        with tempfile.TemporaryDirectory() as tmp:
+            legacy = read_legacy(helpers.write_legacy(Path(tmp)))
+        again = build(legacy, SlugRegistry(), OVERRIDES, None, enriched).catalog
+        self.assertEqual(again.works["os-espioes-luis-fernando-verissimo"]["cover"],
+                         enriched.works["os-espioes-luis-fernando-verissimo"]["cover"])
+
+    def test_mesma_url_o_legado_corrige_a_fonte_gravada_errada(self):
+        first = run_build().catalog
+        enriched = helpers.clone(first)
+        enriched.works["a-vegetariana-han-kang"]["cover"].update(
+            source="fonte-errada", file="covers/a-vegetariana-han-kang.jpg")
+        with tempfile.TemporaryDirectory() as tmp:
+            legacy = read_legacy(helpers.write_legacy(Path(tmp)))
+        again = build(legacy, SlugRegistry(), OVERRIDES, None, enriched).catalog
+        cover = again.works["a-vegetariana-han-kang"]["cover"]
+        self.assertEqual((cover["source"], cover["file"]), ("literal", "covers/a-vegetariana-han-kang.jpg"))
+
     def test_capa_nao_sobrevive_sem_url_nem_enriquecimento(self):
         # Sem cover_url no CSV e sem campos enriquecidos, a capa some (não vira {}).
         first = run_build().catalog

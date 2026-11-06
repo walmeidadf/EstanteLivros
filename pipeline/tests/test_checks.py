@@ -10,6 +10,64 @@ from lib.jsonio import dumps_canonical
 HEAD = 1  # nos testes, só a leitura 1 é "sem ano"
 
 
+def themes_cfg():
+    from lib.themes import ThemeConfig
+
+    return ThemeConfig.from_dict({
+        "version": 1, "targetSize": [1, 10], "taxonomy": ["família", "memória"],
+        "map": {"memória": ["memória"], "tempo e memória": ["memória"],
+                "família": ["família"], "Nova York": []},
+    })
+
+
+class ThemeChecksTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.schemas = load_schemas(helpers.SCHEMA_DIR)
+
+    def issues(self, cat, cfg="default"):
+        cfg = themes_cfg() if cfg == "default" else cfg
+        return check_catalog(cat, self.schemas, undated_head=HEAD, themes_cfg=cfg)
+
+    def codes(self, cat, cfg="default"):
+        return [i.code for i in self.issues(cat, cfg)]
+
+    def test_catalogo_coerente_com_o_mapa(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["tags"] = ["tempo e memória", "Nova York"]
+        self.assertEqual(self.codes(cat), [])
+
+    def test_tema_de_obra_fora_da_taxonomia(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["themes"] = ["memória", "identidade"]
+        cat.vocabularies["themes"] = ["identidade", "memória"]  # o vocabulário "concorda", o arquivo não
+        self.assertEqual(self.codes(cat).count("theme.taxonomy"), 2)  # a obra e o vocabulário
+        self.assertNotIn("vocab", self.codes(cat))
+
+    def test_deriva_themes_diferente_do_mapa(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["tags"] = ["tempo e memória", "família"]   # mapa dá [memória, família]
+        issues = [i for i in self.issues(cat) if i.code == "theme.drift"]
+        self.assertEqual(len(issues), 1)
+        self.assertIn("migrate_legacy.py", issues[0].message)
+
+    def test_tag_sem_entrada_no_mapa_e_deriva(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["tags"] = ["memória", "tema que saiu do mapa"]
+        issues = [i for i in self.issues(cat) if i.code == "theme.drift"]
+        self.assertIn("tema que saiu do mapa", issues[0].message)
+
+    def test_obra_sem_tags_nao_e_conferida_quanto_a_deriva(self):
+        self.assertEqual(self.codes(helpers.valid_catalog()), [])
+
+    def test_sem_configuracao_as_regras_sao_puladas(self):
+        cat = helpers.valid_catalog()
+        cat.works["obra-a"]["themes"] = ["memória", "identidade"]
+        cat.vocabularies["themes"] = ["identidade", "memória"]
+        cat.works["obra-a"]["tags"] = ["qualquer coisa"]
+        self.assertEqual(self.codes(cat, cfg=None), [])
+
+
 class ChecksTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -151,3 +209,58 @@ class LoadCatalogTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ValidateThemesCliTest(unittest.TestCase):
+    """validate_catalog procura themes.json em ../pipeline/config do catálogo."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        self.catalog = helpers.make_catalog_dir(self.root / "catalog")
+        from lib.jsonio import write_catalog
+
+        cat = helpers.valid_catalog()
+        files = {f"works/{s}.json": w for s, w in cat.works.items()}
+        files.update({f"authors/{s}.json": a for s, a in cat.authors.items()})
+        files.update({"readings.json": cat.readings, "summaries.json": cat.summaries,
+                      "vocabularies.json": cat.vocabularies})
+        write_catalog(files, self.catalog)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def run_validate(self):
+        import contextlib
+        import io
+
+        import validate_catalog
+        from unittest import mock
+
+        out, err = io.StringIO(), io.StringIO()
+        with mock.patch("lib.checks.UNDATED_HEAD", HEAD), contextlib.redirect_stdout(out), \
+                contextlib.redirect_stderr(err):
+            code = validate_catalog.run(self.catalog, None)
+        return code, out.getvalue() + err.getvalue()
+
+    def write_config(self, text):
+        config = self.root / "pipeline" / "config"
+        config.mkdir(parents=True, exist_ok=True)
+        (config / "themes.json").write_text(text, encoding="utf-8")
+
+    def test_sem_themes_json_a_regra_e_pulada(self):
+        self.assertEqual(self.run_validate()[0], 0)
+
+    def test_com_themes_json_acusa_tema_fora_da_taxonomia(self):
+        self.write_config(json.dumps({
+            "version": 1, "targetSize": [1, 10], "taxonomy": ["família"],
+            "map": {"família": ["família"]}}))
+        code, out = self.run_validate()
+        self.assertEqual(code, 1)
+        self.assertIn("theme.taxonomy", out)
+
+    def test_themes_json_invalido_codigo_1(self):
+        self.write_config('{"version": 7}')
+        code, out = self.run_validate()
+        self.assertEqual(code, 1)
+        self.assertIn("themes.json inválido", out)

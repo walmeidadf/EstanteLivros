@@ -15,6 +15,12 @@
   ],
   "themes": [
     "infância",
+    "amizade",
+    "religião",
+    "nordeste"
+  ],
+  "tags": [
+    "infância",
     "amizade feminina",
     "religião",
     "Ceará"
@@ -31,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15201008-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/as-tres-marias-rachel-de-queiroz.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library. Escolhida a edição José Olympio de 2017, coerente com o ano de leitura registrado (2017).",

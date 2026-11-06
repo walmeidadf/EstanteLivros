@@ -15,6 +15,11 @@
   "themes": [
     "memória",
     "infância",
+    "família"
+  ],
+  "tags": [
+    "memória",
+    "infância",
     "província canadense",
     "família"
   ],
@@ -30,7 +35,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12369844-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/vida-querida-alice-munro.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library (score 1.0); coletânea de contos de Alice Munro (2012), tradução de Caetano Galindo (Companhia das Letras, 2013).",

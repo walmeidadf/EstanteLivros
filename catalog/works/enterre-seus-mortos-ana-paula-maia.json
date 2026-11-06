@@ -20,6 +20,12 @@
     "moralidade",
     "violência"
   ],
+  "tags": [
+    "morte",
+    "trabalho",
+    "moralidade",
+    "violência"
+  ],
   "edition": {
     "title": "Enterre Seus Mortos",
     "language": "português",
@@ -32,7 +38,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535930672/enterre-seus-mortos.jpg",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/enterre-seus-mortos-ana-paula-maia.jpg"
   },
   "catalogerNote": "Título provisório 'Enterrem seus mortos' (plural imperativo) corrigido para o título oficial 'Enterre Seus Mortos' (singular), primeiro volume da 'Trilogia do Fim' de Ana Paula Maia, Companhia das Letras 2018.",

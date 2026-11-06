@@ -13,6 +13,12 @@
     "ficção literária"
   ],
   "themes": [
+    "amor",
+    "violência",
+    "poder",
+    "literatura"
+  ],
+  "tags": [
     "relacionamento amoroso",
     "violência",
     "poder",
@@ -30,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12369841-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/um-copo-de-colera-raduan-nassar.jpg"
   },
   "catalogerNote": "Título e autor corrigidos quanto à capitalização (\"UM copo de cólera\"/\"Raduan nassar\"). Preferida a edição brasileira Companhia das Letras (2013) sobre o candidato Literal de edição portuguesa (isbn 9789896653675).",

@@ -16,6 +16,12 @@
   "themes": [
     "amor",
     "doença",
+    "poder",
+    "família"
+  ],
+  "tags": [
+    "amor",
+    "doença",
     "ambição",
     "família",
     "Porto Alegre"
@@ -32,7 +38,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/15138040-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/olhai-os-lirios-do-campo-erico-verissimo.jpg"
   },
   "catalogerNote": "Candidato de consenso entre Literal e Open Library, mesma edição (ISBN 9788535906097, Companhia das Letras). Título e autor já estavam corretos na extração original.",

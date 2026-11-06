@@ -54,6 +54,30 @@ Gerado por `python3 pipeline/validate_catalog.py`. Não editar à mão.
 - Lisa Mosconi (`lisa-mosconi`)
 - Will Schwalbe (`will-schwalbe`)
 
+## Temas
+
+| Métrica | Valor |
+|---|---:|
+| Temas em uso | 58 |
+| Média de temas por obra | 3,40 |
+| Obras com um único tema | 12 |
+| Tags (temas originais guardados) | 1206 |
+
+### Temas com mais obras
+
+| Tema | Obras |
+|---|---:|
+| família | 77 |
+| memória | 65 |
+| amor | 46 |
+| identidade | 43 |
+| violência | 32 |
+| classe social | 30 |
+| feminismo | 27 |
+| maternidade | 26 |
+| amizade | 25 |
+| existencialismo | 22 |
+
 ## Autorias unificadas
 
 - Érico Veríssimo ← Erico Veríssimo

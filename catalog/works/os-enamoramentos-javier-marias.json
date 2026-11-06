@@ -16,6 +16,12 @@
     "amor",
     "morte",
     "memória",
+    "existencialismo"
+  ],
+  "tags": [
+    "amor",
+    "morte",
+    "memória",
     "verdade"
   ],
   "edition": {
@@ -30,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12372586-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/os-enamoramentos-javier-marias.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library, mesmo ISBN (9788535921533), Companhia das Letras, tradução de Eduardo Brandão.",

@@ -14,6 +14,11 @@
     "campus novel"
   ],
   "themes": [
+    "educação",
+    "casamento",
+    "existencialismo"
+  ],
+  "tags": [
     "vida acadêmica",
     "casamento",
     "resignação",
@@ -31,7 +36,7 @@
   },
   "cover": {
     "sourceUrl": "https://acdn-us.mitiendanube.com/stores/001/301/257/products/img-6295-c6c3a8431b61f91ff117273813680013-640-0.webp",
-    "source": "literal",
+    "source": "busca_web",
     "file": "covers/stoner-john-williams.webp"
   },
   "catalogerNote": "Nome do autor corrigido de 'John Willians' para 'John Williams'; romance culto americano, primeira edição brasileira pela Rádio Londres (2015, tradução de Marcos Maffei), localizada via busca web pois não havia candidato pt-BR nos dados locais.",

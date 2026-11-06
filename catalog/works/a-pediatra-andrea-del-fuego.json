@@ -15,6 +15,11 @@
   "themes": [
     "maternidade",
     "família",
+    "doença"
+  ],
+  "tags": [
+    "maternidade",
+    "família",
     "medicina"
   ],
   "edition": {
@@ -29,7 +34,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/14625135-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/a-pediatra-andrea-del-fuego.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library, mesmo ISBN (9786557823361), Companhia das Letras, 2021.",

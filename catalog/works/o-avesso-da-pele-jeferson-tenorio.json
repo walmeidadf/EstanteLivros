@@ -16,6 +16,12 @@
   "themes": [
     "racismo",
     "paternidade",
+    "violência",
+    "memória"
+  ],
+  "tags": [
+    "racismo",
+    "paternidade",
     "violência policial",
     "memória"
   ],
@@ -31,7 +37,7 @@
   },
   "cover": {
     "sourceUrl": "https://covers.openlibrary.org/b/id/12769862-L.jpg",
-    "source": "literal",
+    "source": "openlibrary",
     "file": "covers/o-avesso-da-pele-jeferson-tenorio.jpg"
   },
   "catalogerNote": "Consenso entre Literal e Open Library com score máximo; romance vencedor do Prêmio Jabuti e Prêmio Oceanos 2021, sobre racismo e paternidade.",

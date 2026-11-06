@@ -44,6 +44,9 @@ export const workSchema = z
     type: text,
     genres: textList,
     themes: textList,
+    // Temas originais, só para registro (F2.3). Aditivo e opcional; o app não
+    // os expõe em nenhuma tela.
+    tags: textList.optional(),
     edition: z
       .object({
         title: optionalText,

@@ -13,6 +13,10 @@
     "ficção literária"
   ],
   "themes": [
+    "feminismo",
+    "família"
+  ],
+  "tags": [
     "diário íntimo",
     "papel da mulher",
     "família",
@@ -30,7 +34,7 @@
   },
   "cover": {
     "sourceUrl": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9786559212194/caderno-proibido.jpg",
-    "source": "literal",
+    "source": "editora",
     "file": "covers/o-caderno-proibido-alba-de-cespedes.jpg"
   },
   "catalogerNote": "Nenhum candidato local correspondia à obra. Identificado por conhecimento literário (romance italiano de Alba de Céspedes, 1952) e confirmado por busca web: edição brasileira 'Caderno Proibido', Companhia das Letras, 2022, tradução de Joana Angélica d'Ávila Melo.",
