@@ -104,7 +104,8 @@ canônicos aparecem nas obras.
 1. `catalog/schema/work.schema.json`, o Zod (`app/src/lib/catalog/schema.ts`) e `docs/DATA_MODEL.md` SHALL ganhar o campo `tags` (lista de textos), **opcional e aditivo**: obras sem `tags` continuam válidas.
 2. O validador SHALL continuar exigindo que todo tema de obra esteja em `vocabularies.themes` (regra `vocab` existente) e, além disso, SHALL ler `pipeline/config/themes.json` e acusar erro se algum tema de obra, ou de `vocabularies.themes`, não pertencer à taxonomia. A regra existente sozinha não basta, porque o vocabulário é derivado das próprias obras.
 3. `docs/DATA_MODEL.md` SHALL documentar a diferença entre `themes` (canônicos, navegáveis) e `tags` (originais, só registro) e que a normalização vive em `pipeline/config/themes.json`.
-4. `docs/plans/cobertura.md` SHALL ganhar uma seção de temas: nº de temas canônicos, obras por tema (os 10 maiores), temas abaixo do piso, média de temas por obra, obras com um único tema e total de tags.
+4. Para toda obra com `tags`, o validador SHALL aplicar o mapa às `tags` e acusar erro se o resultado diferir de `themes` (mapa editado sem rodar a migração). Como as `tags` guardam os originais sem perda, a conferência dispensa o CSV legado.
+5. `docs/plans/cobertura.md` SHALL ganhar uma seção de temas: nº de temas canônicos, obras por tema (os 10 maiores), temas abaixo do piso, média de temas por obra, obras com um único tema e total de tags.
 
 ### Requisito 5 — Revisão com a Lila
 
