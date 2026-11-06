@@ -110,6 +110,44 @@ def write_legacy(directory: Path, works: Optional[List[Dict[str, str]]] = None,
     return directory
 
 
+# -- temas canônicos (F2.3) -------------------------------------------------
+
+# Cobre os temas do legado sintético: união (segredo → identidade), "só tag"
+# (família), dois destinos não são necessários aqui (ver test_themes.py).
+THEMES_CONFIG: Dict[str, Any] = {
+    "version": 1,
+    "targetSize": [1, 10],
+    "taxonomy": ["amizade", "corpo", "escola", "fim do mundo", "identidade", "violência"],
+    "map": {
+        "identidade": ["identidade"],
+        "segredo": ["identidade"],
+        "escola": ["escola"],
+        "corpo": ["corpo"],
+        "família": [],
+        "violência": ["violência"],
+        "apocalipse": ["fim do mundo"],
+        "amizade": ["amizade"],
+    },
+}
+
+
+def themes_config():
+    """ThemeConfig de teste (cópia independente)."""
+    from lib.themes import ThemeConfig
+
+    return ThemeConfig.from_dict(copy.deepcopy(THEMES_CONFIG))
+
+
+def write_themes_config(config_dir: Path) -> Path:
+    """Grava o themes.json de teste em `config_dir` (cria a pasta)."""
+    import json
+
+    config_dir.mkdir(parents=True, exist_ok=True)
+    path = config_dir / "themes.json"
+    path.write_text(json.dumps(THEMES_CONFIG, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return path
+
+
 def make_catalog_dir(directory: Path) -> Path:
     """Diretório de catálogo vazio com os schemas reais copiados."""
     shutil.copytree(SCHEMA_DIR, directory / "schema")

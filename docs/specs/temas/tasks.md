@@ -37,12 +37,12 @@ podem andar em paralelo. Todas → 10 → 11 (revisão) → 12 → 13.
 
 ## Build e migração
 
-- [ ] 3. Aplicar no build (`lib/build.py`)
-  - [ ] 3.1 `build(..., themes=None)`: sem config, comportamento atual; com config, cada obra recebe `themes`/`tags` de `apply`. `vocabularies.themes` = canônicos em uso.
+- [x] 3. Aplicar no build (`lib/build.py`)
+  - [x] 3.1 `build(..., themes=None)`: sem config, comportamento atual; com config, cada obra recebe `themes`/`tags` de `apply`. `vocabularies.themes` = canônicos em uso.
     - _Requisitos: 3.1, 3.2, 3.6, 3.7_
-  - [ ] 3.2 `ThemeMappingError(LegacyDataError)` acumulando todas as obras: temas sem mapeamento (tema + obra) e obras sem tema (obra + originais); build não grava nada.
+  - [x] 3.2 `ThemeMappingError(LegacyDataError)` acumulando todas as obras: temas sem mapeamento (tema + obra) e obras sem tema (obra + originais); build não grava nada.
     - _Requisitos: 3.3, 3.4_
-  - [ ] 3.3 Testes: `themes=None` == antigo; erro acumulado; vocabulário = canônicos; idempotência (resultado não depende de `themes` anterior).
+  - [x] 3.3 Testes: `themes=None` == antigo; erro acumulado; vocabulário = canônicos; idempotência (resultado não depende de `themes` anterior).
     - _Requisitos: 10.1, 10.3_
 
 - [ ] 4. `migrate_legacy.py`

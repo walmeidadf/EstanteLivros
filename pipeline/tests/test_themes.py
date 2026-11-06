@@ -7,6 +7,9 @@ from pathlib import Path
 
 import helpers  # noqa: F401  (ajusta o sys.path para o pipeline)
 from lib import themes
+from lib.build import ThemeMappingError, build
+from lib.legacy_reader import LegacyDataError, read_legacy
+from lib.slugs import SlugRegistry
 from lib.themes import Applied, ThemeConfig, ThemeConfigError, apply, slugify_theme, theme_key
 
 
@@ -151,6 +154,75 @@ class ResumoTest(unittest.TestCase):
         self.assertEqual(s.below_floor, [("violência", 1)])
         self.assertEqual(s.avg_per_work, 1.83)
         self.assertEqual((s.tags, s.originals), (12, 3))  # a, b, c (B e b são o mesmo original)
+
+
+OVERRIDES = {"valter hugo mae": {"name": "valter hugo mãe", "slug": "valter-hugo-mae"}}
+
+
+def run_build(cfg=None, existing=None, **legacy_kwargs):
+    with tempfile.TemporaryDirectory() as tmp:
+        legacy = read_legacy(helpers.write_legacy(Path(tmp), **legacy_kwargs))
+    return build(legacy, SlugRegistry(), OVERRIDES, None, existing, cfg)
+
+
+class BuildComTemasTest(unittest.TestCase):
+    def test_sem_configuracao_o_comportamento_antigo(self):
+        cat = run_build().catalog
+        self.assertEqual(cat.works["a-vegetariana-han-kang"]["themes"], ["corpo", "família", "violência"])
+        self.assertTrue(all("tags" not in w for w in cat.works.values()))
+
+    def test_themes_canonicos_e_tags_sem_perda(self):
+        cat = run_build(helpers.themes_config()).catalog
+        veg = cat.works["a-vegetariana-han-kang"]
+        self.assertEqual(veg["themes"], ["corpo", "violência"])             # "família" é só tag
+        self.assertEqual(veg["tags"], ["corpo", "família", "violência"])    # ordem e grafia do CSV
+        espioes = cat.works["os-espioes-luis-fernando-verissimo"]
+        self.assertEqual((espioes["themes"], espioes["tags"]), (["identidade"], ["identidade", "segredo"]))
+        belas = cat.works["belas-maldicoes-neil-gaiman"]
+        self.assertEqual((belas["themes"], belas["tags"]), (["fim do mundo", "amizade"], ["apocalipse", "amizade"]))
+        self.assertEqual(list(veg)[list(veg).index("themes") + 1], "tags")   # tags logo depois de themes
+
+    def test_vocabulario_sao_os_canonicos_em_uso_em_ordem_alfabetica(self):
+        cat = run_build(helpers.themes_config()).catalog
+        self.assertEqual(cat.vocabularies["themes"],
+                         ["amizade", "corpo", "escola", "fim do mundo", "identidade", "violência"])
+
+    def test_resultado_nao_depende_de_themes_anterior(self):
+        first = run_build(helpers.themes_config()).catalog
+        stale = helpers.clone(first)
+        for work in stale.works.values():
+            work["themes"] = ["lixo"]
+            work["tags"] = ["lixo"]
+        again = run_build(helpers.themes_config(), existing=stale).catalog
+        self.assertEqual(again.works, first.works)
+        self.assertEqual(again.vocabularies, first.vocabularies)
+
+    def test_erro_acumula_temas_sem_mapeamento_e_obras_sem_tema(self):
+        cfg = helpers.themes_config()
+        del cfg.mapping[theme_key("segredo")]
+        del cfg.mapping[theme_key("escola")]
+        for original in ("apocalipse", "amizade"):
+            cfg.mapping[theme_key(original)] = []          # Belas Maldições ficaria sem tema
+        with self.assertRaises(ThemeMappingError) as ctx:
+            run_build(cfg)
+        message = str(ctx.exception)
+        self.assertIn("2 tema(s) sem mapeamento", message)
+        self.assertIn("'escola' (Comédias para se Ler na Escola)", message)
+        self.assertIn("'segredo' (Os Espiões)", message)
+        self.assertIn("1 obra(s) ficariam sem tema canônico", message)
+        self.assertIn("Belas Maldições: apocalipse, amizade", message)
+        self.assertIsInstance(ctx.exception, LegacyDataError)  # a migração já trata como código 1
+
+    def test_obra_sem_nenhum_tema_no_csv_tambem_e_erro(self):
+        works = [dict(w) for w in helpers.WORKS]
+        works[3]["themes"] = ""
+        with self.assertRaisesRegex(ThemeMappingError, "Belas Maldições: \\(sem temas no CSV\\)"):
+            run_build(helpers.themes_config(), works=works)
+
+    def test_determinismo(self):
+        a = run_build(helpers.themes_config()).files
+        b = run_build(helpers.themes_config()).files
+        self.assertEqual(json.dumps(a, sort_keys=False), json.dumps(b, sort_keys=False))
 
 
 if __name__ == "__main__":
